@@ -57,13 +57,22 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
 
 ## Capability target
 Execute a proofreading triage cycle that ranks corrections by impact and issues a transparent QC decision.
+
+## Why this module matters
+Proofreading is the largest labor item in any connectome, and it is never finished, only stopped. FlyWire's manual proofreading took an estimated 33 person-years (Dorkenwald et al. 2024); the hemibrain took over 50 (Scheffer et al. 2020); the released MICrONS segmentation carries 1,046,656 edits (MICrONS Consortium 2025). In each case someone decided that the data were good enough for the analyses that would be built on them. This module puts you in that seat, as QC lead for a subvolume headed into a paper on reciprocal connectivity, with 45 flagged errors and time to fix 15.
+
+The decision has two halves that beginners collapse into one. The first is allocation: which 15 of the 45 matter for this question, given that a merge between two L2/3 pyramidal cells can invent a reciprocal pair and a split on a glial process changes nothing. The second is release: whether the numbers after those 15 fixes clear a threshold you wrote down before you saw them, and what to say about the 30 you did not fix. [Module 06]({{ '/modules/module06/' | relative_url }}) taught the single edit; this module teaches the policy the edits serve.
+
+The output is a memo, because a release decision that lives only in one person's head cannot be reproduced. The rubric fails a recommendation that cites no metric values and a queue with no policy behind it. Writing "go, with these remaining risks" or "rework, these categories, this much more effort" is what lets a downstream analyst state the proofreading level of the cells their result rests on.
+
+**Where this sits next to Technical Unit 08.** [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) covers the operation in depth: how automated segmentation works, the error taxonomy and the cost of each error, what each quality metric is blind to, the production proofreading loop, the human factors of a labor operation, and a 2-hour lab that writes a proofreading plan with a defended budget. This module adds the release decision under a named analysis: triaging 45 flagged errors against one scientific question, fixing the top 15, computing before/after metrics with the kit's script, and writing a go/no-go memo that states the remaining risk. Do the unit for the loop and the budget; do this module for the release.
 
 ## Hidden curriculum scaffold
 - Norms often unstated: prioritize by scientific consequence, not visual annoyance. A merge error that creates a false connection between two neurons in your circuit of interest is more important than a split error in a fragment at the edge of the volume.
@@ -124,6 +133,8 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 5. **Record** QC decision: compute metrics, compare to release thresholds, issue go/rework recommendation. If the recommendation is "rework," specify which error categories need further attention and estimate the additional effort required.
 
 ## 60-minute tutorial run-of-show
+
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class reading (proofreading strategies and worked-example scenarios 1 and 4), reading the [Module 07 kit]({{ '/assets/kits/module07/README.md' | relative_url }}) before the studio, the FlyWire case study and the quick practice prompt. Both the [10-week map]({{ '/teaching/syllabi/10-week/' | relative_url }}#what-this-map-uses-and-omits) and the [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) list this kit as a take-home and let its studio replace the Unit 08 Part B plan, so the hours beyond the session are take-home time.
 
 ### Pre-class preparation (10 min async)
 - Read [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }})
@@ -190,6 +201,25 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - **Strong performance**: Impact reasoning explicitly tied to the scientific question (reciprocal connectivity). Uncertainty handling is transparent -- learner acknowledges what they could not determine and explains how that uncertainty affects the release decision. Memo is clear and actionable.
 - **Common failure to flag**: Ad hoc corrections without policy -- fixing whatever looks wrong rather than systematically prioritizing by impact. Another common failure is issuing a release recommendation without referencing specific metric values.
 
+## Common errors and how to recover
+
+- **Your triage ranks by error type alone.** "Merges first" is a default, not a policy. For the reciprocal-connectivity question, a merge on a glial process changes nothing, and a split at a synapse between two L2/3 pyramidal cells hides a real edge. Recover by scoring every flagged error against the scenario's question: could it create a false reciprocal connection, hide a real one, or neither?
+- **Your threshold appeared after the metrics did.** A bar set once you know the numbers is always cleared. Recover by writing the release threshold from the sensitivity of the planned analysis before you run the metric script; if you must change it, log the new value next to the old one with the reason.
+- **Your memo says "go" and quotes no numbers.** The rubric fails a recommendation that cites no metric values. Recover by putting the before and after metrics in a table with the threshold beside each, and by naming which metric the analysis depends on when they disagree.
+- **The seven uncertain flags disappeared.** Errors you could not classify were dropped from the queue and from the memo. Recover by listing them under remaining risks with what would resolve each (an orthogonal view, an ultrastructure cue, a second annotator) and which analysis cells they touch.
+- **You checked each fix in one view.** Splitting a merge can leave an orphan fragment; merging a split can absorb a neighbor. Recover by reopening every correction in a second, orthogonal view before logging it, and by counting fragments before and after.
+- **Your log has the edit but not the reason.** CAVE records what, when and who; the why is yours. Recover by writing one line per correction with the IDs, the operation and the evidence that motivated it, so a new proofreader can learn the team's standard from the log.
+
+## What this module does not cover
+
+- **Segmentation algorithms and tool mechanics.** How the segmentation was produced, and the split and merge operations in Neuroglancer and CAVE, are [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) and [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}); the studio works from the kit's synthetic error report.
+- **The single correction.** Diagnosing one error, fixing it and measuring the before/after change is [Module 06]({{ '/modules/module06/' | relative_url }}); this module assumes you can do that and asks which ones to do.
+- **Metric formulas.** The derivations and blind spots of VI, ERL and synapse F1 are [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) and Unit 08; here you read them off the kit's script and compare them with a threshold.
+- **Calling a synapse.** Synapse F1 depends on synapse detection, which this module takes as given. Calling a synapse by eye is [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}); a detector's accuracy is a property of the dataset (MICrONS reports 96% precision and 89% recall for its automated detection; MICrONS Consortium 2025).
+- **Managing annotators.** Recruiting, training, agreement checks and fatigue are Unit 08's human-factors section and the [FlyWire case study]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}); this module names them and moves on.
+- **Versioning mechanics.** What a materialization freezes and how to pin one are [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) and [Module 21]({{ '/modules/module21/' | relative_url }}); here you only record which version your metrics came from.
+- **What residual error does to the result.** Carrying the unfixed error into the reciprocal-connectivity estimate is [Module 08]({{ '/modules/module08/' | relative_url }}) (null models), [Module 20]({{ '/modules/module20/' | relative_url }}) (statistical inference) and [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) (motif analysis under reconstruction error).
+
 ## Content library references
 - [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) -- Merge, split, boundary, identity error details
 - [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}) -- Exhaustive, targeted, priority, crowd-sourced
@@ -204,9 +234,11 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }}) -- Metric definitions and where each one fails
 - [Module 07 kit]({{ '/assets/kits/module07/README.md' | relative_url }}) -- The synthetic error report, ground truth and metric computation script used in the studio activity
 
-## References
+## Academic references
 - Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22:1112-1120. doi:10.1038/s41592-024-02426-z.
 - Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138.
+- Scheffer LK et al. (2020) "A connectome and analysis of the adult *Drosophila* central brain." *eLife* 9:e57443. doi:10.7554/eLife.57443.
+- MICrONS Consortium et al. (2025) "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature* 640:435-447. doi:10.1038/s41586-025-08790-w.
 - Funke J, Klein J, Moreno-Noguer F, Cardona A, Cook M (2017) "TED: A tolerant edit distance for segmentation evaluation." *Methods* 115:119-127.
 - Meila M (2007) "Comparing clusterings -- an information based distance." *Journal of Multivariate Analysis* 98(5):873-895.
 - Plaza SM et al. (2014) "Annotating synapses in large EM datasets." *arXiv:1409.1801*.

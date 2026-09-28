@@ -104,7 +104,7 @@
   stage: "Dissemination"
   ccr: [Knowledge, Character]
 - number: 22
-  title: "Scientific Writing & Presentation"
+  title: "Scientific Presentation"
   description: "Delivering clear scientific talks for technical and mixed audiences without oversimplifying structural evidence, with explicit question-handling norms."
   stage: "Dissemination"
   ccr: [Knowledge, Skills, Meta-Learning]

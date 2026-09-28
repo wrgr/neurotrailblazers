@@ -61,7 +61,8 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 - 48:00-60:00 | Debrief and competency check
 
 <!--
-Pre-class preparation (10 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class reading and viewer browsing, downloading and reading the [Module 06 kit](/assets/kits/module06/README.md), the content-library pages on error taxonomy and metrics, and the quick practice prompt. Neither course map schedules this kit (the [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
+  Pre-class preparation (10 min async)
   Read the [Error taxonomy](/content-library/proofreading/error-taxonomy/) page
   Open a public segmented volume in Neuroglancer ([MICrONS Explorer](https://www.microns-explorer.org/)) and browse the segmentation for 5 minutes
   Minute-by-minute plan

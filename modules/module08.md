@@ -55,13 +55,22 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
 
 ## Capability target
 Design one hypothesis test with metric, null model, and interpretation boundary statement.
+
+## Why this module matters
+A connectome is large enough to contain any pattern you go looking for. MICrONS holds about 524 million detected synapses (MICrONS Consortium 2025); in a graph that size, some triad, some pair of layers, some cell class will be "enriched" under a null that ignores degree, distance or cell type. The worked example below shows the shape of the trap with illustrative numbers: 84 feed-forward loops look like a 3.8x enrichment against Erdos-Renyi, 1.6x against a degree-preserving null, and 1.08x once cell-type composition is preserved. The finding belonged to the null model, not to the circuit.
+
+So the scientific step in a connectomics study is the design of the test, not the running of it. The order matters: metric, comparison and null chosen before the data are seen; tests counted before any is reported; the functional interpretation kept out of the hypothesis and in the boundary statement. The studio asks for three hypothesis sheets a partner could run from without asking you a question, and a peer critique that finds one real weakness in each.
+
+Every later analysis module inherits this discipline. [Module 10]({{ '/modules/module10/' | relative_url }}) builds the graph, [Module 11]({{ '/modules/module11/' | relative_url }}) tests motifs on it and [Module 20]({{ '/modules/module20/' | relative_url }}) runs inference across many tests at once; each starts from a sheet of the kind you write here, with a pinned dataset version and an explicit non-claim.
+
+**Scope boundary with Module 20.** This module designs one test: one measurable outcome, one null model and an interpretation boundary for one claim. [Module 20]({{ '/modules/module20/' | relative_url }}) picks up where that ends: multiplicity correction across a census of tests, dependence between tests, reconstruction error as a directional bias, threshold sensitivity, and keeping exploratory claims apart from confirmatory ones. One hypothesis and one null: stay here. A motif census or a sweep across cell types: go on to Module 20.
 
 ## Concept set
 
@@ -131,6 +140,8 @@ A student proposes: "Feed-forward loops are enriched in this L4-to-L2/3-to-L5 ci
 5. Document supported vs unsupported claims: what the result proves, what it doesn't, and what additional evidence would be needed.
 
 ## 60-minute tutorial run-of-show
+
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class preparation, the worked example above and the reciprocity example in Technical Unit 09, the content-library pages on motif analysis and graph representations, and the quick practice prompt. The [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) gives this kit one 90-minute meeting in week 9, with the concept set read beforehand; the 10-week map leaves it out, so the remaining hours are unscheduled — lab meeting or take-home.
 
 ### Pre-class preparation (10 min async)
 - Read [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}), focusing on the null models section
@@ -227,12 +238,13 @@ A student proposes: "Feed-forward loops are enriched in this L4-to-L2/3-to-L5 ci
 - [Technical Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }})
 - [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 
-## References
+## Academic references
 - Bargmann CI, Marder E (2013) "From the connectome to brain function." *Nature Methods* 10(6):483-490.
 - Maslov S, Sneppen K (2002) "Specificity and stability in topology of protein networks." *Science* 296:910-913.
 - Milo R et al. (2002) "Network motifs: simple building blocks of complex networks." *Science* 298:824-827.
 - Song S et al. (2005) "Highly nonrandom features of synaptic connectivity." *PLoS Biology* 3(3):e68.
 - Perin R et al. (2011) "A synaptic organizing principle for cortical neuronal groups." *PNAS* 108(13):5419-5424.
+- MICrONS Consortium et al. (2025) "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature* 640:435-447. doi:10.1038/s41586-025-08790-w.
 
 ## Quick practice prompt
 Write one claim and one explicit non-claim from the same test outcome.

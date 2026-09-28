@@ -1,6 +1,6 @@
 # Module 22 Activity Worksheet
 
-**Module:** Module 22: Scientific Writing and Presentation  
+**Module:** Module 22: Scientific Presentation  
 **Duration:** 4 hours  
 *Generated from the module page. Edit `modules/module22.md`, not this file.*
 

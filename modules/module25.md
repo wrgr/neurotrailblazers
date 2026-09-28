@@ -57,10 +57,12 @@ prerequisites_list:
   - "Completed artifacts from at least three technical modules"
   - "One writing or presentation artifact"
 next_modules: []
-references: []
+references:
+  - "Hattie J, Timperley H (2007) The power of feedback. Review of Educational Research 77(1):81-112."
+  - "Nicol DJ, Macfarlane-Dick D (2006) Formative assessment and self-regulated learning: a model and seven principles of good feedback practice. Studies in Higher Education 31(2):199-218."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -143,6 +145,9 @@ The format determines who can read your evidence, so choose before you build.
 | Institutional or program page | Whoever is directed there | Affiliation and legitimacy signal | None, and that is the problem | You do not control it, cannot update it on your schedule, and lose it when you leave |
 
 For most trainees the workable combination is a public repository holding the artifacts plus a one-page PDF that captions them and links in, because it satisfies both the reviewer who will clone and the reviewer who will not.
+
+## Time budget
+The declared 5 to 6 hours are: about 30 minutes reading the concept set before the first meeting, the two 90-minute meetings the [syllabus maps]({{ '/teaching/syllabi/' | relative_url }}) give this kit (the 60-minute run-of-show and the first two studio steps in the first; the peer review and revision plan in the second), and 1.5 to 2.5 hours outside class curating the artifacts, writing the captions and revising, plus the quick practice prompt and the linked readings.
 
 ## 60-minute tutorial run-of-show
 1. **00:00-08:00 | Portfolio quality exemplar**
@@ -227,6 +232,12 @@ The fourth line is the one most people delete, and it is the strongest line in t
 - Workshop that continues this module: [Future Forward]({{ '/teaching/pathways/future-forward/' | relative_url }}), which turns the portfolio into evaluated options and a twelve-month plan
 - Provenance reference: [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
 - Differentiation guidance: [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
+
+## Academic references
+- Hattie J, Timperley H (2007) "The power of feedback." *Review of Educational Research* 77(1):81-112. doi:10.3102/003465430298487. Feedback works when it answers where the learner is going, how they are doing, and what comes next; the reason Concept 6 asks for a decision, a criterion and a stage.
+- Nicol DJ, Macfarlane-Dick D (2006) "Formative assessment and self-regulated learning: a model and seven principles of good feedback practice." *Studies in Higher Education* 31(2):199-218. doi:10.1080/03075070600572090. Feedback that the learner acts on and reports back on; the staged cycles in the hidden-curriculum scaffold.
+
+The portfolio conventions themselves, the four-line caption and the two-minute first pass, are this site's teaching practice, not findings from a published study.
 
 ## Quick practice prompt
 Choose one artifact and write its four lines: one competency claim it supports, what you did versus what you were given, one thing a reviewer can verify and where, and one limitation with the revision you would make next.

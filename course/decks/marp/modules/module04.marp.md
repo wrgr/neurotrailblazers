@@ -73,7 +73,8 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 - 50:00-60:00 | Debrief and competency check
 
 <!--
-Pre-class preparation (10-15 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class atlas exercise, the content-library readings on soma ultrastructure, dendrite biology and glia recognition, the quick practice prompt and, for the instructor, building the patch set from the MICrONS volume before class. Neither course map schedules this kit (the [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
+  Pre-class preparation (10-15 min async)
   Review cortical layer descriptions above.
   Explore the [Allen Brain Atlas](https://atlas.brain-map.org/) online viewer and locate cortical layers in a coronal section.
   Bring one question: "How would I know which layer I'm looking at in EM?"

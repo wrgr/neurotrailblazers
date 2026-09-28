@@ -215,7 +215,7 @@ content_type: navigation
       <a href="{{ '/modules/module16/' | relative_url }}" class="module-subcard">16. Scientific Visualization for Connectomics</a>
       <a href="{{ '/modules/module17/' | relative_url }}" class="module-subcard">17. Scientific Writing for Connectomics</a>
       <a href="{{ '/modules/module21/' | relative_url }}" class="module-subcard">21. Reproducibility and FAIR Principles</a>
-      <a href="{{ '/modules/module22/' | relative_url }}" class="module-subcard">22. Scientific Writing & Presentation</a>
+      <a href="{{ '/modules/module22/' | relative_url }}" class="module-subcard">22. Scientific Presentation</a>
       <a href="{{ '/modules/module23/' | relative_url }}" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
       <a href="{{ '/modules/module24/' | relative_url }}" class="module-subcard">24. Career Pathways & Graduate School Prep</a>
       <a href="{{ '/modules/module25/' | relative_url }}" class="module-subcard">25. Portfolio, Feedback, and Final Project</a>
@@ -224,7 +224,7 @@ content_type: navigation
     <div class="module-subcards">
       <a href="{{ '/modules/module16/' | relative_url }}" class="module-subcard">16. Scientific Visualization for Connectomics</a>
       <a href="{{ '/modules/module17/' | relative_url }}" class="module-subcard">17. Scientific Writing for Connectomics</a>
-      <a href="{{ '/modules/module22/' | relative_url }}" class="module-subcard">22. Scientific Writing & Presentation</a>
+      <a href="{{ '/modules/module22/' | relative_url }}" class="module-subcard">22. Scientific Presentation</a>
       <a href="{{ '/modules/module23/' | relative_url }}" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
       <a href="{{ '/modules/module25/' | relative_url }}" class="module-subcard">25. Portfolio, Feedback, and Final Project</a>
     </div>
@@ -239,7 +239,7 @@ content_type: navigation
     <div class="module-subcards">
       <a href="{{ '/modules/module16/' | relative_url }}" class="module-subcard">16. Scientific Visualization for Connectomics</a>
       <a href="{{ '/modules/module17/' | relative_url }}" class="module-subcard">17. Scientific Writing for Connectomics</a>
-      <a href="{{ '/modules/module22/' | relative_url }}" class="module-subcard">22. Scientific Writing & Presentation</a>
+      <a href="{{ '/modules/module22/' | relative_url }}" class="module-subcard">22. Scientific Presentation</a>
       <a href="{{ '/modules/module23/' | relative_url }}" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
       <a href="{{ '/modules/module24/' | relative_url }}" class="module-subcard">24. Career Pathways & Graduate School Prep</a>
       <a href="{{ '/modules/module25/' | relative_url }}" class="module-subcard">25. Portfolio, Feedback, and Final Project</a>

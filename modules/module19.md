@@ -62,12 +62,14 @@ next_modules:
   - "module20"
   - "module21"
 references:
-  - "COPE Core Practices."
-  - "ICMJE authorship recommendations."
-  - "FAIR principles (Wilkinson et al., 2016)."
+  - "Bourne PE, Korngreen A (2006) Ten simple rules for reviewers. PLoS Computational Biology 2(9):e110."
+  - "Brand A, Allen L, Altman M, Hlava M, Scott J (2015) Beyond authorship: attribution, contribution, collaboration, and credit. Learned Publishing 28(2):151-155."
+  - "Simmons JP, Nelson LD, Simonsohn U (2011) False-positive psychology. Psychological Science 22(11):1359-1366."
+  - "Dorkenwald S et al. (2024) Neuronal wiring diagram of an adult brain. Nature 634(8032):124-138."
+  - "Shapson-Coe A et al. (2024) A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. Science 384(6696):eadk4858."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -129,6 +131,22 @@ Connectomics projects are collaborative, data-heavy, and method-sensitive. A sin
 - **Misconception guardrail:** contribution volume alone decides authorship.
 - **Why it fails:** volume is one input. A person who proofread 10,000 segments may deserve authorship and a person who ran one script may not, or the reverse; the criteria must be written and agreed in advance.
 
+## Worked example: one review comment, written three times
+
+The case is invented for this page and is not the mock preprint in the kit, so working it here spoils nothing. A fictional preprint reports that a three-neuron motif is enriched 2.4-fold over a degree-preserving null (p = 0.003, 16 motif classes tested, one reported). The methods give no merge or split rate for the segmentation. The author list ends with "the Cortical Wiring Consortium" and the contributions section does not say who in it did what.
+
+**Version 1, destructive.** "The statistics are not convincing and the enrichment is probably a segmentation artifact." Two opinions, no mechanism, no location, nothing the authors can act on. An editor cannot weigh it, and the authors will read it as hostility rather than as a finding about their paper.
+
+**Version 2, vague but polite.** "The authors should address possible segmentation errors and consider alternative null models." Better tone, same problem. "Address" and "consider" name no test, so the authors can satisfy the comment with a sentence in the discussion, and the paper does not improve.
+
+**Version 3, constructive.** "Merge errors join separate arbors and create spurious three-node connections, so they inflate exactly the motif the paper reports. Section 2.3 gives no merge or split rate. Please (a) report the measured merge rate on the proofread subset, and (b) either show the enrichment on the proofread subset alone, or perturb the graph at the measured merge and split rates and report the resulting band of enrichment values. If that band includes 1.0, the claim should be stated as exploratory. Separately, the results discuss one of the 16 motif classes tested; please report all 16 with the correction applied, so readers can see the one reported in context."
+
+What makes the third version rigorous is not its length. It names the mechanism, so the authors know why the concern matters. It names the location. It gives two acceptable fixes and a decision rule for what the result means if the fix fails. And it flags selective reporting with a specific, checkable request rather than an accusation.
+
+**The ethics memo, one paragraph.** "The author list includes a consortium without individual contributions. Authorship criteria (ICMJE) apply to people, not organizations, and readers cannot tell who takes responsibility for the segmentation and proofreading this result depends on. Recommendation: list the consortium members who meet the criteria as authors, with CRediT roles, and acknowledge the rest by name. This is a correctable attribution gap, not evidence of misconduct."
+
+**The recommendation, and why it follows.** Major revision. The top-tier concern, an unreported error rate that could produce the headline result, blocks the claim as written but is fixable with data the authors already have. Recommending acceptance with minor revisions would contradict the concern; recommending rejection would ignore that the fix is available. The recommendation has to be the one the concerns imply.
+
 ## Core workflow: review and ethics decision process
 1. **Pre-review framing**
    - Identify manuscript claim types (descriptive, predictive, explanatory).
@@ -145,6 +163,9 @@ Connectomics projects are collaborative, data-heavy, and method-sensitive. A sin
 5. **Actionable response package**
    - Write revision requests prioritized by scientific impact and integrity risk.
    - Use constructive language: problem, evidence, suggestion.
+
+## Time budget
+The declared 4 hours are: about 30 minutes reading the concept set before the meeting, the 90-minute meeting the [syllabus maps]({{ '/teaching/syllabi/' | relative_url }}) give this kit (the 60-minute run-of-show below plus the opening of the studio activity), and about 2 hours outside class finishing the studio memos, the quick practice prompt, and the linked readings.
 
 ## 60-minute tutorial run-of-show
 
@@ -216,7 +237,27 @@ Each student submits their structured review form and decision memo. Instructor 
   - Inconsistent recommendation versus identified risks (e.g., listing major concerns but recommending accept with minor revisions).
   - Destructive tone that undermines the credibility of valid criticisms.
 
+## Common errors and how to recover
+
+- **Your review lists everything you noticed, in the order you noticed it.** Recover by sorting into three tiers: blocks the claim, weakens the claim, cosmetic. Lead with the first tier and say which tier each comment is in; an editor reads the first paragraph most carefully.
+- **You wrote "the authors should address" without saying how.** Recover by naming the test, the figure or the sentence. If you cannot name one, the comment is an impression, and it belongs in the confidential note to the editor or nowhere.
+- **You listed a validity problem and recommended minor revisions.** Recover by rereading your top-tier concern and choosing the recommendation it implies. If the concern is fixable with data the authors have, that is major revision; if it is not fixable, say so.
+- **You reviewed the story and skipped the methods.** Recover by reading the methods first on the next pass and building the claim-to-method map before the discussion. Most overclaims are visible only from the methods side.
+- **An ethics concern is raised as a principle rather than a practice.** "The authors should consider attribution" changes nothing. Recover by tying the concern to a workflow step and a concrete fix: a contribution statement with roles, a preregistered test, a sensitivity analysis.
+- **The authorship dispute surfaced the week of submission.** Recover by applying the written criteria if the project has them. If it does not, draft them now with CRediT roles, apply them to everyone including yourself, and state each person's contribution in the paper; the drafting is late, but the alternative is deciding by seniority.
+- **You found a silent threshold change in your own group's workflow.** Recover by logging it, rerunning from the documented threshold, and reporting both results. Earlier is cheaper; the decision log in [Module 18]({{ '/modules/module18/' | relative_url }}) exists so this is caught before submission, not after.
+
+## What this module does not cover
+
+- **Ethics and governance as a field.** Consent for human tissue, data licenses, dual use and credit for proofreading labor have their own page, [ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}); this module teaches the reviewer's and collaborator's daily practice and links there for the substance.
+- **Writing your own reviewer response.** The author's side of the exchange is [Module 17]({{ '/modules/module17/' | relative_url }}).
+- **Judging the statistics.** Whether a null model or a correction is right is [Module 20]({{ '/modules/module20/' | relative_url }}); a reviewer applies that module, this one says how to write the comment.
+- **Reproducibility packaging.** What a release must contain for a reviewer to rerun it is [Module 21]({{ '/modules/module21/' | relative_url }}).
+- **Institutional procedure.** IRB and animal-care processes, misconduct investigations, and journal-specific policies are set by institutions and publishers and change; raise them with your institution's office, not this page.
+- **Legal protections for people who report problems.** Jurisdiction-specific and outside this curriculum.
+
 ## Content library cross-references
+- [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) --- consent, licenses, dual use and credit for proofreading labor; this module links here rather than owning the material.
 - [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) --- the versioning infrastructure that reviewers should expect papers to document.
 - [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) --- a case study raising ethical questions about human tissue consent, open data sharing, and attribution in large collaborations.
 
@@ -230,15 +271,6 @@ Each student submits their structured review form and decision memo. Instructor 
 
 ## Evidence anchors from connectomics practice
 
-### Key papers to use in this module
-- [White, J.G. et al. (1986). "The Structure of the Nervous System of the Nematode *Caenorhabditis elegans*."](https://doi.org/10.1098/rstb.1986.0056) --- study as an example of thorough methods reporting in connectomics.
-- [Kasthuri, N. et al. (2015). "Saturated Reconstruction of a Volume of Neocortex." *Cell*, 162(3), 648-661.](https://doi.org/10.1016/j.cell.2015.06.054) --- review the methods section for reconstruction quality documentation.
-- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature*, 640.](https://www.nature.com/articles/s41586-025-08790-w) --- exemplary large-collaboration authorship and methods documentation.
-- [Shapson-Coe, A. et al. (2024). H01 human cortical fragment. *Science.*](https://www.science.org/doi/10.1126/science.adk4858) --- ethical considerations for human tissue connectomics and open data.
-- [COPE (Committee on Publication Ethics). Core Practices.](https://publicationethics.org/core-practices) --- ethical guidelines for peer review and publication.
-- [ICMJE. Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work.](https://www.icmje.org/recommendations/) --- authorship criteria.
-- [Dorkenwald, S. et al. (2024). "Neuronal wiring diagram of an adult brain." *Nature*, 634, 124-138.](https://doi.org/10.1038/s41586-024-07558-y) --- FlyWire whole-brain connectome with community proofreading attribution model.
-
 ### Key datasets to practice on
 - [MICrONS Explorer](https://www.microns-explorer.org/)
 - [H01 dataset](https://h01-release.storage.googleapis.com/landing.html)
@@ -251,6 +283,15 @@ Each student submits their structured review form and decision memo. Instructor 
 - Can you justify your editorial recommendation with traceable criteria referenced to specific manuscript locations?
 - Can you distinguish constructive from destructive criticism in your own review draft?
 - Can you articulate the specific ethical obligations associated with using community-proofread data?
+
+## Academic references
+- Bourne PE, Korngreen A (2006) "Ten simple rules for reviewers." *PLoS Computational Biology* 2(9):e110. doi:10.1371/journal.pcbi.0020110. The reviewer's obligations that Concept 4 turns into a comment format.
+- Brand A, Allen L, Altman M, Hlava M, Scott J (2015) "Beyond authorship: attribution, contribution, collaboration, and credit." *Learned Publishing* 28(2):151-155. doi:10.1087/20150211. The CRediT contributor-role taxonomy named in Concept 6.
+- Simmons JP, Nelson LD, Simonsohn U (2011) "False-positive psychology." *Psychological Science* 22(11):1359-1366. doi:10.1177/0956797611417632. Researcher degrees of freedom: why a threshold changed after seeing the result is an integrity problem, not a preference.
+- Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634(8032):124-138. doi:10.1038/s41586-024-07558-y. The FlyWire author list, where community proofreaders appear by name; the attribution model Concept 2 refers to.
+- Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858. doi:10.1126/science.adk4858. H01, the human-tissue case the consent discussion in Concept 2 draws on.
+
+Guidelines, not papers: [COPE Core Practices](https://publicationethics.org/core-practices) for editors and reviewers, and the [ICMJE Recommendations](https://www.icmje.org/recommendations/) for authorship criteria.
 
 ## Quick practice prompt
 Choose a connectomics abstract (from a real paper or the mock preprint) and produce:

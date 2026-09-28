@@ -126,7 +126,8 @@ Choose one artifact and write its four lines: one competency claim it supports, 
 ---
 
 ## References (Instructor)
-- Use module references listed on the module page.
+- Hattie J, Timperley H (2007) The power of feedback. Review of Educational Research 77(1):81-112.
+- Nicol DJ, Macfarlane-Dick D (2006) Formative assessment and self-regulated learning: a model and seven principles of good feedback practice. Studies in Higher Education 31(2):199-218.
 
 ---
 

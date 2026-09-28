@@ -151,9 +151,12 @@ Take one existing connectomics figure (from a paper, a classmate, or your own wo
 ---
 
 ## References (Instructor)
-- Tufte ER (1983) The Visual Display of Quantitative Information. Graphics Press.
 - Borland D, Taylor RM (2007) Rainbow color map (still) considered harmful. IEEE Computer Graphics and Applications 27(2):14-17.
+- Crameri F, Shephard GE, Heron PJ (2020) The misuse of colour in science communication. Nature Communications 11:5444.
+- Rougier NP, Droettboom M, Bourne PE (2014) Ten simple rules for better figures. PLoS Computational Biology 10(9):e1003833.
 - Weissgerber TL et al. (2015) Beyond bar and line graphs: time for a new data presentation paradigm. PLoS Biology 13(4):e1002128.
+- Wong B (2011) Points of view: color blindness. Nature Methods 8(6):441.
+- Birch J (2012) Worldwide prevalence of red-green color deficiency. Journal of the Optical Society of America A 29(3):313-320.
 
 ---
 

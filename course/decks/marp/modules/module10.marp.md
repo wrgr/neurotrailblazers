@@ -66,7 +66,8 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 - 46:00-60:00 | Competency check
 
 <!--
-Pre-class preparation (10 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class preparation, the [Module 10 kit](/assets/kits/module10/README.md), the content-library pages on graph representations and network analysis methods, and the quick practice prompt. Both the [10-week map](/teaching/syllabi/10-week/#what-this-map-uses-and-omits) and the [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) list this kit as a take-home for learners with Python, so the hours beyond the session are take-home time.
+  Pre-class preparation (10 min async)
   Read [Graph representations](/content-library/connectomics/graph-representations/)
   Install NetworkX: `pip install networkx`
   Minute-by-minute plan

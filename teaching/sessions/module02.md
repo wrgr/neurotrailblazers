@@ -42,6 +42,7 @@ Learners should arrive having covered:
     <a class="resource-link" href="{{ site.deck_source_base }}/modules/module02.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module02/module02-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module02/' | relative_url }}">Full module page</a>
+    <a class="resource-link" href="{{ '/teaching/answers/module02/' | relative_url }}">Model responses</a>
   </div>
 </div>
 

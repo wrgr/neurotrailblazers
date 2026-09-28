@@ -43,6 +43,7 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 - **Technical:** findable identifiers, accessible storage, interoperable formats, and reusable metadata each require concrete engineering choices.
 - **Plain language:** "FAIR" only counts if someone else can actually find, open, and use your work.
 - **Misconception guardrail:** posting files online makes work FAIR.
+- **Why it fails:** a file with no persistent identifier, no metadata and no license can be downloaded but not found, cited or legally reused. Each of the four letters is a separate check, and a URL on its own passes none of them.
 
 ---
 
@@ -106,6 +107,8 @@ Pre-class preparation (15 min async)
 - **Misconception guardrail:** posting files online makes work FAIR.
 - **Misconception guardrail:** a notebook that ran end-to-end once is proof of reproducible science.
 - **Misconception guardrail:** reproducibility norms are common sense that any careful trainee will infer without being taught.
+- **Misconception guardrail:** a commit hash and an environment file make a rerun reproducible.
+- **Misconception guardrail:** once a corrected release is out, the old one should be deleted so nobody uses it by accident.
 
 ---
 
@@ -159,9 +162,12 @@ Take one prior analysis output and add:
 ---
 
 ## References (Instructor)
-- Wilkinson et al. (2016) - FAIR Guiding Principles.
-- Peng (2011) - Reproducible Research in Computational Science.
-- Project-specific release documentation for H01/MICrONS/FlyWire.
+- Wilkinson MD et al. (2016) The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3:160018.
+- Peng RD (2011) Reproducible research in computational science. Science 334(6060):1226-1227.
+- Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten simple rules for reproducible computational research. PLoS Computational Biology 9(10):e1003285.
+- Stodden V et al. (2016) Enhancing reproducibility for computational methods. Science 354(6317):1240-1241.
+- Lamprecht A-L et al. (2020) Towards FAIR principles for research software. Data Science 3(1):37-59.
+- Dorkenwald S et al. (2025) CAVE: Connectome Annotation Versioning Engine. Nature Methods 22(5):1112-1120.
 
 ---
 

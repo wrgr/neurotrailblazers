@@ -55,13 +55,22 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
 
 ## Capability target
 Build one connectome graph representation and justify two metric choices for a defined hypothesis.
+
+## Why this module matters
+The graph is not the data. It is one projection of the reconstruction, made by a series of choices that each change the answer: what counts as a node, which direction an edge points, whether an edge is binary or weighted, and how many synapses a pair needs before it is an edge at all. The last choice is the biggest. In FlyWire, 139,255 neurons share about 54.5 million synapses, but at a threshold of five or more synapses the graph has 2,700,513 connections between 134,181 neurons (Dorkenwald et al. 2024); in the larval *Drosophila* connectome, 66% of edges carry only one or two synapses (Winding et al. 2023). Move the threshold and the hub list, the clustering coefficient and the community partition move with it.
+
+Once the graph exists, every number it yields needs a baseline before it means anything. The worked example below, with illustrative numbers, finds a "hub" with 214 partners that is a merge error, and a clustering coefficient of 0.19 that is 1.7 times a degree-preserving null but has not been tested against space. Both checks are cheap, and both are skipped in reports that treat library output as a result. The studio hands you a synthetic 500-neuron column and three questions from a PI, and the rubric fails any metric that stands without a null.
+
+This module sits between the hypothesis you designed in [Module 08]({{ '/modules/module08/' | relative_url }}) and the motif tests of [Module 11]({{ '/modules/module11/' | relative_url }}): it is where the object those tests run on gets built, and where its construction gets written down so someone else can build the same one.
+
+**Where this sits next to Technical Unit 09.** [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) covers analysis in depth: graph construction as a sequence of consequential choices, null models that preserve the right nuisance structure, motif analysis under reconstruction error, methods beyond motifs, what transfers to NeuroAI, and a 2-hour lab that produces a defensible motif analysis. This module adds the first pass: building one graph from a synapse table, stating its schema before any metric appears, choosing two metrics for a named question and pairing each with a degree-preserving null, and checking degree outliers against the reconstruction before calling them hubs. Do the unit for the nulls and the motif census; do this module for the graph and the report.
 
 ## Concept set
 
@@ -71,7 +80,7 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 **Key decision:** What are your nodes? What are your edges? Neurons as nodes and synapses as directed edges is the default, but alternatives exist — compartment-level nodes (axon vs dendrite of the same neuron), type-level nodes (aggregating neurons by class), and different edge weightings (binary, synapse count, cleft area).
 
 ### 2) The threshold problem
-In real connectomes, many neuron pairs share only 1-2 synapses. Are these "real" connections or detection noise? The choice of minimum synapse threshold for defining an edge dramatically changes the graph:
+In real connectomes, many neuron pairs share only 1-2 synapses; in the larval *Drosophila* connectome, 66% of edges do (Winding et al. 2023). Are these "real" connections or detection noise? The choice of minimum synapse threshold for defining an edge dramatically changes the graph:
 - Threshold = 1: maximum sensitivity, maximum noise
 - Threshold = 5: cleaner graph, but genuine weak connections lost
 - No threshold: use continuous weights
@@ -122,6 +131,8 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 6. Document abstraction limits: what information was lost in the graph construction?
 
 ## 60-minute tutorial run-of-show
+
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class preparation, the [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}), the content-library pages on graph representations and network analysis methods, and the quick practice prompt. Both the [10-week map]({{ '/teaching/syllabi/10-week/' | relative_url }}#what-this-map-uses-and-omits) and the [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) list this kit as a take-home for learners with Python, so the hours beyond the session are take-home time.
 
 ### Pre-class preparation (10 min async)
 - Read [Graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }})
@@ -216,12 +227,14 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 - [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}) — a synthetic 500-neuron column graph
 
-## References
+## Academic references
 - Watts DJ, Strogatz SH (1998) "Collective dynamics of 'small-world' networks." *Nature* 393:440-442.
 - Rubinov M, Sporns O (2010) "Complex network measures of brain connectivity." *NeuroImage* 52(3):1059-1069.
 - Song S et al. (2005) "Highly nonrandom features of synaptic connectivity." *PLoS Biology* 3(3):e68.
 - Sporns O (2010) *Networks of the Brain*. MIT Press.
 - Newman MEJ (2006) "Modularity and community structure in networks." *PNAS* 103(23):8577-8582.
+- Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138. doi:10.1038/s41586-024-07558-y.
+- Winding M et al. (2023) "The connectome of an insect brain." *Science* 379:eadd9330. doi:10.1126/science.add9330.
 
 ## Quick practice prompt
 State one reason a graph metric might be misleading in your current dataset.

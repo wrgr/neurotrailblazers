@@ -59,12 +59,15 @@ prerequisites_list:
 next_modules:
   - "module22"
 references:
-  - "Wilkinson et al. (2016) - FAIR Guiding Principles."
-  - "Peng (2011) - Reproducible Research in Computational Science."
-  - "Project-specific release documentation for H01/MICrONS/FlyWire."
+  - "Wilkinson MD et al. (2016) The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3:160018."
+  - "Peng RD (2011) Reproducible research in computational science. Science 334(6060):1226-1227."
+  - "Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten simple rules for reproducible computational research. PLoS Computational Biology 9(10):e1003285."
+  - "Stodden V et al. (2016) Enhancing reproducibility for computational methods. Science 354(6317):1240-1241."
+  - "Lamprecht A-L et al. (2020) Towards FAIR principles for research software. Data Science 3(1):37-59."
+  - "Dorkenwald S et al. (2025) CAVE: Connectome Annotation Versioning Engine. Nature Methods 22(5):1112-1120."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -80,21 +83,45 @@ Connectomics studies are technically dense and often impossible to interpret wit
 - **Technical:** findable identifiers, accessible storage, interoperable formats, and reusable metadata each require concrete engineering choices.
 - **Plain language:** "FAIR" only counts if someone else can actually find, open, and use your work.
 - **Misconception guardrail:** posting files online makes work FAIR.
+- **Why it fails:** a file with no persistent identifier, no metadata and no license can be downloaded but not found, cited or legally reused. Each of the four letters is a separate check, and a URL on its own passes none of them.
 
 ### 2) Reproducibility is layered
 - **Technical:** computational reproducibility (same code/data => same result) differs from inferential reproducibility (same conclusion under reasonable variation).
 - **Plain language:** rerunning code and trusting conclusions are related but not identical.
 - **Misconception guardrail:** a notebook that ran end-to-end once is proof of reproducible science.
+- **Why it fails:** it ran once, on one machine, against whatever data version and dependencies were current that day. Reproducibility is a property of a rerun by someone else, from the recorded versions, that gives the same answer.
 
 ### 3) Hidden curriculum in reproducibility
 - **Technical:** unwritten norms include naming conventions, release etiquette, assumption disclosure, and reviewer-ready method transparency; trainees can only be fairly assessed against these norms after the norms have been taught.
 - **Plain language:** many expectations are "known by insiders" unless we teach them directly.
 - **Misconception guardrail:** reproducibility norms are common sense that any careful trainee will infer without being taught.
+- **Why it fails:** the norms are specific (what to pin, what to name, what to disclose) and they differ between labs. A trainee who has not been told them is being graded on questions that were withheld.
 
 ### 4) FAIR applied to connectomics
 Each FAIR principle maps to concrete connectomics infrastructure. Findable means assigning DOIs for datasets and providing stable CAVE endpoints that resolve to specific data versions. Accessible means offering open APIs and tools like CloudVolume that allow programmatic data retrieval without manual download. Interoperable means using standard formats such as SWC for neuron morphologies, Zarr for volumetric data, and NWB for neurophysiology so that tools across labs can ingest each other's outputs. Reusable means materialization versioning in CAVE, which lets any researcher retrieve the exact state of the segmentation and annotations at a given point in time.
 
 A practical reproducibility checklist for any connectomics analysis release should include: the dataset version or release identifier, the CAVE materialization number (if applicable), the code commit hash for all analysis scripts, the environment specification (e.g., conda environment file or Docker image), and the full parameter configuration used. Without all five elements, a third party cannot reliably reproduce the analysis, even with access to the same underlying data.
+
+- **Misconception guardrail:** a commit hash and an environment file make a rerun reproducible.
+- **Why it fails:** the dataset version and the parameter configuration are the two elements that move most often, and neither lives in the code. The worked example below is a rerun with identical code and a different answer.
+
+### 5) A release is a version, so it needs a deprecation path
+- **Technical:** a release that can never be superseded is either never corrected or silently overwritten, and both break every result already published against it. Give each release an identifier, a changelog entry that says what changed and why, and a deprecation note that keeps the old version resolvable and states which results it should no longer be cited for. Version 2 corrects version 1 in public; it does not replace it.
+- **Plain language:** fixing a mistake means publishing the fix next to the mistake, not over it.
+- **Misconception guardrail:** once a corrected release is out, the old one should be deleted so nobody uses it by accident.
+- **Why it fails:** results already published against the old version become unreproducible the moment it disappears. Keep it resolvable, mark it deprecated, and say what the correction changed.
+
+## The five elements, and what breaks without each
+
+| Element | Where it has to appear | What breaks when it is missing |
+|---|---|---|
+| Dataset release identifier, with a DOI where one exists | Methods, every figure legend, the README | A reader cannot find the data, or two readers analyze different releases and argue about the difference |
+| Materialization number or timestamp | Every query, every legend | Root IDs resolve to different objects; the count drifts with no code change, which is the worked example below |
+| Code commit hash or release tag | Methods, README, figure caption | The repository link points at code that has changed since the figure was made |
+| Environment specification: an exported conda file, a lock file, or a container digest | The repository, next to the code | "Works on my machine"; the first undeclared dependency stops the rerun, and "Python 3.11" is not an environment |
+| Parameter configuration, as a file under version control and cited by name | The repository, named in the methods | The rerun uses defaults you did not, and the number changes with no visible cause |
+
+The test for each row is the same: could a stranger, with no channel to ask you questions, rerun the analysis from what is written down?
 
 ## Worked example: the number that changed while the code did not
 
@@ -132,6 +159,9 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 3. Validate rerun path in a clean environment.
 4. Write methods/limitations notes for external users.
 5. Publish with changelog and deprecation policy.
+
+## Time budget
+The declared 4 to 5 hours are: the 15-minute pre-class reading below and about 30 minutes on the concept set, the 90-minute meeting the [16-week syllabus map]({{ '/teaching/syllabi/16-week/' | relative_url }}) gives this kit in week 12 (the 60-minute run-of-show below plus the opening of the studio activity; the 10-week map leaves this kit out), and 2 to 3 hours outside class completing the clean-environment rerun and the studio package, the quick practice prompt, and the linked readings.
 
 ## 60-minute tutorial run-of-show
 
@@ -209,7 +239,7 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 - **Format specifications.** What SWC, Zarr, and NWB actually contain and when to use each is [data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}).
 - **Whether the pinned analysis is statistically sound.** Reproducing a result exactly does not make it right; inference validity is [Module 20]({{ '/modules/module20/' | relative_url }}).
 - **Storage, cost, and query infrastructure.** Sizing and operating the systems that hold the data is [Module 12]({{ '/modules/module12/' | relative_url }}).
-- **Writing and presenting the released work.** Manuscript and presentation practice is [Module 22]({{ '/modules/module22/' | relative_url }}).
+- **Writing and presenting the released work.** The manuscript is [Module 17]({{ '/modules/module17/' | relative_url }}); the talk is [Module 22]({{ '/modules/module22/' | relative_url }}).
 - **Data governance and sharing agreements.** Licensing law, embargoes, and consortium policy are institution-specific and handled outside this curriculum; this module covers only what a release must contain to be reusable.
 
 ## Content library references
@@ -224,12 +254,8 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 - Mentorship support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 
 ## Evidence anchors from connectomics practice
-### Key papers/resources to use
-- [Wilkinson MD et al. (2016). "The FAIR Guiding Principles for scientific data management and stewardship." *Scientific Data* 3:160018.](https://www.nature.com/articles/sdata201618)
-- [Peng (2011) - Reproducible Research in Computational Science](https://www.science.org/doi/10.1126/science.1213847)
-- [H01 dataset landing + paper](https://h01-release.storage.googleapis.com/landing.html)
-
 ### Key datasets/platforms
+- [H01 dataset landing page](https://h01-release.storage.googleapis.com/landing.html)
 - [MICrONS Explorer](https://www.microns-explorer.org/)
 - [FlyWire](https://flywire.ai/)
 - [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
@@ -238,6 +264,14 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 - Can an external learner rerun your result with your documentation alone?
 - Are dataset and code versions explicit in every core artifact?
 - Are your known limitations concrete enough to guide interpretation?
+
+## Academic references
+- Wilkinson MD et al. (2016) "The FAIR Guiding Principles for scientific data management and stewardship." *Scientific Data* 3:160018. doi:10.1038/sdata.2016.18. The four principles Concept 1 turns into engineering choices.
+- Peng RD (2011) "Reproducible research in computational science." *Science* 334(6060):1226-1227. doi:10.1126/science.1213847. The reproducibility spectrum, from a description of the method to code plus data; Concept 2's layers.
+- Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) "Ten simple rules for reproducible computational research." *PLoS Computational Biology* 9(10):e1003285. doi:10.1371/journal.pcbi.1003285. Version everything, record every parameter, keep the raw data; the rules behind the five elements.
+- Stodden V et al. (2016) "Enhancing reproducibility for computational methods." *Science* 354(6317):1240-1241. doi:10.1126/science.aah6168. Why journals ask for the data, code and environment, not a promise of them.
+- Lamprecht A-L et al. (2020) "Towards FAIR principles for research software." *Data Science* 3(1):37-59. doi:10.3233/DS-190026. FAIR applied to the code rather than the data, including identifiers and versioning for software.
+- Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22(5):1112-1120. doi:10.1038/s41592-024-02426-z. Materialization versions and root-ID lineage: the mechanism behind the worked example.
 
 ## Quick practice prompt
 Take one prior analysis output and add:

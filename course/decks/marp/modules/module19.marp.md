@@ -201,9 +201,11 @@ Choose a connectomics abstract (from a real paper or the mock preprint) and prod
 ---
 
 ## References (Instructor)
-- COPE Core Practices.
-- ICMJE authorship recommendations.
-- FAIR principles (Wilkinson et al., 2016).
+- Bourne PE, Korngreen A (2006) Ten simple rules for reviewers. PLoS Computational Biology 2(9):e110.
+- Brand A, Allen L, Altman M, Hlava M, Scott J (2015) Beyond authorship: attribution, contribution, collaboration, and credit. Learned Publishing 28(2):151-155.
+- Simmons JP, Nelson LD, Simonsohn U (2011) False-positive psychology. Psychological Science 22(11):1359-1366.
+- Dorkenwald S et al. (2024) Neuronal wiring diagram of an adult brain. Nature 634(8032):124-138.
+- Shapson-Coe A et al. (2024) A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. Science 384(6696):eadk4858.
 
 ---
 

@@ -61,12 +61,14 @@ next_modules:
   - "module19"
   - "module20"
 references:
-  - "Wilkinson et al., 2016. The FAIR Guiding Principles for scientific data management and stewardship."
-  - "Peng, 2011. Reproducible Research in Computational Science."
-  - "MICrONS and related connectomics workflow documentation."
+  - "Wilkinson MD et al. (2016) The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3:160018."
+  - "Peng RD (2011) Reproducible research in computational science. Science 334(6060):1226-1227."
+  - "Dorkenwald S et al. (2025) CAVE: Connectome Annotation Versioning Engine. Nature Methods 22(5):1112-1120."
+  - "The MICrONS Consortium (2025) Functional connectomics spanning multiple areas of mouse visual cortex. Nature 640(8058):435-447."
+  - "Januszewski M et al. (2018) High-precision automated reconstruction of neurons with flood-filling networks. Nature Methods 15(8):605-610."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -122,6 +124,22 @@ Most downstream failures in connectome analysis start in the data and its prepro
 - **Plain language:** a dashboard is useful only if it changes what you do.
 - **Misconception guardrail:** reporting QC metrics is quality control.
 - **Why it fails:** a metric without a threshold and an associated action is monitoring. Quality control changes what you do.
+
+## Worked example: placing one threshold, and showing your work
+
+The numbers here are from the [Module 18 kit]({{ '/assets/kits/module18/README.md' | relative_url }}), which is synthetic and generated from a fixed seed, and they match the published [model responses]({{ '/teaching/answers/module18/' | relative_url }}) for this module. Nothing below describes a real dataset. The scenario in the studio uses larger, invented figures; this example shows the reasoning on the small table you can open.
+
+**Start with the integrity steps, not the threshold.** `noisy_synapses.csv` has 30,450 rows. Removing the 447 exact duplicate rows, the rows whose endpoints are missing from `segments.csv`, and the autapses (pre equals post) leaves 29,589 rows. Thresholding before these steps would have counted duplicates twice and scored rows that have no partner.
+
+**Look at the distribution before choosing a number.** The cleft-score histogram (0 to 255) is bimodal. A low mode peaks at scores 32 to 39 (962 rows), a high mode peaks at 144 to 151 (2,288 rows), and the trough sits at 64 to 71 (428 rows). The studio scenario's candidate values of 30 and 50 both fall inside the low mode: only 6.8% and 14.4% of rows sit below them, and most of the low mode survives either cut.
+
+**Two candidates, one decision.** At 64, the trough, 5,315 rows are removed (18.0%), and the graph among the 407 neurons with a soma keeps 2,231 directed edges. The rows that touch a segment smaller than 1 µm³, which is the debris tail, drop from 2,905 to 178, so the low mode is mostly detections onto fragments. At 96, a conservative cut, 7,638 rows go (25.8%) and 2,013 edges remain, 9.8% fewer than at 64, because the cut now reaches into the high mode and removes true synapses with moderate scores. The preferred value is 64, placed at the trough with the histogram shown, and 96 is reported as a sensitivity run. A learner who prefers 96 for a motif analysis, where false positives do the most damage, is also right, as long as the reason is written down.
+
+**The decision-log entry.** What: cleft-score threshold at 64. Why: the trough of a bimodal score distribution, separating a low mode concentrated on debris from a high mode of plausible synapses. Parameters: score >= 64 on the 0 to 255 scale, applied after duplicate removal, endpoint validation and autapse removal. Impact: 29,589 rows to 24,274; 2,231 directed edges among 407 neurons. Risk: true synapses with scores in the low mode are lost, and the size of that loss is not known from this table alone.
+
+**The sensitivity statement.** Moving the threshold 20% either way changes the edge count by a few percent: 2,284 edges at 51 (+2.4%), 2,165 at 77 (-3.0%). A conclusion that survives that range does not depend on the exact number; one that flips inside it is a conclusion about the threshold.
+
+**What this example does not establish.** That 64 is right for any other table. A threshold does not transfer between synapse tables with different score scales or detectors. The method transfers: integrity first, histogram second, a value at the trough, and a sensitivity run on either side of it.
 
 ## Core workflow: preprocessing for connectomics
 1. **Ingest and integrity validation**
@@ -180,6 +198,25 @@ Most downstream failures in connectome analysis start in the data and its prepro
   - Metrics reported without operational thresholds.
   - Missing dataset version or code commit in the release note.
 
+## Common errors and how to recover
+
+- **You applied a threshold from another dataset's documentation.** Score scales and detectors differ, so the number means nothing here. Recover by plotting this table's score histogram, placing the cut at its trough, and reporting the histogram with the threshold.
+- **Cleaning removed one cell type faster than the others.** Recover by tabulating retention per cell type. If any type sits more than a few points from the overall rate, flag rather than drop, and report the composition change; uneven loss changes the population being studied.
+- **Duplicate synapse rows reached the graph.** Deduplicating on the synapse ID alone misses rows that repeat with a new ID. Recover by deduplicating on the full row, reporting the count removed, and adding a zero-duplicates gate.
+- **Synapse endpoints are missing from the segment table.** The two tables came from different materializations. Recover by stopping, re-querying both at one version, and treating a nonzero count of unmatched endpoints as a gate failure, not a row to drop.
+- **The decision log was written after the analysis and has no row counts.** Recover by rerunning the pipeline with logging on, so every step emits its before and after counts, and replacing the reconstructed log with the emitted one.
+- **Boundary neurons were dropped, and a degree-by-position analysis followed.** Recover by flagging instead of dropping, keeping the flag in the released table, and stating that flagged degrees are underestimates; compare degree by position only after excluding the flagged cells and saying so.
+- **The QC dashboard is full and nobody acted on it.** Recover by attaching a gate and an action to every metric. A metric that has neither is removed from the dashboard, because it was monitoring, not control.
+
+## What this module does not cover
+
+- **The upstream pipeline that produces the artifacts.** Segmentation, synapse detection and their error rates are [Module 14]({{ '/modules/module14/' | relative_url }}), [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) and the [reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) page. This module cleans the tables those produce.
+- **Proofreading.** Correcting merges and splits in the segmentation itself is [Module 07]({{ '/modules/module07/' | relative_url }}); a cleaning step never repairs a segmentation error, it only decides how to treat its trace in the table.
+- **Imaging artifacts in the raw EM.** Folds, section loss and staining defects are [Technical Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}) and the [artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}); here they appear only as their downstream effects on tables.
+- **Inference on the cleaned graph.** Null models, multiplicity and threshold sensitivity as a statistical question are [Module 20]({{ '/modules/module20/' | relative_url }}).
+- **The release itself.** FAIR packaging, identifiers and the clean-room rerun are [Module 21]({{ '/modules/module21/' | relative_url }}); the release note written here is its input.
+- **Storage and query cost.** Sizing tables and pinning materializations at scale are [Module 12]({{ '/modules/module12/' | relative_url }}).
+
 ## Content library cross-references
 - [Graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }}) --- the graph structures that preprocessing feeds into, and how cleaning decisions affect them.
 - [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) --- the infrastructure for tracking dataset versions, materializations, and transform lineage.
@@ -192,6 +229,9 @@ Most downstream failures in connectome analysis start in the data and its prepro
 - Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 - Quality framework: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - [Module 18 kit]({{ '/assets/kits/module18/README.md' | relative_url }}) — a synthetic noisy export and the QC dashboard template
+
+## Time budget
+The declared 4 to 5 hours are: about 30 minutes reading the concept set beforehand, a 90-minute meeting (the 60-minute run-of-show below plus the opening of the studio activity), and 2 to 3 hours outside class finishing the studio release note, the quick practice prompt, and the linked readings. Neither [syllabus map]({{ '/teaching/syllabi/' | relative_url }}) schedules this kit; the 16-week map leaves Kits 12 to 16 and 18 out for time, so run it as a lab meeting or a take-home between the proofreading work of Technical Unit 08 and the inference work of Module 20.
 
 ## 60-minute tutorial run-of-show
 
@@ -228,13 +268,6 @@ Each team submits one release note with: dataset version, all thresholds and par
 
 ## Evidence anchors from connectomics practice
 
-### Key papers to use in this module
-- [Januszewski, M. et al. (2018). "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods*, 15, 605-610.](https://doi.org/10.1038/s41592-018-0049-4) --- understanding the segmentation artifacts that preprocessing must address.
-- [Shapson-Coe, A. et al. (2024). H01 human cortical fragment. *Science.*](https://www.science.org/doi/10.1126/science.adk4858) --- dataset description and quality documentation practices.
-- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature*, 640.](https://www.nature.com/articles/s41586-025-08790-w) --- large-scale preprocessing decisions and their documentation.
-- [Wilkinson, M.D. et al. (2016). "The FAIR Guiding Principles for scientific data management and stewardship." *Scientific Data*, 3, 160018.](https://doi.org/10.1038/sdata.2016.18) --- provenance and metadata standards.
-- [Peng, R.D. (2011). "Reproducible Research in Computational Science." *Science*, 334, 1226-1227.](https://doi.org/10.1126/science.1213847) --- why preprocessing documentation matters for reproducibility.
-
 ### Key datasets to practice on
 - [NeuroTrailblazers workflow overview]({{ '/datasets/workflow/' | relative_url }})
 - [MouseConnects (HI-MC)]({{ '/datasets/mouseconnects/' | relative_url }})
@@ -246,6 +279,13 @@ Each team submits one release note with: dataset version, all thresholds and par
 - Can you state one unresolved data-risk that could still affect downstream interpretation?
 - Can you explain what biological signal might have been lost at each filtering step?
 - If you changed your synapse confidence threshold by 10 points, would your main conclusion still hold?
+
+## Academic references
+- Wilkinson MD et al. (2016) "The FAIR Guiding Principles for scientific data management and stewardship." *Scientific Data* 3:160018. doi:10.1038/sdata.2016.18. The metadata standard the release package is written to.
+- Peng RD (2011) "Reproducible research in computational science." *Science* 334(6060):1226-1227. doi:10.1126/science.1213847. The reproducibility spectrum: why a decision log with code and data beats a description of the method.
+- Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22(5):1112-1120. doi:10.1038/s41592-024-02426-z. Materialization versions, which is why the ingest step checks that every table comes from the same one.
+- The MICrONS Consortium (2025) "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature* 640(8058):435-447. doi:10.1038/s41586-025-08790-w. Reports synapse-detection precision of 96% and recall of 89%, the kind of number a confidence-threshold decision has to be read against.
+- Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610. doi:10.1038/s41592-018-0049-4. Where merges and splits come from, so that the debris tail and the oversized segments in Concept 1 have a cause.
 
 ## Quick practice prompt
 Take one connectomics table (real or mock) and write:

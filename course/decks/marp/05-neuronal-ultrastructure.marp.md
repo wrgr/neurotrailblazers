@@ -260,7 +260,7 @@ Use this to connect the cue work back to acquisition: block-face imaging gives n
 ---
 
 ## References and attribution
-- Figures RIV-ULTRA: Pat Rivlin training materials (MICrONS proofreading deck).
+- Figures RIV-ULTRA: Pat Rivlin training materials (MICrONS proofreading deck) (attribution as given in the source deck; not independently verified).
 - Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
 - Kasthuri et al. (2015), *Cell*, doi:10.1016/j.cell.2015.06.054 — dense cortical ultrastructure.
 - Harris & Weinberg (2012), *Cold Spring Harb Perspect Biol*, doi:10.1101/cshperspect.a005587 — synapse ultrastructure.

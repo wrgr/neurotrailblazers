@@ -60,9 +60,12 @@ next_modules:
 references:
   - "National Academies of Sciences, Engineering, and Medicine (2019) The Science of Effective Mentorship in STEMM. National Academies Press."
   - "National Academies of Sciences, Engineering, and Medicine (2018) Graduate STEM Education for the 21st Century. National Academies Press."
+  - "Fuhrmann CN, Halme DG, O'Sullivan PS, Lindstaedt B (2011) Improving graduate education to support a branching career pipeline. CBE-Life Sciences Education 10(3):239-249."
+  - "Sauermann H, Roach M (2012) Science PhD career preferences: levels, changes, and advisor encouragement. PLoS ONE 7(5):e36307."
+  - "Gibbs KD, McGready J, Bennett JC, Griffin K (2014) Biomedical science Ph.D. career interest patterns by race/ethnicity and gender. PLoS ONE 9(12):e114736."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -145,6 +148,9 @@ Fit depends on where you are, so read the last two columns before the first.
 | Industry data, ML, or imaging role | Engineering practice, scale, and pay now | A portfolio a non-neuroscientist can read, with skills named in their vocabulary | Moderate. Returning to a doctoral program later is possible, though it gets harder as compensation rises | Time away from the publication record, and the work of translating your experience for readers who will not recognize what connectomics required |
 
 If two rows score similarly on fit, choose on reversibility and write down why. Recording the reasoning is what lets you evaluate the decision in two years rather than relitigating it.
+
+## Time budget
+The declared 4 hours are: about 30 minutes reading the concept set beforehand, a 90-minute meeting (the 60-minute run-of-show below plus the opening of the studio activity), and about 2 hours outside class finishing the fit matrix, the outreach drafts and the 90-day plan, the quick practice prompt, and the linked readings. Neither [syllabus map]({{ '/teaching/syllabi/' | relative_url }}) schedules this kit as a meeting, because it overlaps the Future Forward workshop; the 16-week map assigns its decision table as 15 minutes of preparation for that workshop in week 15, and the rest works as a take-home.
 
 ## 60-minute tutorial run-of-show
 1. **00:00-08:00 | Pathway framing and myths**
@@ -230,6 +236,13 @@ Julian's follow-up, sent the same day, is two sentences: thanks, and the specifi
 - Stage framing: [Program Models]({{ '/models/' | relative_url }}) — the MERIT stages this module refers to
 - Workshops that continue this module: [Charting Your Course in Research]({{ '/teaching/pathways/charting-your-course/' | relative_url }}), [Building Your STEM Entourage]({{ '/teaching/pathways/building-your-entourage/' | relative_url }}), and [Future Forward]({{ '/teaching/pathways/future-forward/' | relative_url }})
 - Start-here guidance: [Start Here]({{ '/start-here/' | relative_url }})
+
+## Academic references
+- National Academies of Sciences, Engineering, and Medicine (2019) *The Science of Effective Mentorship in STEMM.* National Academies Press. doi:10.17226/25568. Mentorship as a set of distinct functions filled by several people; the mentorship map in Concept 6.
+- National Academies of Sciences, Engineering, and Medicine (2018) *Graduate STEM Education for the 21st Century.* National Academies Press. doi:10.17226/25038. The case for career preparation inside graduate training rather than after it.
+- Fuhrmann CN, Halme DG, O'Sullivan PS, Lindstaedt B (2011) "Improving graduate education to support a branching career pipeline: recommendations based on a survey of doctoral students in the basic biomedical sciences." *CBE-Life Sciences Education* 10(3):239-249. doi:10.1187/cbe.11-02-0013. Survey evidence that doctoral students' career interests branch during training; Concept 4's range of paths.
+- Sauermann H, Roach M (2012) "Science PhD career preferences: levels, changes, and advisor encouragement." *PLoS ONE* 7(5):e36307. doi:10.1371/journal.pone.0036307. Preferences change during the PhD and advisor encouragement is uneven across paths, which is why the fit matrix uses evidence rather than encouragement.
+- Gibbs KD, McGready J, Bennett JC, Griffin K (2014) "Biomedical science Ph.D. career interest patterns by race/ethnicity and gender." *PLoS ONE* 9(12):e114736. doi:10.1371/journal.pone.0114736. Career interest patterns differ by group, which is the evidence behind the equity-oriented supports.
 
 ## Quick practice prompt
 Draft one 5-sentence mentor outreach email with an alignment statement naming a specific piece of their work, one relevant artifact you can link, and one question answerable in a single sentence. Then check it against one test: could this email have been sent to anyone else? If yes, rewrite the first sentence.

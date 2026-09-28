@@ -68,7 +68,7 @@ references:
   - "Januszewski et al. (2018) for scalable reconstruction context."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -84,7 +84,7 @@ The failure mode is rarely a crash. It is a query that takes eleven hours instea
 ## Concept set
 
 ### 1) Storage layout is chosen by access pattern, not by format popularity
-- **Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM compresses 2-10x; label volumes compress far better.
+- **Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM imagery compresses losslessly by only a small factor; label volumes compress far better. Measure the ratio on a sample of your own data before budgeting.
 - **Plain language:** the chunk is the smallest thing you can read, so shape it like the reads you will actually do.
 - **Misconception guardrail:** the format everyone else uses is automatically the right layout for your access pattern.
 
@@ -94,7 +94,7 @@ The failure mode is rarely a crash. It is a query that takes eleven hours instea
 - **Misconception guardrail:** storage cost is the storage line on the invoice.
 
 ### 3) Derived data, not raw image, is most of what you will manage
-- **Technical:** raw is one line item among many, and the derived products are the ones analysts actually touch. Approximate footprints for a ~1 mm³ project, relative to raw unless stated:
+- **Technical:** raw is one line item among many, and the derived products are the ones analysts actually touch. Approximate footprints for a ~1 mm³ project, relative to raw unless stated. The table is this site's planning rule of thumb: the released datasets publish their raw and aligned sizes (see the scale table below) but not this breakdown, so check each line against your own pipeline's outputs.
 - **Plain language:** budget for everything the pipeline makes, not for the number in the paper's abstract.
 - **Misconception guardrail:** the dataset size is the petabyte figure quoted for the raw imagery.
 
@@ -181,6 +181,9 @@ Use these as starting positions and justify any departure.
 - Read the [data formats]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) and [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) library pages.
 - Bring one query you have actually run, with its runtime and its data source.
 - Have a calculator or notebook open; the first exercise is arithmetic, not code.
+
+## Time budget
+The declared 4 to 5 hours are: about 30 minutes reading the concept set beforehand, a 90-minute meeting (the 60-minute run-of-show below plus the opening of the studio activity), and 2 to 3 hours outside class finishing the studio's sizing, query plans and diagnosis, the quick practice prompt, and the linked readings. Neither [syllabus map]({{ '/teaching/syllabi/' | relative_url }}) schedules this kit; the 16-week map leaves Kits 12 to 16 and 18 out for time, so run it as a lab meeting or a take-home.
 
 ## 60-minute tutorial run-of-show
 1. **00:00-08:00 | Architecture framing and failure examples**
@@ -286,7 +289,7 @@ Sources: MICrONS Consortium (2025) for MICrONS (the [MICrONS Explorer](https://w
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - [Module 12 kit]({{ '/assets/kits/module12/README.md' | relative_url }}) — `profile_join.py`, the query to profile on synthetic tables
 
-## References
+## Academic references
 - Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22:1112-1120. doi:10.1038/s41592-024-02426-z.
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex." *Science* 384(6696):eadk4858.

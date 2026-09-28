@@ -57,13 +57,22 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
 
 ## Capability target
 Detect and categorize core segmentation errors and execute one correction cycle with documented quality impact.
+
+## Why this module matters
+Every connectome you will analyze is an automated segmentation with human corrections on top, and the corrections are the expensive part. FlyWire's proofreading took an estimated 33 person-years (Dorkenwald et al. 2024). That time buys nothing if the edits are not aimed: a proofreader who fixes the ten most conspicuous errors in a subvolume has probably left the merge that joins two of the neurons in your analysis set. This module teaches the habit that makes edits count, which is to diagnose the error, estimate what it does to the connectivity graph, fix it, and measure whether the fix helped.
+
+The habit has a direction. Merges and splits are not symmetric: a split is a visible, bounded error, and a merge made while "fixing" a split is an invisible, unbounded one that hands synapses to a cell that does not exist. The worked example below walks the whole cycle on one object, and the studio hands you 25 flagged candidates from a synthetic kit with time to fix ten, so that ranking is forced, not optional.
+
+The module ends with a release note, and that is the point. A segmentation is never finished; it is released at a stated level with stated remaining error. Writing three sentences that say what was fixed, what was deferred and what is still unmeasured is the first version of a skill you use again in [Module 07]({{ '/modules/module07/' | relative_url }}), when the decision is whether to release at all.
+
+**Where this sits next to Technical Unit 08.** [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) covers the operation in depth: how automated segmentation works, the error taxonomy with each error's cost, what each quality metric is blind to, the production proofreading loop, the human factors of a labor operation, and a 2-hour lab that writes a proofreading plan with a defended budget. This module adds the hands-on cycle: one correction from diagnosis to before/after numbers, a queue of 25 candidates ranked by graph impact, and a correction log a reader could re-find the site from. Do the unit for the metrics and the plan; do this module for the edit.
 
 ## Concept set
 
@@ -113,7 +122,9 @@ You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis o
 4. Recalculate quality indicators: did the correction improve local metrics?
 5. Log decisions: record what was changed, why, and what evidence supported the decision.
 
-## 60-minute tutorial run-of-show (full instructor version)
+## 60-minute tutorial run-of-show
+
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class reading and viewer browsing, downloading and reading the [Module 06 kit]({{ '/assets/kits/module06/README.md' | relative_url }}), the content-library pages on error taxonomy and metrics, and the quick practice prompt. Neither course map schedules this kit (the [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
 
 ### Pre-class preparation (10 min async)
 - Read the [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) page
@@ -207,7 +218,7 @@ You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis o
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - [Module 06 kit]({{ '/assets/kits/module06/README.md' | relative_url }}) — 25 synthetic flagged candidates, a ground-truth file and the metric script
 
-## References
+## Academic references
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Lee K et al. (2017) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
 - Funke J et al. (2019) "Large scale image segmentation with structured loss." *IEEE TPAMI* 41(7):1669-1680.

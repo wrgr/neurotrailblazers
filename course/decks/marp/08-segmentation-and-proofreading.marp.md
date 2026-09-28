@@ -97,7 +97,7 @@ This carries the Unit 05 reading skills into proofreading. Every correction deci
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-Across 104 proofread cells, c3 needed 1.6x fewer merge fixes and 2.1x more split fixes than c2. Aggressive agglomeration trades splits for merges; conservative trades merges for splits.
+Across 104 proofread cells, c3 needed 1.6x fewer merge fixes and 2.1x more split fixes than c2. Source: Shapson-Coe et al. 2024 (Science 384:eadk4858, PMC11718559): "the c3 agglomeration required 1.6-fold less correction of merge errors (257 vs. 400 merge correction operations per cell ...) but 2.1-fold more correction of split errors (504 vs. 238 split correction operations per cell ...)". Aggressive agglomeration trades splits for merges; conservative trades merges for splits.
 Instructor script: "Which one would you proofread on? It depends on your endpoint. If you are counting inputs per cell, a merge invents inputs; if you are tracing long-range axons, splits cost you the path." Note also what 104 proofread cells out of 16,087 neurons means in practice: most of the volume has never been checked by a human.
 -->
 
@@ -114,6 +114,7 @@ Instructor script: "Which one would you proofread on? It depends on your endpoin
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
+Source of "11,038 voxels": the count of merged-on voxels in this one section, printed by scripts/render_em_figures.py (merge_split_figure) when the figure was rendered from the public H01 volume; it describes this section only and was not re-run for this revision.
 Instructor script: "The membrane it crossed is real but faint. Would you have caught it?" Give the room ten seconds on the left panel before pointing.
 Then the second lesson: note where the error is NOT. At the soma, the automated segmentation needs no correction at all. Errors concentrate at thin processes and faint boundaries, which is why triage should look there rather than where the object is largest.
 -->
@@ -253,6 +254,6 @@ Every edit records who, when, what and ideally why. That record is what lets you
 ---
 
 ## References and attribution
-- Figures RIV-*: Pat Rivlin training materials (MICrONS proofreading deck); Module14 L2: assets_outreach source decks.
+- Figures RIV-*: Pat Rivlin training materials (MICrONS proofreading deck) (attribution as given in the source deck; not independently verified); Module14 L2: assets_outreach source decks.
 - Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
 - Januszewski et al. (2018), *Nature Methods*, doi:10.1038/s41592-018-0049-4 — flood-filling networks.

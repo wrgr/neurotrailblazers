@@ -43,6 +43,7 @@ Learners should arrive having covered:
     <a class="resource-link" href="{{ site.deck_source_base }}/modules/module21.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module21/module21-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module21/' | relative_url }}">Full module page</a>
+    <a class="resource-link" href="{{ '/teaching/answers/module21/' | relative_url }}">Model responses</a>
   </div>
 </div>
 
@@ -84,6 +85,10 @@ voiced is far easier to correct than one they are holding silently.
 - **They may believe:** A notebook that ran end-to-end once is proof of reproducible science.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 - **They may believe:** Reproducibility norms are common sense that any careful trainee will infer without being taught.
+  - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
+- **They may believe:** A commit hash and an environment file make a rerun reproducible.
+  - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
+- **They may believe:** Once a corrected release is out, the old one should be deleted so nobody uses it by accident.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm

@@ -65,7 +65,7 @@ references:
   - "Recent MICrONS/FlyWire methods for practical CV constraints."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -86,7 +86,7 @@ The asymmetry that governs every decision in this module is between the two erro
 - **Misconception guardrail:** one architecture solves all EM tasks equally well.
 
 ### 2) Error taxonomy over headline metrics
-- **Technical:** report VI decomposed into its split and merge components, ERL, and edge or synapse precision and recall — not a single number. VI is size-sensitive, so a single split through a long axon barely registers while boundary drift across many large segments dominates. ERL answers the tracing question directly: roughly, ERL near 10 µm means errors are dense enough that tracing is impractical, near 100 µm means typical dendritic branches can be traced, and near 1,000 µm means most neurons with arbors under 1 mm are essentially complete. The two metrics disagree in informative ways, and a model can win one while losing the other.
+- **Technical:** report VI decomposed into its split and merge components, ERL, and edge or synapse precision and recall — not a single number. VI is size-sensitive, so a single split through a long axon barely registers while boundary drift across many large segments dominates. ERL answers the tracing question directly. For scale, Januszewski et al. (2018) report "a mean error-free neurite path length of 1.1 mm" for flood-filling networks on a zebra finch SBEM volume, "an order of magnitude better than that of previous approaches applied to this dataset". The bands below are this site's rule of thumb for reading an ERL, not a published threshold: near 10 µm, errors are dense enough that tracing is impractical; near 100 µm, typical dendritic branches can be traced; near 1,000 µm, most arbors under 1 mm are close to complete. The two metrics disagree in informative ways, and a model can win one while losing the other.
 - **Plain language:** understand exactly how a model fails, not only how often.
 - **Misconception guardrail:** a higher benchmark score means safer downstream use.
 
@@ -164,13 +164,22 @@ You are choosing between an incumbent model A and a candidate model B for a prod
 - Bring or download one EM subvolume with visible artifacts ([Dataset Access]({{ '/datasets/access/' | relative_url }}) lists public sources).
 - Be ready to state which downstream product your segmentation would feed.
 
+## Time budget
+The declared 4 to 5 hours are: about 30 minutes reading the concept set beforehand, a 90-minute meeting (the 60-minute run-of-show below plus the opening of the studio activity), and 2 to 3 hours outside class finishing the studio's metric table, failure-case log and model card, the quick practice prompt, and the linked readings. Neither [syllabus map]({{ '/teaching/syllabi/' | relative_url }}) schedules this kit; the 16-week map leaves Kits 12 to 16 and 18 out for time, so run it as a lab meeting or a take-home after Technical Unit 08.
+
 ## 60-minute tutorial run-of-show
-1. **00:00-08:00** task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
-2. **08:00-20:00** choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output.
-3. **20:00-34:00** evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit]({{ '/assets/kits/module14/README.md' | relative_url }})), then solve for the break-even merge-to-split ratio.
-4. **34:00-46:00** error taxonomy and triage discussion. Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed.
-5. **46:00-56:00** model card drafting, including at least one unsupported use and the region breakdown of the metrics.
-6. **56:00-60:00** competency check: each learner states their release gate as a sentence that could fail.
+1. **00:00-08:00 | Task framing and exemplar failure modes**
+   Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
+2. **08:00-20:00 | Choose metrics tied to downstream biology**
+   Each learner writes the metric they would gate on and the threshold, before seeing any model output.
+3. **20:00-34:00 | Evaluate baseline vs candidate model**
+   Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit]({{ '/assets/kits/module14/README.md' | relative_url }})), then solve for the break-even merge-to-split ratio.
+4. **34:00-46:00 | Error taxonomy and triage discussion**
+   Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed.
+5. **46:00-56:00 | Model card drafting**
+   Include at least one unsupported use and the region breakdown of the metrics.
+6. **56:00-60:00 | Competency check**
+   Each learner states their release gate as a sentence that could fail.
 
 ## Studio activity
 {: #studio-activity}
@@ -255,7 +264,7 @@ Training data is expensive (manual annotation). Augmentation expands the effecti
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - [Module 14 kit]({{ '/assets/kits/module14/README.md' | relative_url }}) — synthetic model metrics by region and a failure-case log
 
-## References
+## Academic references
 - Ronneberger O et al. (2015) "U-Net: Convolutional Networks for Biomedical Image Segmentation." *MICCAI* 2015.
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Funke J et al. (2019) "Large scale image segmentation with structured loss." *IEEE TPAMI* 41(7):1669-1680.

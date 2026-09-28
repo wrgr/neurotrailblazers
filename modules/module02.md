@@ -57,7 +57,7 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -115,6 +115,8 @@ Every research environment operates on two sets of rules: the official ones (wri
 6. Draft attribution and collaboration norms for your team.
 
 ## Detailed run-of-show (90 minutes)
+
+**Where the 4 hours go.** The 90-minute session is the taught part, and the four parts of the studio playbook are drafted inside it. The rest is preparation, [The hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) and the [Dataset Access Guide]({{ '/datasets/access/' | relative_url }}), and follow-up: the [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) reading, the quick practice prompt, and revising the playbook after a week of watching your own lab.
 
 ### Block 1: Hidden curriculum reveal (00:00-15:00)
 - **Instructor script:** "Raise your hand if you have ever felt lost in a research setting --- not because the science was hard, but because you did not know the unwritten rules." (Expect most hands.) "Today we make those rules explicit."
@@ -184,6 +186,24 @@ Every research environment operates on two sets of rules: the official ones (wri
 - **Minimum:** clear norms list, help-seeking plan, and at least one communication script.
 - **Strong:** realistic escalation paths, reflection on barriers, ethics commitment with specific practices, mentor map with backup contacts.
 - **Failure:** generic advice without actionable steps; no personalization to learner's own context.
+
+## Common errors and how to recover
+
+- **Your norms inventory lists the written rules.** "Cite your sources" and "show up on time" are in every handbook; the hidden curriculum is what is not. Recover by testing each norm against one question, could a new person find this in a document?, and replacing every norm that passes with one you could only learn by watching or by getting it wrong.
+- **Your help request has no history.** "I can't get the query to work" hands the whole problem to the reader and reads as a request to do it for you. Recover by adding the three parts the script requires: how long you have been stuck, what you have already tried, and the specific thing you want from them.
+- **Your mentor map is three people in one room.** If all of them report to the same PI, one bad month in that lab takes your whole support network with it. Recover by adding one contact outside the team and a backup for every row; a map with no backups is a list of single points of failure.
+- **Your ethics commitment names no mechanism.** "I will attribute contributions fairly" is a value, not a practice. Recover by replacing each value with the action: which version identifier you record in every analysis, where contributor names are kept and who can see them, and how many days an error waits before you report it.
+- **You escalated once everyone could see the problem.** A blocked analysis that is three weeks old has already cost more than the awkward conversation would have. Recover by using the escalation script from Block 4 with a date in it, and by asking "who needs to know this today?" at the end of every stuck afternoon.
+- **You credited the lab and forgot the person.** The FlyWire paper credits its consortium as an author; your methods section can name the proofreader who fixed your cells. Recover by keeping a contributions log from the first day of a project, so that attribution is a lookup rather than a reconstruction from memory.
+
+## What this module does not cover
+
+- **Data governance in depth.** Licenses, consent, and the rules attached to human-tissue and animal datasets are [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) and the [Ethics and Governance lecture]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }}); this module asks you to commit to attribution and provenance, not to adjudicate a license.
+- **The mechanics of provenance.** Recording a materialization version and pinning an environment are practiced in [Module 03]({{ '/modules/module03/' | relative_url }}) and made systematic in [Module 21]({{ '/modules/module21/' | relative_url }}).
+- **Peer review, authorship disputes, and misconduct.** The formal side of scientific ethics is [Module 19]({{ '/modules/module19/' | relative_url }}); the longer treatment of disputes, including when formal recourse is worth its cost, is [Navigating Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}).
+- **Breaches and how to report them.** Classifying a breach and choosing the lowest adequate escalation rung is the [Professional Conduct]({{ '/teaching/pathways/professional-conduct/' | relative_url }}) workshop; this module's scripts cover the ordinary case.
+- **Career mechanics.** Funding, hiring, CVs, and graduate applications are [Career Mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) and [Module 24]({{ '/modules/module24/' | relative_url }}).
+- **Writing and presenting.** Methods sections, reviewer responses, and talks are [Module 17]({{ '/modules/module17/' | relative_url }}) and [Module 22]({{ '/modules/module22/' | relative_url }}); this module only names them as skills people learn by watching.
 
 ## Content library references
 - [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})

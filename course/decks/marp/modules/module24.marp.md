@@ -128,6 +128,9 @@ Draft one 5-sentence mentor outreach email with an alignment statement naming a 
 ## References (Instructor)
 - National Academies of Sciences, Engineering, and Medicine (2019) The Science of Effective Mentorship in STEMM. National Academies Press.
 - National Academies of Sciences, Engineering, and Medicine (2018) Graduate STEM Education for the 21st Century. National Academies Press.
+- Fuhrmann CN, Halme DG, O'Sullivan PS, Lindstaedt B (2011) Improving graduate education to support a branching career pipeline. CBE-Life Sciences Education 10(3):239-249.
+- Sauermann H, Roach M (2012) Science PhD career preferences: levels, changes, and advisor encouragement. PLoS ONE 7(5):e36307.
+- Gibbs KD, McGready J, Bennett JC, Griffin K (2014) Biomedical science Ph.D. career interest patterns by race/ethnicity and gender. PLoS ONE 9(12):e114736.
 
 ---
 

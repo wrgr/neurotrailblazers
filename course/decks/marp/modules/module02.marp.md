@@ -70,6 +70,8 @@ Create a personal research-navigation plan that includes role expectations, comm
 - Block 6: Exit ticket (85:00-90:00)
 
 <!--
+**Where the 4 hours go.** The 90-minute session is the taught part, and the four parts of the studio playbook are drafted inside it. The rest is preparation, [The hidden curriculum](/hidden-curriculum/) and the [Dataset Access Guide](/datasets/access/), and follow-up: the [Provenance and versioning](/content-library/infrastructure/provenance-and-versioning/) reading, the quick practice prompt, and revising the playbook after a week of watching your own lab.
+
 Block 1: Hidden curriculum reveal (00:00-15:00)
   Instructor script: "Raise your hand if you have ever felt lost in a research setting --- not because the science was hard, but because you did not know the unwritten rules." (Expect most hands.) "Today we make those rules explicit."
   Present 5 hidden-curriculum scenarios (3 minutes each):

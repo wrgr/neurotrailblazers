@@ -245,6 +245,6 @@ Classify two ambiguous glia-neuron interfaces and submit:
 ---
 
 ## References and attribution
-- Figures RIV-GLIA: Pat Rivlin training materials (MICrONS proofreading deck).
+- Figures RIV-GLIA: Pat Rivlin training materials (MICrONS proofreading deck) (attribution as given in the source deck; not independently verified).
 - Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
 - Harris & Weinberg (2012), *Cold Spring Harb Perspect Biol*, doi:10.1101/cshperspect.a005587 — synaptic neighborhood context.

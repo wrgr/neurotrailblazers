@@ -45,7 +45,7 @@ Instructor script: "'Should we use SBEM or ssTEM?' is a scale decision. 'Can we 
 - "More data" does not fix wrong scale selection.
 
 <!--
-Separate the three scales practitioners conflate. Acquisition scale: the voxel size your instrument produces. Reconstruction scale: the smallest object you can reliably segment — always coarser; at 4 x 4 x 40 nm you can see a 20 nm cleft but reliably segment neurites down to roughly 50–100 nm. Analysis scale: the unit your conclusions are about.
+Separate the three scales practitioners conflate. Acquisition scale: the voxel size your instrument produces. Reconstruction scale: the smallest object you can reliably segment — always coarser; at 4 x 4 x 40 nm you can see a 20 nm cleft but reliably segment only neurites that span several pixels and several sections, roughly 100 nm and up (our rule of thumb, not a published threshold; spine necks run about 90–500 nm, Arellano et al. 2007). Analysis scale: the unit your conclusions are about.
 Decision rule: choose the coarsest acquisition scale whose reconstruction scale still resolves every object your analysis depends on, rather than the finest you can afford.
 -->
 
@@ -90,7 +90,7 @@ Ask whether the transfer comes with a stated registration residual and its maxim
 4. Define acceptable uncertainty due to downsampling/registration.
 
 <!--
-Anchor step 2 in the modality chart: resolution, volume and throughput form a budget — you may choose two. FIB-SEM buys resolution and gives up volume. Light-sheet buys volume and throughput and gives up resolution. Multibeam ssSEM (61 or 91 beams in parallel) buys resolution and volume by throwing throughput engineering at the problem, which is why 1 mm³ became feasible.
+Anchor step 2 in the modality chart: resolution, volume and throughput form a budget — you may choose two. FIB-SEM buys resolution and gives up volume. Light-sheet buys volume and throughput and gives up resolution. Multibeam ssSEM (61 beams in Eberle et al. 2015, J Microsc 259:114; 91 on ZEISS's current MultiSEM) buys resolution and volume by throwing throughput engineering at the problem, which is why 1 mm³ became feasible.
 Check-yourself case: thousands of L2/3 neurons, does each project to AL and to PM? That is barcoded projection mapping (MAPseq/BARseq), not EM — it needs statistical power over cells, not geometry within a cell.
 -->
 

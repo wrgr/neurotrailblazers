@@ -56,13 +56,20 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
 
 ## Capability target
 Generate one synapse-to-motif interpretation with explicit evidence chain and one alternative explanation.
+
+## Why this module matters
+The connectivity graph tells you that A synapses onto B. EM tells you where: on the soma, on a distal spine, on the axon initial segment. That is the information light-level methods mostly cannot give, and it is the information a graph-only analysis throws away. The worked example below shows why it matters: with illustrative numbers, 68 feedback loops in a 200-neuron subgraph split into 49 whose inhibitory synapses land perisomatically, 12 that land on distal dendrites and 7 uncertain. Those are different circuits with different functional readings, and averaging them produces a claim about "gain control" that the data do not support.
+
+Motifs are also where connectomics is most tempted to over-claim. A pattern more common than a random graph would predict is easy to find and easy to name, and the names ("gating," "amplification") are functional verbs that no structural count can earn. This module makes the evidence chain explicit, from detection through null comparison to interpretation and alternative explanation, and it makes the alternative explanation mandatory: spatial proximity, cell-type composition or a merge error can each manufacture an enriched motif.
+
+The module also closes the loop with the reconstruction. Merges bias motif counts toward denser patterns, and 1-synapse edges are the least reliable edge class, so every motif claim is re-run at a second threshold and across proofreading versions. What you write at the end is a circuit logic brief in which every claim carries a caveat, which is the form a motif result has to take to survive review.
 
 ## Concept set
 
@@ -133,6 +140,8 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 5. State supported claim (what the data shows) + caveat (what it doesn't prove and what could confound it).
 
 ## 60-minute tutorial run-of-show
+
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class review of synapse classification and motif types, the [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }}) with its 15-neuron warm-up, and the quick practice prompt. Neither course map schedules this kit (the [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
 
 ### Pre-class preparation (10 min async)
 - Review [Synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}) (Gray Type I/II)
@@ -226,7 +235,7 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 - [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }}) — a synthetic 200-neuron L2/3-L4 subgraph with synapse compartments, plus the 15-neuron warm-up
 
-## References
+## Academic references
 - Gray EG (1959) "Axo-somatic and axo-dendritic synapses of the cerebral cortex." *Journal of Anatomy* 93:420-433.
 - Milo R et al. (2002) "Network motifs: simple building blocks of complex networks." *Science* 298:824-827.
 - Song S et al. (2005) "Highly nonrandom features of synaptic connectivity." *PLoS Biology* 3(3):e68.

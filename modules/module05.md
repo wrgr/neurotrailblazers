@@ -58,7 +58,7 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -66,6 +66,15 @@ content_type: path
 ## Capability target
 
 Evaluate EM image patches for artifact risk and issue a justified pass/rework recommendation.
+
+## Why this module matters
+Image quality is the one ceiling nobody downstream can raise. A segmentation model separates two neurites by the intensity edge between them; when staining fades or a knife scratch crosses the field, that edge is gone, and the split or merge it causes is repaired one neurite at a time by a proofreader. The scale makes the asymmetry brutal. MICrONS imaged 26,652 sections over about six months on five microscopes (MICrONS Consortium 2025); a staining gradient noticed at section 200 and passed is a gradient on every section after it, and on every neurite that crosses the affected third of the field.
+
+That is why the person looking at pilot images is making a scientific decision, not a clerical one. The studio scenario puts you in that seat: a facility wants to commit 800 more sections and asks whether to proceed. A "go" you cannot defend, or a "stop" that costs a week for a cosmetic artifact, are both errors with a price. This module gives you the vocabulary (artifact type, severity, predicted segmentation consequence), the three escalation levels and the habit of logging every call so it can be audited later.
+
+It is also the module where you learn what an EM image is, which the later modules assume. Module 06 asks you to fix segmentation errors and Module 07 to allocate a proofreading budget; both go faster when you can look at the image and say why the model failed there.
+
+**Where this sits next to Technical Unit 03.** [Technical Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}) covers the tissue-to-image chain in depth: fixation and staining chemistry, sectioning, imaging parameters, an artifact catalog with each artifact's downstream cost, the acquisition QA checks that catch problems, and the provenance metadata that must survive, with a 90-minute lab that writes a QA report on a real volume. This module adds the decision: scoring severity consistently across a set of patches, choosing a pass, flag or hard-stop level and saying who is allowed to make that call, and writing a go/no-go memo with conditions to a facility under time pressure. Do the unit for the chain and the catalog; do this module for the decision and the memo.
 
 ## Concept set
 
@@ -103,9 +112,11 @@ Escalation logic should also specify *who* makes the call at each level. A train
 
 Three primary EM modalities are used in modern connectomics, each with distinct tradeoffs in resolution, throughput, and artifact profiles:
 
-- **Serial-section TEM (ssTEM)**: Ultrathin sections (~30-50 nm) are collected on tape or grids and imaged in a transmission electron microscope. Typical resolution: ~4 nm XY, ~30 nm Z (set by section thickness). High XY resolution enables confident synapse identification, but the large Z step means small neurites can be lost between sections. Artifacts include section folds, knife chatter, and staining variability between sections.
-- **Serial block-face SEM (SBEM)**: A diamond knife inside the SEM chamber removes thin layers from the block face, which is imaged after each cut. Typical resolution: ~8 nm XY, ~25 nm Z. Automated and suited to large volumes (hundreds of micrometers per side), but lower XY resolution can make small synapses ambiguous. Artifacts include knife chatter, charging, and surface debris.
-- **Focused ion beam SEM (FIB-SEM)**: A gallium ion beam mills ~4-8 nm layers from the block face. Typical resolution: ~4 nm isotropic (XY = Z). The isotropic voxels simplify 3D segmentation and enable tracing of even the finest neurites, but throughput is low: a single block is typically tens of micrometers per side, and larger FIB-SEM volumes such as the Janelia hemibrain were built by cutting the tissue into slabs and imaging them in parallel. Artifacts include curtaining (ion beam striping) and re-deposition.
+- **Serial-section TEM (ssTEM)**: Ultrathin sections are cut, collected on tape or grids, and imaged in a transmission electron microscope. The two largest ssTEM connectomics volumes were both imaged at 4 nm per pixel: FAFB with sections 35-40 nm thick (Zheng et al. 2018) and MICrONS with a nominal section thickness of 40 nm (MICrONS Consortium 2025). Z resolution is set by section thickness, so it is about ten times coarser than XY. High XY resolution enables confident synapse identification, but the large Z step means small neurites can be lost between sections. Artifacts include section folds, knife chatter, and staining variability between sections.
+- **Serial block-face SEM (SBEM)**: A diamond knife inside the SEM chamber removes a thin layer from the block face, which is imaged after each cut. In the first demonstration the sections were 50-70 nm thick (Denk and Horstmann 2004); Hua et al. (2015) imaged a 65 × 51 × 41 µm stack of 1,370 slices at a voxel size of 12 × 12 × 30 nm. No section is ever handled, so acquisition runs unattended, but the coarser XY sampling can make small synapses ambiguous. Artifacts include knife chatter, charging, and surface debris.
+- **Focused ion beam SEM (FIB-SEM)**: A gallium ion beam mills the block face between images. The voxels can be isotropic: the Janelia hemibrain was imaged at 8 × 8 × 8 nm (Scheffer et al. 2020), and Xu et al. (2017) report that higher resolution is possible on smaller volumes. Isotropic voxels simplify 3D segmentation and let annotators trace the finest neurites in any direction, but throughput is low. Xu et al. (2017) describe continuously imaged volumes above 10⁶ µm³, about 100 µm on a side; the hemibrain went larger by cutting the tissue into slabs and imaging them in parallel. Artifacts include curtaining (ion beam striping) and re-deposition.
+
+The voxel sizes above are the published values for the named volumes, not limits of the methods; each instrument trades resolution against field size and speed. Sources: Zheng et al. (2018), MICrONS Consortium et al. (2025), Denk and Horstmann (2004), Hua et al. (2015), Scheffer et al. (2020) and Xu et al. (2017), all listed under References.
 
 The choice of modality depends on the scientific question. Large-scale circuit mapping favors throughput: MICrONS used serial-section TEM, and H01 used multibeam SEM of serial sections; ultrastructural studies of specific synaptic features may favor FIB-SEM for its isotropic resolution.
 
@@ -127,6 +138,8 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 
 ## 60-minute tutorial run-of-show
 
+**Where the 4 hours go.** The 60-minute tutorial and the roughly 60-minute studio are the taught part. The rest is the pre-class reading (EM principles and the artifact taxonomy), the post-class assignment of three QA log entries from a public volume, the quick practice prompt and, for the instructor, building the patch set before class. Neither course map schedules this kit; the [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) keeps its studio only as the week 4 fallback for the Unit 03 viewer lab, so the hours beyond the session are unscheduled — lab meeting or take-home.
+
 ### Pre-class preparation (5-10 min async)
 
 Before the session, students should:
@@ -143,33 +156,33 @@ Before the session, students should:
 
 ### Minute-by-minute schedule
 
-**1. 00:00-08:00 — EM basics refresher**
+**00:00-08:00 | EM basics refresher**
 - *Instructor cue*: "We are going to start with a fast review. I will show four images — tell me which modality produced each one and why you think so."
 - Show four images: three from public volumes acquired by different methods (each dataset's release page names the instrument) and one intentionally ambiguous. Cold-call students for modality identification and reasoning.
 - Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
 
-**2. 08:00-20:00 — Artifact recognition walkthrough**
+**08:00-20:00 | Artifact recognition walkthrough**
 - *Instructor cue*: "Now I am going to show you five artifacts that cause many segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
 - Walk through knife chatter, charging, folds, missing sections, and staining gradients with the annotated examples on the [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) page.
 - Where your patch set has an example of the artifact, turn on the public viewer's segmentation layer over it so students can see the predicted error type realized in practice.
 - *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.
 
-**3. 20:00-34:00 — Learner triage round**
+**20:00-34:00 | Learner triage round**
 - *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches from the patch set. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
 - Circulate and listen for common misconceptions. Note which artifact types cause the most disagreement.
 - *Formative check*: At 30:00, ask one pair to share their most difficult call and explain their reasoning.
 
-**4. 34:00-46:00 — QA threshold debate**
+**34:00-46:00 | QA threshold debate**
 - *Instructor cue*: "Pair A said this patch is a pass. Pair B said rework. Both of you, defend your position."
 - Facilitate structured debate on 2-3 patches where pairs disagreed. Push students to articulate the cost tradeoff: what is the cost of re-acquiring versus the cost of proofreading the resulting errors?
 - Introduce the concept of escalation levels (hard stop, flag and monitor, pass) and ask students to re-classify their six patches using this framework.
 
-**5. 46:00-56:00 — Decision logging practice**
+**46:00-56:00 | Decision logging practice**
 - *Instructor cue*: "A QA decision that is not logged does not exist. You are now going to write a QA log entry for your hardest patch."
 - Students write a structured QA entry: image ID, artifact type, severity, decision, rationale, and any conditions (e.g., "pass if proofreading budget is allocated to rows 12-18").
 - Show an example of a well-written and a poorly-written QA entry for comparison.
 
-**6. 56:00-60:00 — Competency check**
+**56:00-60:00 | Competency check**
 - *Instructor cue*: "Final check. I am showing one new patch. You have two minutes to write your QA verdict on an index card. Include artifact type, severity, decision, and one sentence of rationale."
 - Collect index cards. Review after class to identify students who need follow-up.
 
@@ -221,6 +234,25 @@ that every patch has a recorded location.
 - **Strong (merit)**: Clear articulation of cost tradeoffs, consistent severity thresholds across patches, spatially aware analysis, and a well-structured recommendation memo with specific conditions.
 - **Failure**: Artifact labels assigned without reference to downstream segmentation implications, or QA decisions made without documented rationale.
 
+## Common errors and how to recover
+
+- **Your severity scores drifted across the round.** The first patch got a 2 for chatter you would have called a 1 by the sixth, because your threshold moved as you saw more images. Recover by writing the threshold sentence for each score before you look at any patch ("2 means the model will lose membranes here"), then re-scoring the first patch last and reconciling.
+- **You named the artifact but not the failure.** "Knife chatter, severity 2" is half a record. The rubric fails a label that does not say what the segmentation will do with it. Recover by adding the consequence to every row: merge, split or topology break, and where in the field.
+- **You costed the fix and not the proceed.** A knife change is hours once; chatter that starts at section 200 and is left alone is proofreader time on every neurite that crosses the remaining 800 sections. Recover by filling both columns of the cost table, in the same unit (hours), before you choose.
+- **Your memo has a decision but no conditions.** "Proceed" with nothing attached, or "stop" with no remediation step, gives the facility nothing to act on. Recover with the four parts the memo requires: the artifact table, the decision, the remediation steps if you stop, and the monitoring plan (what is checked, how often, by whom) if you go.
+- **You authorized a hard stop from the trainee seat.** Re-acquisition is the imaging lead's call because its cost is high. Recover by escalating with the evidence (patch IDs, coordinates, severity, predicted consequence) and a recommendation, and by recording who made the final decision in the log.
+- **Your QA entry cannot be found again.** An entry with no image ID and no coordinates cannot be revisited when the segmentation comes back. Recover by starting every entry with the location, and treating a decision that is not logged as one that did not happen.
+
+## What this module does not cover
+
+- **Tissue preparation and sectioning.** Fixation, heavy-metal staining, embedding and cutting, and the artifacts each step causes, are [Technical Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}) and [Tissue preparation]({{ '/content-library/imaging/tissue-preparation/' | relative_url }}); here you judge the image, not the block.
+- **Choosing a modality or running an instrument.** The modality section above is for recognizing what kind of image you are looking at. Imaging parameters and acquisition design are Unit 03; this module does not teach you to set up a microscope.
+- **Stitching and alignment.** Registering tiles and sections, alignment versions and the residuals they leave are [Technical Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) and [Acquisition QA]({{ '/content-library/imaging/acquisition-qa/' | relative_url }}).
+- **Fixing the errors an artifact causes.** Detecting and correcting merges and splits in the segmentation is [Module 06]({{ '/modules/module06/' | relative_url }}); this module predicts the error, it does not repair it.
+- **Allocating proofreading around flagged regions.** Turning a flag-and-monitor decision into a proofreading budget and stopping rule is [Module 07]({{ '/modules/module07/' | relative_url }}) and [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}).
+- **Automated QA at scale.** Focus, contrast and alignment metrics computed on every tile are [Acquisition QA]({{ '/content-library/imaging/acquisition-qa/' | relative_url }}); the studio uses your eyes on six patches.
+- **Acquisition provenance.** Which metadata must travel with the image stack for the volume to be usable later is Unit 03's provenance section.
+
 ## Content library references
 
 - [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }})
@@ -238,10 +270,13 @@ that every patch has a recorded location.
 
 Pick one artifact and explain how it could create a merge or split error later. Then estimate: if this artifact appears on 5% of sections, how many additional proofreading hours would it add to a 1000-section volume?
 
-## References
-
+## Academic references
 - Briggman, K. L., & Bock, D. D. (2012). Volume electron microscopy for neuronal circuit reconstruction. *Current Opinion in Neurobiology*, 22(1), 154-161.
 - Denk, W., & Horstmann, H. (2004). Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure. *PLoS Biology*, 2(11), e329.
 - Hua, Y., Laserstein, P., & Helmstaedter, M. (2015). Large-volume en-bloc staining for electron microscopy-based connectomics. *Nature Communications*, 6, 7923.
 - Peters, A., Palay, S. L., & Webster, H. deF. (1991). *The Fine Structure of the Nervous System: Neurons and Their Supporting Cells* (3rd ed.). Oxford University Press.
 - Hayworth, K. J., Morgan, J. L., Schalek, R., Berger, D. R., Hildebrand, D. G. C., & Lichtman, J. W. (2014). Imaging ATUM ultrathin section libraries with WaferMapper: A multi-scale approach to EM reconstruction of neural circuits. *Frontiers in Neural Circuits*, 8, 68.
+- Zheng, Z., et al. (2018). A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*. *Cell*, 174(3), 730-743. doi:10.1016/j.cell.2018.06.019
+- MICrONS Consortium, et al. (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature*, 640, 435-447. doi:10.1038/s41586-025-08790-w
+- Scheffer, L. K., et al. (2020). A connectome and analysis of the adult *Drosophila* central brain. *eLife*, 9, e57443. doi:10.7554/eLife.57443
+- Xu, C. S., et al. (2017). Enhanced FIB-SEM systems for large-volume 3D imaging. *eLife*, 6, e25916. doi:10.7554/eLife.25916

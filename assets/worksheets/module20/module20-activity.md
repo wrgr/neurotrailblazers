@@ -100,6 +100,8 @@ them, or note where you nearly did:
 - [ ] I did not assume: A generic random graph is an adequate null for a connectome.
 - [ ] I did not assume: A small p-value speaks for itself, regardless of how many tests were run.
 - [ ] I did not assume: A hypothesis found in the data can be confirmed by the same data.
+- [ ] I did not assume: If the result holds at one synapse threshold, it holds.
+- [ ] I did not assume: Segmentation errors add random noise that averages out over a large graph.
 
 ---
 

@@ -47,6 +47,7 @@
 <li><strong>Technical:</strong> null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.</li>
 <li><strong>Plain language:</strong> your &quot;chance baseline&quot; must reflect biology and data collection realities.</li>
 <li><strong>Misconception guardrail:</strong> a generic random graph is an adequate null for a connectome.</li>
+<li><strong>Why it fails:</strong> a null that ignores degree and distance is beaten by almost any real graph, so the enrichment is a fact about the null, not the circuit. Preserve the constraints your hypothesis takes for granted and randomize only the structure you are testing.</li>
 </ul>
 <footer>Module 20 · NeuroTrailblazers</footer>
 </section>
@@ -91,6 +92,8 @@
 <li><strong>Misconception guardrail:</strong> a generic random graph is an adequate null for a connectome.</li>
 <li><strong>Misconception guardrail:</strong> a small p-value speaks for itself, regardless of how many tests were run.</li>
 <li><strong>Misconception guardrail:</strong> a hypothesis found in the data can be confirmed by the same data.</li>
+<li><strong>Misconception guardrail:</strong> if the result holds at one synapse threshold, it holds.</li>
+<li><strong>Misconception guardrail:</strong> segmentation errors add random noise that averages out over a large graph.</li>
 </ul>
 <footer>Module 20 · NeuroTrailblazers</footer>
 </section>
@@ -154,9 +157,12 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-footer="Module 20 · NeuroTrailblazers" data-theme="neurotrailblazers" lang="en-US" data-marpit-pagination="16" style="--paginate:true;--footer:Module 20 · NeuroTrailblazers;--theme:neurotrailblazers;" data-marpit-pagination-total="17">
 <h2 id="references-instructor">References (Instructor)</h2>
 <ul>
-<li>Bassett, Zurn, and Gold (2018) - model use in network neuroscience.</li>
-<li>Januszewski et al. (2018) - segmentation performance and uncertainty context.</li>
-<li>MICrONS/FlyWire/H01 analyses for cross-dataset inference constraints.</li>
+<li>Bassett DS, Zurn P, Gold JI (2018) On the nature and use of models in network neuroscience. Nature Reviews Neuroscience 19(9):566-578.</li>
+<li>Milo R et al. (2002) Network motifs: simple building blocks of complex networks. Science 298(5594):824-827.</li>
+<li>Artzy-Randrup Y, Fleishman SJ, Ben-Tal N, Stone L (2004) Comment on Network motifs: simple building blocks of complex networks and Superfamilies of evolved and designed networks. Science 305(5687):1107.</li>
+<li>Song S, Sjostrom PJ, Reigl M, Nelson S, Chklovskii DB (2005) Highly nonrandom features of synaptic connectivity in local cortical circuits. PLoS Biology 3(3):e68.</li>
+<li>Benjamini Y, Hochberg Y (1995) Controlling the false discovery rate: a practical and powerful approach to multiple testing. Journal of the Royal Statistical Society Series B 57(1):289-300.</li>
+<li>Nosek BA, Ebersole CR, DeHaven AC, Mellor DT (2018) The preregistration revolution. Proceedings of the National Academy of Sciences 115(11):2600-2606.</li>
 </ul>
 <footer>Module 20 · NeuroTrailblazers</footer>
 </section>

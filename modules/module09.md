@@ -54,7 +54,7 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -62,12 +62,19 @@ content_type: path
 ## Capability target
 Produce a skeleton-based morphology summary with at least three descriptors and one explicit limitation.
 
+## Why this module matters
+A reconstructed neuron is millions of voxels, and nobody compares two of those by eye. The skeleton is what makes morphology countable, and it is the first representation in the pipeline that throws the image away: surface, spine shape and synapse placement are gone, and what remains is a tree with a radius at each node. Every cell-type call built on morphology, and every comparison of arbors across cells, animals or datasets, runs through this reduction. Knowing what it keeps and what it drops is the difference between measuring a neuron and measuring an artifact of the reduction.
+
+The measurements also inherit every reconstruction error upstream. A split truncates the arbor, a merge adds someone else's branches, and the volume boundary cuts every cell that reaches it. The worked example below shows an "interneuron" whose spine density fell between the reference ranges only because it was averaged over a truncated trunk and seven boundary-hugging branches that were skeletonization noise; restricted to contained dendrites, it was a pyramidal cell. That audit (containment, split candidates, skeleton artifacts) is the skill, and it comes before any classification.
+
+Morphology is also where reproducibility first bites in analysis. Skeletons computed against an unpinned segmentation change as proofreading continues, so a descriptor table without a materialization version and the skeletonization parameters describes a state nobody can recover. The studio asks for ten cells, five descriptors, a classification with its evidence chain and one limitation tied to a specific reconstruction issue, which is the shape every morphology report you write later should keep.
+
 ## Concept set
 
 ### 1) What is skeletonization and why do we need it?
 A segmented neuron occupies millions of voxels in the EM volume. To analyze its morphology efficiently, we reduce it to a **skeleton**: a tree graph where nodes represent points along the neurite centerline and edges represent the path between them. Skeletons compress a neuron's 3D structure from gigabytes to kilobytes while preserving topology (branching pattern, path lengths, connectivity) — at the cost of surface geometry and spine shape, which are discarded.
 
-Skeletonization algorithms (e.g., TEASAR — Sato et al. 2000) work by finding the medial axis of the volumetric segment. The result is a set of nodes with (x, y, z, radius) attributes connected in a parent-child tree rooted at the soma. The standard file format is **SWC** (Stockley-Wheal-Cole), where each line records: node ID, compartment type, x, y, z, radius, parent ID.
+Skeletonization algorithms (e.g., TEASAR — Sato et al. 2000) work by finding the medial axis of the volumetric segment. The result is a set of nodes with (x, y, z, radius) attributes connected in a parent-child tree rooted at the soma. The standard file format is **SWC**, the format NeuroMorpho.Org distributes, where each line records: node ID, compartment type, x, y, z, radius, parent ID. NeuroMorpho.Org's FAQ calls SWC "a simple Standardized format" and credits it to Cannon et al. (1998), whose archive used a platform-independent file format that "enforces the constraints that there should be no isolated branches and no closed loops." Neither source expands the letters, so this module doesn't either; treat any expansion you see elsewhere as unsourced.
 
 ### 2) Core morphological descriptors
 From a skeleton, you can compute a rich set of descriptors that characterize neuron morphology:
@@ -133,6 +140,8 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 5. Report interpretation confidence: which descriptors are robust, which are affected by reconstruction quality?
 
 ## 60-minute tutorial run-of-show
+
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class preparation, the [Module 09 kit]({{ '/assets/kits/module09/README.md' | relative_url }}) and its `morphometry.py`, the content-library pages on data formats and neuron type identification, and the quick practice prompt. Neither course map schedules this kit (the [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
 
 ### Pre-class preparation (10 min async)
 - Review the skeletons section of [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }})
@@ -227,11 +236,12 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 - [Technical Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }})
 - [Module 09 kit]({{ '/assets/kits/module09/README.md' | relative_url }}) — ten synthetic skeletons, spine table, synapse-based calls and `morphometry.py`
 
-## References
+## Academic references
 - Costa M et al. (2016) "NBLAST: rapid, sensitive comparison of neuronal structure and construction of neuron family databases." *Neuron* 91(2):293-311.
 - Sato M et al. (2000) "TEASAR: Tree-structure extraction algorithm for accurate and robust skeletons." *Pacific Conference on Computer Graphics and Applications*.
 - Scorcioni R, Polavaram S, Ascoli GA (2008) "L-Measure: a web-accessible tool for the analysis, comparison and search of digital reconstructions of neuronal morphologies." *Nature Protocols* 3(5):866-876.
 - Ascoli GA et al. (2008) "Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex." *Nature Reviews Neuroscience* 9(7):557-568.
+- Cannon RC, Turner DA, Pyapali GK, Wheal HV (1998) "An on-line archive of reconstructed hippocampal neurons." *Journal of Neuroscience Methods* 84(1-2):49-54. doi:10.1016/S0165-0270(98)00091-0.
 
 ## Quick practice prompt
 Explain one morphology feature that could be confounded by reconstruction quality.

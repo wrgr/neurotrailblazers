@@ -257,6 +257,6 @@ Classify three ambiguous neurites and submit:
 ---
 
 ## References and attribution
-- Figures RIV-AXDEN: Pat Rivlin training materials (MICrONS proofreading deck).
+- Figures RIV-AXDEN: Pat Rivlin training materials (MICrONS proofreading deck) (attribution as given in the source deck; not independently verified).
 - Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
 - Kasthuri et al. (2015), *Cell*, doi:10.1016/j.cell.2015.06.054 — process morphology in dense reconstruction.

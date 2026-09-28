@@ -66,7 +66,7 @@ references:
   - "MICrONS/FlyWire analyses for realistic distribution-shift context."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -78,6 +78,8 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 ML accelerates connectomics analysis, and naive workflows produce misleading biological claims at the same speed. The typical failure is a model that performs suspiciously well because the split leaked. Its number then goes into a paper as though it described generalization.
 
 Connectomics is unusually leaky. Fragments of one neuron appear in many rows. Neighboring neurons share staining, imaging conditions, and section artifacts. Cell-type labels are often derived from connectivity, so a model predicting connectivity from cell type may be reading its own answer. The proofread subset is not a random sample of the volume: neurons get proofread because someone wanted them, which usually means they were large, central, or interesting. Every one of these is a channel by which test data informs training, and none of them is visible in a learning curve.
+
+**Scope boundary with Technical Unit 09.** This module owns the validity of a learned model: leakage channels, split design, metrics matched to a decision, base rates, and what labels can and cannot support. [Technical Unit 09: Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) owns the graph side: how to construct a connectivity graph, which null model to use, motif analysis under reconstruction error, and what connectomes do and do not give machine learning. Use this module when you are training or evaluating a model on connectomics features. Use Unit 09 when you are testing a claim about the graph itself.
 
 ## Concept set
 
@@ -166,6 +168,9 @@ You have 4,000 labeled neurite fragments in five coarse classes and train a grad
 - Read [neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) so you know what the labels mean before you model them.
 - Bring a small labeled table of your own, or use the synthetic fragment set in the [Module 13 kit]({{ '/assets/kits/module13/README.md' | relative_url }}).
 - Be ready to state, in one sentence, the decision your model would support.
+
+## Time budget
+The declared 4 to 5 hours are: about 30 minutes reading the concept set beforehand, a 90-minute meeting (the 60-minute run-of-show below plus the opening of the studio activity), and 2 to 3 hours outside class training the studio's two splits and writing the error analysis and model card, the quick practice prompt, and the linked readings. Neither [syllabus map]({{ '/teaching/syllabi/' | relative_url }}) schedules this kit; the 16-week map leaves Kits 12 to 16 and 18 out for time, so run it as a lab meeting or a take-home after Technical Unit 09.
 
 ## 60-minute tutorial run-of-show
 1. **00:00-08:00 | Task framing and leakage examples**
@@ -262,7 +267,7 @@ Machine learning is embedded at every stage of the reconstruction pipeline:
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - [Module 13 kit]({{ '/assets/kits/module13/README.md' | relative_url }}) — 4,000 synthetic labeled fragments and a held-out domain
 
-## References
+## Academic references
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Lee K et al. (2017) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
 - McInnes L et al. (2018) "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction." *arXiv:1802.03426*.

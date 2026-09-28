@@ -61,7 +61,8 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 - 50:00-60:00 | Competency check
 
 <!--
-Pre-class preparation (10 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class preparation, the [Module 09 kit](/assets/kits/module09/README.md) and its `morphometry.py`, the content-library pages on data formats and neuron type identification, and the quick practice prompt. Neither course map schedules this kit (the [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
+  Pre-class preparation (10 min async)
   Review the skeletons section of [Data formats and representations](/content-library/infrastructure/data-formats/)
   Install/check NeuroM or equivalent morphology analysis package, or use `morphometry.py` in the [Module 09 kit](/assets/kits/module09/README.md), which needs no install
   Minute-by-minute plan

@@ -3,14 +3,14 @@ marp: true
 theme: neurotrailblazers
 paginate: true
 footer: "Module 22 · NeuroTrailblazers"
-title: "Module 22: Scientific Writing and Presentation"
+title: "Module 22: Scientific Presentation"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
 <span class="eyebrow">NeuroTrailblazers · Module 22</span>
 
-# Scientific Writing and Presentation
+# Scientific Presentation
 Teaching Deck
 
 <p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
@@ -134,8 +134,10 @@ Write your 60-second talk opener with the core question, one evidence-backed fin
 ---
 
 ## References (Instructor)
-- Gopen and Swan (1990) - clarity principles for scientific prose.
-- Technical Track Journal Club papers for evidence-backed slide narratives.
+- Alley M, Neeley K (2005) Returning the point to PowerPoint: rethinking the design of presentation slides from a skillful user's perspective. 2005 ASEE Annual Conference Proceedings.
+- Garner J, Alley M, Wolfe K, Zappe S, Sawarynski L (2011) Assertion-evidence slides appear to lead to better comprehension and recall of more complex concepts. 2011 ASEE Annual Conference and Exposition Proceedings.
+- Mayer RE, Moreno R (2003) Nine ways to reduce cognitive load in multimedia learning. Educational Psychologist 38(1):43-52.
+- Bourne PE (2007) Ten simple rules for making good oral presentations. PLoS Computational Biology 3(4):e77.
 
 ---
 

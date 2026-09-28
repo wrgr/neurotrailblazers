@@ -44,7 +44,7 @@
 <h2 id="concept-focus">Concept Focus</h2>
 <h3 id="1-storage-layout-is-chosen-by-access-pattern-not-by-format-popularity">1) Storage layout is chosen by access pattern, not by format popularity</h3>
 <ul>
-<li><strong>Technical:</strong> chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM compresses 2-10x; label volumes compress far better.</li>
+<li><strong>Technical:</strong> chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM imagery compresses losslessly by only a small factor; label volumes compress far better. Measure the ratio on a sample of your own data before budgeting.</li>
 </ul>
 <footer>Module 12 · NeuroTrailblazers</footer>
 </section>

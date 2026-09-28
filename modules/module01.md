@@ -57,7 +57,7 @@ references: []
 videos:
   - "https://www.ted.com/talks/sebastian_seung_i_am_my_connectome"
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -67,6 +67,8 @@ Write one connectomics study question with measurable structural outputs and one
 
 ## Why this module matters
 Motivation drives persistence, but technical progress requires disciplined question framing. Connectomics demands sustained effort: proofreading thousands of neurons, tracing axons through noisy volumes, and reconciling ambiguous merges. Without a clear sense of purpose, even talented annotators burn out. This module anchors learners' curiosity in concrete, testable questions so that motivation survives the transition from excitement to routine.
+
+**Where this sits next to Technical Unit 01.** [Technical Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}) makes the case for synapse-resolution mapping in numbers: the resolution argument, the cost argument, what connectomics has delivered so far, and the three-bin discipline for sorting structural claims, with a 60-minute lab that writes a study brief. This module adds what the unit leaves out: turning your own curiosity into one bounded question, and the motivation statement that has to survive the tedious middle of a project. Do the unit for the evidence discipline; do this module for the question and the reason to keep going.
 
 ## Concept set
 
@@ -131,6 +133,8 @@ You arrive with the question "how does memory work?" That is a real motivation a
 5. Write a personal motivation statement connecting your question to a long-term scientific goal.
 
 ## Detailed run-of-show (90 minutes)
+
+**Where the 3-4 hours go.** The 90-minute session is the taught part, and the studio activity's two artifacts are drafted inside it. The rest is preparation, the Seung talk and the two case studies under Content library references, and follow-up: Technical Unit 01, the quick practice prompt, and revising your question sheet and motivation statement after peer review.
 
 ### Block 1: Opening hook (00:00-12:00)
 - **Instructor script:** "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. its reconstruction (the raw and segmented H01 pair in Step 6 of [H01, Step by Step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) works). Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"

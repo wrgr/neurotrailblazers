@@ -1,8 +1,8 @@
 ---
-title: "Module 22: Scientific Writing and Presentation"
+title: "Module 22: Scientific Presentation"
 layout: module
 permalink: /modules/module22/
-description: "Deliver clear scientific talks and written summaries for technical and mixed audiences without oversimplifying connectomics evidence."
+description: "Deliver clear scientific talks for technical and mixed audiences without oversimplifying connectomics evidence, with explicit question-handling norms."
 module_number: 22
 image: /assets/images/modules/module22.svg
 image_alt: "Stylized vector art: speech arcs widening from a speaker to connected listeners."
@@ -25,7 +25,7 @@ ccr_focus:
 
 # Normalized metadata
 slug: "module22"
-short_title: "Scientific Writing & Presentation"
+short_title: "Scientific Presentation"
 status: "active"
 audience:
   - "students"
@@ -59,11 +59,13 @@ prerequisites_list:
 next_modules:
   - "module23"
 references:
-  - "Gopen and Swan (1990) - clarity principles for scientific prose."
-  - "Technical Track Journal Club papers for evidence-backed slide narratives."
+  - "Alley M, Neeley K (2005) Returning the point to PowerPoint: rethinking the design of presentation slides from a skillful user's perspective. 2005 ASEE Annual Conference Proceedings."
+  - "Garner J, Alley M, Wolfe K, Zappe S, Sawarynski L (2011) Assertion-evidence slides appear to lead to better comprehension and recall of more complex concepts. 2011 ASEE Annual Conference and Exposition Proceedings."
+  - "Mayer RE, Moreno R (2003) Nine ways to reduce cognitive load in multimedia learning. Educational Psychologist 38(1):43-52."
+  - "Bourne PE (2007) Ten simple rules for making good oral presentations. PLoS Computational Biology 3(4):e77."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -75,6 +77,8 @@ Deliver a 10-minute connectomics talk with evidence-linked claims, explicit unce
 Many strong analyses fail to influence practice because communication is either too vague or too overloaded. The specific hazard in connectomics is that the data are visually spectacular and inferentially fragile at once. A rotating 3D reconstruction will hold a room; the same room will not notice that the connection counts behind it came from an unpinned segmentation that has since changed. Audiences reward the render and rarely audit the provenance, so the discipline has to come from you.
 
 Presentation norms are also the clearest case of the hidden curriculum: strict, consequential, and almost never written down. Learners who grew up around working scientists absorbed by observation which minute may be spent on background, whether "I don't know" reads as failure or as calibration, and what a senior person's question is actually asking for. Learners who did not usually read their own confusion as lack of ability rather than lack of information. Stating the rules out loud costs one slide of session time.
+
+**Scope boundary with Module 17.** This module owns the talk: the claim tree, the time budget, the one-line provenance statement on a slide, the uncertainty ladder as spoken, and Q&A. [Module 17: Scientific Writing for Connectomics]({{ '/modules/module17/' | relative_url }}) owns the written record of the same result: manuscript structure, methods provenance, figure legends, and the reviewer response. The evidentiary standard is identical. A paper is read out of order and checked at leisure; a talk is heard once and cannot be re-read, which is why this module cuts harder and says the caveat out loud.
 
 ## Concept set
 
@@ -146,6 +150,9 @@ The same result becomes six different talks. Choose the row before drafting, bec
 | Contributed talk, 10-12 min | Specialists who challenge the null model first | Null model and its constraints, on the result slide | All background beyond 90 seconds | Highest prep cost per delivered minute, against a hard stop |
 | Poster pitch, 90 s | Whoever stops walking | Dataset name and version only | Everything except claim, evidence, limitation | Low prep, high repetition: dozens of deliveries that must each sound like the first |
 | Public or outreach talk | Non-scientists | None; scale analogies instead of protocols | All numbers except one memorable anchor | Largest rewrite cost of any row; reuse from the research talk is near zero |
+
+## Time budget
+The declared 4 hours are: about 30 minutes reading the concept set before the meeting, the 90-minute meeting the [syllabus maps]({{ '/teaching/syllabi/' | relative_url }}) give this kit (the 60-minute run-of-show below plus the opening of the studio activity), and about 2 hours outside class rehearsing and revising the studio mini-talk, the quick practice prompt, and the linked readings.
 
 ## 60-minute tutorial run-of-show
 1. **00:00-08:00 | Framing and exemplar**
@@ -235,6 +242,12 @@ That answer classifies the question as a methods challenge, concedes the mechani
 - Coaching support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 - Differentiation guidance: [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
 - Workshops that continue this module: [Communicating Science I]({{ '/teaching/pathways/communicating-science-1/' | relative_url }}) and [Communicating Science II]({{ '/teaching/pathways/communicating-science-2/' | relative_url }})
+
+## Academic references
+- Alley M, Neeley K (2005) "Returning the point to PowerPoint: rethinking the design of presentation slides from a skillful user's perspective." *2005 ASEE Annual Conference Proceedings*, Portland, Oregon. doi:10.18260/1-2--14488. The assertion-evidence slide: a sentence headline that states the claim and a body that shows the evidence, which is Concept 1 in slide form.
+- Garner J, Alley M, Wolfe K, Zappe S, Sawarynski L (2011) "Assertion-evidence slides appear to lead to better comprehension and recall of more complex concepts." *2011 ASEE Annual Conference and Exposition Proceedings*, Vancouver. doi:10.18260/1-2--17510. The comprehension test of that design.
+- Mayer RE, Moreno R (2003) "Nine ways to reduce cognitive load in multimedia learning." *Educational Psychologist* 38(1):43-52. doi:10.1207/S15326985EP3801_6. Why a slide that carries the spoken text as well is worse than one that carries only the evidence.
+- Bourne PE (2007) "Ten simple rules for making good oral presentations." *PLoS Computational Biology* 3(4):e77. doi:10.1371/journal.pcbi.0030077. Talk to the audience in the room, rehearse to time, and end early; the norms in the hidden-curriculum scaffold.
 
 ## Quick practice prompt
 Write your 60-second talk opener with the core question, one evidence-backed finding, one explicit caveat, and one sentence pre-empting the challenge you most expect. Read it aloud against a timer; if it runs past 60 seconds, cut the background sentence first.

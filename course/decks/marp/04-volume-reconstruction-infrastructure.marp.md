@@ -100,6 +100,7 @@ Idempotence: re-running a stage on the same inputs and parameters gives the same
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
+Source of "197": the count of distinct c2 segment IDs in this single 8 nm/px section, printed by scripts/render_h01_figures.py (segmentation_pair) when the figure was rendered from the public H01 volume. It is a property of this one 2D view, not a published figure, and was not re-run for this revision.
 Instructor script: "Pick one color and follow it. The pipeline is asserting that object is one continuous piece of one cell, across sections you cannot see on this slide."
 Architecturally, each of those objects is a connected component of a graph whose nodes are immutable supervoxels. A merge is adding an edge: seconds of work (median ~4 s in CAVE, per Module 8), not gigabytes of rewritten voxels. A split is removing edges via a minimum cut. Every edit is an append-only log entry with author and timestamp.
 -->

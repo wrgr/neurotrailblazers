@@ -55,12 +55,12 @@ Pre-class preparation set for learners:
 
 | Time | Segment | Your note |
 |---|---|---|
-| | 00:00-08:00 task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer. | |
-| | 08:00-20:00 choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output. | |
-| | 20:00-34:00 evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit](/assets/kits/module14/README.md)), then solve for the break-even merge-to-split ratio. | |
-| | 34:00-46:00 error taxonomy and triage discussion. Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed. | |
-| | 46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics. | |
-| 56:00-60:00 competency check | each learner states their release gate as a sentence that could fail. | |
+| 00:00-08:00 | Task framing and exemplar failure modes | |
+| 08:00-20:00 | Choose metrics tied to downstream biology | |
+| 20:00-34:00 | Evaluate baseline vs candidate model | |
+| 34:00-46:00 | Error taxonomy and triage discussion | |
+| 46:00-56:00 | Model card drafting | |
+| 56:00-60:00 | Competency check | |
 
 ## The activity
 

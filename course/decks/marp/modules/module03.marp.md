@@ -71,6 +71,8 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 - Block 6: Competency check and exit ticket (80:00-90:00)
 
 <!--
+**Where the 4 hours go.** The 90-minute session is the taught part, and the studio notebook is built inside it. The rest is preparation, installing the five libraries or downloading the [Module 03 kit](/assets/kits/module03/README.md) if you have no CAVE access, and follow-up: the three content-library readings at the end of the page, the quick practice prompt, and a second clean-kernel rerun of your notebook a day later, when you have forgotten what the cells do.
+
 Block 1: Notebook anatomy (00:00-12:00)
   Instructor script: "Open a new notebook with me. Before we write any code, we lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
   Header: title, author, date, dataset version, materialization version.

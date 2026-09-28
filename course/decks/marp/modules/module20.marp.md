@@ -43,6 +43,7 @@ Design and execute a connectomics inference plan that includes null-model choice
 - **Technical:** null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.
 - **Plain language:** your "chance baseline" must reflect biology and data collection realities.
 - **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
+- **Why it fails:** a null that ignores degree and distance is beaten by almost any real graph, so the enrichment is a fact about the null, not the circuit. Preserve the constraints your hypothesis takes for granted and randomize only the structure you are testing.
 
 ---
 
@@ -117,6 +118,8 @@ Pre-class preparation (15 min async)
 - **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
 - **Misconception guardrail:** a small p-value speaks for itself, regardless of how many tests were run.
 - **Misconception guardrail:** a hypothesis found in the data can be confirmed by the same data.
+- **Misconception guardrail:** if the result holds at one synapse threshold, it holds.
+- **Misconception guardrail:** segmentation errors add random noise that averages out over a large graph.
 
 ---
 
@@ -171,9 +174,12 @@ Write a 6-8 sentence inference note that includes:
 ---
 
 ## References (Instructor)
-- Bassett, Zurn, and Gold (2018) - model use in network neuroscience.
-- Januszewski et al. (2018) - segmentation performance and uncertainty context.
-- MICrONS/FlyWire/H01 analyses for cross-dataset inference constraints.
+- Bassett DS, Zurn P, Gold JI (2018) On the nature and use of models in network neuroscience. Nature Reviews Neuroscience 19(9):566-578.
+- Milo R et al. (2002) Network motifs: simple building blocks of complex networks. Science 298(5594):824-827.
+- Artzy-Randrup Y, Fleishman SJ, Ben-Tal N, Stone L (2004) Comment on Network motifs: simple building blocks of complex networks and Superfamilies of evolved and designed networks. Science 305(5687):1107.
+- Song S, Sjostrom PJ, Reigl M, Nelson S, Chklovskii DB (2005) Highly nonrandom features of synaptic connectivity in local cortical circuits. PLoS Biology 3(3):e68.
+- Benjamini Y, Hochberg Y (1995) Controlling the false discovery rate: a practical and powerful approach to multiple testing. Journal of the Royal Statistical Society Series B 57(1):289-300.
+- Nosek BA, Ebersole CR, DeHaven AC, Mellor DT (2018) The preregistration revolution. Proceedings of the National Academy of Sciences 115(11):2600-2606.
 
 ---
 

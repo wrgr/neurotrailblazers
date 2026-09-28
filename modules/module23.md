@@ -59,11 +59,13 @@ prerequisites_list:
 next_modules:
   - "module24"
 references:
-  - "White et al. (1986) and modern connectomics papers as abstract exemplars."
-  - "Journal club set for evidence-first claim style."
+  - "Erren TC, Bourne PE (2007) Ten simple rules for a good poster presentation. PLoS Computational Biology 3(5):e102."
+  - "Bourne PE (2007) Ten simple rules for making good oral presentations. PLoS Computational Biology 3(4):e77."
+  - "Leininger E, Shaw K, Moshiri N, Neiles K, Onsongo G, Ritz A (2021) Ten simple rules for attending your first conference. PLOS Computational Biology 17(7):e1009133."
+  - "Michaut M (2011) Ten simple rules for getting involved in your scientific community. PLoS Computational Biology 7(10):e1002232."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -84,7 +86,7 @@ This module also sits on the MERIT stage-5 failure mode. If every professional r
 - **Misconception guardrail:** a strong motivating paragraph can compensate for thin results.
 
 ### 2) Posters are spatial arguments
-- **Technical:** layout should mirror inferential flow (question, method, evidence, limits). Design for three reading distances: title and one-line finding readable from about two meters, headings and figure panels from a meter, methods and caveats only on close approach. Conventional minimums are a title around 72 to 100 point, headings 36 to 48, body no smaller than 24; check your meeting's template first, since some societies specify sizes.
+- **Technical:** layout should mirror inferential flow (question, method, evidence, limits). Design for three reading distances: title and one-line finding readable from about two meters, headings and figure panels from a meter, methods and caveats only on close approach. This site's rule of thumb, not a published standard: title 72 to 100 point, headings 36 to 48, body no smaller than 24. Check your meeting's template first, since some societies specify sizes.
 - **Plain language:** if viewers cannot find your core result in 10 seconds, redesign.
 - **Misconception guardrail:** dense text signals that the work is thorough.
 
@@ -94,7 +96,7 @@ This module also sits on the MERIT stage-5 failure mode. If every professional r
 - **Misconception guardrail:** good science speaks for itself and networking is optional decoration.
 
 ### 4) Key connectomics conferences and venues
-Trainees should know the major venues where connectomics work is presented and discussed. The Society for Neuroscience (SfN) annual meeting is the largest general neuroscience conference, and its poster and nanosymposium sessions include connectomics work. The BRAIN Initiative Investigators Meeting brings together funded researchers and is a common place for dataset and tool updates. Specialized connectomics conferences and workshops (often organized around specific datasets or methods) provide focused peer interaction. Gordon Research Conferences on neural circuits use a small, discussion-heavy format that suits early-career researchers building collaborations.
+Trainees should know the major venues where connectomics work is presented and discussed. The Society for Neuroscience (SfN) annual meeting is the field's big general meeting: SfN's own [About page](https://www.sfn.org/about) says it "regularly attracts more than 30,000 attendees" (read 2026-09-27), and its poster and nanosymposium sessions include connectomics work. The BRAIN Initiative Investigators Meeting brings together funded researchers and is a common place for dataset and tool updates. Specialized connectomics conferences and workshops (often organized around specific datasets or methods) provide focused peer interaction. Gordon Research Conferences use a small, discussion-heavy format that suits early-career researchers building collaborations: GRC's [About page](https://www.grc.org/about/) states that "each conference is limited to 200 attendees", and its [policies](https://www.grc.org/about/grc-policies-and-legal-disclaimers/) make everything presented "a private communication from the individual making the contribution" that is "not for public use" without the presenter's written approval (both read 2026-09-27).
 
 Abstract limits vary by meeting, as a word or a character count; the budget in this module assumes about 250 words. State the dataset used (species, brain region, reconstruction method), the analytical method applied, the primary finding with a quantitative anchor, and at least one interpretation limitation. Reviewers at these venues expect to see the specific dataset and version, not just "a connectomics dataset," and they expect claims to be bounded by the reconstruction completeness and proofreading status of the data.
 
@@ -132,13 +134,16 @@ Trainees are usually told to "go to conferences" without being told which. The c
 
 | Venue type | What you actually get | Who is in the room | How selection works | What it costs |
 |---|---|---|---|---|
-| Large general meeting (for example SfN) | Breadth, exposure to adjacent fields, many posters in your area | Thousands, including most people who might hire you | Poster acceptance is typically routine once membership and deadline requirements are met; talks are more selective | The highest registration and travel cost, and the highest risk of being one poster among thousands unless you plan your targets |
+| Large general meeting (for example SfN) | Breadth, exposure to adjacent fields, many posters in your area | More than 30,000 at SfN by its own count, including most people who might hire you | Poster acceptance is typically routine once membership and deadline requirements are met; talks are more selective | The highest registration and travel cost, and the highest risk of being one poster among thousands unless you plan your targets |
 | Consortium or initiative meeting (for example a BRAIN Initiative investigators meeting) | Dataset and tool announcements before publication; the people who build the infrastructure you use | Funded groups and their trainees | Often tied to funding or invitation | Access may depend on your lab's funding, a constraint worth naming rather than leaving trainees to infer |
-| Small discussion conference (Gordon Research Conference format) | Sustained contact with senior people; questions that change your project | Up to about two hundred, the same people all week | Application and selection, capacity-limited | Highest contact value per attendee, but unpublished material is typically off the record and not citable, so it will not generate a citable output |
+| Small discussion conference (Gordon Research Conference format) | Sustained contact with senior people; questions that change your project | At most 200, GRC's stated limit, the same people all week | Application and selection, capacity-limited | Highest contact value per attendee, but by GRC policy nothing presented may be quoted or published without the presenter's written approval, so it will not generate a citable output |
 | Computational meeting with competitive abstract review (for example COSYNE) | A methods-literate audience that will engage with your null model | Computational neuroscientists, many from machine learning | Competitive review; rejection is normal and not a verdict | Preparation cost is high and acceptance is uncertain, so do not make it your only submission |
 | Local or regional symposium | Low-stakes rehearsal; local collaborators; a real deadline | Your institution and neighbors | Usually open | Least prestige, least cost, and the best place to fail safely before a national meeting |
 
 If you have never presented, a regional symposium followed by one large general meeting beats a single prestigious venue: the first converts the second from an ordeal into a repetition.
+
+## Time budget
+The declared 4 hours are: about 30 minutes reading the concept set beforehand, a 90-minute meeting (the 60-minute run-of-show below plus the opening of the studio activity), and about 2 hours outside class finishing the studio abstract, wireframe and follow-up message, the quick practice prompt, and the linked readings. Neither [syllabus map]({{ '/teaching/syllabi/' | relative_url }}) schedules this kit, because it overlaps the Communicating Science workshops; run it as a lab meeting in the weeks before an abstract deadline.
 
 ## 60-minute tutorial run-of-show
 1. **00:00-08:00 | Framing + exemplar abstract**
@@ -168,7 +173,7 @@ The rewrite reallocates the same budget. Its numbers are the synthetic ones from
 
 Three things changed. The gap replaced the field: "our model assumes X, nobody has checked X" is a gap; "the brain is complex" is not. Every claim acquired an anchor a reviewer can check, including the null model, because an enrichment without a stated null is not a result. And the limitation became specific and directional: saying "false merges would inflate this in the same direction" tells a reviewer you know which way your error pushes, which is worth more than a generic note that reconstruction has limitations.
 
-The 90-second pitch is then a compression of the same structure, not a summary of the poster: one sentence of gap, one of question, one of dataset with version, two of result with the number, one of limitation, one invitation. About 180 spoken words.
+The 90-second pitch is then a compression of the same structure, not a summary of the poster: one sentence of gap, one of question, one of dataset with version, two of result with the number, one of limitation, one invitation. About 180 spoken words if you speak at 120 words a minute, the pace this module budgets on; time yourself, since paces differ.
 
 The follow-up, sent within three days:
 
@@ -220,6 +225,14 @@ Note the moves: it names when and where so she can place him, restates her own q
 - Stage framing: [Program Models]({{ '/models/' | relative_url }}) — the stage-5 network-dependence failure mode
 - Workshop that continues this module: [Building Your STEM Entourage]({{ '/teaching/pathways/building-your-entourage/' | relative_url }})
 - Differentiation guidance: [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
+
+## Academic references
+- Erren TC, Bourne PE (2007) "Ten simple rules for a good poster presentation." *PLoS Computational Biology* 3(5):e102. doi:10.1371/journal.pcbi.0030102. Define the purpose, sell the work in ten seconds, and make the poster stand alone; Concept 2.
+- Bourne PE (2007) "Ten simple rules for making good oral presentations." *PLoS Computational Biology* 3(4):e77. doi:10.1371/journal.pcbi.0030077. Rehearse to time and cut, which is what the 90-second pitch practice enforces.
+- Leininger E, Shaw K, Moshiri N, Neiles K, Onsongo G, Ritz A (2021) "Ten simple rules for attending your first conference." *PLOS Computational Biology* 17(7):e1009133. doi:10.1371/journal.pcbi.1009133. Plan whom to meet, approach people, and follow up; the hidden-curriculum scaffold in published form.
+- Michaut M (2011) "Ten simple rules for getting involved in your scientific community." *PLoS Computational Biology* 7(10):e1002232. doi:10.1371/journal.pcbi.1002232. Why the follow-up, not the conversation, is the product (Concept 5).
+
+Web sources for the venue numbers in Concept 4: the [GRC About page](https://www.grc.org/about/) and [GRC policies](https://www.grc.org/about/grc-policies-and-legal-disclaimers/), and the [SfN About page](https://www.sfn.org/about), all read 2026-09-27.
 
 ## Quick practice prompt
 Write a 5-sentence mini-abstract including question, method with dataset version, result with one number, limitation, and implication. Then count how many words went to the field and how many to your result; if the first number is larger, rewrite the opening sentence.

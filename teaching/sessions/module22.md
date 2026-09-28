@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Session Kit: Module 22: Scientific Writing and Presentation"
+title: "Session Kit: Module 22: Scientific Presentation"
 description: "Everything needed to run Module 22 as a taught session: prep, timing, materials, misconceptions, rubric."
 permalink: /teaching/sessions/module22/
 slug: session-module22
@@ -43,6 +43,7 @@ Learners should arrive having covered:
     <a class="resource-link" href="{{ site.deck_source_base }}/modules/module22.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module22/module22-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module22/' | relative_url }}">Full module page</a>
+    <a class="resource-link" href="{{ '/teaching/answers/module22/' | relative_url }}">Model responses</a>
   </div>
 </div>
 

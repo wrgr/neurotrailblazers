@@ -60,13 +60,16 @@ prerequisites_list:
 next_modules:
   - "module21"
 references:
-  - "Bassett, Zurn, and Gold (2018) - model use in network neuroscience."
-  - "Januszewski et al. (2018) - segmentation performance and uncertainty context."
-  - "MICrONS/FlyWire/H01 analyses for cross-dataset inference constraints."
+  - "Bassett DS, Zurn P, Gold JI (2018) On the nature and use of models in network neuroscience. Nature Reviews Neuroscience 19(9):566-578."
+  - "Milo R et al. (2002) Network motifs: simple building blocks of complex networks. Science 298(5594):824-827."
+  - "Artzy-Randrup Y, Fleishman SJ, Ben-Tal N, Stone L (2004) Comment on Network motifs: simple building blocks of complex networks and Superfamilies of evolved and designed networks. Science 305(5687):1107."
+  - "Song S, Sjostrom PJ, Reigl M, Nelson S, Chklovskii DB (2005) Highly nonrandom features of synaptic connectivity in local cortical circuits. PLoS Biology 3(3):e68."
+  - "Benjamini Y, Hochberg Y (1995) Controlling the false discovery rate: a practical and powerful approach to multiple testing. Journal of the Royal Statistical Society Series B 57(1):289-300."
+  - "Nosek BA, Ebersole CR, DeHaven AC, Mellor DT (2018) The preregistration revolution. Proceedings of the National Academy of Sciences 115(11):2600-2606."
 videos:
   - "https://www.neurotrailblazers.org/technical-training/09-connectome-analysis-neuroai/"
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -77,26 +80,51 @@ Design and execute a connectomics inference plan that includes null-model choice
 ## Why this module matters
 Connectomics analyses can produce thousands of statistically testable patterns. Without disciplined inference, teams risk publishing artifacts from preprocessing bias, multiple comparisons, or misaligned null assumptions.
 
+**Scope boundary with Module 08.** [Module 08]({{ '/modules/module08/' | relative_url }}) teaches the design of one test: a measurable outcome, one null model, and an interpretation boundary for one claim. This module starts where that ends and handles inference at scale: many tests at once, the dependence between them, reconstruction error as a directional bias, threshold sensitivity, and the separation of exploratory from confirmatory claims. If you have one hypothesis and one null, Module 08 is enough. If you have a census, you need this one.
+
 ## Concept set
 ### 1) Null models encode scientific assumptions
 - **Technical:** null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.
 - **Plain language:** your "chance baseline" must reflect biology and data collection realities.
 - **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
+- **Why it fails:** a null that ignores degree and distance is beaten by almost any real graph, so the enrichment is a fact about the null, not the circuit. Preserve the constraints your hypothesis takes for granted and randomize only the structure you are testing.
 
 ### 2) Multiplicity is structural, not optional
 - **Technical:** motif families and subgroup analyses require correction strategies and predeclared test hierarchies.
 - **Plain language:** if you test many patterns, some will look significant by accident.
 - **Misconception guardrail:** a small p-value speaks for itself, regardless of how many tests were run.
+- **Why it fails:** at a 0.05 threshold, a census of 16 motif classes with nothing in it is expected to produce about one significant class (16 x 0.05 = 0.8). A p-value means what its family lets it mean, so report the family size and the correction with it.
 
 ### 3) Exploratory and confirmatory analyses must be separated
 - **Technical:** hypothesis generation and hypothesis testing should have different reporting labels and evidence standards.
 - **Plain language:** be clear about what you discovered versus what you validated.
 - **Misconception guardrail:** a hypothesis found in the data can be confirmed by the same data.
+- **Why it fails:** the data that suggested the hypothesis were selected for it, so a test on them is circular. Confirmation needs data the hypothesis has not seen: a held-out region reserved before the exploration, or the next release.
 
 ### 4) Statistical challenges unique to connectomics
 Connectomics datasets present several statistical difficulties that are uncommon in other fields. Massive multiple comparisons arise when testing thousands of motifs, cell-type pairs, or connection patterns simultaneously. Spatial autocorrelation is pervasive because nearby neurons share arbor overlap, creating non-independent edges that violate standard test assumptions. The threshold problem is particularly acute: choosing a minimum synapse count (e.g., 3 vs. 5 synapses to define a "real" connection) changes the resulting graph and all downstream statistics, yet no universally accepted threshold exists.
 
-Researcher degrees of freedom in null model selection further compound these issues. Different null models that preserve different graph properties (degree sequence, spatial distance distribution, cell-type composition) can yield contradictory conclusions from the same data. Best practices include using permutation tests over parametric alternatives when distributional assumptions are uncertain, reporting effect sizes alongside p-values to distinguish statistical significance from biological relevance, and performing sensitivity analyses across multiple thresholds and null model variants to confirm that findings are robust rather than artifacts of a single analytical choice.
+Researcher degrees of freedom in null model selection further compound these issues. Different null models that preserve different graph properties (degree sequence, spatial distance distribution, cell-type composition) can yield contradictory conclusions from the same data. Best practices include using permutation tests over parametric alternatives when distributional assumptions are uncertain, reporting effect sizes alongside p-values to distinguish statistical significance from biological relevance, and performing sensitivity analyses across multiple thresholds and null model variants to confirm that a finding survives rather than depends on a single analytical choice.
+
+- **Misconception guardrail:** if the result holds at one synapse threshold, it holds.
+- **Why it fails:** the threshold changes the graph, so a result that appears at only one threshold is a result about that threshold. Report the statistic across the plausible range and say where it lives.
+
+### 5) Reconstruction error is a directional bias, not noise
+- **Technical:** merge errors join separate arbors, so they add edges between neurons that were already near each other and inflate dense motifs; split errors remove edges and deflate them. The two do not cancel, because they act on different motifs at different rates. The error-sensitivity check in the worked example below therefore reports a band with a direction: perturb the graph at the measured merge and split rates, recompute the statistic, and say which way the band moved relative to the observed value.
+- **Plain language:** reconstruction mistakes push motif counts one way, and it is usually the way the enrichment claim points. Measure the push before you trust the claim.
+- **Misconception guardrail:** segmentation errors add random noise that averages out over a large graph.
+- **Why it fails:** merges and splits bias motif counts in opposite and unequal directions, and merges push toward denser motifs, which is the direction most enrichment claims point. Averaging over more of the graph averages the bias in, not out.
+
+## Choosing a multiplicity correction: decision table
+
+The correction follows from how the tests were generated and how much dependence they share. Choose the row before running the census, and write it down.
+
+| Situation | Correction | What it gives you | What it costs you |
+|---|---|---|---|
+| A few tests declared in advance, and any single false positive is unacceptable | Bonferroni | Family-wise control that needs no assumption about dependence | Power falls with every test added; conservative when tests are dependent, which motif counts are |
+| Many tests, and a stated fraction of false discoveries is acceptable | Benjamini-Hochberg false discovery rate | More discoveries at large test counts | The verdict on each test depends on the other tests' p-values, so a changed census changes every result; assumes independence or positive dependence |
+| Tests are strongly dependent, as in a triad census where one edge moves many counts | Permutation inference on the maximum statistic across the family | Family-wise control that respects the dependence by construction | Compute cost; you need the null generator anyway, so this is usually the honest default |
+| One hypothesis that survived exploration and now needs confirming | A preregistered single test on a held-out region or the next release | The only route from exploratory to confirmatory | A second dataset or a held-out region, which has to be reserved before the exploration starts |
 
 ## Worked example: the motif that survived the null and died in the error band
 
@@ -129,6 +157,9 @@ You run a triad census on a 300-neuron subgraph: 16 directed three-node classes.
    - Test sensitivity to preprocessing variant, sampling region, and parameter choice.
 5. **Claim calibration**
    - Report supported, uncertain, and unsupported claims in separate blocks.
+
+## Time budget
+The declared 4 to 6 hours are: the 15-minute pre-class reading below and about 30 minutes on the concept set, the 90-minute meeting the [16-week syllabus map]({{ '/teaching/syllabi/16-week/' | relative_url }}) gives this kit in week 10 (the 60-minute run-of-show below plus the opening of the studio activity; the 10-week map leaves this kit out), and 2 to 4 hours outside class running the studio's null models and finishing its write-up, the quick practice prompt, and the linked readings.
 
 ## 60-minute tutorial run-of-show
 
@@ -223,11 +254,6 @@ You run a triad census on a 300-neuron subgraph: 16 directed three-node classes.
 - Quality controls context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
 ## Evidence anchors from connectomics practice
-### Key papers to use in this module
-- [Bassett DS, Zurn P, Gold JI (2018). "On the nature and use of models in network neuroscience." *Nature Reviews Neuroscience* 19:566-578.](https://doi.org/10.1038/s41583-018-0038-8)
-- [Januszewski M et al. (2018). "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15:605-610.](https://doi.org/10.1038/s41592-018-0049-4)
-- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature* 640.](https://www.nature.com/articles/s41586-025-08790-w)
-
 ### Key datasets to practice on
 - [MICrONS Explorer](https://www.microns-explorer.org/)
 - [FlyWire](https://flywire.ai/)
@@ -237,6 +263,14 @@ You run a triad census on a 300-neuron subgraph: 16 directed three-node classes.
 - Can you defend your null-model assumptions in one paragraph?
 - Can you report one finding with effect size, uncertainty, and limitation?
 - Can you identify which result remains exploratory?
+
+## Academic references
+- Bassett DS, Zurn P, Gold JI (2018) "On the nature and use of models in network neuroscience." *Nature Reviews Neuroscience* 19(9):566-578. doi:10.1038/s41583-018-0038-8. What a null model is a model of; the framing behind Concept 1.
+- Milo R, Shen-Orr S, Itzkovitz S, Kashtan N, Chklovskii D, Alon U (2002) "Network motifs: simple building blocks of complex networks." *Science* 298(5594):824-827. doi:10.1126/science.298.5594.824. The motif census against a degree-preserving null that the worked example runs.
+- Artzy-Randrup Y, Fleishman SJ, Ben-Tal N, Stone L (2004) "Comment on 'Network motifs: simple building blocks of complex networks' and 'Superfamilies of evolved and designed networks'." *Science* 305(5687):1107. doi:10.1126/science.1099334. Motif enrichment that vanishes under a null with spatial structure; why Concept 1 says the null encodes the hypothesis.
+- Song S, Sjöström PJ, Reigl M, Nelson S, Chklovskii DB (2005) "Highly nonrandom features of synaptic connectivity in local cortical circuits." *PLoS Biology* 3(3):e68. doi:10.1371/journal.pbio.0030068. The reciprocity and motif result the run-of-show's reciprocity example is modeled on.
+- Benjamini Y, Hochberg Y (1995) "Controlling the false discovery rate: a practical and powerful approach to multiple testing." *Journal of the Royal Statistical Society Series B* 57(1):289-300. doi:10.1111/j.2517-6161.1995.tb02031.x. The correction in the second row of the decision table.
+- Nosek BA, Ebersole CR, DeHaven AC, Mellor DT (2018) "The preregistration revolution." *Proceedings of the National Academy of Sciences* 115(11):2600-2606. doi:10.1073/pnas.1708274114. Why the confirmatory path in Concept 3 is preregistered on new data.
 
 ## Quick practice prompt
 Write a 6-8 sentence inference note that includes:

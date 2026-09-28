@@ -64,6 +64,8 @@ Write one connectomics study question with measurable structural outputs and one
 - Block 6: Exit ticket (80:00-90:00)
 
 <!--
+**Where the 3-4 hours go.** The 90-minute session is the taught part, and the studio activity's two artifacts are drafted inside it. The rest is preparation, the Seung talk and the two case studies under Content library references, and follow-up: Technical Unit 01, the quick practice prompt, and revising your question sheet and motivation statement after peer review.
+
 Block 1: Opening hook (00:00-12:00)
   Instructor script: "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. its reconstruction (the raw and segmented H01 pair in Step 6 of [H01, Step by Step](/content-library/case-studies/h01-pipeline/) works). Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
   Collect 3-4 responses on whiteboard. Highlight that each response implies a different measurement.

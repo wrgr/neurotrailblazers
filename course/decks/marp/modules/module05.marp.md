@@ -52,15 +52,16 @@ EM image quality sets an upper limit on segmentation accuracy, and through it on
 ---
 
 ## Run of Show (60 min)
-- 1. 00:00-08:00 — EM basics refresher
-- 2. 08:00-20:00 — Artifact recognition walkthrough
-- 3. 20:00-34:00 — Learner triage round
-- 4. 34:00-46:00 — QA threshold debate
-- 5. 46:00-56:00 — Decision logging practice
-- 6. 56:00-60:00 — Competency check
+- 00:00-08:00 | EM basics refresher
+- 08:00-20:00 | Artifact recognition walkthrough
+- 20:00-34:00 | Learner triage round
+- 34:00-46:00 | QA threshold debate
+- 46:00-56:00 | Decision logging practice
+- 56:00-60:00 | Competency check
 
 <!--
-Pre-class preparation (5-10 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the roughly 60-minute studio are the taught part. The rest is the pre-class reading (EM principles and the artifact taxonomy), the post-class assignment of three QA log entries from a public volume, the quick practice prompt and, for the instructor, building the patch set before class. Neither course map schedules this kit; the [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) keeps its studio only as the week 4 fallback for the Unit 03 viewer lab, so the hours beyond the session are unscheduled — lab meeting or take-home.
+  Pre-class preparation (5-10 min async)
   Before the session, students should:
   Review the [EM principles](/content-library/imaging/em-principles/) page, focusing on image formation and contrast.
   Preview the artifact gallery on the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page and find three examples: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
@@ -71,33 +72,33 @@ Pre-class preparation (5-10 min async)
   Artifact reference card (single page, double-sided): print the severity classification section of the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page
   Minute-by-minute schedule
 
-1. 00:00-08:00 — EM basics refresher
+00:00-08:00 | EM basics refresher
   *Instructor cue*: "We are going to start with a fast review. I will show four images — tell me which modality produced each one and why you think so."
   Show four images: three from public volumes acquired by different methods (each dataset's release page names the instrument) and one intentionally ambiguous. Cold-call students for modality identification and reasoning.
   Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
 
-2. 08:00-20:00 — Artifact recognition walkthrough
+08:00-20:00 | Artifact recognition walkthrough
   *Instructor cue*: "Now I am going to show you five artifacts that cause many segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
   Walk through knife chatter, charging, folds, missing sections, and staining gradients with the annotated examples on the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page.
   Where your patch set has an example of the artifact, turn on the public viewer's segmentation layer over it so students can see the predicted error type realized in practice.
   *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.
 
-3. 20:00-34:00 — Learner triage round
+20:00-34:00 | Learner triage round
   *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches from the patch set. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
   Circulate and listen for common misconceptions. Note which artifact types cause the most disagreement.
   *Formative check*: At 30:00, ask one pair to share their most difficult call and explain their reasoning.
 
-4. 34:00-46:00 — QA threshold debate
+34:00-46:00 | QA threshold debate
   *Instructor cue*: "Pair A said this patch is a pass. Pair B said rework. Both of you, defend your position."
   Facilitate structured debate on 2-3 patches where pairs disagreed. Push students to articulate the cost tradeoff: what is the cost of re-acquiring versus the cost of proofreading the resulting errors?
   Introduce the concept of escalation levels (hard stop, flag and monitor, pass) and ask students to re-classify their six patches using this framework.
 
-5. 46:00-56:00 — Decision logging practice
+46:00-56:00 | Decision logging practice
   *Instructor cue*: "A QA decision that is not logged does not exist. You are now going to write a QA log entry for your hardest patch."
   Students write a structured QA entry: image ID, artifact type, severity, decision, rationale, and any conditions (e.g., "pass if proofreading budget is allocated to rows 12-18").
   Show an example of a well-written and a poorly-written QA entry for comparison.
 
-6. 56:00-60:00 — Competency check
+56:00-60:00 | Competency check
   *Instructor cue*: "Final check. I am showing one new patch. You have two minutes to write your QA verdict on an index card. Include artifact type, severity, decision, and one sentence of rationale."
   Collect index cards. Review after class to identify students who need follow-up.
   Formative assessment checkpoints

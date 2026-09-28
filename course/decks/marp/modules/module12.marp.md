@@ -40,7 +40,7 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 
 ## Concept Focus
 ### 1) Storage layout is chosen by access pattern, not by format popularity
-- **Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM compresses 2-10x; label volumes compress far better.
+- **Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM imagery compresses losslessly by only a small factor; label volumes compress far better. Measure the ratio on a sample of your own data before budgeting.
 
 ---
 

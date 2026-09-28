@@ -69,7 +69,8 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 - 50:00-60:00 | Competency check
 
 <!--
-Pre-class preparation (10 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class review of synapse classification and motif types, the [Module 11 kit](/assets/kits/module11/README.md) with its 15-neuron warm-up, and the quick practice prompt. Neither course map schedules this kit (the [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
+  Pre-class preparation (10 min async)
   Review [Synapse classification](/content-library/neuroanatomy/synapse-classification/) (Gray Type I/II)
   Review the key motif types section of [Motif analysis](/content-library/connectomics/motif-analysis/)
   Minute-by-minute plan

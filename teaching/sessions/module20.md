@@ -43,6 +43,7 @@ Learners should arrive having covered:
     <a class="resource-link" href="{{ site.deck_source_base }}/modules/module20.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module20/module20-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module20/' | relative_url }}">Full module page</a>
+    <a class="resource-link" href="{{ '/teaching/answers/module20/' | relative_url }}">Model responses</a>
   </div>
 </div>
 
@@ -84,6 +85,10 @@ voiced is far easier to correct than one they are holding silently.
 - **They may believe:** A small p-value speaks for itself, regardless of how many tests were run.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 - **They may believe:** A hypothesis found in the data can be confirmed by the same data.
+  - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
+- **They may believe:** If the result holds at one synapse threshold, it holds.
+  - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
+- **They may believe:** Segmentation errors add random noise that averages out over a large graph.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm

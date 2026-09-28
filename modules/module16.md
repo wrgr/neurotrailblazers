@@ -60,12 +60,15 @@ prerequisites_list:
 next_modules:
   - "module17"
 references:
-  - "Tufte ER (1983) The Visual Display of Quantitative Information. Graphics Press."
   - "Borland D, Taylor RM (2007) Rainbow color map (still) considered harmful. IEEE Computer Graphics and Applications 27(2):14-17."
+  - "Crameri F, Shephard GE, Heron PJ (2020) The misuse of colour in science communication. Nature Communications 11:5444."
+  - "Rougier NP, Droettboom M, Bourne PE (2014) Ten simple rules for better figures. PLoS Computational Biology 10(9):e1003833."
   - "Weissgerber TL et al. (2015) Beyond bar and line graphs: time for a new data presentation paradigm. PLoS Biology 13(4):e1002128."
+  - "Wong B (2011) Points of view: color blindness. Nature Methods 8(6):441."
+  - "Birch J (2012) Worldwide prevalence of red-green color deficiency. Journal of the Optical Society of America A 29(3):313-320."
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -114,10 +117,26 @@ Poor visual design can create false confidence and hide limitations. In connecto
 - **Why it fails:** a plot that hides uncertainty is less honest than one that shows it.
 
 ### 5) Accessibility and colorblind-safe design
-- **Technical:** among people of Northern European ancestry, about 8% of males and 0.5% of females have color vision deficiency. Figures that rely on red-green discrimination exclude these readers. Use colorblind-safe palettes (e.g., Okabe-Ito, ColorBrewer qualitative palettes) and redundant encoding (color + shape, color + pattern). Ensure sufficient contrast for printing in grayscale. Keep annotation density manageable --- overcrowded labels defeat the purpose.
+- **Technical:** in large population surveys of European populations, about 8% of men and about 0.4% of women have inherited red-green color deficiency (Birch 2012). Figures that rely on red-green discrimination exclude these readers. Use colorblind-safe palettes (e.g., Okabe-Ito, ColorBrewer qualitative palettes) and redundant encoding (color + shape, color + pattern). Ensure sufficient contrast for printing in grayscale. Keep annotation density manageable --- overcrowded labels defeat the purpose.
 - **Plain language:** if people cannot read it, they cannot evaluate it. Design for the widest possible audience.
 - **Misconception guardrail:** if the figure reads well on your screen, it reads well for everyone.
 - **Why it fails:** red-green contrasts, thin lines, and low-contrast labels lock out readers with color vision deficiency or a grayscale printout.
+
+## Worked example: the heatmap that hid its own sparsity
+
+Every number here comes from the [Module 16 kit]({{ '/assets/kits/module16/README.md' | relative_url }}), which is synthetic and generated from a fixed seed, so you can reproduce each step. Nothing below is a finding about a brain.
+
+`celltype_synapses.csv` is a 50 x 50 matrix of synapse counts between cell types: 2,500 cells, median 36 synapses, maximum 1,089 (L5_09 onto L5_05), and 27 cells at zero. Its companion `celltype_connections.csv` gives the number of connected neuron pairs behind each cell. 907 of the 2,500 cells, 36%, rest on fewer than 10 pairs.
+
+**Draft 1.** A linear color scale from 0 to 1,089, the jet colormap, rows and columns in file order. It looks like a heatmap and it says almost nothing. Three reasons. First, the scale: 90% of cells are at or below 146 synapses, the 90th percentile, so nine cells in ten fall into the bottom 13% of the color range and read as one flat color while three cells above 800 carry the whole image. Second, the colormap: jet is not perceptually uniform, so it draws bands where the data have none (Borland & Taylor 2007). Third, the sparsity is invisible. A cell built on 3 neuron pairs and a cell built on 433 pairs get the same visual weight, and the reader has no way to tell that a third of the matrix is thinly supported.
+
+**Draft 2.** Color encodes log10(count + 1) on the viridis colormap, with the colorbar labeled "synapses (log scale)". Rows and columns are reordered by hierarchical clustering so blocks become visible. The 907 sparse cells are hatched. The 27 zero cells sit at the bottom of the scale and the caption says so. None of these changes touches the data; each one removes a way the first draft could be misread.
+
+**The Sholl panel gets the same treatment.** `python3 morphometry.py --swc neurons/basket.swc --sholl 10` prints the shell crossings. At a 60 µm radius the basket arbor crosses 23 times, the excitatory arbor 12, the chandelier arbor 7. Those three curves need three colorblind-safe colors with a legend and a radius axis in µm. The uncertainty band comes from `neurons.csv`, which gives an estimated missing-cable fraction of 0.08 for the excitatory reconstruction, 0.15 for the basket and 0.22 for the chandelier, so the chandelier band must be the widest. The caption has to say what the band is: reconstruction incompleteness, not biological variability across cells of that type.
+
+**The caption for Figure 1 after revision.** "Synapse counts between 50 cell types (rows presynaptic, columns postsynaptic), shown as log10(count + 1) and ordered by hierarchical clustering. Hatched cells rest on fewer than 10 connected neuron pairs (907 of 2,500). Synthetic data: Module 16 kit, `celltype_synapses.csv` and `celltype_connections.csv`, generated by `scripts/generate_kit_materials.rb` from a fixed seed." A reader can now check every claim the figure makes.
+
+**What this example does not establish.** That clustering order is the right order for every claim. A sentence about laminar organization is served better by ordering rows by layer, even though the blocks become less crisp. The ordering, like the plot type, follows the claim, which is why the claim is written first.
 
 ## Tools for connectomics visualization
 
@@ -141,6 +160,9 @@ Python-based multi-dimensional image viewer for volume data. Supports overlaying
 5. **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis, or a Python library such as colorspacious). Verify grayscale legibility.
 6. **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
 7. **Export figure package with caption metadata.** Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.
+
+## Time budget
+The declared 4 hours are: about 30 minutes reading the concept set beforehand, a 90-minute meeting (the 60-minute run-of-show below plus the opening of the studio activity), and about 2 hours outside class finishing the studio figures, the quick practice prompt, and the linked readings. Neither [syllabus map]({{ '/teaching/syllabi/' | relative_url }}) schedules a meeting for this kit; the 16-week map offers it as a 4-hour take-home on the learner's own analysis card, in which case the run-of-show is read rather than run and the studio is done alone.
 
 ## 60-minute tutorial run-of-show
 
@@ -202,6 +224,25 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 - **Strong performance:** high clarity across expert and non-expert audiences, minimal misinterpretation risk, colorblind-safe design, explicit documentation of dataset version and code used for each panel, and thoughtful caption language that narrows interpretation bounds.
 - **Failure modes:** overloaded figures with too many overlapping elements, missing scale context, hidden uncertainty, rainbow colormaps, gratuitous 3D renderings, captions that do not mention data quality or limitations.
 
+## Common errors and how to recover
+
+- **A reader says the heatmap "shows nothing".** The usual cause is a linear color scale on a heavy-tailed matrix, so most cells share one color. Recover by switching to a log or quantile scale, saying so on the colorbar label, and hatching the cells that rest on few observations.
+- **Two panels of the same quantity give different impressions.** Their color ranges differ. Recover by fixing the same minimum and maximum across panels and stating the shared scale once in the caption.
+- **A 3D rendering is the only evidence for a quantitative claim.** Recover by adding a 2D panel that carries the number (a Sholl plot, a histogram, a bar with an interval) and keeping the rendering for orientation, with a scale bar.
+- **Error bars came off in the last revision "to clean it up".** Restore them. If the interval is too wide to show comfortably, that width is the finding; report n and say why the interval is wide.
+- **The figure passes the colorblind simulator and fails in grayscale.** Two hues had similar luminance. Recover with redundant encoding (shape, line style or pattern in addition to color) and check the luminance contrast directly.
+- **A node-link diagram of 2,000 nodes.** Nobody can read it. Recover by aggregating to cell types, or by switching to an adjacency matrix, and keep node-link diagrams for the small networks where individual edges matter.
+- **You cannot regenerate the figure six months later.** Recover by treating each panel as the output of a script: the script, the dataset version and the seed go in the caption metadata, and the exported file is never edited by hand.
+
+## What this module does not cover
+
+- **Writing the paper the figures sit in.** Claim-evidence mapping, legends as part of the methods record, and reviewer responses are [Module 17]({{ '/modules/module17/' | relative_url }}).
+- **Slides and spoken delivery.** What a figure has to do on a slide, in a room, in eight minutes, is [Module 22]({{ '/modules/module22/' | relative_url }}).
+- **What the interval means.** Null models, multiplicity and the difference between an exploratory and a confirmatory result are [Module 20]({{ '/modules/module20/' | relative_url }}). This module shows the uncertainty; that one decides what it licenses.
+- **Cleaning the table before plotting it.** Thresholds, duplicates and boundary neurons are [Module 18]({{ '/modules/module18/' | relative_url }}); a figure built on an uncleaned table inherits its defects.
+- **The formats behind the figure.** What a Zarr volume, an SWC skeleton or a synapse table contains is [data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}).
+- **Interactive dashboards and web viewers as software.** Building a Neuroglancer deployment or a web app is engineering outside this curriculum; here Neuroglancer is a tool you use, not one you build.
+
 ## Content library cross-references
 - [Data formats]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) --- understanding the source formats (Zarr volumes, CSV synapse tables, SWC morphologies) that feed visualization workflows.
 - [Graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }}) --- adjacency matrices, edge lists, and graph objects that underlie node-link diagrams and heatmaps.
@@ -215,13 +256,6 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 
 ## Evidence anchors from connectomics practice
 
-### Key papers
-- [Tufte, E. (1983). *The Visual Display of Quantitative Information.*](https://www.edwardtufte.com/tufte/books_vdqi) --- foundational principles of data visualization integrity.
-- [Borland, D. and Taylor, R.M. (2007). "Rainbow Color Map (Still) Considered Harmful."](https://doi.org/10.1109/MCG.2007.323435) --- why perceptually uniform colormaps matter.
-- [Weissgerber, T.L. et al. (2015). "Beyond Bar and Line Graphs."](https://doi.org/10.1371/journal.pbio.1002128) --- showing distributions, not just summaries.
-- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature*, 640.](https://www.nature.com/articles/s41586-025-08790-w) --- exemplary connectomics figure design.
-- [Shapson-Coe, A. et al. (2024). H01 human cortical fragment. *Science.*](https://www.science.org/doi/10.1126/science.adk4858) --- large-scale visualization of human connectomics data.
-
 ### Key tools and resources
 - [Neuroglancer](https://github.com/google/neuroglancer) --- browser-based volumetric viewer.
 - [napari](https://napari.org/) --- Python multi-dimensional image viewer.
@@ -233,6 +267,14 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 - Can you identify the uncertainty indicator in each figure and explain what it represents?
 - Can you pass each figure through a colorblind simulator without information loss?
 - Can you regenerate each figure from the documented code and dataset version?
+
+## Academic references
+- Borland D, Taylor RM (2007) "Rainbow color map (still) considered harmful." *IEEE Computer Graphics and Applications* 27(2):14-17. doi:10.1109/MCG.2007.323435. Why the jet colormap draws bands the data do not have.
+- Crameri F, Shephard GE, Heron PJ (2020) "The misuse of colour in science communication." *Nature Communications* 11:5444. doi:10.1038/s41467-020-19160-7. Perceptual uniformity and color-vision-deficient readers, with scientific colormaps that satisfy both.
+- Rougier NP, Droettboom M, Bourne PE (2014) "Ten simple rules for better figures." *PLoS Computational Biology* 10(9):e1003833. doi:10.1371/journal.pcbi.1003833. The claim-first, audience-first rules behind the core workflow.
+- Weissgerber TL, Milic NM, Winham SJ, Garovic VD (2015) "Beyond bar and line graphs: time for a new data presentation paradigm." *PLoS Biology* 13(4):e1002128. doi:10.1371/journal.pbio.1002128. Why Figure 3 shows the points, not only the summary.
+- Wong B (2011) "Points of view: color blindness." *Nature Methods* 8(6):441. doi:10.1038/nmeth.1618. The eight-color palette this module calls Okabe-Ito.
+- Birch J (2012) "Worldwide prevalence of red-green color deficiency." *Journal of the Optical Society of America A* 29(3):313-320. doi:10.1364/JOSAA.29.000313. The prevalence figures in Concept 5.
 
 ## Quick practice prompt
 Take one existing connectomics figure (from a paper, a classmate, or your own work) and perform a full audit:

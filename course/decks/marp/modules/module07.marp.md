@@ -65,7 +65,8 @@ Not all errors are worth fixing. A merge error on a large interneuron with 500 s
 - 50:00-60:00 | Competency check
 
 <!--
-Pre-class preparation (10 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class reading (proofreading strategies and worked-example scenarios 1 and 4), reading the [Module 07 kit](/assets/kits/module07/README.md) before the studio, the FlyWire case study and the quick practice prompt. Both the [10-week map](/teaching/syllabi/10-week/#what-this-map-uses-and-omits) and the [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) list this kit as a take-home and let its studio replace the Unit 08 Part B plan, so the hours beyond the session are take-home time.
+  Pre-class preparation (10 min async)
   Read [Proofreading strategies](/content-library/proofreading/proofreading-strategies/)
   Review the [proofreading worked examples](/content-library/proofreading/worked-examples/) (at least Scenarios 1 and 4)
   Minute-by-minute plan

@@ -216,9 +216,11 @@ Take one connectomics table (real or mock) and write:
 ---
 
 ## References (Instructor)
-- Wilkinson et al., 2016. The FAIR Guiding Principles for scientific data management and stewardship.
-- Peng, 2011. Reproducible Research in Computational Science.
-- MICrONS and related connectomics workflow documentation.
+- Wilkinson MD et al. (2016) The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3:160018.
+- Peng RD (2011) Reproducible research in computational science. Science 334(6060):1226-1227.
+- Dorkenwald S et al. (2025) CAVE: Connectome Annotation Versioning Engine. Nature Methods 22(5):1112-1120.
+- The MICrONS Consortium (2025) Functional connectomics spanning multiple areas of mouse visual cortex. Nature 640(8058):435-447.
+- Januszewski M et al. (2018) High-precision automated reconstruction of neurons with flood-filling networks. Nature Methods 15(8):605-610.
 
 ---
 

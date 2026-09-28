@@ -128,8 +128,10 @@ Write a 5-sentence mini-abstract including question, method with dataset version
 ---
 
 ## References (Instructor)
-- White et al. (1986) and modern connectomics papers as abstract exemplars.
-- Journal club set for evidence-first claim style.
+- Erren TC, Bourne PE (2007) Ten simple rules for a good poster presentation. PLoS Computational Biology 3(5):e102.
+- Bourne PE (2007) Ten simple rules for making good oral presentations. PLoS Computational Biology 3(4):e77.
+- Leininger E, Shaw K, Moshiri N, Neiles K, Onsongo G, Ritz A (2021) Ten simple rules for attending your first conference. PLOS Computational Biology 17(7):e1009133.
+- Michaut M (2011) Ten simple rules for getting involved in your scientific community. PLoS Computational Biology 7(10):e1002232.
 
 ---
 

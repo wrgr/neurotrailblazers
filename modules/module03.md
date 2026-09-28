@@ -57,7 +57,7 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
@@ -118,6 +118,8 @@ Python is the lingua franca of connectomics. CAVE (behind FlyWire and MICrONS) a
 7. Re-run from clean kernel to verify reproducibility.
 
 ## Detailed run-of-show (90 minutes)
+
+**Where the 4 hours go.** The 90-minute session is the taught part, and the studio notebook is built inside it. The rest is preparation, installing the five libraries or downloading the [Module 03 kit]({{ '/assets/kits/module03/README.md' | relative_url }}) if you have no CAVE access, and follow-up: the three content-library readings at the end of the page, the quick practice prompt, and a second clean-kernel rerun of your notebook a day later, when you have forgotten what the cells do.
 
 ### Block 1: Notebook anatomy (00:00-12:00)
 - **Instructor script:** "Open a new notebook with me. Before we write any code, we lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
@@ -200,6 +202,25 @@ Python is the lingua franca of connectomics. CAVE (behind FlyWire and MICrONS) a
 - **Minimum:** runnable notebook from clean kernel, clear outputs, basic metadata, at least one plot with labels.
 - **Strong:** clean linear structure, error handling that says what failed, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.
 - **Failure:** hidden state dependencies, undocumented assumptions, plots without labels, no dataset version recorded.
+
+## Common errors and how to recover
+
+- **The notebook only runs in the order you wrote it.** Cell 12 works because cell 30 was run yesterday. Recover with Restart Kernel and Run All before every commit; anything that breaks is a hidden-state bug, and the fix is to move the definition above its first use, not to add a note saying "run cell 30 first."
+- **You queried the live database with no version.** A query without a materialization version returns whatever the segmentation is today, so the numbers in your notebook cannot be reproduced next month. Recover by setting the version when you create the client, writing it in the header cell, and copying it into the metadata JSON that ships with the outputs.
+- **Your access token is in the notebook.** A token pasted into a cell is a credential committed to git. Recover by revoking it, storing the replacement where the client library expects it or in an environment variable, and adding that file to `.gitignore` before the next commit.
+- **The schema you assumed is not the schema you got.** Column names and types differ between tables and between dataset versions, and a wrong assumption often fails late: an empty DataFrame after a filter, or a KeyError three cells down. Recover by validating before analyzing (print columns, dtypes, row count and the first five rows, as in studio step 4) and by asserting the columns you rely on.
+- **Your figure exists but the code that made it does not.** The plot came from an interactive session, and the notebook holds a different version of the query. Recover by regenerating the figure from the notebook's own cells and exporting figure, data table and metadata JSON in the same run, so a reader can trace the picture to the query.
+- **Git holds a notebook full of cell outputs.** Every rerun produces a diff nobody can read, and the repository grows with each figure. Recover by pairing git with `nbstripout`, exporting data as CSV or Parquet outside the notebook, and keeping the notebook as code and narrative only.
+
+## What this module does not cover
+
+- **Python itself.** Syntax, functions, and the basics of pandas are assumed. The concept set names the libraries, and the session teaches the query, filter, aggregate, plot pattern, not the language.
+- **Data at scale.** Chunked volumetric formats, storage cost, and what happens when the table does not fit in memory are [Module 12]({{ '/modules/module12/' | relative_url }}) and [Technical Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}).
+- **How CAVE versions data.** The materialization model, what a version freezes, and how long versions last are [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}); here you only record the version.
+- **Statistics and null models.** What to compute once the data is loaded is [Module 08]({{ '/modules/module08/' | relative_url }}) and [Module 20]({{ '/modules/module20/' | relative_url }}); this module's analysis is descriptive by design.
+- **Cleaning a messy table.** Integrity checks, duplicates, and missing values are [Module 18]({{ '/modules/module18/' | relative_url }}).
+- **Figure design and reproducible packaging.** Choosing a plot type and encoding uncertainty is [Module 16]({{ '/modules/module16/' | relative_url }}); environments, releases, and FAIR principles are [Module 21]({{ '/modules/module21/' | relative_url }}).
+- **A worked analysis on real data.** The [MICrONS Real-Data Lab]({{ '/notebooks/microns-lab/' | relative_url }}) is the next step: a version-pinned notebook against MICrONS that needs no account and archives its outputs so you can check a rerun.
 
 ## Content library references
 - [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }})

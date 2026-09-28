@@ -61,7 +61,8 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 - 46:00-60:00 | Competency check
 
 <!--
-Pre-class preparation (10 min async)
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class preparation, the worked example above and the reciprocity example in Technical Unit 09, the content-library pages on motif analysis and graph representations, and the quick practice prompt. The [16-week map](/teaching/syllabi/16-week/#what-this-map-uses-and-omits) gives this kit one 90-minute meeting in week 9, with the concept set read beforehand; the 10-week map leaves it out, so the remaining hours are unscheduled — lab meeting or take-home.
+  Pre-class preparation (10 min async)
   Read [Motif analysis](/content-library/connectomics/motif-analysis/), focusing on the null models section
   Draft one biological question you'd like to test with connectomics data
   Minute-by-minute plan

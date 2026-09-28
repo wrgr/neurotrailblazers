@@ -44,7 +44,7 @@ Each stage introduces distinct, diagnosable error signatures.
 Walk the chain with its failure pairs from unit §1.
 Fixation: slow or delayed fixation shows as swollen astrocytic processes and enlarged extracellular space — it can make segmentation easier and still distorts every geometric measurement.
 Staining (rOTO: reduced osmium, thiocarbohydrazide, osmium, then uranyl acetate and lead aspartate): weak membrane contrast is the dominant cause of automated merge errors — the most expensive prep failure.
-Embedding: dehydration shrinks tissue roughly 5–20% linearly; every absolute length is affected, so prefer within-volume ratios.
+Embedding: dehydration shrinks tissue; published corrections are a 16% linear reduction (Kalimo 1976) and 15% per axis (Kinney et al. 2013), both as cited by Korogod et al. 2015, eLife 4:e05793; every absolute length is affected, so prefer within-volume ratios.
 Sectioning: lost sections, folds, knife chatter, compression. Block-face: charging; FIB-SEM curtaining.
 Imaging: SNR improves with the square root of dose — doubling SNR costs about 4x the acquisition time.
 -->
@@ -106,7 +106,7 @@ Tie to the non-negotiable rule in unit §3: run a pilot reconstruction on someth
 
 <!--
 Instructor script: "This is one of 5,019 sections. The raw acquisition came to 1.8 petabytes; the aligned volume is 1.4." Note the H01 case study's warning: the two sizes get conflated, so say which you mean. The 326 imaging days come from the 2021 bioRxiv preprint (Shapson-Coe et al., doi:10.1101/2021.05.29.446289); the 2024 Science article does not state the duration, so attribute it when you quote it.
-Work the unit's acquisition-time arithmetic alongside: 800 µm cube at 4 x 4 x 40 nm is 8 x 10^14 px; at 0.2 gigapixels per second that is about 46 days of continuous imaging, about 77 at 60% uptime — before sectioning, QA or re-imaging.
+Work the unit's acquisition-time arithmetic alongside: 800 µm cube at 4 x 4 x 40 nm is 8 x 10^14 px; at an assumed 0.2 gigapixels per second (our round number; H01 reported 125-190 million pixels per second, Shapson-Coe 2024) that is about 46 days of continuous imaging, about 77 at 60% uptime — before sectioning, QA or re-imaging.
 -->
 
 ---

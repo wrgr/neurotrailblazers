@@ -209,9 +209,12 @@ Write one results paragraph from a connectomics figure and include:
 ---
 
 ## References (Instructor)
-- Gopen and Swan (1990) - The science of scientific writing.
-- White et al. (1986) - foundational connectome reporting style.
-- Januszewski et al. (2018) - modern method reporting and performance framing.
+- Gopen GD, Swan JA (1990) The science of scientific writing. American Scientist.
+- Mensh B, Kording K (2017) Ten simple rules for structuring papers. PLOS Computational Biology 13(9):e1005619.
+- Wasserstein RL, Lazar NA (2016) The ASA statement on p-values: context, process, and purpose. The American Statistician 70(2):129-133.
+- White JG, Southgate E, Thomson JN, Brenner S (1986) The structure of the nervous system of the nematode Caenorhabditis elegans. Philosophical Transactions of the Royal Society of London B 314(1165):1-340.
+- The MICrONS Consortium (2025) Functional connectomics spanning multiple areas of mouse visual cortex. Nature 640(8058):435-447.
+- Dorkenwald S et al. (2024) Neuronal wiring diagram of an adult brain. Nature 634(8032):124-138.
 
 ---
 

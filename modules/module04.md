@@ -57,13 +57,22 @@ next_modules:
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-11
+last_reviewed: 2026-09-26
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---
 
 ## Capability target
 Interpret a local EM region using correct anatomical context and document one confident and one uncertain structural call.
+
+## Why this module matters
+An EM patch 15 µm on a side is gray texture, and nothing inside it says which layer or region it came from. The worked example below shows two boutons that look the same and should not get the same call: one sits beside the dentate granule cell layer and is a mossy fiber terminal; the other sits in cortical layer 4 and could be thalamocortical or a local collateral. Anatomy is the prior that separates them. An annotator who skips the soma census skips the prior, and every count built on that patch inherits the mislabeled structure.
+
+Context also sets how much confidence a call may carry. Layer boundaries, region boundaries and the edge of the volume are where the prior is weakest, and the rubric here treats a sheet with no uncertainty flags as the suspicious one. Writing "putative thalamocortical, medium confidence, parent axon unresolved" is a habit the rest of the curriculum assumes: the quality decisions in Modules 05 through 07 and the cell typing in [Module 09]({{ '/modules/module09/' | relative_url }}) all rest on calls that say how sure they are.
+
+The region matters as much as the layer. MouseConnects targets hippocampus, where the laminar scheme is granule layer, molecular layer and hilus rather than L1 to L6, and six-layer reasoning applied there produces confident nonsense. This module is where "what region, what layer, what cell types are expected here?" becomes the first question, asked before any structure is named.
+
+**Where this sits next to Technical Units 05-07.** [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) teaches the organelle catalog with sizes, the three criteria for calling a synapse and a calibrated confidence protocol, with a 75-minute consensus studio. [Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }}) teaches the axon-versus-dendrite cue table, the exceptions that break the polarity rule and the arithmetic of direction errors, with a 90-minute calibration lab. [Unit 07]({{ '/technical-training/07-glia/' | relative_url }}) teaches the three glial classes and a 60-minute discrimination drill. Those units work inside the patch. This module works outside it: the layer, region and atlas context that says which of the units' cues to expect, and how much confidence any call can carry near a boundary. Do the units for the cues; do this module for the prior.
 
 ## Concept set
 
@@ -123,6 +132,8 @@ You are handed two EM patches, each about 15 x 15 µm. Each contains a large pre
 4. Annotate confidence and escalation path for ambiguous cases.
 
 ## 60-minute tutorial run-of-show
+
+**Where the 4 hours go.** The 60-minute tutorial and the 60-75 minute studio are the taught part. The rest is the pre-class atlas exercise, the content-library readings on soma ultrastructure, dendrite biology and glia recognition, the quick practice prompt and, for the instructor, building the patch set from the MICrONS volume before class. Neither course map schedules this kit (the [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits) gives the reason), so the hours beyond the session are unscheduled — lab meeting or take-home.
 
 ### Pre-class preparation (10-15 min async)
 - Review cortical layer descriptions above.
@@ -240,7 +251,7 @@ every patch has a recorded location and a layer you can check.
 - [Technical Unit 02]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }})
 - [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})
 
-## References
+## Academic references
 - Harris KD, Shepherd GMG (2015) "The neocortical circuit: themes and variations." *Nature Neuroscience* 18(2):170-181.
 - Kasthuri N et al. (2015) "Saturated reconstruction of a volume of neocortex." *Cell* 162(3):648-661.
 - Lorente de Nó R (1934) "Studies on the structure of the cerebral cortex. II. Continuation of the study of the ammonic system." *Journal für Psychologie und Neurologie* 46:113-177.

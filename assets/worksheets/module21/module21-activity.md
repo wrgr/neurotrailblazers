@@ -100,6 +100,8 @@ them, or note where you nearly did:
 - [ ] I did not assume: Posting files online makes work FAIR.
 - [ ] I did not assume: A notebook that ran end-to-end once is proof of reproducible science.
 - [ ] I did not assume: Reproducibility norms are common sense that any careful trainee will infer without being taught.
+- [ ] I did not assume: A commit hash and an environment file make a rerun reproducible.
+- [ ] I did not assume: Once a corrected release is out, the old one should be deleted so nobody uses it by accident.
 
 ---
 

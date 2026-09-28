@@ -5,7 +5,7 @@ permalink: /initiatives/
 slug: major-initiatives
 summary: "The federal programs, institutes and training efforts behind modern connectomics, with the paper each is best known for."
 track: career-and-community
-last_reviewed: 2026-08-28
+last_reviewed: 2026-09-26
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core

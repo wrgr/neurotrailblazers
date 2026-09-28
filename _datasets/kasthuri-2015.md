@@ -14,13 +14,13 @@ access: "Open; BossDB"
 status: "Released"
 release_year: 2015
 blurb: "A saturated reconstruction: every cellular object in a small cortical volume traced, glia included, along with synapses, vesicles, spines and mitochondria."
-source: "Kasthuri et al. (2015), Cell (abstract); BossDB project page (region, resolution, image size, and the imaged block computed from its coordinate frame). The ~1,500 μm³ figure is as cited by Motta et al. (2019), Science."
+source: "Kasthuri et al. (2015), Cell (abstract); BossDB project page (region, resolution, image size, and the imaged block computed from its coordinate frame). The ~1,500 μm³ figure is from Motta et al. (2019), Science, which says dense cortical reconstructions to date were \"restricted to small volumes of up to 1500 µm3\", citing this paper among three."
 ---
 
 "Saturated" means nothing was skipped. Every cellular object in a sub-volume of mouse
 neocortex (axons, dendrites, glia) was segmented, along with many sub-cellular parts:
 synapses, vesicles, spines, postsynaptic densities and mitochondria. The saturated volume is
-tiny by modern standards, about 1,500 μm³, and its completeness is the point.
+tiny by modern standards, up to about 1,500 μm³ as cited by Motta et al. (2019), and its completeness is the point.
 
 **What it is good for.** Seeing what dense reconstruction demands, and what neuropil looks
 like when nothing is filtered out. It is also the dataset behind a widely cited result: by

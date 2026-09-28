@@ -52,15 +52,18 @@ they rule out*.
 ## 1. The organelle catalog
 
 This is the reference table. Sizes are approximate and vary with preparation, but the
-*relative* sizes and the *presence/absence patterns* are what you actually use.
+*relative* sizes and the *presence/absence patterns* are what you actually use. Where a
+size cell names a source, the number was checked against it. The other sizes are
+approximate textbook values that this site has not traced to a primary measurement;
+treat them as orientation, not as data.
 
 | Structure | Size | Appearance in EM | Found in | Practically absent from |
 |---|---|---|---|---|
-| **Synaptic vesicle, clear round** | 35–50 nm | Small circular profiles, clear lumen, clustered | Presynaptic terminals | Dendrites, glia |
-| **Synaptic vesicle, pleomorphic/flattened** | ~35–50 nm | Oval or flattened profiles; shape is partly a fixation artifact but is diagnostically useful | Inhibitory terminals | Excitatory terminals |
-| **Dense-core vesicle** | 80–120 nm | Circular with a dark core | Peptidergic/monoaminergic terminals; also in transit along axons | — |
-| **Postsynaptic density (PSD)** | 30–50 nm thick, 200–800 nm wide | Dark, granular thickening under the postsynaptic membrane | Postsynaptic side | Presynaptic side |
-| **Synaptic cleft** | 20–30 nm (asymmetric); ~15–20 nm (symmetric) | Uniform-width gap with parallel membranes, often with faint cross-bridges | Between synaptic partners | Random appositions have variable-width gaps |
+| **Synaptic vesicle, clear round** | ~35 nm (Harris & Weinberg 2012) | Small circular profiles, clear lumen, clustered | Presynaptic terminals | Dendrites, glia |
+| **Synaptic vesicle, pleomorphic/flattened** | "slightly smaller" than excitatory vesicles (Harris & Weinberg 2012) | Oval or flattened profiles; shape is partly a fixation artifact but is diagnostically useful | Inhibitory terminals | Excitatory terminals |
+| **Dense-core vesicle** | ~80–100 nm (Harris & Weinberg 2012) | Circular with a dark core | Peptidergic/monoaminergic terminals; also in transit along axons | — |
+| **Postsynaptic density (PSD)** | ~35–50 nm thick (Harris & Weinberg 2012); ~100–800 nm across (our disc-equivalent of the 0.008–0.54 µm² PSD areas they tabulate for adult rat CA1) | Dark, granular thickening under the postsynaptic membrane | Postsynaptic side | Presynaptic side |
+| **Synaptic cleft** | ~20 nm (Harris & Weinberg 2012); 18 nm and uniform at excitatory synapses, narrowing to 6 nm at the edges of inhibitory ones, by tomography (High et al. 2015) | Uniform-width gap with parallel membranes, often with faint cross-bridges | Between synaptic partners | Random appositions have variable-width gaps |
 | **Microtubule** | ~25 nm outer diameter | Tubule in longitudinal section; small ring in cross-section | Dendrites (abundant, in loose parallel arrays); axons (present, more regularly spaced) | Mature spine heads; most glial processes |
 | **Neurofilament** | ~10 nm | Fine filaments, often in bundles | Axons, especially myelinated | Spines |
 | **Mitochondrion** | 0.2–1 µm diameter, variable length | Double membrane with cristae | Somata, dendritic shafts, axons and boutons | Most spines; the thinnest processes |
@@ -70,7 +73,7 @@ This is the reference table. Sizes are approximate and vary with preparation, bu
 | **Multivesicular body** | 200–500 nm | Membrane-bound body containing small internal vesicles | Everywhere; enriched in dendrites | — |
 | **Glycogen granule** | 20–30 nm | Very dark small particles, clustered | **Astrocytes** — near-diagnostic | Neurons |
 | **Myelin** | A few to dozens of lamellae, more around larger axons | Regular concentric dark lamellae | Around myelinated axons | Dendrites |
-| **AIS undercoating** | Thin dense layer | Granular density beneath the axolemma, plus fasciculated microtubules | Axon initial segment (the first ~20–60 µm of the axon), nodes of Ranvier | Everywhere else |
+| **AIS undercoating** | Thin dense layer | Granular density beneath the axolemma, plus fasciculated microtubules | Axon initial segment (the first ~20–60 µm of the axon; Leterrier 2018), nodes of Ranvier | Everywhere else |
 
 **The two highest-value entries** for a beginner are the rough ER row and the glycogen
 row: *ribosomes rule out axon*, and *glycogen granules indicate
@@ -113,7 +116,7 @@ A chemical synapse in EM requires **all three**:
    facing the partner. Not scattered vesicles somewhere in the profile; clustered *at
    the apposition*.
 2. **A synaptic cleft**: parallel membranes with a gap of uniform width across the
-   contact, typically 15–30 nm (table above). Ordinary appositions can have
+   contact, about 20 nm (table above). Ordinary appositions can have
    gaps of similar size, so uniform width and parallel membranes matter more than the
    exact number.
 3. **A postsynaptic density**: a visible dark thickening on the receiving side.
@@ -146,7 +149,7 @@ vesicle pool.
 | | **Type I (asymmetric)** | **Type II (symmetric)** |
 |---|---|---|
 | PSD | Thick, prominent, clearly asymmetric | Thin, roughly equal to the presynaptic density |
-| Cleft | Wider, ~20–30 nm | Narrower, ~15–20 nm |
+| Cleft | Uniform, ~18–20 nm (Harris & Weinberg 2012; High et al. 2015) | Narrower toward the edges, down to ~6 nm (High et al. 2015) |
 | Vesicles | Round, clear | Pleomorphic / flattened |
 | Usual location | Dendritic spines; some shafts | Shafts, soma, AIS |
 | Usual inference | Excitatory (glutamatergic) | Inhibitory (GABAergic) |
@@ -335,7 +338,7 @@ Work these panels with the organelle table in §1 open, and name the cue family 
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck).</small></p>
+<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Attribution as given in the source deck; the deck is not public and this credit has not been independently verified.</small></p>
 
 ---
 
@@ -421,6 +424,12 @@ glial identification in Unit 07; and how these calls feed proofreading triage in
 Unit 08.
 
 ---
+
+## Sources for the size table
+
+- Harris K.M. & Weinberg R.J. (2012). Ultrastructure of synapses in the mammalian brain. *Cold Spring Harbor Perspectives in Biology* 4:a005587. [doi:10.1101/cshperspect.a005587](https://doi.org/10.1101/cshperspect.a005587) (PMC3331701). Vesicles "∼35 nm diameter"; dense-core vesicles "∼80 nm" and "large (∼100 nm)"; cleft "a widening (∼20 nm)"; PSD "extending ∼35–50 nm into the cytoplasm"; Table 1 PSD areas.
+- High B. et al. (2015). Electron microscopic tomography reveals discrete transcleft elements at excitatory and inhibitory synapses. *Frontiers in Synaptic Neuroscience* 7:9. [doi:10.3389/fnsyn.2015.00009](https://doi.org/10.3389/fnsyn.2015.00009) (PMC4461817). Excitatory clefts "of uniform (18 nm) width"; inhibitory clefts narrow "to only 6 nm wide" at the periphery.
+- Leterrier C. (2018). The axon initial segment: an updated viewpoint. *Journal of Neuroscience* 38:2135–2145. [doi:10.1523/JNEUROSCI.1922-17.2018](https://doi.org/10.1523/JNEUROSCI.1922-17.2018). "In most neurons, the AIS is present along the first 20–60 μm of the axon shaft."
 
 ## Go deeper
 

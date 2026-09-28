@@ -185,6 +185,64 @@ async function main() {
     await openGroup('Reference');
     await follow(`${menuGroup('Reference')} a[href="/datasets/"]`);
 
+    // Surfaces added in September 2026 are reachable from the menu.
+    await openGroup('Learn');
+    await follow(`${menuGroup('Learn')} a[href="/notebooks/microns-lab/"]`);
+    assert.equal(new URL(page.url()).pathname, '/notebooks/microns-lab/');
+    await openGroup('Tools');
+    await follow(`${menuGroup('Tools')} a[href="/notebooks/connectome-quality/"]`);
+    await openGroup('Reference');
+    await follow(`${menuGroup('Reference')} a[href="/kb/"]`);
+    await openGroup('About');
+    await follow(`${menuGroup('About')} a[href="/whats-new/"]`);
+    assert((await page.$eval('main', element => element.textContent)).includes('2026'));
+    await openGroup('Teaching');
+    await follow(`${menuGroup('Teaching')} a[href="/teaching/assessment/"]`);
+    assert.equal(await page.$$eval('.dropdown-heading', elements => elements.length), 2, 'Teaching dropdown has its two headings');
+
+    // Breadcrumb and previous/next, rendered by the layout from _data.
+    assert.equal(await page.$('.crumbs a[href="/teaching/"]') !== null, true, 'Breadcrumb links the Teaching hub');
+    await visit('/technical-training/01-why-map-the-brain/');
+    assert.equal(await page.$('.seq-prev'), null, 'Unit 01 has no previous link');
+    await follow('.seq-nav a[rel="next"]');
+    assert.equal(new URL(page.url()).pathname, '/technical-training/02-brain-data-across-scales/');
+    await follow('.seq-nav a[rel="prev"]');
+    assert.equal(new URL(page.url()).pathname, '/technical-training/01-why-map-the-brain/');
+    await follow('.seq-triad a[href="/technical-training/slides/01-why-map-the-brain/"]');
+    await follow('.seq-nav a[rel="next"]');
+    assert.equal(new URL(page.url()).pathname, '/technical-training/slides/02-brain-data-across-scales/');
+    await visit('/modules/module01/');
+    await follow('.seq-nav a[rel="next"]');
+    assert.equal(new URL(page.url()).pathname, '/modules/module02/');
+    await follow('.seq-triad a[href="/teaching/sessions/module02/"]');
+    await follow('.seq-nav a[rel="prev"]');
+    assert.equal(new URL(page.url()).pathname, '/teaching/sessions/module01/');
+    await follow('.seq-triad a[href="/teaching/answers/module01/"]');
+    assert((await page.$eval('.seq-nav-label', element => element.textContent)).includes('Key 1 of'));
+    await visit('/modules/module25/');
+    assert.equal(await page.$('.seq-nav a[rel="next"]'), null, 'Module 25 has no next link');
+    await follow('.seq-next a[href="/modules/"]');
+    await visit('/teaching/pathways/orientation/');
+    await follow('.seq-nav a[rel="next"]');
+    assert.equal(new URL(page.url()).pathname, '/teaching/pathways/resilient-scholar/');
+    await follow('.seq-triad a[href="/teaching/pathways/resilient-scholar-activity/"]');
+    await follow('.seq-nav a[rel="next"]');
+    assert.equal(new URL(page.url()).pathname, '/teaching/pathways/charting-your-course-activity/', 'Next stays within the worksheet role');
+    await visit('/teaching/lectures/synapse-detection/');
+    await follow('.seq-nav a[rel="prev"]');
+    assert.equal(new URL(page.url()).pathname, '/teaching/lectures/connectomics-01-introduction/');
+    await visit('/hidden-curriculum/lab-norms/');
+    await follow('.seq-nav a[rel="next"]');
+    assert.equal(new URL(page.url()).pathname, '/hidden-curriculum/career-mechanics/');
+    await visit('/about/');
+    assert.equal(await page.$('.seq-nav'), null, 'A hub page shows no sequence or Up link');
+    await visit('/datasets/access/');
+    assert((await page.$eval('.seq-nav-up', element => element.textContent)).includes('Up:'));
+    await visit('/');
+    assert.equal(await page.$('.crumbs'), null, 'Home has no breadcrumb');
+    assert.equal(await page.$('.page-nav-wrap'), null, 'Home has no page navigation');
+    assert.equal(await page.$$eval('.footer-nav a', elements => elements.length), 6, 'Footer repeats the six hubs');
+
     await page.setViewport({width:390,height:844,isMobile:true,hasTouch:true});
     await visit('/');
     await page.waitForSelector('.nav-toggle', {visible:true});
@@ -205,7 +263,7 @@ async function main() {
     await page.click(`${menuGroup('Learn')} > summary`);
     await page.waitForSelector(`${menuGroup('Learn')} .dropdown`, {visible:true});
     assert.equal(errors.length, 0, errors.join('\n'));
-    console.log('PASS: desktop/keyboard/mobile navigation, no-JS fallback, course and teaching journeys, deck links, persona tabs, dictionary search/categories, module filtering, journal filtering and modal.');
+    console.log('PASS: desktop/keyboard/mobile navigation, no-JS fallback, course and teaching journeys, September 2026 menu items, breadcrumb and previous/next, deck links, persona tabs, dictionary search/categories, module filtering, journal filtering and modal.');
   } finally {
     if (browser) await browser.close();
     await new Promise(resolve => server.close(resolve));

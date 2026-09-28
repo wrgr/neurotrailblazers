@@ -3293,3 +3293,147 @@ a.arch-card,
   border: 1px solid var(--border, #e2e6ed);
   color: var(--muted, #5a6478);
 }
+
+/* Page chrome for moving through the site: breadcrumb at the top, the sequence
+   navigation and last-reviewed line at the bottom, headings inside a long menu
+   dropdown, and the footer's row of section hubs. Rendered by the default layout
+   from _data/navigation.yml and _data/sequences.yml, so content pages carry none
+   of it. Colours are the existing tokens; nothing new is introduced. */
+.crumbs-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.85rem 1.4rem 0;
+}
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  color: var(--muted, #5a6478);
+}
+.crumbs a {
+  color: var(--teal, #006d6b);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.crumbs a:hover,
+.crumbs a:focus-visible { text-decoration: underline; }
+.crumbs [aria-current="page"] {
+  color: var(--ink-2, #1c2433);
+  font-weight: 600;
+}
+.crumb-sep { color: var(--muted, #5a6478); }
+
+.page-nav-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.4rem 2rem;
+}
+.seq-nav {
+  border-top: 1px solid var(--border, #e2e6ed);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.seq-nav-label {
+  margin: 0 0 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted, #5a6478);
+}
+.seq-nav-label a { color: var(--teal, #006d6b); text-decoration: none; }
+.seq-nav-label a:hover,
+.seq-nav-label a:focus-visible { text-decoration: underline; }
+.seq-nav-up .seq-nav-label { text-transform: none; letter-spacing: 0; font-size: 0.9rem; font-weight: 600; }
+.seq-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.seq-links li { margin: 0; }
+.seq-links .seq-prev { grid-column: 1; }
+.seq-links .seq-next { grid-column: 2; text-align: right; }
+.seq-link {
+  display: block;
+  min-height: 44px;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--border, #e2e6ed);
+  border-radius: var(--radius, 10px);
+  background: #ffffff;
+  color: var(--ink, #0d1117);
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.35;
+}
+.seq-link:hover,
+.seq-link:focus-visible {
+  border-color: var(--teal, #006d6b);
+  color: var(--teal, #006d6b);
+}
+.seq-link small {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted, #5a6478);
+}
+.seq-triad {
+  margin: 0.7rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted, #5a6478);
+}
+.seq-triad a { color: var(--teal, #006d6b); }
+.seq-triad [aria-current="page"] { color: var(--ink-2, #1c2433); font-weight: 700; }
+.page-meta {
+  margin: 0.9rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted, #5a6478);
+}
+@media (max-width: 640px) {
+  .seq-links { grid-template-columns: 1fr; }
+  .seq-links .seq-prev,
+  .seq-links .seq-next { grid-column: 1; text-align: left; }
+  .crumbs { font-size: 0.82rem; }
+}
+
+.dropdown-heading {
+  padding: 0.5rem 0.8rem 0.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b0bac9;
+  opacity: 0.8;
+}
+.dropdown-heading + li .dropdown-link { padding-top: 0.35rem; }
+.dropdown li + .dropdown-heading {
+  margin-top: 0.35rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #2a3345;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.1rem;
+  margin: 0 0 0.6rem;
+  font-weight: 600;
+}
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-nav a:hover,
+.footer-nav a:focus-visible { text-decoration: underline; }

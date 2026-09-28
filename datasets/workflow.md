@@ -222,13 +222,17 @@ content_type: core
               The sections are imaged by electron microscopes (TEM or SEM) at nanometer
               resolution; voxels on the order of 4 × 4 × 40 nm are typical for
               volumes like this. The arithmetic is the whole story. An 800 µm cube
-              at that resolution is 8 × 10¹⁴ pixels; at a sustained 0.2 gigapixels
-              per second that is 46 days of continuous imaging, and roughly 77 days
-              at an assumed 60% duty cycle, before sectioning, QA, or re-imaging
-              failed sections. Multibeam SEM attacks that throughput term directly,
-              scanning with 61 or 91 beams in parallel to aggregate on the order of
-              a gigapixel per second. H01's cubic millimeter took 326 days of imaging
-              on a 61-beam instrument (Shapson-Coe et al. 2024). HI-MC plans two 91-beam microscopes,
+              at that resolution is 8 × 10¹⁴ pixels; at an assumed sustained 0.2
+              gigapixels per second that is 46 days of continuous imaging, and roughly
+              77 days at an assumed 60% duty cycle, before sectioning, QA, or
+              re-imaging failed sections (our arithmetic; the rate and duty cycle are
+              illustrative). Multibeam SEM attacks that throughput term directly by
+              scanning many beams in parallel: 61 beams with a summed detector
+              bandwidth of 1.22 gigapixels per second in the instrument Eberle et al.
+              (2015, <em>J Microsc</em> 259:114) describe, and 91 beams in ZEISS's
+              current MultiSEM. H01's cubic millimeter took 326 days of imaging on a
+              61-beam instrument running at 125 to 190 million pixels per second
+              (Shapson-Coe et al. 2024). HI-MC plans two 91-beam microscopes,
               one at Harvard and one at Princeton, for ten times the volume, so
               years of multi-instrument operation are built into the plan.
             </p>

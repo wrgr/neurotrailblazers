@@ -124,7 +124,7 @@ as unresolved rather than forcing it onto the nearest candidate.
    src="/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S17-01.png"
    alt="Electron micrograph of a dendrite labeled D with two spines labeled s1 and s2, each opposite a vesicle-filled bouton."
    caption="Where orphans come from, not an orphan itself: a dendrite (D) with two spines (s1, s2), each receiving a synapse. If the segmentation loses a thin spine neck, the spine head and its synapse become a separate fragment, and the dendrite&#39;s input count drops by one with nothing looking wrong at the dendrite. This site does not yet have a rendered example of a confirmed orphan fragment on real data; the H01 render pipeline that produced the two figures above is where one would come from."
-   credit="Pat Rivlin training materials (MICrONS proofreading deck)." %}
+   credit="Pat Rivlin training materials (MICrONS proofreading deck); attribution as given in the source deck, not independently verified." %}
 
 </section>
 

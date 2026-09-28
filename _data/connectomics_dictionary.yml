@@ -46,7 +46,7 @@ terms:
 - term: Dense reconstruction
   category: Core
   definition: Reconstruction of every object within a volume, rather than a selected subset.
-  typical: "Kasthuri et al. (2015) reconstructed about 1,500 cubic micrometers of mouse neocortex this way and called it saturated."
+  typical: "Kasthuri et al. (2015) reconstructed a small block of mouse neocortex this way and called it saturated; Motta et al. (2019) describe earlier dense cortical reconstructions, this one included, as \"restricted to small volumes of up to 1500\" cubic micrometers."
   matters: "Dense reconstruction is what makes negative results possible: if every process in the volume is reconstructed, an absent connection is evidence of absence rather than of not having looked. That holds only once the reconstruction has been checked (see Saturated reconstruction)."
   confuse: Sparse reconstruction traces selected neurons and leaves the rest unsegmented; it is far cheaper
     and answers different questions.
@@ -75,7 +75,7 @@ terms:
 - term: Neurite
   category: Morphology
   definition: A generic neuronal process, used when the axon/dendrite distinction has not yet been made.
-  typical: "Unmyelinated processes in cortical neuropil are 80-300 nm; dendritic shafts 0.5-3 um; spine necks 50-200 nm (Unit 06 §1)."
+  typical: "Unmyelinated processes in cortical neuropil about 80-300 nm and dendritic shafts about 0.5-3 um (approximate textbook ranges); spine necks about 90-500 nm, mean about 200 nm (Arellano et al. 2007). See Unit 01 §1."
   matters: Useful precisely because it is non-committal. Prefer it to a guess.
   confuse: "Used as a deliberate hedge when the axon/dendrite call has not been made. Saying 'neurite' is an honest 'I have not decided'; using it after you have decided loses information."
   units:
@@ -85,7 +85,7 @@ terms:
   category: Morphology
   definition: A neuronal process that typically receives synaptic input; contains ribosomes, tapers with
     distance from the soma, and may bear spines.
-  typical: Shaft diameter 0.5-3 um in cortex.
+  typical: "Shaft diameter about 0.5-3 um in cortex (approximate textbook range; Unit 01 §1)."
   matters: "Dendrites are the postsynaptic side of most excitatory connections, so mislabeling one as an axon inverts every edge it carries. They are also the easier call: polyribosomes and rough ER are near-diagnostic and axons lack both (Unit 05 §1)."
   confuse: 'Thin distal dendrites vs axons: use ribosomes, taper, and spines rather than caliber.'
   units:
@@ -95,7 +95,7 @@ terms:
   category: Morphology
   definition: A neuronal process that transmits output; contains vesicle-filled boutons, lacks ribosomes,
     and maintains roughly constant caliber between boutons.
-  typical: Unmyelinated cortical axons 80-300 nm diameter.
+  typical: "Unmyelinated cortical axons about 80-300 nm across (approximate textbook range); thin CA3-to-CA1 shafts measured 0.17 +/- 0.04 um (Shepherd & Harris 1998)."
   matters: "The axon/dendrite call is the most frequent judgment in annotation and it drives everything downstream: reverse it and you reverse the direction of every connection the process makes."
   confuse: "A thin dendrite vs an axon. Caliber alone does not settle it. Use the organelle evidence (polyribosomes and abundant rough ER mean dendrite; regularly spaced microtubules with vesicle-filled varicosities mean axon)."
   units:
@@ -105,7 +105,7 @@ terms:
   category: Morphology
   definition: The proximal axonal segment where action potentials initiate, identified in EM by a dense
     granular undercoating beneath the membrane and by fasciculated microtubules.
-  typical: Roughly 20-60 um long, beginning at the soma or a proximal dendrite.
+  typical: "Roughly 20-60 um long, beginning at the soma or a proximal dendrite ('the first 20-60 um of the axon shaft', Leterrier 2018, J Neurosci 38:2135)."
   matters: 'A rare case where an axon is postsynaptic: chandelier cells synapse onto the AIS, so ''PSD
     implies dendrite'' fails here.'
   confuse: "AIS vs node of Ranvier. Both carry the dense undercoating, but fasciculated microtubules mark the AIS. The AIS is continuous with the soma; a node sits between two myelin sheaths."
@@ -116,7 +116,7 @@ terms:
   category: Morphology
   definition: An axonal swelling containing a synaptic vesicle cluster and usually one or more presynaptic
     release sites.
-  typical: "0.5-2 um swellings on an axon; en passant boutons are far more common than terminal boutons in cortical neuropil."
+  typical: "Swellings roughly 0.5-2 um across (approximate); CA3-to-CA1 varicosities were 1.1 +/- 0.7 um long (Shepherd & Harris 1998); en passant boutons are far more common than terminal boutons in cortical neuropil."
   matters: "Boutons are where you look for synapses, so how you count them sets your edge weights. A bouton with two active zones onto the same target is one connection with weight two, not two connections."
   confuse: En passant boutons occur along an axon; terminal boutons at its end. Dendritic varicosities
     are swellings without vesicle clusters.
@@ -127,7 +127,7 @@ terms:
   category: Morphology
   definition: A protrusion from a dendrite bearing an excitatory postsynaptic site, comprising a head
     and a narrow neck.
-  typical: Head 300-800 nm; neck 50-200 nm diameter.
+  typical: "Neck about 90-500 nm across, mean about 200 nm; head volumes 0.01-0.30 um3, roughly 300-800 nm across as a sphere (Arellano et al. 2007; the diameter conversion is ours)."
   matters: Spine necks are close to the resolution floor and are a leading cause of split errors.
   confuse: "A spine neck vs a thin axon. Both are sub-100 nm processes; follow it. A spine neck ends in a head with a PSD and connects back to a dendritic shaft; an axon keeps going."
   units:
@@ -138,7 +138,7 @@ terms:
   category: Morphology
   definition: Stacked smooth endoplasmic reticulum laminae found within a minority of dendritic spines,
     more common in large spines.
-  typical: "Laminae ~30 nm, found in a minority of mostly large spines (Unit 05 §1)."
+  typical: "Laminae roughly 30 nm (approximate textbook value), found in a minority of mostly large spines (Unit 05 §1)."
   matters: "Its presence marks a mature, usually large spine, so it is a useful correlate of synaptic strength when you cannot measure PSD area directly."
   confuse: "Spine apparatus vs ordinary smooth ER in the spine neck. The apparatus is a stack with dense material between laminae, not a single tubule."
   units:
@@ -162,7 +162,7 @@ terms:
 - term: Synapse
   category: Core
   definition: A specialized junction for chemical or electrical communication between neurons.
-  typical: "Cleft 20-30 nm (asymmetric) or ~15-20 nm (symmetric); PSD 30-50 nm thick and 200-800 nm wide (Unit 05 §1)."
+  typical: "Cleft about 20 nm (Harris & Weinberg 2012); PSD about 35-50 nm thick (Harris & Weinberg 2012). See Unit 05 §1."
   matters: 'In EM, calling a chemical synapse requires all three of: a presynaptic vesicle cluster, a
     cleft of uniform width, and a postsynaptic density - persisting across sections.'
   confuse: Membrane apposition, adherens junctions, and tangentially cut membranes all mimic synapses;
@@ -172,7 +172,7 @@ terms:
 - term: Synaptic cleft
   category: Morphology
   definition: The extracellular gap between pre- and postsynaptic membranes at a chemical synapse.
-  typical: ~20-30 nm at asymmetric synapses; ~15-20 nm at symmetric ones.
+  typical: "About 20 nm (Harris & Weinberg 2012). By tomography, 18 nm and uniform at excitatory synapses, narrowing to 6 nm at the edges of inhibitory ones (High et al. 2015)."
   matters: "Uniform cleft width is one of the three criteria for calling a synapse at all. Appositions with variable-width gaps are contacts, not synapses, and treating them as synapses is the commonest way to inflate a connectome's edge count."
   confuse: "A cleft vs the ordinary extracellular space between two apposed membranes. The cleft is uniform in width along its length and often shows faint cross-bridges."
   units:
@@ -180,7 +180,7 @@ terms:
 - term: Postsynaptic density (PSD)
   category: Morphology
   definition: The electron-dense protein assembly beneath the postsynaptic membrane.
-  typical: 30-50 nm thick, 200-800 nm wide.
+  typical: "About 35-50 nm thick (Harris & Weinberg 2012). Areas of 0.008-0.54 um2 in adult rat CA1 (their Table 1), roughly 100-800 nm across if treated as a disc (our conversion)."
   matters: Its thickness relative to the presynaptic side is what distinguishes Gray type I from type
     II.
   confuse: "A PSD vs a tangentially cut membrane, which also appears as a dark thickening. A real PSD has a cleft of uniform width and a vesicle cluster opposite it; a grazing cut has neither."
@@ -189,7 +189,7 @@ terms:
 - term: Active zone
   category: Morphology
   definition: The presynaptic membrane specialization where synaptic vesicles dock and release neurotransmitter.
-  typical: "200-800 nm across, matching the PSD it faces (Unit 05 §1)."
+  typical: "Co-extensive with the PSD it faces, so of similar size (see Postsynaptic density)."
   matters: "It is the presynaptic half of the synapse call. A vesicle cluster with no membrane specialization opposite it is not evidence of a synapse. The active zone and the PSD should be co-extensive, and when they are not, you are usually looking at a tangential cut."
   confuse: "Vesicle cluster (can sit anywhere in a bouton) vs active zone (the docking site at the membrane itself)."
   units:
@@ -197,16 +197,16 @@ terms:
 - term: Synaptic vesicle
   category: Morphology
   definition: A small membrane-bound vesicle in the presynaptic terminal containing neurotransmitter.
-  typical: Clear round vesicles ~35-50 nm; dense-core vesicles 80-120 nm.
+  typical: "Clear round vesicles about 35 nm; dense-core vesicles about 80-100 nm (Harris & Weinberg 2012)."
   matters: A vesicle cluster at the apposition is the non-negotiable first criterion for calling a synapse.
-  confuse: "Clear round vesicles (35-50 nm, excitatory terminals) vs dense-core vesicles (80-120 nm, peptidergic) vs pleomorphic/flattened vesicles (inhibitory, though the flattening is partly a fixation artifact). Size is measurable and reliable; shape is suggestive and is not."
+  confuse: "Clear round vesicles (about 35 nm, excitatory terminals) vs dense-core vesicles (about 80-100 nm, peptidergic) vs pleomorphic/flattened vesicles (inhibitory, though the flattening is partly a fixation artifact). Size is measurable and reliable; shape is suggestive and is not."
   units:
   - '05'
 - term: Gray type I / asymmetric synapse
   category: Morphology
   definition: A synapse with a thick prominent PSD, wide cleft, and round clear vesicles; usually onto
     spines.
-  typical: "Cleft 20-30 nm; PSD 30-50 nm thick and 200-800 nm wide; round clear vesicles 35-50 nm (Unit 05 §1)."
+  typical: "Cleft about 20 nm; PSD about 35-50 nm thick; round clear vesicles about 35 nm (Harris & Weinberg 2012; Unit 05 §1)."
   matters: Usually inferred to be excitatory (glutamatergic). This is an inference from morphology, not
     an observation - state it as 'putatively excitatory'.
   confuse: "Type I vs type II. The discriminator is the thickness asymmetry between pre- and postsynaptic densities, not the vesicle shape alone, because vesicle flattening is partly a fixation artifact."
@@ -216,7 +216,7 @@ terms:
   category: Morphology
   definition: A synapse with pre- and postsynaptic densities of comparable thickness, narrower cleft,
     and pleomorphic vesicles; usually onto shafts, soma, or AIS.
-  typical: "Cleft ~15-20 nm; densities thin and near-equal on both sides; vesicles often pleomorphic (Unit 05 §1)."
+  typical: "Cleft narrower than at type I, down to about 6 nm at its edges by tomography (High et al. 2015); densities thin and near-equal on both sides; vesicles often pleomorphic (Unit 05 §1)."
   matters: Usually inferred inhibitory (GABAergic), with the same caveat about inference.
   confuse: "A genuinely symmetric synapse vs an asymmetric one cut tangentially, which can lose the appearance of PSD thickening. Check across sections before calling it."
   units:
@@ -224,7 +224,7 @@ terms:
 - term: Node of Ranvier
   category: Morphology
   definition: A gap in the myelin sheath along a myelinated axon, where the axolemma shows a dense undercoating.
-  typical: "~1 um of exposed axolemma between sheaths; nodal undercoating ~20 nm, as at the AIS (Unit 05 §1)."
+  typical: "About 1 um of exposed axolemma between sheaths, with a dense undercoating as at the AIS (approximate textbook values; Unit 05 §1)."
   matters: "Nodes anchor the identity of a myelinated axon across a break in its sheath, and they are where automated segmentation most often splits a long-range axon."
   confuse: "Node vs a myelin sheath that has simply ended, and node vs AIS. A node has paranodal loops on both sides; a sheath end has them on one."
   units:
@@ -234,7 +234,7 @@ terms:
   category: Morphology
   definition: The region flanking a node of Ranvier where myelin terminal loops form junctions with the
     axon.
-  typical: "A few hundred nm of tapering loops flanking each side of the node."
+  typical: "A few hundred nm of tapering loops flanking each side of the node (approximate textbook value)."
   matters: "Paranodal loops are the structural evidence that you are at a node rather than at a gap in a sheath, so they settle a call that otherwise depends on tracing many sections."
   confuse: "Paranode (loops contacting the axolemma) vs juxtaparanode (the region just beyond it, molecularly distinct but not separable by morphology in EM)."
   units:
@@ -243,7 +243,7 @@ terms:
   category: Morphology
   definition: A cytoskeletal tubule, present in both axons and dendrites; fasciculated bundles are characteristic
     of the AIS.
-  typical: ~25 nm outer diameter.
+  typical: "About 25 nm outer diameter (textbook value)."
   matters: "Microtubule arrangement is a primary axon/dendrite cue: loose parallel arrays suggest dendrite, regular fasciculated spacing suggests axon or AIS. It is one of the few cues visible in a single section."
   confuse: "Microtubules (~25 nm, hollow ring in cross-section) vs neurofilaments (~10 nm, solid, usually bundled). The size difference is the reliable discriminator."
   units:
@@ -252,7 +252,7 @@ terms:
 - term: Neurofilament
   category: Morphology
   definition: An intermediate filament abundant in axons, especially myelinated ones.
-  typical: ~10 nm diameter.
+  typical: "About 10 nm diameter (textbook value)."
   matters: "Dense neurofilament bundles point to a myelinated axon, which is one of the more reliable large-caliber cues in white matter and deep neuropil."
   confuse: "Neurofilaments (~10 nm) vs microtubules (~25 nm) vs astrocytic GFAP intermediate filaments (also ~10 nm). Filament diameter alone cannot separate neurofilament from GFAP. Use the surrounding cytoplasm, which is pale and organelle-poor in astrocytes."
   units:
@@ -262,7 +262,7 @@ terms:
   category: Morphology
   definition: A cluster of ribosomes on mRNA, seen as a rosette in EM; present in somata and dendrites,
     effectively absent from axons.
-  typical: "Individual ribosomes ~25 nm, seen in rosettes of five or more (Unit 05 §1)."
+  typical: "Individual ribosomes 10-25 nm (Harris & Weinberg 2012), seen in rosettes of five or more (Unit 05 §1)."
   matters: The single most reliable axon/dendrite discriminator when visible. Absence, however, is weak
     evidence in very thin processes.
   confuse: "Polyribosome rosettes vs glycogen granule clusters. Both are dark and clustered at similar scale, but glycogen means astrocyte and polyribosomes mean dendrite or soma, so confusing them inverts the cell-class call, not just a detail."
@@ -272,7 +272,7 @@ terms:
 - term: Glycogen granule
   category: Morphology
   definition: A small, very electron-dense particle found in clusters in astrocytes and not in neurons.
-  typical: 20-30 nm.
+  typical: "About 20-30 nm (approximate textbook value)."
   matters: Near-diagnostic for astrocyte when present; absence is weak evidence because granules are sparse
     and clustered.
   confuse: "Glycogen granules vs ribosomes. Both are small and dark, both cluster. Glycogen is 20-30 nm and effectively astrocyte-only; ribosomes are ~25 nm, sit on ER membranes or in rosettes, and mark dendrites and somata."
@@ -282,7 +282,7 @@ terms:
   category: Cell types
   definition: A glial cell with pale cytoplasm, glycogen granules, GFAP intermediate filaments, sheet-like
     space-filling processes, and endfeet on blood vessels.
-  typical: "Soma ~8-10 um; perisynaptic processes under 100 nm; glycogen granules 20-30 nm (Unit 07 §1)."
+  typical: "Soma about 8-10 um; perisynaptic processes under 100 nm; glycogen granules about 20-30 nm (approximate textbook values; Unit 07 §1)."
   matters: The most frequent partner in glia-neuron merge errors, because astrocytic processes interleave
     with every neurite in the neuropil.
   confuse: "Astrocytic process vs thin dendrite or spine neck. The pale watery cytoplasm and glycogen settle it; caliber alone does not. This is the confusion Unit 07 exists to fix, because glia-neuron merges manufacture false connectivity."
@@ -292,7 +292,7 @@ terms:
   category: Cell types
   definition: A glial cell that myelinates CNS axons; identified by an extremely electron-dense small
     round nucleus and dense ribosome-rich cytoplasm.
-  typical: "Soma ~6-8 um; each cell makes tens of myelin sheaths, varying with region and age (Unit 07 §2)."
+  typical: "Soma about 6-8 um (approximate textbook value); each cell makes tens of myelin sheaths, varying with region and age (Unit 07 §2)."
   matters: "Oligodendrocyte processes connect to myelin sheaths, and a sheath merged into its axon is a common and costly reconstruction error in white matter."
   confuse: "Oligodendrocyte vs microglia: see Microglia. Also oligodendrocyte vs OPC, which requires context rather than cytoplasm."
   units:
@@ -328,7 +328,7 @@ terms:
 - term: Perisynaptic astrocytic process (PAP)
   category: Cell types
   definition: A very thin astrocytic lamella wrapping a synapse, part of the tripartite synapse.
-  typical: "Often under 100 nm thick (Unit 07 §2)."
+  typical: "Often under 100 nm thick (approximate; Unit 07 §2)."
   matters: "PAPs are the hardest structures in the volume to segment: sub-100 nm sheets wrapping the very synapses you are trying to detect. Where they are merged into a neuron, they manufacture connectivity that does not exist."
   confuse: "A PAP vs a spine neck or a thin axon. All three are under 100 nm. The astrocytic cytoplasm is the cue, and at that caliber there is often too little of it to see."
   units:
@@ -376,7 +376,7 @@ terms:
 - term: Isotropic
   category: Imaging
   definition: Equal resolution in all three axes, as produced by FIB-SEM.
-  typical: 4-8 nm isotropic.
+  typical: "4-8 nm isotropic; the hemibrain used 8 nm (Scheffer et al. 2020)."
   matters: "Isotropic voxels remove the direction-dependence of every tracing decision: a process running in z is as traceable as one running in x. It is the single largest quality difference between FIB-SEM and serial-section methods."
   confuse: "Isotropic acquisition vs isotropic resampling. Interpolating anisotropic data onto a cubic grid produces isotropic voxels without producing isotropic information."
   units:
@@ -395,7 +395,7 @@ terms:
   category: Imaging
   definition: 'Serial block-face scanning EM: image the block face, shave off a slice inside the chamber,
     repeat.'
-  typical: 10-20 nm xy, 25-50 nm z.
+  typical: "Roughly 10-20 nm xy and 25-50 nm z (this site's approximate summary of common practice)."
   matters: No section handling means no lost sections and better z-alignment, at the cost of destroying
     the sample.
   confuse: "SBEM vs ssTEM/ssSEM. SBEM destroys each section as it images the block face, so there is nothing to re-image; serial-section methods keep the sections, so a lost region can sometimes be recovered."
@@ -404,7 +404,7 @@ terms:
 - term: FIB-SEM
   category: Imaging
   definition: 'Focused ion beam SEM: an ion beam mills a few nanometers at a time, giving isotropic voxels.'
-  typical: "4-8 nm isotropic. Single runs cover up to about 10^6 cubic micrometers; the hemibrain's 26 teravoxels at 8 nm (about 1.3 x 10^7 cubic micrometers) took 20 um slabs imaged in parallel on two machines (Scheffer et al. 2020)."
+  typical: "4-8 nm isotropic. Single runs cover on the order of 10^6 cubic micrometers (approximate); the hemibrain's 26 teravoxels at 8 nm (about 1.3 x 10^7 cubic micrometers, our arithmetic) were cut into 20 um slabs so that each slab 'can be imaged in a different FIB machine' (Scheffer et al. 2020)."
   matters: The best tracing conditions available, limited by volume and speed.
   confuse: "FIB-SEM vs SBF-SEM. Both are block-face methods, but FIB mills with an ion beam to a few nm and gives isotropic voxels, while SBF cuts with a diamond knife at 25-50 nm. FIB buys tracing quality and pays in volume."
   units:
@@ -412,7 +412,7 @@ terms:
 - term: Multibeam SEM
   category: Imaging
   definition: SEM using many electron beams in parallel to multiply throughput.
-  typical: "61 or 91 beams, aggregating on the order of a gigapixel per second at peak."
+  typical: "Eberle et al. (2015, J Microsc 259:114) describe 61 beams with a summed detector bandwidth of 1.22 gigapixels per second; ZEISS lists 91 beams on its current MultiSEM. H01 was acquired at 125 to 190 million pixels per second (Shapson-Coe et al. 2024)."
   matters: The throughput advance that moved cubic-millimeter volumes from impossible to feasible.
   confuse: "Multibeam raises throughput, not resolution. It is the reason mm-scale ssEM volumes are feasible at all, but each beam still images at the same nm scale as a single beam."
   units:
@@ -438,7 +438,7 @@ terms:
 - term: Landing energy
   category: Imaging
   definition: The energy at which electrons strike the sample in SEM.
-  typical: 1-2 keV for block-face connectomics.
+  typical: "About 1-3 keV; 'Typical landing energies of the multibeam electron microscope are 1-3 keV' (Eberle et al. 2015)."
   matters: Higher energy gives more signal from deeper, at the cost of charging and beam damage.
   confuse: "Landing energy vs beam current. Energy sets how deep the signal comes from; current sets how much signal arrives per second. Both add dose, and both add charging (Unit 03 §1.5)."
   units:
@@ -446,7 +446,7 @@ terms:
 - term: Dwell time
   category: Imaging
   definition: The time the beam spends on each pixel.
-  typical: 0.1-2 microseconds.
+  typical: "Roughly 0.1-2 microseconds on single-beam SEM (this site's working range, not a sourced figure; Unit 03 §1.5)."
   matters: SNR grows roughly as the square root of dose, so doubling SNR costs roughly four times the
     acquisition time.
   confuse: "Longer dwell buys SNR but also dose. It trades against beam current for the same signal, and against total acquisition time linearly, and at petascale acquisition time is the binding constraint."
@@ -533,7 +533,7 @@ terms:
 - term: Shrinkage
   category: Sample prep
   definition: Tissue volume loss during dehydration and embedding.
-  typical: Roughly 5-20% linear, depending on protocol.
+  typical: "Depends on protocol; published corrections include a 16% linear reduction (Kalimo 1976) and 15% per axis (Kinney et al. 2013), both as cited by Korogod et al. 2015."
   matters: Systematic, not random. Prefer ratios and within-volume comparisons over absolute lengths compared
     across studies.
   confuse: "Shrinkage is systematic and affects every measurement you report in nm. It is not noise and it does not average out. A volume measurement taken from EM is a measurement of fixed, dehydrated tissue."
@@ -543,7 +543,7 @@ terms:
   category: Sample prep
   definition: The instrument that cuts resin-embedded tissue into sections tens of nanometers thick using
     a diamond knife.
-  typical: 30-50 nm sections for connectomics.
+  typical: "30-50 nm; H01 averaged 33.9 nm (Shapson-Coe et al. 2024), MICrONS and FAFB about 40 nm."
   matters: "Section thickness is set here, and it is the parameter that decides your z-resolution and therefore how traceable thin processes are."
   confuse: "Cutting thinner improves z-continuity and multiplies the number of sections, the acquisition time, and the chance of losing one. Unit 03 §1 gives the range as 30-50 nm."
   units:
@@ -551,7 +551,7 @@ terms:
 - term: Segmentation
   category: Reconstruction
   definition: Assigning each voxel to an object, producing neuron and glia labels from image data.
-  typical: "0.2-0.8 PB of labels for a mm3 volume, with label-aware compression (Unit 04 §5)."
+  typical: "A planning estimate of 0.2-0.8 PB of labels for a mm3 volume, with label-aware compression (Unit 04 §5; not a measured figure)."
   matters: "Everything downstream is a property of the segmentation, not of the tissue. A connectome is a claim about a specific segmentation at a specific version, and saying so is the difference between a reproducible result and an anecdote."
   confuse: "Segmentation vs reconstruction. Segmentation is the automated labeling; reconstruction is the whole pipeline through proofreading. Papers use them interchangeably and the quality claims are not interchangeable."
   units:
@@ -605,7 +605,7 @@ terms:
 - term: Skeletonization
   category: Reconstruction
   definition: Reducing a segmented object to a centerline graph with radii.
-  typical: "0.1-5 MB per neuron; 10-100 GB for a whole volume, which makes skeletons cheap enough to archive (Unit 02 §3, Unit 04 §5)."
+  typical: "Planning estimates: 0.1-5 MB per neuron; 10-100 GB for a whole volume, which makes skeletons cheap enough to archive (Unit 02 §3, Unit 04 §5)."
   matters: The representation you need for path distance from soma; cheap to store, so archive it alongside
     any connectivity graph.
   confuse: "Skeletonization method changes the answer. Path length and branch counts differ measurably between TEASAR-style and mesh-contraction skeletons, so a morphology statistic is only comparable within one method."
@@ -615,7 +615,7 @@ terms:
 - term: Mesh
   category: Reconstruction
   definition: A triangulated surface representation of a segmented object.
-  typical: "10-100 MB per neuron across levels of detail; 1-10 TB for a whole volume (Unit 02 §3, Unit 04 §5)."
+  typical: "Planning estimates: 10-100 MB per neuron across levels of detail; 1-10 TB for a whole volume (Unit 02 §3, Unit 04 §5)."
   matters: "Meshes are what you actually look at in Neuroglancer, and what surface-area and spine-shape measurements come from. They are regenerated whenever an edit changes the segmentation."
   confuse: "Mesh vs skeleton. A mesh carries surface geometry and no topology; a skeleton carries topology and radius and no surface. Path length comes from the skeleton, spine head shape from the mesh."
   units:
@@ -624,7 +624,7 @@ terms:
 - term: Stitching
   category: Reconstruction
   definition: Aligning image tiles within one section using their overlap regions.
-  typical: "5-15% tile overlap is the working range (Unit 03 §1)."
+  typical: "5-15% tile overlap is this site's working range, not a sourced figure (Unit 03 §1.5)."
   matters: "Stitching errors appear on a regular grid, which makes them easy to mistake for real periodic structure and easy to miss entirely if you only inspect within tiles."
   confuse: "Stitching (tiles within a section) vs registration (section to section). A seam artifact is stitching; a shift between adjacent z is registration."
   units:
@@ -652,7 +652,7 @@ terms:
 - term: Synapse detection
   category: Reconstruction
   definition: Automated identification of synapses and assignment of pre- and postsynaptic partners.
-  typical: "~5 x 10^8 rows for a mm3 synapse table, 50-200 GB - the hottest analytical table in the stack (Unit 04 §5)."
+  typical: "Planning estimate: ~5 x 10^8 rows for a mm3 synapse table (MICrONS reports about 524 million synapses), 50-200 GB at an assumed 100-400 bytes per row - the hottest analytical table in the stack (Unit 04 §5)."
   matters: Store partners as supervoxel IDs, never as neuron IDs, so assignments survive proofreading.
   confuse: "Detecting a synapse and assigning its partners are separate problems with separate error rates. A correct cleft with the pre- and postsynaptic sides swapped reverses the edge."
   units:
@@ -807,7 +807,7 @@ terms:
   category: Data & infrastructure
   definition: A large array stored as many independently addressable blocks, so consumers fetch only what
     they need.
-  typical: Chunks commonly 64^3 to 512^3 voxels.
+  typical: "Chunks of 64^3 to 512^3 voxels are a common range in practice (this site's summary, not a standard)."
   matters: "It is why you can open a petabyte volume in a browser: only the chunks in view are fetched, so cost scales with what you look at rather than with what exists."
   confuse: "Chunk size is a performance decision with no right answer. Small chunks make random access cheap and metadata expensive; large chunks do the reverse."
   units:

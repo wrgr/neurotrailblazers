@@ -436,3 +436,30 @@ annotation data is available as a static download."
   "5,293 layers" (site claim, unverified). Synapses: 149.9 M (paper) vs 183 M (release page). 326 days is in the preprint only.
 - Hemibrain licence: CC BY 4.0 (Janelia page) vs CC BY-NC 4.0 (v1.0 DataCite record). 21,662 traced neurons is unverified (Fig. 1 image).
 - v1507: expiry date 31 Jul 2026 on its manifest vs "Available" in the stale status table. Live CAVE status is unverified (auth required).
+
+## Additions, 28 September 2026 (grounding sweep, `docs/reviews/2026-09-content-pass-2/grounding-sweep.md`)
+
+- **Kasthuri 2015 volume.** Motta et al. 2019 (*Science*, MPG-hosted PDF): "reconstructions of cortical tissue have been
+  either sparse (2–7) or restricted to small volumes of up to 1500 µm3 (8–10)"; ref 9 is Kasthuri 2015. So "~1,500 µm³"
+  is Motta's upper bound for three studies, not a figure read in Kasthuri's own text (Cell full text was unreachable).
+  **Canonical:** "up to about 1,500 µm³ (as cited by Motta et al. 2019)".
+- **Multibeam SEM.** Eberle et al. 2015 *J Microsc* 259:114 (PMC4670696): "The multibeam SEM currently uses 61 electron
+  beams"; summed detector bandwidth "1.22 GPixel/s"; "Typical landing energies ... are 1–3 keV, typical pixel sizes are
+  4–10 nm". ZEISS MultiSEM product page (read 28 Sep 2026): "91 parallel electron beams" (MultiSEM 706). H01: "The Zeiss
+  mSEM electron microscope uses 61 beams" (Shapson-Coe 2024, Fig. 1 legend); "125 to 190 million (M) pixels per second".
+  **Don't say:** "~1 Gpx/s" as a measured or sustained rate.
+- **H01 326 days.** Confirmed again in the published paper's PMC text ("The total imaging time for the 1 mm3 sample was
+  326 days"). The §2 "Don't say / check" bullet asking to attribute 326 days to the preprint is superseded by the §2
+  table row: cite Shapson-Coe et al. 2024.
+- **EyeWire players (resolves §11 CHECK).** EyeWire blog, 4 May 2014: "120K players from nearly 150 countries". Kim et
+  al. 2014 (PMC4074887): "Over 100,000 registered EyeWirers ... from over 130 countries". EyeWire blog, 31 Mar 2025:
+  "Thirteen years, 350,000 players". eyewire.ai (May 2026): ">25,000 complete neurons reconstructed". Different dates, not
+  a conflict; always give the date.
+- **Synapse ultrastructure.** Harris & Weinberg 2012 (PMC3331701): cleft "∼20 nm"; PSD "∼35–50 nm"; clear vesicles "∼35
+  nm"; ribosomes "10–25-nm". High et al. 2015 (PMC4461817): excitatory cleft "uniform (18 nm)", inhibitory cleft narrows
+  "to only 6 nm". AIS: Leterrier 2018 (PMC6596274) "the first 20–60 μm of the axon shaft".
+- **MANC.** Janelia MANC page: "about 23,000 neurons, 10 million pre-synaptic sites, and 74 million post-synaptic
+  densities"; "The MANC is licensed under CC-BY".
+- **CIRCUIT.** Cervantes et al. 2023 ASEE (doi:10.18260/1-2--43271, full PDF read) describes CIRCUIT only as a JHU/APL
+  undergraduate mentoring program begun in 2017 to supply proofreaders; it gives no acronym expansion and no evaluation
+  toolkit. **Don't say:** "Connectome Integrity and Reliability through Quantitative and Iterative Training".

@@ -21,7 +21,7 @@ recommended_modules:
   - module18
 related_datasets:
   - mouseconnects
-last_reviewed: 2026-03-09
+last_reviewed: 2026-09-26
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
@@ -80,11 +80,11 @@ a published figure.
 
 These methods are exercised on real projects:
 [MICrONS](https://www.microns-explorer.org/) provides densely reconstructed EM
-volumes with functional data that serve as a testbed for quality assessment,
-and CIRCUIT (Connectome Integrity and Reliability through Quantitative and
-Iterative Training), developed by William Gray-Roncal and collaborators, packages
-evaluation tools and metrics (topology, morphology, and synapse-based
-F1 score) for use at scale.
+volumes with functional data that serve as a testbed for quality assessment.
+The CIRCUIT program at JHU/APL, a cohort-based undergraduate research program,
+began in 2017 "to satisfy the mission need for talented, engaged proofreaders
+at a scale not possible with conventional approaches" (Cervantes et al., 2023,
+*ASEE Annual Conference*, [doi:10.18260/1-2--43271](https://doi.org/10.18260/1-2--43271)).
 
 ## How Humans and Machines Divide the Work
 

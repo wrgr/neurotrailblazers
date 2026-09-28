@@ -357,7 +357,7 @@ Work these against the identification protocol in §3, naming the step that deci
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Two IDs listed in the manifest (<code>S02</code>, <code>S07</code>) were not among the extracted thumbnails and are not shown.</small></p>
+<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Attribution as given in the source deck; the deck is not public and this credit has not been independently verified. Two IDs listed in the manifest (<code>S02</code>, <code>S07</code>) were not among the extracted thumbnails and are not shown.</small></p>
 
 ---
 

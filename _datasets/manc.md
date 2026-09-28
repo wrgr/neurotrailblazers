@@ -11,7 +11,7 @@ access: "Open; neuPrint (Google sign-in)"
 status: "Released"
 release_year: 2023
 blurb: "The first densely reconstructed connectome of a fly ventral nerve cord, from a male. With FANC, it lets you compare two nerve cords, though not cleanly by sex alone."
-source: "Takemura et al., eLife reviewed preprint 10.7554/eLife.97769 (2024); first posted as bioRxiv 10.1101/2023.06.05.543757 (2023). Neuron and synapse counts are omitted: neither abstract states them, and this catalog does not carry numbers it has not checked against a source."
+source: "Takemura et al., eLife reviewed preprint 10.7554/eLife.97769 (2024); first posted as bioRxiv 10.1101/2023.06.05.543757 (2023). Counts and license from Janelia's MANC page (janelia.org/project-team/flyem/manc-connectome, read 28 September 2026): \"With about 23,000 neurons, 10 million pre-synaptic sites, and 74 million post-synaptic densities\" and \"The MANC is licensed under CC-BY\". Neither paper abstract states the counts."
 ---
 
 MANC extends the hemibrain team's dense-reconstruction approach from the central brain to the
@@ -28,6 +28,8 @@ sex, but also as individuals, and the volumes were made with different imaging m
 between them could come from any of the three. And a claim from either animal alone inherits
 the n = 1 problem that runs through this whole catalog.
 
-**A note on numbers.** This record deliberately carries no neuron or synapse count. The
-published figures exist, but not in a source this catalog has verified, and every other record
-here states where its numbers came from.
+**A note on numbers.** Janelia's MANC page gives about 23,000 neurons, 10 million
+presynaptic sites and 74 million postsynaptic densities, and states that MANC is licensed CC BY
+([Janelia FlyEM, MANC connectome](https://www.janelia.org/project-team/flyem/manc-connectome),
+read September 2026). Presynaptic sites and postsynaptic densities are not the same count as
+synapses: fly synapses are polyadic, so one presynaptic site usually faces several postsynaptic densities (the hemibrain paper counts "64 million PSDs and 9.5 million T-bars"; Scheffer et al. 2020).

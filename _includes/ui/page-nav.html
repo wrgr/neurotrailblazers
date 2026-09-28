@@ -1,0 +1,215 @@
+{%- comment -%}
+  Bottom-of-page navigation, rendered by the default layout on every page except
+  the home page:
+
+    - previous/next within an ordered sequence, with the sequence's hub and the
+      step number;
+    - the companion pages of the same step (unit page / lecture plan / deck,
+      module page / session kit / worksheet / model responses, workshop plan /
+      worksheet / model responses);
+    - otherwise a single "Up" link to the section hub, so no page ends without a
+      route onward;
+    - the page's `last_reviewed` date, when it sets one.
+
+  Order comes from data, not from the content pages:
+    technical units and their lecture plans   _data/technical_track.yml (`modules`)
+    modules and session kits                   _data/modules.yml (`number`)
+    module model responses                     the pages under teaching/answers/
+    lecture sessions, Pathways workshops,
+    hidden curriculum                          _data/sequences.yml
+
+  Expects ui/breadcrumb.html to have run first (it assigns crumb_hub).
+{%- endcomment -%}
+{%- assign nav_prev_url = '' -%}{%- assign nav_prev_title = '' -%}
+{%- assign nav_next_url = '' -%}{%- assign nav_next_title = '' -%}
+{%- assign nav_seq_title = '' -%}{%- assign nav_seq_url = '' -%}
+{%- assign nav_unit_word = '' -%}{%- assign nav_pos = 0 -%}{%- assign nav_total = 0 -%}
+{%- assign nav_companions = '' -%}
+
+{%- comment -%} Technical units 01-09, and the lecture plan for each. {%- endcomment -%}
+{%- assign tt_base = '' -%}
+{%- if page.url contains '/technical-training/slides/' -%}
+  {%- assign tt_base = '/technical-training/slides/' -%}
+{%- elsif page.url contains '/technical-training/' -%}
+  {%- assign tt_base = '/technical-training/' -%}
+{%- endif -%}
+{%- if tt_base != '' -%}
+  {%- assign tt_units = site.data.technical_track.modules | where_exp: 'u', "u.slug != 'atlas-connectomics-reference'" -%}
+  {%- for u in tt_units -%}
+    {%- assign u_url = tt_base | append: u.slug | append: '/' -%}
+    {%- if u_url == page.url -%}
+      {%- assign nav_pos = forloop.index -%}
+      {%- assign nav_total = tt_units.size -%}
+      {%- if tt_base == '/technical-training/' -%}
+        {%- assign nav_seq_title = 'Technical Course' -%}{%- assign nav_unit_word = 'Unit' -%}
+      {%- else -%}
+        {%- assign nav_seq_title = 'Lecture plans for the Technical Course' -%}{%- assign nav_unit_word = 'Lecture plan' -%}
+      {%- endif -%}
+      {%- assign nav_seq_url = tt_base -%}
+      {%- if forloop.index0 > 0 -%}
+        {%- assign pi = forloop.index0 | minus: 1 -%}
+        {%- assign p = tt_units[pi] -%}
+        {%- assign nav_prev_url = tt_base | append: p.slug | append: '/' -%}
+        {%- assign p_num = p.slug | slice: 0, 2 -%}
+        {%- assign nav_prev_title = nav_unit_word | append: ' ' | append: p_num | append: ': ' | append: p.title -%}
+      {%- endif -%}
+      {%- unless forloop.last -%}
+        {%- assign ni = forloop.index0 | plus: 1 -%}
+        {%- assign n = tt_units[ni] -%}
+        {%- assign n_num = n.slug | slice: 0, 2 -%}
+        {%- assign nav_next_url = tt_base | append: n.slug | append: '/' -%}
+        {%- assign nav_next_title = nav_unit_word | append: ' ' | append: n_num | append: ': ' | append: n.title -%}
+      {%- endunless -%}
+      {%- assign unit_url = '/technical-training/' | append: u.slug | append: '/' -%}
+      {%- assign plan_url = '/technical-training/slides/' | append: u.slug | append: '/' -%}
+      {%- assign deck_url = '/course/decks/marp/out/' | append: u.slug | append: '.html' -%}
+      {%- capture nav_companions -%}
+        {%- if page.url == unit_url -%}<span aria-current="page">Unit page</span>{%- else -%}<a href="{{ unit_url | relative_url }}">Unit page</a>{%- endif -%}
+        &middot;
+        {%- if page.url == plan_url -%}<span aria-current="page">Lecture plan</span>{%- else -%}<a href="{{ plan_url | relative_url }}">Lecture plan</a>{%- endif -%}
+        &middot; <a href="{{ deck_url | relative_url }}">Slide deck</a>
+      {%- endcapture -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- comment -%} Modules 01-25, their session kits, and the model responses written so far. {%- endcomment -%}
+{%- assign mod_num = 0 -%}
+{%- assign mod_base = '' -%}
+{%- if page.module_number -%}
+  {%- assign mod_num = page.module_number | plus: 0 -%}
+  {%- assign mod_base = '/modules/module' -%}
+  {%- assign nav_seq_title = 'Module Library' -%}{%- assign nav_seq_url = '/modules/' -%}{%- assign nav_unit_word = 'Module' -%}
+{%- elsif page.url contains '/teaching/sessions/module' -%}
+  {%- assign mod_num = page.url | remove: '/teaching/sessions/module' | remove: '/' | plus: 0 -%}
+  {%- assign mod_base = '/teaching/sessions/module' -%}
+  {%- assign nav_seq_title = 'Session Kits' -%}{%- assign nav_seq_url = '/teaching/sessions/' -%}{%- assign nav_unit_word = 'Session kit' -%}
+{%- elsif page.url contains '/teaching/answers/module' -%}
+  {%- assign mod_num = page.url | remove: '/teaching/answers/module' | remove: '/' | plus: 0 -%}
+  {%- assign mod_base = '/teaching/answers/module' -%}
+  {%- assign nav_seq_title = 'Module model responses' -%}{%- assign nav_seq_url = '/teaching/answers/' -%}{%- assign nav_unit_word = 'Key' -%}
+{%- endif -%}
+{%- if mod_num > 0 -%}
+  {%- if mod_num < 10 -%}{%- assign mod_pad = '0' | append: mod_num -%}{%- else -%}{%- assign mod_pad = mod_num | append: '' -%}{%- endif -%}
+  {%- if mod_base == '/teaching/answers/module' -%}
+    {%- comment -%} Only some modules have a key yet: chain the ones that exist. {%- endcomment -%}
+    {%- assign keys = site.pages | where_exp: 'p', "p.url contains '/teaching/answers/module'" | sort: 'url' -%}
+    {%- assign nav_total = keys.size -%}
+    {%- for k in keys -%}
+      {%- if k.url == page.url -%}
+        {%- assign nav_pos = forloop.index -%}
+        {%- if forloop.index0 > 0 -%}
+          {%- assign pi = forloop.index0 | minus: 1 -%}{%- assign p = keys[pi] -%}
+          {%- assign nav_prev_url = p.url -%}{%- assign nav_prev_title = p.title -%}
+        {%- endif -%}
+        {%- unless forloop.last -%}
+          {%- assign ni = forloop.index0 | plus: 1 -%}{%- assign n = keys[ni] -%}
+          {%- assign nav_next_url = n.url -%}{%- assign nav_next_title = n.title -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign mods = site.data.modules | sort: 'number' -%}
+    {%- assign nav_total = mods.size -%}
+    {%- for m in mods -%}
+      {%- if m.number == mod_num -%}{%- assign nav_pos = forloop.index -%}{%- endif -%}
+      {%- assign d = m.number | minus: mod_num -%}
+      {%- if d == -1 or d == 1 -%}
+        {%- if m.number < 10 -%}{%- assign m_pad = '0' | append: m.number -%}{%- else -%}{%- assign m_pad = m.number | append: '' -%}{%- endif -%}
+        {%- assign m_url = mod_base | append: m_pad | append: '/' -%}
+        {%- assign m_title = nav_unit_word | append: ' ' | append: m_pad | append: ': ' | append: m.title -%}
+        {%- if d == -1 -%}{%- assign nav_prev_url = m_url -%}{%- assign nav_prev_title = m_title -%}
+        {%- else -%}{%- assign nav_next_url = m_url -%}{%- assign nav_next_title = m_title -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if nav_pos > 0 -%}
+    {%- assign module_url = '/modules/module' | append: mod_pad | append: '/' -%}
+    {%- assign kit_url = '/teaching/sessions/module' | append: mod_pad | append: '/' -%}
+    {%- assign key_url = '/teaching/answers/module' | append: mod_pad | append: '/' -%}
+    {%- assign sheet_url = '/assets/worksheets/module' | append: mod_pad | append: '/module' | append: mod_pad | append: '-activity.md' -%}
+    {%- assign key_page = site.pages | where: 'url', key_url | first -%}
+    {%- capture nav_companions -%}
+      {%- if page.url == module_url -%}<span aria-current="page">Module page</span>{%- else -%}<a href="{{ module_url | relative_url }}">Module page</a>{%- endif -%}
+      &middot;
+      {%- if page.url == kit_url -%}<span aria-current="page">Session kit</span>{%- else -%}<a href="{{ kit_url | relative_url }}">Session kit</a>{%- endif -%}
+      &middot; <a href="{{ sheet_url | relative_url }}">Learner worksheet</a>
+      {%- if key_page %} &middot;
+        {%- if page.url == key_url -%}<span aria-current="page">Model responses</span>{%- else -%}<a href="{{ key_url | relative_url }}">Model responses</a>{%- endif -%}
+      {%- endif -%}
+    {%- endcapture -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} Sequences listed in _data/sequences.yml. {%- endcomment -%}
+{%- if nav_pos == 0 -%}
+  {%- assign cur_list = nil -%}{%- assign cur_item = nil -%}{%- assign cur_role = '' -%}
+  {%- for list in site.data.sequences.lists -%}
+    {%- for item in list.items -%}
+      {%- for role in list.roles -%}
+        {%- assign r_url = item[role.key] -%}
+        {%- if r_url == page.url -%}
+          {%- assign nav_pos = forloop.parentloop.index -%}
+          {%- assign cur_list = list -%}{%- assign cur_item = item -%}{%- assign cur_role = role.key -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- if cur_list -%}
+    {%- assign nav_total = cur_list.items.size -%}
+    {%- assign nav_seq_title = cur_list.title -%}{%- assign nav_seq_url = cur_list.url -%}{%- assign nav_unit_word = cur_list.unit_word -%}
+    {%- if nav_pos > 1 -%}
+      {%- assign pi = nav_pos | minus: 2 -%}{%- assign p = cur_list.items[pi] -%}
+      {%- assign nav_prev_url = p[cur_role] | default: p.url -%}{%- assign nav_prev_title = p.title -%}
+    {%- endif -%}
+    {%- if nav_pos < nav_total -%}
+      {%- assign n = cur_list.items[nav_pos] -%}
+      {%- assign nav_next_url = n[cur_role] | default: n.url -%}{%- assign nav_next_title = n.title -%}
+    {%- endif -%}
+    {%- if cur_list.roles.size > 1 -%}
+      {%- capture nav_companions -%}
+        {%- for role in cur_list.roles -%}
+          {%- assign r_url = cur_item[role.key] -%}
+          {%- if r_url -%}
+            {%- unless forloop.first %} &middot; {% endunless -%}
+            {%- if r_url == page.url -%}<span aria-current="page">{{ role.label }}</span>{%- else -%}<a href="{{ r_url | relative_url }}">{{ role.label }}</a>{%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endcapture -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if page.url != '/' %}
+<div class="page-nav-wrap">
+  {%- if nav_pos > 0 %}
+  <nav class="seq-nav" aria-label="Sequence navigation">
+    <p class="seq-nav-label"><a href="{{ nav_seq_url | relative_url }}">{{ nav_seq_title }}</a> <span aria-hidden="true">&middot;</span> {{ nav_unit_word }} {{ nav_pos }} of {{ nav_total }}</p>
+    <ul class="seq-links">
+      {%- if nav_prev_url != '' %}
+      <li class="seq-prev"><a class="seq-link" rel="prev" href="{{ nav_prev_url | relative_url }}"><small>Previous</small>{{ nav_prev_title | escape }}</a></li>
+      {%- endif %}
+      {%- if nav_next_url != '' %}
+      <li class="seq-next"><a class="seq-link" rel="next" href="{{ nav_next_url | relative_url }}"><small>Next</small>{{ nav_next_title | escape }}</a></li>
+      {%- else %}
+      <li class="seq-next"><a class="seq-link" href="{{ nav_seq_url | relative_url }}"><small>End of sequence</small>Back to {{ nav_seq_title }}</a></li>
+      {%- endif %}
+    </ul>
+    {%- if nav_companions != '' %}
+    <p class="seq-triad">{{ nav_companions }}</p>
+    {%- endif %}
+  </nav>
+  {%- elsif crumb_hub and crumb_hub.url != page.url %}
+  <nav class="seq-nav seq-nav-up" aria-label="Section navigation">
+    <p class="seq-nav-label">Up: <a href="{{ crumb_hub.url | relative_url }}">{{ crumb_hub.title }}</a></p>
+  </nav>
+  {%- elsif crumb_group and crumb_group.url != page.url %}
+  <nav class="seq-nav seq-nav-up" aria-label="Section navigation">
+    <p class="seq-nav-label">Up: <a href="{{ crumb_group.url | relative_url }}">{{ crumb_group.title }}</a></p>
+  </nav>
+  {%- endif %}
+  {%- if page.last_reviewed %}
+  <p class="page-meta">Last reviewed: <time datetime="{{ page.last_reviewed | date: '%Y-%m-%d' }}">{{ page.last_reviewed | date: '%B %-d, %Y' }}</time></p>
+  {%- endif %}
+</div>
+{%- endif %}

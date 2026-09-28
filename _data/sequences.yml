@@ -1,0 +1,127 @@
+---
+# Ordered sequences that get previous/next links in the page chrome
+# (_includes/ui/page-nav.html), so the content pages do not have to carry them.
+#
+# Sequences with a single source of order elsewhere are not repeated here:
+#   technical units 01-09 and their lecture plans   _data/technical_track.yml
+#   modules 01-25 and their session kits             _data/modules.yml
+#   module model responses                          the pages under teaching/answers/
+#
+# Each list has a hub (`url`), a word for one step (`unit_word`), the roles a
+# step can have (`roles`, in the order they are shown as companion links), and
+# the ordered `items`. An item's `url` is its primary page; other role keys are
+# optional. Previous/next stays within the reader's role: from a worksheet you
+# go to the next worksheet, not the next plan.
+lists:
+  - id: lecture-sessions
+    title: "Short lecture series"
+    url: /teaching/sequence/
+    unit_word: Session
+    roles:
+      - key: url
+        label: "Plan and slides"
+      - key: activity
+        label: "Learner worksheet"
+      - key: answers
+        label: "Model responses"
+    items:
+      - title: "Introduction to Connectomics"
+        url: /teaching/lectures/connectomics-01-introduction/
+        activity: /teaching/lectures/introduction-activity/
+        answers: /teaching/lectures/introduction-answers/
+      - title: "Synapse Detection"
+        url: /teaching/lectures/synapse-detection/
+        activity: /teaching/lectures/synapse-detection-activity/
+        answers: /teaching/lectures/synapse-detection-answers/
+      - title: "Tools and Methods"
+        url: /teaching/lectures/connectomics-02-tools-and-methods/
+        activity: /teaching/lectures/tools-and-methods-activity/
+        answers: /teaching/lectures/tools-and-methods-answers/
+      - title: "Algorithms and Applications"
+        url: /teaching/lectures/connectomics-03-algorithms-and-applications/
+        activity: /teaching/lectures/algorithms-and-applications-activity/
+        answers: /teaching/lectures/algorithms-and-applications-answers/
+      - title: "Ethics and Governance (optional)"
+        url: /teaching/lectures/ethics-and-governance/
+        activity: /teaching/lectures/ethics-and-governance-activity/
+        answers: /teaching/lectures/ethics-and-governance-answers/
+
+  - id: pathways
+    title: "Professional Pathways workshops"
+    url: /teaching/pathways/
+    unit_word: Workshop
+    roles:
+      - key: url
+        label: "Workshop plan"
+      - key: activity
+        label: "Learner worksheet"
+      - key: answers
+        label: "Model responses"
+    items:
+      - title: "Orientation"
+        url: /teaching/pathways/orientation/
+        activity: /teaching/pathways/orientation-activity/
+        answers: /teaching/pathways/orientation-answers/
+      - title: "The Resilient STEM Scholar"
+        url: /teaching/pathways/resilient-scholar/
+        activity: /teaching/pathways/resilient-scholar-activity/
+        answers: /teaching/pathways/resilient-scholar-answers/
+      - title: "Charting Your Course in Research"
+        url: /teaching/pathways/charting-your-course/
+        activity: /teaching/pathways/charting-your-course-activity/
+        answers: /teaching/pathways/charting-your-course-answers/
+      - title: "Building Your STEM Entourage"
+        url: /teaching/pathways/building-your-entourage/
+        activity: /teaching/pathways/building-your-entourage-activity/
+        answers: /teaching/pathways/building-your-entourage-answers/
+      - title: "Communicating Science I"
+        url: /teaching/pathways/communicating-science-1/
+        activity: /teaching/pathways/communicating-science-1-activity/
+        answers: /teaching/pathways/communicating-science-1-answers/
+      - title: "Communicating Science II"
+        url: /teaching/pathways/communicating-science-2/
+        activity: /teaching/pathways/communicating-science-2-activity/
+        answers: /teaching/pathways/communicating-science-2-answers/
+      - title: "The Savvy Researcher"
+        url: /teaching/pathways/savvy-researcher/
+        activity: /teaching/pathways/savvy-researcher-activity/
+        answers: /teaching/pathways/savvy-researcher-answers/
+      - title: "Professional Conduct in STEM"
+        url: /teaching/pathways/professional-conduct/
+        activity: /teaching/pathways/professional-conduct-activity/
+        answers: /teaching/pathways/professional-conduct-answers/
+      - title: "STEM Identity and Purpose"
+        url: /teaching/pathways/identity-and-purpose/
+        activity: /teaching/pathways/identity-and-purpose-activity/
+        answers: /teaching/pathways/identity-and-purpose-answers/
+      - title: "Future Forward"
+        url: /teaching/pathways/future-forward/
+        activity: /teaching/pathways/future-forward-activity/
+        answers: /teaching/pathways/future-forward-answers/
+
+  # In the order the hub page lists them.
+  - id: hidden-curriculum
+    title: "The hidden curriculum"
+    url: /hidden-curriculum/
+    unit_word: Page
+    roles:
+      - key: url
+        label: "Page"
+    items:
+      - title: "Technical practice"
+        url: /hidden-curriculum/technical-practice/
+      - title: "Reading and judging"
+        url: /hidden-curriculum/reading-and-judging/
+      - title: "Lab norms"
+        url: /hidden-curriculum/lab-norms/
+      - title: "Career mechanics"
+        url: /hidden-curriculum/career-mechanics/
+      - title: "Meta-learning"
+        url: /hidden-curriculum/meta-learning/
+      - title: "Belonging"
+        url: /hidden-curriculum/belonging/
+      - title: "Conflict"
+        url: /hidden-curriculum/conflict/
+      # Added September 2026; the hub page has not yet listed it, so it sits last.
+      - title: "Funding and jobs"
+        url: /hidden-curriculum/funding-and-jobs/

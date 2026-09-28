@@ -25,13 +25,17 @@
                     {% if item.dropdown %}
                     {% assign group_active = false %}
                     {% for subitem in item.dropdown %}
-                      {% if page.url == subitem.url %}{% assign group_active = true %}{% endif %}
+                      {% if subitem.url and page.url == subitem.url %}{% assign group_active = true %}{% endif %}
                     {% endfor %}
                     <details class="nav-group">
                         <summary class="nav-link{% if group_active %} active{% endif %}" data-nav-label="{{ item.title }}">{{ item.title }}</summary>
                         <ul class="dropdown">
                             {% for subitem in item.dropdown %}
+                            {% if subitem.heading %}
+                            <li class="dropdown-heading" role="presentation">{{ subitem.heading }}</li>
+                            {% else %}
                             <li><a href="{{ subitem.url | relative_url }}" class="dropdown-link"{% if page.url == subitem.url %} aria-current="page"{% endif %}>{{ subitem.title }}</a></li>
+                            {% endif %}
                             {% endfor %}
                         </ul>
                     </details>
@@ -45,17 +49,24 @@
     </header>
 
     <main id="main-content" tabindex="-1">
+        {% unless page.url == '/' %}{% include ui/breadcrumb.html %}{% endunless %}
         {{ content }}
+        {% include ui/page-nav.html %}
     </main>
 
     <footer>
         <div class="footer-inner">
+            {%- comment -%}
+              The first row repeats the six menu hubs, so every page has a plain-link
+              route to each section even with the menu collapsed or JavaScript off.
+            {%- endcomment %}
+            <nav class="footer-nav" aria-label="Site sections">
+                {% for item in nav_items %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}
+            </nav>
             <p class="footer-links">
-                <a href="{{ '/about/' | relative_url }}">About</a>
+                {% for link in site.data.navigation.footer %}<a href="{{ link.url | relative_url }}">{{ link.title }}</a>
                 <span aria-hidden="true">&middot;</span>
-                <a href="mailto:{{ site.email }}">Contact</a>
-                <span aria-hidden="true">&middot;</span>
-                <a href="{{ '/license/' | relative_url }}">License</a>
+                {% endfor %}<a href="mailto:{{ site.email }}">Contact</a>
                 <span aria-hidden="true">&middot;</span>
                 <a href="https://github.com/{{ site.github_username }}/neurotrailblazers">GitHub</a>
             </p>

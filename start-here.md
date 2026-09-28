@@ -248,7 +248,7 @@ content_type: navigation
                 <tr>
                     <td>Anyone, at any stage</td>
                     <td><a href="{{ '/hidden-curriculum/' | relative_url }}">The hidden curriculum</a></td>
-                    <td>The unwritten norms &mdash; how to read a paper, what a PI expects but won&rsquo;t say, how funding and authorship really work, how to disagree with someone senior. Not a track; read it alongside whatever else you are doing.</td>
+                    <td>The unwritten norms &mdash; how to read a paper, what a PI expects but won&rsquo;t say, how funding and authorship really work, how to disagree with someone senior. Not a track; read it alongside whatever else you are doing. <a href="{{ '/hidden-curriculum/funding-and-jobs/' | relative_url }}">Funding and jobs</a> covers how a trainee is paid and the job categories connectomics created.</td>
                 </tr>
                 <tr>
                     <td>Wanting one concrete, valuable skill rather than a curriculum</td>

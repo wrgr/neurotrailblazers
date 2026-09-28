@@ -179,13 +179,20 @@ nanometers at a time, giving isotropic voxels.
 
 The parameters you will actually be asked about:
 
-| Parameter | Typical range | Increase it and… | Decrease it and… |
+| Parameter | Working range (see note) | Increase it and… | Decrease it and… |
 |---|---|---|---|
-| Landing energy (SEM) | 1–2 keV | More depth signal, more charging, more beam damage | Better surface specificity, weaker signal |
+| Landing energy (SEM) | 1–3 keV | More depth signal, more charging, more beam damage | Better surface specificity, weaker signal |
 | Dwell time per pixel | 0.1–2 µs | Better SNR | Faster acquisition, noisier images |
 | Beam current | pA–nA | Better SNR at fixed dwell | Less damage and charging |
 | Tile overlap | 5–15% | More reliable stitching | Less redundant data, faster |
 | Section thickness (z) | 30–50 nm | Fewer sections, faster, cheaper | Better z-continuity, more data |
+
+*Note on the ranges.* Two rows are anchored to papers: "Typical landing energies of the
+multibeam electron microscope are 1–3 keV" (Eberle et al. 2015), and published sections
+run from H01's 33.9 nm mean (Shapson-Coe et al. 2024) to about 40 nm for MICrONS and
+FAFB (MICrONS Consortium 2025; Zheng et al. 2018). Dwell time, beam current and tile
+overlap are this site's approximate working values for single-beam SEM, not figures from
+a source; instruments and protocols differ, so take the numbers from your facility.
 
 **Dose is a budget.** SNR improves roughly with the square root of electron dose, and
 dose is the product of beam current and dwell time. At fixed current, doubling SNR
@@ -193,16 +200,19 @@ costs about 4× the acquisition time. That is why "just image it better" is rare
 answer at petascale. The usual tradeoff is to accept a noisier image and spend the
 savings on better segmentation and more proofreading.
 
-**Multibeam SEM** attacks the throughput term directly: 61 or 91 electron beams
-scanning in parallel, which raises imaging speed by close to two orders of magnitude
-over a single beam (Eberle et al. 2015). H01 was imaged on a 61-beam instrument.
+**Multibeam SEM** attacks the throughput term directly: many electron beams scanning
+in parallel, which raises imaging speed "by close to two orders of magnitude" over a
+single beam (Eberle et al. 2015). Eberle's instrument used 61 beams, with a summed
+detector bandwidth of 1.22 gigapixels per second; ZEISS's current MultiSEM 706 lists 91
+beams ([ZEISS MultiSEM product page](https://www.zeiss.com/microscopy/en/products/sem-fib-sem/sem/multisem.html), read September 2026). H01 was imaged on a 61-beam instrument (Shapson-Coe et al. 2024).
 Parallel TEMs are the other route: MICrONS imaged 26,652 sections on five automated
 TEMs in about six months (MICrONS Consortium 2025).
 
 ### Worked example: acquisition time
 
 > A volume is 800 µm × 800 µm × 800 µm at 4 × 4 × 40 nm. Your instrument sustains
-> 0.2 gigapixels per second including overheads. How long?
+> 0.2 gigapixels per second including overheads. How long? (0.2 Gpx/s is a round number
+> we chose for the exercise, close to H01's reported 125–190 million pixels per second.)
 
 ```
 voxels_xy per section = (800,000 / 4)^2 = 200,000^2 = 4.0 x 10^10 px
@@ -559,9 +569,11 @@ cover cryo-EM, correlative light-EM workflows in depth, or non-EM volumetric met
 - Pallotto M., Watkins P.V., Fubara B., Singer J.H. & Briggman K.L. (2015). Extracellular space preservation aids the connectomic analysis of neural circuits. *eLife* 4:e08206. [doi:10.7554/eLife.08206](https://doi.org/10.7554/eLife.08206)
 - Shapson-Coe A. et al. (2021). A connectomic study of a petascale fragment of human cerebral cortex. bioRxiv. [doi:10.1101/2021.05.29.446289](https://doi.org/10.1101/2021.05.29.446289)
 - Shapson-Coe A. et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [doi:10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
+- Zheng Z. et al. (2018). A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*. *Cell* 174:730–743. [doi:10.1016/j.cell.2018.06.019](https://doi.org/10.1016/j.cell.2018.06.019)
 
-The imaging-parameter ranges in §1.5 and the gate thresholds in §3 are typical working
-values and examples, not figures from a single source.
+The landing-energy and section-thickness rows in §1.5 are anchored to the papers named
+in the note under that table. The other §1.5 ranges and the gate thresholds in §3 are
+this site's working values and examples, not figures from a source.
 
 ## Go deeper
 

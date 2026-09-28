@@ -100,7 +100,7 @@ often worth more than a long scroll.
 - Position within a **myelinated bundle** or a fiber tract → axon.
 - Wrapped by an oligodendrocyte sheath → axon.
 - Arising from a soma with an **AIS** (membrane undercoating plus fasciculated
-  microtubules, roughly 20–60 µm long) → axon, definitively.
+  microtubules, roughly 20–60 µm long, per Leterrier 2018) → axon, definitively.
 - Arising from a soma with a broad base, tapering, and containing ribosomes →
   dendrite, definitively.
 - Following the process to *any* soma is the gold standard, when the volume allows.
@@ -373,7 +373,7 @@ Use these with the protocol in §3 in hand, and force yourself to name the step 
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). The S18 schematic is Figure 3 of Sheng M. &amp; Kim E. (2011), "The postsynaptic organization of synapses," <em>Cold Spring Harb Perspect Biol</em> 3:a005678, doi:10.1101/cshperspect.a005678, as reproduced in that deck.</small></p>
+<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Attribution as given in the source deck; the deck is not public and this credit has not been independently verified. The S18 schematic is Figure 3 of Sheng M. &amp; Kim E. (2011), "The postsynaptic organization of synapses," <em>Cold Spring Harb Perspect Biol</em> 3:a005678, doi:10.1101/cshperspect.a005678, as reproduced in that deck. &copy; Cold Spring Harbor Laboratory Press, all rights reserved: it is not openly licensed, and it is shown here for teaching without a reuse license on record. Confirm permission before reusing it outside this course.</small></p>
 
 ---
 
@@ -485,6 +485,10 @@ covered in Unit 07. Also not covered: how these classifications enter proofreadi
 prioritization (Unit 08) or motif analysis (Unit 09).
 
 ---
+
+## Sources
+
+- Leterrier C. (2018). The axon initial segment: an updated viewpoint. *Journal of Neuroscience* 38:2135–2145. [doi:10.1523/JNEUROSCI.1922-17.2018](https://doi.org/10.1523/JNEUROSCI.1922-17.2018) (AIS length: "the first 20–60 μm of the axon shaft").
 
 ## Go deeper
 

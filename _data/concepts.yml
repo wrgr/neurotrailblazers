@@ -1,4 +1,39 @@
+# Concept Explorer data.
+#
+# Consumers: concepts/index.md (the explorer), _includes/ui/track-need-explorer.html
+# (the per-track "Find by Need" section on /tracks/*), _includes/ui/technical-unit-concepts.html
+# (the "Related concepts" block on each technical unit, keyed by
+# _data/technical_track.yml primary_concepts) and technical-training/index.md (whose
+# need buttons link to the explorer with ?track=...&need=...).
+#
+# Schema, per concept:
+#   slug            stable key; other data files reference it, so do not rename
+#   title           card title
+#   track           core-concepts-methods | research-in-action | career-and-community
+#   user_needs      short lowercase phrases; they become the "What you are trying to
+#                   do" filter. Reuse an existing phrase before coining one, because
+#                   the filter is only useful when concepts share vocabulary. The
+#                   five needs that technical-training/index.md links by exact string
+#                   are: starting a research question, improving data quality,
+#                   reducing identity confusion, prioritizing corrections,
+#                   designing graph analyses.
+#   summary         one sentence: what the skill is
+#   explanation     one sentence: how to learn it from the linked pages
+#   resources       the first entry is the card's title link; the rest are shown as
+#                   "Related resources" when there is no teaching_resources block
+#   teaching_resources
+#                   optional lesson / activity / slides / references lists. Every url
+#                   must be a permalink that exists; deep links must point at a
+#                   heading that exists (scripts/check_anchor_links.rb checks the
+#                   built site).
+#
+# Every summary describes only what its target pages contain.
+
 concepts:
+  # ---------------------------------------------------------------------------
+  # Core Concepts & Methods
+  # ---------------------------------------------------------------------------
+
   - slug: hypothesis-framing
     title: Hypothesis Framing
     track: core-concepts-methods
@@ -24,6 +59,102 @@ concepts:
           url: /technical-training/slides/01-why-map-the-brain/
       references:
         - title: Journal Club Reading List
+          url: /technical-training/journal-club/
+
+  - slug: structural-evidence-bins
+    title: Structural Evidence Bins
+    track: core-concepts-methods
+    user_needs:
+      - avoiding overclaiming
+      - starting a research question
+    summary: "Sort every connectivity claim into one of three bins: structure alone is sufficient, structure plus one declared assumption, or structure cannot establish it."
+    explanation: "Work the examples for each bin in Unit 01 §3, apply the rule that a Bin B claim names its assumption in the same sentence, then match each claim type to the reconstruction state it needs in §4."
+    resources:
+      - title: "Unit 01 §3: What structure can and cannot establish"
+        url: /technical-training/01-why-map-the-brain/#3-what-structure-can-and-cannot-establish
+      - title: "Unit 01 §4: Sizing the claim to the reconstruction"
+        url: /technical-training/01-why-map-the-brain/#4-sizing-the-claim-to-the-reconstruction
+    teaching_resources:
+      lesson:
+        - title: "Unit 01 §3"
+          url: /technical-training/01-why-map-the-brain/#3-what-structure-can-and-cannot-establish
+      activity:
+        - title: Unit 01 Lab
+          url: /technical-training/01-why-map-the-brain/#lab-write-a-study-brief-60-minutes
+        - title: Introduction Session Worksheet
+          url: /teaching/lectures/introduction-activity/
+      slides:
+        - title: Unit 01 Lecture Plan
+          url: /technical-training/slides/01-why-map-the-brain/
+      references:
+        - title: Communicating Science I (the bins across three audiences)
+          url: /teaching/pathways/communicating-science-1/
+        - title: Assessment Bank (tagIN-3)
+          url: /teaching/assessment/
+
+  - slug: cost-arithmetic
+    title: Cost and Capacity Arithmetic
+    track: core-concepts-methods
+    user_needs:
+      - planning compute and storage
+      - matching method to question
+    summary: "Compute raw voxel counts, derived-product storage multipliers and GPU-days for a proposed volume before anyone builds a budget."
+    explanation: "Start from the voxel arithmetic in Unit 01 §2, then work the storage multipliers in Unit 02 §5 and the capacity table in Unit 04 §5; the Reconstruction Pipeline page says which resource binds at each major stage."
+    resources:
+      - title: "Unit 01 §2: The cost argument, in numbers you can compute"
+        url: /technical-training/01-why-map-the-brain/#2-the-cost-argument-in-numbers-you-can-compute
+      - title: "Unit 04 §5: Capacity and cost, worked"
+        url: /technical-training/04-volume-reconstruction-infrastructure/#5-capacity-and-cost-worked
+    teaching_resources:
+      lesson:
+        - title: "Unit 01 §2"
+          url: /technical-training/01-why-map-the-brain/#2-the-cost-argument-in-numbers-you-can-compute
+        - title: "Unit 02 §5: Compute and storage, planned rather than discovered"
+          url: /technical-training/02-brain-data-across-scales/#5-compute-and-storage-planned-rather-than-discovered
+        - title: "Unit 04 §5"
+          url: /technical-training/04-volume-reconstruction-infrastructure/#5-capacity-and-cost-worked
+      activity:
+        - title: Unit 02 Lab (budget estimate section)
+          url: /technical-training/02-brain-data-across-scales/#lab-scale-selection-memo-75-minutes
+      slides:
+        - title: Unit 01 Lecture Plan
+          url: /technical-training/slides/01-why-map-the-brain/
+        - title: Unit 04 Lecture Plan
+          url: /technical-training/slides/04-volume-reconstruction-infrastructure/
+      references:
+        - title: "Reconstruction Pipeline: what it costs, in the units that bind"
+          url: /content-library/infrastructure/reconstruction-pipeline/#what-it-costs-in-the-units-that-bind
+        - title: Assessment Bank (tagTM-4)
+          url: /teaching/assessment/
+
+  - slug: connectome-history
+    title: Connectome History
+    track: core-concepts-methods
+    user_needs:
+      - avoiding overclaiming
+      - choosing a dataset
+    summary: "From Cajal's drawings and the C. elegans monograph to whole-brain fly connectomes and BRAIN CONNECTS: the milestones, the methods behind each, and what the field learned."
+    explanation: "Read the chronological tour and 'what the field's history teaches' on the Connectome History page, then the C. elegans case study for how the first connectome has been corrected and extended over four decades."
+    resources:
+      - title: Connectome History
+        url: /content-library/connectomics/connectome-history/
+      - title: C. elegans Revisited
+        url: /content-library/case-studies/c-elegans-revisited/
+    teaching_resources:
+      lesson:
+        - title: Connectome History
+          url: /content-library/connectomics/connectome-history/
+        - title: "Unit 01 §5: What connectomics has actually delivered"
+          url: /technical-training/01-why-map-the-brain/#5-what-connectomics-has-actually-delivered
+      slides:
+        - title: Unit 01 Lecture Plan
+          url: /technical-training/slides/01-why-map-the-brain/
+        - title: "Lecture 1: Introduction to Connectomics"
+          url: /teaching/lectures/connectomics-01-introduction/
+      references:
+        - title: C. elegans Revisited
+          url: /content-library/case-studies/c-elegans-revisited/
+        - title: Journal Club
           url: /technical-training/journal-club/
 
   - slug: scale-selection
@@ -53,6 +184,66 @@ concepts:
         - title: Workflow Overview
           url: /datasets/workflow/
 
+  - slug: imaging-modalities
+    title: Imaging Modalities and Their Tradeoffs
+    track: core-concepts-methods
+    user_needs:
+      - matching method to question
+      - reading EM confidently
+    summary: "Know what each modality resolves, what volume it covers and what it cannot do, from diffusion MRI to FIB-SEM, and why resolution, volume and throughput trade against each other."
+    explanation: "Learn the modality chart and the tradeoff triangle in Unit 02 §2, then read EM Principles for how electrons make contrast and how TEM, serial block-face SEM, FIB-SEM and multibeam SEM differ."
+    resources:
+      - title: "Unit 02 §2: The modality chart"
+        url: /technical-training/02-brain-data-across-scales/#2-the-modality-chart
+      - title: EM Principles
+        url: /content-library/imaging/em-principles/
+    teaching_resources:
+      lesson:
+        - title: "Unit 02 §2"
+          url: /technical-training/02-brain-data-across-scales/#2-the-modality-chart
+        - title: EM Principles
+          url: /content-library/imaging/em-principles/
+      activity:
+        - title: Unit 02 Lab (modality choice with two rejected alternatives)
+          url: /technical-training/02-brain-data-across-scales/#lab-scale-selection-memo-75-minutes
+      slides:
+        - title: Unit 02 Lecture Plan
+          url: /technical-training/slides/02-brain-data-across-scales/
+      references:
+        - title: EM Principles
+          url: /content-library/imaging/em-principles/
+        - title: EM Prep and Imaging
+          url: /technical-training/03-em-prep-and-imaging/
+
+  - slug: data-representations
+    title: Volumes, Meshes, Skeletons and Graphs
+    track: core-concepts-methods
+    user_needs:
+      - matching method to question
+      - planning compute and storage
+    summary: "Choose among the four representations of a reconstructed neuron by what each keeps, what each discards, and which one your endpoint metric requires."
+    explanation: "Learn the representation table in Unit 02 §3, then use the Data Formats page for format specifications, what each conversion loses, and why the skeletonization method changes a morphology statistic."
+    resources:
+      - title: "Unit 02 §3, Representations: what each one throws away"
+        url: /technical-training/02-brain-data-across-scales/#3-representations-what-each-one-throws-away
+      - title: Data Formats and Representations
+        url: /content-library/infrastructure/data-formats/
+    teaching_resources:
+      lesson:
+        - title: "Unit 02 §3"
+          url: /technical-training/02-brain-data-across-scales/#3-representations-what-each-one-throws-away
+        - title: Data Formats and Representations
+          url: /content-library/infrastructure/data-formats/
+      activity:
+        - title: Unit 02 Lab (representations section)
+          url: /technical-training/02-brain-data-across-scales/#lab-scale-selection-memo-75-minutes
+      slides:
+        - title: Unit 02 Lecture Plan
+          url: /technical-training/slides/02-brain-data-across-scales/
+      references:
+        - title: "Unit 04 §3: Storage layout, and why chunk shape is a real decision"
+          url: /technical-training/04-volume-reconstruction-infrastructure/#3-storage-layout-and-why-chunk-shape-is-a-real-decision
+
   - slug: em-artifacts-and-qa
     title: EM Artifacts and QA
     track: core-concepts-methods
@@ -64,8 +255,8 @@ concepts:
     resources:
       - title: EM Prep and Imaging
         url: /technical-training/03-em-prep-and-imaging/
-      - title: Connectome Quality
-        url: /tools/connectome-quality/
+      - title: Acquisition QA
+        url: /content-library/imaging/acquisition-qa/
     teaching_resources:
       lesson:
         - title: Unit 03 Lesson
@@ -77,8 +268,95 @@ concepts:
         - title: Unit 03 Lecture Plan
           url: /technical-training/slides/03-em-prep-and-imaging/
       references:
-        - title: Connectome Quality Tool
-          url: /tools/connectome-quality/
+        - title: Acquisition QA
+          url: /content-library/imaging/acquisition-qa/
+
+  - slug: tissue-preparation
+    title: Tissue Preparation
+    track: core-concepts-methods
+    user_needs:
+      - improving data quality
+      - debugging acquisition issues
+    summary: "Trace the preparation chain from fixation through staining, dehydration, embedding and sectioning, and the characteristic failure each step introduces."
+    explanation: "Read Unit 03 §1 for the step-and-failure pairs, then the Tissue Preparation page for the chemistry, the protocol comparison table and a worked protocol choice for a cortical project."
+    resources:
+      - title: "Unit 03 §1: The preparation chain, step by step"
+        url: /technical-training/03-em-prep-and-imaging/#1-the-preparation-chain-step-by-step
+      - title: Tissue Preparation
+        url: /content-library/imaging/tissue-preparation/
+    teaching_resources:
+      lesson:
+        - title: "Unit 03 §1"
+          url: /technical-training/03-em-prep-and-imaging/#1-the-preparation-chain-step-by-step
+        - title: Tissue Preparation
+          url: /content-library/imaging/tissue-preparation/
+      activity:
+        - title: Unit 03 Lab
+          url: /technical-training/03-em-prep-and-imaging/#lab-acquisition-qa-report-on-a-real-volume-90-minutes
+      slides:
+        - title: Unit 03 Lecture Plan
+          url: /technical-training/slides/03-em-prep-and-imaging/
+      references:
+        - title: "H01, Step by Step (fixation, staining and sectioning stages)"
+          url: /content-library/case-studies/h01-pipeline/
+
+  - slug: artifact-taxonomy
+    title: EM Artifact Taxonomy
+    track: core-concepts-methods
+    user_needs:
+      - debugging acquisition issues
+      - improving data quality
+    summary: "Recognize each artifact class, trace it to its cause in the acquisition pipeline, and classify its downstream cost as data loss or proofreading labor."
+    explanation: "Keep the catalog in Unit 03 §2 open while doing QA, then use the Artifact Taxonomy page for causes and visual signatures by pipeline stage, mitigation for most classes, and its severity classes for proofreading triage."
+    resources:
+      - title: "Unit 03 §2: Artifact catalog with downstream cost"
+        url: /technical-training/03-em-prep-and-imaging/#2-artifact-catalog-with-downstream-cost
+      - title: Artifact Taxonomy
+        url: /content-library/imaging/artifact-taxonomy/
+    teaching_resources:
+      lesson:
+        - title: "Unit 03 §2"
+          url: /technical-training/03-em-prep-and-imaging/#2-artifact-catalog-with-downstream-cost
+        - title: Artifact Taxonomy
+          url: /content-library/imaging/artifact-taxonomy/
+      activity:
+        - title: Unit 03 Lab
+          url: /technical-training/03-em-prep-and-imaging/#lab-acquisition-qa-report-on-a-real-volume-90-minutes
+      slides:
+        - title: Unit 03 Lecture Plan
+          url: /technical-training/slides/03-em-prep-and-imaging/
+      references:
+        - title: Assessment Bank (tagTM-2)
+          url: /teaching/assessment/
+
+  - slug: acquisition-qa-gates
+    title: Acquisition QA Gates
+    track: core-concepts-methods
+    user_needs:
+      - improving data quality
+      - debugging acquisition issues
+    summary: "Run a pilot reconstruction before full acquisition, log per-tile and per-section metrics, and set written go/no-go thresholds before the data arrives."
+    explanation: "Unit 03 §3 gives the rule, the metrics to log and an example gate table; the Acquisition QA page adds per-tile metrics, a pilot protocol, the metadata to require and a dashboard design."
+    resources:
+      - title: "Unit 03 §3: Acquisition QA that actually catches problems"
+        url: /technical-training/03-em-prep-and-imaging/#3-acquisition-qa-that-actually-catches-problems
+      - title: Acquisition QA
+        url: /content-library/imaging/acquisition-qa/
+    teaching_resources:
+      lesson:
+        - title: "Unit 03 §3"
+          url: /technical-training/03-em-prep-and-imaging/#3-acquisition-qa-that-actually-catches-problems
+        - title: Acquisition QA
+          url: /content-library/imaging/acquisition-qa/
+      activity:
+        - title: Unit 03 Lab
+          url: /technical-training/03-em-prep-and-imaging/#lab-acquisition-qa-report-on-a-real-volume-90-minutes
+      slides:
+        - title: Unit 03 Lecture Plan
+          url: /technical-training/slides/03-em-prep-and-imaging/
+      references:
+        - title: "Unit 03 §4, Provenance: the metadata that must survive"
+          url: /technical-training/03-em-prep-and-imaging/#4-provenance-the-metadata-that-must-survive
 
   - slug: reconstruction-architecture
     title: Reconstruction Architecture
@@ -107,6 +385,70 @@ concepts:
         - title: Provenance and Versioning
           url: /content-library/infrastructure/provenance-and-versioning/
 
+  - slug: reconstruction-pipeline-stages
+    title: Reconstruction Pipeline Stages
+    track: core-concepts-methods
+    user_needs:
+      - building robust pipelines
+      - planning compute and storage
+    summary: "Know the artifact each stage produces, from ingest and alignment through boundary prediction, supervoxels, agglomeration, meshes, synapse detection and serving, and which resource binds at each major stage."
+    explanation: "Read the eight-stage reference pipeline in Unit 04 §1, then the Reconstruction Pipeline page's five-layer model, its cost table and its worked diagnosis of a connectivity anomaly."
+    resources:
+      - title: "Unit 04 §1: The reference pipeline"
+        url: /technical-training/04-volume-reconstruction-infrastructure/#1-the-reference-pipeline
+      - title: Reconstruction Pipeline
+        url: /content-library/infrastructure/reconstruction-pipeline/
+    teaching_resources:
+      lesson:
+        - title: "Unit 04 §1"
+          url: /technical-training/04-volume-reconstruction-infrastructure/#1-the-reference-pipeline
+        - title: Reconstruction Pipeline
+          url: /content-library/infrastructure/reconstruction-pipeline/
+      activity:
+        - title: Unit 04 Lab
+          url: /technical-training/04-volume-reconstruction-infrastructure/#lab-query-a-petascale-volume-reproducibly-90-minutes
+      slides:
+        - title: Unit 04 Lecture Plan
+          url: /technical-training/slides/04-volume-reconstruction-infrastructure/
+        - title: "Lecture 2: Tools and Methods"
+          url: /teaching/lectures/connectomics-02-tools-and-methods/
+      references:
+        - title: "Unit 04 §3: Storage layout"
+          url: /technical-training/04-volume-reconstruction-infrastructure/#3-storage-layout-and-why-chunk-shape-is-a-real-decision
+        - title: "H01, Step by Step"
+          url: /content-library/case-studies/h01-pipeline/
+
+  - slug: synapse-detection
+    title: Synapse Detection
+    track: core-concepts-methods
+    user_needs:
+      - improving data quality
+      - reporting quality rigorously
+    summary: "Treat synapse detection as three problems, cleft localization, partner assignment and sign classification, and measure a table's error rates before you use it."
+    explanation: "Read the Synapse Detection page for the published numbers, what a CREMI score does and does not tell you, why detectors degrade across datasets and what to check before trusting a synapse table; the Synapse Detection session teaches it in 90 minutes."
+    resources:
+      - title: Synapse Detection
+        url: /content-library/infrastructure/synapse-detection/
+      - title: "Session: Synapse Detection"
+        url: /teaching/lectures/synapse-detection/
+    teaching_resources:
+      lesson:
+        - title: Synapse Detection
+          url: /content-library/infrastructure/synapse-detection/
+      activity:
+        - title: Synapse Detection Worksheet
+          url: /teaching/lectures/synapse-detection-activity/
+      slides:
+        - title: Synapse Detection Session Plan
+          url: /teaching/lectures/synapse-detection/
+      references:
+        - title: Synapse Detection Model Responses
+          url: /teaching/lectures/synapse-detection-answers/
+        - title: "Unit 05 §2, Calling a synapse: the three criteria"
+          url: /technical-training/05-neuronal-ultrastructure/#2-calling-a-synapse-the-three-criteria
+        - title: Assessment Bank (tagSD-1 to SD-4)
+          url: /teaching/assessment/
+
   - slug: ultrastructure-annotation
     title: Ultrastructure Annotation
     track: core-concepts-methods
@@ -133,6 +475,103 @@ concepts:
       references:
         - title: Connectomics Dictionary
           url: /technical-training/dictionary/
+
+  - slug: organelle-cues
+    title: Organelle Cues
+    track: core-concepts-methods
+    user_needs:
+      - reading EM confidently
+      - reducing identity confusion
+    summary: "Use organelle presence and absence (ribosomes, mitochondria, ER, vesicles, glycogen) as compartment evidence, with typical sizes and where each is and is not found."
+    explanation: "Learn the catalog in Unit 05 §1, then the Organelle Cues page's organelle-to-compartment table and worked examples, and the Soma Ultrastructure page for telling a neuronal soma from a glial cell body."
+    resources:
+      - title: "Unit 05 §1: The organelle catalog"
+        url: /technical-training/05-neuronal-ultrastructure/#1-the-organelle-catalog
+      - title: Organelle Cues for Compartment Identification
+        url: /content-library/neuroanatomy/organelle-cues/
+    teaching_resources:
+      lesson:
+        - title: "Unit 05 §1"
+          url: /technical-training/05-neuronal-ultrastructure/#1-the-organelle-catalog
+        - title: Organelle Cues for Compartment Identification
+          url: /content-library/neuroanatomy/organelle-cues/
+      activity:
+        - title: Unit 05 Studio Activity
+          url: /technical-training/05-neuronal-ultrastructure/#5-studio-activity-ultrastructure-consensus-round-75-min
+      slides:
+        - title: Unit 05 Lecture Plan
+          url: /technical-training/slides/05-neuronal-ultrastructure/
+      references:
+        - title: Neuronal Soma Ultrastructure
+          url: /content-library/neuroanatomy/soma-ultrastructure/
+        - title: EM Figure Library
+          url: /content-library/em-figures/
+
+  - slug: synapse-identification
+    title: Synapse Identification
+    track: core-concepts-methods
+    user_needs:
+      - reading EM confidently
+      - improving annotation consistency
+    summary: "Call a chemical synapse only when a vesicle cluster, a cleft and a postsynaptic density are all present and persist across sections, and know the look-alikes that produce false positives."
+    explanation: "Learn the three criteria and Gray type I versus type II in Unit 05 §2, then the Synapse Classification page's six-step identification protocol and worked examples; the proofreading tutorials restate the criteria for verifying a detection."
+    resources:
+      - title: "Unit 05 §2, Calling a synapse: the three criteria"
+        url: /technical-training/05-neuronal-ultrastructure/#2-calling-a-synapse-the-three-criteria
+      - title: Synapse Classification and Identification
+        url: /content-library/neuroanatomy/synapse-classification/
+    teaching_resources:
+      lesson:
+        - title: "Unit 05 §2"
+          url: /technical-training/05-neuronal-ultrastructure/#2-calling-a-synapse-the-three-criteria
+        - title: Synapse Classification and Identification
+          url: /content-library/neuroanatomy/synapse-classification/
+      activity:
+        - title: Unit 05 Studio Activity
+          url: /technical-training/05-neuronal-ultrastructure/#5-studio-activity-ultrastructure-consensus-round-75-min
+      slides:
+        - title: Unit 05 Lecture Plan
+          url: /technical-training/slides/05-neuronal-ultrastructure/
+      references:
+        - title: "Proofreading Tutorials: synapse verification criteria"
+          url: /technical-training/proofreading-tutorials/#synapse-validation
+        - title: EM Figure Library
+          url: /content-library/em-figures/
+
+  - slug: confidence-calibration
+    title: Confidence Calibration
+    track: core-concepts-methods
+    user_needs:
+      - improving annotation consistency
+      - handling ambiguity
+    summary: "Define confidence tiers by evidence count and independence, treat 'uncertain' as a valid output, and measure whether your high-confidence calls are actually right."
+    explanation: "Unit 05 §3 and §4 define the tiers and the two-families rule; the Unit 06 calibration lab measures your own error profile by tier and by cue; the Facilitator Guide explains why calibration is the metric to track in a cohort."
+    resources:
+      - title: "Unit 05 §3: Compartment cues, a decision protocol"
+        url: /technical-training/05-neuronal-ultrastructure/#3-compartment-cues-a-decision-protocol
+      - title: "Unit 05 §4: Independence of cues"
+        url: /technical-training/05-neuronal-ultrastructure/#4-independence-of-cues-and-why-it-is-the-whole-game
+    teaching_resources:
+      lesson:
+        - title: "Unit 05 §3"
+          url: /technical-training/05-neuronal-ultrastructure/#3-compartment-cues-a-decision-protocol
+        - title: "Unit 05 §4"
+          url: /technical-training/05-neuronal-ultrastructure/#4-independence-of-cues-and-why-it-is-the-whole-game
+      activity:
+        - title: Unit 06 Calibration Lab
+          url: /technical-training/06-axons-and-dendrites/#lab-calibration-round-90-minutes
+        - title: Unit 05 Studio Activity
+          url: /technical-training/05-neuronal-ultrastructure/#5-studio-activity-ultrastructure-consensus-round-75-min
+      slides:
+        - title: Unit 05 Lecture Plan
+          url: /technical-training/slides/05-neuronal-ultrastructure/
+        - title: Unit 06 Lecture Plan
+          url: /technical-training/slides/06-axons-and-dendrites/
+      references:
+        - title: "Facilitator Guide: assessment that scales"
+          url: /teaching/facilitator-guide/#assessment-that-scales
+        - title: "Axon-Dendrite Classification: inter-annotator calibration protocol"
+          url: /content-library/cell-types/axon-dendrite-classification/
 
   - slug: process-classification
     title: Axon vs Dendrite Classification
@@ -161,6 +600,97 @@ concepts:
         - title: Unit 08 QC Context
           url: /technical-training/08-segmentation-and-proofreading/
 
+  - slug: axon-ultrastructure
+    title: Axon Ultrastructure
+    track: core-concepts-methods
+    user_needs:
+      - reading EM confidently
+      - reducing identity confusion
+    summary: "Recognize an axon by the initial segment's dense undercoat and fasciculated microtubules, uniform caliber, absent ribosomes, and boutons with vesicle pools and active zones."
+    explanation: "Read the Axon Biology page from the initial segment to the terminal, including its worked examples on identifying an AIS and telling an en passant bouton from a spine; Unit 06 §1 organizes the same cues by family."
+    resources:
+      - title: Axon Biology and Ultrastructure
+        url: /content-library/neuroanatomy/axon-biology/
+      - title: "Unit 06 §1: The cue table"
+        url: /technical-training/06-axons-and-dendrites/#1-the-cue-table
+    teaching_resources:
+      lesson:
+        - title: Axon Biology and Ultrastructure
+          url: /content-library/neuroanatomy/axon-biology/
+        - title: "Unit 06 §1"
+          url: /technical-training/06-axons-and-dendrites/#1-the-cue-table
+      activity:
+        - title: Unit 06 Lab
+          url: /technical-training/06-axons-and-dendrites/#lab-calibration-round-90-minutes
+      slides:
+        - title: Unit 06 Lecture Plan
+          url: /technical-training/slides/06-axons-and-dendrites/
+      references:
+        - title: Axon-Dendrite Classification
+          url: /content-library/cell-types/axon-dendrite-classification/
+        - title: EM Figure Library
+          url: /content-library/em-figures/
+
+  - slug: dendrite-ultrastructure
+    title: Dendrite Ultrastructure
+    track: core-concepts-methods
+    user_needs:
+      - reading EM confidently
+      - reducing identity confusion
+    summary: "Recognize a dendrite by its taper and branching, visible ribosomes, loosely spaced microtubules, spines (some with a spine apparatus) and postsynaptic densities."
+    explanation: "Read the Dendrite Biology page on the proximal-to-distal gradient, spine classes and the PSD, with its worked examples on identifying a spine synapse and telling a thin dendrite from an axon."
+    resources:
+      - title: Dendrite Biology and Ultrastructure
+        url: /content-library/neuroanatomy/dendrite-biology/
+      - title: "Unit 06 §1: The cue table"
+        url: /technical-training/06-axons-and-dendrites/#1-the-cue-table
+    teaching_resources:
+      lesson:
+        - title: Dendrite Biology and Ultrastructure
+          url: /content-library/neuroanatomy/dendrite-biology/
+        - title: "Unit 06 §1"
+          url: /technical-training/06-axons-and-dendrites/#1-the-cue-table
+      activity:
+        - title: Unit 06 Lab
+          url: /technical-training/06-axons-and-dendrites/#lab-calibration-round-90-minutes
+      slides:
+        - title: Unit 06 Lecture Plan
+          url: /technical-training/slides/06-axons-and-dendrites/
+      references:
+        - title: Axon-Dendrite Classification
+          url: /content-library/cell-types/axon-dendrite-classification/
+        - title: EM Figure Library
+          url: /content-library/em-figures/
+
+  - slug: polarity-exceptions
+    title: Exceptions to the Polarity Rule
+    track: core-concepts-methods
+    user_needs:
+      - handling ambiguity
+      - reducing identity confusion
+    summary: "Know where 'vesicles mean axon, PSD means dendrite' fails: dendro-dendritic synapses, axo-axonic synapses onto the initial segment, presynaptic dendrites in retina, and invertebrate neurites."
+    explanation: "Read Unit 06 §2, then apply its practical rule, which is to decide once per dataset, in the protocol, whether the polarity rule is a safe default for that tissue; the Axon-Dendrite Classification page's Pass 3 decision rule and species caveats point back to the same exceptions."
+    resources:
+      - title: "Unit 06 §2: The exceptions that break the polarity rule"
+        url: /technical-training/06-axons-and-dendrites/#2-the-exceptions-that-break-the-polarity-rule
+      - title: Axon-Dendrite Classification
+        url: /content-library/cell-types/axon-dendrite-classification/
+    teaching_resources:
+      lesson:
+        - title: "Unit 06 §2"
+          url: /technical-training/06-axons-and-dendrites/#2-the-exceptions-that-break-the-polarity-rule
+      activity:
+        - title: Unit 06 Lab (its exception cases)
+          url: /technical-training/06-axons-and-dendrites/#lab-calibration-round-90-minutes
+      slides:
+        - title: Unit 06 Lecture Plan
+          url: /technical-training/slides/06-axons-and-dendrites/
+      references:
+        - title: "Axon-Dendrite Classification: Pass 3 decision rule and species caveats"
+          url: /content-library/cell-types/axon-dendrite-classification/
+        - title: "Unit 06 §4: Why direction errors cost more"
+          url: /technical-training/06-axons-and-dendrites/#4-why-direction-errors-cost-more-the-arithmetic
+
   - slug: glia-identification
     title: Glia Identification
     track: core-concepts-methods
@@ -179,7 +709,7 @@ concepts:
         - title: Unit 07 Lesson
           url: /technical-training/07-glia/
       activity:
-        - title: Unit 07 Lab
+        - title: Unit 07 Drill
           url: /technical-training/07-glia/#4-drill-glia-discrimination-60-minutes
       slides:
         - title: Unit 07 Lecture Plan
@@ -187,6 +717,136 @@ concepts:
       references:
         - title: Connectome Quality Tool
           url: /tools/connectome-quality/
+
+  - slug: astrocyte-vs-neurite
+    title: Astrocyte vs Thin Neurite
+    track: core-concepts-methods
+    user_needs:
+      - reducing glia-neuron boundary errors
+      - handling ambiguity
+    summary: "Separate a space-filling astrocytic process from a tubular neurite using glycogen, synaptic participation, microtubules, cross-sectional shape and trajectory across sections."
+    explanation: "Learn the discrimination table in Unit 07, including the shape cue that survives poor staining, then the Glia Recognition page's four-step decision procedure and its worked example of astrocyte versus thin dendrite."
+    resources:
+      - title: "Unit 07: Astrocyte vs thin neurite"
+        url: /technical-training/07-glia/#astrocyte-vs-thin-neurite-the-discrimination-that-matters-most
+      - title: Glia Recognition
+        url: /content-library/cell-types/glia-recognition/
+    teaching_resources:
+      lesson:
+        - title: "Unit 07 §2: Recognition, the three classes"
+          url: /technical-training/07-glia/#2-recognition-the-three-classes
+        - title: Glia Recognition
+          url: /content-library/cell-types/glia-recognition/
+      activity:
+        - title: Unit 07 Drill
+          url: /technical-training/07-glia/#4-drill-glia-discrimination-60-minutes
+      slides:
+        - title: Unit 07 Lecture Plan
+          url: /technical-training/slides/07-glia/
+      references:
+        - title: "Organelle Cues: distinguishing glial from neuronal process"
+          url: /content-library/neuroanatomy/organelle-cues/
+        - title: "Unit 07 §5: QA metrics for glia labeling"
+          url: /technical-training/07-glia/#5-qa-metrics-for-glia-labeling
+
+  - slug: myelin-and-nodes
+    title: Myelin and Nodes of Ranvier
+    track: core-concepts-methods
+    user_needs:
+      - interpreting myelin context
+      - reading EM confidently
+    summary: "Read compact myelin, its periodicity and wrap count, nodes, paranodal loops and the inner and outer tongues, and use myelin as an axon identifier and as a link to oligodendrocytes."
+    explanation: "Read the Myelin and Nodes page with its three worked examples, then Unit 07's oligodendrocyte section and identification protocol, where a tongue or paranodal loop is the oligodendrocyte cue."
+    resources:
+      - title: Myelin Sheath and Nodes of Ranvier
+        url: /content-library/neuroanatomy/myelin-and-nodes/
+      - title: "Unit 07 §2: Recognition, the three classes"
+        url: /technical-training/07-glia/#2-recognition-the-three-classes
+    teaching_resources:
+      lesson:
+        - title: Myelin Sheath and Nodes of Ranvier
+          url: /content-library/neuroanatomy/myelin-and-nodes/
+        - title: "Unit 07 §2"
+          url: /technical-training/07-glia/#2-recognition-the-three-classes
+      activity:
+        - title: Unit 07 Drill
+          url: /technical-training/07-glia/#4-drill-glia-discrimination-60-minutes
+      slides:
+        - title: Unit 07 Lecture Plan
+          url: /technical-training/slides/07-glia/
+      references:
+        - title: Glia Recognition
+          url: /content-library/cell-types/glia-recognition/
+        - title: Axon Biology and Ultrastructure
+          url: /content-library/neuroanatomy/axon-biology/
+
+  - slug: course-maps
+    title: Course Maps and the Four-Session Block
+    track: core-concepts-methods
+    user_needs:
+      - planning a course
+      - teaching a session
+    summary: "Four 90-minute sessions that carry one study brief from claim to analysis card, and the course maps (a 10-week quarter, a 16-week semester and a two-day workshop) that sequence them with unit labs, module kits and Pathways workshops."
+    explanation: "Read the four-session block for each session's question, prep and pacing, then the syllabus index for the meeting pattern, audience and how the pieces fit; the 10- and 16-week maps are drafts that have not yet been taught as a whole course."
+    resources:
+      - title: Teach a Four-Session Connectomics Block
+        url: /teaching/sequence/
+      - title: Course Syllabus Maps
+        url: /teaching/syllabi/
+    teaching_resources:
+      lesson:
+        - title: Teach a Four-Session Connectomics Block
+          url: /teaching/sequence/
+        - title: Course Syllabus Maps
+          url: /teaching/syllabi/
+      slides:
+        - title: "Lecture 1 Plan: Teach a 90-minute session"
+          url: /teaching/lectures/connectomics-01-introduction/#teach-a-90-minute-session
+      references:
+        - title: 10-Week Course Map
+          url: /teaching/syllabi/10-week/
+        - title: 16-Week Course Map
+          url: /teaching/syllabi/16-week/
+        - title: Two-Day Workshop Map
+          url: /teaching/syllabi/two-day/
+        - title: Facilitator Guide
+          url: /teaching/facilitator-guide/
+        - title: Lecture Series
+          url: /teaching/lectures/
+
+  - slug: assessment-bank-and-keys
+    title: Assessment Bank and Model Responses
+    track: core-concepts-methods
+    user_needs:
+      - assessing learners
+      - teaching a session
+    summary: "Twenty public formative items, five for each of the four lecture sessions, tagged to each session's objectives with worked answers and a variant template per item; a second bank for the nine technical units; and model responses for the module session-kit worksheets."
+    explanation: "Use the banks for practice and in-class checks; because items and answers are public, write variants from each item's template for anything graded under exam conditions and recompute every answer. Read the model-responses use policy before handing a key to learners."
+    resources:
+      - title: Assessment Bank
+        url: /teaching/assessment/
+      - title: Module Model Responses
+        url: /teaching/answers/
+    teaching_resources:
+      lesson:
+        - title: Assessment Bank
+          url: /teaching/assessment/
+        - title: "Assessment Bank: Technical Units"
+          url: /teaching/assessment/units/
+        - title: Module Model Responses
+          url: /teaching/answers/
+      activity:
+        - title: "Assessment Bank: worked answers and feedback"
+          url: /teaching/assessment/answers/
+      references:
+        - title: Session Kits
+          url: /teaching/sessions/
+        - title: Lecture Series
+          url: /teaching/lectures/
+
+  # ---------------------------------------------------------------------------
+  # Research in Action
+  # ---------------------------------------------------------------------------
 
   - slug: proofreading-qc
     title: Proofreading and QC
@@ -215,6 +875,199 @@ concepts:
         - title: Connectome Quality Tool
           url: /tools/connectome-quality/
 
+  - slug: segmentation-error-taxonomy
+    title: Segmentation Error Taxonomy
+    track: research-in-action
+    user_needs:
+      - prioritizing corrections
+      - reporting quality rigorously
+    summary: "Distinguish merge, split, boundary and identity errors and rank them by cost rather than frequency, because the merge/split ratio is an output of the agglomeration threshold, not a property of the field."
+    explanation: "Read the table and the asymmetry in Unit 08 §2, then the Error Taxonomy page for causes, visual signatures and worked identification of each type, and its guidance on measuring the distribution on your own volume."
+    resources:
+      - title: "Unit 08 §2: Error taxonomy and cost"
+        url: /technical-training/08-segmentation-and-proofreading/#2-error-taxonomy-and-cost
+      - title: Error Taxonomy in Connectome Proofreading
+        url: /content-library/proofreading/error-taxonomy/
+    teaching_resources:
+      lesson:
+        - title: "Unit 08 §2"
+          url: /technical-training/08-segmentation-and-proofreading/#2-error-taxonomy-and-cost
+        - title: Error Taxonomy in Connectome Proofreading
+          url: /content-library/proofreading/error-taxonomy/
+      activity:
+        - title: "Proofreading Tutorials: diagnosing segmentation errors"
+          url: /technical-training/proofreading-tutorials/#core-errors
+        - title: Proofreading Worked Examples
+          url: /content-library/proofreading/worked-examples/
+      slides:
+        - title: Unit 08 Lecture Plan
+          url: /technical-training/slides/08-segmentation-and-proofreading/
+      references:
+        - title: Module 07 Model Responses
+          url: /teaching/answers/module07/
+        - title: Assessment Bank (tagAA-1)
+          url: /teaching/assessment/
+
+  - slug: segmentation-metrics
+    title: Segmentation Quality Metrics
+    track: research-in-action
+    user_needs:
+      - reporting quality rigorously
+      - prioritizing corrections
+    summary: "Know what VI, ERL, edge precision and recall, synapse precision and recall and completeness each measure and what each is blind to, and report at least two from different rows."
+    explanation: "Unit 08 §3 is about choosing; the Metrics and QA page has the mathematics, a worked VI and ERL computation, dashboard design and what to do when metrics disagree."
+    resources:
+      - title: "Unit 08 §3: Metrics, what each one is blind to"
+        url: /technical-training/08-segmentation-and-proofreading/#3-metrics-what-each-one-is-blind-to
+      - title: Metrics and Quality Assurance for Connectome Proofreading
+        url: /content-library/proofreading/metrics-and-qa/
+    teaching_resources:
+      lesson:
+        - title: "Unit 08 §3"
+          url: /technical-training/08-segmentation-and-proofreading/#3-metrics-what-each-one-is-blind-to
+        - title: Metrics and Quality Assurance for Connectome Proofreading
+          url: /content-library/proofreading/metrics-and-qa/
+      activity:
+        - title: Unit 08 Lab
+          url: /technical-training/08-segmentation-and-proofreading/#lab-proofreading-plan-with-a-defended-budget-2-hours
+      slides:
+        - title: Unit 08 Lecture Plan
+          url: /technical-training/slides/08-segmentation-and-proofreading/
+      references:
+        - title: Connectome Quality Tool
+          url: /tools/connectome-quality/
+        - title: "Atlas §3: Benchmarks and evaluation"
+          url: /technical-training/atlas-connectomics-reference/#3-benchmarks-and-evaluation
+        - title: Assessment Bank (tagAA-2)
+          url: /teaching/assessment/
+
+  - slug: quality-on-your-endpoint
+    title: Quality Measured on Your Endpoint
+    track: research-in-action
+    user_needs:
+      - reporting quality rigorously
+      - reproducible processing
+    summary: "The quality statement that persuades is how much exhaustive proofreading of a sample changes your headline number, not a VI value."
+    explanation: "Unit 08's 'metric that actually matters' gives the four-step procedure; the Connectome Quality notebooks specify what to build, from looking at the data and using morphology as a quality signal to measuring the effect of proofreading on your own endpoint."
+    resources:
+      - title: "Unit 08: The metric that actually matters"
+        url: /technical-training/08-segmentation-and-proofreading/#the-metric-that-actually-matters
+      - title: Connectome Quality Notebooks
+        url: /notebooks/connectome-quality/
+    teaching_resources:
+      lesson:
+        - title: "Unit 08 §3: The metric that actually matters"
+          url: /technical-training/08-segmentation-and-proofreading/#the-metric-that-actually-matters
+      activity:
+        - title: Connectome Quality Notebooks (steps 1 to 4)
+          url: /notebooks/connectome-quality/
+      slides:
+        - title: Unit 08 Lecture Plan
+          url: /technical-training/slides/08-segmentation-and-proofreading/
+      references:
+        - title: Connectome Quality Tool
+          url: /tools/connectome-quality/
+        - title: "Unit 07 §5: QA metrics for glia labeling"
+          url: /technical-training/07-glia/#5-qa-metrics-for-glia-labeling
+
+  - slug: proofreading-strategies
+    title: Proofreading Strategies
+    track: research-in-action
+    user_needs:
+      - prioritizing corrections
+      - reporting quality rigorously
+    summary: "Choose among exhaustive, targeted or skeleton-guided, priority-ranked, crowd-sourced and hybrid proofreading, define proofreading levels, and state the stopping rule before you start."
+    explanation: "Unit 08 §4 gives the production loop, triage ranking, stopping rules and levels; the Proofreading Strategies page covers when to use each strategy and what the exhaustive and targeted ones cost, the FlyWire and EyeWire models, and a worked campaign design."
+    resources:
+      - title: "Unit 08 §4: The production proofreading loop"
+        url: /technical-training/08-segmentation-and-proofreading/#4-the-production-proofreading-loop
+      - title: Proofreading Strategies for Connectome Reconstruction
+        url: /content-library/proofreading/proofreading-strategies/
+    teaching_resources:
+      lesson:
+        - title: "Unit 08 §4"
+          url: /technical-training/08-segmentation-and-proofreading/#4-the-production-proofreading-loop
+        - title: Proofreading Strategies for Connectome Reconstruction
+          url: /content-library/proofreading/proofreading-strategies/
+      activity:
+        - title: Unit 08 Lab
+          url: /technical-training/08-segmentation-and-proofreading/#lab-proofreading-plan-with-a-defended-budget-2-hours
+        - title: Proofreading Worked Examples (Scenario 4, priority triage)
+          url: /content-library/proofreading/worked-examples/
+      slides:
+        - title: Unit 08 Lecture Plan
+          url: /technical-training/slides/08-segmentation-and-proofreading/
+      references:
+        - title: "Unit 08 §5: Human factors"
+          url: /technical-training/08-segmentation-and-proofreading/#5-human-factors-because-this-is-a-labor-operation
+        - title: Module 07 Model Responses
+          url: /teaching/answers/module07/
+
+  - slug: proofreading-tools
+    title: Proofreading Tools
+    track: research-in-action
+    user_needs:
+      - prioritizing corrections
+      - finding reliable resources
+    summary: "Understand how CAVE, Neuroglancer, Spelunker, NeuTu and CATMAID store edits, what split, merge, extend and delete do, and which IDs and versions they make you cite."
+    explanation: "Read the Proofreading Tools page, including its worked merge correction in Neuroglancer and CAVE, then the proofreading tutorials for platform workflows and community resources, and the atlas table for software at every other workflow stage; button names are left out on purpose, so use each deployment's own documentation."
+    resources:
+      - title: Proofreading Tools for Connectome Reconstruction
+        url: /content-library/proofreading/proofreading-tools/
+      - title: "Proofreading Tutorials: platform workflows"
+        url: /technical-training/proofreading-tutorials/#tooling-guides
+    teaching_resources:
+      lesson:
+        - title: Proofreading Tools for Connectome Reconstruction
+          url: /content-library/proofreading/proofreading-tools/
+      activity:
+        - title: "Proofreading Tutorials: platform workflows"
+          url: /technical-training/proofreading-tutorials/#tooling-guides
+      references:
+        - title: "Atlas §2: Software, by workflow stage"
+          url: /technical-training/atlas-connectomics-reference/#2-software-by-workflow-stage
+        - title: "Proofreading Tutorials: community resources"
+          url: /technical-training/proofreading-tutorials/#community-resources
+
+  - slug: version-pinning
+    title: Materialization and Version Pinning
+    track: research-in-action
+    user_needs:
+      - reproducible processing
+      - maintaining citation hygiene
+    summary: "Root IDs change with every edit, so pin every query to a materialization version, put the version, query code and date in every figure, and never analyze live, unpinned IDs."
+    explanation: "Unit 04 §2 explains the editable graph, why IDs are not stable and the worked example of which version produced a number; Provenance and Versioning shows the caveclient pattern, which MICrONS versions are kept long-term, and the seven groups of fields a methods record must contain; the MICrONS lab is a complete version-pinned notebook with a drift check between two versions."
+    resources:
+      - title: "Unit 04 §2: An editable graph over immutable atoms"
+        url: /technical-training/04-volume-reconstruction-infrastructure/#2-the-core-idea-an-editable-graph-over-immutable-atoms
+      - title: Provenance and Versioning
+        url: /content-library/infrastructure/provenance-and-versioning/
+    teaching_resources:
+      lesson:
+        - title: "Unit 04 §2"
+          url: /technical-training/04-volume-reconstruction-infrastructure/#2-the-core-idea-an-editable-graph-over-immutable-atoms
+        - title: Provenance and Versioning
+          url: /content-library/infrastructure/provenance-and-versioning/
+      activity:
+        - title: Unit 04 Lab
+          url: /technical-training/04-volume-reconstruction-infrastructure/#lab-query-a-petascale-volume-reproducibly-90-minutes
+        - title: Tools and Methods Worksheet (offline pinned-snapshot query)
+          url: /teaching/lectures/tools-and-methods-activity/
+      slides:
+        - title: Unit 04 Lecture Plan
+          url: /technical-training/slides/04-volume-reconstruction-infrastructure/
+        - title: "Lecture 2 Plan: Teach a 90-minute session"
+          url: /teaching/lectures/connectomics-02-tools-and-methods/#teach-a-90-minute-session
+      references:
+        - title: MICrONS Real-Data Lab
+          url: /notebooks/microns-lab/
+        - title: Connectome Quality Notebooks (step 3, synapse queries pinned to a version)
+          url: /notebooks/connectome-quality/
+        - title: "Hidden Curriculum: Technical Practice (the reporting norms)"
+          url: /hidden-curriculum/technical-practice/
+        - title: Assessment Bank (tag TM-3)
+          url: /teaching/assessment/
+
   - slug: motif-analysis
     title: Motif Analysis and NeuroAI
     track: research-in-action
@@ -242,6 +1095,187 @@ concepts:
         - title: Journal Club Reading List
           url: /technical-training/journal-club/
 
+  - slug: graph-construction
+    title: Graph Construction Choices
+    track: research-in-action
+    user_needs:
+      - designing graph analyses
+      - avoiding overclaiming
+    summary: "State the six decisions that make a connectome graph (node definition, edge threshold, weights, direction, inclusion criteria and boundary handling), and re-run the headline result at a second threshold."
+    explanation: "Unit 09 §1 lists the decisions; the Graph Representations page covers nodes, edges, weights and adjacency matrices, what the volume boundary does to a graph, and a worked construction from a synapse table."
+    resources:
+      - title: "Unit 09 §1: Graph construction is a sequence of consequential choices"
+        url: /technical-training/09-connectome-analysis-neuroai/#1-graph-construction-is-a-sequence-of-consequential-choices
+      - title: Graph Representations
+        url: /content-library/connectomics/graph-representations/
+    teaching_resources:
+      lesson:
+        - title: "Unit 09 §1"
+          url: /technical-training/09-connectome-analysis-neuroai/#1-graph-construction-is-a-sequence-of-consequential-choices
+        - title: Graph Representations
+          url: /content-library/connectomics/graph-representations/
+      activity:
+        - title: Unit 09 Lab
+          url: /technical-training/09-connectome-analysis-neuroai/#lab-a-defensible-motif-analysis-2-hours
+        - title: Algorithms and Applications Worksheet
+          url: /teaching/lectures/algorithms-and-applications-activity/
+      slides:
+        - title: Unit 09 Lecture Plan
+          url: /technical-training/slides/09-connectome-analysis-neuroai/
+      references:
+        - title: "Unit 02 §3: Representations"
+          url: /technical-training/02-brain-data-across-scales/#3-representations-what-each-one-throws-away
+        - title: Assessment Bank (tagAA-3)
+          url: /teaching/assessment/
+
+  - slug: null-models
+    title: Null Models
+    track: research-in-action
+    user_needs:
+      - choosing null models
+      - designing graph analyses
+    summary: "Preserve everything you are not asking about (degree, distance, cell type), and know why an Erdős–Rényi null shows enrichment of nearly every motif in a connectome."
+    explanation: "Unit 09 §2 gives the table and the reciprocity-under-three-nulls worked example; the Motif Analysis page covers the Erdős–Rényi, configuration, spatially constrained and cell-type-stratified nulls with statistical testing; the MICrONS lab runs three nulls on public data."
+    resources:
+      - title: "Unit 09 §2: Null models, what are you controlling for?"
+        url: /technical-training/09-connectome-analysis-neuroai/#2-null-models-what-are-you-controlling-for
+      - title: Motif Analysis
+        url: /content-library/connectomics/motif-analysis/
+    teaching_resources:
+      lesson:
+        - title: "Unit 09 §2"
+          url: /technical-training/09-connectome-analysis-neuroai/#2-null-models-what-are-you-controlling-for
+        - title: Motif Analysis
+          url: /content-library/connectomics/motif-analysis/
+      activity:
+        - title: Unit 09 Lab
+          url: /technical-training/09-connectome-analysis-neuroai/#lab-a-defensible-motif-analysis-2-hours
+        - title: MICrONS Real-Data Lab
+          url: /notebooks/microns-lab/
+      slides:
+        - title: Unit 09 Lecture Plan
+          url: /technical-training/slides/09-connectome-analysis-neuroai/
+        - title: "Lecture 3 Plan: Teach a 90-minute session"
+          url: /teaching/lectures/connectomics-03-algorithms-and-applications/#teach-a-90-minute-session
+      references:
+        - title: Algorithms and Applications Model Responses
+          url: /teaching/lectures/algorithms-and-applications-answers/
+        - title: Assessment Bank (tagAA-4)
+          url: /teaching/assessment/
+
+  - slug: error-sensitivity
+    title: Error-Sensitivity Simulation
+    track: research-in-action
+    user_needs:
+      - reporting quality rigorously
+      - choosing null models
+    summary: "Perturb your graph at your measured merge and split rates, recompute the statistic, and report the spread as a band on the effect size; if the band crosses the null, say so."
+    explanation: "Unit 09 §3 gives the check and why the sign of the bias cannot be assumed; step 5 of the Connectome Quality notebooks specifies the perturbation function to build; Unit 06 §4 works the same logic for direction errors."
+    resources:
+      - title: "Unit 09: The error-sensitivity check you should always run"
+        url: /technical-training/09-connectome-analysis-neuroai/#the-error-sensitivity-check-you-should-always-run
+      - title: Connectome Quality Notebooks
+        url: /notebooks/connectome-quality/
+    teaching_resources:
+      lesson:
+        - title: "Unit 09 §3: The error-sensitivity check"
+          url: /technical-training/09-connectome-analysis-neuroai/#the-error-sensitivity-check-you-should-always-run
+      activity:
+        - title: Unit 09 Lab
+          url: /technical-training/09-connectome-analysis-neuroai/#lab-a-defensible-motif-analysis-2-hours
+        - title: Connectome Quality Notebooks (step 5, error sensitivity simulation)
+          url: /notebooks/connectome-quality/
+      slides:
+        - title: Unit 09 Lecture Plan
+          url: /technical-training/slides/09-connectome-analysis-neuroai/
+      references:
+        - title: "Unit 01 §4: Sizing the claim to the reconstruction"
+          url: /technical-training/01-why-map-the-brain/#4-sizing-the-claim-to-the-reconstruction
+        - title: "Unit 06 §4: Why direction errors cost more"
+          url: /technical-training/06-axons-and-dendrites/#4-why-direction-errors-cost-more-the-arithmetic
+
+  - slug: network-analysis-methods
+    title: Network Analysis Methods
+    track: research-in-action
+    user_needs:
+      - designing graph analyses
+      - avoiding overclaiming
+    summary: "Apply degree distributions, clustering, path length, centrality, community detection, rich-club and spectral methods, and know which of them survive an incomplete, spatially embedded EM connectome."
+    explanation: "Read the Network Analysis Methods page's definitions, small worked circuit and 'which of these survive an EM connectome', then Unit 09 §4 on the resolution limit of community detection, spectral embedding, graph matching and cell typing from connectivity."
+    resources:
+      - title: Network Analysis Methods
+        url: /content-library/connectomics/network-analysis-methods/
+      - title: "Unit 09 §4: Beyond motifs"
+        url: /technical-training/09-connectome-analysis-neuroai/#4-beyond-motifs
+    teaching_resources:
+      lesson:
+        - title: Network Analysis Methods
+          url: /content-library/connectomics/network-analysis-methods/
+        - title: "Unit 09 §4"
+          url: /technical-training/09-connectome-analysis-neuroai/#4-beyond-motifs
+      slides:
+        - title: Unit 09 Lecture Plan
+          url: /technical-training/slides/09-connectome-analysis-neuroai/
+      references:
+        - title: Motif Analysis
+          url: /content-library/connectomics/motif-analysis/
+        - title: "Open Problems: graph algorithms and statistics at connectome scale"
+          url: /content-library/connectomics/open-problems-undergrad/#problem-4
+
+  - slug: cell-type-identification
+    title: Neuron Type Identification
+    track: research-in-action
+    user_needs:
+      - designing graph analyses
+      - handling ambiguity
+    summary: "Classify neurons from four kinds of evidence (morphology, compartment targeting, soma features, connectivity), know the FlyWire and MICrONS approaches, report which label table a count came from, and the limits set by incomplete reconstructions and continuous variation."
+    explanation: "Read the Neuron Type Identification page, with its excitatory-versus-inhibitory first split, FlyWire's cross-brain definition of a type and two worked examples; Unit 09 §4 covers cell typing from connectivity."
+    resources:
+      - title: Neuron Type Identification
+        url: /content-library/cell-types/neuron-type-identification/
+      - title: "Unit 09 §4: Beyond motifs"
+        url: /technical-training/09-connectome-analysis-neuroai/#4-beyond-motifs
+    teaching_resources:
+      lesson:
+        - title: Neuron Type Identification
+          url: /content-library/cell-types/neuron-type-identification/
+      slides:
+        - title: Unit 09 Lecture Plan
+          url: /technical-training/slides/09-connectome-analysis-neuroai/
+      references:
+        - title: "Open Problems: cell types across individuals, sexes, species and modalities"
+          url: /content-library/connectomics/open-problems-undergrad/#problem-3
+        - title: FlyWire Whole-Brain Connectome
+          url: /content-library/case-studies/flywire-whole-brain/
+
+  - slug: neuroai-transfer
+    title: What Connectomes Give Machine Learning
+    track: research-in-action
+    user_needs:
+      - avoiding overclaiming
+      - designing graph analyses
+    summary: "Connectomes give machine learning constraints for network models, architectural inspiration and hard benchmark problems; they do not give weights, dynamics or a runnable brain, and the reverse direction is currently stronger."
+    explanation: "Unit 09 §5 states both directions; the NeuroAI Bridge page covers bio-inspired architectures, connectome-constrained models, graph neural networks on connectomes and honest boundaries, with a worked example from a cortical motif to an RNN architecture."
+    resources:
+      - title: "Unit 09 §5: NeuroAI, what actually transfers"
+        url: /technical-training/09-connectome-analysis-neuroai/#5-neuroai-what-actually-transfers
+      - title: NeuroAI Bridge
+        url: /content-library/connectomics/neuroai-bridge/
+    teaching_resources:
+      lesson:
+        - title: "Unit 09 §5"
+          url: /technical-training/09-connectome-analysis-neuroai/#5-neuroai-what-actually-transfers
+        - title: NeuroAI Bridge
+          url: /content-library/connectomics/neuroai-bridge/
+      slides:
+        - title: Unit 09 Lecture Plan
+          url: /technical-training/slides/09-connectome-analysis-neuroai/
+      references:
+        - title: "Open Problems: structure to function, prediction and its limits"
+          url: /content-library/connectomics/open-problems-undergrad/#problem-5
+        - title: Assessment Bank (tagAA-5)
+          url: /teaching/assessment/
+
   - slug: reproducibility-and-atlas
     title: Reproducibility and Reference Curation
     track: research-in-action
@@ -268,6 +1302,286 @@ concepts:
       references:
         - title: Journal Club
           url: /technical-training/journal-club/
+
+  - slug: reading-the-literature
+    title: Finding and Reading the Literature
+    track: research-in-action
+    user_needs:
+      - finding reliable resources
+      - maintaining citation hygiene
+    summary: "Find papers by research domain, era and tier in a connectomics corpus with published abstracts and a citation graph, then read each one in the order experts read in and judge how fragile its claim is."
+    explanation: "Read Reading and Judging a Paper for the order experts read in, how to read a methods section for what is absent and the four fragility questions; then use the Journal Club's filters and citation graph, and the 11 hand-written summary pages for course reading lists. The OCAR notes and summaries on the cards are written per research domain, not per paper; the abstract is the paper's own."
+    resources:
+      - title: Journal Club
+        url: /technical-training/journal-club/
+      - title: Journal Paper Corpus and Literature Hub
+        url: /content-library/journal-papers/
+    teaching_resources:
+      lesson:
+        - title: Reading and Judging a Paper
+          url: /hidden-curriculum/reading-and-judging/
+      activity:
+        - title: Journal Club (browse and filter the corpus)
+          url: /technical-training/journal-club/
+      references:
+        - title: Journal Paper Corpus and Literature Hub
+          url: /content-library/journal-papers/
+        - title: Hand-written paper summaries by topic
+          url: /content-library/journal-papers/#hand-written-paper-summaries-by-topic
+        - title: Citation Graph Explorer
+          url: /technical-training/journal-club/graph/
+
+  - slug: landmark-datasets
+    title: Choosing a Public Dataset
+    track: research-in-action
+    user_needs:
+      - choosing a dataset
+      - finding reliable resources
+    summary: "Match a question to the public dataset that can answer it, and work the comparison against acquiring new data before proposing acquisition."
+    explanation: "Use the atlas's landmark-dataset table and its 'choosing among them' guide, then the Datasets pages for access routes and the case studies for what each dataset does and does not support."
+    resources:
+      - title: "Atlas §1: Landmark datasets"
+        url: /technical-training/atlas-connectomics-reference/#1-landmark-datasets
+      - title: Datasets
+        url: /datasets/
+    teaching_resources:
+      lesson:
+        - title: "Atlas §1"
+          url: /technical-training/atlas-connectomics-reference/#1-landmark-datasets
+      activity:
+        - title: Atlas Mini-Lab
+          url: /technical-training/atlas-connectomics-reference/#mini-lab-curate-one-entry-30-minutes
+        - title: Getting Started with Data
+          url: /datasets/getting-started/
+      slides:
+        - title: Atlas Lecture Plan
+          url: /technical-training/slides/atlas-connectomics-reference/
+      references:
+        - title: Accessing Public EM Datasets
+          url: /datasets/access/
+        - title: Comparative Connectomics
+          url: /content-library/connectomics/comparative-connectomics/
+
+  - slug: comparative-connectomics
+    title: Comparative Connectomics
+    track: research-in-action
+    user_needs:
+      - choosing a dataset
+      - avoiding overclaiming
+    summary: "Know what carries over between worm, fly, mouse and human reconstructions (the pipeline, the unreliability of weak connections, graph methods) and what does not (identified neurons, completeness claims, cell composition, cost per neuron)."
+    explanation: "Read the Comparative Connectomics page's coverage table and its questions to ask before comparing two datasets; Unit 09 §4 notes why comparative and developmental analysis controls for reconstruction biases a single measurement cannot."
+    resources:
+      - title: Comparative Connectomics
+        url: /content-library/connectomics/comparative-connectomics/
+      - title: "Unit 09 §4: Beyond motifs"
+        url: /technical-training/09-connectome-analysis-neuroai/#4-beyond-motifs
+    teaching_resources:
+      lesson:
+        - title: Comparative Connectomics
+          url: /content-library/connectomics/comparative-connectomics/
+      references:
+        - title: C. elegans Revisited
+          url: /content-library/case-studies/c-elegans-revisited/
+        - title: FlyWire Whole-Brain Connectome
+          url: /content-library/case-studies/flywire-whole-brain/
+        - title: MICrONS Visual Cortex
+          url: /content-library/case-studies/microns-visual-cortex/
+        - title: H01 Human Cortex Fragment
+          url: /content-library/case-studies/h01-human-cortex/
+
+  - slug: flywire-whole-brain
+    title: FlyWire Whole-Brain Connectome
+    track: research-in-action
+    user_needs:
+      - choosing a dataset
+      - prioritizing corrections
+    summary: "The first complete adult fly brain wiring diagram: automated segmentation of FAFB, CAVE and Neuroglancer, consortium and volunteer proofreading, a brain-wide cell-type atlas, and the lessons the page draws for the field."
+    explanation: "Read the case study for the pipeline, the proofreading effort and the findings, with its warning that every number belongs to a release; the Proofreading Strategies page covers the FlyWire crowd-sourced and hybrid models."
+    resources:
+      - title: FlyWire Whole-Brain Connectome
+        url: /content-library/case-studies/flywire-whole-brain/
+      - title: Proofreading Strategies for Connectome Reconstruction
+        url: /content-library/proofreading/proofreading-strategies/
+    teaching_resources:
+      lesson:
+        - title: FlyWire Whole-Brain Connectome
+          url: /content-library/case-studies/flywire-whole-brain/
+      references:
+        - title: Proofreading Strategies (crowd-sourced and hybrid)
+          url: /content-library/proofreading/proofreading-strategies/
+        - title: Neuron Type Identification
+          url: /content-library/cell-types/neuron-type-identification/
+        - title: "Ethics and Governance: credit for proofreading labor"
+          url: /content-library/connectomics/ethics-and-governance/
+
+  - slug: h01-human-cortex
+    title: H01 Human Cortex
+    track: research-in-action
+    user_needs:
+      - choosing a dataset
+      - avoiding overclaiming
+    summary: "About a cubic millimeter of human temporal cortex from surgical tissue: what it shows, the interpretive cautions that come with tissue from one person, and how it was made stage by stage."
+    explanation: "Read the H01 case study for findings and caveats, then H01, Step by Step for each production stage, with figures rendered from the public volume and a table of the numbers people get wrong."
+    resources:
+      - title: H01 Human Cortex Fragment
+        url: /content-library/case-studies/h01-human-cortex/
+      - title: "H01, Step by Step"
+        url: /content-library/case-studies/h01-pipeline/
+    teaching_resources:
+      lesson:
+        - title: H01 Human Cortex Fragment
+          url: /content-library/case-studies/h01-human-cortex/
+        - title: "H01, Step by Step"
+          url: /content-library/case-studies/h01-pipeline/
+      references:
+        - title: EM Figure Library (all rendered from H01)
+          url: /content-library/em-figures/
+        - title: "Ethics and Governance: consent and human brain tissue"
+          url: /content-library/connectomics/ethics-and-governance/
+
+  - slug: microns-functional-connectomics
+    title: MICrONS Functional Connectomics
+    track: research-in-action
+    user_needs:
+      - choosing a dataset
+      - matching method to question
+    summary: "Two-photon calcium imaging of about 75,000 excitatory neurons paired with an EM reconstruction of the same cubic millimeter of mouse visual cortex, so activity and wiring can be compared cell by cell."
+    explanation: "Read the case study for the multimodal approach, the co-registration challenge, the pipeline, the findings and the limits of a single volume; the MICrONS lab analyzes the public release directly."
+    resources:
+      - title: MICrONS Visual Cortex
+        url: /content-library/case-studies/microns-visual-cortex/
+      - title: MICrONS Real-Data Lab
+        url: /notebooks/microns-lab/
+    teaching_resources:
+      lesson:
+        - title: MICrONS Visual Cortex
+          url: /content-library/case-studies/microns-visual-cortex/
+      activity:
+        - title: MICrONS Real-Data Lab
+          url: /notebooks/microns-lab/
+      references:
+        - title: "Unit 02 §4: Cross-scale linkage, registration and its residuals"
+          url: /technical-training/02-brain-data-across-scales/#4-cross-scale-linkage-registration-and-its-residuals
+        - title: Getting Started with Data
+          url: /datasets/getting-started/
+
+  - slug: microns-real-data-lab
+    title: MICrONS Real-Data Lab
+    track: research-in-action
+    user_needs:
+      - reproducible processing
+      - choosing null models
+    summary: "A version-pinned notebook that asks whether reciprocal connections among proofread MICrONS neurons exceed three nulls, with hash-verified downloads, counted exclusions, a decision rule fixed in advance and archived outputs; no account needed."
+    explanation: "Read the lab page's data source, inclusion rules, endpoints and limitations, run the notebook, and compare your outputs with the archived reference run; it repeats the Tools and Methods and Algorithms and Applications worksheets on real data."
+    resources:
+      - title: MICrONS Real-Data Lab
+        url: /notebooks/microns-lab/
+      - title: "Install and run"
+        url: /notebooks/microns-lab/#install-and-run
+    teaching_resources:
+      lesson:
+        - title: MICrONS Real-Data Lab
+          url: /notebooks/microns-lab/
+      activity:
+        - title: Install and run
+          url: /notebooks/microns-lab/#install-and-run
+        - title: Archived outputs
+          url: /notebooks/microns-lab/#archived-outputs
+      references:
+        - title: Tools and Methods Worksheet
+          url: /teaching/lectures/tools-and-methods-activity/
+        - title: Algorithms and Applications Worksheet
+          url: /teaching/lectures/algorithms-and-applications-activity/
+        - title: "Course Syllabus Maps: the real-data lab"
+          url: /teaching/syllabi/
+
+  - slug: mouseconnects-hippocampus
+    title: MouseConnects and HI-MC
+    track: research-in-action
+    user_needs:
+      - choosing a dataset
+      - scoping a student project
+    summary: "The BRAIN CONNECTS project that will image 10 mm³ of mouse hippocampal formation, roughly ten times MICrONS or H01: what the project says it will deliver, what that volume does to the pipeline, and that no data has been released yet."
+    explanation: "Read the case study, which takes every number from the award abstract or the partners' announcements and labels them as targets, then the MouseConnects dataset page for the project's status."
+    resources:
+      - title: MouseConnects and HI-MC
+        url: /content-library/case-studies/mouseconnects-himc/
+      - title: MouseConnects Dataset Page
+        url: /datasets/mouseconnects/
+    teaching_resources:
+      lesson:
+        - title: MouseConnects and HI-MC
+          url: /content-library/case-studies/mouseconnects-himc/
+      references:
+        - title: MouseConnects Dataset Page
+          url: /datasets/mouseconnects/
+        - title: Open Problems for Undergraduate Teams
+          url: /content-library/connectomics/open-problems-undergrad/
+        - title: How NeuroTrailblazers Fits BRAIN CONNECTS
+          url: /core/connects-ecosystem/
+
+  - slug: ethics-and-governance
+    title: Ethics, Licenses and Credit
+    track: research-in-action
+    user_needs:
+      - understanding research norms
+      - maintaining citation hygiene
+    summary: "What is live now (license obligations, credit for proofreading labor) and what is prospective (consent at whole-brain scale, de-identification, dual use), each stated at its real strength."
+    explanation: "Read the Ethics and Governance page for the facts, including where H01 came from and the license decision table, then run the Ethics and Governance session to practice the judgment; Module 19 teaches the decisions."
+    resources:
+      - title: Ethics and Governance
+        url: /content-library/connectomics/ethics-and-governance/
+      - title: "Session: Ethics and Governance"
+        url: /teaching/lectures/ethics-and-governance/
+    teaching_resources:
+      lesson:
+        - title: Ethics and Governance
+          url: /content-library/connectomics/ethics-and-governance/
+      activity:
+        - title: Ethics and Governance Worksheet
+          url: /teaching/lectures/ethics-and-governance-activity/
+      slides:
+        - title: Ethics and Governance Session Plan
+          url: /teaching/lectures/ethics-and-governance/
+      references:
+        - title: Ethics and Governance Model Responses
+          url: /teaching/lectures/ethics-and-governance-answers/
+        - title: "Module 19: Peer Review and Scientific Ethics"
+          url: /modules/module19/
+        - title: The Savvy Researcher (authorship memo)
+          url: /teaching/pathways/savvy-researcher/
+
+  - slug: open-problems
+    title: Open Problems for Student Teams
+    track: research-in-action
+    user_needs:
+      - scoping a student project
+      - starting a research question
+    summary: "Seven problems an undergraduate team can work on in one or two semesters, from automated proofreading and synapse detection to graph algorithms at scale and annotation science, each with the state of the art, scoped projects and entry points."
+    explanation: "Read the library page for the argument, the decision protocol for choosing, and the worked scoping of a null-model sensitivity project, then the Open Problems cards for a five-step on-ramp per problem, whose data step runs through Getting Started with Data."
+    resources:
+      - title: Open Problems for Undergraduate Teams
+        url: /content-library/connectomics/open-problems-undergrad/
+      - title: Open Problems (cards with on-ramps)
+        url: /open-problems/
+    teaching_resources:
+      lesson:
+        - title: Open Problems for Undergraduate Teams
+          url: /content-library/connectomics/open-problems-undergrad/
+      activity:
+        - title: Open Problems (cards with on-ramps)
+          url: /open-problems/
+        - title: Getting Started with Data
+          url: /datasets/getting-started/
+      references:
+        - title: "Choosing: a decision protocol"
+          url: /content-library/connectomics/open-problems-undergrad/#choosing
+        - title: MouseConnects and HI-MC
+          url: /content-library/case-studies/mouseconnects-himc/
+
+  # ---------------------------------------------------------------------------
+  # Career & Community
+  # ---------------------------------------------------------------------------
 
   - slug: hidden-curriculum-navigation
     title: Hidden Curriculum Navigation
@@ -312,7 +1626,7 @@ concepts:
         url: /teaching/pathways/
     teaching_resources:
       lesson:
-        - title: Mentorship Personas
+        - title: Learner Personas
           url: /avatars/
       activity:
         - title: Building Your STEM Entourage Workshop Plan
@@ -322,3 +1636,229 @@ concepts:
       references:
         - title: Facilitator Guide
           url: /teaching/facilitator-guide/
+
+  - slug: pathways-workshops
+    title: Running the Pathways Workshops
+    track: career-and-community
+    user_needs:
+      - teaching a session
+      - planning a course
+    summary: "Ten 90-minute workshops, each with a timed plan, a worksheet built on an invented case and public model responses, mapped to MERIT stages, with four rules for running them safely."
+    explanation: "Read the Pathways index for the ten questions and artifacts, when to run each (one every two to four weeks alongside technical work, not as a block at the end) and the facilitation rules, then open a plan."
+    resources:
+      - title: Professional Pathways Workshops
+        url: /teaching/pathways/
+      - title: Program Models
+        url: /models/#professional-pathways-workshops
+    teaching_resources:
+      lesson:
+        - title: Professional Pathways Workshops
+          url: /teaching/pathways/
+      activity:
+        - title: Orientation Workshop Plan (workshop 1)
+          url: /teaching/pathways/orientation/
+      references:
+        - title: Facilitator Guide
+          url: /teaching/facilitator-guide/
+        - title: Program Models (MERIT and the Pathways workshops)
+          url: /models/#professional-pathways-workshops
+        - title: Course Syllabus Maps
+          url: /teaching/syllabi/
+
+  - slug: research-direction
+    title: Choosing a Research Direction
+    track: career-and-community
+    user_needs:
+      - planning career trajectories
+      - starting a research question
+    summary: "Separate what you cannot know yet from what you have not looked up, buy information with a reversible probe of two weeks or less, and later name the default path and decide rather than drift."
+    explanation: "Run Charting Your Course (a direction memo with a probe, a stopping rule and a decision date) and Future Forward (options evaluated on reversibility and cost, then a twelve-month plan); Module 24 supplies the fit matrix and decision table."
+    resources:
+      - title: Charting Your Course in Research
+        url: /teaching/pathways/charting-your-course/
+      - title: Future Forward
+        url: /teaching/pathways/future-forward/
+    teaching_resources:
+      lesson:
+        - title: Charting Your Course in Research (workshop plan)
+          url: /teaching/pathways/charting-your-course/
+        - title: Future Forward (workshop plan)
+          url: /teaching/pathways/future-forward/
+      activity:
+        - title: Charting Your Course Worksheet
+          url: /teaching/pathways/charting-your-course-activity/
+        - title: Future Forward Worksheet
+          url: /teaching/pathways/future-forward-activity/
+      references:
+        - title: Charting Your Course Model Responses
+          url: /teaching/pathways/charting-your-course-answers/
+        - title: Future Forward Model Responses
+          url: /teaching/pathways/future-forward-answers/
+        - title: "Hidden Curriculum: Career Mechanics"
+          url: /hidden-curriculum/career-mechanics/
+        - title: "Hidden Curriculum: Meta-Learning"
+          url: /hidden-curriculum/meta-learning/
+        - title: "Module 24"
+          url: /modules/module24/
+
+  - slug: communicating-science
+    title: Communicating Science
+    track: career-and-community
+    user_needs:
+      - communicating results
+      - avoiding overclaiming
+    summary: "Write one result for a peer, an adjacent scientist and a member of the public without the non-claim drifting, then defend it live under questions you did not choose."
+    explanation: "Communicating Science I audits drift across three registers using Unit 01's claim bins; Communicating Science II classifies question types, budgets a five-minute talk and builds a hard-question bank; Modules 17 and 22 carry the writing and talk kits."
+    resources:
+      - title: Communicating Science I
+        url: /teaching/pathways/communicating-science-1/
+      - title: Communicating Science II
+        url: /teaching/pathways/communicating-science-2/
+    teaching_resources:
+      lesson:
+        - title: Communicating Science I (workshop plan)
+          url: /teaching/pathways/communicating-science-1/
+        - title: Communicating Science II (workshop plan)
+          url: /teaching/pathways/communicating-science-2/
+      activity:
+        - title: Communicating Science I Worksheet
+          url: /teaching/pathways/communicating-science-1-activity/
+        - title: Communicating Science II Worksheet
+          url: /teaching/pathways/communicating-science-2-activity/
+      references:
+        - title: Communicating Science I Model Responses
+          url: /teaching/pathways/communicating-science-1-answers/
+        - title: Communicating Science II Model Responses
+          url: /teaching/pathways/communicating-science-2-answers/
+        - title: "Module 17 Session Kit: Scientific Writing for Connectomics"
+          url: /teaching/sessions/module17/
+        - title: "Module 22 Session Kit: Scientific Writing and Presentation"
+          url: /teaching/sessions/module22/
+        - title: Module 22 Public Engagement Companion
+          url: /teaching/module22-public-engagement/
+        - title: "Hidden Curriculum: Reading and Judging"
+          url: /hidden-curriculum/reading-and-judging/
+
+  - slug: professional-conduct
+    title: Professional Conduct and Escalation
+    track: career-and-community
+    user_needs:
+      - understanding research norms
+    summary: "Tell misconduct from honest error and from a difference of opinion, state your obligation as an action, choose the lowest escalation rung that is adequate, and report your own error in four parts."
+    explanation: "Run Professional Conduct with its invented scenarios; the lab norms page supplies the escalation rungs and the four-part mistake script, and the conflict page covers harassment and misconduct."
+    resources:
+      - title: Professional Conduct in STEM
+        url: /teaching/pathways/professional-conduct/
+      - title: "Hidden Curriculum: Lab Norms"
+        url: /hidden-curriculum/lab-norms/
+    teaching_resources:
+      lesson:
+        - title: Professional Conduct in STEM (workshop plan)
+          url: /teaching/pathways/professional-conduct/
+        - title: "Hidden Curriculum: Lab Norms"
+          url: /hidden-curriculum/lab-norms/
+      activity:
+        - title: Professional Conduct Worksheet
+          url: /teaching/pathways/professional-conduct-activity/
+      references:
+        - title: Professional Conduct Model Responses
+          url: /teaching/pathways/professional-conduct-answers/
+        - title: "Hidden Curriculum: Conflict"
+          url: /hidden-curriculum/conflict/
+        - title: "Module 19"
+          url: /modules/module19/
+
+  - slug: belonging-and-resilience
+    title: Belonging and Resilience
+    track: career-and-community
+    user_needs:
+      - building confidence and belonging
+    summary: "Tell a failing project from a failing you, and a knowledge gap from an environment signal: sort setbacks by what each is evidence about, and build standing through checkable contributions."
+    explanation: "Run The Resilient STEM Scholar (a failure diagnosis and a bad-week report) and STEM Identity and Purpose (the belonging test and a contribution plan), the latter in the first month; the belonging page is the background for both, and nobody is asked to disclose anything personal aloud."
+    resources:
+      - title: The Resilient STEM Scholar
+        url: /teaching/pathways/resilient-scholar/
+      - title: STEM Identity and Purpose
+        url: /teaching/pathways/identity-and-purpose/
+    teaching_resources:
+      lesson:
+        - title: "Hidden Curriculum: Belonging"
+          url: /hidden-curriculum/belonging/
+        - title: The Resilient STEM Scholar (workshop plan)
+          url: /teaching/pathways/resilient-scholar/
+        - title: STEM Identity and Purpose (workshop plan)
+          url: /teaching/pathways/identity-and-purpose/
+      activity:
+        - title: Resilient Scholar Worksheet
+          url: /teaching/pathways/resilient-scholar-activity/
+        - title: Identity and Purpose Worksheet
+          url: /teaching/pathways/identity-and-purpose-activity/
+      references:
+        - title: Resilient Scholar Model Responses
+          url: /teaching/pathways/resilient-scholar-answers/
+        - title: Identity and Purpose Model Responses
+          url: /teaching/pathways/identity-and-purpose-answers/
+        - title: Learner Personas
+          url: /avatars/
+
+  - slug: research-system-literacy
+    title: How Funding, Review and Credit Work
+    track: career-and-community
+    user_needs:
+      - understanding research norms
+      - planning career trajectories
+    summary: "Name who decides, on what evidence and on what timetable, for funding, review and credit, and write authorship and scope down before the work starts."
+    explanation: "Run The Savvy Researcher, whose memo is the career mechanics seven-line memo written for a real-looking request; read career mechanics sections 1, 2 and 5 and the lab norms authorship section first."
+    resources:
+      - title: The Savvy Researcher
+        url: /teaching/pathways/savvy-researcher/
+      - title: "Hidden Curriculum: Career Mechanics"
+        url: /hidden-curriculum/career-mechanics/
+    teaching_resources:
+      lesson:
+        - title: The Savvy Researcher (workshop plan)
+          url: /teaching/pathways/savvy-researcher/
+        - title: "Hidden Curriculum: Career Mechanics"
+          url: /hidden-curriculum/career-mechanics/
+      activity:
+        - title: Savvy Researcher Worksheet
+          url: /teaching/pathways/savvy-researcher-activity/
+      references:
+        - title: Savvy Researcher Model Responses
+          url: /teaching/pathways/savvy-researcher-answers/
+        - title: "Lab Norms: authorship and credit"
+          url: /hidden-curriculum/lab-norms/#authorship-and-credit
+        - title: "Hidden Curriculum: Funding and Jobs"
+          url: /hidden-curriculum/funding-and-jobs/
+        - title: "Ethics and Governance: credit for proofreading labor"
+          url: /content-library/connectomics/ethics-and-governance/
+
+  - slug: facilitating-sessions
+    title: Facilitating Judgment-Based Sessions
+    track: career-and-community
+    user_needs:
+      - teaching a session
+      - assessing learners
+    summary: "Spend at least half of contact time on learner judgment compared against a reference or a peer, run the four-phase structure, differentiate across the four personas, and avoid the failure modes specific to connectomics teaching."
+    explanation: "Read the Facilitator Guide, especially the 60-minute template, 'grade the reasoning, not the answer', the calibration round and the preparation checklist, then pick a session kit."
+    resources:
+      - title: Facilitator Guide
+        url: /teaching/facilitator-guide/
+      - title: Session Kits
+        url: /teaching/sessions/
+    teaching_resources:
+      lesson:
+        - title: Facilitator Guide
+          url: /teaching/facilitator-guide/
+      activity:
+        - title: Session Kits (one page per module)
+          url: /teaching/sessions/
+      references:
+        - title: Teaching Hub
+          url: /teaching/
+        - title: Instructor FAQ
+          url: /teaching/faq/
+        - title: Learner Personas
+          url: /avatars/
+        - title: "Facilitator Guide: assessment that scales"
+          url: /teaching/facilitator-guide/#assessment-that-scales

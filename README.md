@@ -58,6 +58,7 @@ CI (`.github/workflows/validate.yml`).
 | `scripts/validate_technical_evidence.rb` | Cross-checks `_data/technical_track.yml` against `_data/technical_evidence.yml`. |
 | `scripts/check_site_links.rb` | Audits internal links in `_site/`. Requires a build first. |
 | `scripts/check_anchor_links.rb` | Audits cross-page fragment links against the ids actually present in target pages. Requires a build first. |
+| `scripts/refresh_last_reviewed.rb` | Sets `last_reviewed` on every page that has the field to the date of the file's last commit (`--check` reports without writing). Not run in CI; run it before a release. |
 | `scripts/generate_module_teaching_materials.rb` | Regenerates worksheets, Marp module decks, and session kits from the module pages. |
 | `scripts/generate_module_art.rb` | Regenerates the 25 module art banners in `assets/images/modules/` — deterministic vector art, one per module, keyed to pipeline stage. |
 

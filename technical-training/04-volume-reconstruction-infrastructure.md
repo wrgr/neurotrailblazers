@@ -315,7 +315,7 @@ Petascale volumes are stored as **chunked, multi-resolution arrays**: the
 Neuroglancer precomputed format, N5, Zarr / OME-Zarr, and similar. The recurring
 elements:
 
-- **Chunks:** the volume is divided into blocks (commonly 64³ to 512³ voxels) stored
+- **Chunks:** the volume is divided into blocks (64³ to 512³ voxels is a common range in practice; this site's summary, not a standard) stored
   as individual objects. You fetch only the chunks you need.
 - **Resolution pyramid:** progressively downsampled copies. Zooming out fetches a
   coarse level rather than a million fine chunks. Halving x and y at each level adds
@@ -371,7 +371,13 @@ is either promoted or rejected. Analyses cite the release.
 
 ## 5. Capacity and cost, worked
 
-For a 1 mm³ volume at 4 × 4 × 40 nm (~1.6 × 10¹⁵ voxels):
+For a 1 mm³ volume at 4 × 4 × 40 nm (~1.6 × 10¹⁵ voxels). Every row is our planning
+estimate from that voxel count at 1 byte per voxel, with the compression and row-count
+assumptions stated in the notes; none is a measured figure from a project. For a
+reality check against published volumes: H01 reports 1.8 PB of raw data and a ~1.4 PB
+aligned dataset (Shapson-Coe et al. 2024), MICrONS about 2 PB of raw imagery, and the
+two volumes hold about 150 million and 524 million detected synapses (MICrONS
+Consortium 2025).
 
 | Item | Estimate | Notes |
 |---|---|---|
@@ -381,7 +387,7 @@ For a 1 mm³ volume at 4 × 4 × 40 nm (~1.6 × 10¹⁵ voxels):
 | Supervoxels + segmentation | ~0.2–0.8 PB | Label-aware compression helps a lot |
 | Meshes (all LODs) | 1–10 TB | Regenerated on edit |
 | Skeletons | 10–100 GB | Cheap; archive them (see Unit 02) |
-| Synapse table | 50–200 GB | ~5 × 10⁸ rows; the hottest analytical table |
+| Synapse table | 50–200 GB | ~5 × 10⁸ rows (MICrONS-scale) at an assumed 100–400 bytes per row; the hottest analytical table |
 | Edit history | Grows monotonically | Must be curated, never deleted |
 
 **GPU cost, order of magnitude.** Suppose a segmentation network processes ~10⁷
@@ -618,6 +624,11 @@ Deployment specifics for any one platform are out of scope. The ideas here trans
 across CAVE, DVID, webKnossos, and neuPrint even though the APIs do not.
 
 ---
+
+## Sources for the §5 reality check
+
+- MICrONS Consortium et al. (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435–447. [doi:10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
+- Shapson-Coe A. et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [doi:10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
 
 ## Go deeper
 

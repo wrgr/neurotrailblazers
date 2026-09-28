@@ -154,4 +154,6 @@ at the repository root; GitHub will render a formatted citation from it. In text
 > curriculum for nanoscale connectomics.* <{{ site.url }}/>
 
 If you are citing one page rather than the site, add the page title and the date you
-read it — pages here are revised.
+read it — pages here are revised. The [What's New]({{ '/whats-new/' | relative_url }})
+page lists what changed and when, and pages that carry a "Last reviewed" date take it
+from the same history.

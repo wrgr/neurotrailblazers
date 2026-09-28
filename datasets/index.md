@@ -28,7 +28,7 @@ related_frameworks:
   - research-incubator-model
   - education-models
 resource_links: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-09-26
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
@@ -133,7 +133,7 @@ content_type: core
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
           <li><strong>H01</strong> and <strong>MICrONS</strong>: about 1 mm³ of human and mouse cortex</li>
           <li><strong>Hemibrain</strong>, <strong>MANC</strong>, <strong>FANC</strong>: large parts of a fly</li>
-          <li><strong>Kasthuri 2015</strong>: about 1,500 μm³, every object traced</li>
+          <li><strong>Kasthuri 2015</strong>: up to about 1,500 μm³ (as cited by Motta et al. 2019), every object traced</li>
         </ul>
         <p style="color: #4b5563; margin-top: 0.75rem;">Everything inside is reconstructed, but most mammalian neurons leave the volume.</p>
       </div>

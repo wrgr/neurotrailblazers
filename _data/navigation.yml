@@ -1,4 +1,14 @@
 ---
+# Site navigation.
+#
+# `items` is the header menu: six groups, each a hub page plus a dropdown. A
+# dropdown entry with `heading:` instead of `title:` renders as a non-link
+# label that splits the list (Teaching uses two: run a session, plan and
+# assess). Keep a dropdown to about nine links; add a heading before adding a
+# tenth, and move something to its hub page before adding a twelfth.
+#
+# The footer repeats the six group hubs from this list, so a page with the
+# menu collapsed still has a route to every section at the bottom.
 items:
   - title: "Start Here"
     url: "/start-here/"
@@ -7,10 +17,14 @@ items:
     dropdown:
       - title: "Choose a learning path"
         url: "/tracks/"
+      - title: "Modes of use — alone or in a group"
+        url: "/modes/"
       - title: "Technical Course — nine units"
         url: "/technical-training/"
       - title: "Module Library — 25 topics"
         url: "/modules/"
+      - title: "MICrONS Real-Data Lab"
+        url: "/notebooks/microns-lab/"
       - title: "Proofreading Tutorials"
         url: "/technical-training/proofreading-tutorials/"
       - title: "Neuronauts — explore the brain"
@@ -22,6 +36,8 @@ items:
   - title: "Reference"
     url: "/content-library/"
     dropdown:
+      - title: "The Core — what to consult"
+        url: "/core/"
       - title: "Content Library"
         url: "/content-library/"
       - title: "Connectomics Dictionary"
@@ -32,6 +48,8 @@ items:
         url: "/technical-training/journal-club/"
       - title: "Citation Graph Explorer"
         url: "/technical-training/journal-club/graph/"
+      - title: "The Field, Mapped"
+        url: "/kb/"
       - title: "Connectomics Reference Atlas"
         url: "/technical-training/atlas-connectomics-reference/"
       - title: "Hidden Curriculum"
@@ -39,22 +57,28 @@ items:
   - title: "Teaching"
     url: "/teaching/"
     dropdown:
+      - heading: "Run a session"
       - title: "Teaching Hub"
         url: "/teaching/"
-      - title: "Teach a short lecture series"
+      - title: "Short lecture series — five sessions"
         url: "/teaching/sequence/"
-      - title: "Presentation Decks"
-        url: "/technical-training/slides/"
       - title: "Graduate Lecture Series"
         url: "/teaching/lectures/"
-      - title: "Session Kits"
+      - title: "Session Kits — 25 modules"
         url: "/teaching/sessions/"
       - title: "Professional Pathways Workshops"
         url: "/teaching/pathways/"
+      - title: "Presentation Decks"
+        url: "/technical-training/slides/"
+      - heading: "Plan and assess"
       - title: "Course Syllabus Maps"
         url: "/teaching/syllabi/"
+      - title: "Assessment Bank"
+        url: "/teaching/assessment/"
       - title: "Facilitator Guide"
         url: "/teaching/facilitator-guide/"
+      - title: "Teaching FAQ"
+        url: "/teaching/faq/"
   - title: "Tools"
     url: "/tools/"
     dropdown:
@@ -64,6 +88,8 @@ items:
         url: "/ask-an-expert/"
       - title: "Connectome Quality"
         url: "/tools/connectome-quality/"
+      - title: "Connectome Quality Notebooks"
+        url: "/notebooks/connectome-quality/"
       - title: "Concept Explorer"
         url: "/concepts/"
       - title: "Open Problems"
@@ -73,8 +99,12 @@ items:
     dropdown:
       - title: "About NeuroTrailblazers"
         url: "/about/"
+      - title: "What's New"
+        url: "/whats-new/"
       - title: "How We Fit BRAIN CONNECTS"
         url: "/core/connects-ecosystem/"
+      - title: "Program Models"
+        url: "/models/"
       - title: "Major Initiatives"
         url: "/initiatives/"
       - title: "Training Elsewhere"
@@ -83,3 +113,146 @@ items:
         url: "/avatars/"
       - title: "License & Reuse"
         url: "/license/"
+
+# Utility links for the footer's second row. Contact and GitHub are added by
+# the layout from _config.yml.
+footer:
+  - title: "What's new"
+    url: "/whats-new/"
+  - title: "License"
+    url: "/license/"
+
+# Breadcrumb hubs. The layout picks the entry whose `prefix` is the longest
+# match for the page URL, then finds which menu group holds that hub, and
+# renders "Home › Group › Hub". A page whose URL equals the hub URL is shown
+# as the current crumb. Add an entry when a new section gets an index page.
+hubs:
+  - prefix: /start-here/
+    title: "Start Here"
+    url: /start-here/
+  - prefix: /tracks/
+    title: "Learning Tracks"
+    url: /tracks/
+  - prefix: /modes/
+    title: "Modes of Use"
+    url: /modes/
+  - prefix: /technical-training/slides/
+    title: "Presentation Decks"
+    url: /technical-training/slides/
+  - prefix: /technical-training/journal-club/
+    title: "Journal Club"
+    url: /technical-training/journal-club/
+  - prefix: /technical-training/dictionary/
+    title: "Connectomics Dictionary"
+    url: /technical-training/dictionary/
+  - prefix: /technical-training/atlas-connectomics-reference/
+    title: "Connectomics Reference Atlas"
+    url: /technical-training/atlas-connectomics-reference/
+  - prefix: /technical-training/proofreading-tutorials/
+    title: "Proofreading Tutorials"
+    url: /technical-training/proofreading-tutorials/
+  - prefix: /technical-training/
+    title: "Technical Course"
+    url: /technical-training/
+  - prefix: /modules/
+    title: "Module Library"
+    url: /modules/
+  - prefix: /notebooks/microns-lab/
+    title: "MICrONS Real-Data Lab"
+    url: /notebooks/microns-lab/
+  - prefix: /notebooks/connectome-quality/
+    title: "Connectome Quality Notebooks"
+    url: /notebooks/connectome-quality/
+  - prefix: /neuronauts/kids/
+    title: "Junior Lab"
+    url: /neuronauts/kids/
+  - prefix: /neuronauts/
+    title: "Neuronauts"
+    url: /neuronauts/
+  - prefix: /side-quests/
+    title: "Side Quests"
+    url: /side-quests/
+  - prefix: /core/connects-ecosystem/
+    title: "How We Fit BRAIN CONNECTS"
+    url: /core/connects-ecosystem/
+  - prefix: /core/
+    title: "The Core"
+    url: /core/
+  - prefix: /content-library/journal-papers/
+    title: "Journal Paper Corpus"
+    url: /content-library/journal-papers/
+  - prefix: /content-library/
+    title: "Content Library"
+    url: /content-library/
+  - prefix: /datasets/
+    title: "Datasets"
+    url: /datasets/
+  - prefix: /kb/
+    title: "The Field, Mapped"
+    url: /kb/
+  - prefix: /hidden-curriculum/
+    title: "Hidden Curriculum"
+    url: /hidden-curriculum/
+  - prefix: /teaching/sequence/
+    title: "Short lecture series"
+    url: /teaching/sequence/
+  - prefix: /teaching/lectures/
+    title: "Graduate Lecture Series"
+    url: /teaching/lectures/
+  - prefix: /teaching/sessions/
+    title: "Session Kits"
+    url: /teaching/sessions/
+  - prefix: /teaching/pathways/
+    title: "Professional Pathways Workshops"
+    url: /teaching/pathways/
+  - prefix: /teaching/syllabi/
+    title: "Course Syllabus Maps"
+    url: /teaching/syllabi/
+  - prefix: /teaching/assessment/
+    title: "Assessment Bank"
+    url: /teaching/assessment/
+  - prefix: /teaching/answers/
+    title: "Module Model Responses"
+    url: /teaching/answers/
+  - prefix: /teaching/facilitator-guide/
+    title: "Facilitator Guide"
+    url: /teaching/facilitator-guide/
+  - prefix: /teaching/faq/
+    title: "Teaching FAQ"
+    url: /teaching/faq/
+  - prefix: /teaching/
+    title: "Teaching Hub"
+    url: /teaching/
+  - prefix: /tools/
+    title: "Tools"
+    url: /tools/
+  - prefix: /ask-an-expert/
+    title: "Ask an Expert"
+    url: /ask-an-expert/
+  - prefix: /concepts/
+    title: "Concept Explorer"
+    url: /concepts/
+  - prefix: /open-problems/
+    title: "Open Problems"
+    url: /open-problems/
+  - prefix: /about/
+    title: "About"
+    url: /about/
+  - prefix: /whats-new/
+    title: "What's New"
+    url: /whats-new/
+  - prefix: /models/
+    title: "Program Models"
+    url: /models/
+  - prefix: /initiatives/
+    title: "Major Initiatives"
+    url: /initiatives/
+  - prefix: /connectivity/
+    title: "Training Elsewhere"
+    url: /connectivity/
+  - prefix: /avatars/
+    title: "Learner Personas"
+    url: /avatars/
+  - prefix: /license/
+    title: "License & Reuse"
+    url: /license/

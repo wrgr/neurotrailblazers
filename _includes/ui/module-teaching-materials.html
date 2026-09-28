@@ -7,6 +7,8 @@
 {% assign worksheet = '/assets/worksheets/module' | append: numpad | append: '/module' | append: numpad | append: '-activity.md' %}
 {% assign marp_html = '/course/decks/marp/out/modules/module' | append: numpad | append: '.html' %}
 {% assign marp_src = site.deck_source_base | append: '/modules/module' | append: numpad | append: '.marp.md' %}
+{% assign key_url = '/teaching/answers/module' | append: numpad | append: '/' %}
+{% assign key_page = site.pages | where: 'url', key_url | first %}
 
 <section class="section">
   <h2 id="teaching-materials">Teaching Materials</h2>
@@ -22,6 +24,11 @@
       <h3 class="card-title">Activity Worksheet</h3>
       <p class="card-description">Learner worksheet aligned to the studio activity and rubric.</p>
       <p><a href="{{ worksheet | relative_url }}">Open worksheet</a></p>
+      {% if key_page %}
+      <p><a href="{{ key_url | relative_url }}">Model responses for this worksheet</a></p>
+      {% else %}
+      <p><a href="{{ '/teaching/answers/' | relative_url }}">Model responses: not yet written for this module; see the order they are coming in</a></p>
+      {% endif %}
     </article>
     <article class="card">
       <h3 class="card-title">Slide Source</h3>

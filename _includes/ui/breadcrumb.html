@@ -1,0 +1,66 @@
+{%- comment -%}
+  Breadcrumb: Home › <menu group> › <hub>.
+
+  The hub is the entry in _data/navigation.yml `hubs` whose prefix is the longest
+  match for the page URL; the group is the menu item whose dropdown holds that hub
+  (skipped when the group and the hub are the same page). Rendered by the default
+  layout on every page except the home page.
+
+  The two variables it assigns, crumb_hub and crumb_group, stay in scope for the
+  rest of the layout: ui/page-nav.html reuses crumb_hub for its "Up" link.
+{%- endcomment -%}
+{%- assign crumb_hub = nil -%}
+{%- assign crumb_len = 0 -%}
+{%- for h in site.data.navigation.hubs -%}
+  {%- assign plen = h.prefix | size -%}
+  {%- assign head = page.url | slice: 0, plen -%}
+  {%- if head == h.prefix and plen > crumb_len -%}
+    {%- assign crumb_hub = h -%}
+    {%- assign crumb_len = plen -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign crumb_group = nil -%}
+{%- if crumb_hub -%}
+  {%- for item in site.data.navigation.items -%}
+    {%- if item.url == crumb_hub.url -%}
+      {%- assign crumb_group = item -%}
+    {%- else -%}
+      {%- for sub in item.dropdown -%}
+        {%- if sub.url == crumb_hub.url -%}{%- assign crumb_group = item -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if crumb_group -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+  {%- comment -%}
+    A hub that no dropdown lists (Module Model Responses, the journal paper corpus)
+    still belongs to a group: the menu item whose own URL is the longest prefix of it.
+  {%- endcomment -%}
+  {%- unless crumb_group -%}
+    {%- assign group_len = 0 -%}
+    {%- for item in site.data.navigation.items -%}
+      {%- assign ilen = item.url | size -%}
+      {%- assign ihead = crumb_hub.url | slice: 0, ilen -%}
+      {%- if ihead == item.url and ilen > group_len and item.url != crumb_hub.url -%}
+        {%- assign crumb_group = item -%}
+        {%- assign group_len = ilen -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+{%- endif -%}
+<div class="crumbs-wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    {%- if crumb_group and crumb_group.url != crumb_hub.url %}
+    <span class="crumb-sep" aria-hidden="true">&rsaquo;</span>
+    <a href="{{ crumb_group.url | relative_url }}">{{ crumb_group.title }}</a>
+    {%- endif %}
+    {%- if crumb_hub %}
+    <span class="crumb-sep" aria-hidden="true">&rsaquo;</span>
+    {%- if crumb_hub.url == page.url %}
+    <span aria-current="page">{{ crumb_hub.title }}</span>
+    {%- else %}
+    <a href="{{ crumb_hub.url | relative_url }}">{{ crumb_hub.title }}</a>
+    {%- endif %}
+    {%- endif %}
+  </nav>
+</div>

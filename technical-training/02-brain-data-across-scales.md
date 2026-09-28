@@ -56,7 +56,7 @@ Physics and budget set it, and it is fixed once the data exists.
 always coarser than acquisition scale, sometimes much coarser. At 4 × 4 × 40 nm you
 acquire enough signal to see a 20 nm cleft in the section plane. Segmentation needs
 an object to span several pixels in each section and to appear in several sections.
-In z each 40 nm section is a single sample, so a 50 nm spine neck running steeply
+In z each 40 nm section is a single sample, so a thin (~100 nm) spine neck running steeply
 through the stack may show up in only one or two sections, and that is where
 reconstruction fails first.
 
@@ -70,7 +70,9 @@ type, a layer, an area, a projection.
 
 A worked instance of the rule: if your endpoint is "fraction of inputs onto spines vs
 shafts", your analysis scale is the synapse and the spine neck. Spine necks are
-50–200 nm. So your reconstruction scale must be ≤ 50 nm, which forces EM. If instead
+about 90–500 nm across, mean about 200 nm, in mouse layer 2/3 pyramidal cells (Arellano
+et al. 2007). So your reconstruction scale must resolve objects well under 100 nm, which
+forces EM. If instead
 your endpoint is "does area A project to area B at all", your analysis scale is the
 axon bundle. Light-sheet imaging of a bulk tracer at 1 µm is then the correct choice,
 not a compromise: a 1 µm³ voxel holds 10⁹ / 640 ≈ 1.6 million voxels of
@@ -80,7 +82,11 @@ not a compromise: a 1 µm³ voxel holds 10⁹ / 640 ≈ 1.6 million voxels of
 
 ## 2. The modality chart
 
-Learn this table. Ranges are typical rather than record-setting.
+Learn this table. Its ranges are this site's approximate summary of common practice,
+not measurements and not records: use them to compare modalities, not to plan a budget.
+Cells that name a paper are anchored to it. Two more anchors for the EM rows: MICrONS
+and FAFB were imaged at about 4 × 4 × 40 nm (MICrONS Consortium 2025; Zheng et al.
+2018), and the hemibrain at 8 nm isotropic by FIB-SEM (Scheffer et al. 2020).
 
 | Modality | Resolution (typical) | Practical volume | What it uniquely gives you | What it cannot do |
 |---|---|---|---|---|
@@ -400,7 +406,7 @@ Write a two-page memo that selects a data strategy. Required sections:
 
 Objects the endpoint depends on:
 
-1. **The AIS:** a ~20–60 µm segment of proximal axon, identifiable in EM by its
+1. **The AIS:** a ~20–60 µm segment of proximal axon (Leterrier 2018), identifiable in EM by its
    membrane undercoating and fascicled microtubules. Requires EM; it is not
    distinguishable from proximal dendrite in LM without a molecular label.
 2. **Synapses onto the AIS:** chandelier-cell cartridges, symmetric. Requires
@@ -472,12 +478,16 @@ statistics that operate on the resulting graph (Unit 09).
 
 ## Sources for the numbers in this unit
 
+- Arellano J.I. et al. (2007). Ultrastructure of dendritic spines: correlation between synaptic and spine morphologies. *Frontiers in Neuroscience* 1:131–143. [doi:10.3389/neuro.01.1.1.010.2007](https://doi.org/10.3389/neuro.01.1.1.010.2007)
 - Chen X. et al. (2019). High-throughput mapping of long-range neuronal projection using in situ sequencing. *Cell* 179:772–786. [doi:10.1016/j.cell.2019.09.023](https://doi.org/10.1016/j.cell.2019.09.023)
 - Gao R. et al. (2019). Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution. *Science* 363:eaau8302. [doi:10.1126/science.aau8302](https://doi.org/10.1126/science.aau8302)
+- Leterrier C. (2018). The axon initial segment: an updated viewpoint. *Journal of Neuroscience* 38:2135–2145. [doi:10.1523/JNEUROSCI.1922-17.2018](https://doi.org/10.1523/JNEUROSCI.1922-17.2018)
 - Micheva K.D. & Smith S.J. (2007). Array tomography: a new tool for imaging the molecular architecture and ultrastructure of neural circuits. *Neuron* 55:25–36. [doi:10.1016/j.neuron.2007.06.014](https://doi.org/10.1016/j.neuron.2007.06.014)
 - MICrONS Consortium et al. (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435–447. [doi:10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
+- Scheffer L.K. et al. (2020). A connectome and analysis of the adult *Drosophila* central brain. *eLife* 9:e57443. [doi:10.7554/eLife.57443](https://doi.org/10.7554/eLife.57443)
 - Schilling K. et al. (2018). Confirmation of a gyral bias in diffusion MRI fiber tractography. *Human Brain Mapping* 39:1449–1466. [doi:10.1002/hbm.23936](https://doi.org/10.1002/hbm.23936)
 - Shapson-Coe A. et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [doi:10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
+- Zheng Z. et al. (2018). A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*. *Cell* 174:730–743. [doi:10.1016/j.cell.2018.06.019](https://doi.org/10.1016/j.cell.2018.06.019)
 
 The modality ranges and the derived-product footprints in §5 are typical working
 ranges and our estimates, not values from a single source.

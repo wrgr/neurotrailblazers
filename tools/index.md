@@ -62,6 +62,15 @@ content_type: core
   </section>
 
   <section class="section">
+    <h2 class="section-title left">Notebooks and labs</h2>
+    <p>Code you run yourself, on your own machine. Neither needs an account.</p>
+    <ul>
+      <li><a href="{{ '/notebooks/microns-lab/' | relative_url }}">MICrONS Real-Data Lab</a> &mdash; a version-pinned notebook that reads public MICrONS exports and asks whether reciprocal connections among proofread neurons exceed three nulls. Archived outputs let you check a rerun.</li>
+      <li><a href="{{ '/notebooks/connectome-quality/' | relative_url }}">Connectome Quality notebooks</a> &mdash; reference code and specifications for each step of a quality assessment, to implement yourself alongside the <a href="{{ '/tools/connectome-quality/' | relative_url }}">Connectome Quality</a> page.</li>
+    </ul>
+  </section>
+
+  <section class="section">
     <h2 class="section-title left">Practice</h2>
     <p>Scaffolded exercises rather than software: you bring judgment, the page supplies the
     cases and the criteria.</p>

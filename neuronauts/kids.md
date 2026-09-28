@@ -200,7 +200,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
             <strong>What Scientists Did:</strong> Sebastian Seung and his team created <strong>EyeWire</strong>, an online game where players color in neurons one small cube at a time. By the time their 2014 paper came out, about <strong>120,000 people from nearly 150 countries</strong> had played. Top players traced "starburst" cells in a mouse retina, and the map showed how these cells help the eye tell which direction something is moving!
           </p>
           <div class="nn-fun-fact">
-            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> EyeWire is still running as EyeWire II. By May 2026, its players and scientists had reconstructed more than <strong>25,000 complete neurons</strong> in a mouse retina!
+            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> EyeWire is still running as EyeWire II. By May 2026, its players and scientists had reconstructed more than <strong>25,000 complete neurons</strong> in a mouse retina! (Source: the <a href="https://eyewire.ai/" target="_blank" rel="noopener">EyeWire II site</a>, May 2026.)
           </div>
           <div class="nn-story-footer">
             <a href="{{ '/initiatives/outreach/' | relative_url }}" class="nn-research-link">How anyone can help map brains &rarr;</a>
@@ -335,10 +335,10 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
 
         <div class="nn-quiz-step" data-step="2">
-          <p class="nn-quiz-q"><strong>Mission 2:</strong> If you stretched out all the electrical wires inside a human brain, how far would they reach?</p>
+          <p class="nn-quiz-q"><strong>Mission 2:</strong> If you stretched out all the insulated wires (myelinated nerve fibers) inside a young adult's brain, end to end, how far would they reach?</p>
           <div class="nn-quiz-options">
             <button type="button" class="nn-opt-btn" data-correct="false">A) Across a classroom table</button>
-            <button type="button" class="nn-opt-btn" data-correct="true">B) Around the entire Earth 4 times!</button>
+            <button type="button" class="nn-opt-btn" data-correct="true">B) About 4 times around the Earth!</button>
             <button type="button" class="nn-opt-btn" data-correct="false">C) Exactly 1 mile</button>
           </div>
         </div>
@@ -356,6 +356,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
           <div class="nn-celebration"><span aria-hidden="true">🎉</span> <span aria-hidden="true">🏆</span> <span aria-hidden="true">🚀</span></div>
           <h3>CONGRATULATIONS, JUNIOR NEURONAUT!</h3>
           <p>You scored <strong>3/3</strong> and proved you have what it takes to be a connectomics brain detective!</p>
+          <p style="font-size:0.85rem;">How we know Mission 2: scientists measured about 150,000 to 176,000 km of insulated fibers in the brains of 20-year-olds (Marner et al., 2003). The Earth is about 40,000 km around, so that is roughly 4 trips. (The division is ours.)</p>
           <div class="nn-badge-download">
             <span class="nn-virtual-badge"><span aria-hidden="true">🎖️</span> CERTIFIED BRAIN EXPLORER</span>
           </div>

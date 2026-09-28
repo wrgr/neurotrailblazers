@@ -6,8 +6,6 @@ description: "A learner-facing map of NIH BRAIN CONNECTS, IC3, APEX, Allen Insti
 content_type: core
 ---
 
-# How NeuroTrailblazers Fits BRAIN CONNECTS
-
 NeuroTrailblazers is **not** a third data coordinating center. Its job is different:
 
 > **IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the learning.**

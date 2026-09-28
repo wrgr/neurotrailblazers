@@ -57,12 +57,20 @@ cheap and fast.
 | Cortical neuron soma | 10–25 µm | Yes, easily |
 | Dendritic shaft | 0.5–3 µm | Yes |
 | Myelinated axon | 0.5–2 µm | Usually |
-| Dendritic spine head | 300–800 nm | Marginally |
-| **Unmyelinated axon in neuropil** | **80–300 nm** | **No** |
-| **Dendritic spine neck** | **50–200 nm** | **No** |
+| Dendritic spine head | ~300–800 nm | Marginally |
+| **Unmyelinated axon in neuropil** | **~80–300 nm** | **No** |
+| **Dendritic spine neck** | **~90–500 nm, mean ~200 nm** | **Mostly no** |
 | **Synaptic cleft** | **~20 nm** | **No** |
-| Synaptic vesicle | ~40 nm | No |
-| Postsynaptic density | 30–50 nm thick | No |
+| Synaptic vesicle | ~35 nm | No |
+| Postsynaptic density | ~35–50 nm thick | No |
+
+*Where the sizes come from.* Cleft, vesicle and PSD thickness: Harris & Weinberg
+(2012). Spine neck: 0.09–0.51 µm, mean 0.2, in mouse layer 2/3 pyramidal cells
+(Arellano et al. 2007). Spine head: our sphere-equivalent of the 0.01–0.30 µm³ head
+volumes in the same study. Unmyelinated axon: the thin CA3-to-CA1 shafts between
+varicosities measured 0.17 ± 0.04 µm (Shepherd & Harris 1998); the 80–300 nm range
+around that is an approximate textbook value. Soma, dendritic shaft and myelinated-axon
+ranges are approximate textbook values.
 
 The consequence is specific, not general. Light microscopy can tell you that two
 neurons' arbors *overlap in space*. It cannot tell you whether they are *connected*,
@@ -459,11 +467,14 @@ different questions at different scales; Unit 02 shows how these fit together.
 - Cook S.J. et al. (2019). Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* 571:63–71. [doi:10.1038/s41586-019-1352-7](https://doi.org/10.1038/s41586-019-1352-7)
 - Ding Z. et al. (2025). Functional connectomics reveals general wiring rule in mouse visual cortex. *Nature* 640:459–469. [doi:10.1038/s41586-025-08840-3](https://doi.org/10.1038/s41586-025-08840-3)
 - Dorkenwald S. et al. (2024). Neuronal wiring diagram of an adult brain. *Nature* 634:124–138. [doi:10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y)
+- Arellano J.I. et al. (2007). Ultrastructure of dendritic spines: correlation between synaptic and spine morphologies. *Frontiers in Neuroscience* 1:131–143. [doi:10.3389/neuro.01.1.1.010.2007](https://doi.org/10.3389/neuro.01.1.1.010.2007)
+- Harris K.M. & Weinberg R.J. (2012). Ultrastructure of synapses in the mammalian brain. *Cold Spring Harbor Perspectives in Biology* 4:a005587. [doi:10.1101/cshperspect.a005587](https://doi.org/10.1101/cshperspect.a005587)
 - Hulse B.K. et al. (2021). A connectome of the *Drosophila* central complex reveals network motifs suitable for flexible navigation and context-dependent action selection. *eLife* 10:e66039. [doi:10.7554/eLife.66039](https://doi.org/10.7554/eLife.66039)
 - MICrONS Consortium et al. (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435–447. [doi:10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
 - Scheffer L.K. et al. (2020). A connectome and analysis of the adult *Drosophila* central brain. *eLife* 9:e57443. [doi:10.7554/eLife.57443](https://doi.org/10.7554/eLife.57443)
 - Schlegel P. et al. (2024). Whole-brain annotation and multi-connectome cell typing of *Drosophila*. *Nature* 634:139–152. [doi:10.1038/s41586-024-07686-5](https://doi.org/10.1038/s41586-024-07686-5)
 - Shapson-Coe A. et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [doi:10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
+- Shepherd G.M.G. & Harris K.M. (1998). Three-dimensional structure and composition of CA3→CA1 axons in rat hippocampal slices. *Journal of Neuroscience* 18:8300–8310. [doi:10.1523/JNEUROSCI.18-20-08300.1998](https://doi.org/10.1523/JNEUROSCI.18-20-08300.1998)
 - Shiu P.K. et al. (2024). A *Drosophila* computational brain model reveals sensorimotor processing. *Nature* 634:210–219. [doi:10.1038/s41586-024-07763-9](https://doi.org/10.1038/s41586-024-07763-9)
 - White J.G. et al. (1986). The structure of the nervous system of the nematode *Caenorhabditis elegans*. *Phil. Trans. R. Soc. B* 314:1–340. [doi:10.1098/rstb.1986.0056](https://doi.org/10.1098/rstb.1986.0056)
 - Witvliet D. et al. (2021). Connectomes across development reveal principles of brain maturation. *Nature* 596:257–261. [doi:10.1038/s41586-021-03778-8](https://doi.org/10.1038/s41586-021-03778-8)

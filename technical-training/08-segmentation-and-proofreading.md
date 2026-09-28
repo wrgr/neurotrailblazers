@@ -183,8 +183,10 @@ observed 3× change under a plausible correction of the remaining errors?*
 
 Procedure:
 
-1. Take a random sample of the cells in the analysis — 20 is often enough to be
-   informative.
+1. Take a random sample of the cells in the analysis. About 20 cells is this site's
+   rule of thumb for a first pass, chosen because it is affordable in a week or two of
+   proofreading and large enough to show a shift the size of the one below; it is not a
+   published threshold. Size the sample to your endpoint's variance if you can.
 2. Proofread them exhaustively, to a standard well above your production standard.
 3. Recompute the endpoint on that sample, before and after.
 4. Report the shift. "Exhaustive proofreading of a 20-cell sample changed the ratio
@@ -460,7 +462,7 @@ The first six panels carry ultrastructure cues forward from Units 05–06; the r
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials for <code>RIV-*</code> visuals; outreach visuals from module14 lesson2 extraction. Some planned IDs were unavailable in extracted thumbnails and were replaced with nearest available alternatives.</small></p>
+<p><small>Attribution: Pat Rivlin training materials for <code>RIV-*</code> visuals (attribution as given in the source deck; the deck is not public and this credit has not been independently verified); outreach visuals from module14 lesson2 extraction. Some planned IDs were unavailable in extracted thumbnails and were replaced with nearest available alternatives.</small></p>
 
 ---
 
@@ -526,7 +528,7 @@ of the project, when it is most damaging.
 Better practice:
 
 - Estimate from the **mean**, and estimate the mean from a sample large enough to
-  include tail cases (in practice, don't trust a sample of fewer than ~10–15 cells).
+  include tail cases (this site's rule of thumb: don't trust a sample of fewer than ~10–15 cells).
 - Or: budget median × N, and add an explicit contingency for the tail, stated as a
   separate line item.
 - Or best: define your stopping rule so that pathological cells are *excluded by

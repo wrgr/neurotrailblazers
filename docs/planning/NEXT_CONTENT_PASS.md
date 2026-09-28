@@ -376,11 +376,11 @@ string returns nothing.
 - [x] Delete `modules/slides/*.md` (25 link-wrapper pages) once the session kits carry the same four links. *(Precondition verified first: the session kit at `/teaching/sessions/moduleNN/` carries the same four links — rendered deck, Markdown source, worksheet, module page — alongside the prep, timing, misconceptions and rubric that make it worth opening. The 25 wrappers are gone and the generator no longer emits them. `/modules/slides/` survives as a redirect to the session kits index so nothing that linked it 404s, but the 25 per-module URLs are removed outright rather than stubbed. Five referrers repointed: the deck footer and the worksheet footer in the generator, `_includes/ui/module-teaching-materials.html` (which now offers the session kit where it offered the wrapper), `_includes/cards/teaching-module-card.html` (the wrapper link dropped; it already listed the rendered deck and the source beside it), and the generator-output tables in `README.md` and `CONTRIBUTING.md`. The nav lost its "Module Slides" entry: it sat directly beneath "Session Kits" under Teaching, pointing at a second index of the same 25 modules. The worksheet footers cited the dead path inside backticks, which is why `check_site_links.rb` did not flag them — worth knowing about that gate.)*
 
 ### 3.2 Close the module content gaps (L)
-- [ ] Worked examples for modules 02, 03, 05, 07, 16, 17, 18, 19 (07 Proofreading and 18 Data Cleaning first).
-- [ ] Bring modules 20 and 21 to five misconception guardrails; bring 02, 03, 16, 20, 21 above 2,300 words with content, not padding.
-- [ ] Add "Why this module matters" to 04–11; "What this module does not cover" and "Common errors" to 02, 03, 05, 07, 16, 17, 18, 19; references to 15–25.
-- [ ] Retitle module 22 to "Scientific Presentation"; add scope-boundary cross-references 17↔22, 08↔20, and module↔unit pairs (01↔U01, 05↔U03, 06+07↔U08, 12↔U04, 04↔U05–07, 10+13↔U09).
-- [ ] One run-of-show heading form; state where the other 2–4 declared hours go on every module page.
+- [x] Worked examples for modules 02, 03, 05, 07, 16, 17, 18, 19 (07 Proofreading and 18 Data Cleaning first).
+- [x] Bring modules 20 and 21 to five misconception guardrails; bring 02, 03, 16, 20, 21 above 2,300 words with content, not padding.
+- [x] Add "Why this module matters" to 04–11; "What this module does not cover" and "Common errors" to 02, 03, 05, 07, 16, 17, 18, 19; references to 15–25.
+- [x] Retitle module 22 to "Scientific Presentation"; add scope-boundary cross-references 17↔22, 08↔20, and module↔unit pairs (01↔U01, 05↔U03, 06+07↔U08, 12↔U04, 04↔U05–07, 10+13↔U09).
+- [x] One run-of-show heading form; state where the other 2–4 declared hours go on every module page.
 
 ### 3.3 Technical units (M)
 - [x] Self-checks: bring units 04, 06, 07, 08 to three questions each, in the existing `<details>` pattern. *(Seven new questions, each placed at the end of the section it tests and closing on a generalizable principle like the ones already there. 04 §5: a one-layout storage plan, answered from the §3 access-pattern table and the §5 cost traps. 06 §4: "direction errors only add noise, so our enrichment is conservative" — it is a bias toward the finding. 07 §1: which results move when a glia merge is removed; 07 §3: "OPC, not sure" as a label standing in for a confidence level. 08 §2: an empty merge queue measures the detector, not the segmentation; 08 §4: rewriting "all 200 cells were proofread" into a level, a stopping rule and an endpoint shift. Every number in the answers is one the unit page already states.* ***Not in scope but noticed:*** *units 03 and 09 are still at two each.)*
@@ -391,16 +391,16 @@ string returns nothing.
 - [~] `proofreading-tutorials.md`: add the figures the title promises (false merge, false split, orphan, at minimum) and remove the inline-style/emoji formatting. *(Rewritten as Markdown sections on the site's existing hero and section classes: zero `style=` attributes and zero emoji, down from 113 and 16. False merge has a confirmed example — H01's before/after, where the right answer comes from one of its 104 proofread cells. Also fixed in the rewrite: the page had merges and splits labelled the wrong way round ("False Merges (Over-Segmentation)"), synapse numbers that disagreed with Unit 05 (now Unit 05's), a table-of-contents link to a section that did not exist, a FlyWire Academy description that contradicted the verified `connectivity.yml` entry, and three unsourced figures — detector false-positive rate "5–15%", webKnossos at "up to 1 mm/hour", a "<60°" hairpin rule — which are removed rather than sourced. The Neuroglancer key-binding list is also gone: bindings differ between deployments, and nothing in the repo let the list be checked against any of them.* ***Still open:*** *the false-split figure is H01's c2-vs-c3 pair, which shows the merge-or-split decision but not a confirmed split, because H01 does not say which call is right for that object, and the caption says so. The orphan figure shows where orphans come from (a spine across a thin neck), not a confirmed one. Both need a new render from `proofread_104` against `c2`: a proofread cell that `c2` holds in two or more segments is a confirmed split, and the pieces are confirmed orphans. `tensorstore` is not installed here, so that render was not attempted.)*
 
 ### 3.4 Course shell (M)
-- [ ] `teaching/syllabus.md`: 16-week, 10-week and 2-day mappings of modules + units + lectures onto sessions.
-- [ ] Pacing notes: which modules pair into one session, which need two, what to cut for a workshop.
-- [ ] Assessment bank: an item pool per unit beyond the inline quiz; a calibration instrument, since the facilitator guide calls calibration "the metric that matters".
-- [ ] Answer keys or model responses for the 25 worksheets (one exemplar each, marked at the "Proficient" level).
-- [ ] Instructor FAQ (the questions students actually ask about EM, segmentation error, nulls).
+- [x] `teaching/syllabus.md`: 16-week, 10-week and 2-day mappings of modules + units + lectures onto sessions.
+- [x] Pacing notes: which modules pair into one session, which need two, what to cut for a workshop.
+- [~] Assessment bank: an item pool per unit beyond the inline quiz; a calibration instrument, since the facilitator guide calls calibration "the metric that matters".
+- [~] Answer keys or model responses for the 25 worksheets (one exemplar each, marked at the "Proficient" level).
+- [x] Instructor FAQ (the questions students actually ask about EM, segmentation error, nulls).
 - [ ] The "artifact reference card" module 05 refers to.
 
 ### 3.5 One runnable notebook (M)
-- [ ] Build one Colab notebook against the MICrONS public release from the Step 3 code already in `notebooks/connectome-quality/index.md`; pin the materialization version; link it from units 04, 08, 09 and open problem 1.
-- [ ] Delete `assets/notebooks/module*/` `.gitkeep` directories.
+- [x] Build one Colab notebook against the MICrONS public release from the Step 3 code already in `notebooks/connectome-quality/index.md`; pin the materialization version; link it from units 04, 08, 09 and open problem 1.
+- [x] Delete `assets/notebooks/module*/` `.gitkeep` directories.
 
 ---
 
@@ -412,16 +412,16 @@ judgement, what the page does not cover, go-deeper links). Seed papers already e
 
 - [x] `content-library/infrastructure/synapse-detection.md` (L). Cleft prediction, partner assignment, E/I classification, benchmarks, cross-dataset degradation. Repoint `_data/open_problems.yml:53`. *(~4,500 words. Every number sourced; the CREMI weighting formula, gap-junction figures and MICrONS detector accuracy are named as unsourced in the page's own does-not-cover section rather than asserted.)* *(Reframed after review by the site owner: detection is a solved problem, and the page now opens by saying so. The three residuals it is actually about are asymmetric recall — H01 missed 35% of inhibitory synapses — partner assignment in polyadic cases, and cross-dataset transfer, which is why the site's own open problem is titled "synapse detection **that generalizes**".)*
 - [x] `content-library/connectomics/ethics-and-governance.md` (M). Consent for human tissue, de-identification, dual use, data licences, credit for proofreaders. Module 19 links here instead of owning the material. *(~3,250 words. H01's provenance from the Science full text, with the ethics statement located in the supplementary methods rather than implied absent; portal licences with the obligations each imposes; FlyWire's 33 person-years and consortium authorship as the credit worked example.)* *(Reframed after review by the site owner: connectomics has no current human-subjects problem, and the page now says that first. Live today are licence compliance and credit for proofreading labour; consent at whole-brain scale, de-identification, neural-data regulation and dual use are set out as a prospective seminar rather than a compliance checklist.)*
-- [ ] `content-library/case-studies/microns-visual-cortex.md` rewrite (M): co-registration, functional-unit matching, what calcium data does and does not license.
+- [x] `content-library/case-studies/microns-visual-cortex.md` rewrite (M): co-registration, functional-unit matching, what calcium data does and does not license.
 - [x] `content-library/connectomics/comparative-connectomics.md` (M): what transfers across worm, fly, mouse, human and what does not.
-- [ ] `content-library/imaging/beyond-em.md` (M): expansion microscopy, X-ray nanotomography, barcoding (MAPseq, BARseq), array tomography, LICONN, with the one-slide contrast case from the graduate decks as the framing.
-- [ ] `content-library/infrastructure/provenance-and-versioning.md` expansion (S): it is the thinnest page and the most-linked norm.
-- [ ] `content-library/cell-types/neuron-type-identification.md` figures and expansion (S).
+- [x] `content-library/imaging/beyond-em.md` (M): expansion microscopy, X-ray nanotomography, barcoding (MAPseq, BARseq), array tomography, LICONN, with the one-slide contrast case from the graduate decks as the framing.
+- [x] `content-library/infrastructure/provenance-and-versioning.md` expansion (S): it is the thinnest page and the most-linked norm.
+- [x] `content-library/cell-types/neuron-type-identification.md` figures and expansion (S).
 - [ ] Figures on all four `imaging/` pages, `artifact-taxonomy.md` first (M; the H01 render pipeline exists). Then clear the 32 pages' `reference_images:` front matter of figures that will not be produced.
 - [x] `content-library/index.md:166-177`: real destinations for the three orphaned domains; link `computer-vision-ml.md`; decide whether `mri-connectomics.md` stays given `methodology.md:44`. *(Every domain now links to a journal-club filter that really contains its papers; six filter links had used dimension values absent from the data and silently did nothing. All 13 topic pages linked. `mri-connectomics.md` stays, relabelled as a bridge out of the library for readers arriving from the macroscale side.)*
 - [x] Datasets timeline: add BANC, MANC, larval zebrafish, whole-mouse-brain efforts (after 1.4). *(BANC, MANC, FANC and larval zebrafish added in 1.4; whole-mouse-brain efforts are still open.)*
-- [ ] `hidden-curriculum/career-mechanics.md` companion: the funding and jobs landscape (S–M).
-- [ ] `_data/concepts.yml`: grow from 12 concepts to cover the units and library (M; the explorer UI is already built).
+- [x] `hidden-curriculum/career-mechanics.md` companion: the funding and jobs landscape (S–M).
+- [x] `_data/concepts.yml`: grow from 12 concepts to cover the units and library (M; the explorer UI is already built).
 
 ---
 
@@ -616,7 +616,7 @@ unit-page caption fixes noted above, and the en585781 rename.)*
   The local build now works with Ruby 3.1.6 / Bundler 2.6.9 on a case-sensitive
   destination (needed for `LICENSE` versus `/license/` on macOS).
 - [ ] Validator: stat literals on the home page and `core_surfaces.yml` are derived from data, not typed.
-- [ ] Render `last_reviewed` on pages (it is set on 40 pages and shown on none), and add a "what's new" page fed from git history or a changelog file.
+- [x] Render `last_reviewed` on pages (it is set on 40 pages and shown on none), and add a "what's new" page fed from git history or a changelog file. Done 2026-09-27: the default layout renders the date under the page navigation, `scripts/refresh_last_reviewed.rb` sets it from `git log`, and `/whats-new/` lists the dated additions.
 
 ---
 

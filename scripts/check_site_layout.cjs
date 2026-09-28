@@ -35,6 +35,12 @@ const routes = [
   '/teaching/answers/module18/', '/teaching/assessment/', '/notebooks/microns-lab/',
   '/tools/', '/ask-an-expert/', '/tools/connectome-quality/',
   '/about/', '/avatars/', '/avatars/undergradstudent/', '/models/', '/license/',
+  // Pages with the breadcrumb and previous/next chrome, and surfaces added in September 2026.
+  '/technical-training/01-why-map-the-brain/', '/technical-training/slides/01-why-map-the-brain/',
+  '/modules/module01/', '/teaching/sessions/module01/', '/teaching/answers/',
+  '/teaching/pathways/orientation-activity/', '/hidden-curriculum/funding-and-jobs/',
+  '/teaching/assessment/units/', '/teaching/faq/', '/notebooks/connectome-quality/', '/kb/',
+  '/content-library/imaging/beyond-em/', '/whats-new/',
 ];
 
 async function checkPage(browser, base, route, width, largeText = false) {

@@ -258,8 +258,10 @@ example, lists of Neuroglancer links generated with `nglui`).
 NeuTu is a desktop application developed at Janelia Research Campus
 (Howard Hughes Medical Institute) for collaborative, segmentation-based
 proofreading (Zhao et al., 2018). Its authors report that it supported the
-fly medulla and mushroom body reconstructions, and Janelia's proofreading
-tools were used in the *Drosophila* hemibrain project (Scheffer et al., 2020).
+fly medulla and mushroom body reconstructions. In the *Drosophila*
+hemibrain, proofreaders "connected remaining isolated fragments (segments)
+to already constructed neurons, using NeuTu (Zhao et al., 2018) and Neu3"
+(Scheffer et al., 2020).
 The CAVE authors describe NeuTu as supporting neuron-based proofreading at
 scale for a restricted group of proofreaders, in contrast to CAVE's open
 community model (Dorkenwald et al., 2025).
@@ -430,7 +432,7 @@ a dust particle on the section).
 | Task management | Manual (URLs) | Manual (URLs) | Limited | Review workflow |
 | Version control | Materialization snapshots | Materialization snapshots | DVID versioning | Action log |
 | Best for | General-purpose proofreading, exploration | CAVE datastacks that recommend it | Janelia/DVID ecosystem | Skeleton-based projects, manual tracing |
-| Largest published use | ~1 mm³ volumes (MICrONS, H01) | Same backend as CAVE | Hemibrain (26 teravoxels) | FAFB (~106 TB) |
+| Largest published use | ~1 mm³ volumes (MICrONS, H01) | Same backend as CAVE | Hemibrain (26 teravoxels), with Neu3 (Scheffer et al., 2020) | FAFB (~106 TB) |
 
 ---
 

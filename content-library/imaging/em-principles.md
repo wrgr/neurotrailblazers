@@ -109,7 +109,7 @@ A gallium ion beam mills a thin layer (~4-8 nm) from the block face, and the exp
 
 ### Multi-beam SEM
 
-Multiple electron beams (61 or 91 in current instruments) scan the specimen at the same time, multiplying throughput. H01 was imaged with a 61-beam instrument at 125-190 million pixels per second (Shapson-Coe et al. 2024). Because it images sections collected on tape or wafers rather than a block face, the sections survive imaging and can be re-imaged, as in ssTEM, while the throughput approaches what a petascale volume needs.
+Multiple electron beams (61 in the instrument Eberle et al. 2015 describe; 91 in ZEISS's current MultiSEM, per its product page) scan the specimen at the same time, multiplying throughput. H01 was imaged with a 61-beam instrument at 125-190 million pixels per second (Shapson-Coe et al. 2024). Because it images sections collected on tape or wafers rather than a block face, the sections survive imaging and can be re-imaged, as in ssTEM, while the throughput approaches what a petascale volume needs.
 
 ---
 
@@ -193,6 +193,7 @@ Imagine you are looking at a single 2D EM image (SEM-BSE mode, ~8 nm pixel size)
 - Bozzola JJ, Russell LD (1999) *Electron Microscopy: Principles and Techniques for Biologists*. Jones & Bartlett. — Comprehensive EM methods textbook.
 - Briggman KL, Bock DD (2012) "Volume electron microscopy for neuronal circuit reconstruction." *Current Opinion in Neurobiology* 22(1):154-161.
 - Denk W, Horstmann H (2004) "Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure." *PLoS Biology* 2(11):e329. — Introduced SBEM for neuroscience.
+- Eberle AL et al. (2015) "High-resolution, high-throughput imaging with a multibeam scanning electron microscope." *Journal of Microscopy* 259(2):114-120. [10.1111/jmi.12224](https://doi.org/10.1111/jmi.12224) — 61-beam instrument; summed detector bandwidth 1.22 gigapixels per second.
 - Hayworth KJ, Kasthuri N, Schalek R, Lichtman JW (2006) "Automating the collection of ultrathin serial sections for large volume TEM reconstructions." *Microscopy and Microanalysis* 12(Suppl 2):86-87.
 - Hayworth KJ et al. (2015) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12(4):319-322. [10.1038/nmeth.3292](https://doi.org/10.1038/nmeth.3292)
 - Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923. — Modified rOTO en bloc staining for millimeter-scale blocks.
@@ -201,5 +202,6 @@ Imagine you are looking at a single 2D EM image (SEM-BSE mode, ~8 nm pixel size)
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.
 - White JG et al. (1986) "The structure of the nervous system of the nematode *Caenorhabditis elegans*." *Philosophical Transactions of the Royal Society B* 314(1165):1-340.
 - Willingham MC, Rutherford AV (1984) "The use of osmium-thiocarbohydrazide-osmium (OTO) and ferrocyanide-reduced osmium methods to enhance membrane contrast and preservation in cultured cells." *Journal of Histochemistry and Cytochemistry* 32(4):455-460.
+- ZEISS. "ZEISS MultiSEM" product page (91 parallel beams on the MultiSEM 706). <https://www.zeiss.com/microscopy/en/products/sem-fib-sem/sem/multisem.html>, read September 2026.
 - Xu CS et al. (2017) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 6:e25916. [10.7554/eLife.25916](https://doi.org/10.7554/eLife.25916) — Janelia enhanced FIB-SEM.
 - Zheng Z et al. (2018) "A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*." *Cell* 174(3):730-743. — FAFB dataset.

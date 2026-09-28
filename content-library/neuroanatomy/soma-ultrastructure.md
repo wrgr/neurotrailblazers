@@ -51,6 +51,8 @@ This entry works from the nucleus outward through the features visible at EM res
 
 ---
 
+*A note on sizes: a size on this page with a citation after it was checked against that source. Sizes without one are approximate textbook values (Peters, Palay & Webster 1991 is the standard reference) that this site has not traced to a specific measurement; use them for orientation, and measure in your own volume when a call depends on the number.*
+
 ## 1. Size and Shape of the Neuronal Soma
 
 Cortical neuron somata are mostly around 10-25 micrometers across; spinal motor neurons and Betz cells in primary motor cortex are much larger, reaching 50 micrometers or more. Shape varies systematically with cell type:

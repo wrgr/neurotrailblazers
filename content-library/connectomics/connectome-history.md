@@ -134,7 +134,7 @@ The fruit fly brain became the testing ground for scaling connectomics:
 
 | Year | Milestone | Scale | Reference |
 |------|-----------|-------|-----------|
-| 2015 | Saturated reconstruction of mouse neocortex | ~1,500 μm³ saturated | Kasthuri et al. (2015) Cell |
+| 2015 | Saturated reconstruction of mouse neocortex | ~1,500 μm³ saturated (upper bound as cited by Motta et al. 2019) | Kasthuri et al. (2015) Cell |
 | 2019 | Mouse cortex dense reconstruction | ~500,000 μm³, ~400,000 synapses | Motta et al. (2019) Science |
 | 2021 (preprint), 2025 (paper) | MICrONS: ~1 mm³ mouse visual cortex + calcium imaging | >200,000 cells, ~524M synapses | MICrONS Consortium (2025) Nature |
 | 2024 | H01: human cortex fragment | ~1 mm³, ~57,000 cells, ~150M synapses | Shapson-Coe et al. (2024) Science |

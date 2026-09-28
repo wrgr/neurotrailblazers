@@ -29,6 +29,14 @@ asking one person one sentence. The barrier is not access to the answer. It is n
 knowing that the question is askable, and not knowing the words. So each section ends
 with the words.
 
+**This page prints no numbers on purpose.** Its companion,
+[Funding and jobs]({{ '/hidden-curriculum/funding-and-jobs/' | relative_url }}), prints
+the ones that are written down somewhere official, with the source beside each: what
+the NIH codes (F31, T32, K99/R00, R01, UM1) mean for your status, how to read a grant
+number, the exact steps for finding who funds a lab in RePORTER, the funder's review
+calendar, and the job categories large-scale connectomics created. Read §1 here first,
+then that page when you have a specific lab or award in front of you.
+
 ---
 
 ## 1. Where a salary comes from, and why your position is contingent
@@ -530,6 +538,7 @@ changes.
 ## Related
 
 - [Hidden curriculum hub]({{ '/hidden-curriculum/' | relative_url }})
+- [Funding and jobs]({{ '/hidden-curriculum/funding-and-jobs/' | relative_url }}) — the sourced numbers, codes, and records this page deliberately leaves out
 - [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) — the day-to-day version of the same operating knowledge
 - [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) — when the mechanisms above fail or are used against you
 - [Belonging]({{ '/hidden-curriculum/belonging/' | relative_url }}) — the identity side of the same machinery

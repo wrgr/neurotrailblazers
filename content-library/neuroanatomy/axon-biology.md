@@ -51,6 +51,8 @@ The axon is the output process of the neuron. Each neuron typically gives rise t
 
 ---
 
+*A note on sizes: a size on this page with a citation after it was checked against that source. Sizes without one are approximate textbook values (Peters, Palay & Webster 1991 is the standard reference) that this site has not traced to a specific measurement; use them for orientation, and measure in your own volume when a call depends on the number.*
+
 ## 1. Axon Overview
 
 Key distinguishing properties of axons compared to dendrites:
@@ -126,7 +128,7 @@ Axon terminals are the synaptic output sites where action potentials trigger neu
 
 ## 5. Synaptic Vesicle Pools
 
-Within each bouton, synaptic vesicles are organized into functionally distinct pools (Rizzoli & Betz, 2005). While these pools are defined physiologically, they have ultrastructural correlates:
+Within each bouton, synaptic vesicles are organized into functionally distinct pools (Rizzoli & Betz, 2005). While these pools are defined physiologically, they have ultrastructural correlates. The pool sizes below are the rounded fractions usually quoted from Rizzoli & Betz's review of five preparations; they vary a lot between synapses, and we have not re-checked each figure against the primary papers:
 
 ### 5.1 Readily Releasable Pool (RRP)
 
@@ -161,7 +163,7 @@ Active zones are the specialized presynaptic membrane domains where vesicle fusi
 
 - **Electron-dense material**: A fuzzy, electron-dense coating on the cytoplasmic face of the presynaptic membrane, directly opposite the postsynaptic PSD.
 - **Vesicle docking**: Vesicles are clustered at and docked to the active zone membrane.
-- **Size**: Typically 200-500 nm in diameter (en face), matching or slightly smaller than the opposing PSD.
+- **Size**: Matching or slightly smaller than the opposing PSD. Harris & Weinberg (2012, Table 1) give PSD areas of 0.008-0.54 µm² in adult rat CA1, roughly 100-800 nm across if treated as a disc (our conversion).
 - **Molecular composition**: RIM, Munc13, RIM-BP, ELKS, and liprin-alpha proteins form the active zone scaffold (not directly visible in conventional EM but demonstrated by immuno-EM).
 - **Number per bouton**: Small cortical boutons typically have one active zone. Large terminals have many: a hippocampal mossy fiber bouton averaged 25 (range 7-45; Rollenhagen et al., 2007), and one fully reconstructed calyx of Held from a 9-day-old rat had 554, with about two anatomically docked vesicles at each (Sätzler et al., 2002).
 
@@ -171,7 +173,7 @@ Active zones are the specialized presynaptic membrane domains where vesicle fusi
 
 In addition to the small, clear synaptic vesicles that contain classical neurotransmitters (glutamate, GABA), some boutons contain dense-core vesicles (DCVs):
 
-- **Size**: About 80-100 nm diameter, clearly larger than clear synaptic vesicles (about 35-45 nm) (Harris & Weinberg, 2012).
+- **Size**: About 80-100 nm diameter, clearly larger than clear synaptic vesicles (about 35 nm) (Harris & Weinberg, 2012).
 - **Appearance**: A dark, electron-dense core surrounded by a clear halo and a vesicle membrane. The dense core contains the packaged neuropeptide or monoamine.
 - **Contents**: Neuropeptides (substance P, neuropeptide Y, enkephalins, BDNF) or monoamines (dopamine, norepinephrine, serotonin).
 - **Distribution**: Not concentrated at active zones like clear vesicles. DCVs are often found scattered throughout the bouton and may be released extrasynaptically through volume transmission.
@@ -236,17 +238,15 @@ Step-by-step identification:
 2. Rizzoli SO, Betz WJ (2005) "Synaptic vesicle pools." *Nature Reviews Neuroscience* 6:57-69.
 3. Leterrier C (2018) "The axon initial segment: an updated viewpoint." *Journal of Neuroscience* 38:2135-2145. doi:10.1523/JNEUROSCI.1922-17.2018
 4. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3→CA1 axons in rat hippocampal slices: implications for presynaptic connectivity and compartmentalization." *Journal of Neuroscience* 18:8300-8310. doi:10.1523/JNEUROSCI.18-20-08300.1998
-5. Rasband MN (2010) "The axon initial segment and the maintenance of neuronal polarity." *Nature Reviews Neuroscience* 11:552-562.
-6. Kole MHP, Stuart GJ (2012) "Signal processing in the axon initial segment." *Neuron* 73:235-247.
-7. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587. doi:10.1101/cshperspect.a005587
-8. Palay SL, Sotelo C, Peters A, Orkand PM (1968) "The axon hillock and the initial segment." *Journal of Cell Biology* 38:193-201. doi:10.1083/jcb.38.1.193
-9. Kole MHP, Ilschner SU, Kampa BM, Williams SR, Ruben PC, Stuart GJ (2008) "Action potential generation requires a high sodium channel density in the axon initial segment." *Nature Neuroscience* 11:178-186. doi:10.1038/nn2040
-10. van Beuningen SFB, Will L, Harterink M, et al. (2015) "TRIM46 controls neuronal polarity and axon specification by driving the formation of parallel microtubule arrays." *Neuron* 88:1208-1226. doi:10.1016/j.neuron.2015.11.012
-11. Sätzler K, Söhl LF, Bollmann JH, et al. (2002) "Three-dimensional reconstruction of a calyx of Held and its postsynaptic principal neuron in the medial nucleus of the trapezoid body." *Journal of Neuroscience* 22:10567-10579. doi:10.1523/JNEUROSCI.22-24-10567.2002
-12. Rollenhagen A, Sätzler K, Rodríguez EP, et al. (2007) "Structural determinants of transmission at large hippocampal mossy fiber synapses." *Journal of Neuroscience* 27:10434-10444. doi:10.1523/JNEUROSCI.1946-07.2007
-13. Lewis TL, Kwon SK, Lee A, et al. (2018) "MFF-dependent mitochondrial fission regulates presynaptic release and axon branching by limiting axonal mitochondria size." *Nature Communications* 9:5008. doi:10.1038/s41467-018-07416-2
-14. Hafner AS, Donlin-Asp PG, Leitch B, Herzog E, Schuman EM (2019) "Local protein synthesis is a ubiquitous feature of neuronal pre- and postsynaptic compartments." *Science* 364:eaau3644. doi:10.1126/science.aau3644
-15. Rall W, Shepherd GM, Reese TS, Brightman MW (1966) "Dendrodendritic synaptic pathway for inhibition in the olfactory bulb." *Experimental Neurology* 14:44-56. doi:10.1016/0014-4886(66)90023-9
+5. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587. doi:10.1101/cshperspect.a005587
+6. Palay SL, Sotelo C, Peters A, Orkand PM (1968) "The axon hillock and the initial segment." *Journal of Cell Biology* 38:193-201. doi:10.1083/jcb.38.1.193
+7. Kole MHP, Ilschner SU, Kampa BM, Williams SR, Ruben PC, Stuart GJ (2008) "Action potential generation requires a high sodium channel density in the axon initial segment." *Nature Neuroscience* 11:178-186. doi:10.1038/nn2040
+8. van Beuningen SFB, Will L, Harterink M, et al. (2015) "TRIM46 controls neuronal polarity and axon specification by driving the formation of parallel microtubule arrays." *Neuron* 88:1208-1226. doi:10.1016/j.neuron.2015.11.012
+9. Sätzler K, Söhl LF, Bollmann JH, et al. (2002) "Three-dimensional reconstruction of a calyx of Held and its postsynaptic principal neuron in the medial nucleus of the trapezoid body." *Journal of Neuroscience* 22:10567-10579. doi:10.1523/JNEUROSCI.22-24-10567.2002
+10. Rollenhagen A, Sätzler K, Rodríguez EP, et al. (2007) "Structural determinants of transmission at large hippocampal mossy fiber synapses." *Journal of Neuroscience* 27:10434-10444. doi:10.1523/JNEUROSCI.1946-07.2007
+11. Lewis TL, Kwon SK, Lee A, et al. (2018) "MFF-dependent mitochondrial fission regulates presynaptic release and axon branching by limiting axonal mitochondria size." *Nature Communications* 9:5008. doi:10.1038/s41467-018-07416-2
+12. Hafner AS, Donlin-Asp PG, Leitch B, Herzog E, Schuman EM (2019) "Local protein synthesis is a ubiquitous feature of neuronal pre- and postsynaptic compartments." *Science* 364:eaau3644. doi:10.1126/science.aau3644
+13. Rall W, Shepherd GM, Reese TS, Brightman MW (1966) "Dendrodendritic synaptic pathway for inhibition in the olfactory bulb." *Experimental Neurology* 14:44-56. doi:10.1016/0014-4886(66)90023-9
 
 ---
 

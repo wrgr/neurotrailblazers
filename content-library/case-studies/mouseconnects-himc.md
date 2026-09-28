@@ -257,11 +257,12 @@ tools.
 
 ### What the Award Commits To
 
-The award abstract commits the project to "involve undergraduates from
-underrepresented backgrounds in the proofreading and scientific discovery phases of
-our work, offering them mentoring as well as research experience." That is the
-project's own commitment, run by the project. Training here does not guarantee a
-place in it.
+The current award abstract (FY2026, 5UM1NS132250-04, NIH RePORTER) says the project
+"will involve high school, undergraduate and graduate students in the proofreading and
+scientific discovery phases of our work, offering trainees mentoring as well as
+research experience." The FY2023 and FY2024 abstracts named undergraduates from
+underrepresented backgrounds instead. That is the project's own commitment, run by
+the project. Training here does not guarantee a place in it.
 
 ### Broadening Participation
 

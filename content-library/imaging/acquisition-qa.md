@@ -44,7 +44,7 @@ the cost of a defect scales with how late you find it, and the escalation is
 steep enough that cheap checks pay for themselves many times over.
 
 Take a staining gradient that reduces membrane contrast by 20% in one corner of
-a 1 mm³ volume — the threshold at which Unit 03 §3 stops acquisition:
+a 1 mm³ volume — the example threshold at which Unit 03 §3 stops acquisition (a working value, not a published standard):
 
 | Caught at | What it costs to deal with | Why the cost jumps |
 |---|---|---|
@@ -120,7 +120,7 @@ Adjacent tiles should have similar intensity distributions (they image neighbori
 
 After section registration, compute residual displacement at control points:
 
-- **Median residual**: Should be <1 pixel. Large residuals indicate section distortion, missing sections, or registration failure.
+- **Median residual**: A common working target is below 1 pixel (this site's rule of thumb, not a published standard; calibrate on your own clean sections). Large residuals indicate section distortion, missing sections, or registration failure.
 - **Spatial pattern of residuals**: Uniform residuals suggest global shift (acceptable after correction). Spatially heterogeneous residuals suggest local distortion (warping, compression).
 
 ### Missing-section detection

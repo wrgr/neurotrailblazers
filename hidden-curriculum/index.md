@@ -83,7 +83,7 @@ naming its own one or two.
 is where all twenty-six are collected, named, and paired with what their absence looks
 like in real work.
 
-## The seven pages
+## The eight pages
 
 | Page | What it covers | Who most needs it |
 |---|---|---|
@@ -91,13 +91,14 @@ like in real work.
 | [Reading and judging]({{ '/hidden-curriculum/reading-and-judging/' | relative_url }}) | How to read a paper in the order experts actually read it, read the methods for what is *absent*, and tell a solid result from a fragile one | Anyone who has been told to "read the paper" and does not know what would count as having done it |
 | [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) | Asking for help, what a PI expects but will not say, how meetings work, escalation, authorship, and what to do after a mistake that affects someone else | Anyone in their first weeks in a lab, and anyone whose family did not contain an academic |
 | [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) | How the machinery actually works — applications, funding, references, transitions | Anyone at or approaching a transition point, who is being told to "network" without being told what that means operationally |
+| [Funding and jobs]({{ '/hidden-curriculum/funding-and-jobs/' | relative_url }}) | The companion with the numbers: how a trainee is paid, what the NIH codes mean for your status, how to read a grant number and find who funds a lab, the funder's calendar, and the jobs large-scale connectomics created — every figure with its official source | Anyone about to accept a position, write to a lab, or apply for a fellowship, and anyone who has never seen a grant number read aloud |
 | [Meta-learning]({{ '/hidden-curriculum/meta-learning/' | relative_url }}) | How to learn deliberately: what to practice, how to tell improvement from familiarity, how to run your own calibration | Anyone working hard and not getting better, which is a specific and fixable condition |
 | [Belonging]({{ '/hidden-curriculum/belonging/' | relative_url }}) | Identity, impostor feelings, and the difference between "I am struggling" and "this environment is hard for people like me" | Anyone deciding whether to stay, and anyone mentoring someone who is |
 | [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) | Disagreement, credit disputes, difficult supervisors, and what recourse actually exists | Anyone currently in one — and best read some months before you need it |
 
 ## How to use this if you are reading alone
 
-Do not read all seven. Read the one matching the thing that is currently going wrong,
+Do not read all eight. Read the one matching the thing that is currently going wrong,
 apply one norm from it this week, and come back.
 
 A workable order if nothing is currently going wrong:

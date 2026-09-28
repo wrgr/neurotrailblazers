@@ -101,8 +101,9 @@ accurate.
 
 ### 2.4 Cost
 
-Kasthuri et al. (2015) described saturated reconstruction of a
-1,500 cubic micrometer volume from mouse neocortex, a tiny fraction of even
+Kasthuri et al. (2015) described saturated reconstruction of a volume of
+mouse neocortex of at most about 1,500 cubic micrometers (Motta et al. 2019
+put the dense cortical reconstructions before theirs at "up to 1500 µm3"), a tiny fraction of even
 one cortical column. You can extrapolate the cost yourself, and the arithmetic
 is more useful than a quoted figure. A cortical mm^3 holds on the order of
 10^5 neurons. At the 2-4 hours per neuron this page assumes for full
@@ -301,8 +302,11 @@ citizen scientists with no neuroscience background could contribute
 meaningful proofreading for retinal connectomics. Key innovations:
 
 - **Game-like interface.** Tracing neurites was presented as a 3D puzzle.
-- **Redundancy.** Each task was completed by multiple players; consensus
-  determined the final segmentation.
+- **Redundancy.** "Each cube is assigned to multiple players (typically 5
+  to 10)", and a consensus "can be computed by voting on each supervoxel",
+  which "was much more accurate than any individual EyeWirer" (Kim et al.,
+  2014). The paper itself counts "over 100,000 registered EyeWirers" from
+  "over 130 countries".
 - **Scale.** When the paper appeared, the EyeWire project reported a
   community of about 120,000 players from nearly 150 countries (EyeWire
   blog, 2014). By March 2025 the project reported 350,000 players over
@@ -400,6 +404,10 @@ question."
 ## 8. Worked Example: Designing a Proofreading Campaign
 
 ### 8.1 Scenario
+
+This campaign is hypothetical. Its error counts, weekly rates and ERL targets are
+illustrative planning numbers chosen for the exercise, not measurements from a
+published project.
 
 You have a freshly segmented 200 x 200 x 100 um volume of mouse visual
 cortex (V1, layers 2/3-4). Your scientific goal is to characterize the

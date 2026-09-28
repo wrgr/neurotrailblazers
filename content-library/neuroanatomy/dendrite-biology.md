@@ -51,6 +51,8 @@ Dendrites are where most of a neuron's synaptic input arrives. They leave the so
 
 ---
 
+*A note on sizes: a size on this page with a citation after it was checked against that source. Sizes without one are approximate textbook values (Peters, Palay & Webster 1991 is the standard reference) that this site has not traced to a specific measurement; use them for orientation, and measure in your own volume when a call depends on the number.*
+
 ## 1. Overview of Dendritic Function
 
 Dendrites receive synaptic input from presynaptic terminals, integrate excitatory and inhibitory signals through passive cable properties and active conductances, and transmit the resulting electrical signals toward the soma. Unlike axons, dendrites:
@@ -171,7 +173,7 @@ Steward and Levy (1982) found that polyribosomes in dentate granule cell dendrit
 - **Polyribosome clusters**: Small groups of ribosomes arranged in rosettes or spirals, often at the base of dendritic spines and within the dendritic shaft.
 - **mRNA localization**: Specific mRNAs (CaMKII-alpha, Arc/Arg3.1, MAP2) are transported into dendrites and translated locally in response to synaptic activity.
 - **Functional significance**: Local translation allows individual synapses to modify their protein composition independently, supporting synapse-specific plasticity.
-- **EM identification**: Ribosomes appear as electron-dense particles approximately 20-25 nm in diameter. Polyribosomes are visible as clusters. Their presence in a process is strong evidence for dendritic (not axonal) identity.
+- **EM identification**: Ribosomes appear as electron-dense particles 10-25 nm in diameter (Harris & Weinberg, 2012). Polyribosomes are visible as clusters. Their presence in a process is strong evidence for dendritic (not axonal) identity.
 - **Rough ER in dendrites**: In proximal dendrites, polyribosomes are often attached to ER membranes (rough ER). In distal dendrites, free polyribosomes predominate.
 
 ---

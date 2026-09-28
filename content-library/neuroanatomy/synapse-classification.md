@@ -62,7 +62,7 @@ Type I synapses are characterized by a pronounced asymmetry between the pre- and
 
 - **Postsynaptic density (PSD)**: Thick and conspicuous, extending about 35-50 nm into the cytoplasm (Harris & Weinberg, 2012). The PSD appears as a prominent electron-dense band on the cytoplasmic face of the postsynaptic membrane.
 - **Presynaptic density**: Thin or modest, creating the defining asymmetry — the postsynaptic side is much more electron-dense than the presynaptic side.
-- **Vesicle morphology**: Round, clear vesicles, about 35-45 nm in diameter (Harris & Weinberg, 2012, give about 35 nm). The round shape is kept in well-fixed, aldehyde-fixed tissue.
+- **Vesicle morphology**: Round, clear vesicles, about 35 nm in diameter (Harris & Weinberg, 2012). The round shape is kept in well-fixed, aldehyde-fixed tissue.
 - **Synaptic cleft width**: Approximately 20 nm, wider than Type II synapses (Harris & Weinberg, 2012; High et al., 2015).
 - **Cleft material**: Dense proteinaceous material fills the cleft, visible as a fuzzy band between the membranes. This material includes trans-synaptic adhesion molecules (neurexin-neuroligin complexes, SynCAMs).
 - **Neurotransmitter**: Predominantly glutamatergic (excitatory).
@@ -75,7 +75,7 @@ Type II synapses show roughly equal density on both sides of the synaptic juncti
 - **Postsynaptic density**: Thin, comparable in thickness to the presynaptic density. Both sides show a modest electron-dense coating, creating the symmetric appearance.
 - **Presynaptic density**: Similar thickness to the PSD, contributing to the overall symmetry.
 - **Vesicle morphology**: Pleomorphic (variable in shape) or flattened vesicles. In aldehyde-fixed tissue, these vesicles tend to adopt oval or flattened profiles rather than the perfectly round shape of Type I vesicles. Note: vesicle shape is somewhat fixation-dependent, and some authors prefer to describe these as "pleomorphic" rather than "flattened."
-- **Synaptic cleft width**: Approximately 12 nm, narrower than Type I. Electron tomography found inhibitory clefts narrowing to 6 nm at their edges, against a uniform 18 nm at excitatory synapses (High et al., 2015).
+- **Synaptic cleft width**: Narrower than Type I. Electron tomography found inhibitory clefts narrowing to 6 nm at their edges, against a uniform 18 nm at excitatory synapses (High et al., 2015).
 - **Cleft material**: Present but less prominent than in Type I.
 - **Neurotransmitter**: Predominantly GABAergic (inhibitory). Also includes glycinergic synapses in brainstem and spinal cord.
 - **Postsynaptic targets**: Found on somata (axosomatic synapses), dendritic shafts (axodendritic synapses) and the axon initial segment (axoaxonic synapses). They are not confined to those sites: in cat area 17, 62% of symmetric synapses were on dendritic shafts, 31% on spines and 7% on somata (Beaulieu & Colonnier, 1985).
@@ -87,7 +87,7 @@ Type II synapses show roughly equal density on both sides of the synaptic juncti
 | PSD thickness | Thick (about 35-50 nm) | Thin, about as thick as the presynaptic density |
 | Pre vs. post density | Asymmetric (post >> pre) | Symmetric (post approximately equals pre) |
 | Vesicle shape | Round/spherical | Pleomorphic/flattened |
-| Cleft width | ~20 nm | ~12 nm |
+| Cleft width | ~20 nm (18 nm by tomography) | Narrower; down to ~6 nm at the edges (High et al., 2015) |
 | Neurotransmitter | Glutamate (excitatory) | GABA (inhibitory) |
 | Typical targets | Spines, dendritic shafts | Dendritic shafts, soma, AIS; some spines |
 
@@ -271,14 +271,13 @@ Rate your confidence:
 2. Colonnier M (1968) "Synaptic patterns on different cell types in the different laminae of the cat visual cortex: an electron microscope study." *Brain Research* 9:268-287. doi:10.1016/0006-8993(68)90234-5
 3. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587. doi:10.1101/cshperspect.a005587
 4. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
-5. Bhatt DH, Zhang S, Gan WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
-6. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3→CA1 axons in rat hippocampal slices: implications for presynaptic connectivity and compartmentalization." *Journal of Neuroscience* 18:8300-8310. doi:10.1523/JNEUROSCI.18-20-08300.1998
-7. Uchizono K (1965) "Characteristics of excitatory and inhibitory synapses in the central nervous system of the cat." *Nature* 207:642-643. doi:10.1038/207642a0
-8. Beaulieu C, Colonnier M (1985) "A laminar analysis of the number of round-asymmetrical and flat-symmetrical synapses on spines, dendritic trunks, and cell bodies in area 17 of the cat." *Journal of Comparative Neurology* 231:180-189. doi:10.1002/cne.902310206
-9. Klemann CJHM, Roubos EW (2011) "The gray area between synapse structure and function: Gray's synapse types I and II revisited." *Synapse* 65:1222-1230. doi:10.1002/syn.20962
-10. High B, Cole AA, Chen X, Reese TS (2015) "Electron microscopic tomography reveals discrete transcleft elements at excitatory and inhibitory synapses." *Frontiers in Synaptic Neuroscience* 7:9. doi:10.3389/fnsyn.2015.00009
-11. Revel JP, Karnovsky MJ (1967) "Hexagonal array of subunits in intercellular junctions of the mouse heart and liver." *Journal of Cell Biology* 33:C7-C12. doi:10.1083/jcb.33.3.c7
-12. Belousov AB, Fontes JD (2013) "Neuronal gap junctions: making and breaking connections during development and injury." *Trends in Neurosciences* 36:227-236. doi:10.1016/j.tins.2012.11.001
+5. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3→CA1 axons in rat hippocampal slices: implications for presynaptic connectivity and compartmentalization." *Journal of Neuroscience* 18:8300-8310. doi:10.1523/JNEUROSCI.18-20-08300.1998
+6. Uchizono K (1965) "Characteristics of excitatory and inhibitory synapses in the central nervous system of the cat." *Nature* 207:642-643. doi:10.1038/207642a0
+7. Beaulieu C, Colonnier M (1985) "A laminar analysis of the number of round-asymmetrical and flat-symmetrical synapses on spines, dendritic trunks, and cell bodies in area 17 of the cat." *Journal of Comparative Neurology* 231:180-189. doi:10.1002/cne.902310206
+8. Klemann CJHM, Roubos EW (2011) "The gray area between synapse structure and function: Gray's synapse types I and II revisited." *Synapse* 65:1222-1230. doi:10.1002/syn.20962
+9. High B, Cole AA, Chen X, Reese TS (2015) "Electron microscopic tomography reveals discrete transcleft elements at excitatory and inhibitory synapses." *Frontiers in Synaptic Neuroscience* 7:9. doi:10.3389/fnsyn.2015.00009
+10. Revel JP, Karnovsky MJ (1967) "Hexagonal array of subunits in intercellular junctions of the mouse heart and liver." *Journal of Cell Biology* 33:C7-C12. doi:10.1083/jcb.33.3.c7
+11. Belousov AB, Fontes JD (2013) "Neuronal gap junctions: making and breaking connections during development and injury." *Trends in Neurosciences* 36:227-236. doi:10.1016/j.tins.2012.11.001
 
 ---
 

@@ -53,6 +53,8 @@ This script provides a systematic guide to using organelle evidence for compartm
 
 ---
 
+*A note on sizes: a size on this page with a citation after it was checked against that source. Sizes without one are approximate textbook values (Peters, Palay & Webster 1991 is the standard reference) that this site has not traced to a specific measurement; use them for orientation, and measure in your own volume when a call depends on the number.*
+
 ## 1. Why Organelles Matter for Annotation
 
 Neurons are highly polarized cells with distinct molecular and structural compositions in each compartment. This polarization is reflected in organelle distribution:
@@ -107,7 +109,7 @@ Two 3D EM studies show the range. In layer 2/3 cortical pyramidal neurons, dendr
 
 ### 3.1 Rough Endoplasmic Reticulum (RER)
 
-- **Defining feature**: Ribosomes (electron-dense particles approximately 20-25 nm in diameter) studded on the cytoplasmic face of the ER membrane.
+- **Defining feature**: Ribosomes (electron-dense particles 10-25 nm in diameter; Harris & Weinberg, 2012) studded on the cytoplasmic face of the ER membrane.
 - **EM appearance**: Flattened cisternae with a dark, beaded outline. Free polyribosomes nearby appear as rosettes or spirals of dense dots.
 - **Compartment distribution**:
   - **Soma**: Abundant. The Nissl substance is stacked RER with interspersed polyribosomes. This is the neuron's protein factory.
@@ -179,7 +181,7 @@ Autophagosomes are double-membrane-bound vesicles that engulf cytoplasmic materi
 
 ER-mitochondria contact sites (also called mitochondria-associated ER membranes, or MAMs) are increasingly recognized as functionally important:
 
-- **Appearance**: Regions where the ER membrane and the outer mitochondrial membrane come within 10-30 nm of each other, running in parallel for 50-200 nm or more. No membrane fusion occurs — the two organelles remain distinct.
+- **Appearance**: Regions where the ER membrane and the outer mitochondrial membrane come within about 10-25 nm of each other and run in parallel. By electron tomography, the tethers are about 10 nm long at smooth ER and about 25 nm at rough ER (Csordás et al., 2006). No membrane fusion occurs — the two organelles remain distinct.
 - **Function**: Calcium transfer (ER releases calcium through IP3 receptors, taken up by mitochondrial calcium uniporter), lipid synthesis and transfer, mitochondrial fission regulation.
 - **EM identification**: Look for a smooth or rough ER profile closely apposed to a mitochondrion with a consistent narrow gap. At high magnification, protein tethers may be visible as faint cross-bridges in the gap.
 - **Compartment distribution**: Found in all compartments but best characterized in somata and dendrites where both organelles are large and abundant.
@@ -250,7 +252,7 @@ Step-by-step organelle analysis:
 | "If it has mitochondria, it must be a dendrite." | All neuronal compartments contain mitochondria. Mitochondrial size and shape vary by compartment and by region, but mere presence is not diagnostic. |
 | "A bouton always contains a mitochondrion." | Along CA3-to-CA1 axons, 53% of varicosities had none (Shepherd & Harris, 1998). Its absence does not argue against a bouton. |
 | "Axons have no organelles." | Axons contain mitochondria, smooth ER, neurofilaments, and microtubules. They lack rough ER, Golgi and (past the initial segment) visible ribosomes. That is a specific absence, not a general one. |
-| "Ribosomes are easy to see." | Individual ribosomes are only approximately 20-25 nm and can be difficult to distinguish from noise or other dense particles. Polyribosome clusters (rosettes of 5-10 particles) are more reliably identified. High-quality fixation and imaging are essential. |
+| "Ribosomes are easy to see." | Individual ribosomes are only 10-25 nm (Harris & Weinberg, 2012) and can be difficult to distinguish from noise or other dense particles. Polyribosome clusters (rosettes of 5-10 particles) are more reliably identified. High-quality fixation and imaging are essential. |
 | "The spine apparatus is found in all spines." | Only a subset of spines contain a spine apparatus, predominantly large mushroom spines (more than 80% of large mushroom spines in adult rat CA1; Spacek & Harris, 1997). Its absence does not exclude spine identity. |
 | "Lysosomes in an axon mean the tissue is unhealthy." | While lysosome accumulation in axons can indicate pathology (e.g., dystrophic neurites in Alzheimer's disease), occasional lysosomes in transit are normal. Context matters. |
 | "Glycogen granules can be found in any neuronal process." | In the healthy CNS, visible glycogen granules are overwhelmingly astrocytic. Neurons do contain a low but measurable amount of glycogen (Saez et al., 2014), so the rule is about what you can see, not what is chemically present. Granules in a process strongly support glial identity. |
@@ -262,14 +264,15 @@ Step-by-step organelle analysis:
 1. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
 2. Lewis TL, Kwon SK, Lee A, et al. (2018) "MFF-dependent mitochondrial fission regulates presynaptic release and axon branching by limiting axonal mitochondria size." *Nature Communications* 9:5008. doi:10.1038/s41467-018-07416-2
 3. Steward O, Levy WB (1982) "Preferential localization of polyribosomes under the base of dendritic spines in granule cells of the dentate gyrus." *Journal of Neuroscience* 2:284-291. doi:10.1523/JNEUROSCI.02-03-00284.1982
-4. Bhatt DH, Zhang S, Gan WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
-5. Spacek J, Harris KM (1997) "Three-dimensional organization of smooth endoplasmic reticulum in hippocampal CA1 dendrites and dendritic spines of the immature and mature rat." *Journal of Neuroscience* 17:190-203. doi:10.1523/JNEUROSCI.17-01-00190.1997
-6. Nixon RA (2013) "The role of autophagy in neurodegenerative disease." *Nature Medicine* 19:983-997. doi:10.1038/nm.3232
-7. Faitg J, Lacefield C, Davey T, et al. (2021) "3D neuronal mitochondrial morphology in axons, dendrites, and somata of the aging mouse hippocampus." *Cell Reports* 36:109509. doi:10.1016/j.celrep.2021.109509
-8. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3→CA1 axons in rat hippocampal slices: implications for presynaptic connectivity and compartmentalization." *Journal of Neuroscience* 18:8300-8310. doi:10.1523/JNEUROSCI.18-20-08300.1998
-9. Palay SL, Sotelo C, Peters A, Orkand PM (1968) "The axon hillock and the initial segment." *Journal of Cell Biology* 38:193-201. doi:10.1083/jcb.38.1.193
-10. Hafner AS, Donlin-Asp PG, Leitch B, Herzog E, Schuman EM (2019) "Local protein synthesis is a ubiquitous feature of neuronal pre- and postsynaptic compartments." *Science* 364:eaau3644. doi:10.1126/science.aau3644
-11. Saez I, Duran J, Sinadinos C, et al. (2014) "Neurons have an active glycogen metabolism that contributes to tolerance to hypoxia." *Journal of Cerebral Blood Flow & Metabolism* 34:945-955. doi:10.1038/jcbfm.2014.33
+4. Spacek J, Harris KM (1997) "Three-dimensional organization of smooth endoplasmic reticulum in hippocampal CA1 dendrites and dendritic spines of the immature and mature rat." *Journal of Neuroscience* 17:190-203. doi:10.1523/JNEUROSCI.17-01-00190.1997
+5. Nixon RA (2013) "The role of autophagy in neurodegenerative disease." *Nature Medicine* 19:983-997. doi:10.1038/nm.3232
+6. Faitg J, Lacefield C, Davey T, et al. (2021) "3D neuronal mitochondrial morphology in axons, dendrites, and somata of the aging mouse hippocampus." *Cell Reports* 36:109509. doi:10.1016/j.celrep.2021.109509
+7. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3→CA1 axons in rat hippocampal slices: implications for presynaptic connectivity and compartmentalization." *Journal of Neuroscience* 18:8300-8310. doi:10.1523/JNEUROSCI.18-20-08300.1998
+8. Palay SL, Sotelo C, Peters A, Orkand PM (1968) "The axon hillock and the initial segment." *Journal of Cell Biology* 38:193-201. doi:10.1083/jcb.38.1.193
+9. Hafner AS, Donlin-Asp PG, Leitch B, Herzog E, Schuman EM (2019) "Local protein synthesis is a ubiquitous feature of neuronal pre- and postsynaptic compartments." *Science* 364:eaau3644. doi:10.1126/science.aau3644
+10. Saez I, Duran J, Sinadinos C, et al. (2014) "Neurons have an active glycogen metabolism that contributes to tolerance to hypoxia." *Journal of Cerebral Blood Flow & Metabolism* 34:945-955. doi:10.1038/jcbfm.2014.33
+11. Csordás G, Renken C, Várnai P, et al. (2006) "Structural and functional features and significance of the physical linkage between ER and mitochondria." *Journal of Cell Biology* 174:915-921. doi:10.1083/jcb.200604016
+12. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587. doi:10.1101/cshperspect.a005587
 
 ---
 

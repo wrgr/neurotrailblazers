@@ -109,6 +109,7 @@ EM acquisition, image formation, and artifact management.
 | [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) | Knife chatter, charging, folds, tears, drift; downstream impact | 03, 05 |
 | [Tissue preparation]({{ '/content-library/imaging/tissue-preparation/' | relative_url }}) | Fixation, heavy-metal staining, embedding, sectioning strategies | 03 |
 | [Acquisition QA]({{ '/content-library/imaging/acquisition-qa/' | relative_url }}) | Per-tile QC, pilot reconstructions, metadata requirements | 03 |
+| [Beyond EM]({{ '/content-library/imaging/beyond-em/' | relative_url }}) | X-ray, expansion and light-sheet microscopy, and barcoded sequencing: what each resolves, and which questions still need electron microscopy | 02, 03 |
 
 ## Infrastructure
 
@@ -191,8 +192,7 @@ per domain) is on the
 | [Benchmark Datasets &amp; Repositories]({{ '/technical-training/journal-club/?dimension=dataset' | relative_url }}) | 115 | [Datasets &amp; case studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | [Datasets catalog]({{ '/datasets/' | relative_url }}) |
 | [NeuroAI, Biophysics &amp; Models]({{ '/technical-training/journal-club/?dimension=neuroai' | relative_url }}) | 100 | [NeuroAI &amp; computational modeling]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) |
 | [Health, Disease &amp; Translation]({{ '/technical-training/journal-club/?dimension=health' | relative_url }}) | 42 | *None yet* | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) |
-| [Workforce Training &amp; Outreach]({{ '/technical-training/journal-club/?dimension=training-outreach' | relative_url }}) | 21 | *None yet* | [Comparative connectomics]({{ '/content-library/connectomics/comparative-connectomics/' | relative_url }}) | What carries over between worm, larval and adult fly, mouse and human connectomes, and what does not; whole brains versus cortical fragments | 09 |
-| [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) |
+| [Workforce Training &amp; Outreach]({{ '/technical-training/journal-club/?dimension=training-outreach' | relative_url }}) | 21 | *None yet* | [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) |
 
 Two labels sit outside the twelve: 16 papers classified `other`, and 2 classified
 `mri`. Macroscale connectivity is out of scope for a nanoscale corpus, which is

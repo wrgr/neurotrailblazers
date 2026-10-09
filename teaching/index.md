@@ -28,6 +28,7 @@ content_type: delivery
       <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
       <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
       <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
+      <a href="{{ '/teaching/connectomics-taxi-pitches/' | relative_url }}" class="btn btn-secondary">Explain your work in a taxi ride</a>
       <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course</a>
     </div>
   </section>

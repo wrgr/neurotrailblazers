@@ -475,22 +475,10 @@ content_type: core
 .jcg-eco-item strong { color: #475569; display: block; font-size: 0.68rem; text-transform: uppercase; margin-bottom: 0.1rem; }
 .jcg-eco-item span { color: #0f172a; font-weight: 600; }
 
-.jcg-analysis-pipeline { margin-top: 0.5rem; border-top: 1px dashed #cbd5e1; padding-top: 0.5rem; }
-.jcg-pipe-stage {
-  display: flex; gap: 0.5rem; margin-bottom: 0.4rem; font-size: 0.76rem; line-height: 1.35;
-  background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.4rem 0.55rem;
-}
-.jcg-pipe-badge {
-  font-weight: 700; font-size: 0.68rem; padding: 0.15rem 0.4rem; border-radius: 4px; height: fit-content;
-  white-space: nowrap; flex-shrink: 0;
-}
-.jcg-badge-prep { background: #fef3c7; color: #92400e; }
-.jcg-badge-recon { background: #dbeafe; color: #1e40af; }
-.jcg-badge-ai { background: #ede9fe; color: #5b21b6; }
-.jcg-badge-qc { background: #d1fae5; color: #065f46; }
-.jcg-badge-stats { background: #fce7f3; color: #9d174d; }
-.jcg-pipe-desc strong { color: #1e293b; display: block; font-size: 0.74rem; }
-.jcg-pipe-desc p { margin: 0.1rem 0 0 0; color: #475569; font-size: 0.72rem; }
+.jcg-eco-item small { display: block; margin-top: 0.2rem; color: #64748b; }
+.jcg-paper-abstract h4 { font-size: 0.9rem; margin: 1rem 0 0.4rem; }
+.jcg-paper-abstract p { font-size: 0.82rem; color: #334155; line-height: 1.55; }
+@media (max-width: 640px) { .jcg-ecosystem-grid { grid-template-columns: 1fr; } .jcg-eco-item { grid-column: 1 !important; } }
 
 /* Pedagogical Summaries Tab Switcher */
 .jcg-drawer-summaries { margin: 1rem 0; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -627,6 +615,9 @@ content_type: core
     'zebrafish': '#7c3aed',
     'cross-species': '#db2777',
     'theory-model': '#4b5563',
+    'rat': '#84cc16',
+    'macaque': '#ec4899',
+    'other': '#0f766e',
     'general': '#64748b'
   };
 
@@ -637,6 +628,17 @@ content_type: core
     'connected': '#10b981',
     'participant': '#64748b'
   };
+
+  var ORGANISM_LABELS = { mouse: 'Mouse', rat: 'Rat', drosophila: 'Drosophila', fly: 'Drosophila', human: 'Human', 'c-elegans': 'C. elegans', elegans: 'C. elegans', zebrafish: 'Zebrafish', macaque: 'Macaque', other: 'Other system' };
+
+  function organismLabel(p) {
+    var labels = p.organism.map(function (o) { return ORGANISM_LABELS[o.toLowerCase()]; }).filter(Boolean);
+    return Array.from(new Set(labels)).join(', ') || 'Not recorded';
+  }
+
+  function escapeHtml(value) {
+    return String(value || '').replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; });
+  }
 
   var CATEGORY_HUBS = {};
   var CATEGORY_LABELS = {
@@ -803,7 +805,10 @@ content_type: core
         { k: 'Human Cortex', c: ORGANISM_COLORS['human'] },
         { k: 'C. elegans (Worm)', c: ORGANISM_COLORS['c-elegans'] },
         { k: 'Zebrafish', c: ORGANISM_COLORS['zebrafish'] },
-        { k: 'Cross-Species / General', c: ORGANISM_COLORS['general'] }
+        { k: 'Rat', c: ORGANISM_COLORS['rat'] },
+        { k: 'Macaque', c: ORGANISM_COLORS['macaque'] },
+        { k: 'Other tagged systems', c: ORGANISM_COLORS['other'] },
+        { k: 'Not tagged / general', c: ORGANISM_COLORS['general'] }
       ].forEach(function (item) {
         var row = document.createElement('div');
         row.className = 'jcg-legend-item';
@@ -864,6 +869,7 @@ content_type: core
         citation_role: d.citation_role || 'participant',
         scope_role: d.scope_role || 'participant',
         summary: d.summary || '',
+        abstract: d.abstract || '',
         searchText: [d.title, d.authors, d.journal, d.doi, d.summary, d.abstract, JSON.stringify(d.ocar || {}), orgs.join(' ')].join(' ').toLowerCase(),
         citation: d.citation || '',
         cites: d.cites || [],
@@ -1894,61 +1900,18 @@ content_type: core
       '</div>' +
     '</div>';
 
-    // Ecosystem & Methodological Pipeline Breakdown
-    var orgStr = (p.organism && p.organism.length) ? p.organism.join(', ') : 'Neural System';
-    var datasetGuess = 'Open Connectome Volume';
-    var oLower = orgStr.toLowerCase();
-    if (oLower.indexOf('fly') !== -1 || oLower.indexOf('drosophila') !== -1) {
-      datasetGuess = 'FlyWire / FAFB / hemibrain';
-    } else if (oLower.indexOf('mouse') !== -1 || oLower.indexOf('rodent') !== -1) {
-      datasetGuess = 'MICrONS / Kasthuri / MCP';
-    } else if (oLower.indexOf('elegans') !== -1 || oLower.indexOf('worm') !== -1) {
-      datasetGuess = 'C. elegans N2U / Cook et al.';
-    } else if (oLower.indexOf('human') !== -1) {
-      datasetGuess = 'H01 Human Cortex / Shapson-Coe';
-    }
-
-    var toolsGuess = 'Neuroglancer, CAVE / PyChunkedGraph, CloudVolume, natverse, Python';
-    if (p.dimension === 'methods-imaging') {
-      toolsGuess = 'Serial-section EM, FIB-SEM, Ilastik, VAST, AlignTK';
-    } else if (p.dimension === 'segmentation-ai') {
-      toolsGuess = 'Flood-Filling Networks (FFN), 3D U-Net, PyTorch, CAVE';
-    }
-
-    var actionSnippet = (p.ocar && p.ocar.action) ? p.ocar.action : 'Dense volume EM imaging and circuit reconstruction.';
-    var resSnippet = (p.ocar && p.ocar.resolution) ? p.ocar.resolution : 'Identification of synaptic connectivity motifs and cell-type wiring.';
-
+    // Only corpus-backed metadata belongs here; species never determines a dataset or protocol.
     var ecosystemAndPipelineHtml = '<div class="jcg-ecosystem-box">' +
-      '<h4>🌐 Research Ecosystem Preview</h4>' +
+      '<h4>Paper information</h4>' +
       '<div class="jcg-ecosystem-grid">' +
-        '<div class="jcg-eco-item"><strong>Model Organism</strong><span>' + orgStr + '</span></div>' +
-        '<div class="jcg-eco-item"><strong>Dataset / Volume</strong><span>' + datasetGuess + '</span></div>' +
-        '<div class="jcg-eco-item" style="grid-column: span 2;"><strong>Software & Tool Stack</strong><span>' + toolsGuess + '</span></div>' +
+        '<div class="jcg-eco-item"><strong>Model organism</strong><span>' + escapeHtml(organismLabel(p)) + '</span><small>From corpus tags</small></div>' +
+        '<div class="jcg-eco-item"><strong>Dataset / volume</strong><span>Not recorded</span></div>' +
+        '<div class="jcg-eco-item" style="grid-column: span 2;"><strong>Software &amp; tools</strong><span>Not recorded</span></div>' +
       '</div>' +
-      '<details class="jcg-analysis-pipeline" open>' +
-        '<summary style="font-weight:700; font-size:0.78rem; color:#1e293b; cursor:pointer; margin-bottom:0.4rem;">🔬 Analysis Protocol Breakdown (How Conducted)</summary>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-prep">1. Prep & Imaging</span>' +
-          '<div class="jcg-pipe-desc"><strong>High-Pressure Freezing & Staining</strong><p>Heavy metal infiltration (OsO₄, uranyl acetate, lead aspartate) for nanometer ultrastructure contrast.</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-recon">2. Alignment</span>' +
-          '<div class="jcg-pipe-desc"><strong>Non-Rigid 3D Registration</strong><p>Elastic cross-section stitching, distortion compensation, and chunked cloud pyramid storage.</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-ai">3. AI Segmentation</span>' +
-          '<div class="jcg-pipe-desc"><strong>Deep Learning Affinity & Synapse Prediction</strong><p>' + actionSnippet + '</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-qc">4. Proofreading</span>' +
-          '<div class="jcg-pipe-desc"><strong>Collaborative Verification & Error Correction</strong><p>Split/merge validation, false positive synapse pruning, and dendritic skeleton completeness audit.</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-stats">5. Circuit Analysis</span>' +
-          '<div class="jcg-pipe-desc"><strong>Graph Topology & Biological Resolution</strong><p>' + resSnippet + '</p></div>' +
-        '</div>' +
-      '</details>' +
+      '<p class="jcg-hint">Dataset, software and protocol details have not been curated here. Open the publication for its methods.</p>' +
     '</div>';
+    var abstractHtml = '<section class="jcg-paper-abstract"><h4>Paper abstract</h4><p>' +
+      (p.abstract ? escapeHtml(p.abstract) : 'Abstract not available in this corpus. Open the publication to read it.') + '</p></section>';
 
     var html = '<h3>' + p.title + '</h3>' +
       '<div class="jcg-panel-authors">' + p.authors + ' &bull; <em>' + p.journal + '</em> (' + p.year + ')</div>' +
@@ -1968,9 +1931,12 @@ content_type: core
       '</div>' +
       neighborhoodToolbarHtml +
       ecosystemAndPipelineHtml +
+      abstractHtml +
+      '<details class="jcg-corpus-notes"><summary>Corpus reading notes (unverified)</summary><p class="jcg-hint">These notes have not been checked against this paper. Use the abstract and original publication for its methods and findings.</p>' +
       ocarHtml +
       summariesHtml +
       promptsHtml +
+      '</details>' +
       citingChipsHtml +
       citedChipsHtml +
       '<div class="jcg-ocar-step" style="margin-top:1rem; font-size:0.75rem; color:#64748b;">' +
@@ -2065,28 +2031,12 @@ content_type: core
       modalTitleEl.textContent = '🤖 AI Analysis Deep-Dive & Methodological Protocol';
       modalDescEl.innerHTML = 'Analysis protocol & critique for: <strong>' + singlePaperTarget.title + '</strong> (' + singlePaperTarget.year + ')';
       var p = singlePaperTarget;
-      var prompt = 'You are a principal investigator and expert computational neuroscientist in nanoscale connectomics.\n' +
-        'Perform a comprehensive methodological analysis and technical audit for the following milestone study:\n\n' +
-        '### Paper Metadata & Research Ecosystem:\n' +
-        '- **Title**: "' + p.title + '"\n' +
-        '- **Authors**: ' + p.authors + '\n' +
-        '- **Journal/Year**: ' + p.journal + ' (' + p.year + ')\n' +
-        '- **Research Subfield**: ' + p.dimension + '\n' +
-        '- **Target Organism**: ' + ((p.organism && p.organism.join(', ')) || 'Neural tissue') + '\n' +
-        '- **Corpus Tier**: ' + (p.tier === 500 ? 'Core Flagship' : (p.tier === 1000 ? 'Landmark' : 'Comprehensive')) + '\n\n' +
-        '### 5-Part OCAR Narrative Framework:\n' +
-        '- **Opportunity (Biological Premise)**: ' + ((p.ocar && p.ocar.opportunity) || p.summary) + '\n' +
-        '- **Challenge (Technical Bottleneck)**: ' + ((p.ocar && p.ocar.challenge) || 'Dense volumetric reconstruction and synaptic proofreading complexity.') + '\n' +
-        '- **Action (Methodology & Pipeline)**: ' + ((p.ocar && p.ocar.action) || 'Volume electron microscopy, automated segmentation, and circuit analysis.') + '\n' +
-        '- **Resolution (Empirical Discovery)**: ' + ((p.ocar && p.ocar.resolution) || 'Reconstruction and cell-type connectivity mapping.') + '\n' +
-        '- **Future Work (Open Horizons)**: ' + ((p.ocar && p.ocar.future_work) || 'Comparative cross-species wiring and functional validation.') + '\n\n' +
-        '### In-Depth Methodological & Ecosystem Analysis Required:\n' +
-        '1. **Experimental & Imaging Protocol**: Explain how tissue was preserved, stained, sectioned, and imaged (specifying electron microscopy modality, voxel resolution in nm xyz, and acquisition throughput).\n' +
-        '2. **Volume Reconstruction & AI Segmentation**: Detail the algorithmic pipeline used for 3D alignment, deep learning affinity predictions (e.g. FFN / 3D U-Net), automated synapse detection, and cleft polarity assignment.\n' +
-        '3. **Proofreading Protocol & Error Budget**: What proofreading platform (e.g. CAVE, PyChunkedGraph, Neuroglancer, VAST) was used? How were false splits, false merges, and volume completeness quantified?\n' +
-        '4. **Circuit Graph Analysis & Statistical Models**: Detail the network metrics (e.g. graph adjacency matrices, motif censuses, path lengths, recurrent vs feedforward loops) used to establish biological claims.\n' +
-        '5. **Reproducible Python Analysis Recipe**: Provide clean Python pseudo-code using standard connectomics libraries (`navis`, `caveclient`, `networkx`, `scipy`) to reproduce the primary circuit connectivity analysis.\n\n' +
-        'Structure your response with clear markdown headings, concise bullet points, and explicit citations to this publication.';
+      var prompt = 'Review this publication using its original text where available and the supplied abstract.\n' +
+        'Distinguish reported facts from interpretation. Do not infer datasets, software, EM preparation, segmentation or proofreading from an organism tag or research category. If a detail is absent, write "not reported in the provided material".\n\n' +
+        'Title: ' + p.title + '\nAuthors: ' + p.authors + '\nJournal / year (corpus metadata): ' + p.journal + ' (' + p.year + ')\n' +
+        'Publication: https://doi.org/' + p.doi + '\nOrganism tags (not independently verified): ' + organismLabel(p) + '\n\n' +
+        'Abstract:\n' + (p.abstract || 'Not available in this corpus.') + '\n\n' +
+        'Explain the research question, methods actually reported, main findings and limitations. Identify dataset and software names only when the paper explicitly gives them, cite the supporting passage, and propose questions needed to assess reproducibility.';
 
       promptTextarea.value = prompt;
       return;

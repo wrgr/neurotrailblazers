@@ -4,6 +4,7 @@ import json
 import re
 from pathlib import Path
 from typing import Dict, Any, List
+from classify_engine import normalize_existing_organisms
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
@@ -157,7 +158,7 @@ def main():
             lines.append(f"  - {c_doi}")
 
         # Tags
-        orgs = p.get("organism", ["general"])
+        orgs = normalize_existing_organisms(p.get("organism", ["general"]), title + " " + abstract)
         lines.append("  tags:")
         for org in orgs:
             lines.append(f"  - {org}")

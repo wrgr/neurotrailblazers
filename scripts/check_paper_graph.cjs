@@ -146,6 +146,16 @@ function separated(nodes) {
   const fixtures = [{ id:'fixture', title:'Title', authors:'Author', dimension:'pipeline', organism:['mouse'], tier:500, year:1960, summary:'summaryneedle', abstract:'abstractneedle', ocar:{future_work:'futureneedle'} }];
   const f = await harness(fixtures); f.drain();
   for (const q of ['summaryneedle','abstractneedle','futureneedle','AUTHOR','mouse']) { f.change('jcg-search',q,'input'); assert.equal(f.graph.state().nodes.length, 1, q); }
+  const ratPaper = data.find(p => p.doi === '10.1371/journal.pbio.0030068');
+  assert.ok(ratPaper && ratPaper.organism.includes('rat') && !ratPaper.organism.includes('mouse'), 'Rat cortex does not imply mouse');
+  h.element('jcg-reset').dispatch('click'); h.drain();
+  h.graph.select(h.graph.state().nodes.find(p => p.id === ratPaper.id)); h.drain();
+  const card = h.element('jcg-panel-body').innerHTML;
+  assert.match(card, /<strong>Model organism<\/strong><span>Rat<\/span>/);
+  assert.match(card, /<strong>Dataset \/ volume<\/strong><span>Not recorded<\/span>/);
+  assert.ok(!card.includes('MICrONS / Kasthuri / MCP') && !card.includes('High-Pressure Freezing'), 'No guessed dataset or protocol');
+  assert.match(card, /Paper abstract/);
+  assert.match(card, /Corpus reading notes \(unverified\)/);
   assert.deepEqual(h.errors, []);
   const failed = await harness([], true);
   assert.match(failed.element('jcg-count').textContent, /Could not load/);

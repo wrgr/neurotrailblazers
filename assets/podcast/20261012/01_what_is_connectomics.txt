@@ -1,0 +1,71 @@
+WILL: Welcome to the NeuroTrailblazers Podcast. I'm Will.
+
+JULIAN: And I'm Julian. I'm six and a half, and Will is my dad. Dad, what are we figuring out today?
+
+WILL: How scientists make maps of brain connections. The name for that science is connectomics.
+
+JULIAN: Connectomics. That's a lot of word.
+
+WILL: It is. Here's an easier place to start. When someone kicks a soccer ball toward you, how do you know where to put your foot?
+
+JULIAN: I watch the ball. Then I try to stop it. Sometimes it goes right past me.
+
+WILL: Your eyes and brain are working together. Messages travel between cells, and your brain sends signals that help your muscles move. That happens very quickly.
+
+JULIAN: Before I can even say, here comes the ball?
+
+WILL: Often, yes. Those message-carrying cells are called neurons. They have long, thin branches, and they connect with other cells.
+
+JULIAN: Like little paths going everywhere?
+
+WILL: That's a useful way to picture it. Connectomics asks where those paths go, which cells they connect, and what we can learn from the pattern.
+
+JULIAN: So we're making a map of the paths.
+
+WILL: Exactly. That map is called a connectome. You don't have to remember every new word. Start with the idea: which cell connects to which other cell?
+
+JULIAN: How does a message get from one cell to the next?
+
+WILL: At many connections, one cell sends a tiny chemical message across a very small gap. The place where the cells communicate is called a synapse.
+
+JULIAN: Like passing a note across a little space?
+
+WILL: A bit like that. No paper notes, of course. But the message can change what the next cell does. Lots of small connections help a group of cells work together.
+
+JULIAN: Can't you just look at a brain and see the paths?
+
+WILL: Most are much too small to see with our eyes. Think about looking at your school from far away. You can see the building, but you can't see all the doors and hallways inside.
+
+JULIAN: You need to get closer. A lot closer.
+
+WILL: Right. Different tools show different things. Some show big routes through a brain. Others show tiny connections between cells. Both kinds of maps can help.
+
+JULIAN: What could the little connections tell us?
+
+WILL: Take seeing movement. Cells at the back of your eye help work out which way something is moving. Studying their connections has helped scientists understand how they do that.
+
+JULIAN: So, a ball going left instead of right. That would be useful for soccer.
+
+WILL: It would. And it gives scientists a question to test. Does this pattern of connections help these cells notice movement in a certain direction?
+
+JULIAN: Could your map tell you that I'm thinking about scoring a goal?
+
+WILL: The map alone couldn't. A street map shows where the roads go. It doesn't show which cars are on them right now. We also need ways to measure what brain cells are doing.
+
+JULIAN: The map gives you part of the story. You still have to watch what happens.
+
+WILL: You've got it. We put different kinds of clues together. A map, the cells' signals, and what an animal does can each teach us something.
+
+JULIAN: And why does that matter for people who are sick?
+
+WILL: We want to understand what changes when a brain is hurt or doesn't work as it should. Better maps may help researchers find useful questions to test. A map itself isn't a treatment.
+
+JULIAN: So it's a step toward figuring things out. There's still more work to do.
+
+WILL: Yes. Here's a question for our listeners. Think about a map of your school or neighborhood. What could it tell you, and what would it leave out? Give yourself a moment.
+
+JULIAN: My school map could show the lunchroom. But it couldn't tell me what's for lunch. I'd still need to find that out.
+
+WILL: Exactly. Our starting point is the Neuronauts story at NeuroTrailblazers dot org. Next time, we'll explain NIH BRAIN CONNECTS, a program helping teams build better brain maps.
+
+JULIAN: Okay. We learned the science word. Next comes the program. See you next time!

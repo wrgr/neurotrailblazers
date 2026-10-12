@@ -1,0 +1,71 @@
+WILL: Welcome to the NeuroTrailblazers Podcast. I'm Will.
+
+JULIAN: I'm Julian. I'm six and a half. Dad, we talked about connectomics. Now what is NIH BRAIN CONNECTS?
+
+WILL: Connectomics is the science of mapping brain connections. NIH BRAIN CONNECTS is a research program that helps teams develop the tools to make those maps.
+
+JULIAN: So the science and the program have different jobs.
+
+WILL: Yes. Think about soccer. Soccer is the game. An organization can bring teams together and help them play. The organization and the game aren't the same thing.
+
+JULIAN: Okay. And what do the letters NIH mean?
+
+WILL: National Institutes of Health. It's part of the United States government, and it supports health research. Its BRAIN Initiative is a larger effort to help scientists understand the brain.
+
+JULIAN: And BRAIN CONNECTS is one part of that effort. I think I've got it.
+
+WILL: Right. A big goal is to make it possible to map connections across entire brains. To get there, teams need tools that can handle far more work, accurately and at a reasonable cost.
+
+JULIAN: Does that mean someone has already mapped every tiny connection in a whole human brain?
+
+WILL: No. That's much bigger than the detailed maps we have now. A goal tells us what people are working toward. It doesn't mean they've already finished it.
+
+JULIAN: What do the teams need to make better?
+
+WILL: Lots of things. Taking clear pictures. Following the paths of cells. Checking mistakes. And helping other scientists find and use the maps. No one team can do every part alone.
+
+JULIAN: Why not just buy a bigger microscope?
+
+WILL: A better microscope can help. But imagine taking a thousand photos of a giant puzzle. You still need to put the pieces together, check them, and work out what the picture shows.
+
+JULIAN: So more pictures can also mean more work afterward.
+
+WILL: Exactly. The steps have to work together. A faster camera doesn't solve a problem in the next step. The program supports teams working on different parts of the job.
+
+JULIAN: Does every team make the same kind of map?
+
+WILL: No. Some look at tiny connections between cells. Others follow longer paths between brain areas. Like a street map and a map of a building, each shows a different level of detail.
+
+JULIAN: You pick the map that helps with your question.
+
+WILL: Yes. And learning how the different maps fit together is part of the work. You don't need the same view for every question.
+
+JULIAN: What have scientists actually managed to map so far?
+
+WILL: Across the wider field, scientists have mapped a tiny worm's nervous system and an adult fruit fly brain. They've also made very detailed maps of small pieces of mouse and human brain.
+
+JULIAN: Were all those maps made by BRAIN CONNECTS?
+
+WILL: No. Many teams and funding groups contributed to that longer story. BRAIN CONNECTS is part of the effort to move the science forward. The Neuronauts story explains some of those earlier steps.
+
+JULIAN: Why use a fly if we want to understand people?
+
+WILL: Smaller brains let us study a whole network of cells and test our tools. That can teach us useful things. But a fly is different from a person, so we must check what carries over.
+
+JULIAN: How can I tell whether a big project is making progress?
+
+WILL: Ask what changed. Did the team make a better tool? A larger map? Find and fix more mistakes? Or share data that other people can use? Those are real steps forward.
+
+JULIAN: Not just, is the whole thing done yet?
+
+WILL: Right. And when you read an update, ask whether it describes a plan, a tool, or a finished result. Those can all matter, but they mean different things.
+
+JULIAN: And the reason for all this work is to understand brains better.
+
+WILL: Yes. How we see, move, and learn, and what changes with illness or injury. That knowledge may help people in the future. It takes more than making a map to turn a discovery into care.
+
+JULIAN: Let me try the short version. Connectomics is the science. BRAIN CONNECTS helps teams build the tools and maps to do that science.
+
+WILL: That's it. Next time, we'll follow one small piece of brain through the steps of making a map. You can follow along at NeuroTrailblazers dot org.
+
+JULIAN: From a little piece to a big discovery. See you next time!

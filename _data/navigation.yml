@@ -15,6 +15,8 @@ items:
         url: "/technical-training/proofreading-tutorials/"
       - title: "Neuronauts — explore the brain"
         url: "/neuronauts/"
+      - title: "Experimental podcast — Will and Julian"
+        url: "/podcast/"
       - title: "Junior Lab — kids and families"
         url: "/neuronauts/kids/"
       - title: "Side Quests"

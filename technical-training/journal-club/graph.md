@@ -581,7 +581,7 @@ content_type: core
 
 <script>
 (function () {
-  var DATA_URL = "{{ '/technical-training/journal-club/graph-data.json' | relative_url }}";
+  var DATA_URL = "{{ '/technical-training/journal-club/graph-data.json' | relative_url }}?v={{ site.time | date: '%s' }}";
   var JC_BASE_URL = "{{ '/technical-training/journal-club/' | relative_url }}";
 
   var CATEGORIES = [

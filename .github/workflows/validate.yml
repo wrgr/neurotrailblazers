@@ -126,6 +126,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Paper graph filtering, layout and redraw regression
+        run: node scripts/check_paper_graph.cjs
+
       - name: Research modal browser regression
         run: |
           npm install --prefix "$RUNNER_TEMP/research-browser" --no-package-lock --no-save puppeteer@24.16.0

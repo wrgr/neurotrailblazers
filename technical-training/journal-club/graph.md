@@ -10,12 +10,12 @@ description: "Interactive citation graph explorer across 500, 1,000, and 2,000 c
 content_type: core
 ---
 
-<div class="layout-content layout-page">
+<div class="layout-content layout-page jcg-page">
 
 <section class="jc-hero" style="text-align: center; margin-bottom: 1.5rem;">
   <h1>Citation Graph Explorer</h1>
-  <p style="font-size: 1.1rem; color: #555; max-width: 850px; margin: 0.5rem auto 0;">
-    Explore the curated connectomics literature network across <strong>500 Flagships</strong>, <strong>1,000 Landmark Works</strong>, and the <strong>2,000-Paper Comprehensive Graph</strong>. Features self-organizing organic force clustering, weighted directed citation edges, interactive lineage traversal, and deep OCAR research cards.
+  <p style="font-size: 1.1rem; color: inherit; max-width: 850px; margin: 0.5rem auto 0;">
+    Explore the curated connectomics literature network across <strong>500 Flagships</strong>, <strong>1,000 Landmark Works</strong>, and the <strong>2,000-Paper Comprehensive Graph</strong>. Filter the papers, open a research card, or follow a paper’s citations. Start with separated category groups; switch to the timeline to explore publication history.
   </p>
 </section>
 
@@ -23,8 +23,57 @@ content_type: core
   <div class="jcg-layout">
     
     <!-- Controls Sidebar -->
-    <div class="jcg-controls">
+    <details class="jcg-filter-panel" id="jcg-filter-panel" open>
+      <summary>Filters &amp; graph options</summary>
+      <div class="jcg-controls">
       
+      <!-- Search Filter -->
+      <div class="jcg-control-group">
+        <label for="jcg-search">Search (Title, Author, OCAR, Method):</label>
+        <input type="text" id="jcg-search" placeholder="e.g. MICrONS, Kasthuri, proofreading, U-Net...">
+      </div>
+
+      <!-- Category Filter -->
+      <div class="jcg-control-group">
+        <label for="jcg-dimension">Category / Domain:</label>
+        <select id="jcg-dimension">
+          <option value="all">All categories</option>
+          <option value="circuit-structure">Circuit Structure</option>
+          <option value="pipeline">Pipeline &amp; Software</option>
+          <option value="physiology">Physiology</option>
+          <option value="behaviour">Behaviour</option>
+          <option value="imaging">Imaging &amp; Optics</option>
+          <option value="cell-types">Cell Types &amp; Census</option>
+          <option value="neuroanatomy">Neuroanatomy</option>
+          <option value="synthesis">Synthesis &amp; Reviews</option>
+          <option value="dataset">Datasets &amp; Volumes</option>
+          <option value="neuroai">NeuroAI &amp; Models</option>
+          <option value="health">Health &amp; Disease</option>
+          <option value="training-outreach">Training &amp; Outreach</option>
+          <option value="other">Other / unclassified</option>
+          <option value="mri">MRI</option>
+        </select>
+      </div>
+
+      <!-- Organism Filter -->
+      <div class="jcg-control-group">
+        <label for="jcg-organism">Organism / Model System:</label>
+        <select id="jcg-organism">
+          <option value="all">All Organisms</option>
+          <option value="mouse">Mouse (Mus musculus)</option>
+          <option value="drosophila">Drosophila (Fruit Fly)</option>
+          <option value="human">Human Cortex</option>
+          <option value="c-elegans">C. elegans</option>
+          <option value="zebrafish">Zebrafish</option>
+          <option value="rat">Rat</option>
+          <option value="macaque">Macaque</option>
+          <option value="other">Other tagged systems</option>
+          <option value="unclassified">Not tagged / general</option>
+        </select>
+      </div>
+
+      <p class="jcg-hint">Organism filters use corpus tags. Papers without an organism tag appear under “Not tagged / general”.</p>
+
       <!-- Tier Selector -->
       <div class="jcg-control-group">
         <label for="jcg-tier-buttons">Corpus Scale Tier:</label>
@@ -39,8 +88,8 @@ content_type: core
       <div class="jcg-control-group">
         <label for="jcg-layout-buttons">Layout Clustering Mode:</label>
         <div class="jcg-tier-btn-group" id="jcg-layout-buttons">
-          <button type="button" class="jcg-layout-btn active" data-mode="organic">Organic Force</button>
-          <button type="button" class="jcg-layout-btn" data-mode="cluster">Category Hubs</button>
+          <button type="button" class="jcg-layout-btn" data-mode="organic">Organic Force</button>
+          <button type="button" class="jcg-layout-btn active" data-mode="cluster">Category Hubs</button>
           <button type="button" class="jcg-layout-btn" data-mode="timeline">Timeline</button>
         </div>
       </div>
@@ -49,8 +98,10 @@ content_type: core
       <fieldset class="jcg-era-fieldset">
         <legend>Citation Edges &amp; Dynamics</legend>
         <label><input type="checkbox" id="jcg-show-edges" checked> Draw Citation Edges</label>
-        <label><input type="checkbox" id="jcg-show-arrows" checked> Show Directional Arrows (&rarr;)</label>
-        <label><input type="checkbox" id="jcg-show-flow" checked> ⚡ Flow Pulse Animation</label>
+        <label><input type="checkbox" id="jcg-all-edges"> Show all links (dense overview)</label>
+        <p class="jcg-hint">Select a paper to see its citation links. Enable all links for the full network.</p>
+        <label><input type="checkbox" id="jcg-show-arrows"> Show Directional Arrows (&rarr;)</label>
+        <label><input type="checkbox" id="jcg-show-flow"> ⚡ Flow Pulse Animation</label>
         <div style="margin-top: 0.35rem;">
           <label for="jcg-edge-weighting" style="font-size: 0.76rem; font-weight: 600; color: #374151; display: block; margin-bottom: 0.2rem;">Edge Weighting / Thickness:</label>
           <select id="jcg-edge-weighting" style="padding: 0.35rem 0.5rem; font-size: 0.78rem;">
@@ -67,46 +118,11 @@ content_type: core
       <div class="jcg-control-group">
         <label for="jcg-color-by">Color Cue (Node Color):</label>
         <select id="jcg-color-by">
-          <option value="dimension">Category / Subfield (12 Domains)</option>
+          <option value="dimension">Category / Subfield</option>
           <option value="era">Publication Era (History / Contemporary / SOTA)</option>
           <option value="tier">Corpus Tier (500 Flagship / 1000 / 2000)</option>
           <option value="organism">Model Organism (Mouse, Fly, Human, etc.)</option>
           <option value="citation_role">Citation Role (Foundational / Hub / Bridge)</option>
-        </select>
-      </div>
-
-      <!-- Category Filter -->
-      <div class="jcg-control-group">
-        <label for="jcg-dimension">Category / Domain:</label>
-        <select id="jcg-dimension">
-          <option value="all">All 12 Categories</option>
-          <option value="circuit-structure">Circuit Structure</option>
-          <option value="pipeline">Pipeline &amp; Software</option>
-          <option value="physiology">Physiology</option>
-          <option value="behaviour">Behaviour</option>
-          <option value="imaging">Imaging &amp; Optics</option>
-          <option value="cell-types">Cell Types &amp; Census</option>
-          <option value="neuroanatomy">Neuroanatomy</option>
-          <option value="synthesis">Synthesis &amp; Reviews</option>
-          <option value="dataset">Datasets &amp; Volumes</option>
-          <option value="neuroai">NeuroAI &amp; Models</option>
-          <option value="health">Health &amp; Disease</option>
-          <option value="training-outreach">Training &amp; Outreach</option>
-        </select>
-      </div>
-
-      <!-- Organism Filter -->
-      <div class="jcg-control-group">
-        <label for="jcg-organism">Organism / Model System:</label>
-        <select id="jcg-organism">
-          <option value="all">All Organisms</option>
-          <option value="mouse">Mouse (Mus musculus)</option>
-          <option value="drosophila">Drosophila (Fruit Fly)</option>
-          <option value="human">Human Cortex</option>
-          <option value="c-elegans">C. elegans</option>
-          <option value="zebrafish">Zebrafish</option>
-          <option value="cross-species">Cross-Species &amp; Comparative</option>
-          <option value="theory-model">Theory &amp; Computational Models</option>
         </select>
       </div>
 
@@ -124,12 +140,6 @@ content_type: core
         <input type="range" id="jcg-min-degree" min="0" max="60" value="0" step="1">
       </div>
 
-      <!-- Search Filter -->
-      <div class="jcg-control-group">
-        <label for="jcg-search">Search (Title, Author, OCAR, Method):</label>
-        <input type="text" id="jcg-search" placeholder="e.g. MICrONS, Kasthuri, proofreading, U-Net...">
-      </div>
-
       <!-- Action Buttons -->
       <div class="jcg-control-group" style="margin-top: 0.25rem; gap: 0.4rem;">
         <button id="jcg-prompt-btn" type="button" class="jcg-secondary-btn" style="width:100%; font-weight:600;">
@@ -143,17 +153,21 @@ content_type: core
 
       <button id="jcg-reset" type="button">Reset View &amp; Filters</button>
 
-      <p class="jcg-count" id="jcg-count">Showing 500 papers</p>
       <p class="jcg-hint">💡 Drag nodes to pull physics &bull; Drag background to pan &bull; Scroll to zoom &bull; Click node for full OCAR card</p>
 
       <div class="jcg-legend-title" id="jcg-legend-title" style="font-weight:700; font-size:0.78rem; color:#374151; margin-top:0.4rem;">Color Cue Legend:</div>
       <div class="jcg-legend" id="jcg-legend"></div>
     </div>
 
+    </details>
+
     <!-- Canvas Container & Interactive Drawer -->
-    <div style="display: flex; flex-direction: column; gap: 1rem;">
+    <div class="jcg-graph-column">
+      <p class="jcg-count" id="jcg-count" role="status" aria-live="polite">Loading papers…</p>
+      <p class="jcg-hint">Filter by category or select a matching paper below to explore its citations.</p>
       <div class="jcg-canvas-wrap">
-        <canvas id="jcg-canvas"></canvas>
+        <canvas id="jcg-canvas" role="img" aria-label="Citation network. Use the matching paper list below to open research cards."></canvas>
+        <p class="jcg-empty hidden" id="jcg-empty">No papers match these filters. Clear the search or reset the filters.</p>
         
         <!-- On-Canvas Floating HUD Controls -->
         <div class="jcg-canvas-hud">
@@ -179,6 +193,13 @@ content_type: core
           </div>
         </div>
       </div>
+
+      <section class="jcg-results" aria-labelledby="jcg-results-title">
+        <h2 id="jcg-results-title">Matching papers</h2>
+        <p id="jcg-results-status" role="status"></p>
+        <ul id="jcg-results-list"></ul>
+        <button type="button" id="jcg-results-more" class="jcg-secondary-btn hidden">Show more papers</button>
+      </section>
 
       <!-- On-Demand AI Literature Synthesis & Discussion Tray -->
       <div class="jcg-ai-tray collapsed" id="jcg-ai-tray">
@@ -229,8 +250,36 @@ content_type: core
 </div>
 
 <style>
-.jcg-layout { display: grid; grid-template-columns: 300px 1fr; gap: 1.25rem; align-items: start; margin-top: 1rem; }
+.jcg-layout { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 1.25rem; align-items: start; margin-top: 1rem; }
 @media (max-width: 960px) { .jcg-layout { grid-template-columns: 1fr; } }
+.jcg-page { max-width: 1440px; }
+.jcg-page .jc-hero { padding: 1.5rem; }
+.jcg-page .section { max-width: none; padding: 0; }
+.jcg-page .jc-hero h1 { color: inherit; }
+.jcg-graph-column { display: flex; flex-direction: column; gap: 1rem; min-width: 0; }
+.jcg-page .jcg-filter-panel { margin: 0; padding: 0; border: 0; min-width: 0; background: transparent; }
+.jcg-page .jcg-filter-panel > summary { display: none; }
+.jcg-empty { position: absolute; top: 35%; left: 10%; right: 10%; text-align: center; color: #475569; }
+.jcg-results { border: 1px solid #e2e8f0; border-radius: 10px; padding: 1rem; background: #fff; }
+.jcg-results h2 { font-size: 1rem; margin: 0; }
+#jcg-results-status { color: #64748b; font-size: 0.82rem; }
+#jcg-results-list { list-style: none; margin: 0; padding: 0; max-height: 320px; overflow-y: auto; }
+#jcg-results-list li { content-visibility: auto; contain-intrinsic-size: auto 70px; border-top: 1px solid #e2e8f0; }
+.jcg-result-btn { width: 100%; border: 0; background: transparent; color: #1e293b; text-align: left; padding: 0.65rem; cursor: pointer; }
+.jcg-result-btn:hover { background: #eff6ff; }
+.jcg-result-btn small { display: block; color: #64748b; margin-top: 0.25rem; }
+.jcg-page button, .jcg-page select, #jcg-search, .jcg-page summary, .jcg-drawer-btn { min-height: 44px; }
+.jcg-page button { min-width: 44px; }
+.jcg-era-fieldset > label { min-height: 44px; display: flex; align-items: center; gap: 0.3rem; }
+#jcg-min-degree { min-height: 44px; }
+.jcg-page button:active { filter: brightness(0.92); }
+.jcg-page button:focus-visible, .jcg-page select:focus-visible, .jcg-page input:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+@media (max-width: 960px) {
+  .jcg-page .jcg-filter-panel > summary { display: block; padding: 0.6rem 1.8rem; border: 1px solid #cbd5e1; border-radius: 8px; }
+  .jcg-page { padding: 0 0.75rem 1rem; }
+  .jcg-page .jc-hero { padding: 1rem; }
+  .jcg-controls { max-height: 420px; overflow-y: auto; }
+}
 .jcg-controls { display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.85rem; background: #fafafa; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1.25rem; }
 .jcg-control-group { display: flex; flex-direction: column; gap: 0.3rem; }
 .jcg-control-group label { font-weight: 600; color: #374151; font-size: 0.82rem; }
@@ -287,8 +336,8 @@ content_type: core
 .jcg-legend-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.72rem; color: #4b5563; }
 .jcg-legend-swatch { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
-.jcg-canvas-wrap { position: relative; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); overflow: hidden; height: 760px; }
-#jcg-canvas { display: block; width: 100%; height: 100%; cursor: grab; }
+.jcg-canvas-wrap { position: relative; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); overflow: hidden; height: clamp(420px, 72vh, 760px); }
+#jcg-canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
 #jcg-canvas.dragging { cursor: grabbing; }
 
 /* Floating Canvas HUD */
@@ -298,7 +347,7 @@ content_type: core
   padding: 0.35rem; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .jcg-canvas-hud button {
-  width: 32px; height: 32px; border: 1px solid #cbd5e1; border-radius: 6px;
+  width: 44px; height: 44px; border: 1px solid #cbd5e1; border-radius: 6px;
   background: #fff; color: #334155; font-size: 1rem; font-weight: 700;
   display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s ease;
 }
@@ -335,7 +384,7 @@ content_type: core
 /* Rich Slide-Out Drawer */
 .jcg-panel {
   position: absolute; top: 1rem; right: 1rem; width: min(480px, calc(100% - 2rem));
-  background: #ffffff; border-radius: 12px; box-shadow: 0 12px 36px rgba(0,0,0,0.22);
+  box-sizing: border-box; background: #ffffff; border-radius: 12px; box-shadow: 0 12px 36px rgba(0,0,0,0.22);
   border: 1px solid #cbd5e1; padding: 1.35rem; max-height: calc(100% - 2rem); overflow-y: auto; z-index: 20;
 }
 .jcg-panel.hidden { display: none; }
@@ -346,11 +395,11 @@ content_type: core
 .jcg-panel-close:hover { color: #0f172a; }
 
 @media (max-width: 768px) {
-  .jcg-canvas-wrap { height: 520px; border-radius: 8px; }
+  .jcg-canvas-wrap { height: clamp(360px, 55vh, 520px); border-radius: 8px; }
   .jcg-panel {
     top: auto; bottom: 0; left: 0; right: 0;
     width: 100%; max-width: 100%;
-    max-height: 80vh; border-radius: 16px 16px 0 0;
+    max-height: 85%; border-radius: 16px 16px 0 0;
     padding: 1.1rem; box-shadow: 0 -8px 30px rgba(0,0,0,0.25);
   }
   .jcg-prompt-modal { padding: 0.75rem; }
@@ -538,7 +587,7 @@ content_type: core
   var CATEGORIES = [
     'circuit-structure', 'pipeline', 'physiology', 'behaviour',
     'imaging', 'cell-types', 'neuroanatomy', 'synthesis',
-    'dataset', 'neuroai', 'health', 'training-outreach'
+    'dataset', 'neuroai', 'health', 'training-outreach', 'other', 'mri'
   ];
   
   var CATEGORY_COLORS = {
@@ -553,7 +602,9 @@ content_type: core
     'dataset': '#0284c7',
     'neuroai': '#9333ea',
     'health': '#dc2626',
-    'training-outreach': '#16a34a'
+    'training-outreach': '#16a34a',
+    'other': '#64748b',
+    'mri': '#a16207'
   };
 
   var ERA_COLORS = {
@@ -587,16 +638,12 @@ content_type: core
     'participant': '#64748b'
   };
 
-  // Pre-computed Category Hub Radial Anchors
   var CATEGORY_HUBS = {};
-  CATEGORIES.forEach(function (cat, i) {
-    var angle = (i / CATEGORIES.length) * Math.PI * 2 - Math.PI / 2;
-    var radius = 320;
-    CATEGORY_HUBS[cat] = {
-      x: Math.cos(angle) * radius,
-      y: Math.sin(angle) * radius
-    };
-  });
+  var CATEGORY_LABELS = {
+    'circuit-structure': 'Circuits', pipeline: 'Software', physiology: 'Physiology', behaviour: 'Behaviour',
+    imaging: 'Imaging', 'cell-types': 'Cell types', neuroanatomy: 'Anatomy', synthesis: 'Reviews',
+    dataset: 'Datasets', neuroai: 'NeuroAI', health: 'Health', 'training-outreach': 'Outreach', other: 'Other', mri: 'MRI'
+  };
 
   // DOM Elements
   var canvas = document.getElementById('jcg-canvas');
@@ -604,6 +651,7 @@ content_type: core
   var tierButtons = Array.from(document.querySelectorAll('.jcg-tier-btn'));
   var layoutButtons = Array.from(document.querySelectorAll('.jcg-layout-btn'));
   var showEdgesCheck = document.getElementById('jcg-show-edges');
+  var allEdgesCheck = document.getElementById('jcg-all-edges');
   var showArrowsCheck = document.getElementById('jcg-show-arrows');
   var showFlowCheck = document.getElementById('jcg-show-flow');
   var edgeWeightingEl = document.getElementById('jcg-edge-weighting');
@@ -647,7 +695,7 @@ content_type: core
   var idMap = {};
   var doiMap = {};
   var currentTier = 500;
-  var currentLayout = 'organic';
+  var currentLayout = 'cluster';
   var currentColorCue = 'dimension';
   var currentEdgeWeighting = 'sum';
   var visibleNodes = [];
@@ -665,6 +713,42 @@ content_type: core
   var alpha = 1.0;
   var animFrame = null;
   var flowOffset = 0;
+  var canvasRatio = 1;
+  var filterTimer = null;
+  var resultLimit = 40;
+  var timelineMinYear = 1986;
+  var timelineMaxYear = 2026;
+  var timelineYearSpacing = 126;
+  var timelineTop = 0;
+  var timelineBottom = 0;
+  var filterPanel = document.getElementById('jcg-filter-panel');
+  var emptyEl = document.getElementById('jcg-empty');
+  var resultsList = document.getElementById('jcg-results-list');
+  var resultsStatus = document.getElementById('jcg-results-status');
+  var resultsMore = document.getElementById('jcg-results-more');
+  var compactQuery = window.matchMedia('(max-width: 960px)');
+  filterPanel.open = !compactQuery.matches;
+  compactQuery.addEventListener('change', function (e) { filterPanel.open = !e.matches; });
+
+  function updateResults() {
+    resultsList.replaceChildren();
+    visibleNodes.slice(0, resultLimit).forEach(function (p) {
+      var li = document.createElement('li');
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'jcg-result-btn';
+      button.textContent = p.title;
+      var meta = document.createElement('small');
+      meta.textContent = p.authors + ' · ' + p.year + ' · ' + p.dimension.replace(/-/g, ' ');
+      button.appendChild(meta);
+      button.addEventListener('click', function () { selectAndCenterPaper(p); canvas.scrollIntoView({ block: 'center', behavior: 'smooth' }); });
+      li.appendChild(button);
+      resultsList.appendChild(li);
+    });
+    resultsStatus.textContent = visibleNodes.length ? 'Showing ' + Math.min(resultLimit, visibleNodes.length) + ' of ' + visibleNodes.length + '. Select a paper to open its card.' : 'No matching papers.';
+    resultsMore.classList.toggle('hidden', resultLimit >= visibleNodes.length);
+  }
+  resultsMore.addEventListener('click', function () { resultLimit += 40; updateResults(); });
 
   function getNodeColor(p) {
     if (currentColorCue === 'era') {
@@ -753,14 +837,12 @@ content_type: core
   }
 
   // Load Graph Data
-  fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (data) {
+  fetch(DATA_URL).then(function (r) { if (!r.ok) throw new Error('Graph data request failed: ' + r.status); return r.json(); }).then(function (data) {
     idMap = {};
     doiMap = {};
 
     allPapers = data.map(function (d) {
       var cat = d.dimension || 'circuit-structure';
-      var hub = CATEGORY_HUBS[cat] || { x: 0, y: 0 };
-      var jitter = (Math.random() - 0.5) * 140;
       var orgs = Array.isArray(d.organism) ? d.organism : [d.organism || 'general'];
       var cleanDoi = (d.doi || '').toLowerCase().trim();
 
@@ -782,6 +864,7 @@ content_type: core
         citation_role: d.citation_role || 'participant',
         scope_role: d.scope_role || 'participant',
         summary: d.summary || '',
+        searchText: [d.title, d.authors, d.journal, d.doi, d.summary, d.abstract, JSON.stringify(d.ocar || {}), orgs.join(' ')].join(' ').toLowerCase(),
         citation: d.citation || '',
         cites: d.cites || [],
         pdf_url: d.pdf_url || null,
@@ -789,10 +872,10 @@ content_type: core
         ocar: d.ocar || null,
         summaries: d.summaries || null,
         discussion_prompts: d.discussion_prompts || [],
-        x: hub.x + jitter,
-        y: hub.y + jitter,
-        targetX: hub.x,
-        targetY: hub.y,
+        x: 0,
+        y: 0,
+        targetX: 0,
+        targetY: 0,
         vx: 0,
         vy: 0,
         radius: Math.max(4.5, Math.min(16, 4.5 + Math.sqrt((d.in_degree || 0) + (d.out_degree || 0)) * 1.5)),
@@ -819,6 +902,7 @@ content_type: core
       }
     });
 
+    degreeEl.max = Math.max.apply(null, allPapers.map(function (p) { return p.total_degree; }));
     resizeCanvas();
     updateLegend();
 
@@ -834,7 +918,6 @@ content_type: core
 
     applyFilters();
     fitView();
-    startPhysics();
 
     if (params.has('paper')) {
       var targetId = params.get('paper');
@@ -845,18 +928,76 @@ content_type: core
           tierButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.tier === String(currentTier)); });
           applyFilters();
         }
+        if (visibleNodes.indexOf(matched) === -1) enterSubgraphFocus(matched);
         selectAndCenterPaper(matched);
       }
     }
+  }).catch(function (error) {
+    countEl.textContent = 'Could not load the paper graph. Please reload to try again.';
+    emptyEl.textContent = countEl.textContent;
+    emptyEl.classList.remove('hidden');
+    console.error(error);
   });
 
   function resizeCanvas() {
     var rect = canvas.getBoundingClientRect();
-    canvas.width = rect.width * (window.devicePixelRatio || 1);
-    canvas.height = rect.height * (window.devicePixelRatio || 1);
-    ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+    canvasRatio = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = Math.round(rect.width * canvasRatio);
+    canvas.height = Math.round(rect.height * canvasRatio);
+    ctx.setTransform(canvasRatio, 0, 0, canvasRatio, 0, 0);
+    if (visibleNodes.length && currentLayout !== 'organic') arrangeNodes();
+    fitView();
+    wakeAnimation();
   }
-  window.addEventListener('resize', resizeCanvas);
+  new ResizeObserver(resizeCanvas).observe(canvas.parentElement);
+
+  // Deterministic, separated positions; anchored layouts never converge onto one dot.
+  function arrangeNodes() {
+    var groups = {};
+    visibleNodes.forEach(function (n) { (groups[n.dimension] || (groups[n.dimension] = [])).push(n); });
+    var categories = CATEGORIES.filter(function (cat) { return groups[cat]; });
+    var largest = Math.max.apply(null, categories.map(function (cat) { return groups[cat].length; }).concat([1]));
+    var spacing = Math.sqrt(largest) * 52 + 180;
+    var cols = Math.min(canvas.getBoundingClientRect().width < 600 ? 2 : 4, Math.ceil(Math.sqrt(categories.length)));
+    CATEGORY_HUBS = {};
+    timelineMinYear = Math.min.apply(null, visibleNodes.map(function (n) { return n.year; }).concat([2026]));
+    timelineMaxYear = Math.max.apply(null, visibleNodes.map(function (n) { return n.year; }).concat([timelineMinYear + 1]));
+    var yearCounts = {};
+    visibleNodes.forEach(function (n) { var key = n.dimension + ':' + n.year; yearCounts[key] = (yearCounts[key] || 0) + 1; });
+    var timelineColumns = Math.min(3, Math.max.apply(null, Object.values(yearCounts).concat([1])));
+    timelineYearSpacing = timelineColumns * 36 + 18;
+    timelineTop = -80;
+    var laneY = 0;
+    categories.forEach(function (cat, c) {
+      var group = groups[cat].slice().sort(function (a, b) { return a.year - b.year || a.id.localeCompare(b.id); });
+      var hub = { x: (c % cols) * spacing, y: Math.floor(c / cols) * spacing, radius: Math.sqrt(group.length) * 26 + 30 };
+      CATEGORY_HUBS[cat] = hub;
+      var years = {};
+      group.forEach(function (n) { years[n.year] = (years[n.year] || 0) + 1; });
+      var laneHeight = Math.ceil(Math.max.apply(null, Object.values(years)) / timelineColumns) * 36 + 70;
+      var offsets = {};
+      group.forEach(function (n, i) {
+        if (currentLayout === 'timeline') {
+          var offset = offsets[n.year] || 0;
+          offsets[n.year] = offset + 1;
+          n.targetX = (n.year - timelineMinYear) * timelineYearSpacing + (offset % timelineColumns) * 36;
+          n.targetY = laneY + Math.floor(offset / timelineColumns) * 36;
+        } else {
+          var angle = i * Math.PI * (3 - Math.sqrt(5));
+          var radius = Math.sqrt(i + 0.5) * 26;
+          n.targetX = hub.x + Math.cos(angle) * radius;
+          n.targetY = hub.y + Math.sin(angle) * radius;
+        }
+        n.x = n.targetX;
+        n.y = n.targetY;
+        n.vx = n.vy = 0;
+      });
+      hub.laneY = laneY;
+      laneY += laneHeight;
+    });
+    timelineBottom = laneY;
+    alpha = currentLayout === 'organic' ? 0.8 : 0;
+  }
 
   function applyFilters() {
     var activeEras = eraChecks.filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
@@ -884,23 +1025,13 @@ content_type: core
             if (selectedOrg === 'mouse' && (lo.indexOf('mouse') !== -1 || lo.indexOf('rodent') !== -1 || lo.indexOf('mus') !== -1)) return true;
             if (selectedOrg === 'human' && (lo.indexOf('human') !== -1 || lo.indexOf('homo') !== -1 || lo.indexOf('h01') !== -1)) return true;
             if (selectedOrg === 'zebrafish' && (lo.indexOf('zebrafish') !== -1 || lo.indexOf('danio') !== -1 || lo.indexOf('fish') !== -1)) return true;
+            if (selectedOrg === 'unclassified') return /^(none|general)$/.test(lo);
             return lo.indexOf(selectedOrg) !== -1;
           });
           if (!orgMatch) return false;
         }
         if (p.total_degree < minDeg) return false;
-        if (query) {
-          var matchT = p.title.toLowerCase().indexOf(query) !== -1;
-          var matchA = p.authors.toLowerCase().indexOf(query) !== -1;
-          var matchJ = p.journal.toLowerCase().indexOf(query) !== -1;
-          var matchO = p.ocar && (
-            (p.ocar.opportunity && p.ocar.opportunity.toLowerCase().indexOf(query) !== -1) ||
-            (p.ocar.challenge && p.ocar.challenge.toLowerCase().indexOf(query) !== -1) ||
-            (p.ocar.action && p.ocar.action.toLowerCase().indexOf(query) !== -1) ||
-            (p.ocar.resolution && p.ocar.resolution.toLowerCase().indexOf(query) !== -1)
-          );
-          if (!matchT && !matchA && !matchJ && !matchO) return false;
-        }
+        if (query && p.searchText.indexOf(query) === -1) return false;
       }
       return true;
     });
@@ -929,30 +1060,24 @@ content_type: core
 
     countEl.textContent = visibleNodes.length + ' papers (' + visibleEdges.length + ' citation links)';
     promptCountSpan.textContent = visibleNodes.length;
-    alpha = Math.max(alpha, 0.4);
-
-    // Recalculate target coordinates based on layout mode
-    if (currentLayout === 'timeline') {
-      var minYear = 1986, maxYear = 2026;
-      var spanW = 900;
-      visibleNodes.forEach(function (n) {
-        var normX = (n.year - minYear) / (maxYear - minYear);
-        n.targetX = (normX - 0.5) * spanW;
-        var catIdx = CATEGORIES.indexOf(n.dimension);
-        n.targetY = ((catIdx - CATEGORIES.length / 2) / CATEGORIES.length) * 520;
-      });
-    } else if (currentLayout === 'cluster') {
-      visibleNodes.forEach(function (n) {
-        var hub = CATEGORY_HUBS[n.dimension] || { x: 0, y: 0 };
-        n.targetX = hub.x;
-        n.targetY = hub.y;
-      });
+    emptyEl.classList.toggle('hidden', visibleNodes.length > 0);
+    if (selectedNode && visibleNodes.indexOf(selectedNode) === -1) {
+      selectedNode = null;
+      panel.classList.add('hidden');
     }
+    hoveredNode = hoveredLineageNode = null;
+    tooltip.classList.add('hidden');
+    resultLimit = 40;
+    updateResults();
+    arrangeNodes();
+    fitView();
+    if (!aiTray.classList.contains('collapsed') && !singlePaperTarget) generateSynthesisPrompt();
+    wakeAnimation();
   }
 
   function fitView(targetNodes) {
     var nodes = targetNodes || visibleNodes;
-    if (!nodes.length) return;
+    if (!nodes.length) { view = { scale: 1, tx: 0, ty: 0 }; wakeAnimation(); return; }
     var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
     nodes.forEach(function (n) {
       if (n.x < minX) minX = n.x;
@@ -962,32 +1087,34 @@ content_type: core
     });
     var w = Math.max(maxX - minX + 160, 280);
     var h = Math.max(maxY - minY + 160, 280);
-    var cw = canvas.width / (window.devicePixelRatio || 1);
-    var ch = canvas.height / (window.devicePixelRatio || 1);
+    var cw = canvas.width / canvasRatio;
+    var ch = canvas.height / canvasRatio;
     view.scale = Math.min(cw / w, ch / h, 2.2) * 0.85;
     view.tx = cw / 2 - ((minX + maxX) / 2) * view.scale;
     view.ty = ch / 2 - ((minY + maxY) / 2) * view.scale;
+    wakeAnimation();
   }
 
   function selectAndCenterPaper(p) {
     selectedNode = p;
     openPaperDrawer(p);
-    var cw = canvas.width / (window.devicePixelRatio || 1);
-    var ch = canvas.height / (window.devicePixelRatio || 1);
+    var cw = canvas.width / canvasRatio;
+    var ch = canvas.height / canvasRatio;
     view.scale = Math.max(view.scale, 1.2);
     // Shift slightly left to accommodate drawer on the right
     view.tx = (cw * 0.38) - p.x * view.scale;
     view.ty = (ch * 0.5) - p.y * view.scale;
-    alpha = Math.max(alpha, 0.3);
+    wakeAnimation();
   }
 
   function enterSubgraphFocus(node) {
     focusedSubgraphNode = node;
+    panel.classList.add('hidden');
     focusPaperTitle.textContent = node.title.length > 50 ? node.title.slice(0, 48) + '…' : node.title;
     focusBanner.classList.remove('hidden');
     applyFilters();
     fitView();
-    alpha = 0.8;
+    wakeAnimation();
   }
 
   function exitSubgraphFocus() {
@@ -995,7 +1122,7 @@ content_type: core
     focusBanner.classList.add('hidden');
     applyFilters();
     fitView();
-    alpha = 0.8;
+    wakeAnimation();
   }
 
   focusExitBtn.addEventListener('click', exitSubgraphFocus);
@@ -1057,6 +1184,12 @@ content_type: core
               if (n2 === n1) continue;
               var rx = n2.x - n1.x;
               var ry = n2.y - n1.y;
+              var distance = Math.hypot(rx, ry) || 0.01;
+              var padding = n1.radius + n2.radius + 8;
+              if (distance < padding) {
+                n1.vx -= (rx / distance) * (padding - distance) * 0.3;
+                n1.vy -= (ry / distance) * (padding - distance) * 0.3;
+              }
               var r2 = rx * rx + ry * ry + 80;
               if (r2 < 36000) {
                 var repForce = (2900 / r2) * dt;
@@ -1096,8 +1229,8 @@ content_type: core
   }
 
   function render() {
-    var cw = canvas.width / (window.devicePixelRatio || 1);
-    var ch = canvas.height / (window.devicePixelRatio || 1);
+    var cw = canvas.width / canvasRatio;
+    var ch = canvas.height / canvasRatio;
     ctx.clearRect(0, 0, cw, ch);
 
     ctx.save();
@@ -1105,11 +1238,12 @@ content_type: core
     ctx.scale(view.scale, view.scale);
 
     // Draw Category Hub Background Rings in Cluster Mode
-    if (currentLayout === 'cluster' && view.scale > 0.35) {
+    if (currentLayout === 'cluster') {
       CATEGORIES.forEach(function (cat) {
         var hub = CATEGORY_HUBS[cat];
         ctx.beginPath();
-        ctx.arc(hub.x, hub.y, 85, 0, Math.PI * 2);
+        if (!hub) return;
+        ctx.arc(hub.x, hub.y, hub.radius, 0, Math.PI * 2);
         ctx.fillStyle = CATEGORY_COLORS[cat] + '08';
         ctx.fill();
         ctx.strokeStyle = CATEGORY_COLORS[cat] + '22';
@@ -1117,32 +1251,31 @@ content_type: core
         ctx.stroke();
 
         ctx.fillStyle = CATEGORY_COLORS[cat] + '90';
-        ctx.font = 'bold 11px Inter, sans-serif';
+        ctx.font = 'bold ' + (10 / view.scale) + 'px sans-serif';
         ctx.textAlign = 'center';
-        ctx.fillText(cat.replace(/-/g, ' ').toUpperCase(), hub.x, hub.y - 95);
+        ctx.fillText(CATEGORY_LABELS[cat] || cat, hub.x, hub.y - hub.radius - 15);
       });
     }
 
-    // Draw Timeline Year Guides in Timeline Mode
+    // Year coordinates and lane labels use the visible corpus's actual range.
     if (currentLayout === 'timeline') {
-      [1990, 2000, 2010, 2020, 2025].forEach(function (yr) {
-        var normX = (yr - 1986) / (2026 - 1986);
-        var gx = (normX - 0.5) * 900;
-        ctx.beginPath();
-        ctx.moveTo(gx, -320);
-        ctx.lineTo(gx, 320);
-        ctx.strokeStyle = '#e2e8f0';
-        ctx.lineWidth = 1 / view.scale;
-        ctx.stroke();
-
-        ctx.fillStyle = '#94a3b8';
-        ctx.font = 'bold 12px Inter, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText(yr.toString(), gx, -330);
+      var step = timelineMaxYear - timelineMinYear > 60 ? 10 : 5;
+      for (var yr = Math.ceil(timelineMinYear / step) * step; yr <= timelineMaxYear; yr += step) {
+        var gx = (yr - timelineMinYear) * timelineYearSpacing;
+        ctx.beginPath(); ctx.moveTo(gx, timelineTop); ctx.lineTo(gx, timelineBottom);
+        ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 1 / view.scale; ctx.stroke();
+        ctx.fillStyle = '#64748b'; ctx.font = (12 / view.scale) + 'px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText(String(yr), gx, timelineTop - 15);
+      }
+      CATEGORIES.forEach(function (cat) {
+        var hub = CATEGORY_HUBS[cat];
+        if (!hub) return;
+        ctx.fillStyle = CATEGORY_COLORS[cat]; ctx.font = (11 / view.scale) + 'px sans-serif'; ctx.textAlign = 'left';
+        ctx.fillText(cat.replace(/-/g, ' '), 0, hub.laneY - 25);
       });
     }
 
-    var activeNode = hoveredNode || selectedNode;
+    var activeNode = hoveredNode || selectedNode || focusedSubgraphNode;
     var drawEdges = showEdgesCheck.checked;
     var drawArrows = showArrowsCheck.checked;
     var drawFlow = showFlowCheck.checked;
@@ -1153,7 +1286,7 @@ content_type: core
     var outSet = new Set(activeNode && activeNode.citesNodes ? activeNode.citesNodes : []);
 
     // Draw Citation Edges (Phase 1 Batched Multi-Tier Rendering)
-    if (drawEdges && visibleEdges.length) {
+    if (drawEdges && visibleEdges.length && (activeNode || allEdgesCheck.checked)) {
       var batches = {
         faint: [],
         tier1: [],
@@ -1169,8 +1302,8 @@ content_type: core
         var t = edge.target;
 
         var isSpotlightLineage = hoveredLineageNode && ((s === activeNode && t === hoveredLineageNode) || (t === activeNode && s === hoveredLineageNode));
-        var isOutbound = (s === activeNode && outSet.has(t));
-        var isInbound = (t === activeNode && inSet.has(s));
+        var isOutbound = (s === activeNode && outSet.has(t) && highlightNeighborhoodMode !== 'inbound');
+        var isInbound = (t === activeNode && inSet.has(s) && highlightNeighborhoodMode !== 'outbound');
 
         if (isSpotlightLineage || isOutbound || isInbound) {
           activeHighlights.push({ s: s, t: t, isSpotlight: isSpotlightLineage, isOut: isOutbound, isIn: isInbound, index: e });
@@ -1192,7 +1325,8 @@ content_type: core
         } else if (currentEdgeWeighting === 'out') {
           edgeMetric = (s.out_degree || 0);
         } else if (currentEdgeWeighting === 'both') {
-          edgeMetric = Math.sqrt(((s.in_degree || 0) + (s.out_degree || 0)) * ((t.in_degree || 0) + (t.out_degree || 0)));
+          var sourceDegree = s.total_degree, targetDegree = t.total_degree;
+          edgeMetric = sourceDegree + targetDegree ? 2 * sourceDegree * targetDegree / (sourceDegree + targetDegree) : 0;
         }
 
         if (currentEdgeWeighting === 'uniform') {
@@ -1223,10 +1357,10 @@ content_type: core
 
       // 2. Draw Batched Standard Edges (4 single draw calls for thousands of edges)
       var tierConfigs = [
-        { edges: batches.tier1, color: 'rgba(71, 85, 105, 0.40)', width: 1.2 },
-        { edges: batches.tier2, color: 'rgba(71, 85, 105, 0.58)', width: 2.0 },
-        { edges: batches.tier3, color: 'rgba(51, 65, 85, 0.72)', width: 3.2 },
-        { edges: batches.tier4, color: 'rgba(30, 41, 59, 0.88)', width: 4.6 }
+        { edges: batches.tier1, color: 'rgba(71, 85, 105, 0.10)', width: 0.6 },
+        { edges: batches.tier2, color: 'rgba(71, 85, 105, 0.14)', width: 0.8 },
+        { edges: batches.tier3, color: 'rgba(51, 65, 85, 0.18)', width: 1.0 },
+        { edges: batches.tier4, color: 'rgba(30, 41, 59, 0.22)', width: 1.2 }
       ];
 
       for (var tIdx = 0; tIdx < tierConfigs.length; tIdx++) {
@@ -1295,6 +1429,7 @@ content_type: core
         var hax = ht.x - Math.cos(hAngle) * (ht.radius + 3);
         var hay = ht.y - Math.sin(hAngle) * (ht.radius + 3);
 
+        if (drawArrows) {
         ctx.beginPath();
         ctx.moveTo(hax, hay);
         ctx.lineTo(hax - hHeadlen * Math.cos(hAngle - Math.PI / 6), hay - hHeadlen * Math.sin(hAngle - Math.PI / 6));
@@ -1303,8 +1438,9 @@ content_type: core
         ctx.fillStyle = hi.isSpotlight ? '#f59e0b' : (hi.isOut ? '#6366f1' : '#10b981');
         ctx.fill();
 
+        }
         // Active Flow Pulse
-        if (view.scale > 0.35) {
+        if (drawFlow && view.scale > 0.35) {
           var pOffset = (flowOffset + (hi.index * 0.13)) % 1.0;
           var px = hs.x + (ht.x - hs.x) * pOffset;
           var py = hs.y + (ht.y - hs.y) * pOffset;
@@ -1334,6 +1470,7 @@ content_type: core
     }
 
     // Draw Nodes
+    var labelBoxes = [];
     for (var i = 0; i < visibleNodes.length; i++) {
       var n = visibleNodes[i];
       var isSelf = (n === activeNode);
@@ -1387,9 +1524,9 @@ content_type: core
       }
 
       // Title & Directional Badges
-      var showLabel = isSelf || isSpotlightNode || isInNeighbor || isOutNeighbor || (n.tier <= 500 && (n.degree > 18 || isTierActive(n, 500)) && view.scale > 0.45);
+      var showLabel = isSelf || isSpotlightNode || isInNeighbor || isOutNeighbor || visibleNodes.length <= 30 || (n.total_degree > 18 && view.scale > 1.2);
       if (showLabel) {
-        ctx.font = (isSelf || isSpotlightNode ? 'bold 11px' : '10px') + ' Inter, sans-serif';
+        ctx.font = (isSelf || isSpotlightNode ? 'bold ' : '') + (11 / view.scale) + 'px sans-serif';
         ctx.textAlign = 'left';
 
         var prefix = '';
@@ -1409,8 +1546,15 @@ content_type: core
         }
 
         var labelText = prefix + (n.authors.split(';')[0].split(',')[0] || 'Paper') + ' (' + n.year + ')';
-        ctx.fillStyle = badgeColor;
-        ctx.fillText(labelText, n.x + n.radius + 5, n.y + 3);
+        var lx = n.x + n.radius + 5 / view.scale;
+        var ly = n.y + 3 / view.scale;
+        var box = { x: lx, y: ly - 11 / view.scale, w: ctx.measureText(labelText).width, h: 15 / view.scale };
+        var overlaps = labelBoxes.some(function (b) { return box.x < b.x + b.w && box.x + box.w > b.x && box.y < b.y + b.h && box.y + box.h > b.y; });
+        if (isSelf || (!overlaps && labelBoxes.length < 40)) {
+          ctx.fillStyle = badgeColor;
+          ctx.fillText(labelText, lx, ly);
+          labelBoxes.push(box);
+        }
       }
     }
 
@@ -1430,17 +1574,12 @@ content_type: core
     tickPhysics();
     render();
 
-    var shouldContinue = (alpha >= 0.003) || draggingNode || isPanning || showFlowCheck.checked;
+    var shouldContinue = (alpha >= 0.003) || (showFlowCheck.checked && showEdgesCheck.checked && visibleEdges.length > 0 && (hoveredNode || selectedNode || focusedSubgraphNode || allEdgesCheck.checked));
     if (shouldContinue) {
       animFrame = requestAnimationFrame(loop);
     } else {
       isAnimating = false;
     }
-  }
-
-  function startPhysics() {
-    alpha = 0.8;
-    wakeAnimation();
   }
 
   function getMousePos(e) {
@@ -1463,6 +1602,7 @@ content_type: core
 
   // Canvas Mouse Interactions
   canvas.addEventListener('mousemove', function (e) {
+    wakeAnimation();
     var pos = getMousePos(e);
 
     if (draggingNode) {
@@ -1490,8 +1630,9 @@ content_type: core
       canvas.style.cursor = 'pointer';
       var rect = canvas.getBoundingClientRect();
       tooltip.classList.remove('hidden');
-      tooltip.style.left = (e.clientX - rect.left) + 'px';
-      tooltip.style.top = (e.clientY - rect.top) + 'px';
+      tooltip.style.maxWidth = Math.max(100, rect.width - 48) + 'px';
+      tooltip.style.left = Math.max(0, Math.min(e.clientX - rect.left, rect.width - 350)) + 'px';
+      tooltip.style.top = Math.max(0, Math.min(e.clientY - rect.top, rect.height - 180)) + 'px';
       
       var ocarSnippet = node.ocar && node.ocar.opportunity ? '<div class="ocar-preview"><strong>Opportunity:</strong> ' + node.ocar.opportunity.slice(0, 110) + '…</div>' : '';
 
@@ -1506,6 +1647,7 @@ content_type: core
   });
 
   canvas.addEventListener('mousedown', function (e) {
+    wakeAnimation();
     dragMoved = false;
     var pos = getMousePos(e);
     var node = findNodeUnder(pos);
@@ -1522,6 +1664,7 @@ content_type: core
   });
 
   window.addEventListener('mouseup', function (e) {
+    wakeAnimation();
     if (draggingNode && !dragMoved) {
       selectedNode = draggingNode;
       openPaperDrawer(draggingNode);
@@ -1532,6 +1675,7 @@ content_type: core
   });
 
   canvas.addEventListener('wheel', function (e) {
+    wakeAnimation();
     e.preventDefault();
     var rect = canvas.getBoundingClientRect();
     var mx = e.clientX - rect.left;
@@ -1542,6 +1686,7 @@ content_type: core
     view.tx = mx - (mx - view.tx) * (newScale / view.scale);
     view.ty = my - (my - view.ty) * (newScale / view.scale);
     view.scale = newScale;
+    wakeAnimation();
   }, { passive: false });
 
   // Mobile Touch Gestures & Pinch-to-Zoom
@@ -1553,6 +1698,7 @@ content_type: core
   }
 
   canvas.addEventListener('touchstart', function (e) {
+    wakeAnimation();
     touchMoved = false;
     if (e.touches.length === 1) {
       var t = e.touches[0];
@@ -1573,6 +1719,7 @@ content_type: core
   }, { passive: false });
 
   canvas.addEventListener('touchmove', function (e) {
+    wakeAnimation();
     e.preventDefault();
     touchMoved = true;
 
@@ -1607,9 +1754,16 @@ content_type: core
   }, { passive: false });
 
   canvas.addEventListener('touchend', function (e) {
+    wakeAnimation();
     if (draggingNode && !touchMoved) {
       selectedNode = draggingNode;
       openPaperDrawer(draggingNode);
+    }
+    if (e.touches.length === 1) {
+      initialTouchDist = null;
+      draggingNode = null;
+      isPanning = true;
+      panStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
     }
     if (e.touches.length === 0) {
       draggingNode = null;
@@ -1618,16 +1772,22 @@ content_type: core
     }
   });
 
+  canvas.addEventListener('touchcancel', function () {
+    draggingNode = null; isPanning = false; initialTouchDist = null;
+    wakeAnimation();
+  });
+
   // Floating HUD Handlers
   function zoomBy(factor) {
-    var cw = canvas.width / (window.devicePixelRatio || 1);
-    var ch = canvas.height / (window.devicePixelRatio || 1);
+    var cw = canvas.width / canvasRatio;
+    var ch = canvas.height / canvasRatio;
     var mx = cw / 2;
     var my = ch / 2;
     var newScale = Math.max(0.15, Math.min(4.5, view.scale * factor));
     view.tx = mx - (mx - view.tx) * (newScale / view.scale);
     view.ty = my - (my - view.ty) * (newScale / view.scale);
     view.scale = newScale;
+    wakeAnimation();
   }
 
   hudZoomInBtn.addEventListener('click', function () { zoomBy(1.25); });
@@ -1636,7 +1796,9 @@ content_type: core
   sidebarFitBtn.addEventListener('click', function () { fitView(); });
   
   function reheatPhysics() {
-    alpha = 1.0;
+    if (currentLayout !== 'organic') { arrangeNodes(); fitView(); }
+    alpha = currentLayout === 'organic' ? 1 : 0;
+    wakeAnimation();
   }
   hudReheatBtn.addEventListener('click', reheatPhysics);
   sidebarReheatBtn.addEventListener('click', reheatPhysics);
@@ -1824,6 +1986,7 @@ content_type: core
         nillButtons.forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         highlightNeighborhoodMode = btn.dataset.dir;
+        wakeAnimation();
       });
     });
 
@@ -1862,9 +2025,11 @@ content_type: core
       chip.addEventListener('mouseenter', function () {
         var pid = chip.dataset.paperId;
         hoveredLineageNode = idMap[pid] || null;
+        wakeAnimation();
       });
       chip.addEventListener('mouseleave', function () {
         hoveredLineageNode = null;
+        wakeAnimation();
       });
       chip.addEventListener('click', function () {
         var pid = chip.dataset.paperId;
@@ -1875,6 +2040,7 @@ content_type: core
             tierButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.tier === String(currentTier)); });
             applyFilters();
           }
+          if (visibleNodes.indexOf(targetPaper) === -1) enterSubgraphFocus(targetPaper);
           selectAndCenterPaper(targetPaper);
         }
       });
@@ -1884,6 +2050,7 @@ content_type: core
   panelClose.addEventListener('click', function () {
     panel.classList.add('hidden');
     selectedNode = null;
+    wakeAnimation();
   });
 
   // AI Synthesis Prompt Generation
@@ -2064,7 +2231,7 @@ content_type: core
       tierButtons.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
       currentTier = parseInt(btn.dataset.tier, 10);
-      applyFilters();
+      changeFilters();
       fitView();
     });
   });
@@ -2079,44 +2246,59 @@ content_type: core
     });
   });
 
-  showEdgesCheck.addEventListener('change', render);
-  showArrowsCheck.addEventListener('change', render);
-  showFlowCheck.addEventListener('change', render);
+  showEdgesCheck.addEventListener('change', wakeAnimation);
+  allEdgesCheck.addEventListener('change', wakeAnimation);
+  showArrowsCheck.addEventListener('change', wakeAnimation);
+  showFlowCheck.addEventListener('change', wakeAnimation);
   if (edgeWeightingEl) {
     edgeWeightingEl.addEventListener('change', function () {
       currentEdgeWeighting = edgeWeightingEl.value;
-      render();
+      wakeAnimation();
     });
   }
 
   colorByEl.addEventListener('change', function () {
     currentColorCue = colorByEl.value;
     updateLegend();
-    render();
+    wakeAnimation();
   });
 
-  eraChecks.forEach(function (c) { c.addEventListener('change', function () { applyFilters(); fitView(); }); });
-  dimensionEl.addEventListener('change', function () { applyFilters(); fitView(); });
-  organismEl.addEventListener('change', function () { applyFilters(); fitView(); });
-  degreeEl.addEventListener('input', function () {
-    degreeVal.textContent = degreeEl.value;
+  function changeFilters() {
+    clearTimeout(filterTimer);
+    focusedSubgraphNode = null;
+    focusBanner.classList.add('hidden');
     applyFilters();
-    fitView();
-  });
-  searchEl.addEventListener('input', function () { applyFilters(); fitView(); });
+  }
+  function queueFilters() {
+    clearTimeout(filterTimer);
+    filterTimer = setTimeout(changeFilters, 180);
+  }
+  eraChecks.forEach(function (c) { c.addEventListener('change', queueFilters); });
+  dimensionEl.addEventListener('change', queueFilters);
+  organismEl.addEventListener('change', queueFilters);
+  degreeEl.addEventListener('input', function () { degreeVal.textContent = degreeEl.value; queueFilters(); });
+  searchEl.addEventListener('input', queueFilters);
 
   resetBtn.addEventListener('click', function () {
     focusedSubgraphNode = null;
     focusBanner.classList.add('hidden');
     currentTier = 500;
-    currentLayout = 'organic';
+    clearTimeout(filterTimer);
+    selectedNode = null;
+    panel.classList.add('hidden');
+    singlePaperTarget = null;
+    highlightNeighborhoodMode = 'all';
+    currentLayout = 'cluster';
+    currentEdgeWeighting = 'sum';
+    edgeWeightingEl.value = 'sum';
     currentColorCue = 'dimension';
     colorByEl.value = 'dimension';
     showEdgesCheck.checked = true;
-    showArrowsCheck.checked = true;
-    showFlowCheck.checked = true;
+    allEdgesCheck.checked = false;
+    showArrowsCheck.checked = false;
+    showFlowCheck.checked = false;
     tierButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.tier === '500'); });
-    layoutButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.mode === 'organic'); });
+    layoutButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.mode === 'cluster'); });
     eraChecks.forEach(function (c) { c.checked = true; });
     dimensionEl.value = 'all';
     organismEl.value = 'all';

@@ -138,6 +138,26 @@ async function main() {
     await page.type('#module-search', 'Python');
     await page.waitForFunction(() => document.getElementById('module-count').textContent.startsWith('1 of'));
     assert.equal(await visibleCount('.module-card'), 1);
+    await page.select('#module-status-filter', 'in_development');
+    await page.click('#module-search', {clickCount:3});
+    await page.keyboard.press('Backspace');
+    await page.waitForFunction(() => document.getElementById('module-count').textContent.startsWith('8 of'));
+    assert.equal(await visibleCount('.module-card'), 8);
+    await visit('/modules/module03/');
+    assert((await page.$eval('.module-status-notice', e => e.textContent)).includes('In development'));
+    assert.equal(await page.$$eval('.nt-progress-step', checks => checks.length), 3);
+    assert.equal(await page.$('.nt-task-submit'), null);
+    await page.click('.nt-progress-step[data-step-index="0"]');
+    assert.equal(await page.$eval('.nt-progress-text', e => e.textContent), '33% complete');
+    await page.reload({waitUntil:'domcontentloaded'});
+    assert.equal(await page.$eval('.nt-progress-text', e => e.textContent), '33% complete');
+    await page.click('.nt-progress-reset');
+    assert.equal(await page.$eval('.nt-progress-text', e => e.textContent), '0% complete');
+    await visit('/modules/module10/');
+    await page.click('input[name="task-choice"][value="2"]');
+    await page.click('.nt-task-submit');
+    assert(await page.$eval('.nt-progress-step[data-step-index="4"]', e => e.checked), 'Practice completion updates the correct progress step');
+
     await visit('/resources/');
     await page.waitForSelector('#site-search:not([disabled])');
     await page.type('#site-search', 'synapse');

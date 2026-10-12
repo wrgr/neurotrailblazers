@@ -207,6 +207,7 @@ Record completion status in `_data/module_status.yml` by module slug, for exampl
 modules:
   module03:
     status: in_development
+    interactive_practice: in_development
     note: "Exercises are being revised."
 ```
 
@@ -215,3 +216,8 @@ means a page exists; it does not confirm completeness. The default remains
 `unreviewed` until a maintainer records a decision. The shared resolver displays
 the same status on module cards, lessons, teaching sessions, and resource search.
 After building, run `bundle exec ruby scripts/check_site_usability.rb`.
+
+An `interactive_practice: in_development` override hides mismatched practice tasks
+and removes unavailable quiz/task requirements from progress. Keep that flag
+until module-specific practice has been authored and checked. Progress stores
+step IDs so hiding an unfinished step preserves existing saved checkmarks.

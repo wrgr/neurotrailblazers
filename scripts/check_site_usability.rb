@@ -35,6 +35,11 @@ raise 'Module cards repeat' unless modules.scan(/class="card module-card"/).leng
   %W[modules/#{slug}/index.html teaching/sessions/#{slug}/index.html].each do |file|
     html = File.read(File.join(site, file))
     raise "Missing status in #{file}" unless html.include?("module-status-notice status-#{state}")
+    if file.start_with?('modules/') && (2..9).include?(number)
+      raise "Mismatched practice remains in #{file}" if html.include?('nt-task-submit')
+      raise "Missing quiz remains required in #{file}" if html.match?(/data-step-index="[34]"/)
+      raise "No development explanation in #{file}" unless html.include?('Interactive practice is being revised')
+    end
   end
   %W[/modules/#{slug}/ /teaching/sessions/#{slug}/].each do |url|
     raise "Search has wrong status for #{url}" unless index.find{|p|p['url']==url}&.fetch('status') == state

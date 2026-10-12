@@ -54,7 +54,7 @@ KNOWN_DATASETS = {
 ORG_PATTERNS = [
     ("fly", re.compile(r"\b(drosophila|fruit fly|fruit flies|maggot|blowfly|calliphora|diptera|fly brain|fly optic|fly visual|hemibrain|flywire|fafb|manc|optic lobe|central complex|mushroom body|antennal lobe)\b", re.I)),
     ("elegans", re.compile(r"\b(c\.?\s*elegans|caenorhabditis|nematode|nematodes|pristionchus|roundworm|hermaphrodite|dauer|pharynx)\b", re.I)),
-    ("mouse", re.compile(r"\b(mouse|mice|murine|mus musculus|c57bl|barrel cortex|somatosensory cortex|visual cortex)\b", re.I)),
+    ("mouse", re.compile(r"\b(mouse|mice|murine|mus musculus|c57bl)\b", re.I)),
     ("rat", re.compile(r"\b(rat|rats|rattus|sprague[- ]dawley|wistar)\b", re.I)),
     ("zebrafish", re.compile(r"\b(zebrafish|danio rerio|teleost)\b", re.I)),
     ("human", re.compile(r"\b(human|humans|patient|patients|postmortem|post-mortem|homo sapiens|h01|neurological patients|clinical|autopsy)\b", re.I)),
@@ -70,6 +70,13 @@ def extract_organisms(text: str) -> List[str]:
     if not orgs:
         return ["none"]
     return orgs
+
+def normalize_existing_organisms(organisms: List[str], text: str) -> List[str]:
+    """Remove legacy mouse inference from cortical-region words without inventing replacement species."""
+    orgs = list(organisms or ["none"])
+    if "mouse" in orgs and "mouse" not in extract_organisms(text):
+        orgs.remove("mouse")
+    return orgs or ["none"]
 
 # ----------------- SUBCLASSIFICATIONS -----------------
 PIPELINE_SUBS = [

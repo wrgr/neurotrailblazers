@@ -54,6 +54,9 @@ jobs:
       - name: Journal paper count and schema validation
         run: ruby scripts/validate_paper_counts.rb
 
+      - name: Organism tag classification regression
+        run: python3 scripts/check_organism_tags.py
+
       # The published decks under course/decks/marp/out/ are what instructors open.
       # 29 of 35 had gone stale: sources regenerated, outputs not, so every "Open deck"
       # link served content that no longer matched its module page. Nothing caught it

@@ -1185,7 +1185,6 @@ papers:
   - 10.1038/nature12450
   tags:
   - fly
-  - mouse
   - behaviour
   - tier_500
   ocar:
@@ -4497,7 +4496,7 @@ papers:
   oa_status: 'HYBRID'
   cites:
   tags:
-  - mouse
+  - none
   - cell-types
   - tier_500
   ocar:
@@ -5048,7 +5047,6 @@ papers:
   oa_status: 'GOLD'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_500
@@ -5096,7 +5094,6 @@ papers:
   oa_status: 'green'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_500
@@ -5795,7 +5792,6 @@ papers:
   oa_status: 'bronze'
   cites:
   tags:
-  - mouse
   - other
   - circuit-structure
   - tier_500
@@ -6459,7 +6455,6 @@ papers:
   oa_status: 'BRONZE'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_500
@@ -6552,7 +6547,6 @@ papers:
   oa_status: 'green'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_500
@@ -6878,7 +6872,6 @@ papers:
   oa_status: 'GREEN'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_500
@@ -7157,7 +7150,6 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_500
@@ -7251,7 +7243,7 @@ papers:
   oa_status: 'green'
   cites:
   tags:
-  - mouse
+  - none
   - circuit-structure
   - tier_500
   ocar:
@@ -7785,7 +7777,6 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_500
@@ -8275,7 +8266,6 @@ papers:
   oa_status: 'bronze'
   cites:
   tags:
-  - mouse
   - other
   - circuit-structure
   - tier_500
@@ -9840,7 +9830,6 @@ papers:
   oa_status: 'bronze'
   cites:
   tags:
-  - mouse
   - rat
   - dataset
   - tier_500
@@ -14040,7 +14029,7 @@ papers:
   - 10.1038/s41586-025-08790-w
   - 10.1016/j.neuron.2010.08.014
   tags:
-  - mouse
+  - none
   - neuroai
   - tier_500
   ocar:
@@ -15173,7 +15162,6 @@ papers:
   cites:
   - 10.1038/nmeth.2476
   tags:
-  - mouse
   - rat
   - neuroanatomy
   - tier_500
@@ -16264,7 +16252,6 @@ papers:
   cites:
   - 10.1038/nmeth.2476
   tags:
-  - mouse
   - rat
   - neuroanatomy
   - tier_500
@@ -16878,7 +16865,6 @@ papers:
   oa_status: 'green'
   cites:
   tags:
-  - mouse
   - other
   - physiology
   - tier_500
@@ -17631,7 +17617,6 @@ papers:
   oa_status: 'hybrid'
   cites:
   tags:
-  - mouse
   - macaque
   - physiology
   - tier_500
@@ -17677,7 +17662,7 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
+  - none
   - physiology
   - tier_500
   ocar:
@@ -17913,7 +17898,6 @@ papers:
   cites:
   - 10.1016/j.conb.2008.08.010
   tags:
-  - mouse
   - other
   - physiology
   - tier_500
@@ -17961,7 +17945,7 @@ papers:
   oa_status: 'green'
   cites:
   tags:
-  - mouse
+  - none
   - physiology
   - tier_500
   ocar:
@@ -31930,7 +31914,6 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
   - other
   - circuit-structure
   - tier_1000
@@ -33136,7 +33119,6 @@ papers:
   oa_status: 'bronze'
   cites:
   tags:
-  - mouse
   - other
   - circuit-structure
   - tier_1000
@@ -33729,7 +33711,6 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
   - macaque
   - circuit-structure
   - tier_1000
@@ -36595,7 +36576,6 @@ papers:
   cites:
   - 10.1038/nmeth.2476
   tags:
-  - mouse
   - rat
   - imaging
   - tier_1000
@@ -39950,7 +39930,6 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
   - rat
   - neuroanatomy
   - tier_1000
@@ -42029,7 +42008,7 @@ papers:
   oa_status: 'green'
   cites:
   tags:
-  - mouse
+  - none
   - physiology
   - tier_1000
   ocar:
@@ -49164,7 +49143,7 @@ papers:
   - 10.1038/nature17192
   - 10.1126/science.aay3134
   tags:
-  - mouse
+  - none
   - synthesis
   - tier_1000
   ocar:
@@ -60394,7 +60373,6 @@ papers:
   oa_status: 'green'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_2000
@@ -60583,7 +60561,7 @@ papers:
   oa_status: 'gold'
   cites:
   tags:
-  - mouse
+  - none
   - circuit-structure
   - tier_2000
   ocar:
@@ -60771,7 +60749,6 @@ papers:
   oa_status: 'HYBRID'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_2000
@@ -60909,7 +60886,6 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_2000
@@ -61052,7 +61028,7 @@ papers:
   oa_status: 'bronze'
   cites:
   tags:
-  - mouse
+  - none
   - circuit-structure
   - tier_2000
   ocar:
@@ -61534,7 +61510,7 @@ papers:
   is_oa: false
   cites:
   tags:
-  - mouse
+  - none
   - circuit-structure
   - tier_2000
   ocar:
@@ -61629,7 +61605,6 @@ papers:
   oa_status: 'bronze'
   cites:
   tags:
-  - mouse
   - rat
   - circuit-structure
   - tier_2000
@@ -64121,7 +64096,7 @@ papers:
   cites:
   - 10.1038/nature17192
   tags:
-  - mouse
+  - none
   - circuit-structure
   - tier_2000
   ocar:
@@ -80926,7 +80901,6 @@ papers:
   oa_status: 'hybrid'
   cites:
   tags:
-  - mouse
   - other
   - other
   - tier_2000
@@ -81398,7 +81372,7 @@ papers:
   oa_status: 'BRONZE'
   cites:
   tags:
-  - mouse
+  - none
   - physiology
   - tier_2000
   ocar:
@@ -83796,7 +83770,7 @@ papers:
   oa_status: 'gold'
   cites:
   tags:
-  - mouse
+  - none
   - physiology
   - tier_2000
   ocar:
@@ -84223,7 +84197,7 @@ papers:
   oa_status: 'gold'
   cites:
   tags:
-  - mouse
+  - none
   - physiology
   - tier_2000
   ocar:
@@ -85183,7 +85157,7 @@ papers:
   oa_status: 'gold'
   cites:
   tags:
-  - mouse
+  - none
   - physiology
   - tier_2000
   ocar:
@@ -96493,7 +96467,7 @@ papers:
   oa_status: 'GREEN'
   cites:
   tags:
-  - mouse
+  - none
   - synthesis
   - tier_2000
   ocar:

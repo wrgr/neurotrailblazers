@@ -72,3 +72,8 @@ main .hero p { max-width: 780px; }
   .task-grid .card { width: 100%; max-width: none; box-sizing: border-box; }
   .start-guide .hero p { margin-bottom: 0; }
 }
+/* Keep titles and descriptions together; preserve heroes with a visual column. */
+main .hero-content:not(:has(.hero-text, .hero-visual)) { display: block; text-align: left; }
+main .hero h1 { margin: 0 0 0.7rem; }
+main .hero p { margin: 0.5rem 0; }
+.layout-module .module-art img { width: 100%; height: 160px; object-fit: contain; }

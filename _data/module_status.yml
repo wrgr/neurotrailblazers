@@ -1,0 +1,4 @@
+# A legacy `active` flag means a page exists, not that it is complete.
+# Set an override below to in_development, available, or unreviewed.
+default_status: unreviewed
+modules: {}

@@ -1,0 +1,9 @@
+{% include ui/module-status-value.html item=include.item %}
+{% if include.banner %}
+<aside class="module-status-notice status-{{ module_state }}" aria-label="Module status">
+  <strong>{{ module_label }}</strong>
+  {% if module_state == 'in_development' %}<p>{{ status_override.note | default: 'This module is being developed. You can read the current draft; lessons and teaching materials may change.' }}</p>
+  {% elsif module_state == 'unreviewed' %}<p>This module is available to read, but its completion status has not been recorded.</p>
+  {% endif %}
+</aside>
+{% else %}<span class="content-status status-{{ module_state }}" data-module-status="{{ module_state }}">{{ module_label }}</span>{% endif %}

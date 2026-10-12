@@ -2,7 +2,7 @@
 
 **Module:** Module 18: Data Cleaning and Preprocessing  
 **Duration:** 4-5 hours  
-*Generated from the module page. Edit `modules/module18.md`, not this file.*
+<!-- Generated from modules/module18.md; edit the module source. -->
 
 ---
 

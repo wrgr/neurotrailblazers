@@ -1,51 +1,41 @@
-<h2>Full Module Index</h2>
-
-<p class="module-filters">
-  <label for="stage-select">Stage:</label>
-  <select id="stage-select">
-    <option value="">All</option>
-    <option value="Foundations">Foundations</option>
-    <option value="Question">Question</option>
-    <option value="Experiment">Experiment</option>
-    <option value="Analysis">Analysis</option>
-    <option value="Dissemination">Dissemination</option>
-  </select>
-  <label for="ccr-select">CCR:</label>
-  <select id="ccr-select">
-    <option value="">All</option>
-    <option value="Knowledge">Knowledge</option>
-    <option value="Skills">Skills</option>
-    <option value="Character">Character</option>
-    <option value="Meta-Learning">Meta-Learning</option>
-    <option value="Motivation">Motivation</option>
-  </select>
-</p>
-
+<section class="section module-browser">
+<h2>Find a module</h2>
+<div class="module-filters">
+  <label for="module-search">Search topics<input type="search" id="module-search" placeholder="e.g. Python, synapses, writing"></label>
+  <label for="stage-select">Topic group<select id="stage-select"><option value="">All groups</option><option value="Foundations">Getting started</option><option value="Question">Research questions</option><option value="Experiment">Experiments</option><option value="Analysis">Data analysis</option><option value="Dissemination">Sharing results</option></select></label>
+  <label for="module-status-filter">Development status<select id="module-status-filter"><option value="">All statuses</option><option value="available">Available</option><option value="in_development">In development</option><option value="unreviewed">Status not confirmed</option></select></label>
+</div>
+<details class="secondary-options"><summary>Filter by learning goals</summary><label for="ccr-select">Learning goal</label><select id="ccr-select"><option value="">Any goal</option><option value="Knowledge">Knowledge</option><option value="Skills">Skills</option><option value="Character">Research habits</option><option value="Meta-Learning">Learning strategies</option><option value="Motivation">Motivation</option></select></details>
+<p id="module-count" role="status" aria-live="polite">25 modules</p>
 <div class="modules-grid">
 {% for mod in site.data.modules %}
-  <div class="card module-card stage-{{ mod.stage | downcase | replace: ' ', '-' }}" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}">
-    {% assign padded_number = mod.number | plus: 0 | prepend: '0' | slice: -2, 2 %}
-    <img class="module-thumb" src="{{ '/assets/images/modules/module' | append: padded_number | append: '.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" width="1200" height="420">
-    <a href="{{ '/modules/module' | append: padded_number | append: '/' | relative_url }}" class="module-number-link">{{ padded_number }}. {{ mod.title }}</a>
-    <p class="module-description">{{ mod.description }}</p>
-  </div>
+  {% assign padded_number = mod.number | plus: 0 | prepend: '0' | slice: -2, 2 %}
+  <article class="card module-card" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}" data-query="{{ mod.title | append: ' ' | append: mod.description | downcase | escape }}">
+    {% include ui/module-status.html item=mod %}
+    <h3><a href="{{ '/modules/module' | append: padded_number | append: '/' | relative_url }}">{{ padded_number }}. {{ mod.title }}</a></h3>
+    <p>{{ mod.description }}</p>
+  </article>
 {% endfor %}
 </div>
-
+<p id="module-empty" hidden>No modules match. Clear the search or choose another group or status.</p>
+</section>
 <script>
-const stageSelect = document.getElementById('stage-select');
-const ccrSelect = document.getElementById('ccr-select');
-
-function filterModules() {
-  const stage = stageSelect.value;
-  const ccr = ccrSelect.value;
-  document.querySelectorAll('.module-card').forEach(card => {
-    const matchStage = !stage || card.dataset.stage === stage;
-    const matchCcr = !ccr || card.dataset.ccr.includes(ccr);
-    card.style.display = (matchStage && matchCcr) ? '' : 'none';
+(() => {
+ const search = document.getElementById('module-search'), stage = document.getElementById('stage-select'), goal = document.getElementById('ccr-select'), status = document.getElementById('module-status-filter');
+ const cards = [...document.querySelectorAll('.module-card')];
+ let timer;
+ function filter() {
+  let count = 0;
+  cards.forEach(card => {
+   const state = card.querySelector('[data-module-status]').dataset.moduleStatus;
+   const show = (!stage.value || card.dataset.stage === stage.value) && (!goal.value || card.dataset.ccr.includes(goal.value)) && (!status.value || state === status.value) && card.dataset.query.includes(search.value.toLowerCase().trim());
+   card.hidden = !show; if (show) count++;
   });
-}
-
-stageSelect.addEventListener('change', filterModules);
-ccrSelect.addEventListener('change', filterModules);
+  document.getElementById('module-count').textContent = count + ' of ' + cards.length + ' modules';
+  document.getElementById('module-empty').hidden = count > 0;
+ }
+ [stage, goal, status].forEach(el => el.addEventListener('change', filter));
+ search.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(filter, 180); });
+ filter();
+})();
 </script>

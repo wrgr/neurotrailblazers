@@ -2,7 +2,7 @@
 
 **Module:** Module 16: Scientific Visualization for Connectomics  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module16.md`, not this file.*
+<!-- Generated from modules/module16.md; edit the module source. -->
 
 ---
 

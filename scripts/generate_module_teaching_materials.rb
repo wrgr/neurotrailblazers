@@ -489,7 +489,7 @@ module_paths.each do |path|
     # Module #{num} Activity Worksheet
 
     **Module:** #{title}#{duration.empty? ? '' : "  \n**Duration:** #{duration}"}  
-    *Generated from the module page. Edit `modules/module#{num}.md`, not this file.*
+    <!-- Generated from modules/module#{num}.md; edit the module source. -->
 
     ---
 
@@ -755,7 +755,7 @@ module_paths.each do |path|
       - mentor support
     ---
 
-    *Generated from `modules/module#{num}.md`. Edit the module page, not this file.*
+    <!-- Generated from modules/module#{num}.md; edit the module source. -->
 
     ## At a glance
 
@@ -779,8 +779,8 @@ module_paths.each do |path|
 
     <div class="resource-card">
       <div class="resource-links">
-        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Open deck (HTML)</a>
-        <a class="resource-link" href="{{ site.deck_source_base }}/modules/module#{num}.marp.md">Slide source (Markdown)</a>
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Open slides</a>
+        <a class="resource-link" href="{{ site.deck_source_base }}/modules/module#{num}.marp.md">Editable slides</a>
         <a class="resource-link" href="{{ '/assets/worksheets/module#{num}/module#{num}-activity.md' | relative_url }}">Learner worksheet</a>
         <a class="resource-link" href="{{ '/modules/module#{num}/' | relative_url }}">Full module page</a>
       </div>

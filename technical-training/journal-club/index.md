@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Journal Club"
+title: "Journal club reading list"
 permalink: /technical-training/journal-club/
 track: core-concepts-methods
 pathways:
@@ -14,46 +14,19 @@ content_type: core
 
 {%- assign jc_dims = site.data.journal_papers.papers | map: 'dimension' | compact | uniq -%}
 <section class="jc-hero">
-  <h1>Journal Club &amp; Research Corpus</h1>
-  <p>{{ site.data.journal_papers.papers.size }} connectomics papers &mdash; a multi-tiered literature network selected by their place in the field's citation graph &mdash; each presented with the OCAR framework (Opportunity, Challenge, Action, Resolution, Future Work), 3-level summaries, and seminar discussion prompts.</p>
-  <div class="jc-hero-stats">
-    <span class="jc-hero-stat">{{ site.data.journal_papers.papers.size }} Total Papers</span>
-    <span class="jc-hero-stat">{{ jc_dims.size }} Research Domains</span>
-    <span class="jc-hero-stat">3 Expertise Levels</span>
-    <span class="jc-hero-stat">3 Tiers (500 / 1,000 / 2,000)</span>
-  </div>
+  <h1>Journal club reading list</h1>
+  <p>Search {{ site.data.journal_papers.papers.size }} papers by title, author, or topic. Open a publication to read it, or use the abstract and optional discussion notes to prepare your session.</p>
+  <p><a class="jc-graph-cta" href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Explore papers and citations →</a></p>
 </section>
-
-<section class="section section-compact">
-  <p><strong>Using this corpus?</strong> The curation, the OCAR cards and the discussion prompts are
-  NeuroTrailblazers material under CC BY 4.0 &mdash; see <a href="{{ '/about/#cite-this-site' | relative_url }}">how to cite this site</a>.
-  The papers themselves are the property of their publishers; each card links out to the source.</p>
-</section>
-
-<section class="section section-compact">
-  <p>Browse the canonical connectomics literature across {{ jc_dims.size }} research domains and 3 nested tiers. Use this page to survey what exists, filter by domain/organism/era, or follow the citation graph between papers. For an interactive network visualization with self-organizing organic force physics and AI synthesis prompts, explore the graph below:</p>
-  <p><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" class="jc-graph-cta" style="background:#1a56db; color:#fff; padding:0.6rem 1.2rem; border-radius:6px; text-decoration:none; font-weight:700; display:inline-block; margin-top:0.4rem;">Explore the Interactive Citation Graph &rarr;</a></p>
-</section>
-
-<section class="section section-compact">
-  <h2 style="margin-top:0">Suggested Reading Paths</h2>
-  <div class="jc-paths">
-    {%- for group in site.data.paper_views.reading_paths.groups %}
-    <div class="jc-path-card">
-      <h3>{{ group.label }}</h3>
-      <p>{{ group.description }}</p>
-    </div>
-    {%- endfor %}
-  </div>
-</section>
+<details class="secondary-options"><summary>Suggested reading paths and reuse</summary><div class="jc-paths">{% for group in site.data.paper_views.reading_paths.groups %}<div class="jc-path-card"><h3>{{ group.label }}</h3><p>{{ group.description }}</p></div>{% endfor %}</div><p>Corpus notes and discussion prompts are NeuroTrailblazers material under CC BY 4.0. <a href="{{ '/about/#cite-this-site' | relative_url }}">How to cite this site</a>. Publications remain the property of their publishers. Reading notes are unverified; check them against the publication.</p></details>
 
 <section class="section section-compact">
   <div class="jc-filters" id="jc-filters">
-    <label for="jc-tier">Corpus Tier:</label>
+    <label for="jc-tier">Browse subset:</label>
     <select id="jc-tier">
-      <option value="500" selected>500 Key Papers</option>
+      <option value="500">500 Key Papers</option>
       <option value="1000">1000 Key Papers</option>
-      <option value="2000">2000 Key Papers</option>
+      <option value="2000" selected>All 2000 Papers</option>
     </select>
 
     <label for="jc-expertise">Expertise:</label>
@@ -63,10 +36,10 @@ content_type: core
       <option value="advanced">Advanced</option>
     </select>
 
-    <label for="jc-dimension">Dimension:</label>
+    <label for="jc-dimension">Topic:</label>
     {%- assign dims = site.data.journal_papers.papers | map: 'dimension' | compact | uniq | sort -%}
     <select id="jc-dimension">
-      <option value="all">All {{ jc_dims.size }} dimensions</option>
+      <option value="all">All {{ jc_dims.size }} topics</option>
       {%- for dim in dims %}
       {%- assign mapped = site.data.content_tags.dimension_labels[dim] %}
       {%- if mapped %}{% assign label = mapped %}{% else %}{% assign label = dim | replace: '-', ' ' | capitalize %}{% endif %}
@@ -91,7 +64,7 @@ content_type: core
     </select>
 
     <label for="jc-search">Search:</label>
-    <input type="text" id="jc-search" placeholder="keyword, author, tag, organism, dataset…">
+    <input type="text" id="jc-search" placeholder="Search all 2,000 papers by title, author, or topic…">
 
     <button type="button" id="jc-prompt-btn" class="jc-prompt-trigger-btn" style="background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); color: #fff; border: none; border-radius: 6px; padding: 0.45rem 0.8rem; font-size: 0.82rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; box-shadow: 0 2px 6px rgba(124, 58, 237, 0.25);">
       ✨ Generate AI Synthesis Prompt (<span id="jc-prompt-count">500</span>)
@@ -250,7 +223,7 @@ content_type: core
 
     cards.forEach(function (card) {
       var cardTier   = parseInt(card.dataset.tier, 10) || 2000;
-      var matchTier  = cardTier <= maxTier;
+      var matchTier  = !!query || cardTier <= maxTier;
       var matchDim   = dim === 'all' || card.dataset.dimension === dim;
       var matchEra   = era === 'all' || card.dataset.era === era;
       var matchQuery = !query ||

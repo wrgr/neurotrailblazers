@@ -2,7 +2,7 @@
 
 **Module:** Module 04: Neuroanatomy for Connectomics  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module04.md`, not this file.*
+<!-- Generated from modules/module04.md; edit the module source. -->
 
 ---
 

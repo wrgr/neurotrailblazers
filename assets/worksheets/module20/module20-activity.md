@@ -2,7 +2,7 @@
 
 **Module:** Module 20: Statistical Models and Inference for Connectomics  
 **Duration:** 4-6 hours  
-*Generated from the module page. Edit `modules/module20.md`, not this file.*
+<!-- Generated from modules/module20.md; edit the module source. -->
 
 ---
 

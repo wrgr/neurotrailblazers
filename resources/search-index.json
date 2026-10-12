@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /resources/search-index.json
+sitemap: false
+---
+[
+{% assign search_entries = site.pages | concat: site.datasets %}
+{% assign search_separator = '' %}
+{% for entry in search_entries %}
+{% if entry.title and entry.url %}
+{% unless entry.url contains '/assets/' or entry.url contains '/course/' or entry.url contains '/scripts/' or entry.url contains '.json' or entry.url contains '.xml' or entry.url contains '.txt' %}
+{% assign module_state = '' %}{% assign module_label = '' %}
+{% if entry.module_number or entry.url contains '/teaching/sessions/module' %}{% include ui/module-status-value.html item=entry %}{% endif %}
+{{ search_separator }}{"title":{{ entry.title | jsonify }},"description":{{ entry.description | default: entry.summary | default: '' | jsonify }},"url":{{ entry.url | relative_url | jsonify }},"keywords":{{ entry.tags | join: ' ' | jsonify }},"status":{{ module_state | jsonify }}}
+{% assign search_separator = ',' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+]

@@ -2,7 +2,7 @@
 
 **Module:** Module 05: Electron Microscopy and Image Basics  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module05.md`, not this file.*
+<!-- Generated from modules/module05.md; edit the module source. -->
 
 ---
 

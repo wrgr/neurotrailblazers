@@ -2,7 +2,7 @@
 
 **Module:** Module 22: Scientific Writing and Presentation  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module22.md`, not this file.*
+<!-- Generated from modules/module22.md; edit the module source. -->
 
 ---
 

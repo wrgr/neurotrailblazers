@@ -2,7 +2,7 @@
 
 **Module:** Module 07: Proofreading and Quality Control  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module07.md`, not this file.*
+<!-- Generated from modules/module07.md; edit the module source. -->
 
 ---
 

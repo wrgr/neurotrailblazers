@@ -2,7 +2,7 @@
 
 **Module:** Module 24: Career Pathways and Graduate School Preparation  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module24.md`, not this file.*
+<!-- Generated from modules/module24.md; edit the module source. -->
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Module:** Module 15: LLMs for Patch Analysis  
 **Duration:** 4-5 hours  
-*Generated from the module page. Edit `modules/module15.md`, not this file.*
+<!-- Generated from modules/module15.md; edit the module source. -->
 
 ---
 

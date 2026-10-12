@@ -75,7 +75,7 @@ function separated(nodes) {
 (async () => {
   const h = await harness();
   h.drain();
-  assert.equal(h.graph.state().nodes.length, 500);
+  assert.equal(h.graph.state().nodes.length, 2000);
   assert.ok(h.draws() > 0, 'Initial canvas draws');
   assert.equal(h.stack(), 0, 'Canvas save/restore is balanced');
   assert.equal(h.frames.length, 0, 'Default graph stops drawing when idle');
@@ -91,6 +91,12 @@ function separated(nodes) {
     assert.ok(h.graph.state().edges.every(e => e.source.dimension === cat && e.target.dimension === cat));
   }
   h.change('jcg-dimension', 'all');
+  h.tiers[0].dispatch('click'); h.drain();
+  const outside = data.find(p => p.tier === 2000 && p.doi);
+  h.change('jcg-search', outside.doi, 'input');
+  assert.ok(h.graph.state().nodes.some(p => p.id === outside.id), 'Search covers the full corpus regardless of browse tier');
+  h.change('jcg-search', '', 'input');
+  h.tiers[2].dispatch('click'); h.drain();
   h.size.width = 280; h.size.height = 360; h.graph.resize(); h.drain();
   separated(h.graph.state().nodes);
   for (const n of h.graph.state().nodes) {
@@ -132,7 +138,7 @@ function separated(nodes) {
   assert.equal(h.graph.state().nodes.length, data.filter(p => p.dimension === 'pipeline').length);
   h.element('jcg-reset').dispatch('click'); h.drain();
   assert.equal(h.graph.state().selected, null);
-  assert.equal(h.graph.state().nodes.length, 500);
+  assert.equal(h.graph.state().nodes.length, 2000);
   assert.equal(h.element('jcg-edge-weighting').value, 'sum');
   h.change('jcg-search', 'this query cannot match any paper 9b85fa', 'input');
   assert.equal(h.graph.state().nodes.length, 0);

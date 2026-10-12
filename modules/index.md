@@ -2,75 +2,17 @@
 
 title: "Module Library"
 layout: page
-description: "Browse all NeuroTrailblazers modules with full tutorial content, competency targets, and linked resources."
+description: "Find a topic module and check its development status before using its lesson or teaching materials."
 permalink: /modules/
 use_layout_hero: false
 content_type: navigation
 ---
 
 <div class="main-content">
-  <div class="hero hero-spaced hero-rounded">
-    <div class="hero-content">
-      <h1 class="hero-title-impact">Module Library</h1>
-      <p class="hero-subtitle">All 25 modules in a browsable library, each designed for tutorial delivery and capability building.</p>
-    </div>
-  </div>
-
-<section class="section">
-  <p><strong>Recommended start:</strong> use the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> or <a href="{{ '/concepts/' | relative_url }}">Concept Explorer</a> for guided discovery, then open modules for full tutorial depth.</p>
-  <p><strong>Teaching-ready materials:</strong> see the <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a> for lesson kits, rendered decks, and worksheets.</p>
-</section>
-
-<section class="section">
-  <h2>Modules or technical units?</h2>
-  <p>The site has two teaching sequences and they are not duplicates. Knowing which one you want saves a lot of wandering.</p>
-  <table>
-    <thead>
-      <tr><th></th><th>The 25 modules (this page)</th><th>The 9 <a href="{{ '/technical-training/' | relative_url }}">technical units</a></th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Shape</strong></td>
-        <td>Tutorial sessions. Each is built for delivery &mdash; a capability target, a studio activity, a rubric, a deck, and a worksheet.</td>
-        <td>Lessons you can work through alone. Each carries worked examples, self-checks with answers, and a graded lab.</td>
-      </tr>
-      <tr>
-        <td><strong>Coverage</strong></td>
-        <td>The whole program, including research practice, communication, ethics, and career development.</td>
-        <td>The technical arc only: motivation, scales, imaging, infrastructure, ultrastructure, classification, glia, proofreading, analysis.</td>
-      </tr>
-      <tr>
-        <td><strong>Use it when</strong></td>
-        <td>You are teaching a session, or following the full curriculum across all three tracks.</td>
-        <td>You need depth on one technical topic, or you are studying without an instructor.</td>
-      </tr>
-      <tr>
-        <td><strong>Depth on technical topics</strong></td>
-        <td>Session-scoped. Points to the units and the <a href="{{ '/content-library/' | relative_url }}">content library</a> for more.</td>
-        <td>The reference treatment, with numbers, decision tables, and error costs.</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>They overlap deliberately. Where a module and a unit cover the same ground, the module is the session and the unit is the depth behind it &mdash; each module page lists the units and content-library pages it draws on. If you are unsure, start from a <a href="{{ '/tracks/' | relative_url }}">track</a>, which sequences both.</p>
-</section>
-
-{% include module-index.html %}
-
-{% include ui/technical-track-roadmap.html %}
-
-<section class="section">
-  <h2>All modules</h2>
-  <div class="cards-grid">
-    {% assign module_pages = site.data.modules | sort: "number" %}
-    {% for module in module_pages %}
-      {% include cards/module-card.html module=module %}
-    {% endfor %}
-  </div>
-</section>
-
-
-This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exceptional Researchers to Innovate and Thrive), CCR dimensions, and professional-development pathways. Each module is tagged by pipeline stage and CCR dimensions (Knowledge, Skills, Character, Meta-Learning, Motivation).
-
+  <section class="hero hero-spaced hero-rounded"><div class="hero-content"><h1>Topic modules</h1><p>Choose a skill or a workshop topic. Each module shows its development status.</p></div></section>
+  <section class="section section-compact"><p>For an ordered introduction, follow the <a href="{{ '/technical-training/' | relative_url }}">nine-lesson connectomics course</a>. For a group session, use the <a href="{{ '/teaching/' | relative_url }}">teaching materials</a>.</p></section>
+  {% include module-index.html %}
+  <details class="secondary-options" markdown="1"><summary>Curriculum map for instructors</summary>
 ## MERIT x CCR Curriculum Matrix
 
 <div class="merit-matrix">
@@ -253,4 +195,6 @@ This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exc
 </div>
 
 <p>Need help deciding where to start? Visit <a href="{{ '/start-here/' | relative_url }}">Start Here</a>, explore <a href="{{ '/concepts/' | relative_url }}">Concepts</a>, or review the <a href="{{ '/models/' | relative_url }}">Program Models</a> that shape the curriculum.</p>
+
+  </details>
 </div>

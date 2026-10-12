@@ -24,12 +24,8 @@ content_type: navigation
  <li><strong>Write a study question (15 minutes).</strong> Try that lesson’s lab. Describe what you would measure and one claim the data would not support.</li>
 </ol><p>Continue with the <a href="{{ '/technical-training/' | relative_url }}">connectomics course</a>. Keep the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> nearby when a term is unfamiliar.</p></section>
 <details class="secondary-options" id="background-options"><summary>Suggestions for your background</summary>
-<div class="hero-content">
-                <h2 class="hero-title-impact">Meet the Trailblazers</h2>
-                <p class="hero-subtitle">Four readers this curriculum was written for. Pick the one closest to you and it will say where to start.</p>
-            </div>
-        </div>
-
+<h2>Suggestions for your background</h2>
+<p>Choose the reader closest to your experience for a suggested starting point.</p>
         <div class="pathfinder">
             <div class="pathfinder-tabs" role="tablist" aria-label="Learner personas">
                 <button type="button" role="tab" id="pf-tab-julian" aria-controls="pf-panel-julian" aria-selected="true" class="pathfinder-tab">Julian<span>first-generation undergraduate</span></button>

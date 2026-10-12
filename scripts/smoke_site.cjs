@@ -149,6 +149,8 @@ async function main() {
     assert.equal(await page.$$('#site-search-results a').then(a => a.length), 0);
 
     await visit('/start-here/');
+    assert.equal(await visibleCount('.pathfinder-tab'), 0, 'Optional background guidance is collapsed');
+    assert(await page.$eval('#pf-tab-maya', e => e.closest('#background-options') !== null));
     await page.click('#background-options > summary');
     assert.equal(await page.$eval('#pf-tab-maya', element => element.closest('a')), null);
     await page.click('#pf-tab-maya');

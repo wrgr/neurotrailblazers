@@ -6,7 +6,7 @@ track: core-concepts-methods
 pathways:
   - technical foundation
   - shared vocabulary
-description: "Interactive citation graph explorer across 500, 1,000, and 2,000 curated papers in connectomics: self-organizing organic force clustering, weighted directed citation edges, deep OCAR research cards, and AI synthesis prompts."
+description: "Search 2,000 connectomics papers, read abstracts, and explore the papers they cite and the works that cite them."
 content_type: core
 ---
 
@@ -152,7 +152,7 @@ content_type: core
 
 
 
-      <p class="jcg-hint">💡 Drag nodes to pull physics &bull; Drag background to pan &bull; Scroll to zoom &bull; Click node for full OCAR card</p>
+      <p class="jcg-hint">Drag the map to move it. Scroll or pinch to zoom. Select a paper to read its abstract.</p>
 
       <div class="jcg-legend-title" id="jcg-legend-title" style="font-weight:700; font-size:0.78rem; color:#374151; margin-top:0.4rem;">Color Cue Legend:</div>
       <div class="jcg-legend" id="jcg-legend"></div>
@@ -175,7 +175,7 @@ content_type: core
 
 
       <div class="jcg-canvas-wrap">
-        <canvas id="jcg-canvas" role="img" aria-label="Citation network. Use the matching paper list below to open research cards."></canvas>
+        <canvas id="jcg-canvas" role="img" aria-label="Citation network. Use the matching paper list to open paper details."></canvas>
         <p class="jcg-empty hidden" id="jcg-empty">No papers match these filters. Clear the search or reset the filters.</p>
 
         <!-- On-Canvas Floating HUD Controls -->
@@ -394,7 +394,7 @@ content_type: core
 .jcg-panel.hidden { display: none; }
 .jcg-panel-close {
   position: absolute; top: 0.75rem; right: 0.85rem; background: none; border: none;
-  font-size: 1.5rem; line-height: 1; cursor: pointer; color: #94a3b8; padding: 0.2rem;
+  font-size: 1.5rem; line-height: 1; cursor: pointer; color: #64748b; padding: 0.2rem; min-width: 44px; min-height: 44px;
 }
 .jcg-panel-close:hover { color: #0f172a; }
 
@@ -410,7 +410,7 @@ content_type: core
   .jcg-prompt-modal-content { max-height: 94vh; padding: 1rem; }
 }
 
-.jcg-panel-body h3 { margin: 0 1.75rem 0.4rem 0; font-size: 1.1rem; line-height: 1.35; color: #0f172a; font-weight: 700; }
+.jcg-panel-body h3 { margin: 0 2.5rem 0.4rem 0; font-size: 1.1rem; line-height: 1.35; color: #0f172a; font-weight: 700; }
 .jcg-panel-authors { font-size: 0.82rem; color: #64748b; margin-bottom: 0.6rem; }
 .jcg-panel-meta-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.85rem; }
 .jcg-panel-tag { background: #f1f5f9; border-radius: 4px; padding: 0.18rem 0.45rem; font-size: 0.72rem; color: #475569; font-weight: 600; }

@@ -195,6 +195,7 @@ async function main() {
     await page.waitForFunction(() => document.getElementById('jc-count').textContent.startsWith('1 of'));
     assert((await page.$eval('#jc-grid', e=>e.textContent)).includes('WASPSYN'));
     await page.click('[data-details]');
+    assert(await page.$eval('#jc-prompt-modal', e => e.classList.contains('hidden')), 'Paper details must not hit overlapping filter controls');
     await page.waitForFunction(() => !document.querySelector('[data-details]'));
     assert(await page.$('#jc-grid .jc-card-details[open]'));
     await page.click('#jc-search', {clickCount:3});

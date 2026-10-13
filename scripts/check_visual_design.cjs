@@ -32,17 +32,24 @@ const server = http.createServer((req,res) => {
      document.querySelectorAll('.cards-grid > .card, .modules-grid > .card').forEach(card=>{
       if(!card.getClientRects().length)return;
       const c=card.getBoundingClientRect(), grid=card.parentElement;
-      const cols=getComputedStyle(grid).gridTemplateColumns.split(' ').map(parseFloat);
-      if(cols.every(Number.isFinite) && Math.abs(Math.min(...cols)-c.width)>3) errors.push('card fails to fill grid column');
+      // auto-fit retains collapsed, empty 0px tracks in the computed value.
+      // Compare actual cards with occupied tracks, not those empty slots.
+      const cols=getComputedStyle(grid).gridTemplateColumns.split(' ').map(parseFloat).filter(n=>Number.isFinite(n)&&n>0);
+      if(!cols.length || !cols.some(col=>Math.abs(col-c.width)<=3)) errors.push('card fails to fill occupied grid column');
       cards.push({width:c.width,columns:cols});
      }); return {errors,cards,scrollWidth:document.documentElement.scrollWidth};
     });
     assert(result.cards.length>0,`${route} must exercise real cards`);
-    assert.deepEqual(result.errors,[],`${route} ${width}px`);
     measurements.push({route,width,...result});
+    fs.writeFileSync(path.join(evidence,'geometry.json'),JSON.stringify(measurements,null,2));
+    assert.deepEqual(result.errors,[],`${route} ${width}px`);
     if(width===390 || width===1440) {
      const label=route==='/'?'home':route.replace(/^\/+|\/+$/g,'').replace(/\//g,'-');
      await page.screenshot({path:path.join(evidence,`${label}-${width}.png`)});
+     if(route==='/modules/') {
+      await page.$eval('.modules-grid',el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+      await page.screenshot({path:path.join(evidence,`modules-cards-${width}.png`)});
+     }
     }
    }
    for(const num of ['03','04','06','07','09']){
@@ -84,7 +91,6 @@ const server = http.createServer((req,res) => {
     await page.screenshot({path:path.join(evidence,`module${num}-slide${id}.png`)});
    }
   }
-  fs.writeFileSync(path.join(evidence,'geometry.json'),JSON.stringify(measurements,null,2));
   await page.close(); console.log('PASS bounds for all 16 new visual slides; screenshots saved under tmp/visual-review');
  } finally {if(browser)await browser.close();server.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

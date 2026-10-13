@@ -17,10 +17,12 @@ For help adapting a session to your group, read the [Facilitator Guide]({{ '/tea
 
 For other audiences, try the [public-engagement session]({{ '/teaching/module22-public-engagement/' | relative_url }}) or [From Projectome to Synapse]({{ '/teaching/projectome-to-synapse/' | relative_url }}), a 25–40 minute hands-on activity.
 
-<div class="cards-grid">
+<div class="resource-search"><label for="session-search">Find a session by topic</label><input type="search" id="session-search" placeholder="e.g. synapse, Python, research" aria-controls="session-results"><label for="session-status">Development status</label><select id="session-status"><option value="all">All statuses</option><option value="available">Available</option><option value="in_development">In development</option><option value="unreviewed">Status not confirmed</option></select><p id="session-count" role="status" aria-live="polite"></p></div>
+<div class="cards-grid" id="session-results">
 {% assign kits = site.pages | where_exp: 'p', "p.path contains 'teaching/sessions/module'" | sort: 'path' %}
 {% for p in kits %}
-  <article class="card">
+  {% include ui/module-status-value.html item=p %}
+  <article class="card session-card" data-status="{{ module_state }}">
     {% include ui/module-status.html item=p %}
     <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title | remove: 'Session Kit: ' }}</a></h3>
     <p class="card-description">{{ p.description }}</p>

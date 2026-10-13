@@ -13,7 +13,7 @@ content_type: core
 <div class="layout-content layout-page jcg-page">
 
 <section class="jc-hero">
-  <h1>Papers and citations</h1>
+  <h1>Papers and citations</h1><nav class="paper-view-links" aria-label="Paper view"><a id="jcg-list-view" href="{{ '/technical-training/journal-club/' | relative_url }}">Paper list</a><span aria-current="page">Citation map</span></nav>
   <p>Find a paper, read its abstract, then explore the works it cites and the papers that cite it.</p>
 </section>
 
@@ -195,7 +195,7 @@ content_type: core
         <div class="jcg-tooltip hidden" id="jcg-tooltip"></div>
 
         <!-- Slide-Out Paper Detail Drawer with Deep OCAR Integration -->
-        <div class="jcg-panel hidden" id="jcg-panel">
+        <div class="jcg-panel hidden" id="jcg-panel" role="region" aria-label="Selected paper details">
           <button class="jcg-panel-close" id="jcg-panel-close" aria-label="Close">&times;</button>
           <div class="jcg-panel-body" id="jcg-panel-body">
             <!-- Dynamically populated with OCAR cards, 3-tier summaries, and citation lineage -->
@@ -779,7 +779,7 @@ content_type: core
       var meta = document.createElement('small');
       meta.textContent = p.authors + ' · ' + p.year + ' · ' + p.dimension.replace(/-/g, ' ');
       button.appendChild(meta);
-      button.addEventListener('click', function () { selectAndCenterPaper(p); canvas.scrollIntoView({ block: 'center', behavior: 'smooth' }); });
+      button.addEventListener('click', function () { selectAndCenterPaper(p); });
       li.appendChild(button);
       resultsList.appendChild(li);
     });
@@ -959,6 +959,10 @@ content_type: core
       dimensionEl.value = params.get('dimension');
     }
 
+    if (params.has('q')) searchEl.value = params.get('q');
+    if (params.has('organism') && organismEl.querySelector('option[value="' + CSS.escape(params.get('organism')) + '"]')) organismEl.value = params.get('organism');
+    if (params.has('era')) eraChecks.forEach(function (el) { el.checked = params.get('era').split(',').indexOf(el.value) !== -1; });
+    if (params.has('minDegree')) degreeEl.value = Math.max(0, parseInt(params.get('minDegree'), 10) || 0);
     applyFilters();
     fitView();
 
@@ -1101,6 +1105,15 @@ content_type: core
       }
     });
 
+    var shared = new URLSearchParams();
+    if (query) shared.set('q', query);
+    if (selectedCat !== 'all') shared.set('dimension', selectedCat);
+    if (selectedOrg !== 'all') shared.set('organism', selectedOrg);
+    if (activeEras.length !== eraChecks.length) shared.set('era', activeEras.join(','));
+    if (minDeg > 0) shared.set('minDegree', minDeg);
+    shared.set('tier', String(currentTier));
+    var listView = document.getElementById('jcg-list-view');
+    if (listView) listView.href = JC_BASE_URL + '?' + shared.toString();
     countEl.textContent = visibleNodes.length + ' papers (' + visibleEdges.length + ' citation links)';
     promptCountSpan.textContent = visibleNodes.length;
     emptyEl.classList.toggle('hidden', visibleNodes.length > 0);
@@ -1852,10 +1865,12 @@ content_type: core
 
   // Rich Slide-Out Drawer with Deep OCAR Integration
   function openPaperDrawer(p) {
+    if (panel.classList.contains('hidden')) drawerReturnFocus = document.activeElement;
     panel.classList.remove('hidden');
+    if (panelClose.focus) panelClose.focus({ preventScroll: true });
     var tierLabel = p.tier === 500 ? '500 Core Flagship' : (p.tier === 1000 ? '1000 Landmark' : '2000 Comprehensive');
     var pdfButton = p.pdf_url ? '<a href="' + p.pdf_url + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-pdf">Open access copy</a>' : '';
-    var fullCardUrl = JC_BASE_URL + '#paper-' + encodeURIComponent(p.id);
+    var fullCardUrl = JC_BASE_URL + '?paper=' + encodeURIComponent(p.id);
 
     // OCAR Section
     var ocarHtml = '';
@@ -1966,7 +1981,7 @@ content_type: core
       '<div class="jcg-panel-authors">' + p.authors + ' &bull; <em>' + p.journal + '</em> (' + p.year + ')</div>' +
       '<div class="jcg-drawer-actions">' +
         '<button type="button" class="jcg-drawer-btn jcg-drawer-btn-focus" id="jcg-btn-focus-subgraph">Explore citations</button>' +
-        '<a href="' + fullCardUrl + '" class="jcg-drawer-btn jcg-drawer-btn-jc">Journal club card</a>' +
+        '<a href="' + fullCardUrl + '" class="jcg-drawer-btn jcg-drawer-btn-jc">Paper details and reading notes</a>' +
         (p.doi ? '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-doi">Open publication</a>' : '') +
         pdfButton +
       '</div>' +
@@ -2054,10 +2069,15 @@ content_type: core
     });
   }
 
+  var drawerReturnFocus = null;
   panelClose.addEventListener('click', function () {
-    panel.classList.add('hidden');
-    selectedNode = null;
-    wakeAnimation();
+    panel.classList.add('hidden'); selectedNode = null; wakeAnimation();
+    if (drawerReturnFocus && drawerReturnFocus.isConnected && drawerReturnFocus.focus) drawerReturnFocus.focus({ preventScroll: true });
+  });
+  window.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !panel.classList.contains('hidden')) {
+      event.preventDefault(); panelClose.click();
+    }
   });
 
   // AI Synthesis Prompt Generation

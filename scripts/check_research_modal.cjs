@@ -5,6 +5,8 @@ const http = require('node:http');
 const path = require('node:path');
 const puppeteer = require(process.env.CHROME_BIN ? 'puppeteer-core' : 'puppeteer');
 
+require('node:child_process').execFileSync(process.execPath, [path.join(__dirname, 'check_usability_followup.cjs')], { stdio: 'inherit' });
+
 const root = path.resolve('_site');
 const server = http.createServer((req, res) => {
   let pathname = new URL(req.url, 'http://localhost').pathname;
@@ -39,6 +41,7 @@ const server = http.createServer((req, res) => {
       assert.equal(await display(), 'none', `${width}px: overlay visible before JS`);
       await page.setJavaScriptEnabled(true);
       await page.reload({ waitUntil: 'load' });
+      await page.waitForSelector('#jc-prompt-btn:not([disabled])');
       assert.equal(await display(), 'none', `${width}px: overlay visible on arrival`);
       assert.equal(await page.$eval('#jc-empty', el => getComputedStyle(el).display), 'none');
       for (const dismiss of ['button', 'escape', 'backdrop']) {

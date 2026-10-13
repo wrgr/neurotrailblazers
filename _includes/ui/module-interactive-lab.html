@@ -57,7 +57,7 @@
 
     {% endif %}
     <article class="card nt-interactive-card">
-      <h3 class="card-title">Progress Tracker</h3>
+      <h3 class="card-title">Activity progress (self-reported)</h3>
       <p>State is saved locally in your browser for this module.</p>
       <div class="nt-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
         <div class="nt-progress-fill"></div>
@@ -69,13 +69,13 @@
         {% if forloop.index0 == 4 and practice_ready == false %}{% assign show_step = false %}{% endif %}
         {% if show_step %}<li>
           <label class="nt-option-row">
-            <input type="checkbox" class="nt-progress-step" data-step-index="{{ forloop.index0 }}">
+            <input type="checkbox" class="nt-progress-step" data-step-index="{{ forloop.index0 }}"{% if forloop.index0 == 3 %} data-assessment="quiz" disabled{% elsif forloop.index0 == 4 %} data-assessment="task" disabled{% elsif forloop.index0 == 5 %} data-assessment="annotation" disabled{% endif %}>
             <span>{{ step }}</span>
           </label>
         </li>{% endif %}
         {% endfor %}
       </ul>
-      <p class="nt-progress-text">0% complete</p>
+      <p class="nt-progress-text">0% of self-reported activities checked</p><p class="nt-assessment-status" role="status" aria-live="polite">{% if module_data.quiz %}Checkpoint: not yet passed.{% else %}Checkpoint: not available for this module.{% endif %}</p><p>Scored items update from your answers, not from checkboxes. Compare your work with the lesson rubric: this tracker does not certify proficiency.</p>
       <button type="button" class="btn btn-secondary nt-progress-reset">Reset Progress</button>
     </article>
 

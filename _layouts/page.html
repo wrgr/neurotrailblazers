@@ -5,6 +5,7 @@ layout: default
 <div class="layout-content layout-page">
   {% include ui/page-hero.html %}
   {% if page.module_number or page.url contains '/teaching/sessions/module' %}{% include ui/module-status.html banner=true %}{% endif %}
+  {% include ui/lesson-meta.html %}
   {% if page.image %}
   <figure class="module-art">
     <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}" loading="lazy" width="1200" height="420">

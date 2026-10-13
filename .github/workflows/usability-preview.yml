@@ -1,0 +1,28 @@
+name: Usability preview
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.6'
+          bundler-cache: true
+      - name: Build the exact review revision
+        run: bundle exec jekyll build
+      - name: Record source revision
+        run: git rev-parse HEAD > _site/review-revision.txt
+      - name: Upload built preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: usability-preview-${{ github.sha }}
+          path: _site/
+          retention-days: 3

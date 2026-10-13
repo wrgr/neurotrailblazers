@@ -1,0 +1,8 @@
+---
+layout: null
+permalink: /technical-training/journal-club/index-data.json
+sitemap: false
+---
+[{%- for p in site.data.journal_papers.papers -%}
+{"id":{{ p.id | jsonify }},"title":{{ p.title | jsonify }},"authors":{{ p.authors | jsonify }},"year":{{ p.year | jsonify }},"journal":{{ p.journal | jsonify }},"doi":{{ p.doi | jsonify }},"dimension":{{ p.dimension | jsonify }},"era":{{ p.inclusion_role | jsonify }},"tier":{{ p.tier | default: 2000 | jsonify }},"kcore":{{ p.k_core | default: 0 | jsonify }},"degree":{{ p.in_degree | plus: p.out_degree | jsonify }},"tags":{{ p.tags | jsonify }},"chunk":{{ forloop.index0 | divided_by: 100 }}}{% unless forloop.last %},{% endunless %}
+{%- endfor -%}]

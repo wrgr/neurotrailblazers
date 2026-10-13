@@ -6,8 +6,6 @@ items:
     dropdown:
       - title: "Connectomics course — start here"
         url: "/technical-training/"
-      - title: "Longer learning paths"
-        url: "/tracks/"
       - title: "Topic modules"
         url: "/modules/"
       - title: "Practice proofreading"
@@ -17,8 +15,8 @@ items:
     dropdown:
       - title: "Search the site"
         url: "/resources/"
-      - title: "Find papers and citations"
-        url: "/technical-training/journal-club/graph/"
+      - title: "Find research papers"
+        url: "/technical-training/journal-club/"
       - title: "Look up a term"
         url: "/technical-training/dictionary/"
       - title: "Read methods and examples"

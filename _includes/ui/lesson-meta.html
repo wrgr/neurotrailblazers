@@ -1,0 +1,9 @@
+{% if page.content_type == 'path' %}
+{% if page.time_estimate or page.duration %}
+{% assign capability = site.data.technical_capabilities.units | where: 'slug', page.slug | first %}
+<aside class="lesson-meta" aria-label="Lesson at a glance">
+<p><strong>Time:</strong> {{ page.time_estimate | default: page.duration | escape }}<br><strong>Prerequisites:</strong> {{ page.prerequisites | default: 'See lesson guidance below' | escape }}</p>
+{% if capability.success_artifacts %}<p><strong>Your output:</strong> {{ capability.success_artifacts | first | escape }}</p>{% endif %}
+<nav class="lesson-actions" aria-label="Lesson actions"><a href="{{ '/technical-training/' | relative_url }}">Course overview</a>{% if page.module_number %}<a href="{{ '/modules/' | relative_url }}">Topic module catalog</a>{% endif %}</nav>
+</aside>
+{% endif %}{% endif %}

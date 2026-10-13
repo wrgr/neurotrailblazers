@@ -59,7 +59,8 @@ main .hero p { max-width: 780px; }
 }
 
 .home-refresh .card { opacity: 1; transform: none; }
-.home-refresh .btn-secondary { color: #d8f4f2; border-color: #7aabae; }
+.home-refresh .hero .btn-secondary { color: #fff; background: #174752; border-color: #b8dfdf; }
+.home-refresh .hero .btn-secondary:hover, .home-refresh .hero .btn-secondary:focus-visible { color: #fff; background: #11343e; }
 .home-hero-copy { min-width: 0; }
 
 .module-section-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
@@ -77,3 +78,25 @@ main .hero-content:not(:has(.hero-text, .hero-visual)) { display: block; text-al
 main .hero h1 { margin: 0 0 0.7rem; }
 main .hero p { margin: 0.5rem 0; }
 .layout-module .module-art img { width: 100%; height: 160px; object-fit: contain; }
+
+/* Bounded paper lists and task-first reading. */
+.paper-view-links, .paper-pagination, .lesson-actions { display:flex; flex-wrap:wrap; align-items:center; gap:0.75rem; margin:1rem 0; }
+.paper-view-links a, .paper-view-links span, .paper-pagination button, .lesson-actions a { display:inline-flex; align-items:center; min-height:44px; padding:0.4rem 0.75rem; border:1px solid #a9b9c8; border-radius:6px; }
+.paper-view-links [aria-current] { background:#e8eff7; color:#17344a; font-weight:700; }
+.paper-pagination button { background:#fff; color:#174bb6; font:inherit; cursor:pointer; }
+.paper-pagination button:disabled { color:#596879; cursor:default; }
+#jc-grid .jc-card { content-visibility:auto; contain-intrinsic-size:auto 230px; overflow-wrap:anywhere; min-width:0; }
+#jc-grid .jc-link, #jc-filters select, #jc-filters input, #jc-filters button { min-height:44px; }
+#jc-filters { align-items:center; }
+#jc-filters input { min-width:0; max-width:100%; }
+#jc-filters select { max-width:100%; }
+.lesson-meta { padding:0.75rem 1rem; margin:0.5rem 0; border-left:4px solid #006d6b; background:#f2f6f8; }
+.lesson-meta p { margin:0.3rem 0; }
+.layout-page:has(.lesson-meta) > .module-art img { height:140px; object-fit:contain; }
+.session-card[hidden] { display:none; }
+#session-search, #session-status, #first-observation { display:block; width:100%; box-sizing:border-box; min-height:44px; font:inherit; padding:0.65rem; border:1px solid #9caec0; border-radius:6px; margin:0.5rem 0; }
+.jcg-page .jcg-hint { color:#475569; }
+@media(max-width:640px){ #jc-filters { display:flex; flex-direction:column; align-items:stretch; } .jc-prompt-modes { flex-wrap:wrap; } .lesson-meta { margin:0.5rem 0; } }
+
+/* Expanded filters must not cover result actions as the page scrolls. */
+#jc-filters, .paper-more-filters .jc-filters { position: static; top: auto; }

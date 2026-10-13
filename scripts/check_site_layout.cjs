@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
 
 // Check the primary navigation plus representative pages using shared layouts.
 const routes = [
-  '/', '/resources/', '/technical-training/journal-club/graph/', '/start-here/', '/neuronauts/', '/neuronauts/kids/', '/core/',
+  '/', '/resources/', '/technical-training/journal-club/', '/start-here/first-activity/', '/technical-training/journal-club/graph/', '/start-here/', '/neuronauts/', '/neuronauts/kids/', '/core/',
   '/core/connects-ecosystem/', '/content-library/', '/technical-training/dictionary/',
   '/content-library/journal-papers/', '/technical-training/atlas-connectomics-reference/',
   '/hidden-curriculum/', '/datasets/', '/initiatives/', '/initiatives/outreach/',

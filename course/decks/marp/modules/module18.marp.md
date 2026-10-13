@@ -24,17 +24,12 @@ Teaching Deck
 - Quantify preprocessing impact with auditable QC metrics
 - Produce an analysis-ready dataset package with provenance metadata
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Produce a reproducible preprocessing release that transforms raw or intermediate connectomics outputs into analysis-ready data, with explicit quality gates and full provenance. Students will be able to identify the specific cleaning operations that shape biological conclusions, justify every threshold decision, and document their preprocessing pipeline so that another researcher can audit and reproduce it.
+
 
 ---
 
@@ -43,23 +38,39 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 - **Technical:** connectomics datasets arrive with characteristic quality issues that must be addressed before analysis:
   - **Synapse table filtering:** automated synapse detection produces false positives (cleft detections at non-synaptic locations) and false negatives (missed synapses). Filtering typically uses a confidence score threshold (e.g., cleft score > 50 in CAVE synapse tables). The choice of threshold directly affects edge weights in the connectivity graph.
 
+
 ---
 
 ## Concept Focus (continued)
-- **Segment size thresholding:** automated segmentation produces many small fragments --- bits of neuropil, partial dendrites, glia misclassified as neurons. Including these in analysis adds noise. Common practice is to exclude segments below a volume or synapse count threshold (e.g., segments with fewer than 2 synapses as pre- or post-synaptic partner).
+- **Segment size thresholding:** automated segmentation produces many small fragments --- bits of neuropil, partial dendrites, glia misclassified as neurons.
 - **Removing orphan fragments:** segments that have no synaptic connections to any other segment are orphans. They typically represent segmentation debris or incomplete reconstructions. Including them inflates node counts and distorts network metrics.
 
+<!--
+Further teaching detail from the module:
+**Segment size thresholding:** automated segmentation produces many small fragments --- bits of neuropil, partial dendrites, glia misclassified as neurons. Including these in analysis adds noise. Common practice is to exclude segments below a volume or synapse count threshold (e.g., segments with fewer than 2 synapses as pre- or post-synaptic partner).
+-->
+
 ---
 
 ## Concept Focus (continued)
-- **Handling neurons at volume boundaries:** neurons whose arbors are truncated by the edge of the imaged volume have artificially low synapse counts and incomplete morphologies. These boundary neurons can be flagged (e.g., by checking whether the segment mesh intersects the volume bounding box) and either excluded or analyzed with explicit caveats.
+- **Handling neurons at volume boundaries:** neurons whose arbors are truncated by the edge of the imaged volume have artificially low synapse counts and incomplete morphologies.
 - **Duplicate and conflicting IDs:** merges and splits during proofreading can create duplicate entries or conflicting segment-to-cell-type mappings that must be resolved.
 
+<!--
+Further teaching detail from the module:
+**Handling neurons at volume boundaries:** neurons whose arbors are truncated by the edge of the imaged volume have artificially low synapse counts and incomplete morphologies. These boundary neurons can be flagged (e.g., by checking whether the segment mesh intersects the volume bounding box) and either excluded or analyzed with explicit caveats.
+-->
+
 ---
 
 ## Concept Focus (continued)
-- **Plain language:** connectomics data is not "clean" when you receive it. Segmentation makes mistakes, synapse detection has false alarms, and the edges of the volume cut through neurons. You must fix these issues before analysis, but every fix is a decision that affects your results.
+- **Plain language:** connectomics data is not "clean" when you receive it.
 - **Misconception guardrail:** "raw data is always better." In connectomics, raw segmentation output contains systematic artifacts that will corrupt analysis if left uncleaned. The question is not whether to clean, but how to clean transparently.
+
+<!--
+Further teaching detail from the module:
+**Plain language:** connectomics data is not "clean" when you receive it. Segmentation makes mistakes, synapse detection has false alarms, and the edges of the volume cut through neurons. You must fix these issues before analysis, but every fix is a decision that affects your results.
+-->
 
 ---
 
@@ -69,6 +80,7 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 - Log dataset identifiers, CAVE materialization version, and checksums.
 - Verify that the synapse table, segment table, and cell-type annotations refer to the same materialization.
 
+
 ---
 
 ## Core Workflow (continued)
@@ -76,12 +88,19 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 - Compute segment size distribution and flag outliers (extremely large segments may be merge errors; extremely small segments may be debris).
 - Compute synapse confidence score distribution and identify the threshold region.
 - Check for duplicate segment IDs, conflicting cell-type labels, and missing foreign keys.
+
+
+---
+
+## Core Workflow (continued)
 - Identify boundary neurons by mesh-bounding-box intersection.
+
 
 ---
 
 ## Core Workflow (continued)
 - Triage issues by likely biological impact: high-impact issues block analysis; low-impact issues are documented and accepted.
+
 
 ---
 
@@ -90,13 +109,20 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 - Apply synapse confidence threshold with documented rationale.
 - Remove orphan segments (zero synapses as both pre and post).
 - Apply segment size threshold with documented rationale.
+
+
+---
+
+## Core Workflow (continued)
 - Flag or remove boundary neurons with documented policy.
 - Resolve duplicate IDs and label conflicts.
+
 
 ---
 
 ## Core Workflow (continued)
 - Normalize units (e.g., convert voxel coordinates to nanometers using dataset resolution metadata).
+
 
 ---
 
@@ -106,11 +132,13 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 - Verify that cleaning did not selectively remove a specific cell type or spatial region.
 - Check that graph topology statistics (clustering coefficient, connected components) are consistent with expectations.
 
+
 ---
 
 ## Core Workflow (continued)
 - **Release packaging**
 - Publish analysis-ready tables plus: preprocessing decision log, transform code with commit hash, QC metric report with threshold justifications, known limitations and residual risks.
+
 
 ---
 
@@ -119,9 +147,6 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 - 08:00-18:00 | Instructor modeling: ingest and anomaly screening
 - 18:00-32:00 | Team preprocessing design
 - 32:00-44:00 | QC pass
-- 44:00-54:00 | Cross-team review
-- 54:00-60:00 | Competency checkpoint
-
 <!--
 Materials
   One noisy connectomics table (synapse table with low-confidence entries, duplicate IDs, and missing cell-type labels).
@@ -155,10 +180,23 @@ Materials
 
 ---
 
+## Run of Show (60 min) (continued)
+- 44:00-54:00 | Cross-team review
+- 54:00-60:00 | Competency checkpoint
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** "raw data is always better." In connectomics, raw segmentation output contains systematic artifacts that will corrupt analysis if left uncleaned. The question is not whether to clean, but how to clean transparently.
 - **Misconception guardrail:** there is no single "correct" threshold. If your result depends on a specific threshold choice, it is fragile and should be reported with a sensitivity analysis.
+
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** more filtering is not always better. Aggressive cleaning can create the appearance of clean results while actually removing biological signal.
+
 
 ---
 
@@ -167,10 +205,12 @@ Materials
 - **Misconception guardrail:** documenting preprocessing after the fact is unreliable. Document decisions in real time.
 - **Misconception guardrail:** reporting metrics without thresholds is not quality control. Every metric needs an associated action.
 
+
 ---
 
 ## Studio Activity
 **Scenario:** Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table.
+
 
 ---
 
@@ -179,33 +219,34 @@ Materials
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - Cleaning decisions are explicit, justified, and reproducible.
 - QC metrics include thresholds tied to concrete actions.
 - Release package includes provenance metadata (dataset version, code commit, parameters).
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Distinguishes low-risk cleanup from biologically sensitive transforms with explicit reasoning.
 - Includes sensitivity analysis: "If we move the synapse threshold from 50 to 30, X% more edges appear and Y motifs change significance."
 - Documents limitations and unresolved risks transparently, including what biological signal may have been lost.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure modes**
-
 - Silent ad-hoc edits with no transform log.
 - Aggressive filtering that removes biologically meaningful variation without acknowledgment.
 - Metrics reported without operational thresholds.
 - Missing dataset version or code commit in the release note.
+
 
 ---
 
@@ -214,7 +255,13 @@ Take one connectomics table (real or mock) and write:
 1. Three cleaning rules with rationale tied to specific data artifacts.
 2. Two QC thresholds with associated pass/fail actions and biological justification.
 3. One sensitivity analysis: what happens to your key metric if you relax or tighten your primary threshold by 20%?
+
+
+---
+
+## Exit Ticket (continued)
 4. One limitation that remains after preprocessing, stated concretely enough to guide interpretation.
+
 
 ---
 
@@ -223,9 +270,24 @@ Take one connectomics table (real or mock) and write:
 - Peng, 2011. Reproducible Research in Computational Science.
 - MICrONS and related connectomics workflow documentation.
 
+
 ---
 
 ## Teaching Materials
 - Module page: /modules/module18/
 - Session kit: /teaching/sessions/module18/
 - Worksheet: /assets/worksheets/module18/module18-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module18.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module18/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

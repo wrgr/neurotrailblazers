@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scientific Visualization for Connectomics | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Scientific Visualization for Connectomics</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module16.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 21 slides</summary><ol><li><a href="#slide-1">1. Scientific Visualization for Connectomics</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Core Workflow (continued)</a></li><li><a href="#slide-9">9. Run of Show (60 min)</a></li><li><a href="#slide-10">10. Run of Show (60 min) (continued)</a></li><li><a href="#slide-11">11. Misconceptions to Watch</a></li><li><a href="#slide-12">12. Misconceptions to Watch (continued)</a></li><li><a href="#slide-13">13. Studio Activity</a></li><li><a href="#slide-14">14. Activity Output Checklist</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Assessment Rubric (continued)</a></li><li><a href="#slide-17">17. Exit Ticket</a></li><li><a href="#slide-18">18. Exit Ticket (continued)</a></li><li><a href="#slide-19">19. References (Instructor)</a></li><li><a href="#slide-20">20. Teaching Materials</a></li><li><a href="#slide-21">21. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Scientific Visualization for Connectomics"><p class="slide-number">Slide 1 of 21</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 16</span>
+<h2 id="scientific-visualization-for-connectomics">Scientific Visualization for Connectomics</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 21</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Select visualization forms aligned to analytical intent</li>
+<li>Encode uncertainty and quality signals explicitly</li>
+<li>Avoid misleading visual encodings in dense connectomics data</li>
+<li>Produce publication-ready and presentation-ready figures</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 21</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Produce a figure set that communicates connectomics findings accurately, including uncertainty and data-quality context, for both expert and mixed audiences. Students will leave this module able to choose the right visualization form for a given scientific claim, build publication-quality figures using standard tools, and defend every design choice in terms of clarity and honesty.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 21</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-visualization-as-communication-not-decoration">1) Visualization as communication, not decoration</h3>
+<ul>
+<li><strong>Technical:</strong> every visual encoding (position, color, size, shape, opacity) carries information.</li>
+<li><strong>Plain language:</strong> a figure should help people understand your result, not impress them with complexity.</li>
+<li><strong>Misconception guardrail:</strong> making a figure &quot;look good&quot; is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Technical:** every visual encoding (position, color, size, shape, opacity) carries information. Encodings that do not map to data dimensions are noise. The goal of a scientific figure is to make the reader&#x27;s correct interpretation as effortless as possible.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 21</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li><strong>Map each claim to required visual evidence.</strong> For every result sentence, identify what figure panel and what visual encoding will support it.</li>
+<li><strong>Select the appropriate plot type.</strong> Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 21</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Draft candidate visuals with uncertainty layers.</strong> Include error bars, confidence bands, or explicit missing-data indicators from the start --- do not plan to &quot;add them later.&quot;</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 21</p>
+<h2 id="core-workflow-continued-1">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Run critique for misinterpretation risk.</strong> Show the draft to someone unfamiliar with the analysis and ask them what they conclude. If their conclusion differs from your intent, revise.</li>
+<li><strong>Check accessibility.</strong> Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.</li>
+<li><strong>Revise for clarity, accessibility, and reproducibility.</strong> Add scale bars, axis labels, panel letters, and complete captions.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Core Workflow (continued)"><p class="slide-number">Slide 8 of 21</p>
+<h2 id="core-workflow-continued-2">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Export figure package with caption metadata.</strong> Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (60 min)"><p class="slide-number">Slide 9 of 21</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-10:00 | Visual integrity gallery walk</li>
+<li>10:00-20:00 | Claim-to-visual mapping exercise</li>
+<li>20:00-35:00 | Figure draft build</li>
+<li>35:00-47:00 | Uncertainty and quality overlays</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Materials needed<br>  Projected examples: 3 good and 3 bad connectomics figures (prepared in advance from published papers or synthetic examples).<br>  Shared dataset: a small adjacency matrix (20x30 cell types) and one reconstructed neuron mesh.<br>  Software: Matplotlib/Plotly notebooks pre-loaded; Neuroglancer link ready.<br>  Colorblind simulation tool (browser-based).<br>  Printed or digital critique rubric (one per student).<br>  Timing and instructor script<br><br>00:00-10:00 | Visual integrity gallery walk<br>  Instructor displays six figures (three strong, three weak) without labels. Students vote on which are &quot;trustworthy&quot; and which are &quot;suspicious.&quot; Instructor reveals issues: missing scale bars, rainbow colormaps, cluttered node-link diagrams, hidden uncertainty, gratuitous 3D. Key script line: &quot;Your first instinct about a figure&#x27;s trustworthiness is often right. Let us learn why.&quot;<br><br>10:00-20:00 | Claim-to-visual mapping exercise<br>  Instructor presents three scientific claims from a mock connectomics study:<br>  &quot;Excitatory neurons in layer 4 receive more synaptic input than those in layer 2/3.&quot;<br>  &quot;Reciprocal connections are enriched between Martinotti cells.&quot;<br>  &quot;Axonal arbors of chandelier cells are spatially restricted to a 100-micron radius.&quot;<br>  Students work in pairs to select the best plot type for each claim and justify their choice. Instructor circulates, challenging choices: &quot;Why not a node-link diagram for claim 1? What would you lose with a heatmap for claim 3?&quot;<br><br>20:00-35:00 | Figure draft build<br>  Students open the provided notebook and generate: (a) an adjacency heatmap for the cell-type connectivity matrix, (b) a Sholl plot for the reconstructed neuron. Instructor models adding axis labels, a perceptually uniform colormap, and a scale bar. Students replicate and customize.<br><br>35:00-47:00 | Uncertainty and quality overlays<br>  Instructor demonstrates adding confidence intervals to the Sholl plot and a &quot;data quality&quot; overlay to the heatmap (hatching for cell-type pairs with fewer than 5 observed connections). Students add these to their own figures. Key script line: &quot;If you cannot see the uncertainty, you cannot evaluate the claim.&quot;<br><br>47:00-55:00 | Peer critique and revision<br>  Students swap figures with a neighbor and complete the critique rubric: Does the figure support the stated claim? Is uncertainty visible? Could it be misinterpreted? Is it colorblind-safe? Students revise based on feedback.<br><br>55:00-60:00 | Competency check and wrap-up<br>  Each student submits one revised figure with a two-sentence caption. Instructor reviews one or two examples live, highlighting what works and what still needs improvement.<br>  Success criteria for this session<br>  Every student figure includes at least one uncertainty indicator.<br>  Captions specify dataset version and analysis parameters.<br>  No figure uses a rainbow/jet colormap.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Run of Show (60 min) (continued)"><p class="slide-number">Slide 10 of 21</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>47:00-55:00 | Peer critique and revision</li>
+<li>55:00-60:00 | Competency check and wrap-up</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Misconceptions to Watch"><p class="slide-number">Slide 11 of 21</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> making a figure &quot;look good&quot; is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.</li>
+<li><strong>Misconception guardrail:</strong> there is no single &quot;best&quot; visualization. The best choice depends on the claim.</li>
+<li><strong>Misconception guardrail:</strong> complexity in a figure does not equal rigor. Simplicity with completeness is the standard.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Misconceptions to Watch (continued)"><p class="slide-number">Slide 12 of 21</p>
+<h2 id="misconceptions-to-watch-continued">Misconceptions to Watch (continued)</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> cleaner-looking plots are not always better. A plot that hides uncertainty is less honest than one that shows it.</li>
+<li><strong>Misconception guardrail:</strong> aesthetics cannot replace methodological clarity. A beautiful figure that only some people can read is not a good figure.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Studio Activity"><p class="slide-number">Slide 13 of 21</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers.</p>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Activity Output Checklist"><p class="slide-number">Slide 14 of 21</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 21</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<ul>
+<li><strong>Minimum pass:</strong> visuals map clearly to claims, include uncertainty context, use perceptually uniform colormaps, and have complete axis labels and scale bars.</li>
+<li><strong>Strong performance:</strong> high clarity across expert and non-expert audiences, minimal misinterpretation risk, colorblind-safe design, explicit documentation of dataset version and code used for each panel, and thoughtful caption language that narrows interpretation bounds.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric (continued)"><p class="slide-number">Slide 16 of 21</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li><strong>Failure modes:</strong> overloaded figures with too many overlapping elements, missing scale context, hidden uncertainty, rainbow colormaps, gratuitous 3D renderings, captions that do not mention data quality or limitations.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Exit Ticket"><p class="slide-number">Slide 17 of 21</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Take one existing connectomics figure (from a paper, a classmate, or your own work) and perform a full audit:</p>
+<ol>
+<li>Identify the claim the figure is supposed to support.</li>
+<li>Add one uncertainty cue (error bar, confidence band, or missing-data indicator).</li>
+<li>Replace the colormap with a perceptually uniform alternative if needed.</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Exit Ticket (continued)"><p class="slide-number">Slide 18 of 21</p>
+<h2 id="exit-ticket-continued">Exit Ticket (continued)</h2>
+<ol>
+<li>Write a two-sentence caption that narrows interpretation bounds and specifies the dataset version.</li>
+<li>Run the figure through a colorblind simulator and note any issues.</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: References (Instructor)"><p class="slide-number">Slide 19 of 21</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Visualization best-practice resources and connectomics exemplars.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Teaching Materials"><p class="slide-number">Slide 20 of 21</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module16/</li>
+<li>Session kit: /teaching/sessions/module16/</li>
+<li>Worksheet: /assets/worksheets/module16/module16-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Read, review, or teach"><p class="slide-number">Slide 21 of 21</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module16.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module16/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

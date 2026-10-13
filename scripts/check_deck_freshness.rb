@@ -54,6 +54,8 @@ missing = live.keys.reject do |rel|
 end
 
 problems = []
+reader_generator = ROOT.join("scripts/build_deck_readers.py")
+problems << "reader generator changed since last render" unless manifest["reader_generator"] == Digest::SHA256.hexdigest(reader_generator.binread)
 themes = SRC_DIR.glob("**/theme/*.css").sort.to_h do |path|
   [path.relative_path_from(SRC_DIR).to_s, Digest::SHA256.hexdigest(path.binread)]
 end

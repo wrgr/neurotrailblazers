@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Python and Jupyter for Neuroscience | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Python and Jupyter for Neuroscience</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module03.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 19 slides</summary><ol><li><a href="#slide-1">1. Python and Jupyter for Neuroscience</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Concept Focus (continued)</a></li><li><a href="#slide-6">6. Core Workflow</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Run of Show (90 min)</a></li><li><a href="#slide-9">9. Run of Show (90 min) (continued)</a></li><li><a href="#slide-10">10. Misconceptions to Watch</a></li><li><a href="#slide-11">11. A notebook is a repeatable chain</a></li><li><a href="#slide-12">12. A tiny result you can verify by hand</a></li><li><a href="#slide-13">13. Studio Activity</a></li><li><a href="#slide-14">14. Activity Output Checklist</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Exit Ticket</a></li><li><a href="#slide-17">17. References (Instructor)</a></li><li><a href="#slide-18">18. Teaching Materials</a></li><li><a href="#slide-19">19. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Python and Jupyter for Neuroscience"><p class="slide-number">Slide 1 of 19</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 03</span>
+<h2 id="python-and-jupyter-for-neuroscience">Python and Jupyter for Neuroscience</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 19</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Set up a reproducible notebook workflow</li>
+<li>Load and inspect connectomics data tables</li>
+<li>Write basic analysis and visualization code blocks</li>
+<li>Document assumptions and outputs for reuse</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 19</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Create a reproducible Jupyter notebook that ingests a connectomics dataset slice, performs one analysis, and exports documented outputs. Demonstrate familiarity with the core Python libraries used in connectomics research: CAVEclient, CloudVolume, NetworkX, pandas, and matplotlib.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 19</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-python-as-the-lingua-franca-of-connectomics">1) Python as the lingua franca of connectomics</h3>
+<ul>
+<li><strong>Technical:</strong> the connectomics ecosystem is built on Python.</li>
+<li><strong>Plain language:</strong> if connectomics has a common language, it is Python.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Familiarity with these libraries is not optional --- it is the baseline for participation.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Concept Focus (continued)"><p class="slide-number">Slide 5 of 19</p>
+<h2 id="concept-focus-continued">Concept Focus (continued)</h2>
+<ul>
+<li><strong>Misconception:</strong> you need to be an expert programmer to do connectomics.</li>
+<li><strong>In practice:</strong> Most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow"><p class="slide-number">Slide 6 of 19</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Set environment and dependencies (<code>requirements.txt</code> with pinned versions).</li>
+<li>Initialize clients (CAVEclient, CloudVolume) and record dataset/materialization version.</li>
+<li>Load dataset and validate schema (check column names, data types, row counts).</li>
+<li>Run analysis cell sequence (filter, aggregate, compute metrics).</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 19</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Visualize results (at least one plot with labeled axes, title, and caption).</li>
+<li>Save outputs + metadata (CSV/Parquet for data, PNG/SVG for figures, JSON for parameters).</li>
+<li>Re-run from clean kernel to verify reproducibility.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (90 min)"><p class="slide-number">Slide 8 of 19</p>
+<h2 id="run-of-show-90-min">Run of Show (90 min)</h2>
+<ul>
+<li>Block 1: Notebook anatomy (00:00-12:00)</li>
+<li>Block 2: Environment setup and library tour (12:00-28:00)</li>
+<li>Block 3: Guided analysis sprint (28:00-50:00)</li>
+<li>Block 4: Visualization and export (50:00-65:00)</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Block 1: Notebook anatomy (00:00-12:00)<br>  Instructor script: &quot;Open the sample notebook I have shared. Before we write any code, let&#x27;s understand the structure.&quot; Walk through the five sections of a well-organized notebook:<br>  Header: title, author, date, dataset version, materialization version.<br>  Setup: imports and environment configuration.<br>  Data loading: queries and schema validation.<br>  Analysis: computation cells with markdown explanations.<br>  Export: saving outputs with metadata.<br>  Show a bad notebook (out-of-order cells, no markdown, hidden state) and a good notebook side by side. Ask: &quot;Which one would you trust for a paper?&quot;<br><br>Block 2: Environment setup and library tour (12:00-28:00)<br>  Instructor script: &quot;Let&#x27;s set up our environment. Everyone run the first cell.&quot; Walk through installing and importing the core libraries:<br>  `pip install caveclient cloud-volume networkx pandas matplotlib`<br>  Demonstrate `pip freeze &gt; requirements.txt` for version pinning.<br>  Live demo of each library (2-3 minutes each):<br>  CAVEclient: initialize client, query a synapse table, show resulting DataFrame.<br>  CloudVolume: open a volume, download a small image cutout, display it.<br>  NetworkX: build a tiny graph from 10 synapses, visualize it.<br>  pandas: filter the synapse DataFrame by brain region, compute mean synapse count per cell type.<br>  matplotlib: plot a histogram of synapse counts.<br><br>Block 3: Guided analysis sprint (28:00-50:00)<br>  Instructor script: &quot;Now you build. Your task: query synapses for a specific brain region, count connections between cell types, and plot the result. I will walk you through step by step, but you write the code.&quot;<br>  Step-by-step guided coding:<br>  Initialize CAVEclient and set materialization version (3 min).<br>  Query synapse table filtered by brain region (5 min).<br>  Group by pre/post cell type and count synapses (5 min).<br>  Build a NetworkX graph from the grouped data (5 min).<br>  Plot a bar chart of top 10 connections by synapse count (4 min).<br>  Instructor circulates and helps with errors. Common issues: authentication tokens, version mismatches, column name typos.<br><br>Block 4: Visualization and export (50:00-65:00)<br>  Instructor script: &quot;A plot without labels is not a figure --- it is a sketch. Let&#x27;s make yours publication-ready.&quot;<br>  Learners add: axis labels, title, legend, caption in a markdown cell below the figure.<br>  Export figure as PNG and SVG. Export data table as CSV with a header comment recording the query parameters and materialization version.<br>  Demonstrate saving a metadata JSON file: `{&quot;dataset&quot;: &quot;...&quot;, &quot;materialization_version&quot;: ..., &quot;query_date&quot;: &quot;...&quot;, &quot;parameters&quot;: {...}}`.<br><br>Block 5: Clean rerun test (65:00-80:00)<br>  Instructor script: &quot;The moment of truth. Restart your kernel and run all cells. If anything breaks, that is a reproducibility bug --- fix it now.&quot;<br>  Learners restart kernel and run all cells. Instructor helps debug common issues:<br>  Cells that depend on variables defined out of order.<br>  Cells that depend on interactive state (e.g., widget selections).<br>  Missing imports that were run in a previous session.<br>  Discuss: &quot;Why does this matter? Because six months from now, you will need to regenerate this figure for a revision, and you will not remember what you did.&quot;<br><br>Block 6: Competency check and exit ticket (80:00-90:00)<br>  Learners submit their completed notebook.<br>  Instructor script: &quot;Your notebook should pass three tests: (1) it runs from clean kernel without errors, (2) every output has a markdown explanation, (3) someone who has never seen your code can understand what it does and reproduce it.&quot;<br>  Exit ticket: (1) link to submitted notebook; (2) one sentence describing the most useful library you learned today and why.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (90 min) (continued)"><p class="slide-number">Slide 9 of 19</p>
+<h2 id="run-of-show-90-min-continued">Run of Show (90 min) (continued)</h2>
+<ul>
+<li>Block 5: Clean rerun test (65:00-80:00)</li>
+<li>Block 6: Competency check and exit ticket (80:00-90:00)</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Misconceptions to Watch"><p class="slide-number">Slide 10 of 19</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception:</strong> you need to be an expert programmer to do connectomics.</li>
+<li><strong>Misconception:</strong> if the code runs on my machine, it is reproducible.</li>
+<li><strong>Misconception:</strong> version control is only for software engineers.</li>
+<li><strong>Misconception:</strong> code comments are sufficient documentation.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: A notebook is a repeatable chain"><p class="slide-number">Slide 11 of 19</p>
+<h2 id="a-notebook-is-a-repeatable-chain">A notebook is a repeatable chain</h2>
+<p class="visual-lead">Treat the saved result as the output of a declared process.</p>
+<ol class="visual-steps"><li><span class="step-number" aria-hidden="true">1</span><h3>Inputs</h3><p>Table + version + units</p></li><li><span class="step-number" aria-hidden="true">2</span><h3>Method</h3><p>Run code in a stated order</p></li><li><span class="step-number" aria-hidden="true">3</span><h3>Outputs</h3><p>Labeled result + parameters</p></li><li><span class="step-number" aria-hidden="true">4</span><h3>Clean rerun</h3><p>Restart; run all; compare</p></li></ol>
+<p class="visual-question"><strong>Discuss:</strong> Which link in this chain is missing from your notebook?</p>
+<p class="source">Illustrative teaching scenario; see this module’s lesson and worked example.</p>
+
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Visual description and discussion guidance:<br>The sequence represents dependencies, not a guarantee of reproducibility. A clean rerun checks hidden interactive state. A picture alone does not record the inputs or code that produced it.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: A tiny result you can verify by hand"><p class="slide-number">Slide 12 of 19</p>
+<h2 id="a-tiny-result-you-can-verify-by-hand">A tiny result you can verify by hand</h2>
+<p class="visual-lead">Synthetic counts, not a biological finding. No account or download needed.</p>
+<div class="visual-code"><div><h3>Input and code</h3><pre><code>counts = {&quot;A&quot;: 4, &quot;B&quot;: 1, &quot;C&quot;: 0}
+total = sum(counts.values())
+print(total)
+print(total / len(counts))
+</code></pre></div><div><h3>Interpret the output</h3><pre class="output">Total: 5
+Mean across A, B, C: 1.666…
+</pre></div></div>
+<p class="visual-question"><strong>Discuss:</strong> What changes if the zero-count row is omitted?</p>
+<p class="source">Synthetic example; arithmetic checked by scripts/check_visual_design.rb.</p>
+
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Visual description and discussion guidance:<br>All three rows give total 5 and mean 5/3. Omitting the zero-count row keeps the total but changes the mean to 5/2 = 2.5. Declare the population represented by the denominator. These are synthetic teaching values.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Studio Activity"><p class="slide-number">Slide 13 of 19</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> Learners produce a complete, reproducible Jupyter notebook that queries a connectomics dataset, performs a descriptive analysis, and exports documented results. The work runs in four parts: setup and data loading (20 minutes), analysis (20 minutes), visualization and export (15 minutes), and a reproducibility check (5 minutes).</p>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Activity Output Checklist"><p class="slide-number">Slide 14 of 19</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 19</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<ul>
+<li><strong>Minimum:</strong> runnable notebook from clean kernel, clear outputs, basic metadata, at least one plot with labels.</li>
+<li><strong>Strong:</strong> clean linear structure, robust error handling, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.</li>
+<li><strong>Failure:</strong> hidden state dependencies, undocumented assumptions, plots without labels, no dataset version recorded.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Exit Ticket"><p class="slide-number">Slide 16 of 19</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Add one markdown cell documenting input version, processing steps, and output files. Then write a code cell that queries a synapse table and computes the mean number of synapses per neuron for one brain region.</p>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: References (Instructor)"><p class="slide-number">Slide 17 of 19</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Use module references listed on the module page.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Teaching Materials"><p class="slide-number">Slide 18 of 19</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module03/</li>
+<li>Session kit: /teaching/sessions/module03/</li>
+<li>Worksheet: /assets/worksheets/module03/module03-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: Read, review, or teach"><p class="slide-number">Slide 19 of 19</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module03.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module03/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

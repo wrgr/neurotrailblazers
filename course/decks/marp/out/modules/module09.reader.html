@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Neuron Morphology and Skeletonization | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Neuron Morphology and Skeletonization</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module09.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 21 slides</summary><ol><li><a href="#slide-1">1. Neuron Morphology and Skeletonization</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Run of Show (60 min)</a></li><li><a href="#slide-8">8. Run of Show (60 min) (continued)</a></li><li><a href="#slide-9">9. Misconceptions to Watch</a></li><li><a href="#slide-10">10. A skeleton makes measurement choices explicit</a></li><li><a href="#slide-11">11. A missing branch changes the story</a></li><li><a href="#slide-12">12. Studio Activity</a></li><li><a href="#slide-13">13. Activity Output Checklist</a></li><li><a href="#slide-14">14. Assessment Rubric</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Assessment Rubric (continued)</a></li><li><a href="#slide-17">17. Assessment Rubric</a></li><li><a href="#slide-18">18. Exit Ticket</a></li><li><a href="#slide-19">19. References (Instructor)</a></li><li><a href="#slide-20">20. Teaching Materials</a></li><li><a href="#slide-21">21. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Neuron Morphology and Skeletonization"><p class="slide-number">Slide 1 of 21</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 09</span>
+<h2 id="neuron-morphology-and-skeletonization">Neuron Morphology and Skeletonization</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 21</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Generate skeleton representations from reconstructed neurites</li>
+<li>Compute core morphology descriptors</li>
+<li>Relate morphology metrics to biological interpretation</li>
+<li>Report morphology uncertainty and classification limits</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 21</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Produce a skeleton-based morphology summary with at least three descriptors and one explicit limitation.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 21</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-what-is-skeletonization-and-why-do-we-need-it">1) What is skeletonization and why do we need it?</h3>
+<p>A segmented neuron occupies millions of voxels in the EM volume. To analyze its morphology efficiently, we reduce it to a <strong>skeleton</strong>: a tree graph where nodes represent points along the neurite centerline and edges represent the path between them. Skeletons compress a neuron&#x27;s 3D structure from gigabytes to kilobytes while preserving topology (branching pattern, path lengths, connectivity) — at the cost of surface geometry and spine shape, which are discarded.</p>
+
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 21</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Build skeleton from volumetric segmentation using TEASAR or equivalent algorithm.</li>
+<li>Quality-check the skeleton: prune spurious branches, verify branch points, check for disconnected fragments.</li>
+<li>Compute descriptors: cable length, branch points, Strahler number, Sholl profile, spine density.</li>
+<li>Compare against reference patterns: does this neuron match the expected morphology for its putative cell type?</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 21</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Report interpretation confidence: which descriptors are robust, which are affected by reconstruction quality?</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Run of Show (60 min)"><p class="slide-number">Slide 7 of 21</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-10:00 | Morphology overview</li>
+<li>10:00-24:00 | Skeleton extraction demo</li>
+<li>24:00-38:00 | Descriptor calculation</li>
+<li>38:00-50:00 | Interpretation and caveats</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Pre-class preparation (10 min async)<br>  Review the data formats content library entry (skeletons section)<br>  Install/check NeuroM or equivalent morphology analysis package<br>  Minute-by-minute plan<br><br>00:00-10:00 | Morphology overview<br>  &quot;Why do we care about neuron shape?&quot; — Shape constrains function: a neuron&#x27;s dendritic arbor determines what inputs it can receive; its axonal arbor determines where it can send output.<br>  Show 3 neuron types (pyramidal, basket, Martinotti) and their characteristic morphologies.<br>  &quot;Today you&#x27;ll learn to quantify these shapes from EM data.&quot;<br><br>10:00-24:00 | Skeleton extraction demo<br>  Live demo: take a segmented neuron, run skeletonization, visualize result in Neuroglancer.<br>  Walk through SWC format: &quot;Each line is a node. Parent ID tells you the tree structure.&quot;<br>  Common pitfall: show a skeleton with spurious branches from noisy segmentation. Demonstrate pruning.<br><br>24:00-38:00 | Descriptor calculation<br>  Hands-on: learners compute 5 descriptors for one neuron using NeuroM or provided scripts.<br>  Compare results across the group: did everyone get the same numbers? Discuss sources of variation.<br>  Introduce Sholl analysis with live visualization.<br><br>38:00-50:00 | Interpretation and caveats<br>  &quot;Your neuron has total cable length of 2,100 μm and 47 branch points. Is that a lot?&quot; — Compare to published values for the putative cell type.<br>  Discussion: which descriptors are robust to reconstruction errors? (Cable length is sensitive to splits; branch count is sensitive to both splits and spurious branches; spine density is robust if the segmentation boundary is accurate.)<br>  &quot;What if 30% of the arbor is outside the volume? How does that change your interpretation?&quot;<br><br>50:00-60:00 | Competency check<br>  Each learner submits their morphology descriptor table with:<br>  At least 3 descriptors with values<br>  Putative cell-type classification based on morphology<br>  One explicit limitation of the measurement<br>  Exit ticket: &quot;Name one morphology feature that could be confounded by reconstruction quality.&quot;</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min) (continued)"><p class="slide-number">Slide 8 of 21</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>50:00-60:00 | Competency check</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Misconceptions to Watch"><p class="slide-number">Slide 9 of 21</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> a skeleton is a lossless summary of a neuron.</li>
+<li><strong>Misconception guardrail:</strong> morphological measurements are comparable across cells that were proofread to different levels.</li>
+<li><strong>Misconception guardrail:</strong> total dendritic length is a property of the neuron itself, independent of how it was reconstructed.</li>
+<li><strong>Misconception guardrail:</strong> a cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: A skeleton makes measurement choices explicit"><p class="slide-number">Slide 10 of 21</p>
+<h2 id="a-skeleton-makes-measurement-choices-explicit">A skeleton makes measurement choices explicit</h2>
+<p class="visual-lead">Synthetic planar tree. Coordinates are in micrometres.</p>
+<div class="visual-tree"><p class="tree-root"><strong>A (0, 0)</strong><br>Root</p><p class="tree-stem">A–B: 3 µm</p><p class="tree-fork"><strong>B (0, 3)</strong><br>Branch point</p><div class="tree-children"><p><strong>C (−4, 3)</strong><br>B–C: 4 µm</p><p><strong>D (4, 3)</strong><br>B–D: 4 µm</p></div></div>
+<p class="visual-question"><strong>Discuss:</strong> Compute total cable length and both root-to-tip path lengths.</p>
+<p class="source">Synthetic fixture; exact geometry checked by scripts/check_visual_design.rb.</p>
+
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Visual description and discussion guidance:<br>Root A is (0,0), B is (0,3), C is (-4,3), and D is (4,3). Edges A–B, B–C and B–D measure 3, 4 and 4 micrometres. Total length is 11; each root-to-tip path is 7. There is one branching node, B, and two terminal nodes, C and D. Root-to-tip Euclidean distance is 5, so tortuosity is 7/5 = 1.4 under that definition.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: A missing branch changes the story"><p class="slide-number">Slide 11 of 21</p>
+<h2 id="a-missing-branch-changes-the-story">A missing branch changes the story</h2>
+<p class="visual-lead">Use the synthetic tree on the previous slide.</p>
+<ol class="visual-steps"><li><span class="step-number" aria-hidden="true">1</span><h3>Complete example</h3><p>Three edges: total length 11 µm.</p></li><li><span class="step-number" aria-hidden="true">2</span><h3>Truncated example</h3><p>Remove B–D: measured length is 7 µm.</p></li><li><span class="step-number" aria-hidden="true">3</span><h3>Report the limit</h3><p>The lower value describes the observed reconstruction.</p></li></ol>
+<p class="visual-question"><strong>Discuss:</strong> Does a lower measurement prove a smaller biological arbor?</p>
+<p class="source">Illustrative teaching scenario; see this module’s lesson and worked example.</p>
+
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Visual description and discussion guidance:<br>Removing the four-micrometre B–D edge changes the observed total from 11 to 7. That does not establish that the biological cell had a smaller arbor. Report what was reconstructed and how missing structure affects interpretation.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Studio Activity"><p class="slide-number">Slide 12 of 21</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).</p>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Activity Output Checklist"><p class="slide-number">Slide 13 of 21</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric"><p class="slide-number">Slide 14 of 21</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>Valid skeleton and descriptor set for all 10 neurons, with at least 3 descriptors each.</li>
+<li>Every classification carries a stated evidence chain, not just a label.</li>
+<li>At least one explicit measurement limitation named, tied to a specific reconstruction issue.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 21</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>Descriptors partitioned into robust versus reconstruction-sensitive for each borderline cell.</li>
+<li>Mismatches between morphological and synapse-based calls traced to a root cause (truncation, split, spurious branches) rather than logged as disagreement.</li>
+<li>Per-cell completeness estimated and reported next to every absolute measurement.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric (continued)"><p class="slide-number">Slide 16 of 21</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>Ratios computed on contained compartments wherever truncation is present.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Assessment Rubric"><p class="slide-number">Slide 17 of 21</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure to flag</strong></p>
+<ul>
+<li>Descriptor list without biological context — numbers with no statement of what they mean for identity.</li>
+<li>Classification from a single descriptor when the others disagree.</li>
+<li>Absolute cable length or arbor volume reported for truncated cells without a lower-bound qualifier.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Exit Ticket"><p class="slide-number">Slide 18 of 21</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Explain one morphology feature that could be confounded by reconstruction quality.</p>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: References (Instructor)"><p class="slide-number">Slide 19 of 21</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Use module references listed on the module page.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Teaching Materials"><p class="slide-number">Slide 20 of 21</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module09/</li>
+<li>Session kit: /teaching/sessions/module09/</li>
+<li>Worksheet: /assets/worksheets/module09/module09-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Read, review, or teach"><p class="slide-number">Slide 21 of 21</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module09.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module09/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

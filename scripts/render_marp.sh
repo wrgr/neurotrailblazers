@@ -126,6 +126,11 @@ while IFS= read -r -d '' file; do
   count=$((count + 1))
 done < <(find "$SRC_DIR" -type f -name '*.marp.md' -print0 | sort -z)
 
+# Build reflowing text/figure companions from the same rendered slide bodies.
+if [ "$DO_HTML" -eq 1 ]; then
+  python3 "$ROOT_DIR/scripts/build_deck_readers.py"
+fi
+
 # Only an HTML render refreshes the manifest: HTML is the committed artifact the
 # freshness gate is about. A local --pptx run must not silently mark stale HTML
 # as current.
@@ -145,7 +150,8 @@ manifest = out_dir / ".render-manifest.json"
 manifest.write_text(
     json.dumps({"note": "SHA-256 of each Marp source and theme at HTML render time. "
                         "Checked by scripts/check_deck_freshness.rb.",
-                "sources": sources, "themes": themes}, indent=2) + "\n",
+                "sources": sources, "themes": themes,
+                "reader_generator": hashlib.sha256((src_dir.parents[2] / "scripts/build_deck_readers.py").read_bytes()).hexdigest()}, indent=2) + "\n",
     encoding="utf-8",
 )
 print(f"Wrote manifest: {manifest} ({len(sources)} sources)")

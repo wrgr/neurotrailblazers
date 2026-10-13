@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Computer Vision for EM | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Computer Vision for EM</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module14.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 20 slides</summary><ol><li><a href="#slide-1">1. Computer Vision for EM</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Concept Focus (continued)</a></li><li><a href="#slide-6">6. Core Workflow</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Core Workflow (continued)</a></li><li><a href="#slide-9">9. Run of Show (60 min)</a></li><li><a href="#slide-10">10. Run of Show (60 min) (continued)</a></li><li><a href="#slide-11">11. Misconceptions to Watch</a></li><li><a href="#slide-12">12. Misconceptions to Watch (continued)</a></li><li><a href="#slide-13">13. Studio Activity</a></li><li><a href="#slide-14">14. Activity Output Checklist</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Assessment Rubric (continued)</a></li><li><a href="#slide-17">17. Exit Ticket</a></li><li><a href="#slide-18">18. References (Instructor)</a></li><li><a href="#slide-19">19. Teaching Materials</a></li><li><a href="#slide-20">20. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Computer Vision for EM"><p class="slide-number">Slide 1 of 20</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 14</span>
+<h2 id="computer-vision-for-em">Computer Vision for EM</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 20</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Explain how classical and deep CV methods map to connectomics tasks</li>
+<li>Compare model outputs using biologically meaningful error criteria</li>
+<li>Design a validation plan for CV pipelines in EM data</li>
+<li>Report CV limitations with reproducibility safeguards</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 20</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Design and evaluate a CV pipeline for EM imagery that is fit for a specific connectomics task and explicitly bounded by known failure modes. Concretely: choose an architecture from the shape of the task rather than from the benchmark leaderboard, decompose error into merges and splits instead of reporting one score, convert that decomposition into a downstream cost using a ratio your team has actually measured, and write a release gate that says in advance what result would stop the model from shipping.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 20</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-task-model-fit">1) Task-model fit</h3>
+<ul>
+<li><strong>Technical:</strong> detection, instance segmentation, denoising, and classification need different objectives, and in EM they also need different data geometry.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Technical:** detection, instance segmentation, denoising, and classification need different objectives, and in EM they also need different data geometry. Affinity prediction with watershed and agglomeration is modular: the dense network runs once over the volume and agglomeration can be re-run cheaply with a new threshold or a learned merge model. Flood-filling networks produce instance labels directly with fewer post-processing stages, at substantially higher compute per volume and less ability to re-run one stage in isolation. Anisotropic data — 4 x 4 x 40 nm is 10:1 — makes z-context weak and pushes some pipelines toward 2D prediction with explicit cross-section linking.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Concept Focus (continued)"><p class="slide-number">Slide 5 of 20</p>
+<h2 id="concept-focus-continued">Concept Focus (continued)</h2>
+<ul>
+<li><strong>Plain language:</strong> pick the model for the job and for the voxel shape, not by popularity.</li>
+<li><strong>Misconception guardrail:</strong> one architecture solves all EM tasks equally well.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow"><p class="slide-number">Slide 6 of 20</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Write the EM task as a sentence naming the input, the output, and the downstream consumer of that output.</li>
+<li>Define the acceptable error envelope in decomposed terms: maximum merge rate, minimum ERL, and the region in which those numbers must hold.</li>
+<li>Select a baseline and at most two candidate approaches, using the approach table and the voxel geometry of your data.</li>
+<li>Assemble evaluation data that includes at least one deliberately hard region, and keep clean-region and hard-region metrics separate.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 20</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Evaluate with VI decomposed, ERL, and a connectivity-level metric; never report a single aggregate score alone.</li>
+<li>Convert the error counts into downstream cost using a merge-to-split ratio your team measured rather than assumed.</li>
+<li>Review 20-30 failure cases by eye in ambiguous regions and classify each by cause: weak stain, section loss, fold, thin neurite, or genuine ambiguity.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Core Workflow (continued)"><p class="slide-number">Slide 8 of 20</p>
+<h2 id="core-workflow-continued-1">Core Workflow (continued)</h2>
+<ul>
+<li>Publish a model card with intended use, unsupported uses, the evaluation regions, the metrics with their region breakdown, and the release gate the model passed.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (60 min)"><p class="slide-number">Slide 9 of 20</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-08:00 task framing + exemplar failure modes.</li>
+<li>08:00-20:00 choose metrics tied to downstream biology.</li>
+<li>20:00-34:00 evaluate baseline vs candidate model.</li>
+<li>34:00-46:00 error taxonomy and triage discussion.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Run of Show (60 min) (continued)"><p class="slide-number">Slide 10 of 20</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics.</li>
+<li>56:00-60:00 competency check: each learner states their release gate as a sentence that could fail.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Misconceptions to Watch"><p class="slide-number">Slide 11 of 20</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> one architecture solves all EM tasks equally well.</li>
+<li><strong>Misconception guardrail:</strong> a higher benchmark score means safer downstream use.</li>
+<li><strong>Misconception guardrail:</strong> visual plausibility is sufficient validation.</li>
+<li><strong>Misconception guardrail:</strong> the held-out ground truth is representative of the volume.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Misconceptions to Watch (continued)"><p class="slide-number">Slide 12 of 20</p>
+<h2 id="misconceptions-to-watch-continued">Misconceptions to Watch (continued)</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> more augmentation is always better than less.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Studio Activity"><p class="slide-number">Slide 13 of 20</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> Compare two segmentation-support CV models for an EM subvolume. You are given the model outputs, a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region, and a second, smaller ground-truth patch from a region containing a partial fold and two lost sections. Your team maintains the production segmentation and must recommend one model.</p>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Activity Output Checklist"><p class="slide-number">Slide 14 of 20</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 20</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<ul>
+<li><strong>Minimum pass:</strong> clear task-model rationale, biologically relevant metrics reported with merge and split separated, explicit limitations naming at least one unsupported use.</li>
+<li><strong>Strong performance:</strong> robust failure analysis by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric (continued)"><p class="slide-number">Slide 16 of 20</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li><strong>Failure modes:</strong> metric-only reasoning, pooling clean and artifact-heavy regions into one number, weak split design, no deployment boundaries, thresholds chosen after seeing which model they would favor.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Exit Ticket"><p class="slide-number">Slide 17 of 20</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Document one CV result with one supported use case and one forbidden use case.</p>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: References (Instructor)"><p class="slide-number">Slide 18 of 20</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Januszewski et al. (2018) for segmentation model context.</li>
+<li>Recent MICrONS/FlyWire methods for practical CV constraints.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: Teaching Materials"><p class="slide-number">Slide 19 of 20</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module14/</li>
+<li>Session kit: /teaching/sessions/module14/</li>
+<li>Worksheet: /assets/worksheets/module14/module14-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Read, review, or teach"><p class="slide-number">Slide 20 of 20</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module14.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module14/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

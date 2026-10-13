@@ -1,0 +1,79 @@
+/* Compact research-studio surfaces. Keep reading measure and touch targets. */
+:root {
+  --ink: #10303f; --ink-2: #1e4656; --muted: #52616a;
+  --teal: #0f6b73; --surface: #f5f8f8; --border: #cbd8da;
+  --radius: 10px; --shadow: 0 2px 8px rgb(16 48 63 / 4%);
+  --nt-page-width: 1180px; --nt-gutter: clamp(1rem, 3vw, 1.75rem);
+}
+body { font-size: 17px; }
+.navbar, .site-breadcrumbs, .layout-content, .main-content { max-width: var(--nt-page-width); }
+.layout-content, .main-content { padding-inline: var(--nt-gutter); }
+.layout-content .main-content { padding: 0; }
+main .section { margin-block: 1.25rem; padding: 1rem 0; }
+.home-refresh > .section { max-width: var(--nt-page-width); padding-inline: var(--nt-gutter); }
+main .section > h2:first-child { margin: 0 0 1rem; font-size: clamp(1.4rem, 2.5vw, 1.85rem); }
+main .section-compact { margin-block: 0.5rem; padding-block: 0.75rem; }
+main .section-highlight { padding: 1.25rem; }
+.cards-grid, .modules-grid { justify-items: stretch; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.cards-grid > .card, .modules-grid > .card { width: 100%; max-width: none; min-width: 0; margin: 0; }
+.card { padding: 1.15rem; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+.card h2, .card h3 { line-height: 1.25; margin-top: 0; }
+.card h2 { font-size: 1.4rem; }
+.cards-grid > .card h3 a, .modules-grid > .card h3 a { color: var(--ink); text-decoration: none; }
+.cards-grid > .card h3 a:hover, .modules-grid > .card h3 a:hover,
+.cards-grid > .card h3 a:focus-visible, .modules-grid > .card h3 a:focus-visible { text-decoration: underline; }
+.modules-grid > .card h3 { font-size: 1.15rem; margin: 0.65rem 0 0.5rem; }
+.card p { margin: 0.45rem 0 0.9rem; }
+.card > :last-child { margin-bottom: 0; }
+.card:focus-within { outline: 2px solid var(--teal); outline-offset: 3px; }
+.task-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.task-grid .card { border-top: 3px solid var(--teal); padding: 1.2rem; }
+.task-grid .task-label { margin-bottom: 0.6rem; color: #31516b; font-size: 0.82rem; }
+.task-grid .btn { margin-top: auto; }
+.home-refresh .hero-refresh { max-width: var(--nt-page-width); margin: 1rem auto 0; border-radius: 14px; }
+.home-refresh .home-hero-grid { gap: 1.5rem; }
+.home-refresh .home-intro-image { max-height: 280px; object-fit: contain; }
+.layout-content .hero-spaced, .main-content .hero-spaced { margin-inline: 0; margin-top: 1rem; margin-bottom: 1.25rem; }
+.module-browser { padding: 1rem 0; }
+.module-card { content-visibility: visible; contain-intrinsic-size: none; }
+.module-card .module-number { min-height: 0; margin: 0 0 0.5rem; }
+.resource-search { padding: 1rem; margin: 0.75rem 0; }
+.layout-content .secondary-options, .main-content .secondary-options { margin-inline: 0; }
+.btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; text-align: center; }
+main a:not(.btn):not(.jc-link):not(.jcg-result-btn) { text-underline-offset: 0.18em; }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #0f6b73; outline-offset: 3px; }
+.site-header :focus-visible { outline-color: #bfe3e4; }
+/* Retain #188's normal-click fix at every viewport. */
+#jc-filters, .paper-more-filters .jc-filters { position: static; top: auto; }
+/* The text edition reflows. It never scales slide screenshots down to phone size. */
+.deck-reader { max-width: 86ch; margin-inline: auto; }
+.deck-reader-nav { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 0.8rem 0 1.2rem; }
+.deck-reader-nav a { display: inline-flex; min-height: 44px; align-items: center; padding: 0.5rem 0.8rem; border: 1px solid var(--border); border-radius: 6px; }
+.deck-reader-index { padding-left: 1.5rem; }
+.deck-reader-index a { display: inline-block; padding-block: 0.25rem; }
+.deck-reading-slide { padding: 1.4rem 0; margin: 0; border-top: 1px solid var(--border); scroll-margin-top: 1rem; }
+.deck-reading-slide > h2 { font-size: 1.65rem; line-height: 1.25; }
+.deck-reader img { display: block; max-width: 100%; width: auto; height: auto; max-height: none; object-fit: contain; margin-block: 1rem; }
+.deck-reader .visual-columns, .deck-reader .visual-panels, .deck-reader .cols { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.deck-reader .visual-panel { padding: 1rem; border: 1px solid var(--border); background: white; }
+.deck-reader .source, .deck-reader .caption { font-size: 1rem; color: var(--muted); position: static; }
+.deck-reader .visual-step { display: block; margin: 0 0 0.65rem; }
+.deck-reader pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.deck-reader td, .deck-reader th { overflow-wrap: anywhere; }
+.deck-reader .cover-image { position: static; }
+.deck-reader .source { margin-block: 0.75rem; }
+.deck-reader figcaption { margin-block: 0.5rem; }
+@media (max-width: 960px) { .task-grid { grid-template-columns: 1fr; } }
+@media (max-width: 640px) {
+ .home-refresh .hero-refresh { margin-top: 0; border-radius: 0; }
+ .cards-grid, .modules-grid { gap: 0.75rem; grid-template-columns: minmax(0,1fr); }
+ .card { padding: 1rem; }
+ .home-refresh > .section, .start-guide .section, .resource-routes { padding: 0.75rem 1rem; margin-block: 0.6rem; }
+ .layout-content .section { padding-inline: 0; }
+ .home-refresh .home-intro-image { max-height: 180px; }
+ .deck-reader table { display: table; table-layout: fixed; width: 100%; }
+ .deck-reader table > thead, .deck-reader table > tbody { display: table-row-group; }
+ .deck-reader th, .deck-reader td { padding: 0.4rem; }
+}
+@media (prefers-reduced-motion: reduce) { .card, .home-refresh .card { transition: none; transform: none; } html { scroll-behavior: auto; } }
+@media print { .deck-reader-nav, .deck-reader-index { display: none; } .deck-reading-slide { break-inside: avoid; } .deck-reader details > * { display: block; } }

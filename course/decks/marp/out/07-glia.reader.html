@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Glia | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Glia</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="07-glia.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 18 slides</summary><ol><li><a href="#slide-1">1. Glia</a></li><li><a href="#slide-2">2. Session outcomes (60 minutes)</a></li><li><a href="#slide-3">3. Pedagogical arc</a></li><li><a href="#slide-4">4. Why this matters technically</a></li><li><a href="#slide-5">5. Orientation: the stake</a></li><li><a href="#slide-6">6. Astrocyte morphology in a synaptic neighbourhood</a></li><li><a href="#slide-7">7. Real data: an astrocytic process</a></li><li><a href="#slide-8">8. Real data: cortical vasculature</a></li><li><a href="#slide-9">9. Microglia cues</a></li><li><a href="#slide-10">10. Oligodendrocyte-associated cue context</a></li><li><a href="#slide-11">11. Myelin-context interpretation</a></li><li><a href="#slide-12">12. Operational glia triage protocol</a></li><li><a href="#slide-13">13. Metrics to track</a></li><li><a href="#slide-14">14. Misconceptions to correct</a></li><li><a href="#slide-15">15. Activity</a></li><li><a href="#slide-16">16. Rubric checkpoint</a></li><li><a href="#slide-17">17. The three classes, schematically</a></li><li><a href="#slide-18">18. References and attribution</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Glia"><p class="slide-number">Slide 1 of 18</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Unit 07</span></p>
+<h2 id="glia">Glia</h2>
+<p>Astrocytes, oligodendrocytes and microglia in EM — and why a single glia–neuron merge is one of the most expensive errors in the volume.</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Session outcomes (60 minutes)"><p class="slide-number">Slide 2 of 18</p>
+<h2 id="session-outcomes-60-minutes">Session outcomes (60 minutes)</h2>
+<ul>
+<li>Distinguish major glial classes in EM-oriented workflows.</li>
+<li>Reduce glia-neuron boundary errors in proofreading.</li>
+<li>Prioritize glia-related corrections by downstream impact.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Pedagogical arc"><p class="slide-number">Slide 3 of 18</p>
+<h2 id="pedagogical-arc">Pedagogical arc</h2>
+<ul>
+<li>Concept refresh: glia as active circuit context.</li>
+<li>Visual discrimination: class-specific cues.</li>
+<li>Practice: ambiguity triage and escalation.</li>
+<li>Check: class call plus uncertainty and action plan.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Why this matters technically"><p class="slide-number">Slide 4 of 18</p>
+<h2 id="why-this-matters-technically">Why this matters technically</h2>
+<ul>
+<li>Glia errors can induce merge/split cascades.</li>
+<li>Boundary mistakes alter neuron-centric metrics.</li>
+<li>Myelin and glial context changes interpretation of nearby neurites.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Walk one merge (unit §1): a fine astrocytic process fused onto a dendrite. The neuron gains a branch that does not exist. Because astrocytic processes ensheathe synapses, the merged path runs directly past many of them, and those detections get attributed to the neuron — inputs from cells it never contacted. The false inputs are spatially local, so they inflate local clustering and short-range connectivity.<br>Instructor script: &quot;Again the bias points toward an interesting result. That is why glia–neuron merges rank above many neuron–neuron splits in the queue, even though the split is more visually obvious.&quot;</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Orientation: the stake"><p class="slide-number">Slide 5 of 18</p>
+<h2 id="orientation-the-stake">Orientation: the stake</h2>
+<p><img src="../../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Glia occupy roughly 20–40% of cortical volume.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-GLIA S01.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Set the stake before anyone starts looking: a glia–neuron merge does not merely add a branch — it drags a neuron&#x27;s arbor past synapses it never contacted, so the false-input yield per micrometre of merged path is unusually high.<br>Each glial class has one near-diagnostic feature. Learn those three first: astrocyte — glycogen granules; oligodendrocyte — the darkest nucleus in the field; microglia — a dense elongated nucleus plus lysosomal content.</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Astrocyte morphology in a synaptic neighbourhood"><p class="slide-number">Slide 6 of 18</p>
+<h2 id="astrocyte-morphology-in-a-synaptic-neighbourhood">Astrocyte morphology in a synaptic neighbourhood</h2>
+<p><img src="../../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">An astrocytic process is space-filling; a neurite is a tube.</p>
+<p class="source">Source: Ventura RE, &quot;Astrocytes,&quot; SynapseWeb (Kristen M. Harris Lab, UT Austin), synapseweb.clm.utexas.edu/astrocytes. © The University of Texas at Austin; no reuse licence is stated — confirm permission before this deck is shared outside the course.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Read cross-sectional shape before anything else. An astrocytic process takes whatever contour is left over after the neurites pack; a neurite holds a tube shape of its own. That cue survives weak staining better than glycogen granules do, which makes it the one to reach for where everything else fails.<br>Other astrocyte cues from unit §2: pale &quot;watery&quot; cytoplasm with few organelles; glycogen granules 20–30 nm, very dark, clustered (neurons do not contain them); perisynaptic processes under 100 nm thick; endfeet flattened against vessels; no vesicles, no PSDs, few microtubules.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Real data: an astrocytic process"><p class="slide-number">Slide 7 of 18</p>
+<h2 id="real-data-an-astrocytic-process">Real data: an astrocytic process</h2>
+<div class="cols">
+<div>
+<p><img src="../../../../assets/images/content-library/em/astrocyte-process.jpg" alt="" loading="lazy" decoding="async"></p>
+</div>
+<div>
+<ul>
+<li>Pale cytoplasm, irregular space-filling outline that wraps its neighbours.</li>
+<li>Labelled &#x27;astrocyte&#x27; by H01&#x27;s subcompartment model.</li>
+</ul>
+</div>
+</div>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Trace the outline with your finger. Does it hold its own shape, or does it fill the gaps the neurites left?&quot;<br>Use the unit&#x27;s check-yourself: a pale, irregular profile between three neurites, no glycogen visible. Probably astrocytic — medium confidence at best. Absence of glycogen is weak evidence because granules are clustered and sparse. Better evidence, in order: space-filling behaviour over several sections; no vesicles or PSD on it; continuity to an endfoot; microtubules at higher magnification.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Real data: cortical vasculature"><p class="slide-number">Slide 8 of 18</p>
+<h2 id="real-data-cortical-vasculature">Real data: cortical vasculature</h2>
+<div class="cols">
+<div>
+<p><img src="../../../../assets/images/content-library/em/blood-vessel.jpg" alt="" loading="lazy" decoding="async"></p>
+</div>
+<div>
+<ul>
+<li>H01 contains ~230 mm of blood vessels across ~1 mm³.</li>
+<li>Vessels are a common site of merge errors — glia wrap them closely.</li>
+</ul>
+</div>
+</div>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Walk the unit&#x27;s worked example here: a pale profile a few hundred nanometres thick, pressed flat against a capillary, currently assigned to a nearby dendrite. Rule out synaptic participation first — even when the vascular context is shouting the answer. Glycogen absent: weak evidence, noted not spent. Over 5–10 sections the contour spreads to track the vessel wall: space-filling. Context: a flattened expansion covering a vessel is an endfoot. Dismiss microglia for cause — the parent process is pale and organelle-poor, not inclusion-rich.<br>Call: astrocytic endfoot, high confidence; the dendrite assignment is a glia–neuron merge and goes above conspicuous splits in the queue.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Microglia cues"><p class="slide-number">Slide 9 of 18</p>
+<h2 id="microglia-cues">Microglia cues</h2>
+<p><img src="../../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Weight nuclear evidence above process shape.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-GLIA S09.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Look for the pairing that carries the call: a dark, often elongated or bean-shaped nucleus with heterochromatin clumped against the envelope, plus lysosomal and phagosomal content in dense cytoplasm with long, narrow ER cisternae. Microglia are the least stereotyped of the three classes because morphology tracks activation state — which is why nuclear evidence outranks process shape, and why a microglia call needs a nucleus or a lysosome-rich parent process, never a fragment.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Oligodendrocyte-associated cue context"><p class="slide-number">Slide 10 of 18</p>
+<h2 id="oligodendrocyte-associated-cue-context">Oligodendrocyte-associated cue context</h2>
+<ul>
+<li><strong>Diagnostic feature:</strong> the darkest nucleus in the field — small, round, extremely<br>
+electron-dense heterochromatin, identifiable at low magnification.</li>
+<li>Dense cytoplasm: abundant rough ER and ribosomes, prominent Golgi. Soma ~6–8 µm.</li>
+<li>Processes connect the soma to myelin sheaths; one cell myelinates on the order of<br>
+20–60 axonal segments.</li>
+<li><strong>The hard case is not the mature cell.</strong> It is the OPC (NG2 cell): paler nucleus, can<br>
+resemble a small neuron or an astrocyte. &quot;Sort of oligodendrocyte but the nucleus is not<br>
+dark enough&quot; means OPC is the leading hypothesis — flag it, do not force the call.</li>
+</ul>
+<p><em>No extracted micrograph exists for this class; the full cue table is in Unit 07 §2.</em></p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;If you remember one thing about oligodendrocytes, it is the nucleus: distinctly darker than neuronal or astrocytic nuclei, usually identifiable at a glance.&quot; Then spend the time on the OPC: the correct action for a &quot;not quite&quot; cell is to flag rather than force. A flagged OPC candidate is a useful annotation; a forced wrong class is not.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Myelin-context interpretation"><p class="slide-number">Slide 11 of 18</p>
+<h2 id="myelin-context-interpretation">Myelin-context interpretation</h2>
+<div class="cols">
+<div>
+<p><img src="../../../../assets/images/content-library/em/myelin-in-grey-matter.jpg" alt="" loading="lazy" decoding="async"></p>
+</div>
+<div>
+<ul>
+<li>Myelin is the fastest route to an oligodendrocyte identification: follow a sheath back to the soma that owns it.</li>
+<li>A merge across a myelinated axon costs more than one across an unmyelinated process: the axon it corrupts is long-range.</li>
+</ul>
+</div>
+</div>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The panel highlights every myelinated axon the H01 myelin mask finds in one grey-matter field — a small minority of profiles in cortex. Instructor cue: ask how myelin context changes proofreading priority. Context cues from the protocol: the inner or outer tongue of a myelin sheath, or a paranodal loop, is a high-confidence oligodendrocyte call.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Operational glia triage protocol"><p class="slide-number">Slide 12 of 18</p>
+<h2 id="operational-glia-triage-protocol">Operational glia triage protocol</h2>
+<ol>
+<li>Identify likely class from morphology/context.</li>
+<li>Validate local boundary integrity.</li>
+<li>Estimate downstream risk if left uncorrected.</li>
+<li>Route to immediate correction or adjudication queue.</li>
+</ol>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The unit&#x27;s identification protocol, which feeds step 1: (1) soma? read the nucleus first — very dark and round -&gt; oligodendrocyte; dark, elongated, peripheral heterochromatin plus lysosomes -&gt; microglia; pale, irregular, glycogen -&gt; astrocyte; pale but &quot;not quite&quot; -&gt; OPC candidate, flag. (2) Synaptic participation -&gt; neurite, go to Unit 06. (3) Glycogen -&gt; astrocyte. (4) Cross-sectional character over 5–10 sections. (5) Context: endfoot, myelin tongue, lysosome-rich parent. (6) Unresolved -&gt; uncertain, with the missing cue named.<br>Context is the strongest cue in the protocol, but it is only safe after the exclusion steps have run.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Metrics to track"><p class="slide-number">Slide 13 of 18</p>
+<h2 id="metrics-to-track">Metrics to track</h2>
+<ul>
+<li>Glia-neuron boundary error rate.</li>
+<li>Class-specific agreement across reviewers.</li>
+<li>Escalation rate and resolution time.</li>
+<li>Downstream correction impact on network summaries.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Misconceptions to correct"><p class="slide-number">Slide 14 of 18</p>
+<h2 id="misconceptions-to-correct">Misconceptions to correct</h2>
+<ul>
+<li>&quot;Glia are background, neuron labels matter more.&quot;</li>
+<li>&quot;Any dark process near myelin is neuronal.&quot;</li>
+<li>&quot;Class call can be deferred indefinitely without impact.&quot;</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Activity"><p class="slide-number">Slide 15 of 18</p>
+<h2 id="activity">Activity</h2>
+<p>Classify two ambiguous glia-neuron interfaces and submit:</p>
+<ul>
+<li>class hypothesis,</li>
+<li>boundary-confidence score,</li>
+<li>correction priority rank,</li>
+<li>escalation note if unresolved.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Rubric checkpoint"><p class="slide-number">Slide 16 of 18</p>
+<h2 id="rubric-checkpoint">Rubric checkpoint</h2>
+<ul>
+<li>Pass: class + boundary rationale + action path.</li>
+<li>Strong: explicit risk prioritization and uncertainty language.</li>
+<li>Flag: class label without boundary logic.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: The three classes, schematically"><p class="slide-number">Slide 17 of 18</p>
+<h2 id="the-three-classes-schematically">The three classes, schematically</h2>
+<p><img src="../../../../assets/images/external/glial-cell-types.png" alt="" loading="lazy" decoding="async"></p>
+<p class="source">Source: Holly Fischer, Wikimedia Commons, File:Glial_Cell_Types.png. CC BY 3.0 Unported.</p>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: References and attribution"><p class="slide-number">Slide 18 of 18</p>
+<h2 id="references-and-attribution">References and attribution</h2>
+<ul>
+<li>Figures RIV-GLIA: Pat Rivlin training materials (MICrONS proofreading deck).</li>
+<li>Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.</li>
+<li>Harris &amp; Weinberg (2012), <em>Cold Spring Harb Perspect Biol</em>, doi:10.1101/cshperspect.a005587 — synaptic neighbourhood context.</li>
+</ul>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

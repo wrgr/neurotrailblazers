@@ -1,0 +1,97 @@
+name: Prepare visual review
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/module02-09-assessment-integration]
+    paths:
+      - .github/workflows/prepare-visual-review.yml
+      - scripts/prepare_visual_refresh.py
+      - scripts/lib/deck_design.rb
+      - scripts/build_deck_readers.py
+      - scripts/check_visual_design.*
+      - assets/css/deck-reader.css
+      - assets/css/visual-refresh.css
+      - _data/module_deck_visuals.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visual-review-preparation
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/codex/module02-09-assessment-integration'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.sha }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.6'
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned rendering and browser tools
+        run: |
+          npm install --prefix "$RUNNER_TEMP/visual-tools" --no-package-lock --no-save @marp-team/marp-cli@4.5.1 puppeteer@24.16.0
+          echo "$RUNNER_TEMP/visual-tools/node_modules/.bin" >> "$GITHUB_PATH"
+          echo "NODE_PATH=$RUNNER_TEMP/visual-tools/node_modules" >> "$GITHUB_ENV"
+      - name: Apply guarded source migration
+        run: |
+          if [ -f scripts/prepare_visual_refresh.py ]; then
+            python3 scripts/prepare_visual_refresh.py
+            rm scripts/prepare_visual_refresh.py
+          fi
+      - name: Regenerate teaching sources and rendered decks
+        run: |
+          ruby scripts/generate_module_teaching_materials.rb
+          bash scripts/render_marp.sh --html
+          ruby scripts/validate_generated_materials.rb
+          ruby scripts/check_visual_design.rb
+          ruby scripts/check_deck_freshness.rb
+      - name: Build the review site
+        run: bundle exec jekyll build
+      - name: Exercise card geometry and slide readers
+        run: node scripts/check_visual_design.cjs
+      - name: Verify paper-browser regressions and internal links
+        run: |
+          node scripts/check_research_modal.cjs
+          ruby scripts/check_site_links.rb
+          ruby scripts/check_anchor_links.rb
+      - name: Commit generated source to review branch only
+        run: |
+          # Workflow changes are submitted separately by the coordinator.
+          # This job has contents permission, not permission to rewrite workflows.
+          # All existing gates remain; new visual gates run above and must also
+          # be integrated into Validate before this draft becomes release-ready.
+          git restore --source=HEAD --staged --worktree .github/workflows/validate.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _layouts/default.html scripts course/decks/marp assets/worksheets teaching/sessions
+          if ! git diff --cached --quiet; then
+            git commit -m 'Regenerate visual teaching decks, reflowing readers, and review checks'
+            git push origin HEAD:refs/heads/codex/module02-09-assessment-integration
+          fi
+      - name: Record review evidence
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/visual-evidence"
+          git rev-parse HEAD > "$RUNNER_TEMP/visual-evidence/head-sha.txt"
+          git diff --binary > "$RUNNER_TEMP/visual-evidence/uncommitted.diff"
+          tar --exclude='./.git' --exclude='./vendor' --exclude='./node_modules' --exclude='./_site' --exclude='./.jekyll-cache' -czf "$RUNNER_TEMP/visual-evidence/source.tar.gz" .
+          if [ -d _site ]; then tar -czf "$RUNNER_TEMP/visual-evidence/site.tar.gz" -C _site .; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: visual-review-${{ github.sha }}
+          path: ${{ runner.temp }}/visual-evidence/
+          retention-days: 3

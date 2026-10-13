@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EM Prep and Imaging | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>EM Prep and Imaging</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="03-em-prep-and-imaging.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 17 slides</summary><ol><li><a href="#slide-1">1. EM Prep and Imaging</a></li><li><a href="#slide-2">2. Session outcomes (60 minutes)</a></li><li><a href="#slide-3">3. Pedagogical arc</a></li><li><a href="#slide-4">4. Acquisition chain (operational)</a></li><li><a href="#slide-5">5. Before EM: what a light microscope could draw</a></li><li><a href="#slide-6">6. Automated against manual, on the same tissue</a></li><li><a href="#slide-7">7. Real data: one section of human cortex</a></li><li><a href="#slide-8">8. Real data: the resolution you must reach everywhere</a></li><li><a href="#slide-9">9. Artifact taxonomy with downstream impact</a></li><li><a href="#slide-10">10. QA gates before full ingest</a></li><li><a href="#slide-11">11. Pilot-first strategy</a></li><li><a href="#slide-12">12. Throughput vs fidelity tradeoff</a></li><li><a href="#slide-13">13. Misconceptions to correct</a></li><li><a href="#slide-14">14. Activity: risk register workshop</a></li><li><a href="#slide-15">15. Formative rubric</a></li><li><a href="#slide-16">16. Pair with this unit</a></li><li><a href="#slide-17">17. Bridge</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: EM Prep and Imaging"><p class="slide-number">Slide 1 of 17</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Unit 03</span></p>
+<h2 id="em-prep-and-imaging">EM Prep and Imaging</h2>
+<p>Every preparation step solves a specific problem and introduces a characteristic failure. Learn the pairs.</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Session outcomes (60 minutes)"><p class="slide-number">Slide 2 of 17</p>
+<h2 id="session-outcomes-60-minutes">Session outcomes (60 minutes)</h2>
+<ul>
+<li>Identify major artifact classes and their downstream failure modes.</li>
+<li>Define QA gates before large-scale reconstruction.</li>
+<li>Build a practical acquisition risk register with mitigation triggers.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Pedagogical arc"><p class="slide-number">Slide 3 of 17</p>
+<h2 id="pedagogical-arc">Pedagogical arc</h2>
+<ul>
+<li>Hook: artifact examples and scientific consequences.</li>
+<li>Model: prep chain + QA checkpoints.</li>
+<li>Practice: classify artifacts and set gate thresholds.</li>
+<li>Check: triage decisions under constrained throughput.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Acquisition chain (operational)"><p class="slide-number">Slide 4 of 17</p>
+<h2 id="acquisition-chain-operational">Acquisition chain (operational)</h2>
+<p>Fixation -&gt; Staining -&gt; Sectioning/block-face -&gt; Imaging -&gt; Stack assembly</p>
+<p>Each stage introduces distinct, diagnosable error signatures.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Walk the chain with its failure pairs from unit §1.<br>Fixation: slow or delayed fixation shows as swollen astrocytic processes and enlarged extracellular space — it can make segmentation easier and still distorts every geometric measurement.<br>Staining (rOTO: reduced osmium, thiocarbohydrazide, osmium, then uranyl acetate and lead aspartate): weak membrane contrast is the dominant cause of automated merge errors — the most expensive prep failure.<br>Embedding: dehydration shrinks tissue roughly 5–20% linearly; every absolute length is affected, so prefer within-volume ratios.<br>Sectioning: lost sections, folds, knife chatter, compression. Block-face: charging; FIB-SEM curtaining.<br>Imaging: SNR improves with the square root of dose — doubling SNR costs about 4x the acquisition time.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Before EM: what a light microscope could draw"><p class="slide-number">Slide 5 of 17</p>
+<h2 id="before-em-what-a-light-microscope-could-draw">Before EM: what a light microscope could draw</h2>
+<p><img src="../../../../assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S02-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">A hand-drawn neuroanatomy plate from the light-microscopy era: whole-cell morphology, no synapses.</p>
+<p class="source">Source: assets_outreach source decks, Module12 L3 S02. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Everything on this plate is visible with a light microscope and sparse staining. Nothing on it tells you who connects to whom. The prep chain we are about to walk through exists to get from this to membranes 20 nm apart.&quot;<br>Then ask where, in the chain on the previous slide, errors become irreversible. Target answer: fixation and staining — contrast that is not in the tissue cannot be recovered by re-imaging.</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Automated against manual, on the same tissue"><p class="slide-number">Slide 6 of 17</p>
+<h2 id="automated-against-manual-on-the-same-tissue">Automated against manual, on the same tissue</h2>
+<p><img src="../../../../assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S09-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">The only way to learn your prep&#x27;s merge rate is to push a pilot volume all the way through segmentation and proofreading.</p>
+<p class="source">Source: assets_outreach source decks, Module13 L2 S09. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Panel a is automated segmentation, panel b is manual annotation of the same field. The difference between them is the proofreading bill your prep protocol will generate.&quot;<br>Tie to the non-negotiable rule in unit §3: run a pilot reconstruction on something like 100 x 100 x 100 µm before full acquisition — align, segment, skeletonize, and have a human proofread a handful of neurons. It costs perhaps 1–2% of the project and is the only way to discover a bad staining protocol while you can still change it.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Real data: one section of human cortex"><p class="slide-number">Slide 7 of 17</p>
+<h2 id="real-data-one-section-of-human-cortex">Real data: one section of human cortex</h2>
+<div class="cols wide-left">
+<div>
+<p><img src="../../../../assets/images/content-library/case-studies/h01/01-whole-sample.jpg" alt="" loading="lazy" decoding="async"></p>
+</div>
+<div>
+<ul>
+<li>H01: a ~4 mm wedge of human temporal cortex.</li>
+<li>5,019 sections at 33.9 nm mean thickness.</li>
+<li>1.8 PB raw acquisition; 326 days of 61-beam microscope time.</li>
+</ul>
+</div>
+</div>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;This is one of 5,019 sections. Imaging all of them took 326 days on a 61-beam microscope and produced 1.8 petabytes.&quot; Note the H01 case study&#x27;s warning: 1.8 PB is the raw acquisition and 1.4 PB the aligned volume — the two get conflated constantly, so say which you mean.<br>Work the unit&#x27;s acquisition-time arithmetic alongside: 800 µm cube at 4 x 4 x 40 nm is 8 x 10^14 px; at 0.2 gigapixels per second that is about 46 days of continuous imaging, about 77 at 60% uptime — before sectioning, QA or re-imaging.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Real data: the resolution you must reach everywhere"><p class="slide-number">Slide 8 of 17</p>
+<h2 id="real-data-the-resolution-you-must-reach-everywhere">Real data: the resolution you must reach everywhere</h2>
+<div class="cols">
+<div>
+<p><img src="../../../../assets/images/content-library/case-studies/h01/07-synapse-level.jpg" alt="" loading="lazy" decoding="async"></p>
+</div>
+<div>
+<ul>
+<li>Same sample at native 4 nm: membranes, mitochondria, vesicle clouds.</li>
+<li>Synapse-finding needs this resolution across the whole volume.</li>
+<li>The field of view here is ≈3.6 µm across.</li>
+</ul>
+</div>
+</div>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Every membrane you see here was made visible by osmium. If the staining had been ten percent weaker, which of these boundaries would a network still find?&quot;<br>This is the slide to land the asymmetry: noise that raises the split rate is recoverable; faint membranes that raise the merge rate are much less so. When trading dose against speed, protect membrane contrast.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Artifact taxonomy with downstream impact"><p class="slide-number">Slide 9 of 17</p>
+<h2 id="artifact-taxonomy-with-downstream-impact">Artifact taxonomy with downstream impact</h2>
+<ul>
+<li>Physical (tear/fold/chatter): topology discontinuities.</li>
+<li>Signal (charging/contrast drift): false boundaries, missed synapses.</li>
+<li>Geometric (misalignment/seams): apparent neurite breaks/merges.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The cost distinction from unit §2 matters more than the taxonomy: a labor artifact means the reconstruction will be correct eventually, after proofreading hours; a data-loss artifact (lost section, fold, tear, severe beam damage) makes some question permanently unanswerable in that region. Report them separately — one quality score conceals exactly the distinction the project needs.<br>Diagnostic habit: ask which coordinate system the defect lives in. Follows block geometry -&gt; staining penetration. Follows acquisition order -&gt; beam or detector drift. Follows anatomy -&gt; possibly real tissue composition.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: QA gates before full ingest"><p class="slide-number">Slide 10 of 17</p>
+<h2 id="qa-gates-before-full-ingest">QA gates before full ingest</h2>
+<ul>
+<li>Signal stability: SNR and intensity drift bounds.</li>
+<li>Geometric consistency: seam residual and alignment error limits.</li>
+<li>Completeness: missing/damaged section accounting.</li>
+<li>Metadata completeness: acquisition parameters and provenance.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Example gates from the unit, stated in advance with numbers: stop if more than 2 consecutive sections are lost; review handling if cumulative loss exceeds 1%; stop if membrane contrast-to-noise drops more than 20% from baseline; flag sections with more than 5% fold area; re-run alignment if the 99th-percentile residual exceeds one voxel at native xy.<br>Instructor script: &quot;The numbers are yours to set. What is not optional is setting them before you start, because a threshold chosen after seeing the data is not a threshold.&quot;</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Pilot-first strategy"><p class="slide-number">Slide 11 of 17</p>
+<h2 id="pilot-first-strategy">Pilot-first strategy</h2>
+<ul>
+<li>Run pilot segmentation/QC on representative blocks.</li>
+<li>Quantify expected merge/split burden before full-volume processing.</li>
+<li>Adjust prep protocol if projected correction load is unacceptable.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Throughput vs fidelity tradeoff"><p class="slide-number">Slide 12 of 17</p>
+<h2 id="throughput-vs-fidelity-tradeoff">Throughput vs fidelity tradeoff</h2>
+<ul>
+<li>Higher throughput without gates amplifies downstream correction cost.</li>
+<li>QA cost upfront is often cheaper than post hoc proofreading.</li>
+<li>Teach teams to model this explicitly, not intuitively.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Use the unit&#x27;s triage check-yourself on a 20,000-section volume: rank (a) 4 scattered lost sections, (b) 4 consecutive lost sections, (c) charging on 15% of sections, (d) 10% weaker membrane contrast throughout. Answer, roughly b &gt; d &gt; c &gt; a. Four consecutive losses is a 160 nm gap that cuts the volume in two; weaker contrast raises merges everywhere and cannot be fixed by re-imaging. The lesson: distribution matters more than count.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Misconceptions to correct"><p class="slide-number">Slide 13 of 17</p>
+<h2 id="misconceptions-to-correct">Misconceptions to correct</h2>
+<ul>
+<li>&quot;Artifacts can be cleaned up later without scientific cost.&quot;</li>
+<li>&quot;Good visual quality implies quantitative adequacy.&quot;</li>
+<li>&quot;Metadata can be reconstructed after acquisition.&quot;</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>On the third: per-tile timestamps are what let you ask whether a defect follows block position, anatomy or acquisition time. Without them you cannot ask the question at all, and they cannot be recovered later.</p></details></section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Activity: risk register workshop"><p class="slide-number">Slide 14 of 17</p>
+<h2 id="activity-risk-register-workshop">Activity: risk register workshop</h2>
+<p>For three artifact types, specify:</p>
+<ul>
+<li>detection metric,</li>
+<li>alert threshold,</li>
+<li>mitigation action,</li>
+<li>stop/go decision owner.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Formative rubric"><p class="slide-number">Slide 15 of 17</p>
+<h2 id="formative-rubric">Formative rubric</h2>
+<ul>
+<li>Pass: each artifact has metric + threshold + mitigation.</li>
+<li>Strong: downstream impact quantified in scientific terms.</li>
+<li>Flag: qualitative descriptions without operational triggers.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Pair with this unit"><p class="slide-number">Slide 16 of 17</p>
+<h2 id="pair-with-this-unit">Pair with this unit</h2>
+<ul>
+<li>Denk &amp; Horstmann (2004), <em>PLOS Biology</em>, doi:10.1371/journal.pbio.0020329 — serial block-face SEM.</li>
+<li>Kasthuri et al. (2015), <em>Cell</em>, doi:10.1016/j.cell.2015.06.054 — ATUM-based saturated reconstruction.</li>
+<li>Shapson-Coe et al. (2024), <em>Science</em>, doi:10.1126/science.adk4858 — multibeam acquisition at 1 mm³.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Bridge"><p class="slide-number">Slide 17 of 17</p>
+<h2 id="bridge">Bridge</h2>
+<p>Next unit: infrastructure for robust reconstruction once acquisition is trusted.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

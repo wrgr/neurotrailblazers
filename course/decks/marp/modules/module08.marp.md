@@ -24,23 +24,19 @@ Teaching Deck
 - Interpret outcomes with uncertainty discipline
 - Separate supported claims from exploratory signals
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Design one hypothesis test with metric, null model, and interpretation boundary statement.
 
+
 ---
 
 ## Concept Focus
 ### 1) What makes a connectomics hypothesis testable?
 A testable connectomics hypothesis must specify: (a) a structural feature that can be measured from the reconstructed data (e.g., synapse count, motif frequency, path length), (b) a comparison or null expectation (e.g., "more frequent than in a degree-preserving random graph"), and (c) an interpretation boundary (what the result does and does not prove). Many fascinating biological questions ("How does the cortex generate consciousness?") are not directly testable with connectomics because they lack measurable structural endpoints.
+
 
 ---
 
@@ -49,7 +45,13 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 - Choose measurable outputs: specific metric(s) computed from the connectome graph.
 - Select null model: the most stringent null relevant to the claim.
 - Test and interpret results: compute metric, compare to null distribution, compute z-score and p-value.
+
+
+---
+
+## Core Workflow (continued)
 - Document supported vs unsupported claims: what the result proves, what it doesn't, and what additional evidence would be needed.
+
 
 ---
 
@@ -58,8 +60,6 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 - 08:00-20:00 | Hypothesis drafting
 - 20:00-34:00 | Metric and null model selection
 - 34:00-46:00 | Interpretation workshop
-- 46:00-60:00 | Competency check
-
 <!--
 Pre-class preparation (10 min async)
   Read the motif analysis content library entry (focus on null models section)
@@ -95,16 +95,52 @@ Pre-class preparation (10 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 46:00-60:00 | Competency check
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** a significant result against a random-graph null is evidence of biological structure.
 - **Misconception guardrail:** the statistical test is the scientific step, when the choice of null model is.
 - **Misconception guardrail:** a metric can be chosen after seeing the data without cost to the inference.
 - **Misconception guardrail:** reporting the tests that worked is sufficient without reporting how many were run.
 
+
+---
+
+<!-- _class: visual-lesson -->
+## Connect the question to the comparison
+<p class="visual-lead">A structural claim needs a measurable endpoint.</p>
+<ol class="visual-steps"><li><span class="step-number" aria-hidden="true">1</span><h3>Hypothesis</h3><p>Which pattern and sample?</p></li><li><span class="step-number" aria-hidden="true">2</span><h3>Metric</h3><p>What will be measured?</p></li><li><span class="step-number" aria-hidden="true">3</span><h3>Null model</h3><p>What does the comparison preserve?</p></li><li><span class="step-number" aria-hidden="true">4</span><h3>Boundary</h3><p>What does this not establish?</p></li></ol>
+<p class="visual-question"><strong>Discuss:</strong> Which assumption does your null model leave untested?</p>
+<p class="source">Illustrative teaching scenario; see this module’s lesson and worked example.</p>
+<!--
+Visual description and discussion guidance:
+Different null models preserve different properties. A finding is conditional on the comparison and sampling design; structural association alone does not establish function or causation.
+-->
+
+
+---
+
+<!-- _class: visual-lesson -->
+## A difference is not yet a conclusion
+<p class="visual-lead">Hypothetical counts, supplied to discuss interpretation.</p>
+<table><thead><tr><th scope="col">Quantity</th><th scope="col">Count</th></tr></thead><tbody><tr><th scope="row">Observed reciprocal pairs</th><td>12</td></tr><tr><th scope="row">Median across null graphs</th><td>8</td></tr></tbody></table>
+<p class="visual-question"><strong>Discuss:</strong> What is missing before calling this evidence of enrichment?</p>
+<p class="source">Synthetic scenario; Module 08 metric, null model and interpretation workflow.</p>
+<!--
+Visual description and discussion guidance:
+Twelve is four more than eight, but no null distribution, sample size, sampling unit or uncertainty is supplied. A ratio of 1.5 alone does not establish statistical significance or a mechanism. Ask how the null graphs were produced and what they preserve.
+-->
+
+
 ---
 
 ## Studio Activity
 **Scenario:** Your lab is planning a study of feedforward vs feedback connectivity in mouse visual cortex using the MICrONS dataset. You need to design three testable hypotheses about the circuit architecture.
+
 
 ---
 
@@ -113,44 +149,57 @@ Pre-class preparation (10 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - At least 2 of 3 hypotheses name a measurable structural endpoint, a specific comparison, and a null model — a reader could run the test from the sheet alone.
 - Each testable hypothesis states one supported claim and one explicit non-claim, and the two are different in content, not restatements.
 - The metric's scope (local vs global, per-pair vs per-population) matches the scope of the hypothesis it tests.
+
+
+---
+
+## Assessment Rubric (continued)
 - The required dataset version is stated for each hypothesis.
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Null model choice is justified in words: the "uninteresting explanation" the null encodes is written out before the test is described.
 - At least one hypothesis is evaluated under two nulls of different stringency, with a prediction of how the effect size should move.
 - The analysis plan states how many tests will be run and names the correction, including tests that may go unreported.
+
+
+---
+
+## Assessment Rubric (continued)
 - Peer critique identifies at least one genuine weakness per hypothesis (a confound, an over-claim, a metric mismatch), and the revision visibly responds to it.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure to flag**
-
 - Vague hypothesis without measurable endpoint ("we will study connectivity patterns").
 - Missing or default null model — Erdos-Renyi used where degree structure obviously matters.
 - A functional claim ("this circuit computes X") stated as the hypothesis rather than as an interpretation boundary.
+
 
 ---
 
 ## Exit Ticket
 Write one claim and one explicit non-claim from the same test outcome.
 
+
 ---
 
 ## References (Instructor)
 - Use module references listed on the module page.
+
 
 ---
 
@@ -158,3 +207,17 @@ Write one claim and one explicit non-claim from the same test outcome.
 - Module page: /modules/module08/
 - Session kit: /teaching/sessions/module08/
 - Worksheet: /assets/worksheets/module08/module08-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module08.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module08/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

@@ -39,7 +39,8 @@ Learners should arrive having covered:
 
 <div class="resource-card">
   <div class="resource-links">
-    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module18.html' | relative_url }}">Open slides</a>
+    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module18.html' | relative_url }}">Present slides</a>
+    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module18.reader.html' | relative_url }}">Read slides as a page</a>
     <a class="resource-link" href="{{ site.deck_source_base }}/modules/module18.marp.md">Editable slides</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module18/module18-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module18/' | relative_url }}">Full module page</a>

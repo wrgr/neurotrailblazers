@@ -10,13 +10,13 @@ content_type: navigation
 <h2 id="site-search-title">Search the site</h2>
 <label for="site-search">What are you looking for?</label>
 <input type="search" id="site-search" placeholder="e.g. synapse, proofreading, Python" data-index-url="{{ '/resources/search-index.json' | relative_url }}?v={{ site.time | date: '%s' }}" aria-describedby="site-search-help" disabled>
-<p id="site-search-help">Search page titles and descriptions. To search individual papers, use <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">papers and citations</a>.</p>
+<p id="site-search-help">Search page titles and descriptions. To search individual papers, use <a href="{{ '/technical-training/journal-club/' | relative_url }}">papers and citations</a>.</p>
 <p id="site-search-status" role="status" aria-live="polite">Loading search…</p>
 <ul id="site-search-results" class="site-search-results"></ul>
 <button type="button" id="site-search-more" class="btn btn-secondary" hidden>Show more results</button>
 </section>
 <section class="section resource-routes"><h2>Choose a resource</h2><div class="cards-grid">
-<article class="card"><h3>Find a paper</h3><p>Search 2,000 papers, read an abstract, and follow citations.</p><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Papers and citations →</a></article>
+<article class="card"><h3>Find a paper</h3><p>Search 2,000 papers, read an abstract, and follow citations.</p><a href="{{ '/technical-training/journal-club/' | relative_url }}">Papers and citations →</a></article>
 <article class="card"><h3>Look up a term</h3><p>Definitions and common points of confusion.</p><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary →</a></article>
 <article class="card"><h3>Read a method or example</h3><p>Reference explanations for imaging, anatomy, proofreading, and analysis.</p><a href="{{ '/content-library/' | relative_url }}">Methods and examples →</a></article>
 <article class="card"><h3>Find data</h3><p>Dataset descriptions and instructions for accessing public volumes.</p><a href="{{ '/datasets/' | relative_url }}">Datasets →</a></article>

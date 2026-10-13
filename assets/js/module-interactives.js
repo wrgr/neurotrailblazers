@@ -7,7 +7,7 @@
   }
 
   function updateProgress(root) {
-    var checks = Array.from(root.querySelectorAll('.nt-progress-step'));
+    var checks = Array.from(root.querySelectorAll('.nt-progress-step:not([data-assessment])'));
     if (!checks.length) return;
 
     var done = checks.filter(function (el) { return el.checked; }).length;
@@ -18,7 +18,15 @@
     var text = root.querySelector('.nt-progress-text');
     if (fill) fill.style.width = pct + '%';
     if (bar) bar.setAttribute('aria-valuenow', String(pct));
-    if (text) text.textContent = pct + '% complete';
+    if (text) text.textContent = pct + '% of self-reported activities checked';
+    if (bar) bar.setAttribute('aria-label', 'Self-reported activity progress');
+    root.querySelectorAll('[data-assessment]').forEach(function (el) {
+      el.checked = root.getAttribute('data-' + el.dataset.assessment + '-passed') === 'true';
+    });
+    var result = root.querySelector('.nt-assessment-status');
+    if (result) result.textContent = root.querySelector('.nt-quiz-submit')
+      ? (root.getAttribute('data-quiz-passed') === 'true' ? 'Checkpoint: passed in this browser.' : 'Checkpoint: not yet passed.')
+      : 'Checkpoint: not available for this module.';
   }
 
   function storageKey(root) {

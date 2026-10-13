@@ -225,4 +225,4 @@ Curated papers on connectomics data management, annotation systems, file formats
 - What are the implications of moving from file-based storage (HDF5 on a file system) to object-based storage (Zarr on S3)?
 - How should the community govern format extensions to balance flexibility with interoperability?
 
-**Related content:** [BossDB paper (this page, #7)](#7-ackerman-et-al-2022--bossdb-a-cloud-native-approach-for-petascale-neuroscience-data-management), [Data formats](/content-library/infrastructure/data-formats/)
+**Related content:** [BossDB paper (this page, #7)](#7-hider-et-al-2022--bossdb-a-cloud-native-approach-for-petascale-neuroscience-data-management), [Data formats](/content-library/infrastructure/data-formats/)

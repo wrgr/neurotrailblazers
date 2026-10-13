@@ -11,7 +11,7 @@ pathways:
   - mentor support
 ---
 
-*Generated from `modules/module20.md`. Edit the module page, not this file.*
+<!-- Generated from modules/module20.md; edit the module source. -->
 
 ## At a glance
 
@@ -39,8 +39,8 @@ Learners should arrive having covered:
 
 <div class="resource-card">
   <div class="resource-links">
-    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module20.html' | relative_url }}">Open deck (HTML)</a>
-    <a class="resource-link" href="{{ site.deck_source_base }}/modules/module20.marp.md">Slide source (Markdown)</a>
+    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module20.html' | relative_url }}">Open slides</a>
+    <a class="resource-link" href="{{ site.deck_source_base }}/modules/module20.marp.md">Editable slides</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module20/module20-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module20/' | relative_url }}">Full module page</a>
   </div>

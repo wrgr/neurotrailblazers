@@ -15,9 +15,9 @@
         {% for item in page.datasets %}
           {% assign value = item | to_s %}
           {% if value contains '/' %}
-            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+            <li>{% include ui/resource-link.html url=value %}</li>
           {% else %}
-            <li><a href="{{ '/datasets/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+            <li>{% assign related_url = '/datasets/' | append: value | append: '/' %}{% include ui/resource-link.html url=related_url %}</li>
           {% endif %}
         {% endfor %}
       </ul>
@@ -26,14 +26,14 @@
 
     {% if has_personas %}
     <article class="card">
-      <h3>Personas</h3>
+      <h3>Background guides</h3>
       <ul class="list-tight">
         {% for item in page.personas %}
           {% assign value = item | to_s %}
           {% if value contains '/' %}
-            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+            <li>{% include ui/resource-link.html url=value %}</li>
           {% else %}
-            <li><a href="{{ '/avatars/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+            <li>{% assign related_url = '/avatars/' | append: value | append: '/' %}{% include ui/resource-link.html url=related_url %}</li>
           {% endif %}
         {% endfor %}
       </ul>
@@ -47,9 +47,9 @@
         {% for item in page.related_tools %}
           {% assign value = item | to_s %}
           {% if value contains '/' %}
-            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+            <li>{% include ui/resource-link.html url=value %}</li>
           {% else %}
-            <li><a href="{{ '/tools/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+            <li>{% assign related_url = '/tools/' | append: value | append: '/' %}{% include ui/resource-link.html url=related_url %}</li>
           {% endif %}
         {% endfor %}
       </ul>
@@ -58,14 +58,14 @@
 
     {% if has_frameworks %}
     <article class="card">
-      <h3>Frameworks</h3>
+      <h3>Program guidance</h3>
       <ul class="list-tight">
         {% for item in page.related_frameworks %}
           {% assign value = item | to_s %}
           {% if value contains '/' %}
-            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+            <li>{% include ui/resource-link.html url=value %}</li>
           {% else %}
-            <li><a href="{{ '/frameworks/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+            <li>{% assign related_url = '/frameworks/' | append: value | append: '/' %}{% include ui/resource-link.html url=related_url %}</li>
           {% endif %}
         {% endfor %}
       </ul>
@@ -74,14 +74,14 @@
 
     {% if has_next %}
     <article class="card">
-      <h3>Next Modules</h3>
+      <h3>Continue learning</h3>
       <ul class="list-tight">
         {% for item in page.next_modules %}
           {% assign value = item | to_s %}
           {% if value contains '/modules/' %}
-            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+            <li>{% include ui/resource-link.html url=value %}</li>
           {% else %}
-            <li><a href="{{ '/modules/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+            <li>{% assign related_url = '/modules/' | append: value | append: '/' %}{% include ui/resource-link.html url=related_url %}</li>
           {% endif %}
         {% endfor %}
       </ul>

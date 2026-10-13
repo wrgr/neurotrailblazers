@@ -2,7 +2,7 @@
 
 **Module:** Module 01: Scientific Curiosity and Motivation  
 **Duration:** 3-4 hours  
-*Generated from the module page. Edit `modules/module01.md`, not this file.*
+<!-- Generated from modules/module01.md; edit the module source. -->
 
 ---
 

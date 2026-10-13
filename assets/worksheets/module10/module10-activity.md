@@ -2,7 +2,7 @@
 
 **Module:** Module 10: Network Science and Graph Representation  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module10.md`, not this file.*
+<!-- Generated from modules/module10.md; edit the module source. -->
 
 ---
 

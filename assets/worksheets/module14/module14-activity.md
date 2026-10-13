@@ -2,7 +2,7 @@
 
 **Module:** Module 14: Computer Vision for EM  
 **Duration:** 4-5 hours  
-*Generated from the module page. Edit `modules/module14.md`, not this file.*
+<!-- Generated from modules/module14.md; edit the module source. -->
 
 ---
 

@@ -1,0 +1,37 @@
+# A legacy active flag means a page exists, not that it is complete.
+# Modules 02–09 have missing checkpoint quizzes and practice mapped to old lessons.
+# Other modules await a maintainer's readiness review.
+default_status: unreviewed
+modules:
+  module02:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."
+  module03:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."
+  module04:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."
+  module05:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."
+  module06:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."
+  module07:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."
+  module08:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."
+  module09:
+    status: in_development
+    interactive_practice: in_development
+    note: "Module-specific interactive practice is in development. The current lesson, guided activity, and teaching materials are available to review."

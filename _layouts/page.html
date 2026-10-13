@@ -4,6 +4,7 @@ layout: default
 
 <div class="layout-content layout-page">
   {% include ui/page-hero.html %}
+  {% if page.module_number or page.url contains '/teaching/sessions/module' %}{% include ui/module-status.html banner=true %}{% endif %}
   {% if page.image %}
   <figure class="module-art">
     <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}" loading="lazy" width="1200" height="420">
@@ -13,9 +14,11 @@ layout: default
   {{ content }}
   {% if page.url contains '/technical-training/' and page.url != '/technical-training/' %}
   {% unless page.url contains '/technical-training/slides/' or page.url contains '/technical-training/journal-club/' or page.url contains '/technical-training/dictionary/' %}
+  <details class="secondary-options"><summary>Instructor and reference notes</summary>
   {% include ui/technical-evidence-pack.html %}
   {% include ui/technical-capability-brief.html %}
   {% include ui/technical-unit-concepts.html %}
+  </details>
   {% endunless %}
   {% endif %}
 </div>

@@ -2,7 +2,7 @@
 
 **Module:** Module 11: Synapses and Circuit Logic  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module11.md`, not this file.*
+<!-- Generated from modules/module11.md; edit the module source. -->
 
 ---
 

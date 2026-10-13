@@ -2,7 +2,7 @@
 
 **Module:** Module 21: Reproducibility and FAIR Principles in Connectomics  
 **Duration:** 4-5 hours  
-*Generated from the module page. Edit `modules/module21.md`, not this file.*
+<!-- Generated from modules/module21.md; edit the module source. -->
 
 ---
 

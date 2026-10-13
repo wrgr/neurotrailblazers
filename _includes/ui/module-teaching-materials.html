@@ -13,9 +13,9 @@
   <div class="cards-grid">
     <article class="card">
       <h3 class="card-title">Slide Deck</h3>
-      <p class="card-description">Classroom-ready deck links for teaching and delivery.</p>
-      <p><a href="{{ marp_html | relative_url }}">Open rendered HTML deck</a></p>
-      <p><a href="{{ marp_src }}">Slide source (Markdown)</a></p>
+      <p class="card-description">Slides and session instructions for this module. Check the module status before teaching it.</p>
+      <p><a href="{{ marp_html | relative_url }}">Open presentation slides</a></p>
+      <p><a href="{{ marp_src }}">Download editable slides</a></p>
       <p><a href="{{ session_kit | relative_url }}">Session kit: prep, timing and rubric</a></p>
     </article>
     <article class="card">
@@ -23,10 +23,6 @@
       <p class="card-description">Learner worksheet aligned to the studio activity and rubric.</p>
       <p><a href="{{ worksheet | relative_url }}">Open worksheet</a></p>
     </article>
-    <article class="card">
-      <h3 class="card-title">Slide Source</h3>
-      <p class="card-description">Marp source file for editing and rendering.</p>
-      <p><code>course/decks/marp/modules/module{{ numpad }}.marp.md</code></p>
-    </article>
+
   </div>
 </section>

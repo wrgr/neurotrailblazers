@@ -2,10 +2,15 @@
 layout: page
 title: "Content Library"
 permalink: /content-library/
-description: "Canonical reference scripts, worked examples, and case studies for the NeuroTrailblazers technical curriculum. Each entry is a self-contained teaching document designed for reuse across unit pages, slide decks, instructor scripts, and student handouts."
+description: "Explanations, worked examples, and case studies for connectomics methods."
 content_type: core
 ---
 
+Find a method, a worked example, or background on a technical question. These reference pages can be read in any order.
+
+<div class="cta-buttons"><a class="btn btn-primary" href="{{ '/resources/' | relative_url }}">Search topics across the site</a><a class="btn btn-secondary" href="{{ '/technical-training/' | relative_url }}">Follow the connectomics course</a></div>
+
+<details class="secondary-options" markdown="1"><summary>About these reference pages</summary>
 ## What this is
 
 The content library is [core reference material]({{ '/core/' | relative_url }}): the
@@ -50,6 +55,9 @@ Content is tagged across 9 dimensions for flexible combination:
 | Methodology | #95A5A6 | experimental-design, reproducibility, benchmark, ground-truth |
 
 ---
+
+
+</details>
 
 ## Neuroanatomy
 

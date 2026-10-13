@@ -1,0 +1,14 @@
+{% assign status_item = include.item | default: page %}
+{% assign status_number = status_item.module_number | default: status_item.number | plus: 0 %}
+{% if status_number == 0 and status_item.url contains '/module' %}{% assign status_number = status_item.url | split: '/module' | last | slice: 0, 2 | plus: 0 %}{% endif %}
+{% assign status_pad = status_number | prepend: '0' | slice: -2, 2 %}
+{% assign status_slug = 'module' | append: status_pad %}
+{% assign status_override = site.data.module_status.modules[status_slug] %}
+{% assign module_state = status_override.status | default: status_item.development_status | default: status_item.status | default: site.data.module_status.default_status %}
+{% if module_state == 'active' %}{% assign module_state = site.data.module_status.default_status %}{% endif %}
+{% assign module_label = 'Status not confirmed' %}
+{% if module_state == 'in_development' or module_state == 'draft' or module_state == 'planned' %}
+  {% assign module_label = 'In development' %}{% assign module_state = 'in_development' %}
+{% elsif module_state == 'available' or module_state == 'ready' or module_state == 'published' %}
+  {% assign module_label = 'Available' %}{% assign module_state = 'available' %}
+{% else %}{% assign module_state = 'unreviewed' %}{% endif %}

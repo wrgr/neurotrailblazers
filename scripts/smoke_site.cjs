@@ -48,11 +48,12 @@ async function main() {
     await page.setViewport({width:1280,height:900});
     await visit('/');
     assert.equal(await page.$$eval('.nav-item', elements => elements.length), 6);
+    assert(await page.$$eval('.home-refresh .card', cards => cards.every(c => getComputedStyle(c).opacity === '1')), 'Homepage task cards are visible');
     await page.focus(`${menuGroup('Learn')} > summary`);
     await page.keyboard.press('Enter');
     await page.waitForSelector(`${menuGroup('Learn')}[open] .dropdown`, {visible:true});
     await page.keyboard.press('Tab');
-    assert.equal(await page.evaluate(() => document.activeElement.getAttribute('href')), '/tracks/');
+    assert.equal(await page.evaluate(() => document.activeElement.getAttribute('href')), '/technical-training/');
     await page.keyboard.press('Escape');
     assert.equal(await page.$eval(menuGroup('Learn'), element => element.open), false);
     assert.equal(await page.evaluate(() => document.activeElement.tagName), 'SUMMARY');
@@ -61,8 +62,8 @@ async function main() {
     assert(new URL(page.url()).pathname === '/technical-training/');
     await follow('main a.btn-primary[href="/technical-training/01-why-map-the-brain/"]');
     assert.equal(new URL(page.url()).pathname, '/technical-training/01-why-map-the-brain/');
-    await openGroup('Teaching');
-    await follow(`${menuGroup('Teaching')} a[href="/teaching/sequence/"]`);
+    await openGroup('Teach');
+    await follow(`${menuGroup('Teach')} a[href="/teaching/sequence/"]`);
     await follow('main a[href="/teaching/lectures/connectomics-01-introduction/#teach-a-90-minute-session"]');
     await page.waitForSelector('#teach-a-90-minute-session');
     await follow('main a[href="/teaching/lectures/introduction-activity/"]');
@@ -99,8 +100,8 @@ async function main() {
     assert(graphResponse.text.includes('synthetic-four-neuron-graph-v1'));
     await follow('main a[href="/teaching/lectures/algorithms-and-applications-answers/"]');
     await page.waitForSelector('[id="1-graph-construction"]');
-    await openGroup('Teaching');
-    await follow(`${menuGroup('Teaching')} a[href="/technical-training/slides/"]`);
+    await openGroup('Teach');
+    await follow(`${menuGroup('Teach')} a[href="/technical-training/slides/"]`);
     await follow('main a[href="/course/decks/marp/out/lectures/synapse-detection.html"]');
     await page.waitForSelector('section');
     assert(await page.$$eval('section', elements => elements.length > 1));
@@ -134,7 +135,43 @@ async function main() {
     await page.select('#stage-select', '');
     assert.equal(await visibleCount('.module-card'), modules);
 
+    await page.type('#module-search', 'Python');
+    await page.waitForFunction(() => document.getElementById('module-count').textContent.startsWith('1 of'));
+    assert.equal(await visibleCount('.module-card'), 1);
+    await page.select('#module-status-filter', 'in_development');
+    await page.click('#module-search', {clickCount:3});
+    await page.keyboard.press('Backspace');
+    await page.waitForFunction(() => document.getElementById('module-count').textContent.startsWith('8 of'));
+    assert.equal(await visibleCount('.module-card'), 8);
+    await visit('/modules/module03/');
+    assert((await page.$eval('.module-status-notice', e => e.textContent)).includes('In development'));
+    assert.equal(await page.$$eval('.nt-progress-step', checks => checks.length), 3);
+    assert.equal(await page.$('.nt-task-submit'), null);
+    await page.click('.nt-progress-step[data-step-index="0"]');
+    assert.equal(await page.$eval('.nt-progress-text', e => e.textContent), '33% complete');
+    await page.reload({waitUntil:'domcontentloaded'});
+    assert.equal(await page.$eval('.nt-progress-text', e => e.textContent), '33% complete');
+    await page.click('.nt-progress-reset');
+    assert.equal(await page.$eval('.nt-progress-text', e => e.textContent), '0% complete');
+    await visit('/modules/module10/');
+    await page.click('input[name="task-choice"][value="2"]');
+    await page.click('.nt-task-submit');
+    assert(await page.$eval('.nt-progress-step[data-step-index="4"]', e => e.checked), 'Practice completion updates the correct progress step');
+
+    await visit('/resources/');
+    await page.waitForSelector('#site-search:not([disabled])');
+    await page.type('#site-search', 'synapse');
+    await page.waitForSelector('#site-search-results a');
+    assert((await page.$eval('#site-search-status', e => e.textContent)).includes('matching pages'));
+    await page.click('#site-search', {clickCount:3});
+    await page.type('#site-search', 'zzzz-no-such-resource');
+    await page.waitForFunction(() => document.getElementById('site-search-status').textContent.startsWith('No pages match'));
+    assert.equal(await page.$$('#site-search-results a').then(a => a.length), 0);
+
     await visit('/start-here/');
+    assert.equal(await page.$eval('#background-options', e => e.open), false, 'Optional background guidance is collapsed');
+    assert(await page.$eval('#pf-tab-maya', e => e.closest('#background-options') !== null));
+    await page.click('#background-options > summary');
     assert.equal(await page.$eval('#pf-tab-maya', element => element.closest('a')), null);
     await page.click('#pf-tab-maya');
     assert.equal(await page.$eval('#pf-tab-maya', element => element.getAttribute('aria-selected')), 'true');
@@ -147,6 +184,8 @@ async function main() {
     assert.equal(await page.$eval('#jc-empty', element => element.closest('.jc-card')), null, 'Paper metadata must not swallow page structure');
     assert.equal(await page.$$eval('#jc-grid > .jc-card', elements => elements.length), 2000);
     assert.equal(await page.$eval('#jc-prompt-modal', element => getComputedStyle(element).display), 'none');
+    assert.equal(await visibleCount('.jc-card'), 2000);
+    await page.select('#jc-tier', '500');
     const papers = await visibleCount('.jc-card');
     assert(papers > 0);
     await page.select('#jc-tier', '2000');
@@ -161,8 +200,8 @@ async function main() {
     assert((await page.$eval('#jc-prompt-textarea', element => element.value)).length > 100);
     await page.keyboard.press('Escape');
     await page.waitForSelector('#jc-prompt-modal', {hidden:true});
-    await openGroup('Reference');
-    await follow(`${menuGroup('Reference')} a[href="/datasets/"]`);
+    await openGroup('Resources');
+    await follow(`${menuGroup('Resources')} a[href="/datasets/"]`);
 
     await page.setViewport({width:390,height:844,isMobile:true,hasTouch:true});
     await visit('/');
@@ -170,12 +209,12 @@ async function main() {
     assert.equal(await page.$eval('.nav-toggle', element => element.getAttribute('aria-expanded')), 'false');
     await page.tap('.nav-toggle');
     assert.equal(await page.$eval('.nav-toggle', element => element.getAttribute('aria-expanded')), 'true');
-    await openGroup('Teaching');
+    await openGroup('Teach');
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'No horizontal mobile overflow');
-    await follow(`${menuGroup('Teaching')} a[href="/technical-training/slides/"]`);
+    await follow(`${menuGroup('Teach')} a[href="/technical-training/slides/"]`);
     await page.tap('.nav-toggle');
     await openGroup('Learn');
-    await openGroup('Reference');
+    await openGroup('Resources');
     assert.equal(await page.$eval(menuGroup('Learn'), element => element.open), false);
     await page.click('main h1');
     assert.equal(await page.$eval('.nav-toggle', element => element.getAttribute('aria-expanded')), 'false');

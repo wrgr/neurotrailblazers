@@ -2,7 +2,7 @@
 
 **Module:** Module 03: Python and Jupyter for Neuroscience  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module03.md`, not this file.*
+<!-- Generated from modules/module03.md; edit the module source. -->
 
 ---
 

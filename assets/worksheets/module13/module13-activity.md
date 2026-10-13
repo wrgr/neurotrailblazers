@@ -2,7 +2,7 @@
 
 **Module:** Module 13: Machine Learning in Neuroscience  
 **Duration:** 4-5 hours  
-*Generated from the module page. Edit `modules/module13.md`, not this file.*
+<!-- Generated from modules/module13.md; edit the module source. -->
 
 ---
 

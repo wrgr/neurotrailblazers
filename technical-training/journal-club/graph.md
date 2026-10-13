@@ -1,41 +1,33 @@
 ---
 layout: default
-title: "Citation Graph Explorer"
+title: "Papers and citations"
 permalink: /technical-training/journal-club/graph/
 track: core-concepts-methods
 pathways:
   - technical foundation
   - shared vocabulary
-description: "Interactive citation graph explorer across 500, 1,000, and 2,000 curated papers in connectomics: self-organizing organic force clustering, weighted directed citation edges, deep OCAR research cards, and AI synthesis prompts."
+description: "Search 2,000 connectomics papers, read abstracts, and explore the papers they cite and the works that cite them."
 content_type: core
 ---
 
 <div class="layout-content layout-page jcg-page">
 
-<section class="jc-hero" style="text-align: center; margin-bottom: 1.5rem;">
-  <h1>Citation Graph Explorer</h1>
-  <p style="font-size: 1.1rem; color: inherit; max-width: 850px; margin: 0.5rem auto 0;">
-    Explore the curated connectomics literature network across <strong>500 Flagships</strong>, <strong>1,000 Landmark Works</strong>, and the <strong>2,000-Paper Comprehensive Graph</strong>. Filter the papers, open a research card, or follow a paper’s citations. Start with separated category groups; switch to the timeline to explore publication history.
-  </p>
+<section class="jc-hero">
+  <h1>Papers and citations</h1>
+  <p>Find a paper, read its abstract, then explore the works it cites and the papers that cite it.</p>
 </section>
 
 <section class="section section-compact">
-  <div class="jcg-layout">
-    
-    <!-- Controls Sidebar -->
-    <details class="jcg-filter-panel" id="jcg-filter-panel" open>
-      <summary>Filters &amp; graph options</summary>
-      <div class="jcg-controls">
-      
+  <div class="jcg-basic-controls">
       <!-- Search Filter -->
       <div class="jcg-control-group">
-        <label for="jcg-search">Search (Title, Author, OCAR, Method):</label>
+        <label for="jcg-search">Search papers:</label>
         <input type="text" id="jcg-search" placeholder="e.g. MICrONS, Kasthuri, proofreading, U-Net...">
       </div>
 
       <!-- Category Filter -->
       <div class="jcg-control-group">
-        <label for="jcg-dimension">Category / Domain:</label>
+        <label for="jcg-dimension">Topic:</label>
         <select id="jcg-dimension">
           <option value="all">All categories</option>
           <option value="circuit-structure">Circuit Structure</option>
@@ -57,7 +49,7 @@ content_type: core
 
       <!-- Organism Filter -->
       <div class="jcg-control-group">
-        <label for="jcg-organism">Organism / Model System:</label>
+        <label for="jcg-organism">Organism:</label>
         <select id="jcg-organism">
           <option value="all">All Organisms</option>
           <option value="mouse">Mouse (Mus musculus)</option>
@@ -74,29 +66,36 @@ content_type: core
 
       <p class="jcg-hint">Organism filters use corpus tags. Papers without an organism tag appear under “Not tagged / general”.</p>
 
+  </div>
+  <div class="jcg-basic-actions"><button id="jcg-reset" type="button" class="jcg-secondary-btn">Clear filters</button><p class="jcg-count" id="jcg-count" role="status" aria-live="polite">Loading papers…</p></div>
+  <p class="jcg-hint">Search all 2,000 papers. Topic and organism filters narrow your results. Choose a paper below to read it.</p>
+    <details class="jcg-filter-panel" id="jcg-filter-panel">
+      <summary>Display and additional filters</summary>
+      <div class="jcg-controls">
+
       <!-- Tier Selector -->
       <div class="jcg-control-group">
-        <label for="jcg-tier-buttons">Corpus Scale Tier:</label>
+        <label for="jcg-tier-buttons">Browse subset (ranked by citation metrics):</label>
         <div class="jcg-tier-btn-group" id="jcg-tier-buttons">
-          <button type="button" class="jcg-tier-btn active" data-tier="500">500 Key Papers</button>
-          <button type="button" class="jcg-tier-btn" data-tier="1000">1000 Key Papers</button>
-          <button type="button" class="jcg-tier-btn" data-tier="2000">2000 Key Papers</button>
+          <button type="button" class="jcg-tier-btn" data-tier="500">Top 500</button>
+          <button type="button" class="jcg-tier-btn" data-tier="1000">Top 1,000</button>
+          <button type="button" class="jcg-tier-btn active" data-tier="2000">All 2,000</button>
         </div>
       </div>
 
       <!-- Layout Mode -->
       <div class="jcg-control-group">
-        <label for="jcg-layout-buttons">Layout Clustering Mode:</label>
+        <label for="jcg-layout-buttons">Map layout:</label>
         <div class="jcg-tier-btn-group" id="jcg-layout-buttons">
-          <button type="button" class="jcg-layout-btn" data-mode="organic">Organic Force</button>
-          <button type="button" class="jcg-layout-btn active" data-mode="cluster">Category Hubs</button>
+          <button type="button" class="jcg-layout-btn" data-mode="organic">Free layout</button>
+          <button type="button" class="jcg-layout-btn active" data-mode="cluster">Group by topic</button>
           <button type="button" class="jcg-layout-btn" data-mode="timeline">Timeline</button>
         </div>
       </div>
 
       <!-- Edge Controls -->
       <fieldset class="jcg-era-fieldset">
-        <legend>Citation Edges &amp; Dynamics</legend>
+        <legend>Citation links</legend>
         <label><input type="checkbox" id="jcg-show-edges" checked> Draw Citation Edges</label>
         <label><input type="checkbox" id="jcg-all-edges"> Show all links (dense overview)</label>
         <p class="jcg-hint">Select a paper to see its citation links. Enable all links for the full network.</p>
@@ -116,7 +115,7 @@ content_type: core
 
       <!-- Node Color Cue Selector -->
       <div class="jcg-control-group">
-        <label for="jcg-color-by">Color Cue (Node Color):</label>
+        <label for="jcg-color-by">Color papers by:</label>
         <select id="jcg-color-by">
           <option value="dimension">Category / Subfield</option>
           <option value="era">Publication Era (History / Contemporary / SOTA)</option>
@@ -129,46 +128,56 @@ content_type: core
       <!-- Era Filter -->
       <fieldset class="jcg-era-fieldset">
         <legend>Publication Era</legend>
-        <label><input type="checkbox" class="jcg-era-check" value="history" checked> History (&le;2018)</label>
-        <label><input type="checkbox" class="jcg-era-check" value="contemporary" checked> Contemporary (2019–2023)</label>
-        <label><input type="checkbox" class="jcg-era-check" value="sota" checked> SOTA (2024–2026+)</label>
+        <label><input type="checkbox" class="jcg-era-check" value="history" checked> 2018 and earlier</label>
+        <label><input type="checkbox" class="jcg-era-check" value="contemporary" checked> 2019–2023</label>
+        <label><input type="checkbox" class="jcg-era-check" value="sota" checked> 2024 onwards</label>
       </fieldset>
 
       <!-- Minimum Centrality / Degree -->
       <div class="jcg-control-group">
-        <label for="jcg-min-degree">Minimum Degree: <span id="jcg-degree-val">0</span></label>
+        <label for="jcg-min-degree">Minimum citation metric: <span id="jcg-degree-val">0</span></label>
         <input type="range" id="jcg-min-degree" min="0" max="60" value="0" step="1">
       </div>
 
       <!-- Action Buttons -->
       <div class="jcg-control-group" style="margin-top: 0.25rem; gap: 0.4rem;">
         <button id="jcg-prompt-btn" type="button" class="jcg-secondary-btn" style="width:100%; font-weight:600;">
-          🤖 Open AI Synthesis Tray (<span id="jcg-prompt-count">500</span>)
+          Create a discussion prompt (<span id="jcg-prompt-count">500</span>)
         </button>
         <div style="display: flex; gap: 0.4rem;">
-          <button id="jcg-sidebar-fit" type="button" class="jcg-secondary-btn" style="flex:1;">⛶ Fit View</button>
-          <button id="jcg-sidebar-reheat" type="button" class="jcg-secondary-btn" style="flex:1;">⚡ Reheat</button>
+          <button id="jcg-sidebar-fit" type="button" class="jcg-secondary-btn" style="flex:1;">Fit map</button>
+          <button id="jcg-sidebar-reheat" type="button" class="jcg-secondary-btn" style="flex:1;">Relax free layout</button>
         </div>
       </div>
 
-      <button id="jcg-reset" type="button">Reset View &amp; Filters</button>
 
-      <p class="jcg-hint">💡 Drag nodes to pull physics &bull; Drag background to pan &bull; Scroll to zoom &bull; Click node for full OCAR card</p>
+
+      <p class="jcg-hint">Drag the map to move it. Scroll or pinch to zoom. Select a paper to read its abstract.</p>
 
       <div class="jcg-legend-title" id="jcg-legend-title" style="font-weight:700; font-size:0.78rem; color:#374151; margin-top:0.4rem;">Color Cue Legend:</div>
       <div class="jcg-legend" id="jcg-legend"></div>
     </div>
 
     </details>
+  <div class="jcg-layout">
+
+    <!-- Controls Sidebar -->
+
 
     <!-- Canvas Container & Interactive Drawer -->
+      <section class="jcg-results" aria-labelledby="jcg-results-title">
+        <h2 id="jcg-results-title">Papers</h2>
+        <p id="jcg-results-status" role="status"></p>
+        <ul id="jcg-results-list"></ul>
+        <button type="button" id="jcg-results-more" class="jcg-secondary-btn hidden">Show more papers</button>
+      </section>
     <div class="jcg-graph-column">
-      <p class="jcg-count" id="jcg-count" role="status" aria-live="polite">Loading papers…</p>
-      <p class="jcg-hint">Filter by category or select a matching paper below to explore its citations.</p>
+
+
       <div class="jcg-canvas-wrap">
-        <canvas id="jcg-canvas" role="img" aria-label="Citation network. Use the matching paper list below to open research cards."></canvas>
+        <canvas id="jcg-canvas" role="img" aria-label="Citation network. Use the matching paper list to open paper details."></canvas>
         <p class="jcg-empty hidden" id="jcg-empty">No papers match these filters. Clear the search or reset the filters.</p>
-        
+
         <!-- On-Canvas Floating HUD Controls -->
         <div class="jcg-canvas-hud">
           <button type="button" id="jcg-hud-zoom-in" title="Zoom In">+</button>
@@ -179,12 +188,12 @@ content_type: core
 
         <!-- Subgraph Focus Mode Active Banner -->
         <div class="jcg-focus-banner hidden" id="jcg-focus-banner">
-          <span>🎯 Focusing on Subgraph of: <strong id="jcg-focus-paper-title">Paper</strong></span>
-          <button type="button" id="jcg-focus-exit-btn" title="Exit Focus Mode">✕ Exit Subgraph Focus</button>
+          <span>Citations for: <strong id="jcg-focus-paper-title">Paper</strong></span>
+          <button type="button" id="jcg-focus-exit-btn" title="Exit Focus Mode">Back to results</button>
         </div>
 
         <div class="jcg-tooltip hidden" id="jcg-tooltip"></div>
-        
+
         <!-- Slide-Out Paper Detail Drawer with Deep OCAR Integration -->
         <div class="jcg-panel hidden" id="jcg-panel">
           <button class="jcg-panel-close" id="jcg-panel-close" aria-label="Close">&times;</button>
@@ -194,23 +203,18 @@ content_type: core
         </div>
       </div>
 
-      <section class="jcg-results" aria-labelledby="jcg-results-title">
-        <h2 id="jcg-results-title">Matching papers</h2>
-        <p id="jcg-results-status" role="status"></p>
-        <ul id="jcg-results-list"></ul>
-        <button type="button" id="jcg-results-more" class="jcg-secondary-btn hidden">Show more papers</button>
-      </section>
+
 
       <!-- On-Demand AI Literature Synthesis & Discussion Tray -->
       <div class="jcg-ai-tray collapsed" id="jcg-ai-tray">
         <div class="jcg-ai-tray-header" id="jcg-ai-tray-header">
-          <h3 id="jcg-prompt-modal-title">🤖 AI Research Synthesis &amp; Discussion Tray</h3>
+          <h3 id="jcg-prompt-modal-title">Optional discussion prompts</h3>
           <div style="display: flex; align-items: center; gap: 0.5rem;">
             <span style="font-size: 0.75rem; color: #64748b;" id="jcg-tray-status-text">Click to expand</span>
             <button type="button" class="jcg-ai-tray-toggle-btn" id="jcg-ai-tray-toggle">▾ Expand Tray</button>
           </div>
         </div>
-        
+
         <div class="jcg-ai-tray-body">
           <p class="jcg-prompt-modal-desc" id="jcg-prompt-modal-desc" style="margin-bottom: 0.75rem; color: #475569; font-size: 0.82rem;">
             Copy this grounded prompt into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong> across the <strong id="jcg-modal-paper-count">0</strong> papers currently in your active filter.
@@ -258,7 +262,7 @@ content_type: core
 .jcg-page .jc-hero h1 { color: inherit; }
 .jcg-graph-column { display: flex; flex-direction: column; gap: 1rem; min-width: 0; }
 .jcg-page .jcg-filter-panel { margin: 0; padding: 0; border: 0; min-width: 0; background: transparent; }
-.jcg-page .jcg-filter-panel > summary { display: none; }
+.jcg-page .jcg-filter-panel > summary { display: block; padding: 0.65rem 1.8rem; border: 1px solid #cbd5e1; border-radius: 8px; }
 .jcg-empty { position: absolute; top: 35%; left: 10%; right: 10%; text-align: center; color: #475569; }
 .jcg-results { border: 1px solid #e2e8f0; border-radius: 10px; padding: 1rem; background: #fff; }
 .jcg-results h2 { font-size: 1rem; margin: 0; }
@@ -390,7 +394,7 @@ content_type: core
 .jcg-panel.hidden { display: none; }
 .jcg-panel-close {
   position: absolute; top: 0.75rem; right: 0.85rem; background: none; border: none;
-  font-size: 1.5rem; line-height: 1; cursor: pointer; color: #94a3b8; padding: 0.2rem;
+  font-size: 1.5rem; line-height: 1; cursor: pointer; color: #64748b; padding: 0.2rem; min-width: 44px; min-height: 44px;
 }
 .jcg-panel-close:hover { color: #0f172a; }
 
@@ -406,7 +410,7 @@ content_type: core
   .jcg-prompt-modal-content { max-height: 94vh; padding: 1rem; }
 }
 
-.jcg-panel-body h3 { margin: 0 1.75rem 0.4rem 0; font-size: 1.1rem; line-height: 1.35; color: #0f172a; font-weight: 700; }
+.jcg-panel-body h3 { margin: 0 2.5rem 0.4rem 0; font-size: 1.1rem; line-height: 1.35; color: #0f172a; font-weight: 700; }
 .jcg-panel-authors { font-size: 0.82rem; color: #64748b; margin-bottom: 0.6rem; }
 .jcg-panel-meta-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.85rem; }
 .jcg-panel-tag { background: #f1f5f9; border-radius: 4px; padding: 0.18rem 0.45rem; font-size: 0.72rem; color: #475569; font-weight: 600; }
@@ -565,6 +569,40 @@ content_type: core
 }
 .jcg-copy-btn:hover { background: #1e40af; }
 .jcg-copy-status { font-size: 0.8rem; font-weight: 600; color: #16a34a; }
+
+/* Everyday task controls stay visible; presentation controls are optional. */
+.jcg-page .jc-hero { text-align: left; background: #fff; color: #14263a; border: 1px solid #e2e8f0; padding: 1.2rem; }
+.jcg-page .jc-hero p { max-width: none; margin: 0.5rem 0 0; }
+.jcg-basic-controls { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0.9rem; margin: 1rem 0 0.7rem; }
+.jcg-basic-controls .jcg-hint { grid-column: 1 / -1; }
+.jcg-basic-controls label { font-weight: 600; font-size: 0.86rem; }
+.jcg-basic-controls select { width: 100%; box-sizing: border-box; min-height: 44px; padding: 0.5rem; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit; }
+.jcg-basic-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin: 0.5rem 0; }
+.jcg-page .jcg-filter-panel { margin: 0.8rem 0; }
+.jcg-page .jcg-controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-height: none; }
+.jcg-layout { grid-template-columns: minmax(260px, 340px) minmax(0, 1fr); }
+#jcg-results-list { max-height: clamp(400px, 65vh, 650px); }
+.jcg-results { padding: 0.8rem; }
+.jcg-canvas-wrap { height: clamp(400px, 65vh, 650px); }
+.jcg-panel { max-height: calc(100% - 1rem); top: 0.5rem; right: 0.5rem; padding: 1rem; }
+.jcg-drawer-actions { gap: 0.4rem; }
+.jcg-panel-meta-tags { margin-top: 0.6rem; }
+.jcg-panel-authors { max-height: 5rem; overflow-y: auto; }
+.jcg-tooltip { max-width: 240px; font-size: 0.78rem; }
+@media (max-width: 960px) {
+ .jcg-basic-controls { grid-template-columns: 1fr 1fr; }
+ .jcg-basic-controls > .jcg-control-group:first-child { grid-column: 1 / -1; }
+ .jcg-layout { grid-template-columns: 1fr; }
+ .jcg-page .jcg-controls { grid-template-columns: 1fr; max-height: 420px; overflow-y: auto; }
+ #jcg-results-list { max-height: 300px; }
+ .jcg-canvas-wrap { height: 440px; }
+}
+@media (max-width: 640px) {
+ .jcg-basic-controls { grid-template-columns: 1fr; }
+ .jcg-panel { top: auto; bottom: 0; left: 0; right: 0; max-height: 88%; padding: 0.8rem; }
+ .jcg-page .jc-hero { padding: 1rem; }
+}
+
 </style>
 
 <script>
@@ -577,7 +615,7 @@ content_type: core
     'imaging', 'cell-types', 'neuroanatomy', 'synthesis',
     'dataset', 'neuroai', 'health', 'training-outreach', 'other', 'mri'
   ];
-  
+
   var CATEGORY_COLORS = {
     'circuit-structure': '#2563eb',
     'pipeline': '#0891b2',
@@ -696,7 +734,7 @@ content_type: core
   var allPapers = [];
   var idMap = {};
   var doiMap = {};
-  var currentTier = 500;
+  var currentTier = 2000;
   var currentLayout = 'cluster';
   var currentColorCue = 'dimension';
   var currentEdgeWeighting = 'sum';
@@ -728,9 +766,7 @@ content_type: core
   var resultsList = document.getElementById('jcg-results-list');
   var resultsStatus = document.getElementById('jcg-results-status');
   var resultsMore = document.getElementById('jcg-results-more');
-  var compactQuery = window.matchMedia('(max-width: 960px)');
-  filterPanel.open = !compactQuery.matches;
-  compactQuery.addEventListener('change', function (e) { filterPanel.open = !e.matches; });
+  filterPanel.open = false;
 
   function updateResults() {
     resultsList.replaceChildren();
@@ -747,6 +783,7 @@ content_type: core
       li.appendChild(button);
       resultsList.appendChild(li);
     });
+    document.getElementById('jcg-results-title').textContent = focusedSubgraphNode ? 'Related papers' : 'Papers';
     resultsStatus.textContent = visibleNodes.length ? 'Showing ' + Math.min(resultLimit, visibleNodes.length) + ' of ' + visibleNodes.length + '. Select a paper to open its card.' : 'No matching papers.';
     resultsMore.classList.toggle('hidden', resultLimit >= visibleNodes.length);
   }
@@ -777,8 +814,8 @@ content_type: core
       legendTitleEl.textContent = 'Color Cue: Publication Era';
       [
         { k: 'History (≤2018)', c: ERA_COLORS['history'] },
-        { k: 'Contemporary (2019–2023)', c: ERA_COLORS['contemporary'] },
-        { k: 'SOTA (2024–2026+)', c: ERA_COLORS['sota'] }
+        { k: '2019–2023', c: ERA_COLORS['contemporary'] },
+        { k: '2024 onwards', c: ERA_COLORS['sota'] }
       ].forEach(function (item) {
         var row = document.createElement('div');
         row.className = 'jcg-legend-item';
@@ -788,9 +825,9 @@ content_type: core
     } else if (currentColorCue === 'tier') {
       legendTitleEl.textContent = 'Color Cue: Corpus Scale Tier';
       [
-        { k: '500 Key Papers', c: TIER_COLORS[500] },
-        { k: '1000 Key Papers', c: TIER_COLORS[1000] },
-        { k: '2000 Key Papers', c: TIER_COLORS[2000] }
+        { k: 'Top 500', c: TIER_COLORS[500] },
+        { k: 'Top 1,000', c: TIER_COLORS[1000] },
+        { k: 'All 2,000', c: TIER_COLORS[2000] }
       ].forEach(function (item) {
         var row = document.createElement('div');
         row.className = 'jcg-legend-item';
@@ -1020,7 +1057,7 @@ content_type: core
         var isCited = focusedSubgraphNode.citesNodes.indexOf(p) !== -1;
         if (!isSelf && !isCiting && !isCited) return false;
       } else {
-        if (p.tier > currentTier) return false;
+        if (!query && p.tier > currentTier) return false;
         if (activeEras.indexOf(p.era) === -1) return false;
         if (selectedCat !== 'all' && p.dimension !== selectedCat) return false;
         if (selectedOrg !== 'all') {
@@ -1102,6 +1139,7 @@ content_type: core
   }
 
   function selectAndCenterPaper(p) {
+    if (focusedSubgraphNode && focusedSubgraphNode !== p) enterSubgraphFocus(p);
     selectedNode = p;
     openPaperDrawer(p);
     var cw = canvas.width / canvasRatio;
@@ -1125,6 +1163,8 @@ content_type: core
 
   function exitSubgraphFocus() {
     focusedSubgraphNode = null;
+    selectedNode = null;
+    panel.classList.add('hidden');
     focusBanner.classList.add('hidden');
     applyFilters();
     fitView();
@@ -1214,7 +1254,7 @@ content_type: core
       }
 
     } else {
-      // Anchored Layouts (Category Hubs or Timeline)
+      // Anchored Layouts (Group by topic or Timeline)
       for (var i = 0; i < visibleNodes.length; i++) {
         var n = visibleNodes[i];
         if (n === draggingNode) continue;
@@ -1606,6 +1646,10 @@ content_type: core
     return null;
   }
 
+  canvas.addEventListener('mouseleave', function () {
+    hoveredNode = null; tooltip.classList.add('hidden'); wakeAnimation();
+  });
+
   // Canvas Mouse Interactions
   canvas.addEventListener('mousemove', function (e) {
     wakeAnimation();
@@ -1639,13 +1683,10 @@ content_type: core
       tooltip.style.maxWidth = Math.max(100, rect.width - 48) + 'px';
       tooltip.style.left = Math.max(0, Math.min(e.clientX - rect.left, rect.width - 350)) + 'px';
       tooltip.style.top = Math.max(0, Math.min(e.clientY - rect.top, rect.height - 180)) + 'px';
-      
-      var ocarSnippet = node.ocar && node.ocar.opportunity ? '<div class="ocar-preview"><strong>Opportunity:</strong> ' + node.ocar.opportunity.slice(0, 110) + '…</div>' : '';
 
-      tooltip.innerHTML = '<strong>' + node.title + '</strong>' +
-        '<div class="meta">' + node.authors + ' (' + node.year + ') &bull; <em>' + node.journal + '</em></div>' +
-        '<div><strong>Tier ' + node.tier + '</strong> &bull; ' + node.dimension + ' &bull; In:' + node.in_degree + ' Out:' + node.out_degree + '</div>' +
-        ocarSnippet;
+      var firstAuthor = node.authors.split(';')[0] || 'Author not recorded';
+      tooltip.innerHTML = '<strong>' + escapeHtml(node.title) + '</strong><div class="meta">' + escapeHtml(firstAuthor) + (node.authors.indexOf(';') !== -1 ? ' et al.' : '') + ' · ' + node.year + '</div>';
+
     } else {
       canvas.style.cursor = 'grab';
       tooltip.classList.add('hidden');
@@ -1800,7 +1841,7 @@ content_type: core
   hudZoomOutBtn.addEventListener('click', function () { zoomBy(0.8); });
   hudFitBtn.addEventListener('click', function () { fitView(); });
   sidebarFitBtn.addEventListener('click', function () { fitView(); });
-  
+
   function reheatPhysics() {
     if (currentLayout !== 'organic') { arrangeNodes(); fitView(); }
     alpha = currentLayout === 'organic' ? 1 : 0;
@@ -1813,7 +1854,7 @@ content_type: core
   function openPaperDrawer(p) {
     panel.classList.remove('hidden');
     var tierLabel = p.tier === 500 ? '500 Core Flagship' : (p.tier === 1000 ? '1000 Landmark' : '2000 Comprehensive');
-    var pdfButton = p.pdf_url ? '<a href="' + p.pdf_url + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-pdf">📄 Open Access PDF &rarr;</a>' : '';
+    var pdfButton = p.pdf_url ? '<a href="' + p.pdf_url + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-pdf">Open access copy</a>' : '';
     var fullCardUrl = JC_BASE_URL + '#paper-' + encodeURIComponent(p.id);
 
     // OCAR Section
@@ -1892,46 +1933,46 @@ content_type: core
     var totalNeighbors = inCount + outCount;
 
     var neighborhoodToolbarHtml = '<div class="jcg-neighborhood-toolbar">' +
-      '<span class="jcg-neighborhood-title">🌐 Citation Neighborhood (' + totalNeighbors + ' Direct Links)</span>' +
+      '<span class="jcg-neighborhood-title">Citation links (' + totalNeighbors + ' Direct Links)</span>' +
       '<div class="jcg-neighborhood-pills">' +
         '<button type="button" class="jcg-nill-btn ' + (highlightNeighborhoodMode === 'all' ? 'active' : '') + '" data-dir="all">All (In+Out: ' + totalNeighbors + ')</button>' +
-        '<button type="button" class="jcg-nill-btn ' + (highlightNeighborhoodMode === 'inbound' ? 'active' : '') + '" data-dir="inbound">📥 Cited By (' + inCount + ')</button>' +
-        '<button type="button" class="jcg-nill-btn ' + (highlightNeighborhoodMode === 'outbound' ? 'active' : '') + '" data-dir="outbound">📤 Cites (' + outCount + ')</button>' +
+        '<button type="button" class="jcg-nill-btn ' + (highlightNeighborhoodMode === 'inbound' ? 'active' : '') + '" data-dir="inbound">Cited by (' + inCount + ')</button>' +
+        '<button type="button" class="jcg-nill-btn ' + (highlightNeighborhoodMode === 'outbound' ? 'active' : '') + '" data-dir="outbound">Cites (' + outCount + ')</button>' +
       '</div>' +
     '</div>';
 
+    var paperMetaHtml = '<div class="jcg-panel-meta-tags">' +
+        '<span class="jcg-panel-tag tier-tag">' + tierLabel + '</span>' +
+        '<span class="jcg-panel-tag dim-tag">' + p.dimension.replace(/-/g, ' ') + '</span>' +
+        '<span class="jcg-panel-tag">' + p.era + '</span>' +
+        '<span class="jcg-panel-tag role-tag">' + p.citation_role.replace(/_/g, ' ') + '</span>' +
+        '<span class="jcg-panel-tag">In: ' + p.in_degree + ' | Out: ' + p.out_degree + '</span>' +
+      '</div>';
+
     // Only corpus-backed metadata belongs here; species never determines a dataset or protocol.
-    var ecosystemAndPipelineHtml = '<div class="jcg-ecosystem-box">' +
-      '<h4>Paper information</h4>' +
+    var ecosystemAndPipelineHtml = '<details class="jcg-paper-metadata"><summary>More paper details</summary>' + paperMetaHtml + '<div class="jcg-ecosystem-box">' +
+      '<h4>Recorded information</h4>' +
       '<div class="jcg-ecosystem-grid">' +
         '<div class="jcg-eco-item"><strong>Model organism</strong><span>' + escapeHtml(organismLabel(p)) + '</span><small>From corpus tags</small></div>' +
         '<div class="jcg-eco-item"><strong>Dataset / volume</strong><span>Not recorded</span></div>' +
         '<div class="jcg-eco-item" style="grid-column: span 2;"><strong>Software &amp; tools</strong><span>Not recorded</span></div>' +
       '</div>' +
       '<p class="jcg-hint">Dataset, software and protocol details have not been curated here. Open the publication for its methods.</p>' +
-    '</div>';
+    '</div><button type="button" class="jcg-secondary-btn" id="jcg-btn-ai-prompt">Create a paper review prompt</button></details>';
     var abstractHtml = '<section class="jcg-paper-abstract"><h4>Paper abstract</h4><p>' +
       (p.abstract ? escapeHtml(p.abstract) : 'Abstract not available in this corpus. Open the publication to read it.') + '</p></section>';
 
     var html = '<h3>' + p.title + '</h3>' +
       '<div class="jcg-panel-authors">' + p.authors + ' &bull; <em>' + p.journal + '</em> (' + p.year + ')</div>' +
-      '<div class="jcg-panel-meta-tags">' +
-        '<span class="jcg-panel-tag tier-tag">' + tierLabel + '</span>' +
-        '<span class="jcg-panel-tag dim-tag">' + p.dimension.replace(/-/g, ' ') + '</span>' +
-        '<span class="jcg-panel-tag">' + p.era + '</span>' +
-        '<span class="jcg-panel-tag role-tag">' + p.citation_role.replace(/_/g, ' ') + '</span>' +
-        '<span class="jcg-panel-tag">In: ' + p.in_degree + ' | Out: ' + p.out_degree + '</span>' +
-      '</div>' +
       '<div class="jcg-drawer-actions">' +
-        '<button type="button" class="jcg-drawer-btn" id="jcg-btn-ai-prompt" style="background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); color: #fff;">🤖 AI Paper Prompt</button>' +
-        '<button type="button" class="jcg-drawer-btn jcg-drawer-btn-focus" id="jcg-btn-focus-subgraph">🎯 Focus Citation Subgraph</button>' +
-        '<a href="' + fullCardUrl + '" class="jcg-drawer-btn jcg-drawer-btn-jc">📑 Full Card in Journal Club &rarr;</a>' +
-        (p.doi ? '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-doi">🌐 Publisher DOI &rarr;</a>' : '') +
+        '<button type="button" class="jcg-drawer-btn jcg-drawer-btn-focus" id="jcg-btn-focus-subgraph">Explore citations</button>' +
+        '<a href="' + fullCardUrl + '" class="jcg-drawer-btn jcg-drawer-btn-jc">Journal club card</a>' +
+        (p.doi ? '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-doi">Open publication</a>' : '') +
         pdfButton +
       '</div>' +
       neighborhoodToolbarHtml +
-      ecosystemAndPipelineHtml +
       abstractHtml +
+      ecosystemAndPipelineHtml +
       '<details class="jcg-corpus-notes"><summary>Corpus reading notes (unverified)</summary><p class="jcg-hint">These notes have not been checked against this paper. Use the abstract and original publication for its methods and findings.</p>' +
       ocarHtml +
       summariesHtml +
@@ -2058,7 +2099,7 @@ content_type: core
     }).join('\n\n');
 
     var scopeDesc = totalCount <= 40
-      ? 'based on the following ' + totalCount + ' curated milestone publications' 
+      ? 'based on the following ' + totalCount + ' curated milestone publications'
       : 'based on the top ' + maxIncluded + ' representative milestone publications (selected from ' + totalCount + ' matching publications in the active filter)';
 
     var prompt = '';
@@ -2232,7 +2273,7 @@ content_type: core
   resetBtn.addEventListener('click', function () {
     focusedSubgraphNode = null;
     focusBanner.classList.add('hidden');
-    currentTier = 500;
+    currentTier = 2000;
     clearTimeout(filterTimer);
     selectedNode = null;
     panel.classList.add('hidden');
@@ -2247,7 +2288,7 @@ content_type: core
     allEdgesCheck.checked = false;
     showArrowsCheck.checked = false;
     showFlowCheck.checked = false;
-    tierButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.tier === '500'); });
+    tierButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.tier === '2000'); });
     layoutButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.mode === 'cluster'); });
     eraChecks.forEach(function (c) { c.checked = true; });
     dimensionEl.value = 'all';

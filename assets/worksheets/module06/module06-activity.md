@@ -2,7 +2,7 @@
 
 **Module:** Module 06: Segmentation 101  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module06.md`, not this file.*
+<!-- Generated from modules/module06.md; edit the module source. -->
 
 ---
 

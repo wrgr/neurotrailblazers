@@ -21,7 +21,8 @@ class Slides(HTMLParser):
         self.title = ''
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
-        if tag == 'section' and 'data-marpit-pagination' in a:
+        # Page-number visibility is not slide existence (covers may hide it).
+        if tag == 'section' and a.get('id', '').isdigit() and 'data-theme' in a:
             self.current, self.title = [], ''
             return
         if self.current is None:

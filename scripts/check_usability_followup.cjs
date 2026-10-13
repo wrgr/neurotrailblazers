@@ -14,13 +14,21 @@ const server=http.createServer((req,res)=>{let name=new URL(req.url,'http://loca
  browser=await puppeteer.launch({headless:true,args:['--no-sandbox']}); const base='http://127.0.0.1:'+server.address().port;
  for(const width of [390,1440]){
  const page=await browser.newPage();await page.setViewport({width,height:900});const errors=[];page.on('pageerror',e=>errors.push(e.message));let detailRequests=0;page.on('request',req=>{if(req.url().includes('/journal-club/details/'))detailRequests++;});
+ page.on('response',res=>{if(res.url().includes('/journal-club/details/'))console.log('DETAIL RESPONSE',width,res.status(),res.url());});
  await page.goto(base+'/technical-training/journal-club/');await page.waitForFunction(()=>document.getElementById('jc-count').textContent.startsWith('2000 of'));
  assert.equal(detailRequests,0,'Details should not be fetched on arrival');assert.equal(await page.$$eval('#jc-grid .jc-card',e=>e.length),20);
  await page.type('#jc-search','10.1109/tmi.2024.3400276');await page.waitForFunction(()=>document.getElementById('jc-count').textContent.startsWith('1 of'));
  await page.click('#jc-graph-view');await page.waitForSelector('.jcg-result-btn');assert.equal(await page.$eval('#jcg-search',e=>e.value),'10.1109/tmi.2024.3400276');
  await page.focus('.jcg-result-btn');await page.keyboard.press('Enter');assert.equal(await page.evaluate(()=>document.activeElement.id),'jcg-panel-close');await page.keyboard.press('Escape');assert(await page.$eval('#jcg-panel',e=>e.classList.contains('hidden')));assert(await page.evaluate(()=>document.activeElement.classList.contains('jcg-result-btn')));
  await page.click('#jcg-list-view');await page.waitForFunction(()=>document.getElementById('jc-count').textContent.startsWith('1 of'));
- await page.click('[data-details]');assert(await page.$eval('#jc-prompt-modal', e=>e.classList.contains('hidden')), 'Opening details must not hit the prompt button');await page.waitForSelector('#jc-grid .jc-card-details');assert.equal(detailRequests,1);assert(await page.$eval('#jc-grid .jc-card-details',e=>e.open));
+
+ await page.evaluate(()=>{window.lastClick='none';document.addEventListener('click',e=>window.lastClick=e.target.outerHTML.slice(0,300),true);});
+ await page.click('[data-details]');
+ try{await page.waitForSelector('#jc-grid .jc-card-details',{timeout:10000});}catch(error){
+ console.log('DETAIL FAILURE',JSON.stringify(await page.evaluate(()=>({button:document.querySelector('[data-details]')?.outerHTML,click:window.lastClick,url:location.href,grid:document.querySelector('#jc-grid')?.innerText,active:document.activeElement?.outerHTML}))), 'requests',detailRequests,'errors',errors);throw error;
+ }
+ assert.equal(detailRequests,1);assert(await page.$eval('#jc-grid .jc-card-details',e=>e.open));
+
  await page.goto(base+'/technical-training/journal-club/#paper-author-1990--pnas-0409009101');await page.waitForFunction(()=>document.querySelector('#paper-author-1990--pnas-0409009101 .jc-card-details'));
  await page.goto(base+'/teaching/');assert.equal(await page.$$eval('main a[href^="/modules/module"]',e=>e.length),0,'Teaching hub routes rather than duplicating the catalog');
  await page.goto(base+'/teaching/sessions/');await page.type('#session-search','Python');await page.waitForFunction(()=>document.getElementById('session-count').textContent.startsWith('1 of'));

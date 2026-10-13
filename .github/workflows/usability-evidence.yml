@@ -1,0 +1,23 @@
+name: Usability evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/usability-audit-followup]
+    paths: [.github/workflows/usability-evidence.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Archive the exact source revision
+        run: git archive --format=tar.gz --output="$RUNNER_TEMP/neurotrailblazers-source.tar.gz" HEAD
+      - uses: actions/upload-artifact@v4
+        with:
+          name: usability-source-${{ github.sha }}
+          path: ${{ runner.temp }}/neurotrailblazers-source.tar.gz
+          retention-days: 3

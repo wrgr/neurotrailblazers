@@ -3,7 +3,7 @@ name: Usability evidence
 on:
   workflow_dispatch:
   push:
-    branches: [codex/usability-audit-followup]
+    branches: [codex/usability-audit-followup, codex/usability-navigation-followup]
     paths: [.github/workflows/usability-evidence.yml]
 
 permissions:

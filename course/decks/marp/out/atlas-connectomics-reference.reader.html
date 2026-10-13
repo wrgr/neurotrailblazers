@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connectomics Reference Atlas | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Connectomics Reference Atlas</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="atlas-connectomics-reference.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 14 slides</summary><ol><li><a href="#slide-1">1. Connectomics Reference Atlas</a></li><li><a href="#slide-2">2. Purpose</a></li><li><a href="#slide-3">3. Session outcomes</a></li><li><a href="#slide-4">4. Why atlas quality matters</a></li><li><a href="#slide-5">5. Where the reference stream starts</a></li><li><a href="#slide-6">6. Reference-to-workflow mapping</a></li><li><a href="#slide-7">7. Comparative resource panel</a></li><li><a href="#slide-8">8. Required metadata schema</a></li><li><a href="#slide-9">9. Curation principles</a></li><li><a href="#slide-10">10. Instructor move: quality triage drill</a></li><li><a href="#slide-11">11. Activity</a></li><li><a href="#slide-12">12. Rubric checkpoint</a></li><li><a href="#slide-13">13. Sources to seed the atlas</a></li><li><a href="#slide-14">14. Wrap</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Connectomics Reference Atlas"><p class="slide-number">Slide 1 of 14</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Reference</span></p>
+<h2 id="connectomics-reference-atlas">Connectomics Reference Atlas</h2>
+<p>A lookup table, not a lesson: which dataset, which tool, which benchmark — and how to add an entry that someone else can act on.</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Purpose"><p class="slide-number">Slide 2 of 14</p>
+<h2 id="purpose">Purpose</h2>
+<p>Operational reference system for papers, datasets, tools, and media mapped to real workflow decisions.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The atlas page answers four questions: which public dataset can answer my question; what tool I need at this pipeline stage; how to evaluate a segmentation method; how to add something to the atlas. Specifications there are as published and approximate where releases have been revised — always confirm current figures and access terms against the primary source before citing, because dataset sizes change as proofreading continues.</p></details></section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Session outcomes"><p class="slide-number">Slide 3 of 14</p>
+<h2 id="session-outcomes">Session outcomes</h2>
+<ul>
+<li>Curate references with metadata that supports action, not just citation.</li>
+<li>Map each item to a workflow stage and decision context.</li>
+<li>Flag evidence limits and maturity for safe reuse.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Why atlas quality matters"><p class="slide-number">Slide 4 of 14</p>
+<h2 id="why-atlas-quality-matters">Why atlas quality matters</h2>
+<ul>
+<li>Weak metadata creates &quot;citation theater&quot; without reproducibility.</li>
+<li>Strong metadata shortens onboarding and improves journal-club depth.</li>
+<li>A good atlas makes hidden curriculum explicit.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Before proposing new acquisition, check the atlas. A large fraction of good connectomics questions can be answered by re-analysing existing public data. Acquiring a new mm-scale volume is a multi-year, multi-million-dollar program; re-analysing one is a compute bill and your time.&quot;<br>Quick map from the page&#x27;s choosing table: whole-brain graph structure -&gt; FlyWire or larval Drosophila; clean cell-type connectivity -&gt; hemibrain; structure–function -&gt; MICrONS; human-specific features -&gt; H01; development -&gt; the C. elegans developmental series; what dense reconstruction requires -&gt; Kasthuri 2015.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Where the reference stream starts"><p class="slide-number">Slide 5 of 14</p>
+<h2 id="where-the-reference-stream-starts">Where the reference stream starts</h2>
+<p><img src="../../../../assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S03-02.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Deck context, not reference material: treat any figure it carries as provisional.</p>
+<p class="source">Source: module14 lesson3 source deck, Module14 L3 S03-02. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The atlas page is explicit that this panel is deck context and nothing in it should be cited. Use it to rehearse the habit the atlas asks for: volume sizes, cell counts and synapse counts in this field are release-dependent, so confirm every specification against the primary source (Unit 04 §2).</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Reference-to-workflow mapping"><p class="slide-number">Slide 6 of 14</p>
+<h2 id="reference-to-workflow-mapping">Reference-to-workflow mapping</h2>
+<p><img src="../../../../assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S10-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">For each resource you name, could you write its <code>known_limits</code> sentence?</p>
+<p class="source">Source: module14 lesson3 source deck, Module14 L3 S10. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The known_limits field is the one most often left blank and the one most worth filling. Instructor script: &quot;An atlas of tools without limits is advertising.&quot; Pick one resource from the page&#x27;s software table — CloudVolume, caveclient, CATMAID, DotMotif — and write its limit sentence together before the activity.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Comparative resource panel"><p class="slide-number">Slide 7 of 14</p>
+<h2 id="comparative-resource-panel">Comparative resource panel</h2>
+<p><img src="../../../../assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S13-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Functional recordings, the reconstructed network, and the rendered circuit are three views of one dataset. An atlas entry has to say which view it indexes.</p>
+<p class="source">Source: module14 lesson3 source deck, Module14 L3 S13. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Use the panel to motivate the modality and effective_resolution fields: a dataset that pairs functional imaging with EM reconstruction (MICrONS is the reference case today) needs its entry to say which product a user is being pointed at — the calcium traces, the connectivity matrix, or the volume — because access, licensing and maturity differ between them.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Required metadata schema"><p class="slide-number">Slide 8 of 14</p>
+<h2 id="required-metadata-schema">Required metadata schema</h2>
+<ul>
+<li>citation and access link</li>
+<li>workflow stage (acquisition/reconstruction/proofreading/analysis/cross-cutting)</li>
+<li>modality + resolution + scale</li>
+<li>access level and licensing notes</li>
+<li>maturity (prototype/validated/production)</li>
+<li>known limitations and failure cases</li>
+<li>mapped training units</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The page&#x27;s field names, for learners who will contribute: citation (with DOI), workflow_stage, species and brain_region, modality and effective_resolution, dataset_or_code_access (open / registration / request), maturity (concept / validated prototype / production-validated), known_limits, mapped_units.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Curation principles"><p class="slide-number">Slide 9 of 14</p>
+<h2 id="curation-principles">Curation principles</h2>
+<ul>
+<li>Prefer resources with reusable artifacts (code/data/protocols).</li>
+<li>Label historical resources explicitly as historical.</li>
+<li>Remove dead links rapidly and retain change log.</li>
+<li>Prioritize balance across stages (avoid analysis-only bias).</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Two principles from the page worth stressing. Mark superseded methods as historical rather than deleting them when they remain pedagogically useful — the history of a method often explains its assumptions. And every entry links to at least one unit, so the atlas stays connected to teaching rather than becoming an orphaned bibliography.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Instructor move: quality triage drill"><p class="slide-number">Slide 10 of 14</p>
+<h2 id="instructor-move-quality-triage-drill">Instructor move: quality triage drill</h2>
+<p>Learners compare two references and decide which one is &quot;operationally reusable&quot; and why.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>A pairing that works: a benchmark leaderboard entry against a released dataset with a client library. Benchmarks on small, well-prepared volumes systematically overstate performance on production data; a released dataset with a pinned version and a client is something a learner can act on tomorrow.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Activity"><p class="slide-number">Slide 11 of 14</p>
+<h2 id="activity">Activity</h2>
+<p>Curate one atlas entry with complete metadata and:</p>
+<ul>
+<li>one explicit limitation,</li>
+<li>one recommended use-case,</li>
+<li>one anti-use-case.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Rubric checkpoint"><p class="slide-number">Slide 12 of 14</p>
+<h2 id="rubric-checkpoint">Rubric checkpoint</h2>
+<ul>
+<li>Pass: complete schema + limitation statement.</li>
+<li>Strong: stage mapping + decision-use context are explicit.</li>
+<li>Flag: bibliographic completeness without operational details.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>&quot;Strong&quot; on the page&#x27;s rubric: the limitation sentence is specific enough that a reader could predict a failure case from it, and the unit mapping says where in that unit&#x27;s workflow the resource fits.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Sources to seed the atlas"><p class="slide-number">Slide 13 of 14</p>
+<h2 id="sources-to-seed-the-atlas">Sources to seed the atlas</h2>
+<ul>
+<li>Kasthuri et al. (2015), <em>Cell</em>, doi:10.1016/j.cell.2015.06.054 — dense reconstruction.</li>
+<li>Dorkenwald et al. (2024), <em>Nature</em>, doi:10.1038/s41586-024-07558-y — community-proofread platform.</li>
+<li>Januszewski et al. (2018), <em>Nature Methods</em>, doi:10.1038/s41592-018-0049-4 — segmentation.</li>
+<li>Bassett, Zurn &amp; Gold (2018), <em>Nat Rev Neurosci</em>, doi:10.1038/s41583-018-0038-8 — models and claims.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Wrap"><p class="slide-number">Slide 14 of 14</p>
+<h2 id="wrap">Wrap</h2>
+<p>Atlas maintenance should drive updates to journal club, technical units, and assessment prompts.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

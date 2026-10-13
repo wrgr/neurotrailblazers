@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Machine Learning in Neuroscience | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Machine Learning in Neuroscience</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module13.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 21 slides</summary><ol><li><a href="#slide-1">1. Machine Learning in Neuroscience</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Run of Show (60 min)</a></li><li><a href="#slide-9">9. Run of Show (60 min) (continued)</a></li><li><a href="#slide-10">10. Misconceptions to Watch</a></li><li><a href="#slide-11">11. Misconceptions to Watch (continued)</a></li><li><a href="#slide-12">12. Studio Activity</a></li><li><a href="#slide-13">13. Activity Output Checklist</a></li><li><a href="#slide-14">14. Assessment Rubric</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Assessment Rubric (continued)</a></li><li><a href="#slide-17">17. Assessment Rubric</a></li><li><a href="#slide-18">18. Exit Ticket</a></li><li><a href="#slide-19">19. References (Instructor)</a></li><li><a href="#slide-20">20. Teaching Materials</a></li><li><a href="#slide-21">21. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Machine Learning in Neuroscience"><p class="slide-number">Slide 1 of 21</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 13</span>
+<h2 id="machine-learning-in-neuroscience">Machine Learning in Neuroscience</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 21</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Build feature pipelines for neuron and synapse-level analyses</li>
+<li>Compare supervised and unsupervised methods for connectomics tasks</li>
+<li>Evaluate model quality with biologically meaningful metrics</li>
+<li>Detect data leakage and distribution-shift risks in connectomics ML</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 21</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Design and critique an ML analysis pipeline for connectomics that includes feature rationale, evaluation plan, leakage controls, and interpretation limits. Concretely: choose a split strategy from the leakage channels present in your data rather than from convention, pick metrics from the decision the model will support, quantify how much of your reported performance survives a harder split, and write a limitation statement specific enough that a reader knows which uses of your model you would refuse.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 21</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-feature-engineering-defines-the-hypothesis-space">1) Feature engineering defines the hypothesis space</h3>
+<ul>
+<li><strong>Technical:</strong> feature choices encode assumptions about what variation is biologically meaningful.</li>
+<li><strong>Plain language:</strong> your model can only learn what your features allow, and it will learn the easiest thing they allow.</li>
+<li><strong>Misconception guardrail:</strong> adding more features always improves science.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Technical:** feature choices encode assumptions about what variation is biologically meaningful. For a neurite-fragment classifier a defensible starting set is skeleton path length, mean and variance of caliber, branch count, tortuosity, synapse count as presynaptic and as postsynaptic partner, and mitochondrial volume fraction — each of which corresponds to a cue a human annotator actually uses. Every feature you add also adds a way for the model to identify the *dataset* rather than the *biology*: raw intensity statistics, for instance, encode staining batch almost perfectly.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 21</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Write the biological decision the model will support, naming who acts on the output and what they do differently as a result.</li>
+<li>Enumerate leakage channels present in your data — fragment duplication, spatial adjacency, annotator provenance, label circularity — and choose the split that blocks the strongest one.</li>
+<li>Construct the feature set with a one-line rationale per feature, and record the segmentation version the features were computed from.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 21</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Fit all preprocessing (scaling, imputation, feature selection) inside the training fold only.</li>
+<li>Train a trivial baseline first — majority class, or a single-feature threshold — and report it alongside every later model.</li>
+<li>Evaluate with the metric that matches the decision from step 1, plus per-class recall and prevalence.</li>
+<li>Run error analysis on the failures: sample 20-30 misclassified examples and classify the failure reason by hand.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 21</p>
+<h2 id="core-workflow-continued-1">Core Workflow (continued)</h2>
+<ul>
+<li>Write the model card: intended use, unsupported uses, evaluation splits, metrics with intervals, and the domain in which the numbers hold.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min)"><p class="slide-number">Slide 8 of 21</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-08:00 | Task framing and leakage examples</li>
+<li>08:00-20:00 | Feature rationale workshop</li>
+<li>20:00-34:00 | Split strategy and baseline modeling</li>
+<li>34:00-46:00 | Error analysis and biologically relevant metrics</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (60 min) (continued)"><p class="slide-number">Slide 9 of 21</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>46:00-56:00 | Model-card limitation writing</li>
+<li>56:00-60:00 | Competency checkpoint</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Misconceptions to Watch"><p class="slide-number">Slide 10 of 21</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> adding more features always improves science.</li>
+<li><strong>Misconception guardrail:</strong> one summary metric is enough.</li>
+<li><strong>Misconception guardrail:</strong> a random split always gives a valid generalization estimate.</li>
+<li><strong>Misconception guardrail:</strong> a 99% accurate classifier is a useful classifier.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Misconceptions to Watch (continued)"><p class="slide-number">Slide 11 of 21</p>
+<h2 id="misconceptions-to-watch-continued">Misconceptions to Watch (continued)</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> the training labels are the truth the model is failing to reach.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Studio Activity"><p class="slide-number">Slide 12 of 21</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> You must classify neurite fragments into coarse categories to prioritize a proofreading queue. You have roughly 4,000 labeled fragments drawn from about 600 neurons in one dataset, five classes with prevalences of approximately 38%, 27%, 19%, 12%, and 4%, and a reviewer team that can inspect 500 segments per week. A second, differently stained dataset is available as a held-out domain.</p>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Activity Output Checklist"><p class="slide-number">Slide 13 of 21</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric"><p class="slide-number">Slide 14 of 21</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>Feature and split decisions are justified against a named leakage channel.</li>
+<li>Metrics include at least one biologically targeted criterion tied to a real capacity or threshold.</li>
+<li>Limitation statement is specific and actionable.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 21</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>Quantifies how much performance each successive split control removes.</li>
+<li>Uses error analysis to propose the next data improvement rather than the next model.</li>
+<li>Names the assumption behind the chosen block size or grouping in the same sentence as the number.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric (continued)"><p class="slide-number">Slide 16 of 21</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>Distinguishes an exploratory model from a deployment-ready one and states what would have to change.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Assessment Rubric"><p class="slide-number">Slide 17 of 21</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure modes</strong></p>
+<ul>
+<li>Leakage-prone random splits on spatially correlated data.</li>
+<li>Overfocus on aggregate accuracy with prevalence unreported.</li>
+<li>Claims of biological insight unsupported by model diagnostics.</li>
+<li>Features computed against an unpinned segmentation version.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Exit Ticket"><p class="slide-number">Slide 18 of 21</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>For one candidate model, write:</p>
+<ol>
+<li>one plausible leakage pathway,</li>
+<li>one metric blind spot,</li>
+<li>one limitation you would report publicly.</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: References (Instructor)"><p class="slide-number">Slide 19 of 21</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Januszewski et al. (2018) for segmentation ML context.</li>
+<li>UMAP paper (McInnes et al., 2018) for embedding interpretation caveats.</li>
+<li>MICrONS/FlyWire analyses for realistic distribution-shift context.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Teaching Materials"><p class="slide-number">Slide 20 of 21</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module13/</li>
+<li>Session kit: /teaching/sessions/module13/</li>
+<li>Worksheet: /assets/worksheets/module13/module13-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Read, review, or teach"><p class="slide-number">Slide 21 of 21</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module13.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module13/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

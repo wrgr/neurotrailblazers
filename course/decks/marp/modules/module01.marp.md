@@ -24,25 +24,25 @@ Teaching Deck
 - Distinguish motivating narratives from evidence-backed claims
 - Identify personal learning goals for the technical track
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Write one connectomics study question with measurable structural outputs and one explicit non-claim. Articulate a personal motivation statement linking daily annotation work to a larger scientific mission.
 
+
 ---
 
 ## Concept Focus
 ### 1) Question before method
-- **Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency). Tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
+- **Technical:** define target measurement before tool choice.
 - **Plain language:** know what you are asking first.
 - **Misconception guardrail:** tools generate good questions automatically.
+
+<!--
+Further teaching detail from the module:
+**Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency). Tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
+-->
 
 ---
 
@@ -51,7 +51,13 @@ Write one connectomics study question with measurable structural outputs and one
 - Convert to measurable structural hypothesis.
 - Define one metric and one limitation.
 - Plan first dataset/tool touchpoint.
+
+
+---
+
+## Core Workflow (continued)
 - Write a personal motivation statement connecting your question to a long-term scientific goal.
+
 
 ---
 
@@ -60,9 +66,6 @@ Write one connectomics study question with measurable structural outputs and one
 - Block 2: Connectomics landscape (12:00-28:00)
 - Block 3: Question framing workshop (28:00-48:00)
 - Block 4: Evidence-boundary critique (48:00-65:00)
-- Block 5: Motivation statement drafting (65:00-80:00)
-- Block 6: Exit ticket (80:00-90:00)
-
 <!--
 Block 1: Opening hook (00:00-12:00)
   Instructor script: "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. a fully reconstructed neuron. Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
@@ -96,19 +99,33 @@ Block 6: Exit ticket (80:00-90:00)
 
 ---
 
+## Run of Show (90 min) (continued)
+- Block 5: Motivation statement drafting (65:00-80:00)
+- Block 6: Exit ticket (80:00-90:00)
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** tools generate good questions automatically.
 - **Misconception guardrail:** a completed connectome is a full explanation of behavior.
 - **Misconception guardrail:** broad vision statements are sufficient project plans.
 - **Misconception guardrail:** excitement at the start is enough to carry you through a multi-month project.
+
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** if the work feels tedious, you chose the wrong field.
 - **Misconception guardrail:** good annotators never make errors.
 - **Misconception guardrail:** my individual contribution is too small to matter.
+
 
 ---
 
 ## Studio Activity
 **Scenario:** Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement. Part A (30 minutes) builds the sheet, Part B (20 minutes) drafts the statement, and a 10-minute peer review closes the session.
+
 
 ---
 
@@ -117,43 +134,51 @@ Block 6: Exit ticket (80:00-90:00)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum:**
-
 - Question names organism, region or circuit, and one structural measurement with units.
 - Metric, dataset, and non-claim are all present and consistent with each other.
 - Motivation statement addresses both why and how.
+
 
 ---
 
 ## Assessment Rubric
 **Strong:**
-
 - Falsification condition names the specific result that would count against the hypothesis.
 - Scope is sized so the first milestone could be finished within a week.
 - Motivation statement names at least two sustainability strategies with triggers ("when X dips, I will Y").
+
+
+---
+
+## Assessment Rubric (continued)
 - Non-claim correctly identifies a functional inference the structural data cannot support.
+
 
 ---
 
 ## Assessment Rubric
 **Failure:**
-
 - Motivational text without measurable outputs, or a question no result could contradict.
 - Motivation statement is generic ("I like brains") or omits a plan for the motivation gap.
 - Claim language exceeds the evidence class of the proposed measurement.
+
 
 ---
 
 ## Exit Ticket
 Write a 3-sentence hypothesis with one metric and one caveat. Then write 2 sentences explaining why this question matters to you personally.
 
+
 ---
 
 ## References (Instructor)
 - Use module references listed on the module page.
+
 
 ---
 
@@ -161,3 +186,17 @@ Write a 3-sentence hypothesis with one metric and one caveat. Then write 2 sente
 - Module page: /modules/module01/
 - Session kit: /teaching/sessions/module01/
 - Worksheet: /assets/worksheets/module01/module01-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module01.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module01/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

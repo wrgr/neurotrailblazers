@@ -24,17 +24,12 @@ Teaching Deck
 - Differentiate robust motifs from annotation artifacts
 - Communicate circuit-level claims with explicit limits
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Generate one synapse-to-motif interpretation with explicit evidence chain and one alternative explanation.
+
 
 ---
 
@@ -43,12 +38,14 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 Synapses are not randomly placed. Their location on the postsynaptic neuron (soma, proximal dendrite, distal dendrite, spine, axon initial segment) determines their functional impact:
 - **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells), powerful because they're close to the spike initiation zone. These synapses can veto spiking.
 
+
 ---
 
 ## Concept Focus (continued)
 - **Dendritic spine synapses**: typically excitatory, the workhorses of cortical computation. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
 - **AIS synapses**: exclusively from chandelier cells. The only inhibitory input at the axon initial segment, positioned to control spike generation directly.
 - **Shaft synapses on smooth dendrites**: typically inhibitory-to-inhibitory connections (disinhibition circuits) or excitatory inputs onto aspiny interneurons.
+
 
 ---
 
@@ -57,7 +54,13 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 - Build local connectivity motif: extract the subgraph connecting the pre and post neurons and their immediate neighbors.
 - Classify the motif: reciprocal pair, feed-forward loop, feedback inhibition, convergent input, etc.
 - Evaluate against null: is this motif more common than expected?
+
+
+---
+
+## Core Workflow (continued)
 - State supported claim (what the data shows) + caveat (what it doesn't prove and what could confound it).
+
 
 ---
 
@@ -66,8 +69,6 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 - 10:00-24:00 | Motif construction examples
 - 24:00-38:00 | Learner motif analysis
 - 38:00-50:00 | Alternative explanation challenge
-- 50:00-60:00 | Competency check
-
 <!--
 Pre-class preparation (10 min async)
   Review the synapse classification content library entry (Gray Type I/II)
@@ -104,16 +105,24 @@ Pre-class preparation (10 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 50:00-60:00 | Competency check
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** asymmetric morphology means a synapse is excitatory, rather than putatively excitatory under a stated assumption.
 - **Misconception guardrail:** reconstruction errors add symmetric noise to motif counts, when merges bias them toward denser motifs.
 - **Misconception guardrail:** a motif observed more often than expected is a functional building block.
 - **Misconception guardrail:** synapse count is a direct measure of connection strength rather than a proxy for it.
 
+
 ---
 
 ## Studio Activity
 **Scenario:** You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
+
 
 ---
 
@@ -122,44 +131,57 @@ Pre-class preparation (10 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - The motif count table reports observed, expected, and z-score for every motif class examined, not only the enriched ones.
 - At least one motif carries a complete evidence chain: detection method, count, null comparison, and interpretation, in that order.
 - Each claim in the circuit logic brief is paired with an explicit caveat stating what it does not prove.
+
+
+---
+
+## Assessment Rubric (continued)
 - The synapse threshold and data version used to build the subgraph are stated in the brief.
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Every enriched motif has at least one non-functional alternative explanation (spatial proximity, cell-type composition, reconstruction error) named and, where possible, tested.
 - A second null model or a stratified analysis is applied to at least one motif, with the change in effect size reported.
+
+
+---
+
+## Assessment Rubric (continued)
 - Synapse-level evidence — compartment targeting, Gray type — is used to subdivide or qualify at least one motif class rather than treating graph edges as interchangeable.
 - Sensitivity to reconstruction quality is quantified: the headline count is re-run at a second synapse threshold or across proofreading versions, and the difference is reported.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure to flag**
-
 - Motif claim without error-awareness — treating every enriched pattern as a functional circuit without considering artifacts or spatial confounds.
 - Functional language ("this circuit gates," "this loop amplifies") presented as a finding rather than as a consistency statement.
 - Enrichment reported against a single weak null with no statement of what it fails to control.
+
 
 ---
 
 ## Exit Ticket
 Write one motif claim and one plausible confound.
 
+
 ---
 
 ## References (Instructor)
 - Use module references listed on the module page.
+
 
 ---
 
@@ -167,3 +189,17 @@ Write one motif claim and one plausible confound.
 - Module page: /modules/module11/
 - Session kit: /teaching/sessions/module11/
 - Worksheet: /assets/worksheets/module11/module11-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module11.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module11/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

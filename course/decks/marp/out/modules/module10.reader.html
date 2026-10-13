@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Network Science and Graph Representation | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Network Science and Graph Representation</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module10.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 20 slides</summary><ol><li><a href="#slide-1">1. Network Science and Graph Representation</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Run of Show (60 min)</a></li><li><a href="#slide-8">8. Run of Show (60 min) (continued)</a></li><li><a href="#slide-9">9. Misconceptions to Watch</a></li><li><a href="#slide-10">10. Studio Activity</a></li><li><a href="#slide-11">11. Activity Output Checklist</a></li><li><a href="#slide-12">12. Assessment Rubric</a></li><li><a href="#slide-13">13. Assessment Rubric (continued)</a></li><li><a href="#slide-14">14. Assessment Rubric</a></li><li><a href="#slide-15">15. Assessment Rubric (continued)</a></li><li><a href="#slide-16">16. Assessment Rubric</a></li><li><a href="#slide-17">17. Exit Ticket</a></li><li><a href="#slide-18">18. References (Instructor)</a></li><li><a href="#slide-19">19. Teaching Materials</a></li><li><a href="#slide-20">20. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Network Science and Graph Representation"><p class="slide-number">Slide 1 of 20</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 10</span>
+<h2 id="network-science-and-graph-representation">Network Science and Graph Representation</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 20</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Construct graph representations from connectomics data</li>
+<li>Compute and interpret core network metrics</li>
+<li>Choose graph abstractions appropriate to specific hypotheses</li>
+<li>Report assumptions and limits of graph-level conclusions</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 20</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Build one connectome graph representation and justify two metric choices for a defined hypothesis.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 20</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-from-em-to-graph-a-lossy-transformation">1) From EM to graph: a lossy transformation</h3>
+<p>A connectome graph is an abstraction. The path from EM images to a graph involves: raw images → segmentation → synapse detection → neuron-to-neuron edge list → graph. Each step loses information: the graph retains connectivity topology but discards spatial relationships, organelle details, and membrane geometry. This is a feature (graphs are computationally efficient and analytically tractable) and a limitation (the graph cannot answer questions that require spatial context).</p>
+
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 20</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Define node/edge schema: what are your nodes, what are your edges, what weighting scheme?</li>
+<li>Construct graph from synapse table (e.g., using CAVEclient + NetworkX). Inspect: number of nodes, edges, density, connected components.</li>
+<li>Compute candidate metrics: degree distribution, clustering, path length, reciprocity, modularity.</li>
+<li>Compare each metric to null-model expectation (degree-preserving random graph as minimum).</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 20</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Interpret metrics against hypothesis. Report which metrics are significant and which are not.</li>
+<li>Document abstraction limits: what information was lost in the graph construction?</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Run of Show (60 min)"><p class="slide-number">Slide 7 of 20</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-08:00 | Graph abstraction choices</li>
+<li>08:00-20:00 | Graph build demo</li>
+<li>20:00-34:00 | Metric computation</li>
+<li>34:00-46:00 | Interpretation and null concerns</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Pre-class preparation (10 min async)<br>  Read the graph representations content library entry<br>  Install NetworkX: `pip install networkx`<br>  Minute-by-minute plan<br><br>00:00-08:00 | Graph abstraction choices<br>  Show the same circuit as: (a) 3D EM rendering, (b) adjacency matrix, (c) node-link diagram. &quot;These are three views of the same biology. Today we work with (b) and (c).&quot;<br>  Discussion: &quot;What did we gain and lose in each transformation?&quot;<br><br>08:00-20:00 | Graph build demo<br>  Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.<br>  Visualize the graph with spring layout. Color nodes by cell type.<br>  &quot;Notice: the spatial layout in this diagram is arbitrary. The graph doesn&#x27;t know where neurons are in the brain.&quot;<br><br>20:00-34:00 | Metric computation<br>  Hands-on: learners compute degree distribution, clustering coefficient, and average path length.<br>  Plot degree distribution (log-log). Is it heavy-tailed?<br>  Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).<br><br>34:00-46:00 | Interpretation and null concerns<br>  &quot;Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?&quot;<br>  Discuss: spatial proximity as a confound. Would a spatially constrained null model change the conclusion?<br>  Walk through one example: reciprocal connections. Count in real data vs degree-preserving null.<br><br>46:00-60:00 | Competency check<br>  Each learner writes a 1-paragraph graph analysis summary:<br>  Schema (nodes, edges, threshold)<br>  Two metrics with values and null-model comparisons<br>  One biological interpretation and one limitation<br>  Exit ticket: &quot;Name one reason a graph metric might be misleading in your dataset.&quot;</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min) (continued)"><p class="slide-number">Slide 8 of 20</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>46:00-60:00 | Competency check</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Misconceptions to Watch"><p class="slide-number">Slide 9 of 20</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> the connectivity graph is the data, rather than one lossy projection of it that discards all geometry.</li>
+<li><strong>Misconception guardrail:</strong> the synapse threshold is a technical detail that does not need reporting.</li>
+<li><strong>Misconception guardrail:</strong> a graph metric means the same thing biologically as it does in its original network-science context.</li>
+<li><strong>Misconception guardrail:</strong> Erdos-Renyi is an acceptable null for a spatially embedded, degree-heterogeneous connectome.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Studio Activity"><p class="slide-number">Slide 10 of 20</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> You have the connectivity graph of 500 neurons in a cortical column from the MICrONS dataset. Your PI asks: &quot;Is this circuit small-world? Are there hub neurons? Are there communities?&quot;</p>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Activity Output Checklist"><p class="slide-number">Slide 11 of 20</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Assessment Rubric"><p class="slide-number">Slide 12 of 20</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>The node/edge schema is stated explicitly — node definition, edge direction, weighting, and synapse threshold — before any metric appears.</li>
+<li>Each reported metric is paired with a null-model comparison; no bare metric values stand alone.</li>
+<li>At least two metrics are linked in writing to the specific question they answer for the PI&#x27;s three asks (small-world, hubs, communities).</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Assessment Rubric (continued)"><p class="slide-number">Slide 13 of 20</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>The report names at least one piece of information the graph abstraction discarded and one question it therefore cannot answer.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric"><p class="slide-number">Slide 14 of 20</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>The headline result is re-run at a second synapse threshold, and the report states which conclusions held and which moved.</li>
+<li>Degree outliers are checked against the underlying reconstruction before being reported as hubs, with the check documented.</li>
+<li>More than one null model is used, or the limits of the single null are stated in words (what it does and does not control for).</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric (continued)"><p class="slide-number">Slide 15 of 20</p>
+<h2 id="assessment-rubric-continued-1">Assessment Rubric (continued)</h2>
+<ul>
+<li>Detected communities are compared against external labels (cell types), and disagreement is reported as a finding rather than suppressed.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric"><p class="slide-number">Slide 16 of 20</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure to flag</strong></p>
+<ul>
+<li>Metric dumping — computing every available metric without explaining what question each answers.</li>
+<li>Hub or community claims made without checking whether a merge error or threshold choice manufactured them.</li>
+<li>A significance claim against Erdos-Renyi only, on a graph with obvious degree heterogeneity.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Exit Ticket"><p class="slide-number">Slide 17 of 20</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>State one reason a graph metric might be misleading in your current dataset.</p>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: References (Instructor)"><p class="slide-number">Slide 18 of 20</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Use module references listed on the module page.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: Teaching Materials"><p class="slide-number">Slide 19 of 20</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module10/</li>
+<li>Session kit: /teaching/sessions/module10/</li>
+<li>Worksheet: /assets/worksheets/module10/module10-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Read, review, or teach"><p class="slide-number">Slide 20 of 20</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module10.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module10/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

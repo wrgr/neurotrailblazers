@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Statistical Models and Inference for Connectomics | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Statistical Models and Inference for Connectomics</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module20.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 20 slides</summary><ol><li><a href="#slide-1">1. Statistical Models and Inference for Connectomics</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Run of Show (60 min)</a></li><li><a href="#slide-9">9. Run of Show (60 min) (continued)</a></li><li><a href="#slide-10">10. Misconceptions to Watch</a></li><li><a href="#slide-11">11. Studio Activity</a></li><li><a href="#slide-12">12. Activity Output Checklist</a></li><li><a href="#slide-13">13. Assessment Rubric</a></li><li><a href="#slide-14">14. Assessment Rubric</a></li><li><a href="#slide-15">15. Assessment Rubric (continued)</a></li><li><a href="#slide-16">16. Assessment Rubric</a></li><li><a href="#slide-17">17. Exit Ticket</a></li><li><a href="#slide-18">18. References (Instructor)</a></li><li><a href="#slide-19">19. Teaching Materials</a></li><li><a href="#slide-20">20. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Statistical Models and Inference for Connectomics"><p class="slide-number">Slide 1 of 20</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 20</span>
+<h2 id="statistical-models-and-inference-for-connectomics">Statistical Models and Inference for Connectomics</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 20</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Choose statistical models aligned to connectomics question types</li>
+<li>Construct and justify appropriate null models for graph analyses</li>
+<li>Control multiplicity and uncertainty in high-dimensional motif tests</li>
+<li>Report inferential claims with explicit assumptions and limits</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 20</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Design and execute a connectomics inference plan that includes null-model choice, multiplicity control, uncertainty reporting, and explicit claim boundaries.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 20</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-null-models-encode-scientific-assumptions">1) Null models encode scientific assumptions</h3>
+<ul>
+<li><strong>Technical:</strong> null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.</li>
+<li><strong>Plain language:</strong> your &quot;chance baseline&quot; must reflect biology and data collection realities.</li>
+<li><strong>Misconception guardrail:</strong> a generic random graph is an adequate null for a connectome.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 20</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li><strong>Question-to-test mapping</strong></li>
+<li>Convert biological question into estimand(s), test set, and effect-size target.</li>
+<li><strong>Null-model design</strong></li>
+<li>Define null constraints and why they preserve key confounders.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 20</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Inference execution</strong></li>
+<li>Run model/tests with preregistered thresholds and multiplicity controls.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 20</p>
+<h2 id="core-workflow-continued-1">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Robustness checks</strong></li>
+<li>Test sensitivity to preprocessing variant, sampling region, and parameter choice.</li>
+<li><strong>Claim calibration</strong></li>
+<li>Report supported, uncertain, and unsupported claims in separate blocks.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min)"><p class="slide-number">Slide 8 of 20</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-06:00 | Framing: the null is the scientific step</li>
+<li>06:00-18:00 | Worked example: reciprocity across nulls</li>
+<li>18:00-30:00 | Guided practice: write the uninteresting explanation</li>
+<li>30:00-40:00 | Multiplicity</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Pre-class preparation (15 min async)<br>  Read Technical Unit 09, section 2 — the worked reciprocity example across three null models.<br>  Bring one motif or connectivity claim from a paper you have read, with its stated null.<br>  Minute-by-minute plan<br><br>00:00-06:00 | Framing: the null is the scientific step<br>  Prompt: &quot;Same graph, same motif, three null models, three different conclusions. Which one is right?&quot;<br>  Establish that the answer depends on what the hypothesis treats as uninteresting.<br><br>06:00-18:00 | Worked example: reciprocity across nulls<br>  Instructor works the Unit 09 example live: 100 neurons, 1,200 edges, 210 reciprocal pairs.<br>  Erdos-Renyi gives 2.9x. Degree-preserving gives 1.4x. Degree-and-distance gives 1.14x, not significant.<br>  Think aloud about which null matches which hypothesis, not which gives the nicer number.<br><br>18:00-30:00 | Guided practice: write the uninteresting explanation<br>  In pairs, learners take their brought-in claim and write, in words, the sentence &quot;this result would be uninteresting if ___&quot;.<br>  Then name the null that preserves exactly that.<br>  Instructor circulates asking &quot;what does your null preserve, and what does it randomize?&quot;<br><br>30:00-40:00 | Multiplicity<br>  Count the tests actually run, including unreported ones. Choose a correction and justify it.<br>  Surface the dependence problem: triad counts move together, so analytic p-values overstate confidence. Permutation inference respects the dependence.<br><br>40:00-50:00 | Robustness and error sensitivity<br>  Each learner names one preprocessing choice (synapse threshold, inclusion criteria, boundary handling) and states how they would test sensitivity to it.<br>  Introduce the error-simulation check: perturb the graph at measured merge and split rates, report the band.<br><br>50:00-57:00 | Competency check<br>  Each learner submits: estimand, null model with what it preserves, correction strategy, one robustness check, and one claim they will not make.<br><br>57:00-60:00 | Exit ticket<br>  &quot;One result I now doubt, and the null model that would settle it.&quot;<br>  Formative checkpoints<br>  At 30 minutes: every pair can state their null in terms of what it preserves, not just its name. If not, re-teach before proceeding.<br>  At 50 minutes: learners distinguish an exploratory finding from a confirmatory one in their own write-up.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (60 min) (continued)"><p class="slide-number">Slide 9 of 20</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>40:00-50:00 | Robustness and error sensitivity</li>
+<li>50:00-57:00 | Competency check</li>
+<li>57:00-60:00 | Exit ticket</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Misconceptions to Watch"><p class="slide-number">Slide 10 of 20</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> a generic random graph is an adequate null for a connectome.</li>
+<li><strong>Misconception guardrail:</strong> a small p-value speaks for itself, regardless of how many tests were run.</li>
+<li><strong>Misconception guardrail:</strong> a hypothesis found in the data can be confirmed by the same data.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Studio Activity"><p class="slide-number">Slide 11 of 20</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> A team reports motif enrichment in one dataset and asks whether the claim generalizes.</p>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Activity Output Checklist"><p class="slide-number">Slide 12 of 20</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Assessment Rubric"><p class="slide-number">Slide 13 of 20</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>Null model is justified and the constraints it preserves are listed explicitly, in terms of what the hypothesis treats as uninteresting.</li>
+<li>Total test count — including tests run and not reported — is documented, and a named correction is applied against it.</li>
+<li>Claims are partitioned into exploratory and confirmatory blocks with different language in each.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric"><p class="slide-number">Slide 14 of 20</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>Sensitivity analysis spans at least two preprocessing choices (synapse threshold, inclusion criteria), with results reported for each variant.</li>
+<li>Effect sizes with uncertainty intervals appear alongside every significance statement.</li>
+<li>Error-sensitivity band computed at measured merge and split rates, with the direction of merge bias named.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric (continued)"><p class="slide-number">Slide 15 of 20</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>Generalization boundary stated: which dataset, version, and region the claim covers, and what it says nothing about.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric"><p class="slide-number">Slide 16 of 20</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure modes</strong></p>
+<ul>
+<li>Null model choice disconnected from the biological question.</li>
+<li>Selective reporting: significant outcomes shown, the full test count uncounted.</li>
+<li>Exploratory signal conflated with validated inference.</li>
+<li>Analytic p-values used where dependence between tests calls for permutation.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Exit Ticket"><p class="slide-number">Slide 17 of 20</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Write a 6-8 sentence inference note that includes:</p>
+<ol>
+<li>hypothesis and estimand,</li>
+<li>null-model assumptions,</li>
+<li>multiplicity strategy,</li>
+<li>one robust conclusion and one unresolved uncertainty.</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: References (Instructor)"><p class="slide-number">Slide 18 of 20</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Bassett, Zurn, and Gold (2018) - model use in network neuroscience.</li>
+<li>Januszewski et al. (2018) - segmentation performance and uncertainty context.</li>
+<li>MICrONS/FlyWire/H01 analyses for cross-dataset inference constraints.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: Teaching Materials"><p class="slide-number">Slide 19 of 20</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module20/</li>
+<li>Session kit: /teaching/sessions/module20/</li>
+<li>Worksheet: /assets/worksheets/module20/module20-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Read, review, or teach"><p class="slide-number">Slide 20 of 20</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module20.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module20/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

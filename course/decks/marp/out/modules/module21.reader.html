@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reproducibility and FAIR Principles in Connectomics | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Reproducibility and FAIR Principles in Connectomics</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module21.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 19 slides</summary><ol><li><a href="#slide-1">1. Reproducibility and FAIR Principles in Connectomics</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Run of Show (60 min)</a></li><li><a href="#slide-8">8. Run of Show (60 min) (continued)</a></li><li><a href="#slide-9">9. Misconceptions to Watch</a></li><li><a href="#slide-10">10. Studio Activity</a></li><li><a href="#slide-11">11. Activity Output Checklist</a></li><li><a href="#slide-12">12. Assessment Rubric</a></li><li><a href="#slide-13">13. Assessment Rubric</a></li><li><a href="#slide-14">14. Assessment Rubric (continued)</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Exit Ticket</a></li><li><a href="#slide-17">17. References (Instructor)</a></li><li><a href="#slide-18">18. Teaching Materials</a></li><li><a href="#slide-19">19. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Reproducibility and FAIR Principles in Connectomics"><p class="slide-number">Slide 1 of 19</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 21</span>
+<h2 id="reproducibility-and-fair-principles-in-connectomics">Reproducibility and FAIR Principles in Connectomics</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 19</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Apply FAIR principles to connectomics data products</li>
+<li>Define minimum reproducibility metadata for analysis releases</li>
+<li>Build transparent methods/parameter logs for peer reuse</li>
+<li>Identify hidden-curriculum norms in reproducibility expectations</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 19</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Publish a reproducibility-ready connectomics package (data + methods + metadata + limitations) that an external group can audit and reuse.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 19</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-fair-as-implementation-checklist">1) FAIR as implementation checklist</h3>
+<ul>
+<li><strong>Technical:</strong> findable identifiers, accessible storage, interoperable formats, and reusable metadata each require concrete engineering choices.</li>
+<li><strong>Plain language:</strong> &quot;FAIR&quot; only counts if someone else can actually find, open, and use your work.</li>
+<li><strong>Misconception guardrail:</strong> posting files online makes work FAIR.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 19</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Define release scope (dataset slice, code commit, parameter set).</li>
+<li>Add machine-readable metadata and provenance fields.</li>
+<li>Validate rerun path in a clean environment.</li>
+<li>Write methods/limitations notes for external users.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 19</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Publish with changelog and deprecation policy.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Run of Show (60 min)"><p class="slide-number">Slide 7 of 19</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-06:00 | Framing: the silent bug</li>
+<li>06:00-16:00 | The five-element checklist, modeled</li>
+<li>16:00-30:00 | Guided practice: audit your own work</li>
+<li>30:00-40:00 | Clean-environment rerun</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Pre-class preparation (15 min async)<br>  Bring one analysis you have run, in whatever state it is in. It does not need to be tidy; untidy is more useful here.<br>  Read Technical Unit 04, section 2, on materialization versions and root-ID instability.<br>  Minute-by-minute plan<br><br>00:00-06:00 | Framing: the silent bug<br>  Prompt: &quot;Your notebook ran fine last month and gives a different number today. Nothing in your code changed. What happened?&quot;<br>  Establish that analysis against an unpinned segmentation is the most common silent correctness failure in this field.<br><br>06:00-16:00 | The five-element checklist, modeled<br>  Instructor walks one real analysis through: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.<br>  Show what breaks when each one is missing, in turn.<br><br>16:00-30:00 | Guided practice: audit your own work<br>  Learners score their brought-in analysis against the five elements. Most will fail two or three; say so in advance to make that safe.<br>  Produce a remediation list ordered by how cheap each fix is.<br><br>30:00-40:00 | Clean-environment rerun<br>  Attempt a rerun of a partner&#x27;s analysis from their instructions alone, without asking them questions.<br>  Log every point of friction. The friction log is the deliverable, not the successful rerun.<br><br>40:00-50:00 | Known limitations, written honestly<br>  Each learner drafts a limitations paragraph naming concrete failure modes, excluded samples, and failed runs — not generic caveats.<br>  Discuss why this is a hidden-curriculum norm: reviewers expect it, and almost nobody is taught to write it.<br><br>50:00-57:00 | Competency check<br>  Submit: completed five-element record, friction report on a partner&#x27;s package, and one limitations paragraph.<br><br>57:00-60:00 | Exit ticket<br>  &quot;One thing in my current work that another person could not reproduce today.&quot;<br>  Formative checkpoints<br>  At 30 minutes: every learner has identified at least one missing element in their own work. A learner reporting five out of five has probably not audited honestly — check.<br>  At 50 minutes: limitations paragraphs name specific failure modes rather than generic hedges.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min) (continued)"><p class="slide-number">Slide 8 of 19</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>40:00-50:00 | Known limitations, written honestly</li>
+<li>50:00-57:00 | Competency check</li>
+<li>57:00-60:00 | Exit ticket</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Misconceptions to Watch"><p class="slide-number">Slide 9 of 19</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> posting files online makes work FAIR.</li>
+<li><strong>Misconception guardrail:</strong> a notebook that ran end-to-end once is proof of reproducible science.</li>
+<li><strong>Misconception guardrail:</strong> reproducibility norms are common sense that any careful trainee will infer without being taught.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Studio Activity"><p class="slide-number">Slide 10 of 19</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> Your lab plans to release a connectomics analysis package to collaborators.</p>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Activity Output Checklist"><p class="slide-number">Slide 11 of 19</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Assessment Rubric"><p class="slide-number">Slide 12 of 19</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>All five provenance elements present: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.</li>
+<li>Re-run instructions testable by a peer without contacting the author.</li>
+<li>Limitations name concrete failure modes, excluded samples, and failed runs rather than generic hedges.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Assessment Rubric"><p class="slide-number">Slide 13 of 19</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>Clean-environment rerun actually attempted, with a friction log and remediations ordered by cost.</li>
+<li>Hidden norms made explicit: version identifiers in figure legends, a changelog, and a deprecation note.</li>
+<li>ID churn quantified whenever identifiers cross versions, and reported in the methods.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric (continued)"><p class="slide-number">Slide 14 of 19</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>Documentation is audit-friendly: an external reader can locate every provenance element from the README alone.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 19</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure modes</strong></p>
+<ul>
+<li>Missing version identifiers for data or code.</li>
+<li>Methods that omit key parameters or the environment specification.</li>
+<li>&quot;Reproducible in principle&quot; claims without a validation rerun.</li>
+<li>Limitations sections written as boilerplate rather than as concrete guidance.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Exit Ticket"><p class="slide-number">Slide 16 of 19</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Take one prior analysis output and add:</p>
+<ol>
+<li>provenance metadata,</li>
+<li>reproducibility instructions,</li>
+<li>a 5-line limitations section.</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: References (Instructor)"><p class="slide-number">Slide 17 of 19</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Wilkinson et al. (2016) - FAIR Guiding Principles.</li>
+<li>Peng (2011) - Reproducible Research in Computational Science.</li>
+<li>Project-specific release documentation for H01/MICrONS/FlyWire.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Teaching Materials"><p class="slide-number">Slide 18 of 19</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module21/</li>
+<li>Session kit: /teaching/sessions/module21/</li>
+<li>Worksheet: /assets/worksheets/module21/module21-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: Read, review, or teach"><p class="slide-number">Slide 19 of 19</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module21.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module21/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

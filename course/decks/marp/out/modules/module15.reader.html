@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LLMs for Patch Analysis | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>LLMs for Patch Analysis</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module15.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 18 slides</summary><ol><li><a href="#slide-1">1. LLMs for Patch Analysis</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Run of Show (60 min)</a></li><li><a href="#slide-9">9. Run of Show (60 min) (continued)</a></li><li><a href="#slide-10">10. Misconceptions to Watch</a></li><li><a href="#slide-11">11. Misconceptions to Watch (continued)</a></li><li><a href="#slide-12">12. Studio Activity</a></li><li><a href="#slide-13">13. Activity Output Checklist</a></li><li><a href="#slide-14">14. Assessment Rubric</a></li><li><a href="#slide-15">15. Exit Ticket</a></li><li><a href="#slide-16">16. References (Instructor)</a></li><li><a href="#slide-17">17. Teaching Materials</a></li><li><a href="#slide-18">18. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: LLMs for Patch Analysis"><p class="slide-number">Slide 1 of 18</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 15</span>
+<h2 id="llms-for-patch-analysis">LLMs for Patch Analysis</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 18</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Identify realistic LLM use cases in connectomics patch workflows</li>
+<li>Design prompt/evaluation loops with reliability checks</li>
+<li>Detect hallucination and unsupported inference risks</li>
+<li>Integrate LLM outputs into human-in-the-loop QC</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 18</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Implement an LLM-assisted patch-analysis workflow with verification gates, confidence labeling, and explicit human override policies. Concretely: classify every output your workflow produces into named output classes, attach a verification method and a numeric acceptance threshold to each class before any output is used, measure whether the gate costs less than the task it replaces, and log model version, prompt, output, reviewer, and decision so a reader can reconstruct which claims a model touched.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 18</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-assistive-not-autonomous">1) Assistive, not autonomous</h3>
+<ul>
+<li><strong>Technical:</strong> LLMs should support prioritization, summarization, code drafting, and protocol guidance.</li>
+<li><strong>Plain language:</strong> use an LLM to help, not to decide alone.</li>
+<li><strong>Misconception guardrail:</strong> fluent output means correct output.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Technical:** LLMs should support prioritization, summarization, code drafting, and protocol guidance. They should not perform final biological adjudication — whether this profile is a synapse, whether this is a merge error, which cell type this is. The dividing line is whether an error would enter a released data product without a human seeing it. If yes, the task is human-adjudicated regardless of how well the model performs in a pilot.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 18</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Enumerate the candidate LLM tasks in your project and sort them into named output classes.</li>
+<li>For each class, write the verification method and a numeric acceptance threshold that can fail, before generating any output.</li>
+<li>Estimate, then measure, the cost of the gate against the cost of doing the task directly; drop any class where the gate costs more.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 18</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Create prompt templates with an explicit output schema, and include the fields that gates depend on — for code, the version pin; for summaries, the citation list.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 18</p>
+<h2 id="core-workflow-continued-1">Core Workflow (continued)</h2>
+<ul>
+<li>Define the human override policy and the interface rule that prevents anchoring: independent human call recorded before the suggestion is shown.</li>
+<li>Pilot on a small set — 20 to 50 items per class — and log every failure with its cause.</li>
+<li>Set the logging fields: model name and version, prompt, raw output, verification result, reviewer, decision, timestamp.</li>
+<li>Refine prompts and thresholds from the pilot, then state in your methods which output classes were LLM-assisted.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min)"><p class="slide-number">Slide 8 of 18</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-08:00 scope boundaries and failure examples.</li>
+<li>08:00-20:00 prompt template design, including the schema fields each gate depends on.</li>
+<li>20:00-34:00 run sample outputs and score reliability against a known answer; record agreement counts rather than impressions.</li>
+<li>34:00-46:00 define verification and override rules per output class, and estimate the cost of each gate.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (60 min) (continued)"><p class="slide-number">Slide 9 of 18</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>46:00-56:00 produce governance checklist and risk register, with one class explicitly marked as not yet usable.</li>
+<li>56:00-60:00 competency check: each learner states one output class they would refuse to gate, and why.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Misconceptions to Watch"><p class="slide-number">Slide 10 of 18</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> fluent output means correct output.</li>
+<li><strong>Misconception guardrail:</strong> spot-checking is enough when the output looks unusual.</li>
+<li><strong>Misconception guardrail:</strong> LLM assistance saves time on every task it can perform.</li>
+<li><strong>Misconception guardrail:</strong> chat history is sufficient traceability.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Misconceptions to Watch (continued)"><p class="slide-number">Slide 11 of 18</p>
+<h2 id="misconceptions-to-watch-continued">Misconceptions to Watch (continued)</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> showing the model&#x27;s answer first speeds annotators up without changing their judgment.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Studio Activity"><p class="slide-number">Slide 12 of 18</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> Build an LLM-assisted triage helper for proofreading queues. Reviewers can inspect about 500 segments per week; the current heuristic ranks candidates by segment size and produces roughly 40% true errors in the top 500. Your team wants to know whether an LLM-assisted ranker, drawing on segment statistics and free-text QC notes, should replace it. You have a labeled holdout of 300 segments and one expert available for four hours.</p>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Activity Output Checklist"><p class="slide-number">Slide 13 of 18</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric"><p class="slide-number">Slide 14 of 18</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<ul>
+<li><strong>Minimum pass:</strong> clear task boundaries, verification logic with thresholds that can fail, and logging fields including model version and prompt.</li>
+<li><strong>Strong performance:</strong> robust failure-mode handling, an actionable governance plan, a measured or defensibly estimated gate cost for each output class, and at least one class explicitly declared not yet usable.</li>
+<li><strong>Failure modes:</strong> unbounded scope, no confidence policy, missing audit trail, thresholds written after seeing the outputs, and gates whose cost was never compared with the task they replace.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Exit Ticket"><p class="slide-number">Slide 15 of 18</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>For one LLM output type, define: acceptance threshold, verification method, and human override trigger.</p>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: References (Instructor)"><p class="slide-number">Slide 16 of 18</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>LLM reliability and evaluation literature (task-specific).</li>
+<li>Internal patch-analysis workflow guidance.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Teaching Materials"><p class="slide-number">Slide 17 of 18</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module15/</li>
+<li>Session kit: /teaching/sessions/module15/</li>
+<li>Worksheet: /assets/worksheets/module15/module15-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Read, review, or teach"><p class="slide-number">Slide 18 of 18</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module15.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module15/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

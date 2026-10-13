@@ -24,23 +24,19 @@ Teaching Deck
 - Apply a basic correction workflow
 - Report segmentation quality with clear metrics
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Detect and categorize core segmentation errors and execute one correction cycle with documented quality impact.
 
+
 ---
 
 ## Concept Focus
 ### 1) What segmentation does and why it matters
 Segmentation is the computational process of assigning every voxel in an EM volume to a specific object — not just "this is a neuron" but "this is neuron #47,293." This is instance segmentation, and it's the foundation of the entire connectome. Without accurate segmentation, you cannot identify individual neurons, trace their morphology, or determine their synaptic connections. Modern methods (flood-filling networks, U-Net + watershed + agglomeration) achieve "superhuman" accuracy on benchmarks but still make errors at rates that compound across large volumes.
+
 
 ---
 
@@ -49,7 +45,13 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 - Identify merge/split candidates by scrolling through z and checking 3D meshes for implausible morphology.
 - Apply correction: split merged segments at the boundary, merge split fragments by verifying continuity.
 - Recalculate quality indicators: did the correction improve local metrics?
+
+
+---
+
+## Core Workflow (continued)
 - Log decisions: record what was changed, why, and what evidence supported the decision.
+
 
 ---
 
@@ -58,8 +60,6 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 - 08:00-22:00 | Error taxonomy with real examples
 - 22:00-36:00 | Guided correction round
 - 36:00-48:00 | Quality metric interpretation
-- 48:00-60:00 | Debrief and competency check
-
 <!--
 Pre-class preparation (10 min async)
   Read the error taxonomy content library entry
@@ -94,16 +94,52 @@ Pre-class preparation (10 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 48:00-60:00 | Debrief and competency check
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** merge and split errors are equally costly, so error counts alone rank corrections.
 - **Misconception guardrail:** an object that looks like a plausible neuron is evidence that the segmentation is correct.
 - **Misconception guardrail:** the most visually obvious errors are the ones most worth fixing.
 - **Misconception guardrail:** a segmentation can be finished, rather than released at a stated level with stated remaining error.
 
+
+---
+
+<!-- _class: visual-lesson -->
+## A segmentation is a claim about continuity
+<p class="visual-lead">The same field, before and after model labels are overlaid.</p>
+<div class="visual-images"><figure><img src="../../../../assets/images/content-library/case-studies/h01/10a-raw-em.jpg" alt="Raw H01 image at the same field and scale as the labeled view."><figcaption>Underlying image</figcaption></figure><figure><img src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="The same H01 field with object colors overlaid and the 2 micrometre scale bar intact."><figcaption>Model object labels</figcaption></figure></div>
+<p class="visual-question"><strong>Discuss:</strong> What evidence would you need before calling a merge or split?</p>
+<p class="source">H01 release, Lichtman Lab / Harvard and Connectomics at Google; Shapson-Coe et al. (2024), doi:10.1126/science.adk4858; CC BY 4.0.</p>
+<!--
+Visual description and discussion guidance:
+Colors identify model objects, not confidence scores or verified ground truth. Inspect the raw image and continuity across sections before accepting or changing an object’s topology.
+-->
+
+
+---
+
+<!-- _class: visual-lesson -->
+## Two reconstruction choices can disagree
+<p class="visual-lead">Inspect local evidence before choosing a correction.</p>
+<div class="visual-images"><figure><img src="../../../../assets/images/content-library/em/segmentation-c2-vs-c3.jpg" alt="Two panels of the same H01 region: c2 assigns one object; c3 separates the highlighted regions into two."><figcaption>Left: c2, one object. Right: c3, two objects.</figcaption></figure></div>
+<p class="visual-question"><strong>Discuss:</strong> Which additional view would help adjudicate this difference?</p>
+<p class="source">H01 release, Lichtman Lab / Harvard and Connectomics at Google; Shapson-Coe et al. (2024), doi:10.1126/science.adk4858; CC BY 4.0.</p>
+<!--
+Visual description and discussion guidance:
+The panel labels identify the one-object versus two-object distinction without relying on color alone. This view illustrates reconstruction disagreement; it does not by itself establish the correct biological topology.
+-->
+
+
 ---
 
 ## Studio Activity
 **Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.
+
 
 ---
 
@@ -112,44 +148,57 @@ Pre-class preparation (10 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - Every flagged candidate carries an error-type label (merge/split/boundary/uncertain), and mislabels affect fewer than 3 of the 25 candidates.
 - At least one correction is executed with the supporting evidence stated in the log before the edit, not reconstructed afterward.
 - The correction log records object ID, operation, location, and the specific visual evidence — a reader could re-find the site from the log alone.
+
+
+---
+
+## Assessment Rubric (continued)
 - Before/after quality indicators are computed for at least one correction, with the direction of change stated.
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - The priority ranking ties each candidate to its expected effect on the downstream connectivity graph, and merges outrank splits of comparable size with the reason stated.
 - Before/after metrics are reported for the whole subvolume, and any metric that moved the wrong way is explained rather than omitted.
 - At least one flagged candidate is explicitly deferred with a recorded reason (cost to fix, ambiguity, outside analysis set) rather than silently skipped.
+
+
+---
+
+## Assessment Rubric (continued)
 - The release note states what remains unexamined and what error types are still expected, not only what was fixed.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure to flag**
-
 - Correction without evidence of quality change — fixing things without checking whether it helped.
 - Ranking by visual conspicuousness rather than by impact on the analysis.
 - A merge introduced while fixing a split, because continuity was assumed from appearance instead of verified across sections.
+
 
 ---
 
 ## Exit Ticket
 Explain when you would defer a correction instead of fixing immediately.
 
+
 ---
 
 ## References (Instructor)
 - Use module references listed on the module page.
+
 
 ---
 
@@ -157,3 +206,17 @@ Explain when you would defer a correction instead of fixing immediately.
 - Module page: /modules/module06/
 - Session kit: /teaching/sessions/module06/
 - Worksheet: /assets/worksheets/module06/module06-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module06.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module06/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

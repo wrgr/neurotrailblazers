@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Synapses and Circuit Logic | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Synapses and Circuit Logic</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module11.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 21 slides</summary><ol><li><a href="#slide-1">1. Synapses and Circuit Logic</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Concept Focus (continued)</a></li><li><a href="#slide-6">6. Core Workflow</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Run of Show (60 min)</a></li><li><a href="#slide-9">9. Run of Show (60 min) (continued)</a></li><li><a href="#slide-10">10. Misconceptions to Watch</a></li><li><a href="#slide-11">11. Studio Activity</a></li><li><a href="#slide-12">12. Activity Output Checklist</a></li><li><a href="#slide-13">13. Assessment Rubric</a></li><li><a href="#slide-14">14. Assessment Rubric (continued)</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Assessment Rubric (continued)</a></li><li><a href="#slide-17">17. Assessment Rubric</a></li><li><a href="#slide-18">18. Exit Ticket</a></li><li><a href="#slide-19">19. References (Instructor)</a></li><li><a href="#slide-20">20. Teaching Materials</a></li><li><a href="#slide-21">21. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Synapses and Circuit Logic"><p class="slide-number">Slide 1 of 21</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">NeuroTrailblazers · Module 11</span>
+<h2 id="synapses-and-circuit-logic">Synapses and Circuit Logic</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 21</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Identify synaptic patterns relevant to circuit hypotheses</li>
+<li>Relate synapse-level observations to local motif logic</li>
+<li>Differentiate robust motifs from annotation artifacts</li>
+<li>Communicate circuit-level claims with explicit limits</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 21</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Generate one synapse-to-motif interpretation with explicit evidence chain and one alternative explanation.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 21</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-synaptic-organization-as-circuit-logic">1) Synaptic organization as circuit logic</h3>
+<p>Synapses are not randomly placed. Their location on the postsynaptic neuron (soma, proximal dendrite, distal dendrite, spine, axon initial segment) determines their functional impact:</p>
+<ul>
+<li><strong>Perisomatic synapses</strong> (on soma and proximal dendrites): typically inhibitory (basket cells), powerful because they&#x27;re close to the spike initiation zone. These synapses can veto spiking.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Concept Focus (continued)"><p class="slide-number">Slide 5 of 21</p>
+<h2 id="concept-focus-continued">Concept Focus (continued)</h2>
+<ul>
+<li><strong>Dendritic spine synapses</strong>: typically excitatory, the workhorses of cortical computation. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.</li>
+<li><strong>AIS synapses</strong>: exclusively from chandelier cells. The only inhibitory input at the axon initial segment, positioned to control spike generation directly.</li>
+<li><strong>Shaft synapses on smooth dendrites</strong>: typically inhibitory-to-inhibitory connections (disinhibition circuits) or excitatory inputs onto aspiny interneurons.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow"><p class="slide-number">Slide 6 of 21</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Identify synapse candidates: find synapses in the region of interest with correct pre/post assignment.</li>
+<li>Build local connectivity motif: extract the subgraph connecting the pre and post neurons and their immediate neighbors.</li>
+<li>Classify the motif: reciprocal pair, feed-forward loop, feedback inhibition, convergent input, etc.</li>
+<li>Evaluate against null: is this motif more common than expected?</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 21</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>State supported claim (what the data shows) + caveat (what it doesn&#x27;t prove and what could confound it).</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min)"><p class="slide-number">Slide 8 of 21</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-10:00 | Synapse cue recap</li>
+<li>10:00-24:00 | Motif construction examples</li>
+<li>24:00-38:00 | Learner motif analysis</li>
+<li>38:00-50:00 | Alternative explanation challenge</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Pre-class preparation (10 min async)<br>  Review the synapse classification content library entry (Gray Type I/II)<br>  Review the motif analysis content library entry (key motif types section)<br>  Minute-by-minute plan<br><br>00:00-10:00 | Synapse cue recap<br>  Quick review: asymmetric (Type I, excitatory) vs symmetric (Type II, inhibitory) synapses.<br>  Show 3 synapses in EM: spine synapse, perisomatic synapse, AIS synapse. &quot;Where the synapse lands tells you about circuit function.&quot;<br><br>10:00-24:00 | Motif construction examples<br>  Walk through 3 motifs in the MICrONS dataset:<br>  Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)<br>  Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5<br>  Feedback inhibition: pyramidal → basket cell → same pyramidal<br>  For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.<br><br>24:00-38:00 | Learner motif analysis<br>  Learners receive a small subgraph (15 neurons, 50 synapses) and identify all 3-node motifs.<br>  Count each motif type. Which are most common?<br>  Compare to expectations: &quot;If these were randomly connected with the same degree distribution, how many of each motif would you expect?&quot;<br><br>38:00-50:00 | Alternative explanation challenge<br>  For each enriched motif, learners must propose one alternative (non-functional) explanation:<br>  &quot;Reciprocal connections are enriched because nearby neurons are more likely to connect&quot; (spatial proximity)<br>  &quot;Feed-forward loops are enriched because of cell-type structure&quot; (E→I and I→E are common)<br>  Group discussion: how would you test whether the spatial explanation is sufficient?<br><br>50:00-60:00 | Competency check<br>  Each learner writes a motif claim/caveat pair:<br>  &quot;In this circuit, [motif] is enriched [X]× compared to [null model]. This is consistent with [functional interpretation]. However, [alternative explanation] could also account for this enrichment.&quot;<br>  Exit ticket: &quot;One motif claim and one plausible confound.&quot;</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (60 min) (continued)"><p class="slide-number">Slide 9 of 21</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>50:00-60:00 | Competency check</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Misconceptions to Watch"><p class="slide-number">Slide 10 of 21</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> asymmetric morphology means a synapse is excitatory, rather than putatively excitatory under a stated assumption.</li>
+<li><strong>Misconception guardrail:</strong> reconstruction errors add symmetric noise to motif counts, when merges bias them toward denser motifs.</li>
+<li><strong>Misconception guardrail:</strong> a motif observed more often than expected is a functional building block.</li>
+<li><strong>Misconception guardrail:</strong> synapse count is a direct measure of connection strength rather than a proxy for it.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Studio Activity"><p class="slide-number">Slide 11 of 21</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.</p>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Activity Output Checklist"><p class="slide-number">Slide 12 of 21</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Assessment Rubric"><p class="slide-number">Slide 13 of 21</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>The motif count table reports observed, expected, and z-score for every motif class examined, not only the enriched ones.</li>
+<li>At least one motif carries a complete evidence chain: detection method, count, null comparison, and interpretation, in that order.</li>
+<li>Each claim in the circuit logic brief is paired with an explicit caveat stating what it does not prove.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric (continued)"><p class="slide-number">Slide 14 of 21</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>The synapse threshold and data version used to build the subgraph are stated in the brief.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 21</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>Every enriched motif has at least one non-functional alternative explanation (spatial proximity, cell-type composition, reconstruction error) named and, where possible, tested.</li>
+<li>A second null model or a stratified analysis is applied to at least one motif, with the change in effect size reported.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric (continued)"><p class="slide-number">Slide 16 of 21</p>
+<h2 id="assessment-rubric-continued-1">Assessment Rubric (continued)</h2>
+<ul>
+<li>Synapse-level evidence — compartment targeting, Gray type — is used to subdivide or qualify at least one motif class rather than treating graph edges as interchangeable.</li>
+<li>Sensitivity to reconstruction quality is quantified: the headline count is re-run at a second synapse threshold or across proofreading versions, and the difference is reported.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Assessment Rubric"><p class="slide-number">Slide 17 of 21</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure to flag</strong></p>
+<ul>
+<li>Motif claim without error-awareness — treating every enriched pattern as a functional circuit without considering artifacts or spatial confounds.</li>
+<li>Functional language (&quot;this circuit gates,&quot; &quot;this loop amplifies&quot;) presented as a finding rather than as a consistency statement.</li>
+<li>Enrichment reported against a single weak null with no statement of what it fails to control.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Exit Ticket"><p class="slide-number">Slide 18 of 21</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Write one motif claim and one plausible confound.</p>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: References (Instructor)"><p class="slide-number">Slide 19 of 21</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Use module references listed on the module page.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Teaching Materials"><p class="slide-number">Slide 20 of 21</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module11/</li>
+<li>Session kit: /teaching/sessions/module11/</li>
+<li>Worksheet: /assets/worksheets/module11/module11-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Read, review, or teach"><p class="slide-number">Slide 21 of 21</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module11.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module11/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">NeuroTrailblazers text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

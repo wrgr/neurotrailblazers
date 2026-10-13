@@ -5,6 +5,9 @@ const path = require('node:path');
 const http = require('node:http');
 const puppeteer = require(process.env.CHROME_BIN ? 'puppeteer-core' : 'puppeteer');
 const root = path.resolve('_site');
+const evidence = path.resolve('tmp/visual-review');
+fs.mkdirSync(evidence, {recursive:true});
+const measurements = [];
 const server = http.createServer((req,res) => {
   let name = new URL(req.url,'http://localhost').pathname;
   if(name.endsWith('/')) name += 'index.html';
@@ -23,17 +26,24 @@ const server = http.createServer((req,res) => {
    const page=await browser.newPage(); await page.setViewport({width,height:1000});
    for(const route of ['/','/modules/','/resources/','/teaching/sessions/']){
     await page.goto(base+route); await page.evaluate(()=>document.fonts.ready);
-    const errors=await page.evaluate(()=>{
-     const out=[];
-     if(document.documentElement.scrollWidth>innerWidth+2) out.push('horizontal overflow');
-     document.querySelectorAll('.cards-grid > .card').forEach(card=>{
+    const result=await page.evaluate(()=>{
+     const errors=[], cards=[];
+     if(document.documentElement.scrollWidth>innerWidth+2) errors.push('horizontal overflow');
+     document.querySelectorAll('.cards-grid > .card, .modules-grid > .card').forEach(card=>{
       if(!card.getClientRects().length)return;
       const c=card.getBoundingClientRect(), grid=card.parentElement;
       const cols=getComputedStyle(grid).gridTemplateColumns.split(' ').map(parseFloat);
-      if(cols.every(Number.isFinite) && Math.min(...cols)-c.width>3) out.push('card fails to fill grid column');
-     }); return out;
+      if(cols.every(Number.isFinite) && Math.abs(Math.min(...cols)-c.width)>3) errors.push('card fails to fill grid column');
+      cards.push({width:c.width,columns:cols});
+     }); return {errors,cards,scrollWidth:document.documentElement.scrollWidth};
     });
-    assert.deepEqual(errors,[],`${route} ${width}px`);
+    assert(result.cards.length>0,`${route} must exercise real cards`);
+    assert.deepEqual(result.errors,[],`${route} ${width}px`);
+    measurements.push({route,width,...result});
+    if(width===390 || width===1440) {
+     const label=route==='/'?'home':route.replace(/^\/+|\/+$/g,'').replace(/\//g,'-');
+     await page.screenshot({path:path.join(evidence,`${label}-${width}.png`)});
+    }
    }
    for(const num of ['03','04','06','07','09']){
     await page.goto(base+`/course/decks/marp/out/modules/module${num}.reader.html`);
@@ -71,8 +81,10 @@ const server = http.createServer((req,res) => {
      if(q.bottom>s.top-2) errors.push('question/source overlap');
      return errors;
     }); assert.deepEqual(errors,[],`Module ${num}, visual slide ${id}`);
+    await page.screenshot({path:path.join(evidence,`module${num}-slide${id}.png`)});
    }
   }
-  await page.close(); console.log('PASS bounds for all 16 new visual slides');
+  fs.writeFileSync(path.join(evidence,'geometry.json'),JSON.stringify(measurements,null,2));
+  await page.close(); console.log('PASS bounds for all 16 new visual slides; screenshots saved under tmp/visual-review');
  } finally {if(browser)await browser.close();server.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

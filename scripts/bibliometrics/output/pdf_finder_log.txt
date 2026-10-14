@@ -1,0 +1,6 @@
+2026-04-01 00:01:53,699 - INFO - ============================================================
+2026-04-01 00:01:53,699 - INFO - Connectomics Papers PDF Availability Indexer
+2026-04-01 00:01:53,699 - INFO - ============================================================
+2026-04-01 00:01:53,745 - INFO - Loaded 7504 papers from corpus
+2026-04-01 00:01:53,746 - INFO - Papers with DOI: 7456
+2026-04-01 00:01:53,746 - INFO - Processing 7504 papers for PDF availability...

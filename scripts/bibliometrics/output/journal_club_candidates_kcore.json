@@ -1,0 +1,3334 @@
+{
+  "metadata": {
+    "source": "k=20\u201324 bridge zone (papers in k\u226520 but not k\u226525)",
+    "purpose": "Strategic additions to TIER 2 for journal club",
+    "candidate_count": 236,
+    "generated": "2026-04-01T04:27:28.336507"
+  },
+  "candidates": [
+    {
+      "doi": "10.1016/bs.mcb.2023.01.012",
+      "title": "Neurons on tape: Automated Tape Collecting Ultramicrotomy-mediated volume EM for targeting neuropathology",
+      "year": 2023,
+      "rank": 377,
+      "composite_score": 0.163102,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1515/mim-2024-0001",
+      "title": "Array tomography: trails to discovery",
+      "year": 2024,
+      "rank": 367,
+      "composite_score": 0.163239,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.2c00711",
+      "title": "Current Progress in Expansion Microscopy: Chemical Strategies and Applications",
+      "year": 2023,
+      "rank": 232,
+      "composite_score": 0.181096,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.sbi.2023.102614",
+      "title": "Expansion microscopy: A chemical approach for super-resolution microscopy",
+      "year": 2023,
+      "rank": 385,
+      "composite_score": 0.161868,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1021/acs.analchem.2c04921",
+      "title": "Expansion Microscopy: Super-Resolution Imaging with Hydrogels",
+      "year": 2023,
+      "rank": 276,
+      "composite_score": 0.174329,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1242/jcs.260765",
+      "title": "Expanding boundaries \u2013 a cell biologist's guide to expansion microscopy",
+      "year": 2024,
+      "rank": 181,
+      "composite_score": 0.189534,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-025-08985-1",
+      "title": "Light-microscopy-based connectomic reconstruction of mammalian brain tissue",
+      "year": 2025,
+      "rank": 376,
+      "composite_score": 0.163105,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41596-024-00957-5",
+      "title": "Modular segmentation, spatial analysis and visualization of volume electron microscopy datasets",
+      "year": 2024,
+      "rank": 457,
+      "composite_score": 0.15616,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.4103/atn.atn-d-24-00009",
+      "title": "Two- and three-dimensional electron microscopy techniques: powerful tools for studying the brain under physiological and pathological conditions",
+      "year": 2024,
+      "rank": 349,
+      "composite_score": 0.165383,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1007/978-3-319-24574-4_28",
+      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "year": 2015,
+      "rank": 32,
+      "composite_score": 0.245944,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "strong-signal"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1007/s12264-023-01112-y",
+      "title": "Whole-brain Optical Imaging: A Powerful Tool for Precise Brain Mapping at the Mesoscopic Level",
+      "year": 2023,
+      "rank": 453,
+      "composite_score": 0.156438,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3389/fnins.2024.1340345",
+      "title": "Between neurons and networks: investigating mesoscale brain connectivity in neurological and psychiatric disorders",
+      "year": 2024,
+      "rank": 355,
+      "composite_score": 0.164948,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2020.01.17.909572",
+      "title": "Accelerated EM Connectome Reconstruction using 3D Visualization and Segmentation Graphs",
+      "year": 2020,
+      "rank": 10,
+      "composite_score": 0.314945,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "strong-signal"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.12.11.628056",
+      "title": "Data-driven synapse classification reveals a logic of glutamate receptor diversity",
+      "year": 2024,
+      "rank": 498,
+      "composite_score": 0.15206,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1152/physrev.00009.2024",
+      "title": "Motor control on the move: from insights in insects to general mechanisms",
+      "year": 2024,
+      "rank": 375,
+      "composite_score": 0.163128,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/jmicro/dfad002",
+      "title": "Correlative light and volume electron microscopy to study brain development",
+      "year": 2023,
+      "rank": 478,
+      "composite_score": 0.154468,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1515/mim-2024-0013",
+      "title": "Wrapped up: advancements in volume electron microscopy and application in myelin research",
+      "year": 2024,
+      "rank": 316,
+      "composite_score": 0.168618,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/nature14539",
+      "title": "Deep learning",
+      "year": 2015,
+      "rank": 41,
+      "composite_score": 0.230171,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "strong-signal"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41592-024-02237-2",
+      "title": "brainlife.io: a decentralized and open-source cloud platform to support neuroscience research",
+      "year": 2024,
+      "rank": 348,
+      "composite_score": 0.165646,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3390/nano15231752",
+      "title": "Nanoscale Imaging of Biological Tissues: Techniques, Challenges and Emerging Frontiers",
+      "year": 2025,
+      "rank": 490,
+      "composite_score": 0.153142,
+      "k_core": 0,
+      "inclusion_score": 0.7,
+      "reasons": [
+        "high-ranked",
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.15015",
+      "title": "Reconstruction of genetically identified neurons imaged by serial-section electron microscopy",
+      "year": 2016,
+      "rank": 442,
+      "composite_score": 0.157217,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1023/b:visi.0000029664.99615.94",
+      "title": "Distinctive Image Features from Scale-Invariant Keypoints",
+      "year": 2004,
+      "rank": 228,
+      "composite_score": 0.181734,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.neuron.2020.02.001",
+      "title": "An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus",
+      "year": 2020,
+      "rank": 396,
+      "composite_score": 0.161214,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1007/s00418-020-01916-3",
+      "title": "Volume electron microscopy: analyzing the lung",
+      "year": 2020,
+      "rank": 461,
+      "composite_score": 0.155708,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/nmeth.2089",
+      "title": "NIH Image to ImageJ: 25 years of image analysis",
+      "year": 2012,
+      "rank": 266,
+      "composite_score": 0.175289,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.0c01174",
+      "title": "Super-resolving Microscopy in Neuroscience",
+      "year": 2021,
+      "rank": 427,
+      "composite_score": 0.158555,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1002/advs.201901673",
+      "title": "Scalable and Isotropic Expansion of Tissues with Simply Tunable Expansion Ratio",
+      "year": 2019,
+      "rank": 473,
+      "composite_score": 0.154874,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1021/acschemneuro.0c00563",
+      "title": "Current Status of Tissue Clearing and the Path Forward in Neuroscience",
+      "year": 2020,
+      "rank": 257,
+      "composite_score": 0.176925,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1186/s40580-022-00318-6",
+      "title": "Nanoscale fluorescence imaging of biological ultrastructure via molecular anchoring and physical expansion",
+      "year": 2022,
+      "rank": 328,
+      "composite_score": 0.167318,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/s0896-6273(00)00084-2",
+      "title": "Imaging Neuronal Subsets in Transgenic Mice Expressing Multiple Spectral Variants of GFP",
+      "year": 2000,
+      "rank": 185,
+      "composite_score": 0.18889,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.tcb.2016.07.003",
+      "title": "Intravital Correlative Microscopy: Imaging Life at the Nanoscale",
+      "year": 2016,
+      "rank": 410,
+      "composite_score": 0.159904,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3389/fnsyn.2016.00028",
+      "title": "Correlative Light Electron Microscopy: Connecting Synaptic Structure and Function",
+      "year": 2016,
+      "rank": 435,
+      "composite_score": 0.157794,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s43586-021-00080-9",
+      "title": "Tissue clearing",
+      "year": 2021,
+      "rank": 466,
+      "composite_score": 0.155515,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3389/fnsyn.2021.754814",
+      "title": "Towards a Comprehensive Optical Connectome at Single Synapse Resolution via Expansion Microscopy",
+      "year": 2022,
+      "rank": 189,
+      "composite_score": 0.188514,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.46876",
+      "title": "Cell-type specific innervation of cortical pyramidal cells at their apical dendrites",
+      "year": 2020,
+      "rank": 382,
+      "composite_score": 0.162472,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2020.03.31.018952",
+      "title": "Chandelier cell anatomy and function reveal a variably distributed but common signal",
+      "year": 2020,
+      "rank": 285,
+      "composite_score": 0.172773,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.conb.2011.11.010",
+      "title": "Computational methods and challenges for large-scale circuit mapping",
+      "year": 2012,
+      "rank": 487,
+      "composite_score": 0.153555,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/jmicro/dfu112",
+      "title": "Three-dimensional volume imaging with electron microscopy toward connectome",
+      "year": 2014,
+      "rank": 458,
+      "composite_score": 0.156056,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.48550/arxiv.1201.0490",
+      "title": "Scikit-learn: Machine Learning in Python",
+      "year": 2012,
+      "rank": 434,
+      "composite_score": 0.157817,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3389/fnsyn.2020.615059",
+      "title": "A Picture Worth a Thousand Molecules\u2014Integrative Technologies for Mapping Subcellular Molecular Organization and Plasticity in Developing Circuits",
+      "year": 2021,
+      "rank": 273,
+      "composite_score": 0.174742,
+      "k_core": 0,
+      "inclusion_score": 0.4,
+      "reasons": [
+        "high-ranked"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.06.10.658982",
+      "title": "A connectomic resource for neural cataloguing and circuit dissection of the larval zebrafish brain",
+      "year": 2025,
+      "rank": 590,
+      "composite_score": 0.143928,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41593-023-01404-6",
+      "title": "Regional, circuit and network heterogeneity of brain abnormalities in psychiatric disorders",
+      "year": 2023,
+      "rank": 940,
+      "composite_score": 0.123623,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-024-07780-8",
+      "title": "Inhibitory specificity from a connectomic census of mouse visual cortex",
+      "year": 2025,
+      "rank": 6047,
+      "composite_score": 0.011568,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41593-025-02004-2",
+      "title": "The synaptic architecture of layer 5 thick tufted excitatory neurons in mouse visual cortex",
+      "year": 2025,
+      "rank": 790,
+      "composite_score": 0.132277,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-024-07088-7",
+      "title": "Synaptic wiring motifs in posterior parietal cortex support decision-making",
+      "year": 2024,
+      "rank": 7003,
+      "composite_score": 0.007501,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.90565.3",
+      "title": "Combining array tomography with electron tomography provides insights into leakiness of the blood-brain barrier in mouse cortex",
+      "year": 2024,
+      "rank": 1103,
+      "composite_score": 0.11642,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.chphma.2024.07.006",
+      "title": "Swollen hydrogel nanotechnology: Advanced applications of the rudimentary swelling properties of hydrogels",
+      "year": 2024,
+      "rank": 942,
+      "composite_score": 0.123537,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-023-43582-8",
+      "title": "iU-ExM: nanoscopy of organelles and tissues with iterative ultrastructure expansion microscopy",
+      "year": 2023,
+      "rank": 935,
+      "composite_score": 0.123829,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41592-023-02001-y",
+      "title": "GelMap: intrinsic calibration and deformation mapping for expansion microscopy",
+      "year": 2023,
+      "rank": 834,
+      "composite_score": 0.12933,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-023-39616-w",
+      "title": "Expanded vacuum-stable gels for multiplexed high-resolution spatial histopathology",
+      "year": 2023,
+      "rank": 1046,
+      "composite_score": 0.118743,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1371/journal.pone.0291506",
+      "title": "Expansion microscopy using a single anchor molecule for high-yield multiplexed imaging of proteins and RNAs",
+      "year": 2023,
+      "rank": 640,
+      "composite_score": 0.14095,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41598-023-32524-5",
+      "title": "Heat denaturation enables multicolor X10-STED microscopy",
+      "year": 2023,
+      "rank": 829,
+      "composite_score": 0.129417,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41598-023-48959-9",
+      "title": "Protein and lipid expansion microscopy with trypsin and tyramide signal amplification for 3D imaging",
+      "year": 2023,
+      "rank": 879,
+      "composite_score": 0.1269,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.psychres.2024.116251",
+      "title": "Functional brain networks in clinical high-risk for bipolar disorder and psychosis",
+      "year": 2024,
+      "rank": 967,
+      "composite_score": 0.122187,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41592-023-01861-8",
+      "title": "Volume EM: a quiet revolution takes shape",
+      "year": 2023,
+      "rank": 6631,
+      "composite_score": 0.0096,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41567-022-01852-0",
+      "title": "Higher-order organization of multivariate time series",
+      "year": 2023,
+      "rank": 1158,
+      "composite_score": 0.114027,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.11.29.626074",
+      "title": "Semi-automated navigation for efficient targeting of electron tomography to regions of interest in volume correlative light and electron microscopy",
+      "year": 2024,
+      "rank": 1105,
+      "composite_score": 0.116412,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1111/jmi.13436",
+      "title": "A workflow for semi\u2010automated volume correlative light microscopy and transmission electron tomography",
+      "year": 2025,
+      "rank": 1106,
+      "composite_score": 0.116412,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41587-022-01546-1",
+      "title": "Magnify is a universal molecular anchoring strategy for expansion microscopy",
+      "year": 2023,
+      "rank": 6910,
+      "composite_score": 0.008005,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2023.08.020",
+      "title": "Brain wiring determinants uncovered by integrating connectomes and transcriptomes",
+      "year": 2023,
+      "rank": 6940,
+      "composite_score": 0.007831,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41587-023-01911-8",
+      "title": "Imaging brain tissue architecture across millimeter to nanometer scales",
+      "year": 2023,
+      "rank": 4555,
+      "composite_score": 0.024598,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41592-023-01866-3",
+      "title": "High-contrast en bloc staining of mouse whole-brain and human brain samples for EM-based connectomics",
+      "year": 2023,
+      "rank": 6345,
+      "composite_score": 0.010496,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.03.22.586254",
+      "title": "Connectomic reconstruction of a cortical column",
+      "year": 2024,
+      "rank": 557,
+      "composite_score": 0.147968,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3389/fnana.2024.1348032",
+      "title": "Unambiguous identification of asymmetric and symmetric synapses using volume electron microscopy",
+      "year": 2024,
+      "rank": 739,
+      "composite_score": 0.134788,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.09.26.558265",
+      "title": "A Scalable Staining Strategy for Whole-Brain Connectomics",
+      "year": 2023,
+      "rank": 678,
+      "composite_score": 0.138754,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1063/5.0142405",
+      "title": "Femtosecond laser preparation of resin embedded samples for correlative microscopy workflows in life sciences",
+      "year": 2023,
+      "rank": 897,
+      "composite_score": 0.126033,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.neuron.2023.09.043",
+      "title": "The neuropeptidergic connectome of C.\u00a0elegans",
+      "year": 2023,
+      "rank": 4506,
+      "composite_score": 0.025909,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41593-024-01624-4",
+      "title": "Cortical gene expression architecture links healthy neurodevelopment to the imaging, transcriptomics and genetics of autism and schizophrenia",
+      "year": 2024,
+      "rank": 931,
+      "composite_score": 0.124012,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-024-49125-z",
+      "title": "Diffusion-based deep learning method for augmenting ultrastructural imaging and volume electron microscopy",
+      "year": 2024,
+      "rank": 937,
+      "composite_score": 0.123796,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.eswa.2023.119776",
+      "title": "Graph partitioning algorithms with biological connectivity decisions for neuron reconstruction in electron microscope volumes",
+      "year": 2023,
+      "rank": 833,
+      "composite_score": 0.129337,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/cercor/bhae312",
+      "title": "Volume electron microscopy analysis of synapses in primary regions of the human cerebral cortex",
+      "year": 2024,
+      "rank": 624,
+      "composite_score": 0.141621,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s42003-024-06491-0",
+      "title": "Tracing nerve fibers with volume electron microscopy to quantitatively analyze brain connectivity",
+      "year": 2024,
+      "rank": 646,
+      "composite_score": 0.140539,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.08.04.668334",
+      "title": "Three-dimensional ultrastructural differences between thalamic and non-thalamic recipient layers in macaque V1",
+      "year": 2025,
+      "rank": 1053,
+      "composite_score": 0.11857,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.eswa.2024.124562",
+      "title": "A novel 3D instance segmentation network for synapse reconstruction from serial electron microscopy images",
+      "year": 2024,
+      "rank": 1052,
+      "composite_score": 0.118573,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41592-023-01936-6",
+      "title": "Dense 4D nanoscale reconstruction of living brain tissue",
+      "year": 2023,
+      "rank": 5975,
+      "composite_score": 0.012082,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41593-023-01443-z",
+      "title": "Multilevel visual motion opponency in Drosophila",
+      "year": 2023,
+      "rank": 6133,
+      "composite_score": 0.010971,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1523/jneurosci.0134-23.2023",
+      "title": "Hierarchical Modular Structure of the <i>Drosophila</i> Connectome",
+      "year": 2023,
+      "rank": 965,
+      "composite_score": 0.122313,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.08.06.552150",
+      "title": "A competitive disinhibitory network for robust optic flow processing in <i>Drosophila</i>",
+      "year": 2023,
+      "rank": 811,
+      "composite_score": 0.130724,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1011406",
+      "title": "Simulation-based inference for efficient identification of generative models in computational connectomics",
+      "year": 2023,
+      "rank": 974,
+      "composite_score": 0.121826,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1186/s40708-024-00228-9",
+      "title": "Connecto-informatics at the mesoscale: current advances in image processing and analysis for mapping the brain connectivity",
+      "year": 2024,
+      "rank": 924,
+      "composite_score": 0.124207,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.crmeth.2024.100720",
+      "title": "GAUSS-EM, guided accumulation of ultrathin serial sections with a static magnetic field for volume electron microscopy",
+      "year": 2024,
+      "rank": 877,
+      "composite_score": 0.127104,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cels.2022.12.006",
+      "title": "Instance segmentation of mitochondria in electron microscopy images with a generalist deep learning model trained on a diverse dataset",
+      "year": 2023,
+      "rank": 6538,
+      "composite_score": 0.010039,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.06.05.543757",
+      "title": "A Connectome of the Male <i>Drosophila</i> Ventral Nerve Cord",
+      "year": 2023,
+      "rank": 5919,
+      "composite_score": 0.01249,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cell.2024.08.033",
+      "title": "Fine-grained descending control of steering in walking Drosophila",
+      "year": 2024,
+      "rank": 6513,
+      "composite_score": 0.01015,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1126/science.adh9979",
+      "title": "Integrated platform for multiscale molecular imaging and phenotyping of the human brain",
+      "year": 2024,
+      "rank": 745,
+      "composite_score": 0.134274,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.neuron.2023.12.014",
+      "title": "Mapping of multiple neurotransmitter receptor subtypes and distinct protein complexes to the connectome",
+      "year": 2024,
+      "rank": 799,
+      "composite_score": 0.131693,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-024-07765-7",
+      "title": "Perisomatic ultrastructure efficiently classifies cells in mouse cortex",
+      "year": 2025,
+      "rank": 5936,
+      "composite_score": 0.012348,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.10.18.562531",
+      "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visual Cortex of Mice",
+      "year": 2023,
+      "rank": 725,
+      "composite_score": 0.135512,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1007/s00359-023-01616-y",
+      "title": "Lineages to circuits: the developmental and evolutionary architecture of information channels into the central complex",
+      "year": 2023,
+      "rank": 647,
+      "composite_score": 0.140501,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.85117",
+      "title": "Mating activates neuroendocrine pathways signaling hunger in Drosophila females",
+      "year": 2023,
+      "rank": 1113,
+      "composite_score": 0.116109,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/tmi.2023.3320497",
+      "title": "Current Progress and Challenges in Large-Scale 3D Mitochondria Instance Segmentation",
+      "year": 2023,
+      "rank": 1150,
+      "composite_score": 0.114423,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-024-50411-z",
+      "title": "Multiplexed volumetric CLEM enabled by scFvs provides insights into the cytology of cerebellar cortex",
+      "year": 2024,
+      "rank": 987,
+      "composite_score": 0.12123,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.11.24.625067",
+      "title": "Global Neuron Shape Reasoning with Point Affinity Transformers",
+      "year": 2024,
+      "rank": 894,
+      "composite_score": 0.126245,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1113/jp287455",
+      "title": "Ultrastructure of astrocytes using volume electron microscopy: A scoping review",
+      "year": 2025,
+      "rank": 823,
+      "composite_score": 0.129972,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-024-54694-0",
+      "title": "Synaptic connectome of the Drosophila circadian clock",
+      "year": 2024,
+      "rank": 6680,
+      "composite_score": 0.009419,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-024-07854-7",
+      "title": "Neural circuit mechanisms underlying context-specific halting in Drosophila",
+      "year": 2024,
+      "rank": 4544,
+      "composite_score": 0.024983,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-024-07451-8",
+      "title": "Mapping model units to visual neurons reveals population code for social behaviour",
+      "year": 2024,
+      "rank": 6882,
+      "composite_score": 0.008206,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-024-07982-0",
+      "title": "The fly connectome reveals a path to the effectome",
+      "year": 2024,
+      "rank": 5172,
+      "composite_score": 0.017429,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.conb.2023.102822",
+      "title": "Descending control of motor sequences in",
+      "year": 2023,
+      "rank": 6084,
+      "composite_score": 0.011351,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.10.20.563322",
+      "title": "Presynaptic inhibition selectively suppresses leg proprioception in behaving <i>Drosophila</i>",
+      "year": 2023,
+      "rank": 579,
+      "composite_score": 0.144896,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.87602",
+      "title": "Somatotopic organization among parallel sensory pathways that promote a grooming sequence in Drosophila",
+      "year": 2023,
+      "rank": 6275,
+      "composite_score": 0.010559,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-025-59302-3",
+      "title": "Divergent neural circuits for proprioceptive and exteroceptive sensing of the Drosophila leg",
+      "year": 2025,
+      "rank": 684,
+      "composite_score": 0.138158,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2023.12.037",
+      "title": "Synaptic promiscuity in brain development",
+      "year": 2024,
+      "rank": 905,
+      "composite_score": 0.125308,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.10.15.562426",
+      "title": "Fine-grained descending control of steering in walking <i>Drosophila</i>",
+      "year": 2023,
+      "rank": 6662,
+      "composite_score": 0.00948,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-025-09037-4",
+      "title": "Molecular gradients shape synaptic specificity of a visuomotor transformation",
+      "year": 2025,
+      "rank": 1098,
+      "composite_score": 0.116448,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/tvcg.2023.3327388",
+      "title": "ViMO - Visual Analysis of Neuronal Connectivity Motifs",
+      "year": 2023,
+      "rank": 654,
+      "composite_score": 0.140228,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41598-025-89088-9",
+      "title": "Connectomic analysis of taste circuits in Drosophila",
+      "year": 2025,
+      "rank": 832,
+      "composite_score": 0.129382,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1007/s00441-024-03936-0",
+      "title": "A brief history of insect neuropeptide and peptide hormone research",
+      "year": 2024,
+      "rank": 971,
+      "composite_score": 0.121946,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1073/pnas.2322687121",
+      "title": "BIFROST: A method for registering diverse imaging datasets of the <i>Drosophila</i> brain",
+      "year": 2024,
+      "rank": 818,
+      "composite_score": 0.130242,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41593-025-01948-9",
+      "title": "A competitive disinhibitory network for robust optic flow processing in Drosophila",
+      "year": 2025,
+      "rank": 595,
+      "composite_score": 0.143553,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-024-55305-8",
+      "title": "Rapid lightsheet fluorescence imaging of whole Drosophila brains at nanoscale resolution by potassium acrylate-based expansion microscopy",
+      "year": 2024,
+      "rank": 838,
+      "composite_score": 0.12905,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.ibmb.2025.104275",
+      "title": "What Drosophila can tell us about state-dependent peptidergic signaling in insects",
+      "year": 2025,
+      "rank": 874,
+      "composite_score": 0.127444,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.12.17.628844",
+      "title": "Centralized brain networks underlie body part coordination during grooming",
+      "year": 2024,
+      "rank": 607,
+      "composite_score": 0.142843,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2023.10.011",
+      "title": "Neural mechanisms to incorporate visual counterevidence in self-movement estimation",
+      "year": 2023,
+      "rank": 1035,
+      "composite_score": 0.119071,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-025-09554-2",
+      "title": "Selective presynaptic inhibition of leg proprioception in behaving Drosophila",
+      "year": 2025,
+      "rank": 685,
+      "composite_score": 0.13815,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.07.16.664682",
+      "title": "A Developmental Atlas of the <i>Drosophila</i> Nerve Cord Uncovers a Global Temporal Code for Neuronal Identity",
+      "year": 2025,
+      "rank": 1030,
+      "composite_score": 0.119178,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41587-025-02905-4",
+      "title": "All-optical visualization of specific molecules in the ultrastructural context of brain tissue",
+      "year": 2025,
+      "rank": 902,
+      "composite_score": 0.125534,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cris.2025.100113",
+      "title": "The Drosophila adult brain: short overview of structure, function, and resources Graphical Review Paper",
+      "year": 2025,
+      "rank": 628,
+      "composite_score": 0.141277,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2025.06.055",
+      "title": "A cell type in the visual system that receives feedback about limb movement",
+      "year": 2025,
+      "rank": 726,
+      "composite_score": 0.135503,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.physrep.2025.10.003",
+      "title": "Nonequilibrium physics of brain dynamics",
+      "year": 2025,
+      "rank": 505,
+      "composite_score": 0.15136,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41592-025-02891-0",
+      "title": "Nondestructive X-ray tomography of brain tissue ultrastructure",
+      "year": 2025,
+      "rank": 765,
+      "composite_score": 0.133291,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2025.02.004",
+      "title": "Columnar cholinergic neurotransmission onto T5 cells of Drosophila",
+      "year": 2025,
+      "rank": 1015,
+      "composite_score": 0.119768,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.12.14.628490",
+      "title": "Dissecting origins of wiring specificity in dense reconstructions of neural tissue",
+      "year": 2024,
+      "rank": 795,
+      "composite_score": 0.132158,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.05.16.654254",
+      "title": "Accelerating Neuron Reconstruction with PATHFINDER",
+      "year": 2025,
+      "rank": 792,
+      "composite_score": 0.132266,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.06.11.659158",
+      "title": "Cross-species comparative connectomics reveals the evolution of an olfactory circuit",
+      "year": 2025,
+      "rank": 883,
+      "composite_score": 0.126614,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.conb.2023.102757",
+      "title": "The synaptic basis for sexual dimorphism in the invertebrate nervous system",
+      "year": 2023,
+      "rank": 1104,
+      "composite_score": 0.11642,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.100947",
+      "title": "Molecular characterization of gustatory second-order neurons reveals integrative mechanisms of gustatory and metabolic information",
+      "year": 2024,
+      "rank": 1166,
+      "composite_score": 0.113776,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1364/boe.559263",
+      "title": "Scaling up X-ray holographic nanotomography for neuronal tissue imaging",
+      "year": 2025,
+      "rank": 728,
+      "composite_score": 0.135393,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.08.25.671814",
+      "title": "From Sensory Detection to Motor Action: The Comprehensive <i>Drosophila</i> Taste-Feeding Connectome",
+      "year": 2025,
+      "rank": 1144,
+      "composite_score": 0.114856,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.09.26.678648",
+      "title": "Combinatorial protein barcodes enable self-correcting neuron tracing with nanoscale molecular context",
+      "year": 2025,
+      "rank": 629,
+      "composite_score": 0.141274,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.09.12.675944",
+      "title": "Connectome simulations identify a central pattern generator circuit for fly walking",
+      "year": 2025,
+      "rank": 977,
+      "composite_score": 0.121701,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1126/science.adr9109",
+      "title": "Mesoscale volumetric fluorescence imaging at nanoscale resolution by photochemical sectioning",
+      "year": 2025,
+      "rank": 805,
+      "composite_score": 0.131188,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.04.05.647403",
+      "title": "Connectome of a human foveal retina",
+      "year": 2025,
+      "rank": 885,
+      "composite_score": 0.126501,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.08.25.671815",
+      "title": "Connectomics Reveals a Feed-Forward Swallowing Circuit Driving Protein Appetite",
+      "year": 2025,
+      "rank": 690,
+      "composite_score": 0.137548,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.10.21.683766",
+      "title": "Networks of sexually dimorphic neurons that regulate social behaviors in <i>Drosophila</i>",
+      "year": 2025,
+      "rank": 1016,
+      "composite_score": 0.119655,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.neunet.2025.107603",
+      "title": "Building connectome analysis tools with representation learning on neuronal skeleton and circuit topology",
+      "year": 2025,
+      "rank": 773,
+      "composite_score": 0.132973,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.tins.2025.11.001",
+      "title": "Reconstructing the human brain\u2019s wiring diagram from axons up",
+      "year": 2025,
+      "rank": 656,
+      "composite_score": 0.140189,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1523/eneuro.0123-25.2025",
+      "title": "The Oviposition Inhibitory Neuron is a Potential Hub of Multi-Circuit Integration in the <i>Drosophila</i> Brain",
+      "year": 2025,
+      "rank": 687,
+      "composite_score": 0.138037,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.10.03.616539",
+      "title": "Cell-type specific projection patterns promote balanced activity in cortical microcircuits",
+      "year": 2024,
+      "rank": 1155,
+      "composite_score": 0.114256,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.07.09.663979",
+      "title": "Connectomic reconstruction from hippocampal CA3 reveals spatially graded mossy fiber inputs and selective feedforward inhibition to pyramidal cells",
+      "year": 2025,
+      "rank": 550,
+      "composite_score": 0.148114,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.07.22.666129",
+      "title": "Control of walking direction by descending and dopaminergic neurons in <i>Drosophila</i>",
+      "year": 2025,
+      "rank": 674,
+      "composite_score": 0.13911,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.07.29.667487",
+      "title": "Recurrent connectivity supports carbon dioxide sensitivity in <i>Aedes aegypti</i> mosquitoes",
+      "year": 2025,
+      "rank": 782,
+      "composite_score": 0.132635,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.09.29.679410",
+      "title": "The Connectome Interpreter Toolkit",
+      "year": 2025,
+      "rank": 783,
+      "composite_score": 0.132635,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.11.18.624135",
+      "title": "Probing circuit mechanisms of feature selectivity in mouse visual cortex through synaptic-resolution connectomics",
+      "year": 2024,
+      "rank": 1039,
+      "composite_score": 0.118941,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1117/1.nph.12.1.010601",
+      "title": "Expansion microscopy reveals neural circuit organization in genetic animal models",
+      "year": 2024,
+      "rank": 536,
+      "composite_score": 0.14882,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.09.25.678485",
+      "title": "Combining brain-wide activity imaging with electron microscopy reveals a distributed nociceptive network in the brain",
+      "year": 2025,
+      "rank": 506,
+      "composite_score": 0.151349,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.10.28.684868",
+      "title": "Ascending nociceptive pathways drive rapid escape and sustained avoidance in adult <i>Drosophila</i>",
+      "year": 2025,
+      "rank": 688,
+      "composite_score": 0.138028,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.108643",
+      "title": "Synaptic density and relative connectivity conservation maintain circuit stability across development",
+      "year": 2025,
+      "rank": 518,
+      "composite_score": 0.15027,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.tins.2025.10.012",
+      "title": "How neural feedback enables flexible visual processing in Drosophila",
+      "year": 2025,
+      "rank": 599,
+      "composite_score": 0.143424,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/tvcg.2025.3634824",
+      "title": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
+      "year": 2025,
+      "rank": 851,
+      "composite_score": 0.128653,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-025-66107-x",
+      "title": "Differential modulation of feedforward inhibition reflects topographic organization in the olfactory system",
+      "year": 2025,
+      "rank": 1054,
+      "composite_score": 0.11857,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.64898/2025.12.14.694216",
+      "title": "Connectomic mapping of pharyngeal and gut sensory circuits in adult <i>Drosophila</i>",
+      "year": 2025,
+      "rank": 1107,
+      "composite_score": 0.116412,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s42003-025-09344-6",
+      "title": "A new system for studying neuronal remodeling and its relation to behavior in Drosophila",
+      "year": 2025,
+      "rank": 949,
+      "composite_score": 0.123258,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.64898/2026.01.04.697356",
+      "title": "A dedicated brain circuit controls forward walking in <i>Drosophila</i>",
+      "year": 2026,
+      "rank": 738,
+      "composite_score": 0.134791,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.64898/2026.01.26.701771",
+      "title": "A multi-input optic glomerulus mediates opposing behavioral responses to visual objects",
+      "year": 2026,
+      "rank": 1108,
+      "composite_score": 0.116412,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.64898/2026.02.02.700492",
+      "title": "Connectome analysis reveals brainwide visual processing in <i>Drosophila</i>",
+      "year": 2026,
+      "rank": 613,
+      "composite_score": 0.142345,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.64898/2026.02.06.704492",
+      "title": "Cellular and functional dissection of the octopaminergic system in the <i>Drosophila</i> brain",
+      "year": 2026,
+      "rank": 701,
+      "composite_score": 0.136949,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.neuron.2026.01.001",
+      "title": "Specialized parallel pathways for adaptive control of visual object pursuit",
+      "year": 2026,
+      "rank": 1128,
+      "composite_score": 0.115341,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cell.2024.01.005",
+      "title": "Integrating cellular electron microscopy with multimodal data to explore biology across space and time",
+      "year": 2024,
+      "rank": 756,
+      "composite_score": 0.133833,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.media.2023.102920",
+      "title": "Segmentation in large-scale cellular electron microscopy with deep learning: A literature survey",
+      "year": 2023,
+      "rank": 553,
+      "composite_score": 0.148097,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41593-023-01281-z",
+      "title": "Ascending neurons convey behavioral state to integrative sensory and action selection brain regions",
+      "year": 2023,
+      "rank": 5558,
+      "composite_score": 0.015515,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-022-05562-8",
+      "title": "Synaptic gradients transform object location to action",
+      "year": 2023,
+      "rank": 6171,
+      "composite_score": 0.010771,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.79042",
+      "title": "Hierarchical architecture of dopaminergic circuits enables second-order conditioning in Drosophila",
+      "year": 2023,
+      "rank": 6991,
+      "composite_score": 0.007561,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.80594",
+      "title": "Metamorphosis of memory circuits in Drosophila reveals a strategy for evolving a larval brain",
+      "year": 2023,
+      "rank": 1211,
+      "composite_score": 0.111929,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.97769.1",
+      "title": "A Connectome of the Male Drosophila Ventral Nerve Cord",
+      "year": 2024,
+      "rank": 5736,
+      "composite_score": 0.014099,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.85202",
+      "title": "Global change in brain state during spontaneous and forced walk in Drosophila is composed of combined activity patterns of different neuron classes",
+      "year": 2023,
+      "rank": 896,
+      "composite_score": 0.126061,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.85041",
+      "title": "retro-Tango enables versatile retrograde circuit tracing in Drosophila",
+      "year": 2023,
+      "rank": 1042,
+      "composite_score": 0.118884,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2023.12.047",
+      "title": "Descending control and regulation of spontaneous flight turns in Drosophila",
+      "year": 2024,
+      "rank": 1268,
+      "composite_score": 0.108899,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2023.09.021",
+      "title": "A complete reconstruction of the early visual system of an adult insect",
+      "year": 2023,
+      "rank": 747,
+      "composite_score": 0.134111,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.80918",
+      "title": "MorphoFeatures for unsupervised exploration of cell types, tissues, and organs in volume electron microscopy",
+      "year": 2023,
+      "rank": 6108,
+      "composite_score": 0.011152,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.88143.3",
+      "title": "Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar and water ingestion",
+      "year": 2023,
+      "rank": 1075,
+      "composite_score": 0.117353,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.84856",
+      "title": "Selective integration of diverse taste inputs within a single taste modality",
+      "year": 2023,
+      "rank": 839,
+      "composite_score": 0.129037,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.102230",
+      "title": "Neural circuit mechanisms for steering control in walking Drosophila",
+      "year": 2024,
+      "rank": 4926,
+      "composite_score": 0.020933,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.09.11.557222",
+      "title": "Synaptic connectome of the <i>Drosophila</i> circadian clock",
+      "year": 2023,
+      "rank": 4553,
+      "composite_score": 0.024603,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2024.08.025",
+      "title": "Serotonergic modulation of swallowing in a complete fly vagus nerve connectome",
+      "year": 2024,
+      "rank": 918,
+      "composite_score": 0.124494,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-024-49616-z",
+      "title": "Diversity of visual inputs to Kenyon cells of the Drosophila mushroom body",
+      "year": 2024,
+      "rank": 5886,
+      "composite_score": 0.012851,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.05.30.542725",
+      "title": "Synaptic architecture of leg and wing premotor control networks in <i>Drosophila</i>",
+      "year": 2023,
+      "rank": 6920,
+      "composite_score": 0.007959,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.cub.2023.05.064",
+      "title": "Input density tunes Kenyon cell sensory responses in the Drosophila mushroom body",
+      "year": 2023,
+      "rank": 980,
+      "composite_score": 0.121472,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.11.29.569241",
+      "title": "Connectomic reconstruction predicts the functional organization of visual inputs to the navigation center of the <i>Drosophila</i> brain",
+      "year": 2023,
+      "rank": 731,
+      "composite_score": 0.135201,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.conb.2024.102868",
+      "title": "Building and integrating brain-wide maps of nervous system function in invertebrates",
+      "year": 2024,
+      "rank": 608,
+      "composite_score": 0.142811,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1523/jneurosci.0142-24.2024",
+      "title": "Neurons Underlying Aggression-Like Actions That Are Shared by Both Males and Females in <i>Drosophila</i>",
+      "year": 2024,
+      "rank": 954,
+      "composite_score": 0.122908,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41583-024-00822-0",
+      "title": "Common principles for odour coding across vertebrates and invertebrates",
+      "year": 2024,
+      "rank": 780,
+      "composite_score": 0.132724,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1126/science.ado8316",
+      "title": "Synaptic architecture of a memory engram in the mouse hippocampus",
+      "year": 2025,
+      "rank": 1140,
+      "composite_score": 0.114977,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3389/fncir.2023.1175899",
+      "title": "Linking neural circuits to the mechanics of animal behavior in Drosophila larval locomotion",
+      "year": 2023,
+      "rank": 7045,
+      "composite_score": 0.007331,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1103/physrevlett.133.138401",
+      "title": "Geometric Scaling Law in Real Neuronal Networks",
+      "year": 2024,
+      "rank": 6585,
+      "composite_score": 0.009787,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1146/annurev-neuro-111020-094019",
+      "title": "Neural Control of Naturalistic Behavior Choices",
+      "year": 2024,
+      "rank": 899,
+      "composite_score": 0.125804,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.97964",
+      "title": "Whole-body connectome of a segmented annelid larva",
+      "year": 2024,
+      "rank": 610,
+      "composite_score": 0.14256,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.09.11.557103",
+      "title": "Networks of descending neurons transform command-like signals into population-based behavioral control",
+      "year": 2023,
+      "rank": 1004,
+      "composite_score": 0.120513,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.06.06.658008",
+      "title": "Nervous system-wide single-cell morphology atlas of excitatory and inhibitory neurons in larval zebrafish",
+      "year": 2025,
+      "rank": 1101,
+      "composite_score": 0.116423,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1012460",
+      "title": "Compression-based inference of network motif sets",
+      "year": 2024,
+      "rank": 866,
+      "composite_score": 0.127954,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.05.01.592061",
+      "title": "Brain rewiring during developmental transitions: A Comparative Analysis of Larva and Adult <i>Drosophila melanogaster</i>",
+      "year": 2024,
+      "rank": 717,
+      "composite_score": 0.135876,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.crmeth.2024.100907",
+      "title": "Accelerated protein retention expansion microscopy using microwave radiation",
+      "year": 2024,
+      "rank": 850,
+      "composite_score": 0.128656,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1103/jmqh-bqnc",
+      "title": "Brain functions emerge as thermal equilibrium states of the connectome",
+      "year": 2025,
+      "rank": 841,
+      "composite_score": 0.129027,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.91582.3",
+      "title": "Neural substrates of cold nociception in Drosophila larva",
+      "year": 2025,
+      "rank": 641,
+      "composite_score": 0.140895,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.09.26.678851",
+      "title": "Beyond Agreement: Standardizing Crowdsourced Synapse Annotations through Proofreading in EM Connectomics",
+      "year": 2025,
+      "rank": 1040,
+      "composite_score": 0.118941,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.3390/cryst16010014",
+      "title": "Volume Electron Microscopy: Imaging Principles, Computational Advances and Applications in Multi-Scale Biological System",
+      "year": 2025,
+      "rank": 614,
+      "composite_score": 0.142345,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-025-08660-5",
+      "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+      "year": 2025,
+      "rank": 619,
+      "composite_score": 0.141966,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/cercor/bhae409",
+      "title": "Multi-scale spiking network model of human cerebral cortex",
+      "year": 2024,
+      "rank": 1070,
+      "composite_score": 0.117542,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41593-025-01904-7",
+      "title": "Integrating multimodal data to understand cortical circuit architecture and function",
+      "year": 2025,
+      "rank": 1028,
+      "composite_score": 0.1192,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1515/mim-2024-0005",
+      "title": "FAST-EM array tomography: a workflow for multibeam volume electron microscopy",
+      "year": 2024,
+      "rank": 703,
+      "composite_score": 0.1367,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/jmicro/dfaf011",
+      "title": "A wide variety of techniques for a volume electron microscopy",
+      "year": 2025,
+      "rank": 1154,
+      "composite_score": 0.114262,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.10.24.563674",
+      "title": "Mapping Alzheimer\u2019s Molecular Pathologies in Large-Scale Connectomics Data: A Publicly Accessible Correlative Microscopy Resource",
+      "year": 2023,
+      "rank": 524,
+      "composite_score": 0.149907,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/jmicro/dfaf016",
+      "title": "Physical basics of scanning electron microscopy in volume electron microscopy",
+      "year": 2025,
+      "rank": 1206,
+      "composite_score": 0.112101,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.08.01.605857",
+      "title": "Nanoscale volumetric fluorescence imaging via photochemical sectioning",
+      "year": 2024,
+      "rank": 840,
+      "composite_score": 0.12903,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/jmicro/dfae047",
+      "title": "Recent advancement and human tissue applications of volume electron microscopy",
+      "year": 2024,
+      "rank": 551,
+      "composite_score": 0.148114,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/tmi.2025.3581433",
+      "title": "DeepPartitioning: Deep Learning of Graph Partitioning for Neuron Segmentation From Electron Microscopy Volume via Graph Neural Network",
+      "year": 2025,
+      "rank": 1055,
+      "composite_score": 0.11857,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41567-023-02332-9",
+      "title": "Heavy-tailed neuronal connectivity arises from Hebbian self-organization",
+      "year": 2024,
+      "rank": 6678,
+      "composite_score": 0.009421,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.91155",
+      "title": "Morphology and ultrastructure of external sense organs of Drosophila larvae",
+      "year": 2023,
+      "rank": 593,
+      "composite_score": 0.143848,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-023-06683-4",
+      "title": "Neural signal propagation atlas of Caenorhabditis elegans",
+      "year": 2023,
+      "rank": 3567,
+      "composite_score": 0.040795,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-024-07600-z",
+      "title": "Synaptic architecture of leg and wing premotor control networks in Drosophila",
+      "year": 2024,
+      "rank": 5721,
+      "composite_score": 0.014245,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.biopsych.2023.01.025",
+      "title": "Immersion Fixation and Staining of Multicubic Millimeter Volumes for Electron Microscopy\u2013Based Connectomics of Human\u00a0Brain Biopsies",
+      "year": 2023,
+      "rank": 4876,
+      "composite_score": 0.021242,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1093/genetics/iyae141",
+      "title": "Neuropeptide signaling network of <i>Caenorhabditis elegans</i>: from structure to behavior",
+      "year": 2024,
+      "rank": 884,
+      "composite_score": 0.126515,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1011964",
+      "title": "Ensemble learning and ground-truth validation of synaptic connectivity inferred from spike trains",
+      "year": 2024,
+      "rank": 854,
+      "composite_score": 0.128567,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.03.15.532611",
+      "title": "The structure and function of neural connectomes are shaped by a small number of design principles",
+      "year": 2023,
+      "rank": 618,
+      "composite_score": 0.141985,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.103977.1",
+      "title": "NeuroSCAN: Exploring Neurodevelopment via Spatiotemporal Collation of Anatomical Networks",
+      "year": 2024,
+      "rank": 1017,
+      "composite_score": 0.119655,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/tcbb.2023.3279443",
+      "title": "The Intrinsic Similarity of Topological Structure in Biological Neural Networks",
+      "year": 2023,
+      "rank": 991,
+      "composite_score": 0.121105,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1117/12.3028309",
+      "title": "Cell nuclei segmentation in mm-scale x-ray holographic nanotomography images of mouse brain tissue",
+      "year": 2024,
+      "rank": 820,
+      "composite_score": 0.130106,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.07.01.601562",
+      "title": "Building a small brain with a simple stochastic generative model",
+      "year": 2024,
+      "rank": 1131,
+      "composite_score": 0.115333,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.103977.2",
+      "title": "NeuroSC: Exploring Neurodevelopment via Spatiotemporal Collation of Anatomical Networks",
+      "year": 2025,
+      "rank": 886,
+      "composite_score": 0.126495,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.7554/elife.103977.3",
+      "title": "Exploring neurodevelopment via spatiotemporal collation of anatomical networks with NeuroSC",
+      "year": 2025,
+      "rank": 872,
+      "composite_score": 0.127574,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1073/pnas.2504913122",
+      "title": "Building the connectome of a small brain with a simple stochastic developmental generative model",
+      "year": 2025,
+      "rank": 968,
+      "composite_score": 0.122179,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41586-025-09276-5",
+      "title": "Eye structure shapes neuron function in Drosophila motion vision",
+      "year": 2025,
+      "rank": 1087,
+      "composite_score": 0.116913,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.10.20.563359",
+      "title": "A Novel Semi-automated Proofreading and Mesh Error Detection Pipeline for Neuron Extension",
+      "year": 2023,
+      "rank": 1249,
+      "composite_score": 0.110056,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.06.07.544074",
+      "title": "Organization of an Ascending Circuit that Conveys Flight Motor State",
+      "year": 2023,
+      "rank": 1177,
+      "composite_score": 0.113183,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/tmi.2024.3400276",
+      "title": "WASPSYN: A Challenge for Domain Adaptive Synapse Detection in Microwasp Brain Connectomes",
+      "year": 2024,
+      "rank": 793,
+      "composite_score": 0.132265,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-025-56641-z",
+      "title": "Dense, continuous membrane labeling and expansion microscopy visualization of ultrastructure in tissues",
+      "year": 2025,
+      "rank": 816,
+      "composite_score": 0.130279,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1016/j.crmeth.2025.100989",
+      "title": "Efficient cell-wide mapping of mitochondria in electron microscopic volumes using webKnossos",
+      "year": 2025,
+      "rank": 932,
+      "composite_score": 0.12398,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.04.24.650439",
+      "title": "Structure-Function Mapping of Olfactory Bulb Circuits with Synchrotron X-ray Nanotomography",
+      "year": 2025,
+      "rank": 655,
+      "composite_score": 0.140195,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1002/advs.202519098",
+      "title": "vEMRec: High\u2010Resolution Volume Electron Microscopy Reconstruction Based on Structure\u2010Preserving and High\u2010Fidelity 3D Alignment",
+      "year": 2026,
+      "rank": 950,
+      "composite_score": 0.123258,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1038/s41467-023-41012-3",
+      "title": "Heterogeneous receptor expression underlies non-uniform peptidergic modulation of olfaction in Drosophila",
+      "year": 2023,
+      "rank": 741,
+      "composite_score": 0.134566,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2025.10.25.684556",
+      "title": "Neural control of coordinated wing and leg movements during a terrestrial threat display",
+      "year": 2025,
+      "rank": 720,
+      "composite_score": 0.13587,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/tpami.2024.3409634",
+      "title": "DeepMulticut: Deep Learning of Multicut Problem for Neuron Segmentation From Electron Microscopy Volume",
+      "year": 2024,
+      "rank": 1047,
+      "composite_score": 0.118692,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2023.05.20.540091",
+      "title": "Multiplexed volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex",
+      "year": 2023,
+      "rank": 755,
+      "composite_score": 0.133834,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1109/cvprw59228.2023.00450",
+      "title": "Learning to Correct Sloppy Annotations in Electron Microscopy Volumes",
+      "year": 2023,
+      "rank": 922,
+      "composite_score": 0.124342,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1101/2024.06.14.599135",
+      "title": "Sparse Annotation is Sufficient for Bootstrapping Dense Segmentation",
+      "year": 2024,
+      "rank": 1132,
+      "composite_score": 0.115333,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": true,
+      "access_type": "unknown"
+    },
+    {
+      "doi": "10.1007/978-1-0716-4019-7_12",
+      "title": "Quantitative Analysis of the Synaptic Organization of the Human Temporal Lobe Neocortex",
+      "year": 2024,
+      "rank": 586,
+      "composite_score": 0.144503,
+      "k_core": 0,
+      "inclusion_score": 0.3,
+      "reasons": [
+        "recent"
+      ],
+      "has_pdf": false,
+      "access_type": "unknown"
+    }
+  ]
+}

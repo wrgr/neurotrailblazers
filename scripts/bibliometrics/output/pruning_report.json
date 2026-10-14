@@ -1,0 +1,1290 @@
+{
+  "timestamp": "2026-04-01T01:49:17.249439",
+  "removed": {
+    "isolates": [
+      {
+        "doi": "10.1093/aob/mcf118",
+        "title": "Antioxidants, Oxidative Damage and Oxygen Deprivation Stress: a Review",
+        "citations": 3967,
+        "year": 2002
+      },
+      {
+        "doi": "10.3390/ijerph",
+        "title": "International Journal of Environmental Research and Public Health",
+        "citations": 7858,
+        "year": 2013
+      },
+      {
+        "doi": "10.1038/s41467-024-55475-5",
+        "title": "Neuronal segmentation in cephalopod arms",
+        "citations": 11,
+        "year": 2025
+      },
+      {
+        "doi": "10.1175/2008mwr2387.1",
+        "title": "Explicit Forecasts of Winter Precipitation Using an Improved Bulk Microphysics Scheme. Part II: Implementation of a New Snow Parameterization",
+        "citations": 3135,
+        "year": 2008
+      },
+      {
+        "doi": "10.15585/mmwr.mm6915e3",
+        "title": "Hospitalization Rates and Characteristics of Patients Hospitalized with Laboratory-Confirmed Coronavirus Disease 2019 \u2014 COVID-NET, 14 States, March 1\u201330, 2020",
+        "citations": 2461,
+        "year": 2020
+      },
+      {
+        "doi": "10.1093/cercor/8.4.321",
+        "title": "Widespread origin of the primate mesofrontal dopamine system",
+        "citations": 469,
+        "year": 1998
+      },
+      {
+        "doi": "10.1038/nm0297-177",
+        "title": "Interstitial pH and pO2 gradients in solid tumors in vivo: High-resolution measurements reveal a lack of correlation",
+        "citations": 1616,
+        "year": 1997
+      },
+      {
+        "doi": "10.1056/nejmoa021423",
+        "title": "Overweight, Obesity, and Mortality from Cancer in a Prospectively Studied Cohort of U.S. Adults",
+        "citations": 7697,
+        "year": 2003
+      },
+      {
+        "doi": "10.1038/s41586-020-1943-3",
+        "title": "The repertoire of mutational signatures in human cancer",
+        "citations": 3614,
+        "year": 2020
+      },
+      {
+        "doi": "10.1109/tevc.2008.919004",
+        "title": "Biogeography-Based Optimization",
+        "citations": 4229,
+        "year": 2008
+      },
+      {
+        "doi": "10.1056/nejmoa1600651",
+        "title": "Zika Virus Associated with Microcephaly",
+        "citations": 2899,
+        "year": 2016
+      },
+      {
+        "doi": "10.18632/oncotarget.16723",
+        "title": "Combination therapy in combating cancer",
+        "citations": 2440,
+        "year": 2017
+      },
+      {
+        "doi": "10.1016/s0168-6445(03)00055-x",
+        "title": "Bacterial iron homeostasis",
+        "citations": 2657,
+        "year": 2003
+      },
+      {
+        "doi": "10.1063/1.2734885",
+        "title": "Surface plasmon enhanced silicon solar cells",
+        "citations": 1822,
+        "year": 2007
+      },
+      {
+        "doi": "10.1056/nejmoa012914",
+        "title": "The Use of Molecular Profiling to Predict Survival after Chemotherapy for Diffuse Large-B-Cell Lymphoma",
+        "citations": 3835,
+        "year": 2002
+      },
+      {
+        "doi": "10.1093/cvr/cvs208",
+        "title": "Transient receptor potential canonical type 3 channels facilitate endothelium-derived hyperpolarization-mediated resistance artery vasodilator activity",
+        "citations": 85,
+        "year": 2012
+      },
+      {
+        "doi": "10.1038/sj.npp.1301503",
+        "title": "Neuropharmacological Profile of Novel and Selective 5-HT6 Receptor Agonists: WAY-181187 and WAY-208466",
+        "citations": 217,
+        "year": 2007
+      },
+      {
+        "doi": "10.1039/b802352m",
+        "title": "Luminescent metal\u2013organic frameworks",
+        "citations": 4884,
+        "year": 2009
+      },
+      {
+        "doi": "10.1109/tmc.2004.41",
+        "title": "HEED: a hybrid, energy-efficient, distributed clustering approach for ad hoc sensor networks",
+        "citations": 4968,
+        "year": 2004
+      },
+      {
+        "doi": "10.1101/2024.04.12.589298",
+        "title": "Robust self-supervised denoising of voltage imaging data using CellMincer",
+        "citations": 6,
+        "year": 2024
+      },
+      {
+        "doi": "10.1093/ndt/gfae235",
+        "title": "The biology of water homeostasis",
+        "citations": 23,
+        "year": 2024
+      },
+      {
+        "doi": "10.1051/0004-6361:20078357",
+        "title": "Validation of the new Hipparcos reduction",
+        "citations": 3638,
+        "year": 2007
+      },
+      {
+        "doi": "10.2144/03342mt01",
+        "title": "TM4: A Free, Open-Source System for Microarray Data Management and Analysis",
+        "citations": 4944,
+        "year": 2003
+      },
+      {
+        "doi": "10.1038/s41578-021-00407-8",
+        "title": "Bioplastics for a circular economy",
+        "citations": 1878,
+        "year": 2022
+      },
+      {
+        "doi": "10.1111/dmcn.14132",
+        "title": "International clinical practice recommendations on the definition, diagnosis, assessment, intervention, and psychosocial aspects of developmental coordination disorder",
+        "citations": 766,
+        "year": 2019
+      },
+      {
+        "doi": "10.5860/choice.45-4393",
+        "title": "Perry's chemical engineers' handbook",
+        "citations": 10172,
+        "year": 2008
+      },
+      {
+        "doi": "10.1115/1.1571080",
+        "title": "Temperature Dependence of Thermal Conductivity Enhancement for Nanofluids",
+        "citations": 2353,
+        "year": 2003
+      },
+      {
+        "doi": "10.3390/ma7042833",
+        "title": "Zinc Oxide\u2014From Synthesis to Application: A Review",
+        "citations": 2352,
+        "year": 2014
+      },
+      {
+        "doi": "10.1038/sj.cdd.4401373",
+        "title": "Roles of CHOP/GADD153 in endoplasmic reticulum stress",
+        "citations": 2809,
+        "year": 2003
+      },
+      {
+        "doi": "10.1089/wound.2015.0635",
+        "title": "Challenges in the Treatment of Chronic Wounds",
+        "citations": 2446,
+        "year": 2015
+      },
+      {
+        "doi": "10.3892/ol.2021.12896",
+        "title": "Dose distribution effects of spot\u2011scanning proton beam therapy equipped with a multi\u2011leaf collimator for pediatric brain tumors",
+        "citations": 11,
+        "year": 2021
+      },
+      {
+        "doi": "10.1016/j.cell.2015.10.025",
+        "title": "The Molecular Taxonomy of Primary Prostate Cancer",
+        "citations": 3177,
+        "year": 2015
+      },
+      {
+        "doi": "10.2110/jsr.2009.092",
+        "title": "Morphology, Genesis, and Distribution of Nanometer-Scale Pores in Siliceous Mudstones of the Mississippian Barnett Shale",
+        "citations": 2699,
+        "year": 2009
+      },
+      {
+        "doi": "10.1371/journal.pone.0148640",
+        "title": "Lipid Droplet Formation, Their Localization and Dynamics during Leishmania major Macrophage Infection",
+        "citations": 86,
+        "year": 2016
+      },
+      {
+        "doi": "10.1093/nar/gni178",
+        "title": "Real-time quantification of microRNAs by stem-loop RT-PCR",
+        "citations": 4966,
+        "year": 2005
+      },
+      {
+        "doi": "10.1107/s0021889802022112",
+        "title": "Single-crystal structure validation with the program<i>PLATON</i>",
+        "citations": 13808,
+        "year": 2003
+      },
+      {
+        "doi": "10.1038/s41573-020-00114-z",
+        "title": "Natural products in drug discovery: advances and opportunities",
+        "citations": 4708,
+        "year": 2021
+      },
+      {
+        "doi": "10.1016/j.atmosenv.2007.12.010",
+        "title": "Atmospheric polycyclic aromatic hydrocarbons: Source attribution, emission factors and regulation",
+        "citations": 2555,
+        "year": 2008
+      },
+      {
+        "doi": "10.1523/jneurosci.16-24-08208.1996",
+        "title": "5HT<sub>1B</sub>Receptor Agonists Inhibit Light-Induced Phase Shifts of Behavioral Circadian Rhythms and Expression of the Immediate\u2013Early Gene<i>c-fos</i>in the Suprachiasmatic Nucleus",
+        "citations": 134,
+        "year": 1996
+      },
+      {
+        "doi": "10.1561/2200000083",
+        "title": "Advances and Open Problems in Federated Learning",
+        "citations": 4367,
+        "year": 2020
+      },
+      {
+        "doi": "10.1016/j.earscirev.2014.11.016",
+        "title": "A comprehensive review on the applications of coal fly ash",
+        "citations": 1658,
+        "year": 2014
+      },
+      {
+        "doi": "10.1016/j.tourman.2008.01.005",
+        "title": "Progress in information technology and tourism management: 20 years on and 10 years after the Internet\u2014The state of eTourism research",
+        "citations": 3618,
+        "year": 2008
+      },
+      {
+        "doi": "10.7554/elife.15015.018",
+        "title": "Decision letter: Reconstruction of genetically identified neurons imaged by serial-section electron microscopy",
+        "citations": 0,
+        "year": 2016
+      },
+      {
+        "doi": "10.1016/s1359-6454(98)00365-6",
+        "title": "Novel ultra-high straining process for bulk materials\u2014development of the accumulative roll-bonding (ARB) process",
+        "citations": 2131,
+        "year": 1999
+      },
+      {
+        "doi": "10.53469/jtpes.2024.04(05).06",
+        "title": "Dose My Opinion Count? A CNN-LSTM Approach for Sentiment Analysis of Indian General Elections",
+        "citations": 8,
+        "year": 2024
+      },
+      {
+        "doi": "10.1016/s0140-6736(23)02750-2",
+        "title": "Worldwide trends in underweight and obesity from 1990 to 2022: a pooled analysis of 3663 population-representative studies with 222 million children, adolescents, and adults",
+        "citations": 1743,
+        "year": 2024
+      },
+      {
+        "doi": "10.1002/dir.20015",
+        "title": "Co-creation experiences: The next practice in value creation",
+        "citations": 6170,
+        "year": 2004
+      },
+      {
+        "doi": "10.1126/science.7367858",
+        "title": "Alzheimer's Disease: X-Ray Spectrometric Evidence of Aluminum Accumulation in Neurofibrillary Tangle-Bearing Neurons",
+        "citations": 988,
+        "year": 1980
+      },
+      {
+        "doi": "10.1093/aob/mcg058",
+        "title": "Na+ Tolerance and Na+ Transport in Higher Plants",
+        "citations": 3227,
+        "year": 2003
+      },
+      {
+        "doi": "10.1126/science.282.5391.1111",
+        "title": "Nanoengineering of Inorganic and Hybrid Hollow Spheres by Colloidal Templating",
+        "citations": 4107,
+        "year": 1998
+      },
+      {
+        "doi": "10.1111/1574-6976.12025",
+        "title": "The gut microbiota of insects \u2013 diversity in structure and function",
+        "citations": 2568,
+        "year": 2013
+      },
+      {
+        "doi": "10.1002/cm.21580",
+        "title": "Role of actin in organelle trafficking in neurons",
+        "citations": 35,
+        "year": 2019
+      },
+      {
+        "doi": "10.1038/s41545-021-00127-0",
+        "title": "Removal of heavy metal ions from wastewater: a comprehensive and critical review",
+        "citations": 1972,
+        "year": 2021
+      },
+      {
+        "doi": "10.1145/383059.383072",
+        "title": "A scalable content-addressable network",
+        "citations": 6379,
+        "year": 2001
+      },
+      {
+        "doi": "10.1038/46248",
+        "title": "Design and synthesis of an exceptionally stable and highly porous metal-organic framework",
+        "citations": 8232,
+        "year": 1999
+      },
+      {
+        "doi": "10.1002/14651858",
+        "title": "Cochrane Database of Systematic Reviews",
+        "citations": 11288,
+        "year": 2003
+      },
+      {
+        "doi": "10.1038/nature22391",
+        "title": "Layer-dependent ferromagnetism in a van der Waals crystal down to the monolayer limit",
+        "citations": 5676,
+        "year": 2017
+      },
+      {
+        "doi": "10.1101/gad.1212704",
+        "title": "Upstream and downstream of mTOR",
+        "citations": 4184,
+        "year": 2004
+      },
+      {
+        "doi": "10.1016/s0140-6736(20)30937-5",
+        "title": "Endothelial cell infection and endotheliitis in COVID-19",
+        "citations": 6582,
+        "year": 2020
+      },
+      {
+        "doi": "10.1016/0022-510x(88)90132-3",
+        "title": "What is the cause of the ageing atrophy?",
+        "citations": 2053,
+        "year": 1988
+      },
+      {
+        "doi": "10.1175/bams-85-3-381",
+        "title": "The Global Land Data Assimilation System",
+        "citations": 5589,
+        "year": 2004
+      },
+      {
+        "doi": "10.1029/2004gl019920",
+        "title": "The gravity recovery and climate experiment: Mission overview and early results",
+        "citations": 2949,
+        "year": 2004
+      },
+      {
+        "doi": "10.1001/jama.286.14.1754",
+        "title": "Serial Evaluation of the SOFA Score to Predict Outcome in Critically Ill Patients",
+        "citations": 2869,
+        "year": 2001
+      },
+      {
+        "doi": "10.4324/9781315740218",
+        "title": "The Ecological Approach to Visual Perception",
+        "citations": 8730,
+        "year": 2014
+      },
+      {
+        "doi": "10.1039/b800274f",
+        "title": "Graphitic carbon nitride materials: variation of structure and morphology and their use as metal-free catalysts",
+        "citations": 3358,
+        "year": 2008
+      },
+      {
+        "doi": "10.1002/1616-3028(200102)11:1<15::aid-adfm15>3.0.co;2-a",
+        "title": "Plastic Solar Cells",
+        "citations": 3763,
+        "year": 2001
+      },
+      {
+        "doi": "10.1186/gb-2003-5-1-r1",
+        "title": "MicroRNA targets in Drosophila",
+        "citations": 3718,
+        "year": 2003
+      },
+      {
+        "doi": "10.1145/237814.237866",
+        "title": "A fast quantum mechanical algorithm for database search",
+        "citations": 8347,
+        "year": 1996
+      },
+      {
+        "doi": "10.3390/polym3031377",
+        "title": "Poly Lactic-co-Glycolic Acid (PLGA) as Biodegradable Controlled Drug Delivery Carrier",
+        "citations": 4453,
+        "year": 2011
+      },
+      {
+        "doi": "10.1523/jneurosci.18-10-03859.1998",
+        "title": "Long-Term Effects of Sectioning the Olivocochlear Bundle in Neonatal Cats",
+        "citations": 133,
+        "year": 1998
+      },
+      {
+        "doi": "10.1056/nejm198902093200606",
+        "title": "Tissue Destruction by Neutrophils",
+        "citations": 3652,
+        "year": 1989
+      },
+      {
+        "doi": "10.1007/978-3-319-40618-3",
+        "title": "AJCC Cancer Staging Manual",
+        "citations": 17403,
+        "year": 2016
+      },
+      {
+        "doi": "10.1145/190809.190336",
+        "title": "Highly dynamic Destination-Sequenced Distance-Vector routing (DSDV) for mobile computers",
+        "citations": 6693,
+        "year": 1994
+      },
+      {
+        "doi": "10.1007/bf00340712",
+        "title": "High efficiency transformation of intact yeast cells using single stranded nucleic acids as a carrier",
+        "citations": 2158,
+        "year": 1989
+      },
+      {
+        "doi": "10.1086/588660",
+        "title": "Revised Definitions of Invasive Fungal Disease from the European Organization for Research and Treatment of Cancer/Invasive Fungal Infections Cooperative Group and the National Institute of Allergy and Infectious Diseases Mycoses Study Group (EORTC/MSG) Consensus Group",
+        "citations": 4889,
+        "year": 2008
+      },
+      {
+        "doi": "10.1016/j.solidstatesciences.2010.11.024",
+        "title": "X-ray analysis of ZnO nanoparticles by Williamson\u2013Hall and size\u2013strain plot methods",
+        "citations": 2558,
+        "year": 2010
+      },
+      {
+        "doi": "10.1146/annurev.bioeng.3.1.335",
+        "title": "Soft Lithography in Biology and Biochemistry",
+        "citations": 2587,
+        "year": 2001
+      },
+      {
+        "doi": "10.3389/fmicb.2012.00012",
+        "title": "Essential Oils in Food Preservation: Mode of Action, Synergies, and Interactions with Food Matrix Components",
+        "citations": 2040,
+        "year": 2012
+      },
+      {
+        "doi": "10.1063/1.1951057",
+        "title": "Plasmonics: Localization and guiding of electromagnetic energy in metal/dielectric structures",
+        "citations": 1895,
+        "year": 2005
+      },
+      {
+        "doi": "10.1016/s0306-4522(02)00279-8",
+        "title": "Glial cell plasticity in sensory ganglia induced by nerve damage",
+        "citations": 210,
+        "year": 2002
+      },
+      {
+        "doi": "10.1103/revmodphys.81.163",
+        "title": "Attosecond physics",
+        "citations": 5224,
+        "year": 2009
+      },
+      {
+        "doi": "10.1038/nature07877",
+        "title": "Low-temperature oxidation of CO catalysed by Co3O4 nanorods",
+        "citations": 2586,
+        "year": 2009
+      },
+      {
+        "doi": "10.1051/0004-6361:20000087",
+        "title": "The European Photon Imaging Camera on XMM-Newton: The MOS cameras",
+        "citations": 2280,
+        "year": 2001
+      },
+      {
+        "doi": "10.1046/j.1432-1327.2000.01606.x",
+        "title": "Investigation of the Alamar Blue (resazurin) fluorescent dye for the assessment of mammalian cell cytotoxicity",
+        "citations": 3362,
+        "year": 2000
+      },
+      {
+        "doi": "10.1101/gad.183500",
+        "title": "Restricted feeding uncouples circadian oscillators in peripheral tissues from the central pacemaker in the suprachiasmatic nucleus",
+        "citations": 2367,
+        "year": 2000
+      },
+      {
+        "doi": "10.3390/s140711957",
+        "title": "Wearable Electronics and Smart Textiles: A Critical Review",
+        "citations": 1975,
+        "year": 2014
+      },
+      {
+        "doi": "10.1007/s11661-012-1217-2",
+        "title": "Precipitation and Hardening in Magnesium Alloys",
+        "citations": 1621,
+        "year": 2012
+      },
+      {
+        "doi": "10.1016/0092-8674(88)90571-5",
+        "title": "Most human carcinomas of the exocrine pancreas contain mutant c-K-ras genes",
+        "citations": 2107,
+        "year": 1988
+      },
+      {
+        "doi": "10.1016/j.ijinfomgt.2019.08.002",
+        "title": "Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy",
+        "citations": 3795,
+        "year": 2019
+      },
+      {
+        "doi": "10.1351/pac199466081739",
+        "title": "Recommendations for the characterization of porous solids (Technical Report)",
+        "citations": 3788,
+        "year": 1994
+      },
+      {
+        "doi": "10.1177/0333102413485658",
+        "title": "The International Classification of Headache Disorders, 3rd edition (beta version)",
+        "citations": 8166,
+        "year": 2013
+      },
+      {
+        "doi": "10.1107/s0021889898009856",
+        "title": "Rietveld refinement guidelines",
+        "citations": 2242,
+        "year": 1999
+      },
+      {
+        "doi": "10.1038/nmat2614",
+        "title": "Emerging applications of stimuli-responsive polymer materials",
+        "citations": 5577,
+        "year": 2010
+      },
+      {
+        "doi": "10.1108/s1474-7979(2009)0000020014",
+        "title": "",
+        "citations": 10582,
+        "year": 2009
+      },
+      {
+        "doi": "10.1017/cbo9780511574498",
+        "title": "Electromechanics of Particles",
+        "citations": 2739,
+        "year": 1995
+      },
+      {
+        "doi": "10.1523/jneurosci.0905-14.2014",
+        "title": "Presynaptic T-Type Ca<sup>2+</sup>Channels Modulate Dendrodendritic Mitral\u2013Mitral and Mitral\u2013Periglomerular Connections in Mouse Olfactory Bulb",
+        "citations": 21,
+        "year": 2014
+      },
+      {
+        "doi": "10.1093/nar/15.3.1281",
+        "title": "The codon adaptation index-a measure of directional synonymous codon usage bias, and its potential applications",
+        "citations": 4031,
+        "year": 1987
+      },
+      {
+        "doi": "10.1016/j.jbusres.2019.09.022",
+        "title": "Digital transformation: A multidisciplinary reflection and research agenda",
+        "citations": 4327,
+        "year": 2019
+      },
+      {
+        "doi": "10.1038/ncomms1882",
+        "title": "Valley-selective circular dichroism of monolayer molybdenum disulphide",
+        "citations": 2554,
+        "year": 2012
+      },
+      {
+        "doi": "10.1086/308692",
+        "title": "The Dust Content and Opacity of Actively Star\u2010forming Galaxies",
+        "citations": 5465,
+        "year": 2000
+      },
+      {
+        "doi": "10.5194/gmd-9-1937-2016",
+        "title": "Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization",
+        "citations": 11568,
+        "year": 2016
+      },
+      {
+        "doi": "10.1557/jmr.1986.0601",
+        "title": "A method for interpreting the data from depth-sensing indentation instruments",
+        "citations": 2800,
+        "year": 1986
+      },
+      {
+        "doi": "10.1007/978-3-540-79353-3_14",
+        "title": "Using Gaussian Synapse ANNs for Hyperspectral Image Segmentation and Endmember Extraction",
+        "citations": 6,
+        "year": 2008
+      },
+      {
+        "doi": "10.3390/s140203458",
+        "title": "A New Omni-Directional EMAT for Ultrasonic Lamb Wave Tomography Imaging of Metallic Plate Defects",
+        "citations": 64,
+        "year": 2014
+      },
+      {
+        "doi": "10.17615/ey62-1r56",
+        "title": "Morphometric evidence for neuronal and glial prefrontal cell pathology in major depression",
+        "citations": 99,
+        "year": 2019
+      },
+      {
+        "doi": "10.5860/choice.44-2397",
+        "title": "Mindset: the new psychology of success",
+        "citations": 7889,
+        "year": 2006
+      },
+      {
+        "doi": "10.3389/fpsyg.2012.00170",
+        "title": "Cortical Oscillations in Auditory Perception and Speech: Evidence for Two Temporal Windows in Human Auditory Cortex",
+        "citations": 145,
+        "year": 2012
+      },
+      {
+        "doi": "10.25300/misq/2013/37:2.3",
+        "title": "Digital Business Strategy: Toward a Next Generation of Insights",
+        "citations": 3712,
+        "year": 2013
+      },
+      {
+        "doi": "10.1016/s0021-8502(97)10037-4",
+        "title": "Engines and nanoparticles",
+        "citations": 2282,
+        "year": 1998
+      },
+      {
+        "doi": "10.1039/c9cs00607a",
+        "title": "A review on fundamentals for designing oxygen evolution electrocatalysts",
+        "citations": 2619,
+        "year": 2020
+      },
+      {
+        "doi": "10.1063/1.1141498",
+        "title": "Thermal conductivity measurement from 30 to 750 K: the 3\u03c9 method",
+        "citations": 1849,
+        "year": 1990
+      },
+      {
+        "doi": "10.1038/nature09124",
+        "title": "Real-space observation of a two-dimensional skyrmion crystal",
+        "citations": 3361,
+        "year": 2010
+      },
+      {
+        "doi": "10.1038/s41467-019-09461-x",
+        "title": "Quantifying the triboelectric series",
+        "citations": 1820,
+        "year": 2019
+      },
+      {
+        "doi": "10.1007/s00382-012-1636-1",
+        "title": "Climate change projections using the IPSL-CM5 Earth System Model: from CMIP3 to CMIP5",
+        "citations": 1863,
+        "year": 2013
+      },
+      {
+        "doi": "10.1007/s11214-008-9341-4",
+        "title": "Sun Earth Connection Coronal and Heliospheric Investigation (SECCHI)",
+        "citations": 1731,
+        "year": 2008
+      },
+      {
+        "doi": "10.1523/jneurosci.20-06-02131.2000",
+        "title": "The Neuronal Monoamine Transporter VMAT2 Is Regulated by the Trimeric GTPase Go<sub>2</sub>",
+        "citations": 74,
+        "year": 2000
+      },
+      {
+        "doi": "10.1016/j.carbon.2008.02.012",
+        "title": "Chemical oxidation of multiwalled carbon nanotubes",
+        "citations": 2674,
+        "year": 2008
+      },
+      {
+        "doi": "10.1016/j.eswa.2024.124970",
+        "title": "RRWNet: Recursive Refinement Network for effective retinal artery/vein segmentation and classification",
+        "citations": 10,
+        "year": 2024
+      },
+      {
+        "doi": "10.1038/s41560-019-0338-x",
+        "title": "Pathways for practical high-energy long-cycling lithium metal batteries",
+        "citations": 3260,
+        "year": 2019
+      },
+      {
+        "doi": "10.3389/fnana.2015.00006",
+        "title": "The Fraud Diamond: Considering the Four Elements of Fraud",
+        "citations": 968,
+        "year": 2004
+      },
+      {
+        "doi": "10.1007/s12035-018-1130-9",
+        "title": "Role of the Prefrontal Cortex in Pain Processing",
+        "citations": 715,
+        "year": 2018
+      },
+      {
+        "doi": "10.1016/s0009-2541(99)00081-9",
+        "title": "87Sr/86Sr, \u03b413C and \u03b418O evolution of Phanerozoic seawater",
+        "citations": 2591,
+        "year": 1999
+      },
+      {
+        "doi": "10.1186/1748-717x-5-13",
+        "title": "Whole brain radiotherapy with a conformational external beam radiation boost for lung cancer patients with 1-3 brain metastasis: a multi institutional study",
+        "citations": 29,
+        "year": 2010
+      },
+      {
+        "doi": "10.1016/j.addr.2010.05.006",
+        "title": "Superparamagnetic iron oxide nanoparticles (SPIONs): Development, surface modification and applications in chemotherapy",
+        "citations": 1855,
+        "year": 2010
+      },
+      {
+        "doi": "10.1016/s0167-5729(02)00100-0",
+        "title": "The surface science of titanium dioxide",
+        "citations": 7702,
+        "year": 2003
+      },
+      {
+        "doi": "10.1006/anbo.1997.0400",
+        "title": "Characterization and Distribution of Water-repellent, Self-cleaning Plant Surfaces",
+        "citations": 2811,
+        "year": 1997
+      },
+      {
+        "doi": "10.1146/annurev-micro-041320-021425",
+        "title": "How Apicomplexa Parasites Secrete and Build Their Invasion Machinery",
+        "citations": 47,
+        "year": 2022
+      },
+      {
+        "doi": "10.3892/ijmm.2016.2833",
+        "title": "PI3K/AKT signaling mediated by G protein-coupled receptors is involved in neurodegenerative Parkinson's disease (Review)",
+        "citations": 115,
+        "year": 2016
+      },
+      {
+        "doi": "10.1016/j.femsre.2003.08.001",
+        "title": "Ecology of prokaryotic viruses",
+        "citations": 1757,
+        "year": 2003
+      },
+      {
+        "doi": "10.1523/jneurosci.21-19-07654.2001",
+        "title": "Extracellular Signals That Regulate the Tangential Migration of Olfactory Bulb Neuronal Precursors: Inducers, Inhibitors, and Repellents",
+        "citations": 155,
+        "year": 2001
+      },
+      {
+        "doi": "10.1086/422843",
+        "title": "The Infrared Array Camera (IRAC) for the <i>Spitzer Space Telescope</i>",
+        "citations": 3158,
+        "year": 2004
+      },
+      {
+        "doi": "10.1111/joa.13592",
+        "title": "Anatomical Society Summer Meeting Glasgow 2021: Cutting Edge Anatomy",
+        "citations": 7,
+        "year": 2021
+      },
+      {
+        "doi": "10.1002/adma.201800561",
+        "title": "30 Years of Lithium\u2010Ion Batteries",
+        "citations": 5776,
+        "year": 2018
+      },
+      {
+        "doi": "10.1016/j.aca.2008.05.022",
+        "title": "Sensitive optical biosensors for unlabeled targets: A review",
+        "citations": 2148,
+        "year": 2008
+      },
+      {
+        "doi": "10.1051/aas:1996164",
+        "title": "SExtractor: Software for source extraction",
+        "citations": 10386,
+        "year": 1996
+      },
+      {
+        "doi": "10.1103/physrevlett.83.2498",
+        "title": "Vortices in a Bose-Einstein Condensate",
+        "citations": 1791,
+        "year": 1999
+      },
+      {
+        "doi": "10.1038/sigtrans.2017.23",
+        "title": "NF-\u03baB signaling in inflammation",
+        "citations": 7850,
+        "year": 2017
+      },
+      {
+        "doi": "10.1038/nphoton.2007.76",
+        "title": "Operation of a free-electron laser from the extreme ultraviolet to the water window",
+        "citations": 1612,
+        "year": 2007
+      },
+      {
+        "doi": "10.1172/jci0215219",
+        "title": "1,25-Dihydroxyvitamin D3 is a negative endocrine regulator of the renin-angiotensin system",
+        "citations": 1614,
+        "year": 2002
+      },
+      {
+        "doi": "10.1093/nar/15.20.8125",
+        "title": "An analysis of 5'-noncoding sequences from 699 vertebrate messenger RNAs",
+        "citations": 5158,
+        "year": 1987
+      },
+      {
+        "doi": "10.1039/c6cs00776g",
+        "title": "Sodium-ion batteries: present and future",
+        "citations": 4961,
+        "year": 2017
+      },
+      {
+        "doi": "10.1038/srep13801",
+        "title": "Insight on Tafel slopes from a microkinetic analysis of aqueous electrocatalysis for energy conversion",
+        "citations": 3047,
+        "year": 2015
+      },
+      {
+        "doi": "10.3389/fpubh.2017.00258",
+        "title": "An Overview of Heart Rate Variability Metrics and Norms",
+        "citations": 6438,
+        "year": 2017
+      },
+      {
+        "doi": "10.1182/blood-2009-03-209262",
+        "title": "The 2008 revision of the World Health Organization (WHO) classification of myeloid neoplasms and acute leukemia: rationale and important changes",
+        "citations": 4394,
+        "year": 2009
+      },
+      {
+        "doi": "10.1126/science.272.5259.263",
+        "title": "In Vivo Gene Delivery and Stable Transduction of Nondividing Cells by a Lentiviral Vector",
+        "citations": 4885,
+        "year": 1996
+      },
+      {
+        "doi": "10.3390/ijms221910318",
+        "title": "Serum Albumin in Health and Disease: Esterase, Antioxidant, Transporting and Signaling Properties",
+        "citations": 335,
+        "year": 2021
+      },
+      {
+        "doi": "10.1038/s41579-022-00846-2",
+        "title": "Long COVID: major findings, mechanisms and recommendations",
+        "citations": 3933,
+        "year": 2023
+      },
+      {
+        "doi": "10.1088/0004-6256/136/6/2846",
+        "title": "THE STAR FORMATION LAW IN NEARBY GALAXIES ON SUB-KPC SCALES",
+        "citations": 1707,
+        "year": 2008
+      },
+      {
+        "doi": "10.1111/j.1461-0248.2011.01736.x",
+        "title": "Impacts of climate change on the future of biodiversity",
+        "citations": 4064,
+        "year": 2012
+      },
+      {
+        "doi": "10.5860/choice.48-7239",
+        "title": "Alone together: why we expect more from technology and less from each other",
+        "citations": 4653,
+        "year": 2011
+      },
+      {
+        "doi": "10.1136/ard.61.6.554",
+        "title": "Classification criteria for Sj\u00f6gren's syndrome: a revised version of the European criteria proposed by the American-European Consensus Group",
+        "citations": 5304,
+        "year": 2002
+      },
+      {
+        "doi": "10.1523/jneurosci.18-18-07394.1998",
+        "title": "Increase in Serotonin-1A Autoreceptors in the Midbrain of Suicide Victims with Major Depression\u2014Postmortem Evidence for Decreased Serotonin Activity",
+        "citations": 422,
+        "year": 1998
+      },
+      {
+        "doi": "10.3151/jact.1.215",
+        "title": "On Engineered Cementitious Composites (ECC)",
+        "citations": 1615,
+        "year": 2003
+      },
+      {
+        "doi": "10.1111/j.1469-8137.2008.02436.x",
+        "title": "Mechanisms of plant survival and mortality during drought: why do some plants survive while others succumb to drought?",
+        "citations": 4315,
+        "year": 2008
+      },
+      {
+        "doi": "10.1016/j.cub.2024.09.007",
+        "title": "Repeating ultrastructural motifs provide insight into the organization of the octopus arm nervous system",
+        "citations": 9,
+        "year": 2024
+      },
+      {
+        "doi": "10.1086/650482",
+        "title": "Diagnosis, Prevention, and Treatment of Catheter-Associated Urinary Tract Infection in Adults: 2009 International Clinical Practice Guidelines from the Infectious Diseases Society of America",
+        "citations": 2059,
+        "year": 2010
+      },
+      {
+        "doi": "10.2136/sssabookser5.1.2ed.c15",
+        "title": "Particle\u2010size Analysis",
+        "citations": 8669,
+        "year": 1986
+      },
+      {
+        "doi": "10.1101/2023.03.29.534851",
+        "title": "Baicalin Ameliorates Defective Decidualization in URSA by Regulating Mitochondrial Fission Induced Necroptosis",
+        "citations": 0,
+        "year": 2023
+      },
+      {
+        "doi": "10.1007/s11095-007-9475-1",
+        "title": "Pharmaceutical Particle Engineering via Spray Drying",
+        "citations": 1614,
+        "year": 2007
+      },
+      {
+        "doi": "10.1021/acsnano.9b04224",
+        "title": "Present and Future of Surface-Enhanced Raman Scattering",
+        "citations": 3623,
+        "year": 2019
+      },
+      {
+        "doi": "10.1109/mcom.2016.7470933",
+        "title": "Wireless communications with unmanned aerial vehicles: opportunities and challenges",
+        "citations": 3965,
+        "year": 2016
+      },
+      {
+        "doi": "10.1088/1748-0221/3/08/s08005",
+        "title": "The LHCb Detector at the LHC",
+        "citations": 1958,
+        "year": 2008
+      },
+      {
+        "doi": "10.1038/s41560-019-0513-0",
+        "title": "High-nickel layered oxide cathodes for lithium-based automotive batteries",
+        "citations": 1609,
+        "year": 2020
+      },
+      {
+        "doi": "10.1159/000348446",
+        "title": "\u2018The Ideal Mesh?'",
+        "citations": 1785,
+        "year": 2013
+      },
+      {
+        "doi": "10.1172/jci27071",
+        "title": "Pathogenesis of osteoporosis: concepts, conflicts, and prospects",
+        "citations": 1770,
+        "year": 2005
+      },
+      {
+        "doi": "10.1038/nature26160",
+        "title": "Unconventional superconductivity in magic-angle graphene superlattices",
+        "citations": 8039,
+        "year": 2018
+      },
+      {
+        "doi": "10.1074/jbc.m112.356733",
+        "title": "MicroRNAs in the Pineal Gland",
+        "citations": 94,
+        "year": 2012
+      },
+      {
+        "doi": "10.1002/0471749095",
+        "title": "Semiconductor Material and Device Characterization",
+        "citations": 5210,
+        "year": 2005
+      },
+      {
+        "doi": "10.3389/fcell.2021.711446",
+        "title": "The Coordination of Local Translation, Membranous Organelle Trafficking, and Synaptic Plasticity in Neurons",
+        "citations": 39,
+        "year": 2021
+      },
+      {
+        "doi": "10.1063/1.4899186",
+        "title": "The design and verification of MuMax3",
+        "citations": 3551,
+        "year": 2014
+      },
+      {
+        "doi": "10.1103/physrevlett.61.2472",
+        "title": "Giant Magnetoresistance of (001)Fe/(001)Cr Magnetic Superlattices",
+        "citations": 9162,
+        "year": 1988
+      },
+      {
+        "doi": "10.7554/elife.15015.019",
+        "title": "Author response: Reconstruction of genetically identified neurons imaged by serial-section electron microscopy",
+        "citations": 0,
+        "year": 2016
+      },
+      {
+        "doi": "10.1056/nejmoa041031",
+        "title": "Chronic Kidney Disease and the Risks of Death, Cardiovascular Events, and Hospitalization",
+        "citations": 11262,
+        "year": 2004
+      },
+      {
+        "doi": "10.1001/jama.1995.03520270033028",
+        "title": "Effects of Estrogen or Estrogen/ Progestin Regimens on Heart Disease Risk Factors in Postmenopausal Women",
+        "citations": 2329,
+        "year": 1995
+      },
+      {
+        "doi": "10.1038/nenergy.2016.119",
+        "title": "A high-capacity and long-life aqueous rechargeable zinc battery using a metal oxide intercalation cathode",
+        "citations": 2980,
+        "year": 2016
+      },
+      {
+        "doi": "10.1007/s11306-007-0082-2",
+        "title": "Proposed minimum reporting standards for chemical analysis",
+        "citations": 4845,
+        "year": 2007
+      },
+      {
+        "doi": "10.1097/00005072-199307000-00004",
+        "title": "X-Ray-Induced Cell Death in the Developing Hippocampal Complex Involves Neurons and Requires Protein Synthesis",
+        "citations": 55,
+        "year": 1993
+      },
+      {
+        "doi": "10.17487/rfc3626",
+        "title": "Optimized Link State Routing Protocol (OLSR)",
+        "citations": 4824,
+        "year": 2003
+      },
+      {
+        "doi": "10.1080/08916159808946559",
+        "title": "HYDRODYNAMIC AND HEAT TRANSFER STUDY OF DISPERSED FLUIDS WITH SUBMICRON METALLIC OXIDE PARTICLES",
+        "citations": 4319,
+        "year": 1998
+      },
+      {
+        "doi": "10.1186/s12974-016-0604-9",
+        "title": "Combined [18F]DPA-714 micro-positron emission tomography and autoradiography imaging of microglia activation after closed head injury in mice",
+        "citations": 69,
+        "year": 2016
+      },
+      {
+        "doi": "10.1162/0033553041502225",
+        "title": "A Cognitive Hierarchy Model of Games",
+        "citations": 1593,
+        "year": 2004
+      },
+      {
+        "doi": "10.46743/2160-3715/2015.2281",
+        "title": "Are We There Yet? Data Saturation in Qualitative Research",
+        "citations": 4322,
+        "year": 2015
+      },
+      {
+        "doi": "10.1159/000522391",
+        "title": "The Influence of Modern Neurophysiology on the Previous Definitions of \u201cSegment\u201d and \u201cInterference Field\u201d in Neural Therapy",
+        "citations": 22,
+        "year": 2022
+      },
+      {
+        "doi": "10.1073/pnas.92.16.7297",
+        "title": "A versatile vector for gene and oligonucleotide transfer into cells in culture and in vivo: polyethylenimine.",
+        "citations": 6198,
+        "year": 1995
+      },
+      {
+        "doi": "10.1007/s10162-011-0277-0",
+        "title": "Primary Neural Degeneration in the Guinea Pig Cochlea After Reversible Noise-Induced Threshold Shift",
+        "citations": 550,
+        "year": 2011
+      },
+      {
+        "doi": "10.1523/jneurosci.21-17-06502.2001",
+        "title": "Serotonin Receptors Modulate GABA<sub>A</sub>Receptor Channels through Activation of Anchored Protein Kinase C in Prefrontal Cortical Neurons",
+        "citations": 206,
+        "year": 2001
+      },
+      {
+        "doi": "10.1016/j.pmatsci.2017.04.011",
+        "title": "Fundamentals and advances in magnesium alloy corrosion",
+        "citations": 1960,
+        "year": 2017
+      },
+      {
+        "doi": "10.1007/s00405-020-05965-1",
+        "title": "Olfactory and gustatory dysfunctions as a clinical presentation of mild-to-moderate forms of the coronavirus disease (COVID-19): a multicenter European study",
+        "citations": 2751,
+        "year": 2020
+      },
+      {
+        "doi": "10.1016/0304-3975(87)90045-4",
+        "title": "Linear logic",
+        "citations": 4039,
+        "year": 1987
+      },
+      {
+        "doi": "10.1145/345910.345917",
+        "title": "The Cricket location-support system",
+        "citations": 3716,
+        "year": 2000
+      },
+      {
+        "doi": "10.1002/polb.22259",
+        "title": "Biomedical applications of biodegradable polymers",
+        "citations": 2140,
+        "year": 2011
+      },
+      {
+        "doi": "10.1038/natrevmats.2016.48",
+        "title": "Bound states in the continuum",
+        "citations": 3179,
+        "year": 2016
+      },
+      {
+        "doi": "10.1007/s00198-014-2794-2",
+        "title": "Clinician\u2019s Guide to Prevention and Treatment of Osteoporosis",
+        "citations": 4038,
+        "year": 2014
+      },
+      {
+        "doi": "10.3201/eid0809.020063",
+        "title": "Biofilms: Microbial Life on Surfaces",
+        "citations": 4735,
+        "year": 2002
+      },
+      {
+        "doi": "10.1107/s2053273314026370",
+        "title": "<i>SHELXT</i>\u2013 Integrated space-group and crystal-structure determination",
+        "citations": 27704,
+        "year": 2014
+      },
+      {
+        "doi": "10.1111/j.1538-7836.2006.01753.x",
+        "title": "International consensus statement on an update of the classification criteria for definite antiphospholipid syndrome (APS)",
+        "citations": 7058,
+        "year": 2006
+      },
+      {
+        "doi": "10.1038/npp.2012.112",
+        "title": "DNA Methylation and Its Basic Function",
+        "citations": 4803,
+        "year": 2012
+      },
+      {
+        "doi": "10.1210/er.2009-0002",
+        "title": "Endocrine-Disrupting Chemicals: An Endocrine Society Scientific Statement",
+        "citations": 4420,
+        "year": 2009
+      },
+      {
+        "doi": "10.1371/journal.pbio.1000283",
+        "title": "Neuron Specific Rab4 Effector GRASP-1 Coordinates Membrane Specialization and Maturation of Recycling Endosomes",
+        "citations": 113,
+        "year": 2010
+      },
+      {
+        "doi": "10.1186/1556-276x-7-1",
+        "title": "Effects of crystallization and dopant concentration on the emission behavior of TiO2:Eu nanophosphors",
+        "citations": 2610,
+        "year": 2012
+      },
+      {
+        "doi": "10.1038/35038090",
+        "title": "Ghrelin induces adiposity in rodents",
+        "citations": 3930,
+        "year": 2000
+      },
+      {
+        "doi": "10.1038/s41562-020-0884-z",
+        "title": "Using social and behavioural science to support COVID-19 pandemic response",
+        "citations": 4996,
+        "year": 2020
+      },
+      {
+        "doi": "10.1175/2007jcli1824.1",
+        "title": "Daily High-Resolution-Blended Analyses for Sea Surface Temperature",
+        "citations": 4349,
+        "year": 2007
+      },
+      {
+        "doi": "10.1126/sciadv.abk1514",
+        "title": "Direct measurement of nanoscale filamentary hot spots in resistive memory devices",
+        "citations": 44,
+        "year": 2022
+      },
+      {
+        "doi": "10.1371/journal.pmed.0040297",
+        "title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): Explanation and Elaboration",
+        "citations": 8236,
+        "year": 2007
+      },
+      {
+        "doi": "10.1134/s002209302106020x",
+        "title": "Integrative Role of Albumin: Evolutionary, Biochemical and Pathophysiological Aspects",
+        "citations": 121,
+        "year": 2021
+      },
+      {
+        "doi": "10.1890/10-1510.1",
+        "title": "The value of estuarine and coastal ecosystem services",
+        "citations": 5320,
+        "year": 2010
+      },
+      {
+        "doi": "10.1016/s0008-6363(98)00044-3",
+        "title": "Cardiac endothelium and myocardial function",
+        "citations": 127,
+        "year": 1998
+      },
+      {
+        "doi": "10.3389/fcell.2022.867870",
+        "title": "Microtubule Anchoring: Attaching Dynamic Polymers to Cellular Structures",
+        "citations": 24,
+        "year": 2022
+      },
+      {
+        "doi": "10.1086/320685",
+        "title": "Disk Frequencies and Lifetimes in Young Clusters",
+        "citations": 1615,
+        "year": 2001
+      },
+      {
+        "doi": "10.1016/s0140-6736(08)60074-4",
+        "title": "Epidemiology and causes of preterm birth",
+        "citations": 7691,
+        "year": 2008
+      },
+      {
+        "doi": "10.3390/toxics9030042",
+        "title": "Heavy Metals and Pesticides Toxicity in Agricultural Soil and Plants: Ecological Risks and Human Health Implications",
+        "citations": 2076,
+        "year": 2021
+      }
+    ]
+  },
+  "statistics": {
+    "original_nodes": 7925,
+    "original_edges": 94223,
+    "original_papers": 7504,
+    "pruned_nodes": 7707,
+    "pruned_edges": 94223,
+    "pruned_papers": 7244,
+    "isolates_removed": 218,
+    "leaves_removed": 0,
+    "total_removed": 218
+  }
+}

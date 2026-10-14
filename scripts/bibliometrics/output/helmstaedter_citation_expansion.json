@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "strategy": "Citation neighborhood expansion",
+    "reference_papers": 30,
+    "total_expanded": 5802,
+    "citing_references": 3913,
+    "cited_by_references": 1987,
+    "generated": "2026-04-01"
+  },
+  "reference_papers": [
+    {
+      "doi": "10.1038/ncomms3770",
+      "title": "Continent-wide panmixia of an African fruit bat facilitates transmission of potentially zoonotic viruses",
+      "cited_by_count": 127,
+      "id": "https://openalex.org/W1974950151"
+    },
+    {
+      "doi": "10.1371/journal.pbio.0020329",
+      "title": "Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue Nanostructure",
+      "cited_by_count": 1691,
+      "id": "https://openalex.org/W2038665424"
+    },
+    {
+      "doi": "10.1016/j.conb.2008.09.005",
+      "title": "Music perception, pitch, and the auditory system",
+      "cited_by_count": 210,
+      "id": "https://openalex.org/W2083375777"
+    },
+    {
+      "doi": "10.1016/j.conb.2006.06.002",
+      "title": "The development and modulation of nociceptive circuitry",
+      "cited_by_count": 40,
+      "id": "https://openalex.org/W1992266748"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.0010042",
+      "title": "The Human Connectome: A Structural Description of the Human Brain",
+      "cited_by_count": 3333,
+      "id": "https://openalex.org/W2146693559"
+    },
+    {
+      "doi": "10.1101/2024.03.22.586254",
+      "title": "Connectomic reconstruction of a cortical column",
+      "cited_by_count": 26,
+      "id": "https://openalex.org/W4393196410"
+    },
+    {
+      "doi": "10.1038/s41586-025-08790-w",
+      "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
+      "cited_by_count": 117,
+      "id": "https://openalex.org/W4409283533"
+    },
+    {
+      "doi": "10.1126/science.abo0924",
+      "title": "Connectomic comparison of mouse and human cortex",
+      "cited_by_count": 240,
+      "id": "https://openalex.org/W4283328497"
+    },
+    {
+      "doi": "10.1126/science.adk4858",
+      "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution",
+      "cited_by_count": 288,
+      "id": "https://openalex.org/W4396780205"
+    },
+    {
+      "doi": "10.1016/j.cell.2018.06.019",
+      "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster",
+      "cited_by_count": 1135,
+      "id": "https://openalex.org/W2949808130"
+    },
+    {
+      "doi": "10.1038/s41592-024-02237-2",
+      "title": "brainlife.io: a decentralized and open-source cloud platform to support neuroscience research",
+      "cited_by_count": 57,
+      "id": "https://openalex.org/W4379539304"
+    },
+    {
+      "doi": "10.1016/j.cell.2024.02.026",
+      "title": "Transport mechanism and pharmacology of the human GlyT1",
+      "cited_by_count": 51,
+      "id": "https://openalex.org/W4392980203"
+    },
+    {
+      "doi": "10.1038/nature16960",
+      "title": "Vast assembly of vocal marine mammals from diverse species on fish spawning ground",
+      "cited_by_count": 63,
+      "id": "https://openalex.org/W2292503118"
+    },
+    {
+      "doi": "10.1016/j.neuron.2017.12.033",
+      "title": "Connecting Neural Codes with Behavior in the Auditory System of Drosophila",
+      "cited_by_count": 3,
+      "id": "https://openalex.org/W4243636433"
+    },
+    {
+      "doi": "10.1038/nature09820",
+      "title": "Amygdala circuitry mediating reversible and bidirectional control of anxiety",
+      "cited_by_count": 1288,
+      "id": "https://openalex.org/W2060978874"
+    },
+    {
+      "doi": "10.1038/nature12988",
+      "title": "In vivo discovery of immunotherapy targets in the tumour microenvironment",
+      "cited_by_count": 236,
+      "id": "https://openalex.org/W2065897880"
+    },
+    {
+      "doi": "10.1038/nature14132",
+      "title": "New genetic loci link adipose and insulin biology to body fat distribution",
+      "cited_by_count": 1702,
+      "id": "https://openalex.org/W2047783882"
+    },
+    {
+      "doi": "10.1038/nature12563",
+      "title": "RNAs at fever pitch",
+      "cited_by_count": 2,
+      "id": "https://openalex.org/W2032851854"
+    },
+    {
+      "doi": "10.7554/elife.24394",
+      "title": "The comprehensive connectome of a neural substrate for \u2018ON\u2019 motion detection in Drosophila",
+      "cited_by_count": 230,
+      "id": "https://openalex.org/W2605475473"
+    },
+    {
+      "doi": "10.1038/nn.4050",
+      "title": "Common circuit design in fly and mammalian motion vision",
+      "cited_by_count": 225,
+      "id": "https://openalex.org/W1929289657"
+    },
+    {
+      "doi": "10.1016/j.neuron.2015.01.028",
+      "title": "Tools for Probing Local Circuits: High-Density Silicon Probes Combined with Optogenetics",
+      "cited_by_count": 344,
+      "id": "https://openalex.org/W1976132796"
+    },
+    {
+      "doi": "10.1016/j.neuron.2017.06.011",
+      "title": "Neuroscience-Inspired Artificial Intelligence",
+      "cited_by_count": 1522,
+      "id": "https://openalex.org/W2738724892"
+    },
+    {
+      "doi": "10.1016/j.cell.2020.08.037",
+      "title": "Prokaryotic Argonautes Function beyond Immunity by Unlinking Replicating Chromosomes",
+      "cited_by_count": 10,
+      "id": "https://openalex.org/W3087493677"
+    },
+    {
+      "doi": "10.1016/j.neuron.2009.01.015",
+      "title": "Synaptic AMPA Receptor Plasticity and Behavior",
+      "cited_by_count": 982,
+      "id": "https://openalex.org/W2059117412"
+    },
+    {
+      "doi": "10.1038/nmeth.2445",
+      "title": "Gene-pair expression signatures reveal lineage control",
+      "cited_by_count": 183,
+      "id": "https://openalex.org/W2078216990"
+    },
+    {
+      "doi": "10.1038/s41592-021-01166-8",
+      "title": "REMBI: Recommended Metadata for Biological Images\u2014enabling reuse of microscopy data in biology",
+      "cited_by_count": 124,
+      "id": "https://openalex.org/W3160476106"
+    },
+    {
+      "doi": "10.1038/nature12346",
+      "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+      "cited_by_count": 1074,
+      "id": "https://openalex.org/W2121289914"
+    },
+    {
+      "doi": "10.1126/science.287.5451.273",
+      "title": "Organizing Principles for a Diversity of GABAergic Interneurons and Synapses in the Neocortex",
+      "cited_by_count": 1055,
+      "id": "https://openalex.org/W2054930781"
+    },
+    {
+      "doi": "10.7554/elife.24364",
+      "title": "EM connectomics reveals axonal target variation in a sequence-generating network",
+      "cited_by_count": 109,
+      "id": "https://openalex.org/W2598487345"
+    },
+    {
+      "doi": "10.1016/j.conb.2011.12.002",
+      "title": "Functional imaging in freely moving animals",
+      "cited_by_count": 68,
+      "id": "https://openalex.org/W2137685806"
+    }
+  ],
+  "expansion": {
+    "citing_reference_count": 3913,
+    "cited_by_reference_count": 1987,
+    "total_doi_set": 5802
+  }
+}

@@ -5,6 +5,12 @@ sitemap: false
 ---
 [
 {%- for p in site.data.journal_papers.papers -%}
-{"id":{{ p.id | jsonify }},"title":{{ p.title | jsonify }},"authors":{{ p.authors | jsonify }},"year":{{ p.year | jsonify }},"journal":{{ p.journal | jsonify }},"doi":{{ p.doi | jsonify }},"dimension":{{ p.dimension | jsonify }},"era":{{ p.inclusion_role | jsonify }},"tier":{{ p.tier | default: 2000 | jsonify }},"in_degree":{{ p.in_degree | default: 0 | jsonify }},"out_degree":{{ p.out_degree | default: 0 | jsonify }},"kcore":{{ p.k_core | default: 5 | jsonify }},"organism":{{ p.tags | jsonify }},"citation_role":{{ p.citation_role | jsonify }},"scope_role":{{ p.scope_role | jsonify }},"abstract":{{ p.abstract | jsonify }},"summary":{{ p.plain_language_summary | jsonify }},"citation":{{ p.citation | jsonify }},"cites":{{ p.cites | jsonify }},"pdf_url":{{ p.pdf_url | jsonify }},"is_oa":{{ p.is_oa | jsonify }},"ocar":{{ p.ocar | jsonify }},"summaries":{{ p.summaries | jsonify }},"discussion_prompts":{{ p.discussion_prompts | jsonify }}}{% unless forloop.last %},{% endunless %}
+{%- include papers/evidence-gate.html paper=p -%}
+{%- assign evidence_summary = nil -%}
+{%- if checked_paper_evidence -%}
+  {%- capture evidence_summary -%}Contribution: {{ checked_paper_evidence.contribution }} Reported result: {{ checked_paper_evidence.result }} Test context: {{ checked_paper_evidence.context }} Limits: {{ checked_paper_evidence.limitation }} Source: {{ checked_paper_evidence.source_url }} ({{ checked_paper_evidence.source_locator }}; {{ checked_paper_evidence.evidence_basis }}). {{ checked_paper_evidence.checked_by }} ({{ checked_paper_evidence.checked_on }}).{%- endcapture -%}
+  {%- assign evidence_summary = evidence_summary | escape -%}
+{%- endif -%}
+{"id":{{ p.id | jsonify }},"title":{{ p.title | jsonify }},"authors":{{ p.authors | jsonify }},"year":{{ p.year | jsonify }},"journal":{{ p.journal | jsonify }},"doi":{{ p.doi | jsonify }},"dimension":{{ p.dimension | jsonify }},"era":{{ p.inclusion_role | jsonify }},"tier":{{ p.tier | default: 2000 | jsonify }},"in_degree":{{ p.in_degree | default: 0 | jsonify }},"out_degree":{{ p.out_degree | default: 0 | jsonify }},"kcore":{{ p.k_core | default: 5 | jsonify }},"organism":{{ p.tags | jsonify }},"citation_role":{{ p.citation_role | jsonify }},"scope_role":{{ p.scope_role | jsonify }},"abstract":{{ p.abstract | jsonify }},"summary":{{ evidence_summary | jsonify }},"citation":{{ p.citation | jsonify }},"cites":{{ p.cites | jsonify }},"pdf_url":{{ p.pdf_url | jsonify }},"is_oa":{{ p.is_oa | jsonify }},"ocar":null,"summaries":null,"discussion_prompts":null}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
 ]

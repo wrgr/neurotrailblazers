@@ -7,12 +7,15 @@
   'use strict';
   const fields = ['contribution','result','context','limitation','source_url','source_locator','evidence_basis','checked_by','checked_on'];
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function safeSourceUrl(value) {
+    try { const url = new URL(value); return url.protocol === 'https:' && !!url.hostname && !url.username && !url.password ? url.href : ''; }
+    catch (_) { return ''; }
+  }
   function eligible(record, doi) {
     const key = String(doi || '').trim().toLowerCase();
     if (!/^10\.\d{4,9}\/.+/.test(key) || !record || record.status !== 'source_checked' || record.doi !== key) return false;
     if (!fields.every(k => typeof record[k] === 'string' && record[k].trim())) return false;
-    try { const url = new URL(record.source_url); return url.protocol === 'https:' && !!url.hostname && !url.username && !url.password; }
-    catch (_) { return false; }
+    return !!safeSourceUrl(record.source_url);
   }
   function render(record, doi) {
     if (!eligible(record, doi)) return '<p class="jcg-hint">A source-checked contribution note is not available. Read the abstract and publication for this paper\'s findings.</p>';
@@ -37,5 +40,5 @@
         return text;
       }).join('\n\n');
   }
-  return Object.freeze({eligible, render, reviewPrompt});
+  return Object.freeze({eligible, render, reviewPrompt, safeSourceUrl});
 });

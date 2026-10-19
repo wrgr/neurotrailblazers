@@ -110,6 +110,10 @@ exclude:
   - node_modules
   - scripts
   - data/ocar_regen
+  # Historical generated annotations are internal inputs, not public downloads.
+  - data/corpus_500.json
+  - data/corpus_1000.json
+  - data/corpus_2000.json
   # Working files for the technical track: unit source specs, deck specs,
   # and ingest transcripts. These are build inputs, not pages. Publishing
   # them produced ~60 unstyled draft pages that duplicated the real

@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# Actual Liquid gate and actual built output, not a reimplementation of rendering.
+# Actual Jekyll include scope and actual built output, not a rendering reimplementation.
 require 'jekyll'
 require 'json'
 require 'yaml'
@@ -13,22 +13,21 @@ raise 'Duplicate paper IDs' unless by_id.size == papers.size
 raise 'Duplicate DOI' unless papers.map { |p| p.fetch('doi').strip.downcase }.uniq.size == papers.size
 norm = ->(doi) { doi.to_s.strip.downcase }
 expected_evidence = ->(p) { records[norm.call(p['doi'])] }
-gate = File.read(File.join(root,'_includes/papers/evidence-gate.html'))
-template = Liquid::Template.parse(gate + "{{ checked_paper_evidence.doi | default: 'none' }}")
+test_site = Jekyll::Site.new(Jekyll.configuration('source'=>root, 'destination'=>site, 'quiet'=>true))
+template = Liquid::Template.parse("{% capture accepted %}{% include papers/evidence-gate.html paper=paper %}{% endcapture %}{{ accepted | strip | default: 'none' }}")
 key,record = records.first
 fixtures = [[key,record,key],['10.9999/sem-unrelated',record,'none'],[key,nil,'none'],[key,record.merge('status'=>'generated'),'none'],[key,record.merge('doi'=>'10.9999/mismatch'),'none'],[key,record.merge('source_url'=>'javascript:alert(1)'),'none']]
 %w[contribution result context limitation source_url source_locator evidence_basis checked_by checked_on].each { |field| fixtures << [key,record.merge(field=>'  '),'none'] }
-context = Liquid::Context.new
+context = Liquid::Context.new({}, {}, {site: test_site})
 fixtures.each do |paper_doi,candidate,want|
  context['site']={'data'=>{'paper_evidence'=>{key=>candidate}}}
- context['include']={'paper'=>{'doi'=>paper_doi}}
+ context['paper']={'doi'=>paper_doi}
  got=template.render!(context).strip
  raise "Liquid gate failure for #{paper_doi}: #{got.inspect}" unless got==want
 end
-# Check cross-paper reset using the same context and a retained evidence table.
 context['site']={'data'=>{'paper_evidence'=>records}}
 [key,'10.9999/sem-unrelated',key,''].each do |d|
- context['include']={'paper'=>{'doi'=>d}}
+ context['paper']={'doi'=>d}
  raise 'Evidence leaked between papers' unless template.render!(context).strip==(d==key ? key : 'none')
 end
 graph = JSON.parse(File.read(File.join(site,'technical-training/journal-club/graph-data.json')))

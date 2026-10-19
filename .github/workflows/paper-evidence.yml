@@ -3,6 +3,8 @@ on:
   pull_request:
   push:
     branches: [main, fix/paper-evidence-first-190]
+permissions:
+  contents: read
 jobs:
   provenance:
     runs-on: ubuntu-latest
@@ -11,5 +13,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Reject unprovenanced publication claims
         run: python3 scripts/check_paper_evidence.py
+      - name: Evidence eligibility, rendering and negative-association tests
+        run: node scripts/check_paper_evidence_unit.cjs
+  rendered:
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.6'
+          bundler-cache: true
+      - name: Build actual publication surfaces
+        run: bundle exec jekyll build
+      - name: Exercise real include scope and audit all public records
+        run: bundle exec ruby scripts/check_paper_evidence_render.rb

@@ -4,7 +4,10 @@
   the DOI-specific record accepted by the shared evidence gate.
 {% endcomment %}
 {% assign p = include.paper %}
-{% include papers/evidence-gate.html paper=p %}
+{%- capture checked_evidence_key -%}{%- include papers/evidence-gate.html paper=p -%}{%- endcapture -%}
+{%- assign checked_evidence_key = checked_evidence_key | strip -%}
+{%- assign checked_paper_evidence = nil -%}
+{%- if checked_evidence_key != '' -%}{%- assign checked_paper_evidence = site.data.paper_evidence[checked_evidence_key] -%}{%- endif -%}
 <article class="jc-card" id="paper-{{ p.id | escape }}" data-tier="{{ p.tier | default: 2000 | escape }}" data-dimension="{{ p.dimension | escape }}" data-year="{{ p.year | escape }}" data-tags="{{ p.tags | join: ',' | escape }}" data-id="{{ p.id | escape }}" data-uuid="{{ p.uuid | escape }}" data-era="{{ p.inclusion_role | escape }}" data-kcore="{{ p.k_core | escape }}">
   <header class="jc-card-header">
     <div class="jc-card-meta">

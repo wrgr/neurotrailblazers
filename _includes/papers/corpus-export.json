@@ -1,6 +1,9 @@
 {%- assign export_papers = site.data.journal_papers.papers | where_exp: "paper", "paper.tier <= include.tier" -%}
 {"metadata":{"schema_version":2,"name":"Research corpus","tier":{{ include.tier }},"count":{{ export_papers.size }},"description":"Bibliographic records, recorded abstracts and DOI-specific source-checked contribution notes where available. Tags and imported graph metrics are navigation aids, not verified scientific claims. Legacy generated annotations are excluded."},"papers":[
 {%- for p in export_papers -%}
-{%- include papers/evidence-gate.html paper=p -%}
+{%- capture checked_evidence_key -%}{%- include papers/evidence-gate.html paper=p -%}{%- endcapture -%}
+{%- assign checked_evidence_key = checked_evidence_key | strip -%}
+{%- assign checked_paper_evidence = nil -%}
+{%- if checked_evidence_key != '' -%}{%- assign checked_paper_evidence = site.data.paper_evidence[checked_evidence_key] -%}{%- endif -%}
 {"id":{{ p.id | jsonify }},"title":{{ p.title | jsonify }},"authors":{{ p.authors | jsonify }},"year":{{ p.year | jsonify }},"venue":{{ p.journal | jsonify }},"doi":{{ p.doi | jsonify }},"classification":{{ p.dimension | jsonify }},"inclusion_role":{{ p.inclusion_role | jsonify }},"tier":{{ p.tier | jsonify }},"in_degree":{{ p.in_degree | jsonify }},"out_degree":{{ p.out_degree | jsonify }},"k_core":{{ p.k_core | jsonify }},"organism":{{ p.tags | jsonify }},"abstract":{{ p.abstract | jsonify }},"cites":{{ p.cites | jsonify }},"pdf_url":{{ p.pdf_url | jsonify }},"is_oa":{{ p.is_oa | jsonify }},"evidence":{{ checked_paper_evidence | jsonify }},"ocar":null,"summaries":null,"discussion_prompts":[]}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}]}

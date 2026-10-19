@@ -5,7 +5,10 @@ sitemap: false
 ---
 [
 {%- for p in site.data.journal_papers.papers -%}
-{%- include papers/evidence-gate.html paper=p -%}
+{%- capture checked_evidence_key -%}{%- include papers/evidence-gate.html paper=p -%}{%- endcapture -%}
+{%- assign checked_evidence_key = checked_evidence_key | strip -%}
+{%- assign checked_paper_evidence = nil -%}
+{%- if checked_evidence_key != '' -%}{%- assign checked_paper_evidence = site.data.paper_evidence[checked_evidence_key] -%}{%- endif -%}
 {%- assign evidence_summary = nil -%}
 {%- if checked_paper_evidence -%}
   {%- capture evidence_summary -%}Contribution: {{ checked_paper_evidence.contribution }} Reported result: {{ checked_paper_evidence.result }} Test context: {{ checked_paper_evidence.context }} Limits: {{ checked_paper_evidence.limitation }} Source: {{ checked_paper_evidence.source_url }} ({{ checked_paper_evidence.source_locator }}; {{ checked_paper_evidence.evidence_basis }}). {{ checked_paper_evidence.checked_by }} ({{ checked_paper_evidence.checked_on }}).{%- endcapture -%}

@@ -2099,7 +2099,9 @@ content_type: core
         'Abstract:\n' + (p.abstract || 'Not available in this corpus.') + '\n\n' +
         'Explain the research question, methods actually reported, main findings and limitations. Identify dataset and software names only when the paper explicitly gives them, cite the supporting passage, and propose questions needed to assess reproducibility.';
 
-      promptTextarea.value = prompt;
+      // Safety gate: categories and citation links are navigational, not evidence.
+    prompt = 'Evidence standard: Use original publications and identify exactly which were accessed. Titles, category/organism labels, abstracts and citation links are not independently validated findings. Do not infer the use of MICrONS (or another named dataset) from SEM, volume EM, organism, topic, or nearby citation links. Do not invent improvements, figures, affiliations, software, protocols or benchmark results. Quote specific published results only with their experimental context, source location and limits. State "not reported" when evidence is missing. Suggested hypotheses are not established findings. This list is a search subset, not a vetted sample of landmarks.\\n\\n' + prompt;
+    promptTextarea.value = prompt;
       return;
     }
 
@@ -2112,11 +2114,11 @@ content_type: core
     var cat = dimensionEl.value === 'all' ? 'All Connectomics Subfields' : dimensionEl.options[dimensionEl.selectedIndex].text;
     var org = organismEl.value === 'all' ? 'All Model Organisms' : organismEl.options[organismEl.selectedIndex].text;
 
+    // Bibliography only: never elevate category-generated notes to results.
     var paperList = visibleNodes.slice(0, maxIncluded).map(function (p, idx) {
-      var ocarAction = (p.ocar && p.ocar.action) ? '\n   Methodological Action: ' + p.ocar.action : '';
-      var ocarRes = (p.ocar && p.ocar.resolution) ? '\n   Empirical Resolution: ' + p.ocar.resolution : '';
-      return (idx + 1) + '. "' + p.title + '" (' + p.authors + ', ' + p.year + ', ' + p.journal + ')\n   Summary: ' + (p.summary || 'Milestone connectomics contribution') + ocarAction + ocarRes + '\n   DOI: https://doi.org/' + p.doi;
-    }).join('\n\n');
+      return (idx + 1) + '. "' + p.title + '" (' + p.authors + ', ' + p.year + ', ' + p.journal + ')\\n' +
+        '   DOI: https://doi.org/' + p.doi + (p.abstract ? '\\n   Corpus abstract: ' + p.abstract : '');
+    }).join('\\n\\n');
 
     var scopeDesc = totalCount <= 40
       ? 'based on the following ' + totalCount + ' curated milestone publications'

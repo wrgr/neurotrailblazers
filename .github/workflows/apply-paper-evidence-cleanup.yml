@@ -1,0 +1,35 @@
+name: Apply reviewed paper evidence cleanup
+on:
+  push:
+    branches: [fix/paper-evidence-first-190]
+    paths: [.github/workflows/apply-paper-evidence-cleanup.yml]
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.repository == 'wrgr/neurotrailblazers' && github.ref == 'refs/heads/fix/paper-evidence-first-190'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: fix/paper-evidence-first-190
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Apply exact-source guarded migration
+        run: |
+          python3 scripts/apply_evidence_cleanup.py
+          python3 scripts/check_paper_evidence.py
+          node scripts/check_paper_evidence_unit.cjs
+          node --check assets/js/paper-browser.js
+          node --check assets/js/paper-evidence.js
+          git diff --check
+          # Workflow changes are written separately by the connected reviewer.
+          git restore .github/workflows/validate.yml .github/workflows/paper-evidence.yml
+      - name: Commit source changes to review branch only
+        run: |
+          git add _config.yml assets/js/paper-browser.js assets/js/paper-evidence.js scripts/check_paper_graph.cjs technical-training/journal-club/graph-data.json technical-training/journal-club/graph.md technical-training/journal-club/index.md
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Apply reviewed publication evidence cleanup and prevent inferred associations'
+          git push origin HEAD:refs/heads/fix/paper-evidence-first-190

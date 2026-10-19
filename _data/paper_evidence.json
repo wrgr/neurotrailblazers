@@ -1,0 +1,15 @@
+{
+  "10.1038/s41592-018-0049-4": {
+    "doi": "10.1038/s41592-018-0049-4",
+    "status": "source_checked",
+    "contribution": "Flood-filling networks add recurrent object context to a convolutional network, allowing it to extend a neuronal segmentation iteratively.",
+    "result": "The authors report a mean error-free neurite path length of 1.1 mm and four merge errors across a 97 mm test path, with an order-of-magnitude improvement over earlier approaches tested on the same dataset.",
+    "context": "Neurons in a zebra finch brain dataset acquired with serial block-face electron microscopy.",
+    "limitation": "The reported accuracy improvement required substantially greater computation. These are results on the stated test data, not evidence of equivalent performance on every connectomics dataset.",
+    "source_url": "https://www.nature.com/articles/s41592-018-0049-4",
+    "source_locator": "Abstract",
+    "evidence_basis": "Publisher abstract",
+    "checked_by": "ChatGPT, AI-assisted source check; not expert review",
+    "checked_on": "2026-10-18"
+  }
+}

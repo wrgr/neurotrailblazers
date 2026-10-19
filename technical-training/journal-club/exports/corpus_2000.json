@@ -1,0 +1,6 @@
+---
+layout: null
+permalink: /data/corpus_2000.json
+sitemap: false
+---
+{% include papers/corpus-export.json tier=2000 %}

@@ -1,0 +1,22 @@
+{%- comment -%}
+Fail closed. Broad categories, streams, and generated notes are not evidence.
+Returns only the eligible DOI. Callers capture it because Jekyll include assignments are scoped.
+Reset on every include so one paper cannot inherit another paper's evidence.
+Source-checked means AI-assisted checking of the specified source, not expert review.
+{%- endcomment -%}
+{%- assign checked_paper_evidence = nil -%}
+{%- assign evidence_key = include.paper.doi | default: '' | strip | downcase -%}
+{%- assign evidence_candidate = site.data.paper_evidence[evidence_key] -%}
+{%- if evidence_key != '' and evidence_candidate.status == 'source_checked' and evidence_candidate.doi == evidence_key -%}
+  {%- assign evidence_complete = true -%}
+  {%- assign evidence_fields = 'contribution,result,context,limitation,source_url,source_locator,evidence_basis,checked_by,checked_on' | split: ',' -%}
+  {%- for evidence_field in evidence_fields -%}
+    {%- assign evidence_value = evidence_candidate[evidence_field] | default: '' | strip -%}
+    {%- if evidence_value == '' -%}{%- assign evidence_complete = false -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign evidence_scheme = evidence_candidate.source_url | slice: 0, 8 -%}
+  {%- if evidence_complete and evidence_scheme == 'https://' -%}
+    {%- assign checked_paper_evidence = evidence_candidate -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if checked_paper_evidence -%}{{- evidence_key -}}{%- endif -%}

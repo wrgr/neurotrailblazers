@@ -33,7 +33,7 @@
   function summary(p) {
     const article = document.createElement('article');
     article.className = 'jc-card'; article.id = 'paper-' + p.id; article.dataset.id = p.id;
-    article.innerHTML = '<header class="jc-card-header"><p class="jc-card-meta">' + esc(p.year) + ' · ' + esc(p.dimension.replace(/-/g,' ')) + '</p><h3 class="jc-card-title">' + esc(p.title) + '</h3><p class="jc-card-authors">' + esc(p.authors) + '</p><p class="jc-card-journal">' + esc(p.journal) + '</p></header><div class="jc-card-links"><button type="button" class="jc-link" data-details="' + esc(p.id) + '">Read abstract and details</button><button type="button" class="jc-link jc-link-ai-prompt">AI review prompt</button>' + (p.doi ? '<a class="jc-link" href="https://doi.org/' + esc(p.doi) + '" target="_blank" rel="noopener">Open publication</a>' : '') + '<a class="jc-link" href="' + base + 'graph/?paper=' + encodeURIComponent(p.id) + '">Explore citations</a></div>';
+    article.innerHTML = '<header class="jc-card-header"><p class="jc-card-meta">' + esc(p.year) + '</p><h3 class="jc-card-title">' + esc(p.title) + '</h3><p class="jc-card-authors">' + esc(p.authors) + '</p><p class="jc-card-journal">' + esc(p.journal) + '</p></header><div class="jc-card-links"><button type="button" class="jc-link" data-details="' + esc(p.id) + '">Read abstract and details</button><button type="button" class="jc-link jc-link-ai-prompt">AI review prompt</button>' + (p.doi ? '<a class="jc-link" href="https://doi.org/' + esc(p.doi) + '" target="_blank" rel="noopener">Open publication</a>' : '') + '<a class="jc-link" href="' + base + 'graph/?paper=' + encodeURIComponent(p.id) + '">Explore citations</a></div>';
     return article;
   }
   function render(writeURL = true) {
@@ -56,9 +56,6 @@
     $('jc-graph-view').href = base + 'graph/?' + params.toString();
     if (writeURL) history.replaceState(null, '', location.pathname + (params.size ? '?' + params : ''));
   }
-  function expertise() {
-    grid.querySelectorAll('.jc-tab, .jc-level').forEach(el => el.classList.toggle('active', el.dataset.level === $('jc-expertise').value));
-  }
   async function details(p, button) {
     if (!p) return;
     button.disabled = true; button.textContent = 'Loading details…';
@@ -74,7 +71,6 @@
       if (!article || article.dataset.id !== p.id) throw new Error('Invalid paper details');
       if (!button.isConnected) return;
       const old = button.closest('.jc-card'); old.replaceWith(article);
-      expertise();
       const abstract = article.querySelector('.jc-card-details'); if (abstract) abstract.open = true;
       const title = article.querySelector('h3'); title.tabIndex = -1; title.focus({preventScroll:true});
     } catch (error) {
@@ -123,18 +119,16 @@
     $('jc-copy-status').classList.remove('hidden');
   });
   grid.addEventListener('click', e => {
-    const button = e.target.closest('button[data-details], .jc-link-ai-prompt, .jc-related-link, .jc-tab, [data-filter-field]');
+    const button = e.target.closest('button[data-details], .jc-link-ai-prompt, .jc-related-link, [data-filter-field]');
     if (!button) return;
     const article = button.closest('.jc-card');
     const p = papers.find(p => p.id === article?.dataset.id);
     if (button.matches('[data-details]')) details(p, button);
     else if (button.matches('.jc-link-ai-prompt')) openPrompt(p, button);
     else if (button.matches('.jc-related-link')) { e.preventDefault(); jump(button.dataset.relatedId); }
-    else if (button.matches('.jc-tab')) article.querySelectorAll('.jc-tab, .jc-level').forEach(el => el.classList.toggle('active', el.dataset.level === button.dataset.level));
     else { (button.dataset.filterField === 'era' ? controls.era : controls.q).value=button.dataset.filterValue; page=1; render(); }
   });
   Object.entries(controls).forEach(([key, el]) => el.addEventListener(key==='q' ? 'input':'change', () => { clearTimeout(timer); timer=setTimeout(() => { page=1; render(); },180); }));
-  $('jc-expertise').addEventListener('change', expertise);
   $('jc-reset').addEventListener('click', () => { clearTimeout(timer); Object.entries(controls).forEach(([key,el]) => el.value=defaults[key]); minDegree=0; page=1; render(); });
   ['prev','next'].forEach(dir => $('jc-'+dir).addEventListener('click', () => { page+=dir==='next'?1:-1; render(); grid.scrollIntoView({block:'start'}); const first=grid.querySelector('h3'); if(first){ first.tabIndex=-1; first.focus({preventScroll:true}); } }));
   window.addEventListener('popstate', () => { restore(); render(false); if(linkedId()) jump(linkedId()); });
@@ -142,7 +136,7 @@
   $('jc-prompt-btn').disabled=true;
   fetch(grid.dataset.indexUrl).then(r => { if(!r.ok) throw new Error('Index request failed'); return r.json(); }).then(data => {
     if(!Array.isArray(data) || !data.length) throw new Error('Invalid paper index');
-    papers=data.map(p => ({...p, doi:p.doi||'', tags:p.tags||[], degree:Number(p.degree)||0, search:[p.title,p.authors,p.doi,p.journal,...(p.tags||[])].join(' ').toLowerCase()}));
+    papers=data.map(p => ({...p, doi:p.doi||'', tags:p.tags||[], degree:Number(p.degree)||0, search:[p.title,p.authors,p.doi,p.journal].join(' ').toLowerCase()}));
     ready=true; const id=linkedId(); restore(); render(); if(id) jump(id);
   }).catch(() => { $('jc-count').textContent='Search could not load. The first 20 papers and publication links remain available. Reload to retry.'; });
 })();

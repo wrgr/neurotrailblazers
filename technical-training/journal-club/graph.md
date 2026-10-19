@@ -68,7 +68,7 @@ content_type: core
 
   </div>
   <div class="jcg-basic-actions"><button id="jcg-reset" type="button" class="jcg-secondary-btn">Clear filters</button><p class="jcg-count" id="jcg-count" role="status" aria-live="polite">Loading papers…</p></div>
-  <p class="jcg-hint">Search all 2,000 papers. Topic and organism filters narrow your results. Choose a paper below to read it.</p>
+  <p class="jcg-hint">Search publication titles, authors, journals, and DOI identifiers. Topic and organism tags narrow results but do not establish dataset use or findings.</p>
     <details class="jcg-filter-panel" id="jcg-filter-panel">
       <summary>Display and additional filters</summary>
       <div class="jcg-controls">
@@ -118,10 +118,10 @@ content_type: core
         <label for="jcg-color-by">Color papers by:</label>
         <select id="jcg-color-by">
           <option value="dimension">Category / Subfield</option>
-          <option value="era">Publication Era (History / Contemporary / SOTA)</option>
-          <option value="tier">Corpus Tier (500 Flagship / 1000 / 2000)</option>
+          <option value="era">Publication period</option>
+          <option value="tier">Corpus Tier (500 / 1000 / 2000)</option>
           <option value="organism">Model Organism (Mouse, Fly, Human, etc.)</option>
-          <option value="citation_role">Citation Role (Foundational / Hub / Bridge)</option>
+          <option value="citation_role">Imported network role (not evidence)</option>
         </select>
       </div>
 
@@ -194,18 +194,18 @@ content_type: core
 
         <div class="jcg-tooltip hidden" id="jcg-tooltip"></div>
 
-        <!-- Slide-Out Paper Detail Drawer with Deep OCAR Integration -->
+        <!-- Source-checked publication detail drawer -->
         <div class="jcg-panel hidden" id="jcg-panel" role="region" aria-label="Selected paper details">
           <button class="jcg-panel-close" id="jcg-panel-close" aria-label="Close">&times;</button>
           <div class="jcg-panel-body" id="jcg-panel-body">
-            <!-- Dynamically populated with OCAR cards, 3-tier summaries, and citation lineage -->
+            <!-- Source-checked contributions, abstract, and recorded citation links -->
           </div>
         </div>
       </div>
 
 
 
-      <!-- On-Demand AI Literature Synthesis & Discussion Tray -->
+      <!-- Optional review prompts; not automated scientific findings -->
       <div class="jcg-ai-tray collapsed" id="jcg-ai-tray">
         <div class="jcg-ai-tray-header" id="jcg-ai-tray-header">
           <h3 id="jcg-prompt-modal-title">Optional discussion prompts</h3>
@@ -217,7 +217,7 @@ content_type: core
 
         <div class="jcg-ai-tray-body">
           <p class="jcg-prompt-modal-desc" id="jcg-prompt-modal-desc" style="margin-bottom: 0.75rem; color: #475569; font-size: 0.82rem;">
-            Copy this grounded prompt into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong> across the <strong id="jcg-modal-paper-count">0</strong> papers currently in your active filter.
+            Copy this review prompt into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong> across the <strong id="jcg-modal-paper-count">0</strong> papers currently in your active filter.
           </p>
 
           <!-- Mode Switcher Tabs -->
@@ -449,7 +449,7 @@ content_type: core
 .jcg-nill-btn.active[data-dir="inbound"] { background: #059669; color: #fff; border-color: #059669; }
 .jcg-nill-btn.active[data-dir="outbound"] { background: #4f46e5; color: #fff; border-color: #4f46e5; }
 
-/* 5-Part OCAR Container */
+/* Shared detail styles (also used for the citation footer). */
 .jcg-ocar-container { margin: 1rem 0; display: flex; flex-direction: column; gap: 0.5rem; }
 .jcg-ocar-step {
   border-radius: 6px; padding: 0.6rem 0.75rem; font-size: 0.82rem; line-height: 1.45;
@@ -480,6 +480,8 @@ content_type: core
 .jcg-eco-item span { color: #0f172a; font-weight: 600; }
 
 .jcg-eco-item small { display: block; margin-top: 0.2rem; color: #64748b; }
+.jcg-paper-evidence { margin: 1rem 0; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 8px; }
+.jcg-paper-evidence p { font-size: 0.82rem; line-height: 1.55; }
 .jcg-paper-abstract h4 { font-size: 0.9rem; margin: 1rem 0 0.4rem; }
 .jcg-paper-abstract p { font-size: 0.82rem; color: #334155; line-height: 1.55; }
 @media (max-width: 640px) { .jcg-ecosystem-grid { grid-template-columns: 1fr; } .jcg-eco-item { grid-column: 1 !important; } }
@@ -605,9 +607,11 @@ content_type: core
 
 </style>
 
+<script src="{{ '/assets/js/paper-evidence.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 <script>
 (function () {
   var DATA_URL = "{{ '/technical-training/journal-club/graph-data.json' | relative_url }}?v={{ site.time | date: '%s' }}";
+  var evidenceApi = window.NTPaperEvidence;
   var JC_BASE_URL = "{{ '/technical-training/journal-club/' | relative_url }}";
 
   var CATEGORIES = [
@@ -855,8 +859,8 @@ content_type: core
     } else if (currentColorCue === 'citation_role') {
       legendTitleEl.textContent = 'Color Cue: Citation Role';
       [
-        { k: 'Core Hub (Foundational)', c: ROLE_COLORS['core_hub'] },
-        { k: 'High-Impact Authority', c: ROLE_COLORS['authority'] },
+        { k: 'Imported hub label', c: ROLE_COLORS['core_hub'] },
+        { k: 'Imported authority label', c: ROLE_COLORS['authority'] },
         { k: 'Inter-Domain Bridge', c: ROLE_COLORS['bridge'] },
         { k: 'Connected Literature', c: ROLE_COLORS['connected'] },
         { k: 'Network Participant', c: ROLE_COLORS['participant'] }
@@ -905,16 +909,14 @@ content_type: core
         kcore: d.kcore || 5,
         citation_role: d.citation_role || 'participant',
         scope_role: d.scope_role || 'participant',
-        summary: d.summary || '',
+        evidence: d.evidence || null,
         abstract: d.abstract || '',
-        searchText: [d.title, d.authors, d.journal, d.doi, d.summary, d.abstract, JSON.stringify(d.ocar || {}), orgs.join(' ')].join(' ').toLowerCase(),
+        // Bibliographic search excludes generated interpretations and tags.
+        searchText: [d.title, d.authors, d.journal, d.doi].join(' ').toLowerCase(),
         citation: d.citation || '',
         cites: d.cites || [],
         pdf_url: d.pdf_url || null,
         is_oa: d.is_oa || false,
-        ocar: d.ocar || null,
-        summaries: d.summaries || null,
-        discussion_prompts: d.discussion_prompts || [],
         x: 0,
         y: 0,
         targetX: 0,
@@ -1863,52 +1865,17 @@ content_type: core
   hudReheatBtn.addEventListener('click', reheatPhysics);
   sidebarReheatBtn.addEventListener('click', reheatPhysics);
 
-  // Rich Slide-Out Drawer with Deep OCAR Integration
+  // Publication-first drawer: no category-generated claims.
   function openPaperDrawer(p) {
     if (panel.classList.contains('hidden')) drawerReturnFocus = document.activeElement;
     panel.classList.remove('hidden');
     if (panelClose.focus) panelClose.focus({ preventScroll: true });
-    var tierLabel = p.tier === 500 ? '500 Core Flagship' : (p.tier === 1000 ? '1000 Landmark' : '2000 Comprehensive');
-    var pdfButton = p.pdf_url ? '<a href="' + p.pdf_url + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-pdf">Open access copy</a>' : '';
+    var pdfUrl = evidenceApi ? evidenceApi.safeSourceUrl(p.pdf_url) : '';
+    var pdfButton = pdfUrl ? '<a href="' + escapeHtml(pdfUrl) + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-pdf">Open access copy</a>' : '';
     var fullCardUrl = JC_BASE_URL + '?paper=' + encodeURIComponent(p.id);
 
-    // OCAR Section
-    var ocarHtml = '';
-    if (p.ocar) {
-      ocarHtml = '<div class="jcg-ocar-container">' +
-        '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-opportunity">Opportunity</span><p>' + (p.ocar.opportunity || '') + '</p></div>' +
-        '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-challenge">Challenge</span><p>' + (p.ocar.challenge || '') + '</p></div>' +
-        '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-action">Action</span><p>' + (p.ocar.action || '') + '</p></div>' +
-        '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-resolution">Resolution</span><p>' + (p.ocar.resolution || '') + '</p></div>' +
-        '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-future">Future Work</span><p>' + (p.ocar.future_work || '') + '</p></div>' +
-      '</div>';
-    }
-
-    // 3-Tier Summaries
-    var summariesHtml = '';
-    if (p.summaries) {
-      summariesHtml = '<div class="jcg-drawer-summaries">' +
-        '<div class="jcg-summary-tabs">' +
-          '<button type="button" class="jcg-summary-tab active" data-level="intermediate">Intermediate</button>' +
-          '<button type="button" class="jcg-summary-tab" data-level="beginner">Beginner</button>' +
-          '<button type="button" class="jcg-summary-tab" data-level="advanced">Advanced</button>' +
-        '</div>' +
-        '<div class="jcg-summary-content" id="jcg-active-summary">' + (p.summaries.intermediate || p.summary || '') + '</div>' +
-      '</div>';
-    } else if (p.summary) {
-      summariesHtml = '<div class="jcg-ocar-step" style="margin: 0.75rem 0;"><strong>Summary:</strong> ' + p.summary + '</div>';
-    }
-
-    // Discussion Prompts
-    var promptsHtml = '';
-    if (p.discussion_prompts && p.discussion_prompts.length) {
-      promptsHtml = '<details class="jcg-prompts-section">' +
-        '<summary>💡 Seminar Discussion Prompts (' + p.discussion_prompts.length + ')</summary>' +
-        '<ul class="jcg-prompts-list">' +
-          p.discussion_prompts.map(function (pr) { return '<li>' + pr + '</li>'; }).join('') +
-        '</ul>' +
-      '</details>';
-    }
+    var evidenceHtml = evidenceApi ? evidenceApi.render(p.evidence, p.doi) :
+      '<p class="jcg-hint">Contribution notes could not load. Open the publication for its findings.</p>';
 
     // Interactive Citation Lineage Chips
     var citingChipsHtml = '';
@@ -1917,9 +1884,9 @@ content_type: core
         '<h4>Cited By (' + p.citedByNodes.length + ' Papers in Corpus) &darr;</h4>' +
         '<div class="jcg-lineage-chips">' +
           p.citedByNodes.slice(0, 10).map(function (cp) {
-            return '<button type="button" class="jcg-lineage-chip citing-chip" data-paper-id="' + cp.id + '">' +
-              '<strong>' + (cp.authors.split(';')[0].split(',')[0] || 'Author') + ' (' + cp.year + ')</strong>: ' +
-              (cp.title.length > 38 ? cp.title.slice(0, 36) + '…' : cp.title) +
+            return '<button type="button" class="jcg-lineage-chip citing-chip" data-paper-id="' + escapeHtml(cp.id) + '">' +
+              '<strong>' + escapeHtml(cp.authors.split(';')[0].split(',')[0] || 'Author') + ' (' + cp.year + ')</strong>: ' +
+              escapeHtml(cp.title.length > 38 ? cp.title.slice(0, 36) + '…' : cp.title) +
             '</button>';
           }).join('') +
           (p.citedByNodes.length > 10 ? '<span style="font-size:0.72rem; color:#64748b; align-self:center;">+' + (p.citedByNodes.length - 10) + ' more</span>' : '') +
@@ -1930,12 +1897,12 @@ content_type: core
     var citedChipsHtml = '';
     if (p.citesNodes && p.citesNodes.length) {
       citedChipsHtml = '<div class="jcg-lineage-section">' +
-        '<h4>Cites (' + p.citesNodes.length + ' Foundational References) &uarr;</h4>' +
+        '<h4>Cites (' + p.citesNodes.length + ' References in Corpus) &uarr;</h4>' +
         '<div class="jcg-lineage-chips">' +
           p.citesNodes.slice(0, 10).map(function (cp) {
-            return '<button type="button" class="jcg-lineage-chip cited-chip" data-paper-id="' + cp.id + '">' +
-              '<strong>' + (cp.authors.split(';')[0].split(',')[0] || 'Author') + ' (' + cp.year + ')</strong>: ' +
-              (cp.title.length > 38 ? cp.title.slice(0, 36) + '…' : cp.title) +
+            return '<button type="button" class="jcg-lineage-chip cited-chip" data-paper-id="' + escapeHtml(cp.id) + '">' +
+              '<strong>' + escapeHtml(cp.authors.split(';')[0].split(',')[0] || 'Author') + ' (' + cp.year + ')</strong>: ' +
+              escapeHtml(cp.title.length > 38 ? cp.title.slice(0, 36) + '…' : cp.title) +
             '</button>';
           }).join('') +
           (p.citesNodes.length > 10 ? '<span style="font-size:0.72rem; color:#64748b; align-self:center;">+' + (p.citesNodes.length - 10) + ' more</span>' : '') +
@@ -1956,47 +1923,30 @@ content_type: core
       '</div>' +
     '</div>';
 
-    var paperMetaHtml = '<div class="jcg-panel-meta-tags">' +
-        '<span class="jcg-panel-tag tier-tag">' + tierLabel + '</span>' +
-        '<span class="jcg-panel-tag dim-tag">' + p.dimension.replace(/-/g, ' ') + '</span>' +
-        '<span class="jcg-panel-tag">' + p.era + '</span>' +
-        '<span class="jcg-panel-tag role-tag">' + p.citation_role.replace(/_/g, ' ') + '</span>' +
-        '<span class="jcg-panel-tag">In: ' + p.in_degree + ' | Out: ' + p.out_degree + '</span>' +
-      '</div>';
-
-    // Only corpus-backed metadata belongs here; species never determines a dataset or protocol.
-    var ecosystemAndPipelineHtml = '<details class="jcg-paper-metadata"><summary>More paper details</summary>' + paperMetaHtml + '<div class="jcg-ecosystem-box">' +
-      '<h4>Recorded information</h4>' +
-      '<div class="jcg-ecosystem-grid">' +
-        '<div class="jcg-eco-item"><strong>Model organism</strong><span>' + escapeHtml(organismLabel(p)) + '</span><small>From corpus tags</small></div>' +
-        '<div class="jcg-eco-item"><strong>Dataset / volume</strong><span>Not recorded</span></div>' +
-        '<div class="jcg-eco-item" style="grid-column: span 2;"><strong>Software &amp; tools</strong><span>Not recorded</span></div>' +
-      '</div>' +
-      '<p class="jcg-hint">Dataset, software and protocol details have not been curated here. Open the publication for its methods.</p>' +
-    '</div><button type="button" class="jcg-secondary-btn" id="jcg-btn-ai-prompt">Create a paper review prompt</button></details>';
+    var indexingHtml = '<details class="jcg-paper-metadata"><summary>Indexing information</summary>' +
+      '<p class="jcg-hint">Topic and organism tags support navigation; they are not verified methods, dataset use, affiliations, or results. Citation links record references, not agreement or demonstrated improvements.</p>' +
+      '<p>Assigned topic: ' + escapeHtml(p.dimension.replace(/-/g, ' ')) + '. Organism tags: ' + escapeHtml(organismLabel(p)) + '.</p>' +
+      '<p class="jcg-hint">Imported network metrics: in ' + p.in_degree + ', out ' + p.out_degree + '. These may include links outside the displayed corpus and are not measures of scientific quality. The citation controls above count links resolved within this corpus.</p>' +
+      '<button type="button" class="jcg-secondary-btn" id="jcg-btn-ai-prompt">Prepare a paper review prompt</button></details>';
     var abstractHtml = '<section class="jcg-paper-abstract"><h4>Paper abstract</h4><p>' +
       (p.abstract ? escapeHtml(p.abstract) : 'Abstract not available in this corpus. Open the publication to read it.') + '</p></section>';
 
-    var html = '<h3>' + p.title + '</h3>' +
-      '<div class="jcg-panel-authors">' + p.authors + ' &bull; <em>' + p.journal + '</em> (' + p.year + ')</div>' +
+    var html = '<h3>' + escapeHtml(p.title) + '</h3>' +
+      '<div class="jcg-panel-authors">' + escapeHtml(p.authors) + ' &bull; <em>' + escapeHtml(p.journal) + '</em> (' + p.year + ')</div>' +
       '<div class="jcg-drawer-actions">' +
         '<button type="button" class="jcg-drawer-btn jcg-drawer-btn-focus" id="jcg-btn-focus-subgraph">Explore citations</button>' +
-        '<a href="' + fullCardUrl + '" class="jcg-drawer-btn jcg-drawer-btn-jc">Paper details and reading notes</a>' +
-        (p.doi ? '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-doi">Open publication</a>' : '') +
+        '<a href="' + fullCardUrl + '" class="jcg-drawer-btn jcg-drawer-btn-jc">Paper abstract and evidence</a>' +
+        (p.doi ? '<a href="https://doi.org/' + escapeHtml(p.doi) + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-doi">Open publication</a>' : '') +
         pdfButton +
       '</div>' +
       neighborhoodToolbarHtml +
       abstractHtml +
-      ecosystemAndPipelineHtml +
-      '<details class="jcg-corpus-notes"><summary>Corpus reading notes (unverified)</summary><p class="jcg-hint">These notes have not been checked against this paper. Use the abstract and original publication for its methods and findings.</p>' +
-      ocarHtml +
-      summariesHtml +
-      promptsHtml +
-      '</details>' +
+      evidenceHtml +
+      indexingHtml +
       citingChipsHtml +
       citedChipsHtml +
       '<div class="jcg-ocar-step" style="margin-top:1rem; font-size:0.75rem; color:#64748b;">' +
-        '<strong>Full Citation:</strong> ' + p.citation +
+        '<strong>Full Citation:</strong> ' + escapeHtml(p.citation) +
       '</div>';
 
     panelBody.innerHTML = html;
@@ -2026,20 +1976,6 @@ content_type: core
     if (focusSubBtn) {
       focusSubBtn.addEventListener('click', function () { enterSubgraphFocus(p); });
     }
-
-    // Attach summary tab switcher
-    var summaryTabs = Array.from(panelBody.querySelectorAll('.jcg-summary-tab'));
-    var summaryBox = document.getElementById('jcg-active-summary');
-    summaryTabs.forEach(function (tab) {
-      tab.addEventListener('click', function () {
-        summaryTabs.forEach(function (t) { t.classList.remove('active'); });
-        tab.classList.add('active');
-        var lvl = tab.dataset.level;
-        if (p.summaries && p.summaries[lvl]) {
-          summaryBox.textContent = p.summaries[lvl];
-        }
-      });
-    });
 
     // Attach lineage jump chips and hover spotlights
     var lineageChips = Array.from(panelBody.querySelectorAll('.jcg-lineage-chip'));
@@ -2088,87 +2024,14 @@ content_type: core
   var modeButtons = Array.from(document.querySelectorAll('.jcg-pmode-btn'));
 
   function generateSynthesisPrompt() {
-    if (singlePaperTarget) {
-      modalTitleEl.textContent = '🤖 AI Analysis Deep-Dive & Methodological Protocol';
-      modalDescEl.innerHTML = 'Analysis protocol & critique for: <strong>' + singlePaperTarget.title + '</strong> (' + singlePaperTarget.year + ')';
-      var p = singlePaperTarget;
-      var prompt = 'Review this publication using its original text where available and the supplied abstract.\n' +
-        'Distinguish reported facts from interpretation. Do not infer datasets, software, EM preparation, segmentation or proofreading from an organism tag or research category. If a detail is absent, write "not reported in the provided material".\n\n' +
-        'Title: ' + p.title + '\nAuthors: ' + p.authors + '\nJournal / year (corpus metadata): ' + p.journal + ' (' + p.year + ')\n' +
-        'Publication: https://doi.org/' + p.doi + '\nOrganism tags (not independently verified): ' + organismLabel(p) + '\n\n' +
-        'Abstract:\n' + (p.abstract || 'Not available in this corpus.') + '\n\n' +
-        'Explain the research question, methods actually reported, main findings and limitations. Identify dataset and software names only when the paper explicitly gives them, cite the supporting passage, and propose questions needed to assess reproducibility.';
-
-      promptTextarea.value = prompt;
-      return;
-    }
-
-    var totalCount = visibleNodes.length;
-    var maxIncluded = Math.min(totalCount, 40);
-    modalTitleEl.textContent = '🤖 AI Research Synthesis Prompt';
-    modalDescEl.innerHTML = 'Copy this grounded prompt into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong> across the <strong>' + totalCount + '</strong> currently filtered papers.';
-    modalPaperCount.textContent = totalCount;
-
-    var cat = dimensionEl.value === 'all' ? 'All Connectomics Subfields' : dimensionEl.options[dimensionEl.selectedIndex].text;
-    var org = organismEl.value === 'all' ? 'All Model Organisms' : organismEl.options[organismEl.selectedIndex].text;
-
-    var paperList = visibleNodes.slice(0, maxIncluded).map(function (p, idx) {
-      var ocarAction = (p.ocar && p.ocar.action) ? '\n   Methodological Action: ' + p.ocar.action : '';
-      var ocarRes = (p.ocar && p.ocar.resolution) ? '\n   Empirical Resolution: ' + p.ocar.resolution : '';
-      return (idx + 1) + '. "' + p.title + '" (' + p.authors + ', ' + p.year + ', ' + p.journal + ')\n   Summary: ' + (p.summary || 'Milestone connectomics contribution') + ocarAction + ocarRes + '\n   DOI: https://doi.org/' + p.doi;
-    }).join('\n\n');
-
-    var scopeDesc = totalCount <= 40
-      ? 'based on the following ' + totalCount + ' curated milestone publications'
-      : 'based on the top ' + maxIncluded + ' representative milestone publications (selected from ' + totalCount + ' matching publications in the active filter)';
-
-    var prompt = '';
-    if (currentPromptMode === 'methods') {
-      prompt = 'You are a technical specialist in connectomics imaging, computer vision, and neural data pipelines.\n' +
-        'Perform a comparative methodological audit ' + scopeDesc + ' in Domain = [' + cat + '] and Organism = [' + org + '].\n\n' +
-        '### Ground-Truth Papers (N = ' + maxIncluded + (totalCount > 40 ? ' of ' + totalCount : '') + '):\n' + paperList + '\n\n' +
-        '### Required Analysis Tasks:\n' +
-        '1. **Technological Pipeline Evolution**: Map how imaging modalities, automated segmentation algorithms, and proofreading workflows have transformed across these works.\n' +
-        '2. **Bottlenecks & Limitations**: What are the common failure modes, compute bottlenecks, and manual annotation burdens reported?\n' +
-        '3. **Benchmarking & Validation**: How do these studies quantify accuracy (e.g. Rand error, synapse precision/recall, volumetric completeness)?\n' +
-        '4. **Next-Generation Tools**: What pipeline innovations are urgently needed to scale to whole-brain mammalian connectomes?\n\n' +
-        'Ground your findings strictly in the publications listed above with citations.';
-    } else if (currentPromptMode === 'problems') {
-      prompt = 'You are a senior neuroscience researcher and grant reviewer.\n' +
-        'Identify open research problems and high-impact project proposals ' + scopeDesc + ' in Domain = [' + cat + '] and Organism = [' + org + '].\n\n' +
-        '### Ground-Truth Papers (N = ' + maxIncluded + (totalCount > 40 ? ' of ' + totalCount : '') + '):\n' + paperList + '\n\n' +
-        '### Required Analysis Tasks:\n' +
-        '1. **Persistent Scientific Blindspots**: What fundamental questions about circuit organization remain unanswered despite the progress in these papers?\n' +
-        '2. **Top 3 High-Impact Research Proposals**: Outline 3 innovative 3-year research proposals addressing these gaps (specifying hypothesis, required connectomic data, and experimental validation).\n' +
-        '3. **Cross-Disciplinary Synergies**: How can integration with transcriptomics, physiology (2P calcium imaging), or NeuroAI unlock deeper insights from these datasets?\n\n' +
-        'Ground your synthesis in the cited publications.';
-    } else if (currentPromptMode === 'seminar') {
-      prompt = 'You are a university professor preparing a graduate seminar on connectomics.\n' +
-        'Design a comprehensive journal club syllabus and active-learning discussion guide ' + scopeDesc + ' in [' + cat + '].\n\n' +
-        '### Core Literature (N = ' + maxIncluded + (totalCount > 40 ? ' of ' + totalCount : '') + '):\n' + paperList + '\n\n' +
-        '### Required Seminar Components:\n' +
-        '1. **Seminar Overview & Learning Objectives**: 3 clear learning outcomes for students.\n' +
-        '2. **Core Debate Topics**: 3 provocative debate motions comparing competing interpretations or methods across these works.\n' +
-        '3. **Critical Thinking Exercises**: Methodological critique prompts asking students to identify unaddressed confounding variables.\n' +
-        '4. **Key Takeaway Cheat-Sheet**: A 5-point summary of foundational principles established by this literature.\n\n' +
-        'Cite the relevant papers explicitly throughout.';
-    } else {
-      // Default: Comprehensive Literature Synthesis
-      prompt = 'You are an expert computational neuroscientist and connectomics researcher.\n' +
-        'Analyze and synthesize the state of research ' + scopeDesc + ' ' +
-        'focusing on: Domain = [' + cat + '] and Organism = [' + org + '].\n\n' +
-        '### Ground-Truth Milestone Publications (N = ' + maxIncluded + (totalCount > 40 ? ' of ' + totalCount : '') + '):\n' +
-        paperList + '\n\n' +
-        '### Synthesis Tasks Required (grounded in the OCAR research framework):\n' +
-        '1. **Current State of the Subfield (Opportunities)**: Provide an executive summary of the biological and computational openings addressed by these landmark studies.\n' +
-        '2. **Core Technical Challenges & Bottlenecks**: Detail the major imaging, alignment, automated segmentation, proofreading, and synaptic validation bottlenecks documented across these papers.\n' +
-        '3. **Methodological Actions & Breakthroughs**: Detail the core technical breakthroughs accomplished (e.g. multi-beam SEM, deep learning affinities, automated cell-type clustering, connectome graph metrics).\n' +
-        '4. **Key Empirical Resolutions & Wiring Discoveries**: What definitive circuit wiring motifs, feedforward/recurrent loops, or cell-type taxonomies did these studies discover?\n' +
-        '5. **Open Research Horizons & Future Directions**: Outline the top 3-5 high-priority research questions that the community must address over the next 3-5 years.\n\n' +
-        'Ground your analysis strictly in the ' + maxIncluded + ' publications listed above. Structure your response with clear markdown headings, concise bullet points, and explicit citations to these papers.';
-    }
-
-    promptTextarea.value = prompt;
+    var selection = singlePaperTarget ? [singlePaperTarget] : visibleNodes;
+    var count = selection.length;
+    modalTitleEl.textContent = singlePaperTarget ? 'Paper review prompt' : 'Research review prompt';
+    modalDescEl.textContent = singlePaperTarget ?
+      'Uses this publication’s recorded abstract and any source-checked contribution note. Verify against the original.' :
+      'Uses the first ' + Math.min(count, 35) + ' of ' + count + ' matches in the current order; not a representative or quality-ranked sample.';
+    promptTextarea.value = evidenceApi ? evidenceApi.reviewPrompt(selection, currentPromptMode, count) :
+      'The review prompt helper did not load. Reload to retry, or open the original publications directly.';
   }
 
   function openAiTray() {

@@ -12,7 +12,7 @@
 {% if module_data %}
 <section class="section nt-interactive-lab" data-module-slug="{{ page.slug }}" data-quiz-pass="{{ quiz.pass_score | default: 2 }}">
   <h2>Practice and progress</h2>
-  {% if practice_ready %}<p>Check your understanding, then record your progress.</p>{% else %}<p><span class="content-status status-in_development">In development</span> Interactive practice is being revised to match this lesson. Use the guided activity above to practise.</p>{% endif %}
+  {% if practice_ready %}<p>Check your understanding, then record your progress.</p>{% else %}<p><span class="content-status status-in_development">Interactive practice in development</span> Interactive practice is being revised to match this lesson. Use the guided activity above to practise.</p>{% endif %}
 
   <div class="cards-grid nt-interactive-grid">
     {% if module_data.quiz %}

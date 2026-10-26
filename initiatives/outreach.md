@@ -97,7 +97,7 @@ content_type: core
       <div class="card" style="border: 2px solid #10b981; border-radius: 10px; padding: 1.5rem; background: #fff;">
         <h3 style="margin: 0 0 0.5rem 0; color: #047857; font-size: 1.15rem;">NeuroTrailblazers (NIH BRAIN CONNECTS)</h3>
         <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
-          A research-incubator training network supporting students and mentors across the BRAIN CONNECTS ecosystem. Provides an open technical curriculum (Units 01–09), a 2,000-paper OCAR literature graph, 25 teaching session kits, and hands-on capstone pathways.
+          A research-incubator training network supporting students and mentors across the BRAIN CONNECTS ecosystem. Provides an open technical curriculum (Units 01–09), a searchable 2,000-paper corpus with abstracts, citation relationships, and source-checked contribution notes where available, 25 teaching session kits, and hands-on capstone pathways.
         </p>
         <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
           <a href="{{ '/start-here/' | relative_url }}" class="btn btn-primary" style="font-size: 0.76rem; padding: 0.3rem 0.65rem;">Start Learning &rarr;</a>

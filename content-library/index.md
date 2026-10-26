@@ -165,10 +165,10 @@ reusable under CC BY 4.0.
 
 ## Journal paper collection & literature corpus
 
-A curated collection of **2,000 landmark connectomics papers** stratified across 12 research domains and 3 nested tiers (Top 500, Top 1,000, Top 2,000). Features complete unabridged abstracts, 5-part OCAR research cards, 3-tier pedagogical summaries, and seminar discussion prompts.
+A searchable corpus of **2,000 connectomics publications** across 12 research domains and 3 nested tiers (Core 500, Expanded 1,000, Full 2,000). Browse recorded abstracts and citation relationships, with source-checked contribution notes where available. Each contribution note identifies the reported result, test context, limitations, source, and checking provenance; check substantive claims against the original publication.
 
 * Explore the full structured corpus: [Journal Paper Corpus &amp; Literature Hub]({{ '/content-library/journal-papers/' | relative_url }})
-* Browse filterable cards by tier and expertise level: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+* Browse publications by tier, topic, or organism: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 * Explore the interactive network: [Citation Graph Explorer]({{ '/technical-training/journal-club/graph/' | relative_url }})
 
 ### Where each corpus domain leads

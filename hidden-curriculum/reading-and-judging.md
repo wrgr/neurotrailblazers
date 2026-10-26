@@ -287,17 +287,17 @@ for the flaw in *your* reasoning first.
 ## Journal club, used properly
 
 The site's [Journal Club]({{ '/technical-training/journal-club/' | relative_url }}) is
-{{ site.data.journal_papers.papers | size }} papers, each with an OCAR summary — Opportunity, Challenge, Action, Resolution,
-Future Work — level-tiered summaries, and discussion prompts.
+a searchable corpus of {{ site.data.journal_papers.papers | size }} publications with recorded abstracts, citation relationships, and source-checked contribution notes where available. Notes identify their source and checking provenance, including whether the check used an abstract or full text.
 
 Use it like this:
 
-- **Bootstrap vocabulary with the tiered summary, then read the paper.** The summaries
-  are a ramp, not a substitute; reading the advanced summary and skipping the paper
-  produces exactly the confident-but-uncheckable state this page exists to prevent.
-- **Read the OCAR *Resolution* field, then go and test it with the four questions
-  above.** Resolution is where a summary is most likely to inherit a claim the paper did
-  not establish, which makes it the ideal place to practice.
+- **Start with the abstract, then read the original paper.** Use the abstract to identify
+  the question and unfamiliar terms. Check the methods and results before relying on
+  a claim; an abstract alone cannot answer every question in the checklist above.
+- **Inspect a source-checked contribution note where one is available.** Follow its
+  source and locator, check the reported result, test context, and limitations, then
+  apply the four questions above. A missing note means the contribution has not been
+  source-checked here; use the original publication for your own assessment.
 - **Prepare in 45 minutes**, not three hours: the reading order (steps 1–3), one absence
   from the methods checklist, and one of the four fragility questions with an attempted
   answer. That is a fuller preparation than most people in the room will have done.

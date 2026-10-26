@@ -25,4 +25,6 @@ for (const mode of ['synthesis','methods','problems','seminar']) check(() => {
 check(() => {const prompt=api.reviewPrompt([{doi,title:'Example',evidence:e}], 'methods', 1); for(const field of ['result','context','limitation','source_url']) assert(prompt.includes(e[field]));});
 check(() => assert.match(api.reviewPrompt([], 'synthesis',0),/No publications selected/));
 check(() => assert.match(api.reviewPrompt(Array.from({length:50},()=>({doi,title:'Example'})),'synthesis',50),/First 35 of 50/));
+check(() => {const html=api.render(e,doi); assert(html.includes('popover="auto"')); assert(html.includes('Source &amp; review details')); assert(!html.includes('Source-checked against')); for(const field of ['source_locator','evidence_basis','checked_by','checked_on']) assert(html.includes(e[field]));});
+check(() => {const html=api.render({...e,evidence_basis:'<img onerror=alert(1)>',source_locator:'<script>unsafe</script>',checked_by:'<b>unsafe</b>'},doi); assert(!/<(?:img|script|b)>/.test(html)); assert(html.includes('&lt;script&gt;'));});
 console.log('PASS: '+cases+' evidence eligibility, negative-association, escaped-rendering and prompt tests.');

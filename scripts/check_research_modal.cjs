@@ -6,6 +6,7 @@ const path = require('node:path');
 const puppeteer = require(process.env.CHROME_BIN ? 'puppeteer-core' : 'puppeteer');
 
 require('node:child_process').execFileSync(process.execPath, [path.join(__dirname, 'check_usability_followup.cjs')], { stdio: 'inherit' });
+require('node:child_process').execFileSync(process.execPath, [path.join(__dirname, 'check_paper_source_popup.cjs')], { stdio: 'inherit' });
 
 const root = path.resolve('_site');
 const server = http.createServer((req, res) => {

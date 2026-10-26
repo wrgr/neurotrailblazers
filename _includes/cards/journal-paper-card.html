@@ -27,7 +27,8 @@
     <p><strong>Reported result:</strong> {{ checked_paper_evidence.result | escape }}</p>
     <p><strong>Test context:</strong> {{ checked_paper_evidence.context | escape }}</p>
     <p><strong>Limits:</strong> {{ checked_paper_evidence.limitation | escape }}</p>
-    <p class="jc-card-meta">Source-checked against <a href="{{ checked_paper_evidence.source_url | escape }}" target="_blank" rel="noopener">{{ checked_paper_evidence.evidence_basis | escape }}: {{ checked_paper_evidence.source_locator | escape }}</a>. {{ checked_paper_evidence.checked_by | escape }} ({{ checked_paper_evidence.checked_on | escape }}).</p>
+    {% assign source_popup_id = 'paper-source-' | append: p.id %}
+    {% include papers/source-details.html evidence=checked_paper_evidence popup_id=source_popup_id %}
   </section>
   {% endif %}
 

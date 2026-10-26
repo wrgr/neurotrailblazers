@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const evidenceApi = require('../assets/js/paper-evidence.js');
 const source = fs.readFileSync('technical-training/journal-club/graph.md', 'utf8');
 const data = JSON.parse(fs.readFileSync(path.join(process.env.SITE_DIR || '_site', 'technical-training/journal-club/graph-data.json'), 'utf8'));
 const script = source.match(/<script>([\s\S]*?)<\/script>/)[1].replace(/\}\)\(\);\s*$/, `
@@ -48,7 +49,7 @@ async function harness(corpus = data, failure = false) {
   element('jcg-show-edges').checked = true;
   element('jcg-ai-tray').classList.add('collapsed');
   element('jcg-canvas').parentElement = element('canvas-wrap');
-  const win = { devicePixelRatio: 3, location: { search: '' }, addEventListener() {}, matchMedia() { return { matches: false, addEventListener() {} }; } };
+  const win = { NTPaperEvidence: evidenceApi, devicePixelRatio: 3, location: { search: '' }, addEventListener() {}, matchMedia() { return { matches: false, addEventListener() {} }; } };
   const sandbox = {
     document: { getElementById: element, querySelectorAll: s => groups[s] || [], createElement: type => element(type + '-' + serial++) },
     window: win, URLSearchParams, CSS: { escape: s => s }, console: { ...console, error(e) { errors.push(String(e)); } },
@@ -151,20 +152,31 @@ function separated(nodes) {
   assert.ok(h.frames.length > 0, 'Reheat restarts idle physics'); h.drain();
   const fixtures = [{ id:'fixture', title:'Title', authors:'Author', dimension:'pipeline', organism:['mouse'], tier:500, year:1960, summary:'summaryneedle', abstract:'abstractneedle', ocar:{future_work:'futureneedle'} }];
   const f = await harness(fixtures); f.drain();
-  for (const q of ['summaryneedle','abstractneedle','futureneedle','AUTHOR','mouse']) { f.change('jcg-search',q,'input'); assert.equal(f.graph.state().nodes.length, 1, q); }
+  for (const q of ['summaryneedle','abstractneedle','futureneedle','mouse']) { f.change('jcg-search',q,'input'); assert.equal(f.graph.state().nodes.length, 0, 'Navigation metadata/legacy notes must not pollute bibliographic search: ' + q); }
+  f.change('jcg-search','AUTHOR','input'); assert.equal(f.graph.state().nodes.length, 1);
   const ratPaper = data.find(p => p.doi === '10.1371/journal.pbio.0030068');
   assert.ok(ratPaper && ratPaper.organism.includes('rat') && !ratPaper.organism.includes('mouse'), 'Rat cortex does not imply mouse');
   h.element('jcg-reset').dispatch('click'); h.drain();
   h.graph.select(h.graph.state().nodes.find(p => p.id === ratPaper.id)); h.drain();
   const card = h.element('jcg-panel-body').innerHTML;
-  assert.match(card, /<strong>Model organism<\/strong><span>Rat<\/span>/);
-  assert.match(card, /<strong>Dataset \/ volume<\/strong><span>Not recorded<\/span>/);
+  assert.match(card, /Organism tags: Rat/);
+  assert.match(card, /not verified methods, dataset use/);
   assert.ok(!card.includes('MICrONS / Kasthuri / MCP') && !card.includes('High-Pressure Freezing'), 'No guessed dataset or protocol');
   assert.match(card, /Paper abstract/);
-  assert.match(card, /Corpus reading notes \(unverified\)/);
+  assert.ok(!card.includes('Corpus reading notes') && !card.includes('Opportunity</span>'), 'No legacy annotation drawer');
+  assert.ok(evidenceApi.eligible(ratPaper.evidence, ratPaper.doi), 'Reviewed rat paper has DOI-matched evidence');
+  assert.match(card, /What this paper demonstrated/);
+  assert.ok(card.includes(ratPaper.evidence.contribution), 'Drawer includes the checked contribution');
+  // Coverage grows over time: a fixed first paper is no longer an unreviewed fixture.
+  const unchecked = data.find(p => !p.evidence);
+  assert.ok(unchecked, 'Keep an actual unreviewed-paper case');
+  h.graph.select(h.graph.state().nodes.find(p => p.id === unchecked.id)); h.drain();
+  assert.match(h.element('jcg-panel-body').innerHTML, /source-checked contribution note is not available/);
+  const conflicted = data.find(p => p.doi === '10.18260/1-2--42544');
+  assert.ok(conflicted && !conflicted.evidence, 'Unresolved title/DOI conflict stays unpublished');
   assert.deepEqual(h.errors, []);
   const failed = await harness([], true);
   assert.match(failed.element('jcg-count').textContent, /Could not load/);
   assert.equal(failed.errors.length, 1);
-  console.log('PASS paper graph: full corpus filters, non-overlapping anchored layouts, canvas rendering, idle/wake, focus/reset, searchable abstracts and empty state');
+  console.log('PASS paper graph: full corpus filters, non-overlapping anchored layouts, canvas rendering, idle/wake, focus/reset, bibliographic-only search and empty state');
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -1,88 +1,38 @@
 ---
 layout: page
-title: "Journal Paper Corpus & Literature Hub"
+title: "Research corpus and reading guides"
 permalink: /content-library/journal-papers/
-description: "Curated 2,000-paper connectomics corpus stratified across 12 canonical research domains and 3 nested tiers (Top 500, Top 1,000, and Top 2,000), with full multi-paragraph abstracts, OCAR research cards, and 3-level summaries."
+description: "Find connectomics publications, inspect source-checked contributions, and download bibliographic records."
 use_layout_hero: false
 content_type: core
 ---
 
-# Journal Paper Corpus & Literature Hub
+# Research corpus and reading guides
 
-Welcome to the **NeuroTrailblazers Curated Literature Corpus** — a multi-tiered, verified collection of **2,000 landmark and contemporary publications** defining the science, technology, applications, and workforce development of nanoscale connectomics.
+[Search research papers]({{ '/technical-training/journal-club/' | relative_url }}) or [explore recorded citation links]({{ '/technical-training/journal-club/graph/' | relative_url }}).
+These are two views of the **same {{ site.data.journal_papers.papers.size }}-paper corpus**, not separate curated collections.
 
-<div class="jc-hero-stats" style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.25rem 0 1.5rem 0;">
-  <span class="jc-hero-stat" style="background:#eff6ff; color:#1d4ed8; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">2,000 Total Papers</span>
-  <span class="jc-hero-stat" style="background:#f0fdf4; color:#15803d; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">12 Canonical Domains</span>
-  <span class="jc-hero-stat" style="background:#faf5ff; color:#7e22ce; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">3 Nested Tiers (500 / 1000 / 2000)</span>
-  <span class="jc-hero-stat" style="background:#fef3c7; color:#b45309; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">5,460+ Citation Edges</span>
-</div>
+## What the records establish
 
----
+Publication metadata and recorded abstracts help you locate original work. A **source-checked contribution note**, where available, states what a publication reports, its test context, limitations, the source used, and how it was checked. An AI-assisted abstract check is not full-text review, expert review, or independent validation.
 
-## 🧭 Ways to Explore the Corpus
+Topic and organism tags are navigation aids. They do not establish use of a named dataset, a protocol, an affiliation, a result, or scientific importance. In particular, scanning electron microscopy does not imply MICrONS dataset use. A citation is a recorded reference, not evidence of agreement or methodological reuse.
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0;">
+Historical category-generated research notes and unsupported dataset/method associations have been removed from the public cards and exports. A missing contribution note means it has not been source-checked here; it does not mean the publication has no contribution.
 
-  <div style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h3 style="margin-top:0; color:#1a56db;">🕸️ Citation Graph Explorer</h3>
-    <p style="font-size:0.88rem; color:#475569; line-height:1.5;">
-      Explore self-organizing organic force clustering, weighted directed citation edges, and category gravity hubs. Filter dynamically by category, organism, and era, and generate copy-paste AI synthesis prompts.
-    </p>
-    <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" style="font-weight:700; color:#1a56db; text-decoration:none;">Open Graph Explorer &rarr;</a>
-  </div>
+## Download the corpus
 
-  <div style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h3 style="margin-top:0; color:#059669;">📚 Journal Club &amp; Reading Paths</h3>
-    <p style="font-size:0.88rem; color:#475569; line-height:1.5;">
-      Browse filterable paper cards formatted with the <strong>OCAR framework</strong> (Opportunity, Challenge, Action, Resolution, Future Work), 3 expertise levels (Beginner, Intermediate, Advanced), and seminar discussion prompts.
-    </p>
-    <a href="{{ '/technical-training/journal-club/' | relative_url }}" style="font-weight:700; color:#059669; text-decoration:none;">Browse Journal Club &rarr;</a>
-  </div>
+The three nested subsets retain their existing selection. Subset membership and imported network metrics are **not an editorial ranking of demonstrated scientific wins**.
 
-  <div style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h3 style="margin-top:0; color:#7c3aed;">🏛️ Major Research Initiatives</h3>
-    <p style="font-size:0.88rem; color:#475569; line-height:1.5;">
-      Discover global consortia, petascale datasets, and open tools funded by NIH BRAIN CONNECTS, IARPA MICrONS, Janelia FlyEM, Allen Institute, Max Planck, BossDB, and CIRCUIT.
-    </p>
-    <a href="{{ '/initiatives/' | relative_url }}" style="font-weight:700; color:#7c3aed; text-decoration:none;">Explore Major Initiatives &rarr;</a>
-  </div>
+[500-paper subset]({{ '/data/corpus_500.json' | relative_url }}) · [1,000-paper subset]({{ '/data/corpus_1000.json' | relative_url }}) · [Full corpus]({{ '/data/corpus_2000.json' | relative_url }})
 
-</div>
+Export schema version 2 contains bibliography, recorded abstracts, citation references, navigational tags, and DOI-specific contribution notes where available. Legacy generated annotation fields are null or empty. Consumers should inspect the schema version rather than assume earlier summaries remain available.
 
----
+[How the collection is maintained]({{ '/content-library/journal-papers/methodology/' | relative_url }}).
 
-## 📊 Stratified Literature Taxonomy (12 Canonical Domains)
+## Topic reading guides
 
-The corpus was built to a stratified allocation, so that no single axis &mdash;
-experimental, computational, biological, pedagogical &mdash; could crowd out the others.
-The **target** column is that design; the **in the corpus** column is what the shipped
-data actually contains, counted from `_data/journal_papers.yml` at build time rather than
-typed here.
-
-{% assign rows = "circuit-structure|Circuit Structure &amp; Connectomes|15.0%|300|Dense synaptic wiring diagrams, circuit motifs, connectivity graphs;;pipeline|Pipeline &amp; Software Engineering|15.0%|300|Automated 3D segmentation, synapse detection, proofreading (CAVE/CATMAID);;physiology|Physiological Validation &amp; Function|12.0%|240|In vivo 2-photon imaging, electrophysiology, structure-function mapping;;behaviour|Behaviour &amp; Circuit Dynamics|12.0%|240|Ring attractors, navigation, sensory-motor control, escape behaviour;;imaging|Volume EM &amp; Advanced Optics|8.0%|160|SBF-SEM, FIB-SEM, multibeam arrays, tissue prep, expansion microscopy;;cell-types|Cell Types &amp; Morphological Census|8.0%|160|Morphological clustering, synaptic fingerprints, multi-modal cell types;;neuroanatomy|Neuroanatomy &amp; Ultrastructure|8.0%|160|Synaptic active zones, spine density, organelle distributions, glia;;synthesis|Synthesis, Theory &amp; Reviews|5.0%|100|Canonical field reviews, graph theory principles, conceptual frameworks;;dataset|Benchmark Datasets &amp; Repositories|5.0%|100|Open petascale public volumes (FlyWire, MICrONS, H01, Kasthuri);;neuroai|NeuroAI, Biophysics &amp; Models|5.0%|100|Connectome-constrained artificial networks, biophysical simulations;;health|Health, Disease &amp; Translation|5.0%|100|Nanoscale connectopathies, Alzheimer's, Huntington's, epilepsy rewiring;;training-outreach|Workforce Training &amp; Outreach|2.0%|40|Traineeship design, undergraduate pedagogy, citizen science" | split: ";;" %}
-
-| Research domain | Share | Target | In the corpus | Core research focus |
-| :--- | :---: | :---: | :---: | :--- |
-{% for row in rows -%}
-{%- assign f = row | split: "|" -%}
-{%- assign n = site.data.journal_papers.papers | where: "dimension", f[0] | size -%}
-| [**{{ f[1] }}**]({{ '/technical-training/journal-club/' | relative_url }}?dimension={{ f[0] }}) | {{ f[2] }} | {{ f[3] }} | {{ n }} | {{ f[4] }} |
-{% endfor %}
-
-{% assign allocated = 0 %}{% for row in rows %}{% assign f = row | split: "|" %}{% assign n = site.data.journal_papers.papers | where: "dimension", f[0] | size %}{% assign allocated = allocated | plus: n %}{% endfor %}{% assign unallocated = site.data.journal_papers.papers.size | minus: allocated %}
-
-**Where the two columns differ, the corpus is the truth.** Retrieval found more
-synthesis and benchmark-dataset literature than the allocation anticipated, and less on
-health and translation and on workforce training &mdash; which is a finding about the
-field's published output, not a curation error to correct. A further **{{ unallocated }}**
-papers carry a label outside these domains and are not counted above.
-
----
-
-## 📖 Curated Dimension Deep-Dive Collections
-
-For structured course curricula and seminar series, explore the 11 hand-annotated dimension deep-dive collections:
+The separate course reading guides below remain available. Reading guides provide context; check substantive claims against their cited publications.
 
 | Category | Count | Focus |
 | :--- | :---: | :--- |
@@ -98,17 +48,4 @@ For structured course curricula and seminar series, explore the 11 hand-annotate
 | [NeuroAI &amp; Biophysics]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Connectome-constrained artificial neural networks |
 | [Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | Biological circuit discoveries and behavioral mechanisms |
 
-**Total: 96 papers** across the 11 hand-annotated curriculum modules.
-
----
-
-## 📦 Nested Corpus Materializations & Downloads
-
-For programmatic research, model training, and bibliometric modeling, clean standalone datasets are provided:
-
-* **[500 Key Papers (`corpus_500.json`)]({{ '/data/corpus_500.json' | relative_url }})**:
-  Complete 500-paper flagship corpus with verified OCAR summary cards, 3-tier summaries (Beginner, Intermediate, Advanced), discussion prompts, and citation graph metrics.
-* **[1000 Key Papers (`corpus_1000.json`)]({{ '/data/corpus_1000.json' | relative_url }})**:
-  Expanded 1,000-paper canonical literature set with unabridged publisher abstracts, complete OCAR cards, and in/out degrees.
-* **[2000 Key Papers (`corpus_2000.json`)]({{ '/data/corpus_2000.json' | relative_url }})**:
-  Full 2,000-paper research network with complete OCAR cards, 3-tier summaries, and 5,460+ internal citation links.
+**Total: 96 papers** across the 11 linked reading guides; these are guide entries, not 96 additional corpus records.

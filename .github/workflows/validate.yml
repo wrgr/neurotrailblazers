@@ -54,6 +54,9 @@ jobs:
       - name: Journal paper count and schema validation
         run: ruby scripts/validate_paper_counts.rb
 
+      - name: Core 500 and first-100 review checkpoints
+        run: ruby scripts/check_core500_review_checkpoint.rb
+
       - name: Organism tag classification regression
         run: python3 scripts/check_organism_tags.py
 
@@ -108,7 +111,8 @@ jobs:
 
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
-    runs-on: ubuntu-latest
+    # Ruby 3.1.6 has no prebuilt package on ubuntu-26.04 (now ubuntu-latest).
+    runs-on: ubuntu-22.04
     env:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8

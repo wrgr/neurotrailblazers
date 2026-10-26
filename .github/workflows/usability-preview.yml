@@ -6,7 +6,8 @@ permissions:
   contents: read
 jobs:
   preview:
-    runs-on: ubuntu-latest
+    # Match the Gemfile's Ruby 3.1.6; unavailable on ubuntu-26.04.
+    runs-on: ubuntu-22.04
     env:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8

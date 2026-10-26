@@ -6,9 +6,10 @@
 {% assign status_override = site.data.module_status.modules[status_slug] %}
 {% assign module_state = status_override.status | default: status_item.development_status | default: status_item.status | default: site.data.module_status.default_status %}
 {% if module_state == 'active' %}{% assign module_state = site.data.module_status.default_status %}{% endif %}
-{% assign module_label = 'Status not confirmed' %}
+{% assign module_label = 'Materials available; readiness unreviewed' %}
 {% if module_state == 'in_development' or module_state == 'draft' or module_state == 'planned' %}
-  {% assign module_label = 'In development' %}{% assign module_state = 'in_development' %}
+  {% assign module_label = 'Draft materials available' %}{% assign module_state = 'in_development' %}
+  {% if status_override.interactive_practice == 'in_development' %}{% assign module_label = 'Materials available; practice in development' %}{% endif %}
 {% elsif module_state == 'available' or module_state == 'ready' or module_state == 'published' %}
-  {% assign module_label = 'Available' %}{% assign module_state = 'available' %}
+  {% assign module_label = 'Materials available' %}{% assign module_state = 'available' %}
 {% else %}{% assign module_state = 'unreviewed' %}{% endif %}

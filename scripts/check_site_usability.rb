@@ -13,12 +13,13 @@ end
 source = File.read(File.join(root, '_includes/ui/module-status-value.html')) + '{{ module_state }}|{{ module_label }}'
 template = Liquid::Template.parse(source)
 fixtures = [
-  [{ 'module_number'=>1, 'status'=>'active' }, {}, 'unreviewed|Status not confirmed'],
-  [{ 'module_number'=>1, 'status'=>'draft' }, {}, 'in_development|In development'],
-  [{ 'module_number'=>1, 'development_status'=>'planned', 'status'=>'active' }, {}, 'in_development|In development'],
-  [{ 'number'=>1 }, {'module01'=>{'status'=>'available'}}, 'available|Available'],
-  [{ 'url'=>'/teaching/sessions/module01/' }, {'module01'=>{'status'=>'in_development'}}, 'in_development|In development'],
-  [{ 'module_number'=>1, 'status'=>'published' }, {}, 'available|Available'],
+  [{ 'module_number'=>1, 'status'=>'active' }, {}, 'unreviewed|Materials available; readiness unreviewed'],
+  [{ 'module_number'=>1, 'status'=>'draft' }, {}, 'in_development|Draft materials available'],
+  [{ 'module_number'=>1, 'development_status'=>'planned', 'status'=>'active' }, {}, 'in_development|Draft materials available'],
+  [{ 'number'=>1 }, {'module01'=>{'status'=>'available'}}, 'available|Materials available'],
+  [{ 'url'=>'/teaching/sessions/module01/' }, {'module01'=>{'status'=>'in_development'}}, 'in_development|Draft materials available'],
+  [{ 'url'=>'/teaching/sessions/module02/' }, {'module02'=>{'status'=>'in_development','interactive_practice'=>'in_development'}}, 'in_development|Materials available; practice in development'],
+  [{ 'module_number'=>1, 'status'=>'published' }, {}, 'available|Materials available'],
 ]
 fixtures.each do |item, overrides, expected|
   actual = template.render!('include'=>{'item'=>item}, 'site'=>{'data'=>{'module_status'=>{'default_status'=>'unreviewed','modules'=>overrides}}}).strip

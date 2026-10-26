@@ -51,7 +51,7 @@ content_type: core
     <h2 class="section-title left">Interactive on this site</h2>
     <ul>
       <li><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Citation graph explorer</a> &mdash; the 2,000-paper corpus as a citation network, filterable by dimension, era and tier.</li>
-      <li><a href="{{ '/technical-training/journal-club/' | relative_url }}">Journal club</a> &mdash; the same corpus as cards, each with an OCAR summary and discussion prompts.</li>
+      <li><a href="{{ '/technical-training/journal-club/' | relative_url }}">Journal club</a> &mdash; a searchable 2,000-paper corpus with recorded abstracts, citation relationships, and source-checked contribution notes where available.</li>
       <li><a href="{{ '/concepts/' | relative_url }}">Concept explorer</a> &mdash; concepts filtered by track and stage, each linked to where it is taught.</li>
       <li><a href="{{ '/kb/' | relative_url }}">The field, mapped</a> &mdash; visualisations of the literature and the methods landscape.</li>
       <li><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary</a> &mdash; 127 terms, with definitions, common confusions, and typical values where applicable.</li>

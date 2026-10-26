@@ -32,6 +32,20 @@ const server=http.createServer((req,res)=>{let name=new URL(req.url,'http://loca
  assert.equal(detailRequests,1);assert(await page.$eval('#jc-grid .jc-card-details',e=>e.open));
 
  await page.goto(base+'/technical-training/journal-club/#paper-author-1990--pnas-0409009101');await page.waitForFunction(()=>document.querySelector('#paper-author-1990--pnas-0409009101 .jc-card-details'));
+ const correction=index.find(p=>p.doi==='10.1016/j.neuron.2023.04.003');
+ assert(correction && correction.publication_links,'Correction links must survive compact index generation');
+ await page.goto(base+'/technical-training/journal-club/?paper='+encodeURIComponent(correction.id));
+ await page.waitForSelector('#jc-grid .jc-publication-links');
+ const linkedHrefs=await page.$$eval('#jc-grid .jc-publication-links a',links=>links.map(a=>a.getAttribute('href')));
+ assert(linkedHrefs.includes('https://doi.org/10.1016/j.neuron.2022.11.002'));
+ assert(linkedHrefs.includes('https://doi.org/10.1016/j.neuron.2023.04.003'));
+ assert(linkedHrefs.includes('/assets/papers/10.1016_j.neuron.2023.04.003.pdf'));
+ assert(!(await page.$eval('#jc-grid',el=>el.innerText)).includes('What this paper demonstrated'),'Correction must not inherit main-study contribution');
+ const pdfCheck=await page.evaluate(async()=>{const response=await fetch('/assets/papers/10.1016_j.neuron.2023.04.003.pdf');return {status:response.status,magic:new TextDecoder().decode((await response.arrayBuffer()).slice(0,5))};});
+ assert.deepEqual(pdfCheck,{status:200,magic:'%PDF-'});
+ await page.click('#jc-graph-view');await page.waitForSelector('.jcg-result-btn');await page.locator('.jcg-result-btn').click();
+ await page.waitForSelector('#jcg-panel .jc-publication-links');
+ assert.equal(await page.$$eval('#jcg-panel .jcg-paper-abstract',els=>els.length),0,'Correction drawer must not inherit main abstract');
  await page.goto(base+'/teaching/');assert.equal(await page.$$eval('main a[href^="/modules/module"]',e=>e.length),0,'Teaching hub routes rather than duplicating the catalog');
  await page.goto(base+'/teaching/sessions/');await page.type('#session-search','Python');await page.waitForFunction(()=>document.getElementById('session-count').textContent.startsWith('1 of'));
  await page.goto(base+'/modules/module01/');await page.$$eval('.nt-progress-step:not([disabled])',checks=>checks.forEach(el=>el.click()));assert((await page.$eval('.nt-progress-text',e=>e.textContent)).includes('self-reported'));assert((await page.$eval('.nt-assessment-status',e=>e.textContent)).includes('not yet passed'));assert(await page.$eval('[data-assessment="quiz"]',e=>e.disabled&&!e.checked));

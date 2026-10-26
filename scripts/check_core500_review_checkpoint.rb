@@ -6,19 +6,39 @@ require 'digest'
 require 'uri'
 require 'csv'
 
+def checkpoint_counts(rows)
+  {
+    'reviewed' => rows.size,
+    'source_checked' => rows.count { |p| p['source_checked'] },
+    'abstract_only' => rows.count { |p| p['review_depth'] == 'abstract_only' },
+    'full_text' => rows.count { |p| p['review_depth'] == 'full_text' },
+    'uncertain' => rows.count { |p| p['uncertain'] },
+    'inaccessible' => rows.count { |p| p['review_depth'] == 'inaccessible' },
+    'public_note_eligible' => rows.count { |p| p['public_note_eligible'] },
+    'local_source_issues' => rows.count { |p| p['local_source_issue'] }
+  }
+end
+
 root = File.expand_path('..', __dir__)
 evidence = JSON.parse(File.read(File.join(root, '_data/paper_evidence.json')))
 trackers = {}
-%w[core500 core500-first100].each do |scope|
+scopes = %w[core500 core500-first100]
+scopes << 'corpus2000' if ARGV.include?('--corpus2000')
+scopes.each do |scope|
   directory = File.join(root, 'docs/reviews', scope)
   tracker = JSON.parse(File.read(File.join(directory, 'tracker.json')))
   trackers[scope] = tracker
   meta, rows = tracker.fetch('metadata'), tracker.fetch('papers')
-  stop = scope == 'core500' ? 500 : 100
+  stop = { 'core500' => 500, 'core500-first100' => 100, 'corpus2000' => 2000 }.fetch(scope)
   corpus_path = File.join(root, meta.fetch('corpus_path'))
   raise 'Corpus changed: recheck membership' unless Digest::SHA256.file(corpus_path).hexdigest == meta.fetch('corpus_sha256')
   corpus = YAML.safe_load(File.read(corpus_path), aliases: true).fetch('papers')
-  expected = corpus.select { |p| p['in_top_500'] }.first(stop)
+  core = corpus.select { |p| p['in_top_500'] }
+  expected = if scope == 'corpus2000'
+               core + corpus.reject { |p| p['in_top_500'] }
+             else
+               core.first(stop)
+             end
   raise 'Wrong ranks/boundary' unless rows.map { |p| p['rank'] } == (1..stop).to_a && meta['stop_after'] == stop
   raise 'Wrong membership/order' unless rows.map { |p| p['doi'] } == expected.map { |p| p['doi'].strip.downcase }
   raise 'Duplicate DOI' unless rows.map { |p| p['doi'] }.uniq.size == stop
@@ -36,7 +56,12 @@ trackers = {}
     raise 'Unsafe publication eligibility' unless row['public_note_eligible'] == accepted
     uri = URI.parse(row['source_url'])
     raise 'Unsafe source URL' unless uri.is_a?(URI::HTTPS) && uri.host && !uri.userinfo
-    raise 'Missing local PDF checksum' unless row.fetch('local_source_pdf_sha256').match?(/\A[0-9a-f]{64}\z/)
+    pdf_sha = row.fetch('local_source_pdf_sha256')
+    if pdf_sha
+      raise 'Invalid local PDF checksum' unless pdf_sha.match?(/\A[0-9a-f]{64}\z/)
+    else
+      raise 'Missing local PDF provenance' unless scope == 'corpus2000' && row['local_source_issue'] && row['local_source_pdf_basename'].nil?
+    end
     if !row['local_extraction_hash_matches_pdf'] && !row['local_source_issue']
       raise "Unaccounted stale extraction: #{row['rank']}"
     end
@@ -62,17 +87,18 @@ trackers = {}
       raise "CSV/JSON disagreement #{row['rank']} #{key}" unless matches
     end
   end
-  counts = {
-    'reviewed' => rows.size,
-    'source_checked' => rows.count { |p| p['source_checked'] },
-    'abstract_only' => rows.count { |p| p['review_depth'] == 'abstract_only' },
-    'full_text' => rows.count { |p| p['review_depth'] == 'full_text' },
-    'uncertain' => rows.count { |p| p['uncertain'] },
-    'inaccessible' => rows.count { |p| p['review_depth'] == 'inaccessible' },
-    'public_note_eligible' => rows.count { |p| p['public_note_eligible'] },
-    'local_source_issues' => rows.count { |p| p['local_source_issue'] }
-  }
+  counts = checkpoint_counts(rows)
   raise 'Summary counts drifted' unless meta.fetch('counts') == counts
   puts "PASS: #{scope} exact membership, CSV/JSON agreement, source/depth/uncertainty and safe public evidence: #{counts}"
 end
 raise 'First100 checkpoint diverged' unless trackers['core500']['papers'].first(100) == trackers['core500-first100']['papers']
+if trackers['corpus2000']
+  full = trackers['corpus2000']
+  raise 'Prior Core500 reviews changed' unless full['papers'].first(500) == trackers['core500']['papers']
+  raise 'New1500 counts drifted' unless full['metadata']['new_batch_counts'] == checkpoint_counts(full['papers'].drop(500))
+  raise 'Prior500 counts drifted' unless full['metadata']['prior_core500_counts'] == checkpoint_counts(full['papers'].first(500))
+  links = JSON.parse(File.read(File.join(root, '_data/paper_publication_links.json')))
+  raise 'Publication relationship tracker drift' unless full['publication_relationships'] == links
+  all_dois = full['papers'].map { |p| p['doi'] }
+  raise 'Public evidence outside reviewed corpus' unless (evidence.keys - all_dois).empty?
+end

@@ -8,6 +8,10 @@
 {%- assign checked_evidence_key = checked_evidence_key | strip -%}
 {%- assign checked_paper_evidence = nil -%}
 {%- if checked_evidence_key != '' -%}{%- assign checked_paper_evidence = site.data.paper_evidence[checked_evidence_key] -%}{%- endif -%}
+{%- capture publication_key -%}{%- include papers/publication-links-gate.html paper=p -%}{%- endcapture -%}
+{%- assign publication_key = publication_key | strip -%}
+{%- assign publication_pair = nil -%}
+{%- if publication_key != '' -%}{%- assign publication_pair = site.data.paper_publication_links[publication_key] -%}{%- endif -%}
 <article class="jc-card" id="paper-{{ p.id | escape }}" data-tier="{{ p.tier | default: 2000 | escape }}" data-dimension="{{ p.dimension | escape }}" data-year="{{ p.year | escape }}" data-tags="{{ p.tags | join: ',' | escape }}" data-id="{{ p.id | escape }}" data-uuid="{{ p.uuid | escape }}" data-era="{{ p.inclusion_role | escape }}" data-kcore="{{ p.k_core | escape }}">
   <header class="jc-card-header">
     <div class="jc-card-meta">
@@ -20,6 +24,8 @@
     <p class="jc-card-journal"><em>{{ p.journal | escape }}</em>{% if p.doi %} &middot; <a href="https://doi.org/{{ p.doi | escape }}" target="_blank" rel="noopener">DOI</a>{% endif %}</p>
   </header>
 
+  {% include papers/publication-links.html pair=publication_pair %}
+
   {% if checked_paper_evidence %}
   <section class="jc-card-evidence" aria-labelledby="evidence-{{ p.id | escape }}">
     <h4 id="evidence-{{ p.id | escape }}">What this paper demonstrated</h4>
@@ -31,8 +37,10 @@
   </section>
   {% endif %}
 
-  {% if p.abstract %}<details class="jc-card-details"><summary>Paper abstract</summary><p class="jc-details-body">{{ p.abstract | escape }}</p></details>{% endif %}
-  {% unless checked_paper_evidence %}<p class="jc-card-meta">A source-checked contribution note is not available. Use the abstract and publication for this paper's findings.</p>{% endunless %}
+  {% unless publication_pair.kind == 'correction' %}
+    {% if p.abstract %}<details class="jc-card-details"><summary>Paper abstract</summary><p class="jc-details-body">{{ p.abstract | escape }}</p></details>{% endif %}
+    {% unless checked_paper_evidence %}<p class="jc-card-meta">A source-checked contribution note is not available. Use the abstract and publication for this paper's findings.</p>{% endunless %}
+  {% endunless %}
 
   {% if p.related.cites.size > 0 or p.related.cited_by.size > 0 %}
   <details class="jc-card-details jc-related-details">

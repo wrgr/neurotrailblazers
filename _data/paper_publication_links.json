@@ -1,0 +1,182 @@
+{
+  "10.1016/j.neuron.2018.03.040": {
+    "doi": "10.1016/j.neuron.2018.03.040",
+    "kind": "original",
+    "original": {
+      "doi": "10.1016/j.neuron.2018.03.040",
+      "title": "Genetic Dissection of Neural Circuits: A Decade of Progress.",
+      "url": "https://doi.org/10.1016/j.neuron.2018.03.040",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5912347/",
+      "pdf_url": null
+    },
+    "correction": {
+      "doi": "10.1016/j.neuron.2018.05.004",
+      "title": "Genetic Dissection of Neural Circuits: A Decade of Progress.",
+      "url": "https://doi.org/10.1016/j.neuron.2018.05.004",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5997456/",
+      "pdf_url": null
+    },
+    "correction_note": "Corrects the Lee etal.2017 reference in the original review; no new experiment is reported.",
+    "relationship_source_url": "https://pubmed.ncbi.nlm.nih.gov/29772206/",
+    "source_locator": "Primary publication correction notice and reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  },
+  "10.1016/j.neuron.2018.05.004": {
+    "doi": "10.1016/j.neuron.2018.05.004",
+    "kind": "correction",
+    "original": {
+      "doi": "10.1016/j.neuron.2018.03.040",
+      "title": "Genetic Dissection of Neural Circuits: A Decade of Progress.",
+      "url": "https://doi.org/10.1016/j.neuron.2018.03.040",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5912347/",
+      "pdf_url": null
+    },
+    "correction": {
+      "doi": "10.1016/j.neuron.2018.05.004",
+      "title": "Genetic Dissection of Neural Circuits: A Decade of Progress.",
+      "url": "https://doi.org/10.1016/j.neuron.2018.05.004",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5997456/",
+      "pdf_url": null
+    },
+    "correction_note": "Corrects the Lee etal.2017 reference in the original review; no new experiment is reported.",
+    "relationship_source_url": "https://pubmed.ncbi.nlm.nih.gov/29772206/",
+    "source_locator": "Primary publication correction notice and reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  },
+  "10.1016/j.neuron.2022.11.002": {
+    "doi": "10.1016/j.neuron.2022.11.002",
+    "kind": "original",
+    "original": {
+      "doi": "10.1016/j.neuron.2022.11.002",
+      "title": "Dually innervated dendritic spines develop in the absence of excitatory activity and resist plasticity through tonic inhibitory crosstalk.",
+      "url": "https://doi.org/10.1016/j.neuron.2022.11.002",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9899020/",
+      "pdf_url": "https://par.nsf.gov/servlets/purl/10422319"
+    },
+    "correction": {
+      "doi": "10.1016/j.neuron.2023.04.003",
+      "title": "Dually innervated dendritic spines develop in the absence of excitatory activity and resist plasticity through tonic inhibitory crosstalk.",
+      "url": "https://doi.org/10.1016/j.neuron.2023.04.003",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10234094/",
+      "pdf_url": "/assets/papers/10.1016_j.neuron.2023.04.003.pdf",
+      "pdf_sha256": "22a211febc37fea00e562ebb97dae0a9de51c139ebea9794ac304ba67f078078",
+      "pdf_license": "CC BY-NC-ND 4.0; unchanged published correction PDF with attribution and license notice embedded."
+    },
+    "correction_note": "Corrects the Figure1G scale bar. The notice states that the manuscript conclusions are unchanged.",
+    "relationship_source_url": "https://pubmed.ncbi.nlm.nih.gov/37141861/",
+    "source_locator": "Primary publication correction notice and reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  },
+  "10.1016/j.neuron.2023.04.003": {
+    "doi": "10.1016/j.neuron.2023.04.003",
+    "kind": "correction",
+    "original": {
+      "doi": "10.1016/j.neuron.2022.11.002",
+      "title": "Dually innervated dendritic spines develop in the absence of excitatory activity and resist plasticity through tonic inhibitory crosstalk.",
+      "url": "https://doi.org/10.1016/j.neuron.2022.11.002",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9899020/",
+      "pdf_url": "https://par.nsf.gov/servlets/purl/10422319"
+    },
+    "correction": {
+      "doi": "10.1016/j.neuron.2023.04.003",
+      "title": "Dually innervated dendritic spines develop in the absence of excitatory activity and resist plasticity through tonic inhibitory crosstalk.",
+      "url": "https://doi.org/10.1016/j.neuron.2023.04.003",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10234094/",
+      "pdf_url": "/assets/papers/10.1016_j.neuron.2023.04.003.pdf",
+      "pdf_sha256": "22a211febc37fea00e562ebb97dae0a9de51c139ebea9794ac304ba67f078078",
+      "pdf_license": "CC BY-NC-ND 4.0; unchanged published correction PDF with attribution and license notice embedded."
+    },
+    "correction_note": "Corrects the Figure1G scale bar. The notice states that the manuscript conclusions are unchanged.",
+    "relationship_source_url": "https://pubmed.ncbi.nlm.nih.gov/37141861/",
+    "source_locator": "Primary publication correction notice and reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  },
+  "10.1038/s41593-017-0018-8": {
+    "doi": "10.1038/s41593-017-0018-8",
+    "kind": "original",
+    "original": {
+      "doi": "10.1038/s41593-017-0018-8",
+      "title": "Temporally precise single-cell-resolution optogenetics.",
+      "url": "https://doi.org/10.1038/s41593-017-0018-8",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5726564/",
+      "pdf_url": null
+    },
+    "correction": {
+      "doi": "10.1038/s41593-018-0097-1",
+      "title": "Publisher Correction: Temporally precise single-cell-resolution optogenetics.",
+      "url": "https://doi.org/10.1038/s41593-018-0097-1",
+      "full_text_url": null,
+      "pdf_url": null
+    },
+    "correction_note": "Restores Supplementary Tables1–5 and the Supplementary Note that were missing from the original online supplementary information.",
+    "relationship_source_url": "https://www.nature.com/articles/s41593-018-0097-1",
+    "source_locator": "Primary publisher correction notice plus reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  },
+  "10.1038/s41593-018-0097-1": {
+    "doi": "10.1038/s41593-018-0097-1",
+    "kind": "correction",
+    "original": {
+      "doi": "10.1038/s41593-017-0018-8",
+      "title": "Temporally precise single-cell-resolution optogenetics.",
+      "url": "https://doi.org/10.1038/s41593-017-0018-8",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5726564/",
+      "pdf_url": null
+    },
+    "correction": {
+      "doi": "10.1038/s41593-018-0097-1",
+      "title": "Publisher Correction: Temporally precise single-cell-resolution optogenetics.",
+      "url": "https://doi.org/10.1038/s41593-018-0097-1",
+      "full_text_url": null,
+      "pdf_url": null
+    },
+    "correction_note": "Restores Supplementary Tables1–5 and the Supplementary Note that were missing from the original online supplementary information.",
+    "relationship_source_url": "https://www.nature.com/articles/s41593-018-0097-1",
+    "source_locator": "Primary publisher correction notice plus reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  },
+  "10.1038/s41586-024-07780-8": {
+    "doi": "10.1038/s41586-024-07780-8",
+    "kind": "original",
+    "original": {
+      "doi": "10.1038/s41586-024-07780-8",
+      "title": "Inhibitory specificity from a connectomic census of mouse visual cortex.",
+      "url": "https://doi.org/10.1038/s41586-024-07780-8",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11981935/",
+      "pdf_url": null
+    },
+    "correction": {
+      "doi": "10.1038/s41586-025-09133-5",
+      "title": "Author Correction: Inhibitory specificity from a connectomic census of mouse visual cortex.",
+      "url": "https://doi.org/10.1038/s41586-025-09133-5",
+      "full_text_url": "https://www.nature.com/articles/s41586-025-09133-5",
+      "pdf_url": "https://www.nature.com/articles/s41586-025-09133-5.pdf"
+    },
+    "correction_note": "Adds a missing reference in the Sublaminar inhibitory specificity section; the original HTML and PDF were updated.",
+    "relationship_source_url": "https://www.nature.com/articles/s41586-025-09133-5",
+    "source_locator": "Primary publisher correction notice plus reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  },
+  "10.1038/s41586-025-09133-5": {
+    "doi": "10.1038/s41586-025-09133-5",
+    "kind": "correction",
+    "original": {
+      "doi": "10.1038/s41586-024-07780-8",
+      "title": "Inhibitory specificity from a connectomic census of mouse visual cortex.",
+      "url": "https://doi.org/10.1038/s41586-024-07780-8",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11981935/",
+      "pdf_url": null
+    },
+    "correction": {
+      "doi": "10.1038/s41586-025-09133-5",
+      "title": "Author Correction: Inhibitory specificity from a connectomic census of mouse visual cortex.",
+      "url": "https://doi.org/10.1038/s41586-025-09133-5",
+      "full_text_url": "https://www.nature.com/articles/s41586-025-09133-5",
+      "pdf_url": "https://www.nature.com/articles/s41586-025-09133-5.pdf"
+    },
+    "correction_note": "Adds a missing reference in the Sublaminar inhibitory specificity section; the original HTML and PDF were updated.",
+    "relationship_source_url": "https://www.nature.com/articles/s41586-025-09133-5",
+    "source_locator": "Primary publisher correction notice plus reciprocal PubMed/EuropePMC Erratum for / Erratum in records; checked2026-10-26.",
+    "checked_on": "2026-10-26"
+  }
+}

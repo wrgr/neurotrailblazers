@@ -1,0 +1,15 @@
+{% if include.pair %}
+<section class="jc-publication-links" aria-label="Original paper and correction">
+  {% if include.pair.kind == 'correction' %}<p><strong>Correction notice.</strong> Read the original paper together with this correction.</p>{% endif %}
+  <p>{{ include.pair.correction_note | escape }}</p>
+  {% assign publication_roles = 'original,correction' | split: ',' %}
+  {% for publication_role in publication_roles %}
+    {% assign linked_publication = include.pair[publication_role] %}
+    <p><strong>{% if publication_role == 'original' %}Original paper{% else %}Correction{% endif %}:</strong>
+      <a href="{{ linked_publication.url | escape }}" target="_blank" rel="noopener">{{ linked_publication.title | escape }}</a>
+      {% if linked_publication.full_text_url %} · <a href="{{ linked_publication.full_text_url | escape }}" target="_blank" rel="noopener">Full text</a>{% endif %}
+      {% if linked_publication.pdf_url %}{% assign pdf_start = linked_publication.pdf_url | slice: 0, 1 %} · <a href="{% if pdf_start == '/' %}{{ linked_publication.pdf_url | relative_url | escape }}{% else %}{{ linked_publication.pdf_url | escape }}{% endif %}" target="_blank" rel="noopener">PDF</a>{% endif %}
+    </p>
+  {% endfor %}
+</section>
+{% endif %}

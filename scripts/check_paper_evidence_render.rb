@@ -8,6 +8,7 @@ root = File.expand_path('..', __dir__)
 site = File.join(root, ENV.fetch('SITE_DIR','_site'))
 papers = YAML.safe_load(File.read(File.join(root,'_data/journal_papers.yml')), aliases: true).fetch('papers')
 records = JSON.parse(File.read(File.join(root,'_data/paper_evidence.json')))
+publication_links = JSON.parse(File.read(File.join(root,'_data/paper_publication_links.json')))
 by_id = papers.to_h { |p| [p.fetch('id'),p] }
 raise 'Duplicate paper IDs' unless by_id.size == papers.size
 raise 'Duplicate DOI' unless papers.map { |p| p.fetch('doi').strip.downcase }.uniq.size == papers.size
@@ -38,6 +39,7 @@ graph.each do |p|
  original=by_id.fetch(p['id'])
  %w[title authors year journal doi abstract].each { |k| raise "Metadata drift #{p['id']} #{k}" unless p[k]==original[k] }
  raise "Mismatched graph evidence #{p['id']}" unless p['evidence']==expected_evidence.call(original)
+ raise "Mismatched graph publication links #{p['id']}" unless p['publication_links']==publication_links[norm.call(original['doi'])]
  %w[ocar summaries discussion_prompts].each { |k| raise "Generated graph field #{k}" unless p[k].nil? }
  raise 'Summary without checked evidence' if !p['evidence'] && p['summary']
  raise 'Citation drift' unless (p['cites']||[])==(original['cites']||[])
@@ -58,6 +60,7 @@ end
   %w[title authors year doi abstract].each{|k| raise "Export metadata #{p['id']} #{k}" unless p[k]==o[k]}
   raise 'Export venue drift' unless p['venue']==o['journal']
   raise 'Export evidence mismatch' unless p['evidence']==expected_evidence.call(o)
+  raise 'Export publication links mismatch' unless p['publication_links']==publication_links[norm.call(o['doi'])]
   raise 'Unverified export annotations' unless p['ocar'].nil? && p['summaries'].nil? && p['discussion_prompts']==[]
   raise 'False verified provenance' if p.key?('source_flag')
  end
@@ -69,6 +72,15 @@ cards.each do |id,html|
  raise "Legacy annotation in #{id}" if html.match?(/jc-card-(?:ocar|expertise|streams)/) || html.include?('Reading notes and discussion (unverified)')
  has_evidence=html.include?('What this paper demonstrated')
  raise "Card evidence leak #{id}" unless has_evidence==!!expected_evidence.call(by_id[id])
+ pair=publication_links[norm.call(by_id[id]['doi'])]
+ raise "Card publication links leak #{id}" unless html.include?('jc-publication-links')==!!pair
+ if pair
+  %w[original correction].each { |role| raise "Missing #{role} link #{id}" unless html.include?(pair[role]['url']) }
+  if pair['kind']=='correction'
+   raise "Correction inherits main abstract #{id}" if html.include?('<summary>Paper abstract</summary>')
+   raise "Unlabeled correction #{id}" unless html.include?('Correction notice.')
+  end
+ end
 end
 puts "PASS actual Liquid: #{fixtures.size+4} eligibility/reset fixtures; #{papers.size} graph records and cards; #{seen_edges.size} directed citations; 3 safe public exports."
 puts "Evidence coverage: #{records.size}/#{papers.size} source-checked notes; this is not a corpus-wide scientific validation."

@@ -21,7 +21,8 @@ jobs:
       - name: Evidence eligibility, rendering and negative-association tests
         run: node scripts/check_paper_evidence_unit.cjs
   rendered:
-    runs-on: ubuntu-latest
+    # Match the Gemfile's Ruby 3.1.6; unavailable on ubuntu-26.04.
+    runs-on: ubuntu-22.04
     env:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8

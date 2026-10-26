@@ -80,3 +80,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 }
 @media (prefers-reduced-motion: reduce) { .card, .home-refresh .card { transition: none; transform: none; } html { scroll-behavior: auto; } }
 @media print { .deck-reader-nav, .deck-reader-index { display: none; } .deck-reading-slide { break-inside: avoid; } .deck-reader details > * { display: block; } }
+
+/* Papers: first-class navigation, visible view choices and labeled filters. */
+.paper-browser-page .jc-hero { background: #fff; color: #10303f; text-align: left; padding: 1.5rem; border: 1px solid #d8e1e3; }
+.paper-browser-page .jc-hero h1 { color: inherit; }
+.paper-browser-page .jc-hero p { max-width: 80ch; margin: 0.75rem 0; }
+.paper-view-links { gap: 0.5rem; }
+.paper-view-links a, .paper-view-links span { padding: 0.65rem 1.2rem; font-size: 1rem; font-weight: 600; text-decoration: none; }
+.paper-view-links a { background: #fff; color: #0b5259; border: 2px solid #0f6b73; }
+.paper-view-links [aria-current] { background: #0f6b73; color: #fff; border: 2px solid #0f6b73; }
+.paper-view-links a:hover { background: #e6f2f3; }
+#jc-filters.paper-filter-panel { display: block; padding: 1.25rem; border: 1px solid #bfe3e4; border-top: 4px solid #0f6b73; background: #f5f8f8; }
+.paper-filter-heading, .paper-filter-actions { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
+.paper-filter-heading h2, .paper-filter-title { font-size: 1.3rem; margin: 0; }
+.paper-filter-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
+.paper-filter-field { display: flex; flex-direction: column; gap: 0.4rem; min-width: 0; }
+#jc-filters .paper-filter-field input, #jc-filters .paper-filter-field select { width: 100%; min-width: 0; box-sizing: border-box; font: inherit; }
+.paper-filter-actions .jc-filter-count { margin-left: 0; color: #10303f; font-weight: 600; }
+.paper-graph-layout { margin: 1rem 0; padding: 1rem; background: #e6f2f3; border: 1px solid #bfe3e4; border-radius: 8px; }
+.paper-graph-layout .jcg-tier-btn-group { flex-wrap: wrap; }
+@media (max-width: 960px) { .paper-filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .paper-filter-grid { grid-template-columns: 1fr; } #jc-filters.paper-filter-panel { padding: 1rem; } .paper-filter-actions > * { width: 100%; } }

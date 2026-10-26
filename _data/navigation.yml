@@ -10,6 +10,8 @@ items:
         url: "/modules/"
       - title: "Practice proofreading"
         url: "/technical-training/proofreading-tutorials/"
+  - title: "Papers"
+    url: "/technical-training/journal-club/"
   - title: "Resources"
     url: "/resources/"
     dropdown:
@@ -50,7 +52,7 @@ items:
   - title: "About"
     url: "/about/"
     dropdown:
-      - title: "About NeuroTrailblazers"
+      - title: "About Nanoscale"
         url: "/about/"
       - title: "How we fit BRAIN CONNECTS"
         url: "/core/connects-ecosystem/"

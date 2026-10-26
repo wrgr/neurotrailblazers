@@ -54,6 +54,9 @@ jobs:
       - name: Journal paper count and schema validation
         run: ruby scripts/validate_paper_counts.rb
 
+      - name: Core 500 and first-100 review checkpoints
+        run: ruby scripts/check_core500_review_checkpoint.rb
+
       - name: Organism tag classification regression
         run: python3 scripts/check_organism_tags.py
 

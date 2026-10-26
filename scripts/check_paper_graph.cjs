@@ -164,7 +164,16 @@ function separated(nodes) {
   assert.ok(!card.includes('MICrONS / Kasthuri / MCP') && !card.includes('High-Pressure Freezing'), 'No guessed dataset or protocol');
   assert.match(card, /Paper abstract/);
   assert.ok(!card.includes('Corpus reading notes') && !card.includes('Opportunity</span>'), 'No legacy annotation drawer');
-  assert.match(card, /source-checked contribution note is not available/);
+  assert.ok(evidenceApi.eligible(ratPaper.evidence, ratPaper.doi), 'Reviewed rat paper has DOI-matched evidence');
+  assert.match(card, /What this paper demonstrated/);
+  assert.ok(card.includes(ratPaper.evidence.contribution), 'Drawer includes the checked contribution');
+  // Coverage grows over time: a fixed first paper is no longer an unreviewed fixture.
+  const unchecked = data.find(p => !p.evidence);
+  assert.ok(unchecked, 'Keep an actual unreviewed-paper case');
+  h.graph.select(h.graph.state().nodes.find(p => p.id === unchecked.id)); h.drain();
+  assert.match(h.element('jcg-panel-body').innerHTML, /source-checked contribution note is not available/);
+  const conflicted = data.find(p => p.doi === '10.18260/1-2--42544');
+  assert.ok(conflicted && !conflicted.evidence, 'Unresolved title/DOI conflict stays unpublished');
   assert.deepEqual(h.errors, []);
   const failed = await harness([], true);
   assert.match(failed.element('jcg-count').textContent, /Could not load/);

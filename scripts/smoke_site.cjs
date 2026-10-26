@@ -145,7 +145,8 @@ async function main() {
     await page.waitForFunction(() => document.getElementById('module-count').textContent.startsWith('8 of'));
     assert.equal(await visibleCount('.module-card'), 8);
     await visit('/modules/module03/');
-    assert((await page.$eval('.module-status-notice', e => e.textContent)).includes('In development'));
+    assert((await page.$eval('.module-status-notice', e => e.textContent)).includes('Materials available; practice in development'));
+    assert((await page.$eval('.module-status-notice', e => e.textContent)).includes('lesson, guided activity, and teaching materials are available'));
     assert.equal(await page.$$eval('.nt-progress-step', checks => checks.length), 3);
     assert.equal(await page.$('.nt-task-submit'), null);
     await page.click('.nt-progress-step[data-step-index="0"]');

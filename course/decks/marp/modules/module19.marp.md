@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 19 · NeuroTrailblazers"
+footer: "Module 19 · Nanoscale"
 title: "Module 19: Peer Review and Scientific Ethics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 19</span>
+<span class="eyebrow">Nanoscale · Module 19</span>
 
 # Peer Review and Scientific Ethics
 Teaching Deck
@@ -249,5 +249,5 @@ Choose a connectomics abstract (from a real paper or the mock preprint) and prod
 
 The reading version includes figure descriptions and discussion guidance.
 
-<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
 

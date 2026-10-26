@@ -23,7 +23,9 @@ const server=http.createServer((req,res)=>{let name=new URL(req.url,'http://loca
  await page.click('#jcg-list-view');await page.waitForFunction(()=>document.getElementById('jc-count').textContent.startsWith('1 of'));
 
  await page.evaluate(()=>{window.lastClick='none';document.addEventListener('click',e=>window.lastClick=e.target.outerHTML.slice(0,300),true);});
- await page.click('[data-details]');
+ // Returning from the map can replace/position the result card while the count
+ // already matches. Locator clicks wait for a visible, stable target.
+ await page.locator('#jc-grid [data-details]').click();
  try{await page.waitForSelector('#jc-grid .jc-card-details',{timeout:10000});}catch(error){
  console.log('DETAIL FAILURE',JSON.stringify(await page.evaluate(()=>({button:document.querySelector('[data-details]')?.outerHTML,click:window.lastClick,url:location.href,grid:document.querySelector('#jc-grid')?.innerText,active:document.activeElement?.outerHTML}))), 'requests',detailRequests,'errors',errors);throw error;
  }

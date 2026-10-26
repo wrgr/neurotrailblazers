@@ -33,6 +33,9 @@ main .section-highlight { padding: 1.25rem; }
 .home-refresh .hero-refresh { max-width: var(--nt-page-width); margin: 1rem auto 0; border-radius: 14px; }
 .home-refresh .home-hero-grid { gap: 1.5rem; }
 .home-refresh .home-intro-image { max-height: 280px; object-fit: contain; }
+.home-refresh .nanoscale-tissue .home-intro-image { max-height: none; height: auto; }
+.home-refresh .nanoscale-tissue a { color: #bfe3e4; text-decoration: underline; }
+.home-refresh .nanoscale-tissue a:hover, .home-refresh .nanoscale-tissue a:focus-visible { color: #fff; }
 .layout-content .hero-spaced, .main-content .hero-spaced { margin-inline: 0; margin-top: 1rem; margin-bottom: 1.25rem; }
 .module-browser { padding: 1rem 0; }
 .module-card { content-visibility: visible; contain-intrinsic-size: none; }

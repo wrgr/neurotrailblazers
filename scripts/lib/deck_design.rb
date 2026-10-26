@@ -102,7 +102,7 @@ module DeckDesign
 
       The reading version includes figure descriptions and discussion guidance.
 
-      <p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+      <p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
     MD
     File.write(path, front + "\n" + slides.join("\n\n---\n\n") + "\n")
   end

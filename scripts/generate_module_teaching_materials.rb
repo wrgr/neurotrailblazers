@@ -620,13 +620,13 @@ module_paths.each do |path|
     marp: true
     theme: neurotrailblazers
     paginate: true
-    footer: "Module #{num} · NeuroTrailblazers"
+    footer: "Module #{num} · Nanoscale"
     title: "#{title}"
     ---
 
     <!-- _class: title nanoscale -->
     <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-    <span class="eyebrow">NeuroTrailblazers · Module #{num}</span>
+    <span class="eyebrow">Nanoscale · Module #{num}</span>
 
     # #{title.sub(/\AModule \d+:\s*/, '')}
     Teaching Deck

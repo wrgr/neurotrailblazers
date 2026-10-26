@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 20 · NeuroTrailblazers"
+footer: "Module 20 · Nanoscale"
 title: "Module 20: Statistical Models and Inference for Connectomics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 20</span>
+<span class="eyebrow">Nanoscale · Module 20</span>
 
 # Statistical Models and Inference for Connectomics
 Teaching Deck
@@ -210,5 +210,5 @@ Write a 6-8 sentence inference note that includes:
 
 The reading version includes figure descriptions and discussion guidance.
 
-<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
 

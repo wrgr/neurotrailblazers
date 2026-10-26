@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 25 · NeuroTrailblazers"
+footer: "Module 25 · Nanoscale"
 title: "Module 25: Portfolio, Feedback, and Final Project"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 25</span>
+<span class="eyebrow">Nanoscale · Module 25</span>
 
 # Portfolio, Feedback, and Final Project
 Teaching Deck
@@ -177,5 +177,5 @@ Choose one artifact and write its four lines: one competency claim it supports, 
 
 The reading version includes figure descriptions and discussion guidance.
 
-<p class="source">NeuroTrailblazers text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
 

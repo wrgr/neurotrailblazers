@@ -14,11 +14,8 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-        <div class="site-banner">
-            <img src="{{ '/assets/images/neurotrailblazers-banner.jpg' | relative_url }}" alt="" width="1600" height="262">
-        </div>
         <nav class="navbar" aria-label="Main navigation">
-            <a href="{{ '/' | relative_url }}" class="logo" aria-label="NeuroTrailblazers home">NeuroTrailblazers</a>
+            <a href="{{ '/' | relative_url }}" class="logo" aria-label="Nanoscale home">Nanoscale</a>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
             {% assign nav_items = site.data.navigation.items %}
             <ul class="nav-menu" id="site-navigation">
@@ -66,7 +63,7 @@
                 <span aria-hidden="true">&middot;</span>
                 <a href="https://github.com/{{ site.github_username }}/neurotrailblazers">GitHub</a>
             </p>
-            <p>{{ site.tagline }} | NeuroTrailblazers.org | Copyright 2025–2026 | Proudly developed as part of the NIH BRAIN CONNECTS program.</p>
+            <p>{{ site.tagline }} | {{ site.title }} | Copyright 2025–2026 | Proudly developed as part of the NIH BRAIN CONNECTS program.</p>
         </div>
     </footer>
 

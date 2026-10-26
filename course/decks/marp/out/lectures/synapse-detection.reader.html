@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Synapse Detection | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Synapse Detection</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="synapse-detection.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 39 slides</summary><ol><li><a href="#slide-1">1. Synapse Detection</a></li><li><a href="#slide-2">2. The edges come from a detector</a></li><li><a href="#slide-3">3. Learning objectives</a></li><li><a href="#slide-4">4. Roadmap</a></li><li><a href="#slide-5">5. Synapse detection performance depends on the claim</a></li><li><a href="#slide-6">6. Established detection methods</a></li><li><a href="#slide-7">7. The three residuals</a></li><li><a href="#slide-8">8. Part A</a></li><li><a href="#slide-9">9. Three problems, not one</a></li><li><a href="#slide-10">10. Two structural facts that change the shape of the problem</a></li><li><a href="#slide-11">11. What has been tried, 2011–2018</a></li><li><a href="#slide-12">12. What has been tried, 2020–2025</a></li><li><a href="#slide-13">13. Reading the table: the numbers are not on a common scale</a></li><li><a href="#slide-14">14. Reading the table: aggregation is doing enormous work</a></li><li><a href="#slide-15">15. Check yourself</a></li><li><a href="#slide-16">16. Part B</a></li><li><a href="#slide-17">17. CREMI: the reference benchmark</a></li><li><a href="#slide-18">18. What a good CREMI score predicts — and what it does not</a></li><li><a href="#slide-19">19. WASPSYN: the benchmark built to measure what CREMI cannot</a></li><li><a href="#slide-20">20. Check yourself</a></li><li><a href="#slide-21">21. Excitatory versus inhibitory: why it is harder</a></li><li><a href="#slide-22">22. The discriminating feature is a few voxels thick — and staining moves it</a></li><li><a href="#slide-23">23. The asymmetry, in H01&#x27;s own numbers</a></li><li><a href="#slide-24">24. In insects, sign is a different problem entirely</a></li><li><a href="#slide-25">25. Part C</a></li><li><a href="#slide-26">26. Take the H01 synapse table as released.What fraction of synapses in human temporal cortex are excitatory?</a></li><li><a href="#slide-27">27. The straight count, and the corrected estimate</a></li><li><a href="#slide-28">28. What moved</a></li><li><a href="#slide-29">29. How confident should you be in the correction?</a></li><li><a href="#slide-30">30. What follows, well beyond H01</a></li><li><a href="#slide-31">31. Why detectors do not transfer</a></li><li><a href="#slide-32">32. The honest summary is narrower than &quot;models do not transfer&quot;</a></li><li><a href="#slide-33">33. Before you trust a synapse table</a></li><li><a href="#slide-34">34. If none of that is available: bound your own risk in an afternoon</a></li><li><a href="#slide-35">35. Check yourself</a></li><li><a href="#slide-36">36. What this lecture does not cover</a></li><li><a href="#slide-37">37. Where to go next</a></li><li><a href="#slide-38">38. References and sources</a></li><li><a href="#slide-39">39. Use, adapt, and credit</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Synapse Detection"><p class="slide-number">Slide 1 of 39</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<h2 id="synapse-detection">Synapse Detection</h2>
+<h3 id="a-graduate-lecture-from-the-neurotrailblazers-reference-layer">A graduate lecture from the NeuroTrailblazers reference layer</h3>
+<p><strong>NeuroTrailblazers</strong> · neurotrailblazers.org</p>
+<p class="roadmap">Part A — Three problems and the published record<br>Part B — Benchmarks and the sign problem<br>Part C — Using somebody else&#x27;s synapse table</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="src">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google<br>Image: CC BY 4.0 · Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858<br>Lecture: CC BY-SA 4.0 · neurotrailblazers.org</p>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>This lecture is built from one page of the NeuroTrailblazers content library,<br>&quot;Synapse Detection&quot;, and every number on these slides comes from that page and the<br>papers it cites. If you are adapting it, the page is the place to check a figure.<br><br>The goal is not that the room leaves able to train a detector. It is that they leave<br>able to download somebody else&#x27;s synapse table and say what it can and cannot support.</p></details></section><section class="reader-slide" id="slide-2" aria-label="Slide 2: The edges come from a detector"><p class="slide-number">Slide 2 of 39</p>
+<h2 id="the-edges-come-from-a-detector">The edges come from a detector</h2>
+<h3 id="a-connectome-is-a-graph-and-every-edge-in-it-was-put-there-by-a-synapse-detector">A connectome is a graph, and every edge in it was put there by a synapse detector</h3>
+<div class="cols">
+<div>
+<p>Everything downstream inherits whatever that detector got wrong:</p>
+<ul>
+<li>connection weights</li>
+<li>motif counts</li>
+<li>cell-type fingerprints</li>
+<li>connectome-constrained models</li>
+</ul>
+</div>
+<div>
+<div class="box">
+<p><strong>What this lecture is.</strong> The argument behind the one line a pipeline diagram gives this stage: what the task is, what has been tried, what the published numbers are, and what you have to measure before you are entitled to use somebody else&#x27;s synapse table.</p>
+<p><strong>What it is not.</strong> Synapse biology — what a synapse is and how to recognise one by eye — is assumed, not taught.</p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Learning objectives"><p class="slide-number">Slide 3 of 39</p>
+<h2 id="learning-objectives">Learning objectives</h2>
+<h3 id="by-the-end-of-this-lecture-you-will-be-able-to">By the end of this lecture you will be able to:</h3>
+<p><strong>1</strong> — <strong>Distinguish</strong> localisation, partner assignment and sign classification as separate problems that succeed and fail independently.</p>
+<p><strong>2</strong> — <strong>Interpret</strong> a published detector number by the unit it was measured at — synapse, interface, partner pair, or connection.</p>
+<p><strong>3</strong> — <strong>State</strong> what a CREMI score does and does not predict about performance on your data.</p>
+<p><strong>4</strong> — <strong>Explain</strong> how class-specific recall biases an excitatory/inhibitory ratio, and how much confidence a published correction deserves.</p>
+<p><strong>5</strong> — <strong>Audit</strong> a released synapse table before building a claim on it.</p>
+<div class="box">
+<p>Objective 4 is the one this lecture is really about. The single most consequential number in it is a recall figure, not an accuracy figure.</p>
+</div>
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Roadmap"><p class="slide-number">Slide 4 of 39</p>
+<h2 id="roadmap">Roadmap</h2>
+<div class="cols">
+<div>
+<p><strong>Part A — Three problems and the published record</strong> Why &quot;synapse detection&quot; is three tasks, what has been tried since 2011, and how to read a table of numbers that are not on a common scale.</p>
+<p><strong>Part B — Benchmarks and the sign problem</strong> What CREMI measures and what it cannot; WASPSYN and the domain-shift problem; why excitatory versus inhibitory is the hardest of the three tasks.</p>
+</div>
+<div>
+<p><strong>Part C — Using somebody else&#x27;s synapse table</strong> A worked judgement on H01&#x27;s excitatory/inhibitory balance; why detectors do not transfer; the checklist to run before trusting a table.</p>
+<div class="box box--good">
+<p><strong>Bring to each part:</strong> a synapse table you have used or plan to use. By the end you should be able to say what its recall is in your region — or that nobody knows.</p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Synapse detection performance depends on the claim"><p class="slide-number">Slide 5 of 39</p>
+<h2 id="synapse-detection-performance-depends-on-the-claim">Synapse detection performance depends on the claim</h2>
+<p>Established methods can perform well in evaluated tissue. Localization, partner assignment and transfer still need separate validation.</p>
+<p class="ask">Before the next slide: if a detector has 88% precision and recall per synapse, what do you expect its accuracy to be on the connectome built from it?</p>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Take answers, then explain that 88% per synapse is insufficient to predict an<br>edge-level score. Contact multiplicity, thresholds and correlated errors matter.<br>SynEM&#x27;s results illustrate this distinction, not a universal conversion rule.</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Established detection methods"><p class="slide-number">Slide 6 of 39</p>
+<h2 id="established-detection-methods">Established detection methods</h2>
+<h3 id="validation-is-specific-to-tissue-task-and-operating-point">Validation is specific to tissue, task and operating point</h3>
+<div class="cols">
+<div>
+<p><strong>SynEM</strong> reports binary-connectome performance around <strong>97% precision and recall</strong>. Its roughly <strong>88% per-synapse</strong> result uses a different operating point.</p>
+<p>Table 3 varies detector and connection thresholds. These numbers are not an automatic conversion.</p>
+<p><strong>H01&#x27;s pipeline</strong> detected <strong>149.9 million synapses</strong> at a <strong>3.2% / 2.7% false-discovery rate</strong> (excitatory / inhibitory).</p>
+</div>
+<div>
+<div class="box box--good">
+<p><strong>A published score does not certify a new table.</strong></p>
+<p>Measure detection and partner errors in the tissue and region supporting your claim.</p>
+</div>
+</div>
+</div>
+<p class="src">Staffler et al. 2017 (10.7554/eLife.26414, SynEM); Shapson-Coe et al. 2024 (10.1126/science.adk4858, H01).</p>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Use Staffler et al. Table 3, not an implied 88-to-97 transformation. The same trained<br>model can be operated at different score thresholds and connection rules. Local<br>validation is still required. Ask whether the student&#x27;s endpoint counts contacts<br>or asks only whether a neuron pair is connected.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: The three residuals"><p class="slide-number">Slide 7 of 39</p>
+<h2 id="the-three-residuals">The three residuals</h2>
+<h3 id="what-a-table-audit-needs-to-establish">What a table audit needs to establish</h3>
+<p><strong>1 — Recall is not symmetric.</strong> H01&#x27;s detector missed <strong>11%</strong> of excitatory and <strong>35%</strong> of inhibitory synapses. Unequal detection recall biases raw class counts; binary-edge performance does not repair a count ratio.</p>
+<p><strong>2 — Partner assignment is weaker than localisation</strong>, and much weaker where synapses are polyadic. Buhmann et al. report F1 from <strong>0.59 to 0.73</strong> across four areas <em>of the same fly brain</em>.</p>
+<p><strong>3 — Transfer is the operational cost.</strong> A detector trained on one volume does not move to another without new ground truth. As of 2025, the cross-dataset benchmarks say this is still open.</p>
+<div class="box box--good">
+<p><strong>The honest budget line</strong> is not &quot;we must solve synapse detection&quot;. It is: run the established detector, then spend your effort establishing what its recall and partner accuracy are <em>in your region</em>, and report the table&#x27;s provenance.</p>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Residual 3 is why the NeuroTrailblazers open-problems list titles this problem<br>&quot;Synapse detection that generalizes&quot; rather than &quot;synapse detection&quot;. The distinction<br>is the whole point of the lecture.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Part A"><p class="slide-number">Slide 8 of 39</p>
+<h2 id="part-a">Part A</h2>
+<h3 id="three-problems-and-the-published-record">Three problems and the published record</h3>
+<ul>
+<li>Localisation, partner assignment, sign</li>
+<li>What has been tried, with numbers</li>
+<li>Reading numbers that are not on a common scale</li>
+</ul>
+<div class="meta">Slides 8–15</div>
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Three problems, not one"><p class="slide-number">Slide 9 of 39</p>
+<h2 id="three-problems-not-one">Three problems, not one</h2>
+<h3 id="synapse-detection-names-at-least-three-tasks-that-succeed-and-fail-independently">&quot;Synapse detection&quot; names at least three tasks that succeed and fail independently</h3>
+<p><strong>1 — Localisation.</strong> Find the synapse. Depending on the method: segment the synaptic cleft as a set of voxels, predict a point annotation for the presynaptic site, or classify the <em>interface</em> between two already-segmented processes as synaptic or not.</p>
+<p><strong>2 — Partner assignment.</strong> Given a synapse, say which segment is presynaptic and which postsynaptic. A separate learning problem: Buhmann et al. (2021) and Turner et al. (2020) each treat it as its own network; Huang et al. (2018) use a U-Net for presynaptic sites and a separate multilayer perceptron, conditioned on the local segmentation, for postsynaptic partners.</p>
+<p><strong>3 — Sign or type.</strong> Excitatory or inhibitory. In mammalian cortex this is read from postsynaptic-density morphology; in <em>Drosophila</em>, from transmitter identity predicted from ultrastructure (Eckstein et al., 2024). <strong>The hardest of the three</strong> — Part B.</p>
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Two structural facts that change the shape of the problem"><p class="slide-number">Slide 10 of 39</p>
+<h2 id="two-structural-facts-that-change-the-shape-of-the-problem">Two structural facts that change the shape of the problem</h2>
+<div class="cols">
+<div>
+<p><strong>Insect synapses are polyadic.</strong> One presynaptic site contacts several postsynaptic partners, so <strong>&quot;one cleft&quot; is not &quot;one edge&quot;</strong>.</p>
+<p>Huang et al. (2018) describe theirs as &quot;a complete solution for polyadic synapse detection&quot;; the WASPSYN annotations record pre- and post-synaptic coordinates &quot;together with their one-to-many connectivity information&quot; (Li et al., 2024).</p>
+</div>
+<div>
+<p><strong>Some methods need a segmentation first; some do not.</strong> SynEM classifies borders between already-segmented processes; Heinrich et al. (2018) segment clefts directly from the raw image.</p>
+<div class="box box--warn">
+<p>That decides whether <strong>segmentation errors propagate into your synapse table</strong> — and it means the two methods&#x27; F-scores are <strong>not measuring the same object</strong>.</p>
+</div>
+</div>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The second fact is the one people miss. An interface classifier works on borders<br>between segments the segmentation already produced, so whether segmentation errors<br>propagate into the synapse table depends on this choice -- and an F-score from one<br>kind of method is not directly comparable with an F-score from the other.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: What has been tried, 2011–2018"><p class="slide-number">Slide 11 of 39</p>
+<h2 id="what-has-been-tried-2011%E2%80%932018">What has been tried, 2011–2018</h2>
+
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Year</th>
+<th>What it predicts</th>
+<th>Reported performance</th>
+<th>Tissue and preparation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ilastik</strong> (Kreshuk et al.)</td>
+<td>2011</td>
+<td>Asymmetric (presumed excitatory) synapse segmentation from voxel features</td>
+<td><strong>0.92 recall at 0.89 precision</strong> on 111 validation synapses, &quot;comparable to that of the experts&quot; (three annotators)</td>
+<td>Adult mammalian cortex, FIB/SEM, near-isotropic</td>
+</tr>
+<tr>
+<td><strong>Context cues</strong> (Becker et al.)</td>
+<td>2013</td>
+<td>Synapse segmentation plus synaptic orientation</td>
+<td>Evaluated on three datasets; recovers orientation as a by-product</td>
+<td>EM stacks, mixed</td>
+</tr>
+<tr>
+<td><strong>SyConn</strong> (Dorkenwald et al.)</td>
+<td>2017</td>
+<td>Synapses and types, alongside mitochondria, compartments, cell types</td>
+<td>Framework paper; used to compute songbird basal-ganglia wiring</td>
+<td>SBEM: zebrafish, mouse, zebra finch</td>
+</tr>
+<tr>
+<td><strong>SynEM</strong> (Staffler et al.)</td>
+<td>2017</td>
+<td>Neurite-interface classification: synaptic vs not</td>
+<td><strong>88% / 88%</strong> per synapse; <strong>94% / 89%</strong> spine synapses; <strong>97% / 97%</strong> binary cortical connectomes</td>
+<td>Mouse cortex, en-bloc staining, SBEM</td>
+</tr>
+<tr>
+<td><strong>3D U-Net cleft</strong> (Heinrich et al.)</td>
+<td>2018</td>
+<td>Cleft voxels, by regression on a signed distance transform</td>
+<td>A significant improvement over the prior state of the art on CREMI</td>
+<td>Adult <em>Drosophila</em>, anisotropic ssTEM; ~50 teravoxels of whole fly brain</td>
+</tr>
+<tr>
+<td><strong>Huang et al.</strong></td>
+<td>2018</td>
+<td>Presynaptic sites (U-Net) + postsynaptic partners (MLP)</td>
+<td>Introduced connectome-scale evaluation metrics; most connectivity characterised correctly</td>
+<td><em>Drosophila</em>, polyadic</td>
+</tr>
+</tbody>
+</table>
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: What has been tried, 2020–2025"><p class="slide-number">Slide 12 of 39</p>
+<h2 id="what-has-been-tried-2020%E2%80%932025">What has been tried, 2020–2025</h2>
+
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Year</th>
+<th>What it predicts</th>
+<th>Reported performance</th>
+<th>Tissue and preparation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Attentional voxel association</strong> (Turner et al.)</td>
+<td>2020</td>
+<td>Pre- and postsynaptic masks, from a cleft mask used as an attention gate</td>
+<td>Evaluated as part of a combined cleft-plus-partner system</td>
+<td>Mouse somatosensory cortex</td>
+</tr>
+<tr>
+<td><strong>Synful</strong> (Buhmann et al.)</td>
+<td>2021</td>
+<td>Synaptic partners directly, whole brain</td>
+<td><strong>F1 0.73, 0.68, 0.66, 0.59</strong> in four brain areas; <strong>244 million</strong> putative partners from FAFB; <strong>92–96%</strong> of edges correctly sorted weak (&lt;5) vs strong (≥5)</td>
+<td>Adult <em>Drosophila</em>, FAFB ssTEM</td>
+</tr>
+<tr>
+<td><strong>Cerebellar contact classifier</strong> (Park et al.)</td>
+<td>2022</td>
+<td>Synaptic vs not, plus pre/post side and E/I type</td>
+<td><strong>F1 = 0.955</strong> on a test volume with 508 synapses</td>
+<td>Mouse cerebellar molecular layer</td>
+</tr>
+<tr>
+<td><strong>H01 detector</strong> (Shapson-Coe et al.)</td>
+<td>2024</td>
+<td>Three-class U-Net + ResNet-50 E/I classifier</td>
+<td>E and I recall differ by more than threefold — Part B</td>
+<td>Human temporal cortex, ssEM 4 × 4 nm, 33 nm sections</td>
+</tr>
+<tr>
+<td><strong>SimpSyn</strong> (Mohinta et al.)</td>
+<td>2025</td>
+<td>Dual-channel spherical masks at pre- and postsynaptic sites, single-stage residual U-Net</td>
+<td>Beats Synful in F1 on all volumes of a four-dataset invertebrate benchmark; <strong>generalisation across datasets remains limited</strong></td>
+<td>Adult and larval <em>Drosophila</em>, <em>Megaphragma viggianii</em></td>
+</tr>
+</tbody>
+</table>
+<p class="src">Full citations on the references slide. Every figure here is as reported in the method&#x27;s own paper.</p>
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Reading the table: the numbers are not on a common scale"><p class="slide-number">Slide 13 of 39</p>
+<h2 id="reading-the-table-the-numbers-are-not-on-a-common-scale">Reading the table: the numbers are not on a common scale</h2>
+<div class="cols">
+<div>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Number</th>
+<th>Unit</th>
+<th>Tissue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kreshuk</td>
+<td>0.92 / 0.89</td>
+<td>per synapse</td>
+<td>near-isotropic FIB/SEM</td>
+</tr>
+<tr>
+<td>SynEM</td>
+<td>88 / 88</td>
+<td>per <strong>interface</strong></td>
+<td>anisotropic SBEM</td>
+</tr>
+<tr>
+<td>Buhmann</td>
+<td>0.59–0.73</td>
+<td>per <strong>partner pair</strong></td>
+<td>ssTEM</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<div class="box box--warn">
+<p>A method that looks worse here may simply have been measured on <strong>a harder unit in harder tissue</strong>.</p>
+<p><strong>Never rank two detectors by numbers taken from their own papers.</strong></p>
+</div>
+</div>
+</div>
+<p class="ask">Park et al.&#x27;s F1 of 0.955 is the highest number on the previous two slides. What would you need to know before calling it the best detector?</p>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Expected answers: the unit (synaptic vs non-synaptic contacts), the test-set size (508<br>synapses -- a test set of a few hundred carries visible sampling error), and the tissue<br>(mouse cerebellar molecular layer, one preparation). The three readings on this slide<br>apply to it as much as to anything else in the table.</p></details></section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Reading the table: aggregation is doing enormous work"><p class="slide-number">Slide 14 of 39</p>
+<h2 id="reading-the-table-aggregation-is-doing-enormous-work">Reading the table: aggregation is doing enormous work</h2>
+<div class="cols">
+<div>
+<p><strong>SynEM, from above.</strong> Per-synapse and binary-connectome scores use different evaluation units. Table 3 also varies score and connection thresholds.</p>
+<p>Multiple contacts can help recover an edge when some contacts are missed. False positives, error correlation and the connection rule also affect performance.</p>
+<p><strong>Synful, from the other side.</strong> Per-connection F1 of 0.59–0.73 — but <strong>92–96%</strong> of edges correctly assigned to the weak/strong classes most analyses actually use.</p>
+</div>
+<div>
+<div class="box box--good">
+<p><strong>The number you need is the one measured at the level of your claim.</strong></p>
+<p>For most connectomics, that is the edge, not the synapse.</p>
+</div>
+<div class="box">
+<p><strong>The field&#x27;s accounting has moved.</strong> Huang et al. (2018) observed that as segmentation improved, synapse annotation came to consume &quot;upwards of 50% of total effort&quot;. That is roughly when synapse detection stopped being the pipeline&#x27;s afterthought — and why the later methods are about partners and generalisation rather than finding clefts.</p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Check yourself"><p class="slide-number">Slide 15 of 39</p>
+<h2 id="check-yourself">Check yourself</h2>
+<h3 id="what-must-accompany-a-binary-connectome-performance-number">What must accompany a binary-connectome performance number?</h3>
+<div class="cols">
+<div>
+<p><strong>Report the evaluation unit, tissue and operating point.</strong> Detector score thresholds and the number of contacts required to call an edge affect the result.</p>
+<p>SynEM&#x27;s Table 3 distinguishes thresholds optimized for contacts from those optimized for connections.</p>
+</div>
+<div>
+<p><strong>Quote the paper&#x27;s result as that paper&#x27;s result.</strong> Claiming the same performance on your table requires validation of its connection rule and domain.</p>
+<p><strong>Do not quote it</strong> for synapse counts, connection weights, or anything per-synapse.</p>
+<div class="box box--warn">
+<p>Aggregation can change <strong>both precision and recall</strong>. It does not remove class-specific bias in synapse counts.</p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Part B"><p class="slide-number">Slide 16 of 39</p>
+<h2 id="part-b">Part B</h2>
+<h3 id="benchmarks-and-the-sign-problem">Benchmarks and the sign problem</h3>
+<ul>
+<li>What a CREMI score does and does not tell you</li>
+<li>WASPSYN and the 0.001% ratio</li>
+<li>Excitatory versus inhibitory, and why it is harder</li>
+</ul>
+<div class="meta">Slides 16–24</div>
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: CREMI: the reference benchmark"><p class="slide-number">Slide 17 of 39</p>
+<h2 id="cremi-the-reference-benchmark">CREMI: the reference benchmark</h2>
+<h3 id="circuit-reconstruction-from-electron-microscopy-images">Circuit Reconstruction from Electron Microscopy Images</h3>
+<p><strong>The data.</strong> Three datasets, each two (5 µm)³ volumes — training and testing, 1250 × 1250 × 125 px — of serial-section TEM of the adult <em>Drosophila</em> brain at <strong>[4, 4, 40] nm</strong>. Each training volume ships neuron ids, synaptic-cleft segmentation, and (pre, post) partner pairs.</p>
+<table>
+<thead>
+<tr>
+<th>CREMI task</th>
+<th>How it is scored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Neuron segmentation</strong></td>
+<td>Variation of Information, Adapted Rand error, Tolerant Edit Distance</td>
+</tr>
+<tr>
+<td><strong>Synapse detection</strong></td>
+<td>F-measure over false positives and false negatives; a predicted cleft voxel beyond a threshold distance from any ground-truth cleft is a false positive, and vice versa</td>
+</tr>
+<tr>
+<td><strong>Connectivity</strong> (partner identification)</td>
+<td>F-measure over matched (pre, post) pairs, matched by an assignment problem minimising Euclidean distance within a threshold</td>
+</tr>
+</tbody>
+</table>
+<div class="box">
+<p><strong>What the scoring does not do:</strong> require a predicted cleft to overlap the ground truth voxel-for-voxel — only to fall within a distance tolerance. Cleft detection is <strong>localisation with slack</strong>, which is why methods that regress a distance transform (Heinrich et al., 2018) do well on it.</p>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The exact weighting that combines the components into a single CREMI ranking score is<br>deliberately not stated here: the source page could not recover it from the primary<br>source, and says so. If someone asks, that is the honest answer.</p></details></section><section class="reader-slide" id="slide-18" aria-label="Slide 18: What a good CREMI score predicts — and what it does not"><p class="slide-number">Slide 18 of 39</p>
+<h2 id="what-a-good-cremi-score-predicts--and-what-it-does-not">What a good CREMI score predicts — and what it does not</h2>
+<div class="cols">
+<div>
+<p><strong>It predicts</strong> that your method is competitive on <strong>anisotropic fly ssTEM</strong>, at CREMI&#x27;s resolution, under CREMI&#x27;s convention for what counts as a cleft.</p>
+<p>That is worth knowing. It is why CREMI training data underlies whole-brain fly cleft prediction: Heinrich et al. trained on CREMI&#x27;s annotated crops, then predicted clefts across <strong>~50 teravoxels</strong> of the complete <em>Drosophila</em> brain.</p>
+</div>
+<div>
+<p><strong>It does not predict:</strong></p>
+<ul>
+<li><strong>Performance elsewhere in the same volume.</strong> One Synful model: F1 0.73, 0.68, 0.66, 0.59 across four areas of one fly brain. A <strong>0.14-point spread</strong> within one sample exceeds the gap between many published methods.</li>
+<li><strong>Performance in mammalian tissue.</strong> Different voxel size, anisotropy, staining chemistry, synapse geometry — and no polyadic structure to exploit.</li>
+<li><strong>Whether your edges are right.</strong> Connectivity is scored on pairs, not the weighted graph you will use.</li>
+<li><strong>Inhibitory recall.</strong> CREMI does not separate sign at all.</li>
+</ul>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: WASPSYN: the benchmark built to measure what CREMI cannot"><p class="slide-number">Slide 19 of 39</p>
+<h2 id="waspsyn-the-benchmark-built-to-measure-what-cremi-cannot">WASPSYN: the benchmark built to measure what CREMI cannot</h2>
+<div class="cols">
+<div>
+<p><strong>Domain adaptation, as a benchmark.</strong> Li et al. (2024) annotated <strong>14 image volumes</strong> from a biologically diverse set of <em>Megaphragma viggianii</em> brain regions, drawn from <strong>three different whole-brain datasets</strong>, and ran it as an ISBI 2023 challenge.</p>
+</div>
+<div>
+<div class="box box--warn">
+<p><strong>The number that defines the problem.</strong></p>
+<p>Manual annotation is so expensive that labelled training data is &quot;often <strong>smaller than 0.001%</strong> of the large-scale image volumes in application&quot;.</p>
+</div>
+</div>
+</div>
+<div class="box box--good">
+<p><strong>That ratio, not any single F1, is why cross-dataset generalisation is the live question.</strong> 0.001% is one part in 100,000: a detector is applied to volumes five orders of magnitude larger than anything it was shown labelled.</p>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>No CREMI or WASPSYN leaderboard position is quoted anywhere in this lecture.<br>Leaderboards move; the numbers here come from papers that can be re-checked.</p></details></section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Check yourself"><p class="slide-number">Slide 20 of 39</p>
+<h2 id="check-yourself-1">Check yourself</h2>
+<h3 id="a-team-beats-the-published-cremi-cleft-f1-what-have-they-demonstrated-and-what-have-they-not">A team beats the published CREMI cleft F1. What have they demonstrated, and what have they not?</h3>
+<div class="cols">
+<div>
+<p><strong>Demonstrated</strong></p>
+<p>Competitiveness on anisotropic adult-fly ssTEM at 4 × 4 × 40 nm, under CREMI&#x27;s annotation convention and distance-tolerant scoring.</p>
+</div>
+<div>
+<p><strong>Not demonstrated</strong></p>
+<ul>
+<li>mammalian tissue</li>
+<li>other regions of a fly brain (0.59–0.73 within one brain)</li>
+<li>sign classification</li>
+<li>the accuracy of the weighted graph a user would build</li>
+</ul>
+</div>
+</div>
+<p class="ask">Which of the four &quot;not demonstrated&quot; items would matter most for a study of cortical E/I balance? Hold it — the next four slides answer it.</p>
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Excitatory versus inhibitory: why it is harder"><p class="slide-number">Slide 21 of 39</p>
+<h2 id="excitatory-versus-inhibitory-why-it-is-harder">Excitatory versus inhibitory: why it is harder</h2>
+<h3 id="cleft-detection-asks-is-there-a-synapse-here-sign-asks-what-kind--on-thinner-evidence">Cleft detection asks &quot;is there a synapse here?&quot; Sign asks &quot;what kind?&quot; — on thinner evidence</h3>
+<p><strong>The morphological basis is a statistical mapping, not a rule.</strong> Synapses sort into Gray&#x27;s type I and type II, corresponding to Colonnier&#x27;s asymmetric (AS) and symmetric (SS): AS have a thick postsynaptic density, SS a thin one.</p>
+<p>In cerebral cortex <strong>most</strong> AS are excitatory (glutamatergic) and <strong>most</strong> SS inhibitory (GABAergic) — &quot;most&quot;, not all.</p>
+<div class="box">
+<p><strong>Validation is possible, and has been done.</strong> Cano-Astorga et al. (2024) check the morphological call against molecular markers, using immunocytochemistry for the vesicular GABA transporter to confirm that symmetric synapses seen under their protocol are GABAergic.</p>
+</div>
+</section><section class="reader-slide" id="slide-22" aria-label="Slide 22: The discriminating feature is a few voxels thick — and staining moves it"><p class="slide-number">Slide 22 of 39</p>
+<h2 id="the-discriminating-feature-is-a-few-voxels-thick--and-staining-moves-it">The discriminating feature is a few voxels thick — and staining moves it</h2>
+<div class="cols">
+<div>
+<p>Potassium ferrocyanide is used in modern volume-EM protocols to enhance membrane contrast.</p>
+<p>Cano-Astorga et al. (2024) show that <strong>as its concentration rises, postsynaptic densities get thinner</strong>, so symmetric synapses become progressively harder to identify. They recommend <strong>0.1%</strong>.</p>
+</div>
+<div>
+<div class="box box--warn">
+<p><strong>The consequence for a detector is stark.</strong></p>
+<p>The feature your inhibitory classifier depends on is <strong>partly a property of the sample-preparation recipe</strong>, not only of the tissue.</p>
+<p>A classifier trained on one lab&#x27;s staining is being asked to transfer <strong>across chemistry</strong>, not just across brains.</p>
+</div>
+</div>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>This is the mechanism behind residual 1. It is not that inhibitory synapses are<br>inherently invisible; it is that the one feature separating them from excitatory ones<br>is thin, and a routine contrast-enhancing reagent thins it further.</p></details></section><section class="reader-slide" id="slide-23" aria-label="Slide 23: The asymmetry, in H01&#x27;s own numbers"><p class="slide-number">Slide 23 of 39</p>
+<h2 id="the-asymmetry-in-h01s-own-numbers">The asymmetry, in H01&#x27;s own numbers</h2>
+<h3 id="from-manual-proofreading-of-a-selection-of-axons-across-all-cortical-layers-shapson-coe-et-al-2024">From manual proofreading of a selection of axons across all cortical layers (Shapson-Coe et al., 2024)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Excitatory</th>
+<th>Inhibitory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False negatives (missed synapses)</td>
+<td>11%</td>
+<td><strong>35%</strong></td>
+</tr>
+<tr>
+<td>False discovery rate</td>
+<td>3.2%</td>
+<td>2.7%</td>
+</tr>
+<tr>
+<td>Correctly classified as this type</td>
+<td>86.89%</td>
+<td>84.98%</td>
+</tr>
+</tbody>
+</table>
+<div class="box box--warn">
+<p><strong>Precision is excellent and near-identical for both classes. Recall is not.</strong> The detector misses roughly <strong>one inhibitory synapse in three</strong>, and one excitatory synapse in nine.</p>
+<p>That single asymmetry is the most consequential number in this lecture. Part C works out what it does to a result.</p>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Point at the FDR row first, then the false-negative row. The FDR row is what a<br>precision-focused evaluation shows you, and it looks reassuring. The false-negative<br>row is the one that bites, and it is the one a single combined F1 would hide.</p></details></section><section class="reader-slide" id="slide-24" aria-label="Slide 24: In insects, sign is a different problem entirely"><p class="slide-number">Slide 24 of 39</p>
+<h2 id="in-insects-sign-is-a-different-problem-entirely">In insects, sign is a different problem entirely</h2>
+<div class="cols">
+<div>
+<p>Fly synapses do not give up their sign through AS/SS morphology, so the question becomes <strong>transmitter identity</strong>.</p>
+<p>Eckstein et al. (2024) trained networks on EM images at synaptic sites to predict <strong>six transmitters</strong> — acetylcholine, glutamate, GABA, serotonin, dopamine, octopamine — across a whole <em>Drosophila</em> brain.</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual synapses</td>
+<td><strong>87%</strong></td>
+</tr>
+<tr>
+<td>Neurons</td>
+<td><strong>94%</strong></td>
+</tr>
+<tr>
+<td>Known cell types</td>
+<td><strong>91%</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<div class="box box--good">
+<p><strong>The 87 → 94 step is the aggregation effect again:</strong> a neuron&#x27;s synapses vote.</p>
+</div>
+<div class="box box--warn">
+<p><strong>Which has a consequence.</strong> Fly connectome signs are, in practice, properties of <em>neurons</em>. Treating per-synapse predictions as independent evidence <strong>double-counts</strong>.</p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-25" aria-label="Slide 25: Part C"><p class="slide-number">Slide 25 of 39</p>
+<h2 id="part-c">Part C</h2>
+<h3 id="using-somebody-elses-synapse-table">Using somebody else&#x27;s synapse table</h3>
+<ul>
+<li>A worked judgement: H01&#x27;s excitatory/inhibitory balance</li>
+<li>Why detectors do not transfer</li>
+<li>The checklist, and bounding your own risk</li>
+</ul>
+<div class="meta">Slides 25–35</div>
+</section><section class="reader-slide" id="slide-26" aria-label="Slide 26: Take the H01 synapse table as released.What fraction of synapses in human temporal cortex are excitatory?"><p class="slide-number">Slide 26 of 39</p>
+<h2 id="take-the-h01-synapse-table-as-released">Take the H01 synapse table as released.</h2>
+<h2 id="what-fraction-of-synapses-in-human-temporal-cortex-are-excitatory">What fraction of synapses in human temporal cortex are excitatory?</h2>
+<p class="ask">You have the table and a laptop. Write down the number you would put in a paper, and the sentence you would put next to it.</p>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Give them a minute. Almost everyone will propose computing the ratio from the table.<br>That is the right first step and the wrong final answer, and the next four slides are<br>why.</p></details></section><section class="reader-slide" id="slide-27" aria-label="Slide 27: The straight count, and the corrected estimate"><p class="slide-number">Slide 27 of 39</p>
+<h2 id="the-straight-count-and-the-corrected-estimate">The straight count, and the corrected estimate</h2>
+<div class="cols">
+<div>
+<p><strong>The straight count.</strong> Shapson-Coe et al. report <strong>149,871,669</strong> synapses automatically detected:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Count</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excitatory</td>
+<td>111,272,315</td>
+<td><strong>74.2%</strong></td>
+</tr>
+<tr>
+<td>Inhibitory</td>
+<td>38,599,354</td>
+<td><strong>25.8%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>If you pull the released table and compute a ratio, this is your answer.</p>
+</div>
+<div>
+<p><strong>The corrected estimate.</strong> The authors do <strong>not</strong> report that number as their result. Adjusting for the measured false-discovery, false-negative and misclassification rates, they estimate:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Estimate</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excitatory</td>
+<td>102.5 M</td>
+<td><strong>67.1%</strong></td>
+</tr>
+<tr>
+<td>Inhibitory</td>
+<td>50.3 M</td>
+<td><strong>32.9%</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-28" aria-label="Slide 28: What moved"><p class="slide-number">Slide 28 of 39</p>
+<h2 id="what-moved">What moved</h2>
+<h3 id="almost-all-of-it-is-the-35-inhibitory-false-negative-rate">Almost all of it is the 35% inhibitory false-negative rate</h3>
+<p>Precision was fine for both classes, so few detected synapses are spurious. The problem is the ones never detected — and they are <strong>disproportionately inhibitory</strong>.</p>
+<div class="cols">
+<div>
+<p><strong>Running the arithmetic the other way:</strong></p>
+<ul>
+<li>Raw table: <strong>38.6 M</strong> of an estimated <strong>50.3 M</strong> inhibitory — short by about <strong>23%</strong> of the inhibitory population.</li>
+<li>Raw excitatory count of <strong>111.3 M</strong> sits about <strong>9% above</strong> the 102.5 M estimate.</li>
+</ul>
+</div>
+<div>
+<div class="box box--warn">
+<p><strong>The naive ratio is wrong in both directions at once.</strong></p>
+<p>That is why the error on the <em>ratio</em> — 74.2% versus 67.1%, or <strong>7.1 percentage points</strong> — is larger than the error on either count alone.</p>
+</div>
+</div>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Walk the arithmetic on the board if there is time: 38.6 / 50.3 is about 0.77, so 23%<br>short; 111.3 / 102.5 is about 1.09, so 9% over. The source attributes almost all of<br>the shift to the 35% inhibitory false-negative rate; do not improvise a finer<br>breakdown of the excitatory overcount than the paper&#x27;s correction gives.</p></details></section><section class="reader-slide" id="slide-29" aria-label="Slide 29: How confident should you be in the correction?"><p class="slide-number">Slide 29 of 39</p>
+<h2 id="how-confident-should-you-be-in-the-correction">How confident should you be in the correction?</h2>
+<h3 id="less-than-in-the-raw-count">Less than in the raw count</h3>
+<div class="cols">
+<div>
+<p>The correction rests on proofreading <strong>a selection of axons</strong>, not a dense re-annotation. So:</p>
+<ul>
+<li>the rates carry <strong>their own sampling error</strong></li>
+<li>they were measured across cortical layers that <strong>differ in inhibitory density</strong></li>
+</ul>
+</div>
+<div>
+<div class="box">
+<p><strong>The corrected figure</strong> is an estimate from a sample.</p>
+<p><strong>The raw figure</strong> is an exact count of a biased measurement.</p>
+<p><strong>Neither is &quot;the number of synapses in the tissue&quot;</strong> — and a paper quoting either without saying which has not told you what it did.</p>
+</div>
+</div>
+</div>
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>This is the slide where the caveat must not be dropped for punchiness. The corrected<br>67:33 is better-motivated than 74:26, but it is not ground truth either. The correct<br>sentence names which number it is and where it came from.</p></details></section><section class="reader-slide" id="slide-30" aria-label="Slide 30: What follows, well beyond H01"><p class="slide-number">Slide 30 of 39</p>
+<h2 id="what-follows-well-beyond-h01">What follows, well beyond H01</h2>
+<p><strong>1 — Any excitation/inhibition ratio computed straight from a released synapse table is biased toward excitation</strong>, by an amount set by the detector&#x27;s class-specific recall. Report the recall figures alongside the ratio, or do not report the ratio.</p>
+<p><strong>2 — Comparisons are safer than absolutes.</strong> For two regions processed by the same detector and staining, the <em>difference</em> in E/I ratio survives a shared bias that the absolute value does not.</p>
+<p><strong>3 — The bias is not random, so more data will not fix it.</strong> Ten times the volume buys ten times the confidence in the wrong number.</p>
+<div class="box box--good">
+<p><strong>Back to the cold open.</strong> A defensible sentence: <em>&quot;74.2% of automatically detected synapses were classified excitatory; the authors&#x27; correction for class-specific detection rates, estimated from proofread axons, gives 67.1%.&quot;</em> Two numbers, both labelled.</p>
+</div>
+</section><section class="reader-slide" id="slide-31" aria-label="Slide 31: Why detectors do not transfer"><p class="slide-number">Slide 31 of 39</p>
+<h2 id="why-detectors-do-not-transfer">Why detectors do not transfer</h2>
+<h3 id="every-one-of-these-differs-between-two-em-volumes-and-every-one-can-move-a-detectors-output">Every one of these differs between two EM volumes, and every one can move a detector&#x27;s output</h3>
+
+<table>
+<thead>
+<tr>
+<th>What changes</th>
+<th>Concrete example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Voxel size and anisotropy</strong></td>
+<td>CREMI/FAFB at 4 × 4 × 40 nm ssTEM; H01 at 4 × 4 nm in-plane with 33 nm sections; FIB/SEM near-isotropic. Heinrich et al. built a 3D U-Net specifically &quot;to optimally represent isotropic fields of view in non-isotropic data&quot; — the architecture itself encodes an assumption about the sampling grid</td>
+</tr>
+<tr>
+<td><strong>Staining chemistry</strong></td>
+<td>Potassium ferrocyanide concentration changes apparent PSD thickness (Cano-Astorga et al., 2024) — directly attacking the inhibitory-synapse feature</td>
+</tr>
+<tr>
+<td><strong>Species ultrastructure</strong></td>
+<td>Polyadic insect synapses versus predominantly monadic mammalian ones; the output <em>structure</em> differs, not just the appearance</td>
+</tr>
+<tr>
+<td><strong>Annotation convention</strong></td>
+<td>What counts as a cleft, and where a &quot;site&quot; point sits relative to it. Two ground-truth sets can disagree systematically while both being correct by their own rules</td>
+</tr>
+<tr>
+<td><strong>Region within one sample</strong></td>
+<td>Buhmann et al.: F1 0.59 to 0.73 across four areas of the same fly brain</td>
+</tr>
+</tbody>
+</table>
+</section><section class="reader-slide" id="slide-32" aria-label="Slide 32: The honest summary is narrower than &quot;models do not transfer&quot;"><p class="slide-number">Slide 32 of 39</p>
+<h2 id="the-honest-summary-is-narrower-than-models-do-not-transfer">The honest summary is narrower than &quot;models do not transfer&quot;</h2>
+<div class="cols">
+<div>
+<p><strong>Within a volume and preparation, spatial generalisation is often fine.</strong> Heinrich et al. report that their model, trained on CREMI&#x27;s small annotated crops, &quot;generalizes well to areas far away from where training data was available&quot; — across a whole fly brain, including lamina.</p>
+<p><strong>Across preparations, it is not.</strong></p>
+<ul>
+<li><strong>SimpSyn:</strong> across four invertebrate datasets, generalisation remains limited even for the model that wins within each.</li>
+<li><strong>SynapseNet</strong> built explicit domain-adaptation functionality in rather than relying on a large training set.</li>
+<li><strong>WASPSYN</strong> exists because methods that &quot;utilize in-domain labeled data and generalize to out-of-domain unlabeled data are in urgent need&quot;.</li>
+</ul>
+</div>
+<div>
+<div class="box box--good">
+<p><strong>The distinction is operational.</strong></p>
+<p><strong>Analysing one released volume?</strong> Its detector was probably trained on that volume; the within-sample evidence applies to you.</p>
+<p><strong>Bringing a published detector to new tissue?</strong> You are in the regime where the evidence says it will degrade — <strong>by an amount nobody can tell you in advance.</strong></p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-33" aria-label="Slide 33: Before you trust a synapse table"><p class="slide-number">Slide 33 of 39</p>
+<h2 id="before-you-trust-a-synapse-table">Before you trust a synapse table</h2>
+<h3 id="you-will-usually-not-be-running-a-detector-you-will-be-downloading-a-table-someone-elses-produced">You will usually not be running a detector. You will be downloading a table someone else&#x27;s produced.</h3>
+
+<table>
+<thead>
+<tr>
+<th>Ask</th>
+<th>Why it changes what you can claim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Which detector, which version, which materialization?</strong></td>
+<td>Synapse tables are regenerated. A result that does not name the version is not reproducible</td>
+</tr>
+<tr>
+<td><strong>Ground truth: how many synapses, annotated by whom, with what agreement?</strong></td>
+<td>Kreshuk et al.: 111 synapses, three experts. SynEM&#x27;s test set: 235 synapses among 20,319 non-synaptic interfaces. A test set of a few hundred carries visible sampling error</td>
+</tr>
+<tr>
+<td><strong>Per synapse or per connection?</strong></td>
+<td>SynEM: 88% versus 97%. Both true; different questions</td>
+</tr>
+<tr>
+<td><strong>Precision and recall reported separately for E and I?</strong></td>
+<td>H01: 3.2% versus 2.7% FDR, but 11% versus 35% false negatives. A single combined F1 hides exactly the error that will bite you</td>
+</tr>
+<tr>
+<td><strong>Stratified by region?</strong></td>
+<td>Buhmann et al.: 0.59 to 0.73 within one brain. A whole-volume average tells you nothing about your region</td>
+</tr>
+<tr>
+<td><strong>Polyadicity convention: one row per site, or per (pre, post) pair?</strong></td>
+<td>Miscounting this inflates or deflates every insect connection weight</td>
+</tr>
+<tr>
+<td><strong>What distance tolerance in the evaluation?</strong></td>
+<td>CREMI-style scoring matches within a threshold. A generous threshold flatters everything</td>
+</tr>
+<tr>
+<td><strong>Evaluated on the same preparation as your volume?</strong></td>
+<td>If not, the transfer problem applies and the published number is an upper bound at best</td>
+</tr>
+</tbody>
+</table>
+</section><section class="reader-slide" id="slide-34" aria-label="Slide 34: If none of that is available: bound your own risk in an afternoon"><p class="slide-number">Slide 34 of 39</p>
+<h2 id="if-none-of-that-is-available-bound-your-own-risk-in-an-afternoon">If none of that is available: bound your own risk in an afternoon</h2>
+<div class="cols">
+<div>
+<p><strong>The procedure.</strong> Take a random subvolume, annotate every synapse in it by hand, and compare against the table.</p>
+<ul>
+<li>missed table entries → <strong>recall</strong></li>
+<li>spurious table entries → <strong>precision</strong></li>
+</ul>
+<p><strong>Tooling.</strong> SynAnno (Lauenburg et al., 2025) provides guided, neuron-centric synapse proofreading with model-assisted error detection.</p>
+</div>
+<div>
+<p><strong>Two calibration points set expectations.</strong></p>
+<p>Kreshuk et al. found their algorithm&#x27;s error rate &quot;comparable to that of the experts&quot;. SynEM reports its expert annotators at <strong>93.6–94.6%</strong> precision and <strong>97.9–98.9%</strong> recall.</p>
+<div class="box box--warn">
+<p><strong>Agreement in the mid-90s is roughly what two competent humans achieve.</strong> A detector matching your annotations more closely than that should make you suspicious of your annotations, not confident in the detector.</p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-35" aria-label="Slide 35: Check yourself"><p class="slide-number">Slide 35 of 39</p>
+<h2 id="check-yourself-2">Check yourself</h2>
+<h3 id="you-compute-an-excitatoryinhibitory-ratio-of-7426-from-h01s-released-table-name-the-measurement-that-makes-this-wrong-and-the-direction">You compute an excitatory:inhibitory ratio of 74:26 from H01&#x27;s released table. Name the measurement that makes this wrong, and the direction.</h3>
+<div class="cols">
+<div>
+<p><strong>The measurement.</strong> The <strong>35% false-negative rate for inhibitory synapses</strong>, against 11% for excitatory.</p>
+</div>
+<div>
+<p><strong>The direction.</strong> The released table is short by roughly <strong>23%</strong> of the estimated inhibitory population, so the ratio is <strong>biased toward excitation</strong>.</p>
+<p>The authors&#x27; corrected estimate is <strong>67:33</strong> — about <strong>7 percentage points</strong> away.</p>
+</div>
+</div>
+<div class="box">
+<p><strong>And the follow-up question worth asking of any answer:</strong> which number is it — the count of a biased measurement, or the estimate from a proofread sample? Both are legitimate. Unlabelled, neither is.</p>
+</div>
+</section><section class="reader-slide" id="slide-36" aria-label="Slide 36: What this lecture does not cover"><p class="slide-number">Slide 36 of 39</p>
+<h2 id="what-this-lecture-does-not-cover">What this lecture does not cover</h2>
+<h3 id="boundaries-stated-deliberately-as-the-source-page-states-them">Boundaries stated deliberately, as the source page states them</h3>
+<div class="cols">
+<div>
+<ul>
+<li><strong>Synapse biology</strong> — what a synapse is, vesicle pools, active-zone architecture, spine types, recognition by eye.</li>
+<li><strong>Neurite segmentation</strong> — affinities, watershed, agglomeration, flood-filling networks, and their error modes.</li>
+<li><strong>The mathematics of the metrics</strong> — VI, ERL and the F1 family, derived.</li>
+<li><strong>Gap junctions.</strong> A genuinely separate detection problem; no performance figures are quoted because none were sourced.</li>
+</ul>
+</div>
+<div>
+<ul>
+<li><strong>Synapse size as a strength proxy.</strong> Cleft and PSD area are used throughout the literature to weight edges; assessing that calibration is a live open problem, not evaluated here.</li>
+<li><strong>Leaderboard standings and the exact CREMI score formula.</strong> Leaderboards move; the precise weighting was not recovered from the primary source, so none is stated.</li>
+<li><strong>Compute cost on current hardware.</strong> The only sourced throughput figures predate current accelerators by years. Do not plan a budget from them.</li>
+<li><strong>Non-EM synapse mapping</strong> — array tomography, expansion microscopy, light-microscopy connectomics.</li>
+</ul>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-37" aria-label="Slide 37: Where to go next"><p class="slide-number">Slide 37 of 39</p>
+<h2 id="where-to-go-next">Where to go next</h2>
+<div class="cols">
+<div>
+<p><strong>The source page.</strong> <em>Synapse Detection</em> in the NeuroTrailblazers content library — this lecture&#x27;s full argument, with every number linked to its paper.</p>
+<p><strong>Neighbouring pages.</strong> Reconstruction pipeline (where this stage sits); Metrics and QA (the metric definitions); Synapse classification (the biology this lecture presupposes); Provenance and versioning (pinning the table you used); the H01 case study (the volume behind Part C).</p>
+<p><strong>Hands-on.</strong> Technical training Unit 08, segmentation and proofreading.</p>
+</div>
+<div>
+<div class="box box--good">
+<p><strong>The one idea to carry forward.</strong></p>
+<p>Cleft detection is solved. <strong>What a synapse table can support is not a property of the detector</strong> — it is a property of its recall by class, its partner accuracy in your region, and whether it was evaluated on your preparation.</p>
+<p>Measure those, or report that nobody has.</p>
+</div>
+</div>
+</div>
+</section><section class="reader-slide" id="slide-38" aria-label="Slide 38: References and sources"><p class="slide-number">Slide 38 of 39</p>
+<h2 id="references-and-sources">References and sources</h2>
+
+<p><strong>Detection methods.</strong> Kreshuk et al. 2011 (10.1371/journal.pone.0024899, ilastik synapse detection); Becker et al. 2013 (10.1109/TMI.2013.2267747, context cues); Dorkenwald et al. 2017 (10.1038/nmeth.4206, SyConn); Staffler et al. 2017 (10.7554/eLife.26414, SynEM); Heinrich et al. 2018 (10.1007/978-3-030-00934-2_36, cleft segmentation in the complete <em>Drosophila</em> brain); Huang, Scheffer &amp; Plaza 2018 (10.3389/fncir.2018.00087, fully-automatic synapse prediction); Turner et al. 2020 (10.1109/ISBI45749.2020.9098489, attentional voxel association); Buhmann et al. 2021 (10.1038/s41592-021-01183-7, Synful); Park et al. 2022 (10.3389/fnana.2022.760279, cerebellar synapse detection); Mohinta et al. 2025 (arXiv:2509.17041, SimpSyn).</p>
+<p><strong>Sign and transmitter identity.</strong> Cano-Astorga et al. 2024 (10.3389/fnana.2024.1348032, asymmetric and symmetric synapses in volume EM); Eckstein et al. 2024 (10.1016/j.cell.2024.03.016, neurotransmitter classification in <em>Drosophila</em>).</p>
+<p><strong>Datasets, benchmarks and tools.</strong> Shapson-Coe et al. 2024 (10.1126/science.adk4858, H01); CREMI challenge (cremi.org); Li et al. 2024 (10.1109/TMI.2024.3400276, WASPSYN); Muth et al. 2024 (10.1091/mbc.e24-11-0519, SynapseNet); Lauenburg et al. 2025 (10.1101/2025.08.09.669342, SynAnno).</p>
+<p><strong>Source page.</strong> NeuroTrailblazers content library, <em>Synapse Detection</em> (/content-library/infrastructure/synapse-detection/). <a href="https://neurotrailblazers.org">https://neurotrailblazers.org</a></p>
+</section><section class="reader-slide" id="slide-39" aria-label="Slide 39: Use, adapt, and credit"><p class="slide-number">Slide 39 of 39</p>
+<h2 id="use-adapt-and-credit">Use, adapt, and credit</h2>
+<h3 id="these-slides-are-openly-licensed-for-community-use">These slides are openly licensed for community use</h3>
+<div class="cols">
+<div>
+<p><strong>Licence: CC BY-SA 4.0</strong><br>
+Creative Commons Attribution-ShareAlike 4.0 International.<br>
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
+<p><strong>You may</strong> teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and <strong>re-cut, shorten, translate, restyle, or merge them into your own material</strong> — and distribute the result. No permission needed.</p>
+<p><strong>Two conditions.</strong> <em>Attribution</em> — credit the original, link the licence, and say if you changed anything. <em>ShareAlike</em> — distribute your adapted version under this same licence, so it stays as open as what it came from.</p>
+</div>
+<div>
+<p><strong>How to credit</strong></p>
+<p>NeuroTrailblazers (2026). <em>Synapse Detection</em> (graduate lecture, NeuroTrailblazers reference layer). CC BY-SA 4.0. neurotrailblazers.org/technical-training/slides/</p>
+<p>For an adaptation, prefix with <em>&quot;Adapted from&quot;</em> and note what you changed.</p>
+<p><strong>Editable source.</strong> The Marp markdown is in the repository — the exported PowerPoint renders each slide as an image, so the markdown is the thing to edit. <a href="https://github.com/wrgr/neurotrailblazers">https://github.com/wrgr/neurotrailblazers</a></p>
+<p><strong>Improved something?</strong> The project would like to hear about it — open an issue.</p>
+</div>
+</div>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

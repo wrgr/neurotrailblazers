@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 05 · NeuroTrailblazers"
+footer: "Module 05 · Nanoscale"
 title: "Module 05: Electron Microscopy and Image Basics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 05</span>
+<span class="eyebrow">Nanoscale · Module 05</span>
 
 # Electron Microscopy and Image Basics
 Teaching Deck
@@ -24,22 +24,18 @@ Teaching Deck
 - Interpret image quality for segmentation readiness
 - Document uncertainty and QA decisions
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Evaluate EM image patches for artifact risk and issue a justified pass/rework recommendation.
 
+
 ---
 
 ## Concept Focus
 EM image quality is not merely an aesthetic concern — it is the single most consequential variable that determines segmentation accuracy and, by extension, the validity of every connectomic claim built on that segmentation. A 20% reduction in membrane contrast can double the split error rate in automated reconstruction, because the segmentation model loses the luminance gradient it relies on to delineate adjacent neurites. Every downstream analysis result — synapse counts, path lengths, circuit motifs — inherits the quality ceiling set at acquisition. This means that the person evaluating image quality is making a decision that propagates through the entire pipeline. Treating QA as a clerical step rather than a scientific judgment is one of the most common and costly mistakes in connectomics projects.
+
 
 ---
 
@@ -49,6 +45,7 @@ EM image quality is not merely an aesthetic concern — it is the single most co
 - Decide pass/flag/rework with documented rationale.
 - Log findings in a structured QA record for reproducibility.
 
+
 ---
 
 ## Run of Show (60 min)
@@ -56,9 +53,6 @@ EM image quality is not merely an aesthetic concern — it is the single most co
 - 2. 08:00-20:00 — Artifact recognition walkthrough
 - 3. 20:00-34:00 — Learner triage round
 - 4. 34:00-46:00 — QA threshold debate
-- 5. 46:00-56:00 — Decision logging practice
-- 6. 56:00-60:00 — Competency check
-
 <!--
 Pre-class preparation (5-10 min async)
   Before the session, students should:
@@ -112,16 +106,53 @@ Pre-class preparation (5-10 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 5. 46:00-56:00 — Decision logging practice
+- 6. 56:00-60:00 — Competency check
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** you can proofread your way out of a bad image.
 - **Misconception guardrail:** a noisy image is worse for segmentation than a clean image with faint membranes.
 - **Misconception guardrail:** artifact severity can be judged from a count, when the spatial distribution matters more.
 - **Misconception guardrail:** quality assessment is a clerical checkpoint rather than a scientific judgment that propagates through every downstream claim.
 
+
+---
+
+<!-- _class: visual-lesson -->
+## Check the image before trusting a label
+<p class="visual-lead">Inspect the underlying electron microscopy, not just a colorful overlay.</p>
+<div class="visual-images"><figure><img src="../../../../assets/images/content-library/case-studies/h01/10a-raw-em.jpg" alt="Raw H01 electron microscopy with membrane profiles and an intact 2 micrometre scale bar."><figcaption>Underlying image, without a segmentation overlay.</figcaption></figure></div>
+<p class="visual-question"><strong>Discuss:</strong> What would make you inspect neighboring sections?</p>
+<p class="source">H01 release, Lichtman Lab / Harvard and Connectomics at Google; Shapson-Coe et al. (2024), doi:10.1126/science.adk4858; CC BY 4.0.</p>
+<!--
+Visual description and discussion guidance:
+The field contains adjacent membrane profiles and organelles. This is an inspection example, not a deliberately corrupted image with a hidden answer key. Review continuity, contrast, section context and scale before deciding whether a region needs to be flagged.
+-->
+
+
+---
+
+<!-- _class: visual-lesson -->
+## A flag should lead to a specific check
+<p class="visual-lead">An unusual appearance is not a confirmed artifact.</p>
+<ol class="visual-steps"><li><span class="step-number" aria-hidden="true">1</span><h3>Observe</h3><p>Describe the discontinuity or ambiguity.</p></li><li><span class="step-number" aria-hidden="true">2</span><h3>Compare</h3><p>Inspect neighbors and acquisition context.</p></li><li><span class="step-number" aria-hidden="true">3</span><h3>Decide</h3><p>Proceed, request review, or rework; state why.</p></li></ol>
+<p class="visual-question"><strong>Discuss:</strong> What evidence would change your decision?</p>
+<p class="source">Illustrative teaching scenario; see this module’s lesson and worked example.</p>
+<!--
+Visual description and discussion guidance:
+The workflow separates observation, additional evidence and action. The appropriate action depends on the scientific endpoint and available evidence; unusual appearance alone is not an automatic rejection rule.
+-->
+
+
 ---
 
 ## Studio Activity
 **Scenario:** Your team has received pilot images from a new ssTEM acquisition of mouse visual cortex. The imaging facility reports that initial sections looked good, but they encountered intermittent knife chatter starting around section 200 and a possible staining gradient in the lateral third of the field of view. Before the facility commits to imaging the remaining 800 sections, your team must evaluate the pilot data and deliver a go/no-go recommendation with conditions.
+
 
 ---
 
@@ -130,6 +161,7 @@ Pre-class preparation (5-10 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
@@ -137,15 +169,18 @@ Pre-class preparation (5-10 min async)
 - **Strong (merit)**: Clear articulation of cost tradeoffs, consistent severity thresholds across patches, spatially aware analysis, and a well-structured recommendation memo with specific conditions.
 - **Failure**: Artifact labels assigned without reference to downstream segmentation implications, or QA decisions made without documented rationale.
 
+
 ---
 
 ## Exit Ticket
 Pick one artifact and explain how it could create a merge or split error later. Then estimate: if this artifact appears on 5% of sections, how many additional proofreading hours would it add to a 1000-section volume?
 
+
 ---
 
 ## References (Instructor)
 - Use module references listed on the module page.
+
 
 ---
 
@@ -153,3 +188,17 @@ Pick one artifact and explain how it could create a merge or split error later. 
 - Module page: /modules/module05/
 - Session kit: /teaching/sessions/module05/
 - Worksheet: /assets/worksheets/module05/module05-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module05.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module05/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

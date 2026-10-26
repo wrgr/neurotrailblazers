@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Axons and Dendrites | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Axons and Dendrites</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="06-axons-and-dendrites.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 19 slides</summary><ol><li><a href="#slide-1">1. Axons and Dendrites</a></li><li><a href="#slide-2">2. Session outcomes (60 minutes)</a></li><li><a href="#slide-3">3. Pedagogical arc</a></li><li><a href="#slide-4">4. Why this unit is high leverage</a></li><li><a href="#slide-5">5. Morphology baseline</a></li><li><a href="#slide-6">6. Dendritic cue panel</a></li><li><a href="#slide-7">7. Classify these profiles, then check</a></li><li><a href="#slide-8">8. Real data: excitatory vs inhibitory synapse</a></li><li><a href="#slide-9">9. Real data: a myelinated axon</a></li><li><a href="#slide-10">10. A reconstructed dendrite and its spines</a></li><li><a href="#slide-11">11. Side-by-side discrimination</a></li><li><a href="#slide-12">12. Ambiguous process case</a></li><li><a href="#slide-13">13. What a PSD is: the receiving side of the polarity rule</a></li><li><a href="#slide-14">14. Operational classification protocol</a></li><li><a href="#slide-15">15. Misconceptions to correct</a></li><li><a href="#slide-16">16. Activity</a></li><li><a href="#slide-17">17. Rubric checkpoint</a></li><li><a href="#slide-18">18. A textbook neuron, for vocabulary</a></li><li><a href="#slide-19">19. References and attribution</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Axons and Dendrites"><p class="slide-number">Slide 1 of 19</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Unit 06</span></p>
+<h2 id="axons-and-dendrites">Axons and Dendrites</h2>
+<p>In dense neuropil you usually cannot reach a soma. Classification has to work from local evidence.</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Session outcomes (60 minutes)"><p class="slide-number">Slide 2 of 19</p>
+<h2 id="session-outcomes-60-minutes">Session outcomes (60 minutes)</h2>
+<ul>
+<li>Classify neurites using a reproducible multi-cue protocol.</li>
+<li>Document uncertainty and escalation rationale for edge cases.</li>
+<li>Quantify classification quality with confusion-style summaries.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Pedagogical arc"><p class="slide-number">Slide 3 of 19</p>
+<h2 id="pedagogical-arc">Pedagogical arc</h2>
+<ul>
+<li>Model: expert classifies one neurite live.</li>
+<li>Practice: pair annotation on mixed-evidence panels.</li>
+<li>Consensus: adjudication and policy revision.</li>
+<li>Check: justified final call and uncertainty note.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Why this unit is high leverage"><p class="slide-number">Slide 4 of 19</p>
+<h2 id="why-this-unit-is-high-leverage">Why this unit is high leverage</h2>
+<ul>
+<li>Axon/dendrite identity errors distort connectivity statistics.</li>
+<li>Misclassification propagates into motif analysis and model priors.</li>
+<li>Reproducible identity policy is a prerequisite for trustworthy graphs.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The arithmetic from unit §4. Classify 1,000 processes at 95% accuracy: 50 errors. Identity errors lose 50 edges and add 50 wrong ones. Direction errors each remove a true edge and add its reverse, so any direction-sensitive statistic takes double the damage.<br>Worse, the bias has a direction: flipping 5% of edges in a population with a true 5% reciprocal-pair rate raises measured reciprocity — toward the publishable answer. Instructor script: &quot;This is a bias, not noise, and it points toward the exciting result. That is the worst possible property for an error to have.&quot;</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Morphology baseline"><p class="slide-number">Slide 5 of 19</p>
+<h2 id="morphology-baseline">Morphology baseline</h2>
+<p><img src="../../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S01-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Four cue families: organelle content, caliber geometry, synaptic polarity, context.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-AXDEN S01.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Fix the four families first. Confidence comes from which families agree, not from how many observations of the same kind you stack up.<br>Family A, organelles: ribosomes effectively absent from axons — the single best cue when visible. Family B, geometry: axons hold caliber between boutons; dendrites taper, and daughter branches are thinner than the parent. Family C, polarity: vesicle cluster at a synapse -&gt; presynaptic -&gt; axon; PSD -&gt; dendrite or soma. Family D, context: myelin, a fibre bundle, an AIS off a soma.</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Dendritic cue panel"><p class="slide-number">Slide 6 of 19</p>
+<h2 id="dendritic-cue-panel">Dendritic cue panel</h2>
+<p><img src="../../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S08-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Look for geometry evidence that survives bad staining.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-AXDEN S08.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The taper rule: at a dendritic branch point the daughters&#x27; cross-sectional areas are systematically smaller than the parent&#x27;s; at an axonal branch point caliber is roughly preserved. It is a Family B cue fully independent of organelle staining quality — valuable exactly when the ribosome cue has failed you.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Classify these profiles, then check"><p class="slide-number">Slide 7 of 19</p>
+<h2 id="classify-these-profiles-then-check">Classify these profiles, then check</h2>
+<p><img src="../../../../assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Left: raw human cortex. Right: the model&#x27;s answer key — blue axon, green dendrite, orange astrocyte.</p>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Works as a live exercise: cover the right panel, ask the room to call five or six profiles on the left, then reveal. Note how many are genuinely hard.<br>Instructor script: &quot;The right panel is a six-class subcompartment model, not ground truth. Where you disagree with it, write down which cue family you are relying on — that is the evidence chain you would need to overrule it.&quot;</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Real data: excitatory vs inhibitory synapse"><p class="slide-number">Slide 8 of 19</p>
+<h2 id="real-data-excitatory-vs-inhibitory-synapse">Real data: excitatory vs inhibitory synapse</h2>
+<p><img src="../../../../assets/images/content-library/em/synapse-asymmetric-vs-symmetric.jpg" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Matched scale, nothing drawn over either density.</p>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>At 4 nm a Type I PSD is 8–12 pixels — the asymmetry is genuinely subtle, and H01&#x27;s excitatory/inhibitory classifier is right about 85–87% of the time. Both calls are Bin B claims: &quot;putatively excitatory (asymmetric)&quot;, &quot;putatively inhibitory (symmetric)&quot;. Where the claim matters, the presynaptic cell type is usually the stronger evidence.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Real data: a myelinated axon"><p class="slide-number">Slide 9 of 19</p>
+<h2 id="real-data-a-myelinated-axon">Real data: a myelinated axon</h2>
+<div class="cols">
+<div>
+<p><img src="../../../../assets/images/content-library/em/myelinated-axon.jpg" alt="" loading="lazy" decoding="async"></p>
+</div>
+<div>
+<ul>
+<li>Compact myelin reads as a dark annulus at 4 nm.</li>
+<li>Individual lamellae (12 nm period = 3 px) are NOT resolvable here.</li>
+</ul>
+</div>
+</div>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Myelin is a Family D context cue and a decisive one: dendrites are never myelinated. In the protocol it is step 3 — myelin or a fibre bundle -&gt; axon, high confidence. Use the second bullet to calibrate expectations about resolution: knowing what you cannot see at 4 nm is part of reading the image honestly.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: A reconstructed dendrite and its spines"><p class="slide-number">Slide 10 of 19</p>
+<h2 id="a-reconstructed-dendrite-and-its-spines">A reconstructed dendrite and its spines</h2>
+<p><img src="../../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S11-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">A spine emerging from a process is a high-confidence dendrite call.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-AXDEN S11.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Spines are Family B: axons never bear them. In dense neuropil, though, you rarely see a whole reconstructed arbor like this — you see one cross-section. Run step 1 of the protocol first: a single clean synapse anywhere in view settles polarity faster than a long scroll, and the side carrying the vesicle cluster is the axon.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Side-by-side discrimination"><p class="slide-number">Slide 11 of 19</p>
+<h2 id="side-by-side-discrimination">Side-by-side discrimination</h2>
+<p><img src="../../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S13-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Which cue would survive lower image quality?</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-AXDEN S13.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Ask learners to name three differences, label each with its family, then ask which they would still see at ten percent weaker membrane contrast. That ordering is their personal cue-robustness ranking — the calibration lab is where they measure it.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Ambiguous process case"><p class="slide-number">Slide 12 of 19</p>
+<h2 id="ambiguous-process-case">Ambiguous process case</h2>
+<p><img src="../../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S14-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Train weighted-evidence reasoning, not binary heuristics.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-AXDEN S14.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Resist stacking more of the same evidence: high confidence requires two cues from different families. If everything available belongs to one family, the honest output is medium confidence with the missing family named.<br>Watch for over-read absence: no ribosomes in a 150–200 nm process is weak evidence, because it may be too thin to show a polyribosome in any one plane. Absence counts only when the feature would have been visible if present.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: What a PSD is: the receiving side of the polarity rule"><p class="slide-number">Slide 13 of 19</p>
+<h2 id="what-a-psd-is-the-receiving-side-of-the-polarity-rule">What a PSD is: the receiving side of the polarity rule</h2>
+<p><img src="../../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S18-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">The dark thickening you see in EM is a protein scaffold on the postsynaptic membrane.</p>
+<p class="source">Source: Sheng M, Kim E (2011), &quot;The Postsynaptic Organization of Synapses,&quot; <em>Cold Spring Harb Perspect Biol</em> 3(12):a005678, Figure 3, doi:10.1101/cshperspect.a005678. © Cold Spring Harbor Laboratory Press, all rights reserved — not openly licensed; confirm permission before this deck is shared outside the course.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The PSD is why Family C works: a density on the receiving membrane means this process is postsynaptic. Then give the exceptions (unit §2) before anyone applies &quot;PSD implies dendrite&quot; mechanically:<br>1. Dendro-dendritic synapses — olfactory bulb, thalamus.<br>2. Axo-axonic synapses — chandelier cells onto the axon initial segment. The AIS is postsynaptic and still an axon; the tell is membrane undercoating plus fasciculated microtubules within roughly 20–60 µm of a soma.<br>3. Presynaptic dendrites in retina (amacrine cells).<br>4. Invertebrate neurons with mixed input/output regions on one neurite.<br>Instructor script: &quot;What tissue am I in? That is a question about the dataset, not the image, and it should be answered once, in the protocol.&quot;</p></details></section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Operational classification protocol"><p class="slide-number">Slide 14 of 19</p>
+<h2 id="operational-classification-protocol">Operational classification protocol</h2>
+<ol>
+<li>Initial morphology read.</li>
+<li>Synaptic/organellar context check.</li>
+<li>Continuity check in adjacent slices.</li>
+<li>Confidence assignment.</li>
+<li>Escalation if evidence conflict persists: unresolved ambiguity goes to the adjudication queue.</li>
+</ol>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The unit&#x27;s local protocol, in cost order: (1) a synapse in view? which side? (2) ribosomes? (3) myelin or fibre bundle? (4) follow through z for 2–3 µm — beaded swellings with vesicles -&gt; axon; steady taper or thinner daughters -&gt; dendrite; a spine -&gt; dendrite. (5) still unresolved -&gt; UNCERTAIN, with the missing cue named.<br>Cue conflict is a detector, not a tie-break: vesicle clusters and ribosomes in the same cortical process is a merge-error alarm. Inspect the path between the two observations for where two processes touch.</p></details></section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Misconceptions to correct"><p class="slide-number">Slide 15 of 19</p>
+<h2 id="misconceptions-to-correct">Misconceptions to correct</h2>
+<ul>
+<li>&quot;Thin process = axon&quot;.</li>
+<li>&quot;One bouton-like feature determines identity&quot;.</li>
+<li>&quot;Ambiguous means annotator failed&quot;.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Activity"><p class="slide-number">Slide 16 of 19</p>
+<h2 id="activity">Activity</h2>
+<p>Classify three ambiguous neurites and submit:</p>
+<ul>
+<li>primary label,</li>
+<li>cue table,</li>
+<li>confidence,</li>
+<li>alternate label and why rejected.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Rubric checkpoint"><p class="slide-number">Slide 17 of 19</p>
+<h2 id="rubric-checkpoint">Rubric checkpoint</h2>
+<ul>
+<li>Pass: label plus two independent cues.</li>
+<li>Strong: includes continuity evidence and uncertainty logic.</li>
+<li>Flag: unsupported hard labels.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: A textbook neuron, for vocabulary"><p class="slide-number">Slide 18 of 19</p>
+<h2 id="a-textbook-neuron-for-vocabulary">A textbook neuron, for vocabulary</h2>
+<p><img src="../../../../assets/images/external/neuron-cell-diagram-en.svg" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Useful for naming compartments. Real neurites in neuropil do not come labelled.</p>
+<p class="source">Source: Wikimedia Commons, File:Complete_neuron_cell_diagram_en.svg. Public domain.</p>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: References and attribution"><p class="slide-number">Slide 19 of 19</p>
+<h2 id="references-and-attribution">References and attribution</h2>
+<ul>
+<li>Figures RIV-AXDEN: Pat Rivlin training materials (MICrONS proofreading deck).</li>
+<li>Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.</li>
+<li>Kasthuri et al. (2015), <em>Cell</em>, doi:10.1016/j.cell.2015.06.054 — process morphology in dense reconstruction.</li>
+</ul>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Brain Data Across Scales | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Brain Data Across Scales</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="02-brain-data-across-scales.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 16 slides</summary><ol><li><a href="#slide-1">1. Brain Data Across Scales</a></li><li><a href="#slide-2">2. Session outcomes (60 minutes)</a></li><li><a href="#slide-3">3. Pedagogical arc</a></li><li><a href="#slide-4">4. Why this matters</a></li><li><a href="#slide-5">5. One sample, four scales</a></li><li><a href="#slide-6">6. Acquisition scale is not analysis scale</a></li><li><a href="#slide-7">7. Scale-selection framework</a></li><li><a href="#slide-8">8. Representation tradeoffs</a></li><li><a href="#slide-9">9. Registration and uncertainty propagation</a></li><li><a href="#slide-10">10. Compute realism for scale planning</a></li><li><a href="#slide-11">11. Misconceptions to correct explicitly</a></li><li><a href="#slide-12">12. Think-Pair-Share (8 min)</a></li><li><a href="#slide-13">13. In-class activity</a></li><li><a href="#slide-14">14. Rubric checkpoint</a></li><li><a href="#slide-15">15. Pair with this unit</a></li><li><a href="#slide-16">16. Bridge</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Brain Data Across Scales"><p class="slide-number">Slide 1 of 16</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Unit 02</span></p>
+<h2 id="brain-data-across-scales">Brain Data Across Scales</h2>
+<p>Almost every practical connectomics decision is a scale decision in disguise.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;&#x27;Should we use SBEM or ssTEM?&#x27; is a scale decision. &#x27;Can we answer this with the existing public dataset?&#x27; is a scale decision. &#x27;Why doesn&#x27;t our tractography match the EM?&#x27; is a scale decision that was made badly, earlier.&quot;</p></details></section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Session outcomes (60 minutes)"><p class="slide-number">Slide 2 of 16</p>
+<h2 id="session-outcomes-60-minutes">Session outcomes (60 minutes)</h2>
+<ul>
+<li>Match biological questions to minimal sufficient spatial/temporal scale.</li>
+<li>Choose representation transitions without losing inference-critical detail.</li>
+<li>Produce a scale-and-compute justification for one analysis plan.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Pedagogical arc"><p class="slide-number">Slide 3 of 16</p>
+<h2 id="pedagogical-arc">Pedagogical arc</h2>
+<ul>
+<li>Concept map: scale as an inference constraint.</li>
+<li>Modeling: question -&gt; data product -&gt; representation -&gt; compute budget.</li>
+<li>Practice: learner selects scale stack for a case study.</li>
+<li>Check: defend tradeoffs under critique.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Why this matters"><p class="slide-number">Slide 4 of 16</p>
+<h2 id="why-this-matters">Why this matters</h2>
+<ul>
+<li>Scale mismatch is a major source of invalid conclusions.</li>
+<li>Resolution, coverage, and compute are coupled design variables.</li>
+<li>&quot;More data&quot; does not fix wrong scale selection.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Separate the three scales practitioners conflate. Acquisition scale: the voxel size your instrument produces. Reconstruction scale: the smallest object you can reliably segment — always coarser; at 4 x 4 x 40 nm you can see a 20 nm cleft but reliably segment neurites down to roughly 50–100 nm. Analysis scale: the unit your conclusions are about.<br>Decision rule: choose the coarsest acquisition scale whose reconstruction scale still resolves every object your analysis depends on. Not the finest you can afford — the coarsest that works.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: One sample, four scales"><p class="slide-number">Slide 5 of 16</p>
+<h2 id="one-sample-four-scales">One sample, four scales</h2>
+<p><img src="../../../../assets/images/content-library/case-studies/h01/01-whole-sample.jpg" alt="" loading="lazy" decoding="async"> <img src="../../../../assets/images/content-library/case-studies/h01/03-cell-field.jpg" alt="" loading="lazy" decoding="async"> <img src="../../../../assets/images/content-library/case-studies/h01/05-neuron-soma.jpg" alt="" loading="lazy" decoding="async"> <img src="../../../../assets/images/content-library/case-studies/h01/07-synapse-level.jpg" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Whole section (~4 mm wedge) → ≈460 µm cell field → ≈29 µm single neuron → ≈3.6 µm at native 4 nm. Same tissue throughout.</p>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Each panel is roughly four times closer than the last, and it is the same piece of human temporal cortex throughout. At each step, ask what is visible here — and what is fundamentally unobservable at this scale.&quot;<br>Left to right: somata and vessels resolve at the cell field; nuclear envelope, nucleolus and myelinated axons in cross-section at the single neuron; membranes, mitochondria and vesicle clouds only at the native 4 nm. A spine-neck question needs the last panel everywhere in the volume, which is what makes it a petabyte problem.</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Acquisition scale is not analysis scale"><p class="slide-number">Slide 6 of 16</p>
+<h2 id="acquisition-scale-is-not-analysis-scale">Acquisition scale is not analysis scale</h2>
+<p><img src="../../../../assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S05-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Distinguish acquisition scale from analysis target scale.</p>
+<p class="source">Source: assets_outreach source decks, Module12 L2 S05. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;This is the bridge between scales, and it is exactly where scale leakage is manufactured. What claim is being carried across the join?&quot;<br>Ask whether the transfer comes with a stated registration residual and its maximum, not just its mean. Worked instance of the rule: &quot;fraction of inputs onto spines vs shafts&quot; puts the analysis scale at the spine neck (50–200 nm), which forces EM. &quot;Does area A project to area B at all&quot; puts it at the axon bundle, where light-sheet at 1 µm is the correct choice — about five orders of magnitude cheaper.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Scale-selection framework"><p class="slide-number">Slide 7 of 16</p>
+<h2 id="scale-selection-framework">Scale-selection framework</h2>
+<ol>
+<li>State estimand (what you will measure).</li>
+<li>Determine smallest scale that resolves that estimand.</li>
+<li>Verify coverage supports statistical claims.</li>
+<li>Define acceptable uncertainty due to downsampling/registration.</li>
+</ol>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Anchor step 2 in the modality chart: resolution, volume and throughput form a budget — you may choose two. FIB-SEM buys resolution and gives up volume. Light-sheet buys volume and throughput and gives up resolution. Multibeam ssSEM (61 or 91 beams in parallel) buys resolution and volume by throwing throughput engineering at the problem, which is why 1 mm³ became feasible.<br>Check-yourself case: thousands of L2/3 neurons, does each project to AL and to PM? That is barcoded projection mapping (MAPseq/BARseq), not EM — it needs statistical power over cells, not geometry within a cell.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Representation tradeoffs"><p class="slide-number">Slide 8 of 16</p>
+<h2 id="representation-tradeoffs">Representation tradeoffs</h2>
+<ul>
+<li>Raw volume: maximal fidelity, expensive queries.</li>
+<li>Segmentation: workable objects, boundary errors matter.</li>
+<li>Skeleton: topology-focused, diameter context reduced.</li>
+<li>Graph: fast analytics, spatial nuance largely removed.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Conversions are lossy and usually one-way: volume -&gt; segmentation -&gt; skeleton/mesh -&gt; graph can remove the geometry your question needed. Typical sizes for one cortical neuron: volume GB; mesh 10–100 MB; skeleton 0.1–5 MB; graph bytes.<br>Which representation for which question: &quot;how many synapses between A and B&quot; -&gt; graph; &quot;where on the dendrite&quot; -&gt; skeleton plus synapse coordinates; &quot;are these spines larger&quot; -&gt; mesh; &quot;is this a merge error&quot; -&gt; volume, always.<br>The rule that saves projects: decide which representation the endpoint needs before the pipeline runs, and archive the next-richer one. A reviewer who asks whether a motif enrichment is explained by proximity cannot be answered from a graph with no geometry.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Registration and uncertainty propagation"><p class="slide-number">Slide 9 of 16</p>
+<h2 id="registration-and-uncertainty-propagation">Registration and uncertainty propagation</h2>
+<ul>
+<li>Report transform model and residuals.</li>
+<li>Track uncertainty by region, not only global means.</li>
+<li>Carry registration confidence into downstream confidence intervals.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Pipeline from unit §4: vasculature is the best EM&lt;-&gt;LM anchor in cortex; soma positions second; layer boundaries are weak. Fit the lowest-complexity transform that works — a flexible enough warp will align anything. Hold out anchors. A mean residual of 3 µm can hide a 40 µm error in one corner.<br>Anisotropy warning: on a 4 x 4 x 40 nm stack, an isotropic smoothing kernel or distance metric is silently wrong by a factor of 10 in z. Check every library call for voxel spacing.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Compute realism for scale planning"><p class="slide-number">Slide 10 of 16</p>
+<h2 id="compute-realism-for-scale-planning">Compute realism for scale planning</h2>
+<ul>
+<li>Storage and IO growth are nonlinear with resolution/coverage.</li>
+<li>Query latency determines practical iteration speed.</li>
+<li>Budgeting is part of scientific method feasibility.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>For a 1 mm³ ssTEM volume (~1.6 PB raw): aligned pyramid +30–50%; affinity maps ~1x raw; segmentation labels 0.1–0.5x; meshes 1–10 TB; skeletons 10–100 GB; synapse table ~50–200 GB; edit history grows without bound.<br>Instructor script: &quot;A petabyte in cold storage is cheap. A 200 GB table that must answer 50 concurrent interactive queries is the part that needs engineering. Budget for query load, not just capacity.&quot; Unit 04 picks this up.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Misconceptions to correct explicitly"><p class="slide-number">Slide 11 of 16</p>
+<h2 id="misconceptions-to-correct-explicitly">Misconceptions to correct explicitly</h2>
+<ul>
+<li>&quot;Higher resolution always better.&quot;</li>
+<li>&quot;Graph conversion is lossless enough for any question.&quot;</li>
+<li>&quot;Registration error averages out automatically.&quot;</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Think-Pair-Share (8 min)"><p class="slide-number">Slide 12 of 16</p>
+<h2 id="think-pair-share-8-min">Think-Pair-Share (8 min)</h2>
+<p>Prompt: choose one hypothesis and argue for the <em>minimum</em> sufficient scale.</p>
+<ul>
+<li>Think: write one scale choice and one risk.</li>
+<li>Pair: challenge each other&#x27;s coverage assumptions.</li>
+<li>Share: class votes on most defensible tradeoff.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Good seed for the share-out, from the unit: a tractography paper reports a &quot;structural connection&quot; between two regions; an EM study of one region finds no axons from the other. Both can be correct. Tractography streamlines are model output, not observed axons; an EM volume samples a small region at some detection sensitivity. Neither claim, as usually written, states its sampling and inference model clearly enough to be compared.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: In-class activity"><p class="slide-number">Slide 13 of 16</p>
+<h2 id="in-class-activity">In-class activity</h2>
+<p>Create a one-page scale plan:</p>
+<ul>
+<li>question,</li>
+<li>estimand,</li>
+<li>acquisition scale,</li>
+<li>analysis representation,</li>
+<li>compute/storage estimate,</li>
+<li>boundary statement.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>For the rejected alternatives, hold learners to the unit&#x27;s standard: &quot;too low resolution&quot; is not a reason. &quot;Cannot resolve a 1 µm AIS segment&#x27;s synaptic input, and cannot distinguish symmetric from asymmetric synapses&quot; is.</p></details></section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Rubric checkpoint"><p class="slide-number">Slide 14 of 16</p>
+<h2 id="rubric-checkpoint">Rubric checkpoint</h2>
+<ul>
+<li>Pass: scale and representation choices are consistent with estimand.</li>
+<li>Strong: explicit uncertainty and compute tradeoff documented.</li>
+<li>Flag: claims exceed observable detail at chosen scale.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Pair with this unit"><p class="slide-number">Slide 15 of 16</p>
+<h2 id="pair-with-this-unit">Pair with this unit</h2>
+<ul>
+<li>Kasthuri et al. (2015), <em>Cell</em>, doi:10.1016/j.cell.2015.06.054 — what dense, saturated reconstruction means and costs.</li>
+<li>MICrONS Consortium (2025), <em>Nature</em>, doi:10.1038/s41586-025-08790-w — EM co-registered with two-photon imaging.</li>
+<li>Shapson-Coe et al. (2024), <em>Science</em>, doi:10.1126/science.adk4858 — H01: data scale and processing at 1 mm³.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Bridge"><p class="slide-number">Slide 16 of 16</p>
+<h2 id="bridge">Bridge</h2>
+<p>Next unit: EM prep and imaging decisions that set artifact and quality limits.</p>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

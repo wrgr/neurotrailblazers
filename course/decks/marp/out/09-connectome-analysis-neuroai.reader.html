@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connectome Analysis and NeuroAI | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Connectome Analysis and NeuroAI</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="09-connectome-analysis-neuroai.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 18 slides</summary><ol><li><a href="#slide-1">1. Connectome Analysis and NeuroAI</a></li><li><a href="#slide-2">2. Session outcomes (60 minutes)</a></li><li><a href="#slide-3">3. Pedagogical arc</a></li><li><a href="#slide-4">4. Motivation and framing</a></li><li><a href="#slide-5">5. Representation framing</a></li><li><a href="#slide-6">6. Limits of reverse-engineering claims</a></li><li><a href="#slide-7">7. From connectome to model: the strongest claim available</a></li><li><a href="#slide-8">8. Motif search context</a></li><li><a href="#slide-9">9. A motif, written as a reviewable query</a></li><li><a href="#slide-10">10. Complexity constraints and feasibility</a></li><li><a href="#slide-11">11. Historical benchmark caution</a></li><li><a href="#slide-12">12. Comparative analysis caveats</a></li><li><a href="#slide-13">13. The error-sensitivity check you should always run</a></li><li><a href="#slide-14">14. Misconceptions to correct</a></li><li><a href="#slide-15">15. Activity</a></li><li><a href="#slide-16">16. Rubric checkpoint</a></li><li><a href="#slide-17">17. The feed-forward motif</a></li><li><a href="#slide-18">18. References and attribution</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Connectome Analysis and NeuroAI"><p class="slide-number">Slide 1 of 18</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Unit 09</span></p>
+<h2 id="connectome-analysis-and-neuroai">Connectome Analysis and NeuroAI</h2>
+<p>Choosing the null is the scientific step; running the test is bookkeeping.</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Session outcomes (60 minutes)"><p class="slide-number">Slide 2 of 18</p>
+<h2 id="session-outcomes-60-minutes">Session outcomes (60 minutes)</h2>
+<ul>
+<li>Formulate a motif/graph hypothesis with explicit estimand.</li>
+<li>Choose and justify a null model.</li>
+<li>Report bounded claims with uncertainty and reproducibility metadata.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Pedagogical arc"><p class="slide-number">Slide 3 of 18</p>
+<h2 id="pedagogical-arc">Pedagogical arc</h2>
+<ul>
+<li>Hook: why graph/motif results are often overclaimed.</li>
+<li>Model: hypothesis -&gt; query -&gt; null -&gt; interpretation.</li>
+<li>Practice: design and critique analysis plans.</li>
+<li>Check: one bounded claim + non-claim pair.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Motivation and framing"><p class="slide-number">Slide 4 of 18</p>
+<h2 id="motivation-and-framing">Motivation and framing</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Structure can constrain models; it does not automatically explain intelligence.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S10. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Hold this motivating question against an asymmetry. Machine learning has given connectomics far more than the reverse so far — dense segmentation, synapse detection, error detection and proofreading candidate generation are all learned systems, and none of the petascale datasets would exist without them. Saying that plainly is part of writing about NeuroAI credibly.&quot;</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Representation framing"><p class="slide-number">Slide 5 of 18</p>
+<h2 id="representation-framing">Representation framing</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Define representation before inference.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S11. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Before any statistic, six construction choices (unit §1): what is a node (cell, type, compartment); what is an edge (and its synapse threshold); what is the weight; is it directed; which cells are included; where is the boundary. Each changes the answer. A graph is a versioned artifact with recorded parameters, not a script someone ran once. Inclusion criteria are the highest-leverage and least-reported of the six.</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Limits of reverse-engineering claims"><p class="slide-number">Slide 6 of 18</p>
+<h2 id="limits-of-reverse-engineering-claims">Limits of reverse-engineering claims</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Teach boundary statements as required output.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S12. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>What a connectome does not give machine learning (unit §5): not weights — synapse count is a proxy for strength, and sign, short-term dynamics, plasticity state and neuromodulatory context are absent; not dynamics — a static diagram from one animal at one moment; not a runnable brain; and not, so far, a competitive advantage in mainstream deep learning.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: From connectome to model: the strongest claim available"><p class="slide-number">Slide 7 of 18</p>
+<h2 id="from-connectome-to-model-the-strongest-claim-available">From connectome to model: the strongest claim available</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S13-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Hypothesis → query → null comparison → interpretation → reproducibility package.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S13. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The image is the techtalk&#x27;s framing of an embodied agent; the teaching point is the pipeline beneath it. The strongest current result type is a connectome-constrained model: fix connectivity from the measurement, fit what remains, predict responses that are then tested. This has been done in the fly visual system. That is the version where the connectome removes free parameters — which is exactly what makes the model falsifiable — rather than decorating a figure.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Motif search context"><p class="slide-number">Slide 8 of 18</p>
+<h2 id="motif-search-context">Motif search context</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S24-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">A motif definition, a host graph, and the query results. Candidate motifs are not validated mechanisms.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S24. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>A motif is enriched only relative to a null. Ask what would count as the uninteresting explanation — degree heterogeneity, spatial proximity or cell-type composition — and require the null to preserve it.<br>Worked example (unit §2): 100 neurons, 1,200 edges, 210 reciprocal pairs. Erdős–Rényi expects 72.7 -&gt; 2.9x enrichment. Degree-preserving expects ~150 -&gt; 1.4x, z = 5.0. Degree- and distance-preserving expects ~185 -&gt; 1.14x, z = 1.8, p ~ 0.07. Same data: &quot;2.9-fold enrichment, p &lt; 10^-6&quot; or &quot;no detectable effect&quot;, depending on a choice made before any test ran. Pre-register the null, or report under all three.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: A motif, written as a reviewable query"><p class="slide-number">Slide 9 of 18</p>
+<h2 id="a-motif-written-as-a-reviewable-query">A motif, written as a reviewable query</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S42-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Human-readable queries reduce hidden assumptions.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S42. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>The real value of a declarative motif query is that the motif definition becomes an explicit, reviewable artifact instead of a description in prose — which turns &quot;pre-register the motif and the null&quot; into a practical instruction. Note what it does not do: it returns counts against whatever graph you built, carrying every construction choice, including a synapse threshold that may have quietly removed most of your edges.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Complexity constraints and feasibility"><p class="slide-number">Slide 10 of 18</p>
+<h2 id="complexity-constraints-and-feasibility">Complexity constraints and feasibility</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S31-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Search time against edge count for several motifs. Computational limits are part of methodological validity.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S31. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Subgraph isomorphism is the computational core, but in practice the hard part is statistical rather than algorithmic. There are 16 directed triad classes; testing all 16 at alpha = 0.05 expects about one false positive, and triad counts are strongly correlated with one another — so treating them as independent overstates confidence. That argues for permutation-based inference, which respects the dependence. Report how many tests you ran, including the ones you did not report.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Historical benchmark caution"><p class="slide-number">Slide 11 of 18</p>
+<h2 id="historical-benchmark-caution">Historical benchmark caution</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S32-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Use old benchmark values as context, not current truth.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S32. Historical/context visual; benchmark claims are historical unless independently revalidated.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Read benchmarks the way the atlas advises: scores on small, clean volumes systematically overstate performance on production data with artifacts, rare morphologies and volume boundaries. The question for a project is not leaderboard position but error rate on your tissue — a pilot sub-volume of your own data.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Comparative analysis caveats"><p class="slide-number">Slide 12 of 18</p>
+<h2 id="comparative-analysis-caveats">Comparative analysis caveats</h2>
+<p><img src="../../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Cross-dataset claims require aligned preprocessing and null assumptions.</p>
+<p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S44. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Comparisons are the most durable result type in this field — across development, as in the C. elegans developmental series, or across species — because a shared reconstruction bias partly cancels between the two sides. The condition is that both sides were built with the same construction parameters and, where relevant, the same materialization version; otherwise the comparison measures the pipeline rather than the biology.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: The error-sensitivity check you should always run"><p class="slide-number">Slide 13 of 18</p>
+<h2 id="the-error-sensitivity-check-you-should-always-run">The error-sensitivity check you should always run</h2>
+<ol>
+<li>State your measured merge and split rates (Unit 08 validation).</li>
+<li>Apply random merges and splits at those rates to your graph.</li>
+<li>Recompute the motif statistic across many perturbed graphs.</li>
+<li>Report the spread as an error band on the effect size.</li>
+</ol>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Why this matters (unit §3): merges fuse two partner lists and manufacture triangles among partners never connected through one cell — they inflate dense motifs superlinearly in the error rate. Splits mostly remove edges, deflating all motifs roughly proportionally. The two do not cancel; the residual bias points toward more dense motifs, the direction of the interesting result.<br>Instructor script: &quot;If the band crosses the null expectation, your result is not robust to your own measured error rate. Say so before a reviewer does. It is a few dozen lines of code.&quot;</p></details></section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Misconceptions to correct"><p class="slide-number">Slide 14 of 18</p>
+<h2 id="misconceptions-to-correct">Misconceptions to correct</h2>
+<ul>
+<li>&quot;Significant motif enrichment implies mechanism.&quot;</li>
+<li>&quot;One null model is enough for any claim.&quot;</li>
+<li>&quot;Query scripts without provenance are acceptable.&quot;</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>On the second: someone objects that a distance-preserving null &quot;throws away the biology&quot;. It depends on the hypothesis. Testing for specific reciprocal wiring beyond generic spatial structure: control distance. Comparing reciprocity between two circuits: a within-circuit distance null may over-control. Asking what generates the reciprocity: compare generative models rather than pick one null. Write out in words what would count as the uninteresting explanation before choosing.</p></details></section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Activity"><p class="slide-number">Slide 15 of 18</p>
+<h2 id="activity">Activity</h2>
+<p>Design one analysis card with:</p>
+<ul>
+<li>hypothesis,</li>
+<li>estimand,</li>
+<li>null model,</li>
+<li>success criterion,</li>
+<li>non-claim,</li>
+<li>provenance fields.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Rubric checkpoint"><p class="slide-number">Slide 16 of 18</p>
+<h2 id="rubric-checkpoint">Rubric checkpoint</h2>
+<ul>
+<li>Pass: coherent hypothesis-null-estimand chain.</li>
+<li>Strong: includes sensitivity analysis and boundary statement.</li>
+<li>Flag: result-first narrative without methodological controls.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: The feed-forward motif"><p class="slide-number">Slide 17 of 18</p>
+<h2 id="the-feed-forward-motif">The feed-forward motif</h2>
+<p><img src="../../../../assets/images/external/feed-forward-motif.gif" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">One of the 16 directed triad classes, drawn on its own.</p>
+<p class="source">Source: Wikimedia Commons user Marashie, File:Feed-forward_motif.GIF. CC BY-SA 3.0.</p>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: References and attribution"><p class="slide-number">Slide 18 of 18</p>
+<h2 id="references-and-attribution">References and attribution</h2>
+<ul>
+<li>Figures: 2021 neuroAI techtalk (historical/context visuals); interpret benchmark claims as historical.</li>
+<li>Januszewski et al. (2018), <em>Nature Methods</em>, doi:10.1038/s41592-018-0049-4.</li>
+<li>Bassett, Zurn &amp; Gold (2018), <em>Nature Reviews Neuroscience</em>, doi:10.1038/s41583-018-0038-8 — model types and claim framing.</li>
+</ul>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

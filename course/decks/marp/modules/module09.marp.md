@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 09 · NeuroTrailblazers"
+footer: "Module 09 · Nanoscale"
 title: "Module 09: Neuron Morphology and Skeletonization"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 09</span>
+<span class="eyebrow">Nanoscale · Module 09</span>
 
 # Neuron Morphology and Skeletonization
 Teaching Deck
@@ -24,23 +24,19 @@ Teaching Deck
 - Relate morphology metrics to biological interpretation
 - Report morphology uncertainty and classification limits
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Produce a skeleton-based morphology summary with at least three descriptors and one explicit limitation.
 
+
 ---
 
 ## Concept Focus
 ### 1) What is skeletonization and why do we need it?
 A segmented neuron occupies millions of voxels in the EM volume. To analyze its morphology efficiently, we reduce it to a **skeleton**: a tree graph where nodes represent points along the neurite centerline and edges represent the path between them. Skeletons compress a neuron's 3D structure from gigabytes to kilobytes while preserving topology (branching pattern, path lengths, connectivity) — at the cost of surface geometry and spine shape, which are discarded.
+
 
 ---
 
@@ -49,7 +45,13 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 - Quality-check the skeleton: prune spurious branches, verify branch points, check for disconnected fragments.
 - Compute descriptors: cable length, branch points, Strahler number, Sholl profile, spine density.
 - Compare against reference patterns: does this neuron match the expected morphology for its putative cell type?
+
+
+---
+
+## Core Workflow (continued)
 - Report interpretation confidence: which descriptors are robust, which are affected by reconstruction quality?
+
 
 ---
 
@@ -58,8 +60,6 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 - 10:00-24:00 | Skeleton extraction demo
 - 24:00-38:00 | Descriptor calculation
 - 38:00-50:00 | Interpretation and caveats
-- 50:00-60:00 | Competency check
-
 <!--
 Pre-class preparation (10 min async)
   Review the data formats content library entry (skeletons section)
@@ -96,16 +96,52 @@ Pre-class preparation (10 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 50:00-60:00 | Competency check
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** a skeleton is a lossless summary of a neuron.
 - **Misconception guardrail:** morphological measurements are comparable across cells that were proofread to different levels.
 - **Misconception guardrail:** total dendritic length is a property of the neuron itself, independent of how it was reconstructed.
 - **Misconception guardrail:** a cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.
 
+
+---
+
+<!-- _class: visual-lesson -->
+## A skeleton makes measurement choices explicit
+<p class="visual-lead">Synthetic planar tree. Coordinates are in micrometres.</p>
+<div class="visual-tree"><p class="tree-root"><strong>A (0, 0)</strong><br>Root</p><p class="tree-stem">A–B: 3 µm</p><p class="tree-fork"><strong>B (0, 3)</strong><br>Branch point</p><div class="tree-children"><p><strong>C (−4, 3)</strong><br>B–C: 4 µm</p><p><strong>D (4, 3)</strong><br>B–D: 4 µm</p></div></div>
+<p class="visual-question"><strong>Discuss:</strong> Compute total cable length and both root-to-tip path lengths.</p>
+<p class="source">Synthetic fixture; exact geometry checked by scripts/check_visual_design.rb.</p>
+<!--
+Visual description and discussion guidance:
+Root A is (0,0), B is (0,3), C is (-4,3), and D is (4,3). Edges A–B, B–C and B–D measure 3, 4 and 4 micrometres. Total length is 11; each root-to-tip path is 7. There is one branching node, B, and two terminal nodes, C and D. Root-to-tip Euclidean distance is 5, so tortuosity is 7/5 = 1.4 under that definition.
+-->
+
+
+---
+
+<!-- _class: visual-lesson -->
+## A missing branch changes the story
+<p class="visual-lead">Use the synthetic tree on the previous slide.</p>
+<ol class="visual-steps"><li><span class="step-number" aria-hidden="true">1</span><h3>Complete example</h3><p>Three edges: total length 11 µm.</p></li><li><span class="step-number" aria-hidden="true">2</span><h3>Truncated example</h3><p>Remove B–D: measured length is 7 µm.</p></li><li><span class="step-number" aria-hidden="true">3</span><h3>Report the limit</h3><p>The lower value describes the observed reconstruction.</p></li></ol>
+<p class="visual-question"><strong>Discuss:</strong> Does a lower measurement prove a smaller biological arbor?</p>
+<p class="source">Illustrative teaching scenario; see this module’s lesson and worked example.</p>
+<!--
+Visual description and discussion guidance:
+Removing the four-micrometre B–D edge changes the observed total from 11 to 7. That does not establish that the biological cell had a smaller arbor. Report what was reconstructed and how missing structure affects interpretation.
+-->
+
+
 ---
 
 ## Studio Activity
 **Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
+
 
 ---
 
@@ -114,43 +150,51 @@ Pre-class preparation (10 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - Valid skeleton and descriptor set for all 10 neurons, with at least 3 descriptors each.
 - Every classification carries a stated evidence chain, not just a label.
 - At least one explicit measurement limitation named, tied to a specific reconstruction issue.
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Descriptors partitioned into robust versus reconstruction-sensitive for each borderline cell.
 - Mismatches between morphological and synapse-based calls traced to a root cause (truncation, split, spurious branches) rather than logged as disagreement.
 - Per-cell completeness estimated and reported next to every absolute measurement.
+
+
+---
+
+## Assessment Rubric (continued)
 - Ratios computed on contained compartments wherever truncation is present.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure to flag**
-
 - Descriptor list without biological context — numbers with no statement of what they mean for identity.
 - Classification from a single descriptor when the others disagree.
 - Absolute cable length or arbor volume reported for truncated cells without a lower-bound qualifier.
+
 
 ---
 
 ## Exit Ticket
 Explain one morphology feature that could be confounded by reconstruction quality.
 
+
 ---
 
 ## References (Instructor)
 - Use module references listed on the module page.
+
 
 ---
 
@@ -158,3 +202,17 @@ Explain one morphology feature that could be confounded by reconstruction qualit
 - Module page: /modules/module09/
 - Session kit: /teaching/sessions/module09/
 - Worksheet: /assets/worksheets/module09/module09-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module09.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module09/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

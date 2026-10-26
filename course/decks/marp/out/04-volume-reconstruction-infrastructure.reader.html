@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Volume Reconstruction Infrastructure | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Volume Reconstruction Infrastructure</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="04-volume-reconstruction-infrastructure.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 17 slides</summary><ol><li><a href="#slide-1">1. Volume Reconstruction Infrastructure</a></li><li><a href="#slide-2">2. Session outcomes (60 minutes)</a></li><li><a href="#slide-3">3. Pedagogical arc</a></li><li><a href="#slide-4">4. Reference architecture</a></li><li><a href="#slide-5">5. Pipeline overview: from image to labels</a></li><li><a href="#slide-6">6. Service decomposition: ingest client and API</a></li><li><a href="#slide-7">7. Real data: raw EM vs automated segmentation</a></li><li><a href="#slide-8">8. Serving: a public volumetric archive</a></li><li><a href="#slide-9">9. Data contracts and lineage (minimum fields)</a></li><li><a href="#slide-10">10. Orchestration essentials</a></li><li><a href="#slide-11">11. Reliability SLOs tied to science</a></li><li><a href="#slide-12">12. Failure modes and containment</a></li><li><a href="#slide-13">13. Tabletop exercise (10 min)</a></li><li><a href="#slide-14">14. Activity deliverable</a></li><li><a href="#slide-15">15. Rubric checkpoint</a></li><li><a href="#slide-16">16. Pair with this unit</a></li><li><a href="#slide-17">17. Bridge</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Volume Reconstruction Infrastructure"><p class="slide-number">Slide 1 of 17</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Unit 04</span></p>
+<h2 id="volume-reconstruction-infrastructure">Volume Reconstruction Infrastructure</h2>
+<p>An editable graph over immutable atoms — and why every number you report needs a version.</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Session outcomes (60 minutes)"><p class="slide-number">Slide 2 of 17</p>
+<h2 id="session-outcomes-60-minutes">Session outcomes (60 minutes)</h2>
+<ul>
+<li>Design a reproducible ingest-to-serving architecture.</li>
+<li>Define lineage, release, and rollback requirements.</li>
+<li>Select reliability metrics (SLOs) aligned to scientific quality.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Pedagogical arc"><p class="slide-number">Slide 3 of 17</p>
+<h2 id="pedagogical-arc">Pedagogical arc</h2>
+<ul>
+<li>Hook: how infrastructure failure becomes scientific failure.</li>
+<li>Model: architecture and data contracts.</li>
+<li>Practice: failure-mode tabletop exercise.</li>
+<li>Check: release-gate design defense.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Reference architecture"><p class="slide-number">Slide 4 of 17</p>
+<h2 id="reference-architecture">Reference architecture</h2>
+<p>Ingest -&gt; Transform -&gt; Inference -&gt; Post-process -&gt; Serving</p>
+<p>Reliability and lineage are first-class scientific requirements.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Expand the five boxes into the unit&#x27;s eight stages, naming the artifact each produces — the artifact is what you debug. Ingest: an immutable, checksummed archive (the only irreplaceable asset). Stitching and alignment: a volume plus a versioned transform stack. Boundary/affinity prediction: a per-voxel map, computed over overlapping blocks. Supervoxels: deliberately over-segmented, immutable atoms. Agglomeration: a grouping of atoms, not a new labelling. Derived geometry: meshes, skeletons, per-object stats. Synapse detection: a table keyed to supervoxel IDs. Annotation and serving: Neuroglancer, proofreading, versioned tables.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Pipeline overview: from image to labels"><p class="slide-number">Slide 5 of 17</p>
+<h2 id="pipeline-overview-from-image-to-labels">Pipeline overview: from image to labels</h2>
+<p><img src="../../../../assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S04-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Where would you place mandatory quality gates?</p>
+<p class="source">Source: assets_outreach source decks, Module14 L1 S04. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;On the left, image. On the right, labels. Everything between them is the pipeline. Where would you put a gate that stops the line?&quot;<br>Expected answers: after alignment (residual distribution and maximum, per region — not a global mean); after affinity prediction (look for errors whose spatial distribution matches the block grid, the signature of too little overlap); before release (quality metrics from Unit 08, reviewed as a release candidate).<br>A 0.1-voxel-per-section alignment bias over 20,000 sections is a 2,000-voxel drift — that is why alignment gets a gate.</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Service decomposition: ingest client and API"><p class="slide-number">Slide 6 of 17</p>
+<h2 id="service-decomposition-ingest-client-and-api">Service decomposition: ingest client and API</h2>
+<p><img src="../../../../assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S12-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Emphasize idempotence and region-scoped replay.</p>
+<p class="source">Source: assets_outreach source decks, Module14 L1 S12. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Separate services exist because the consumers want incompatible things.&quot; A proofreader scrolling z wants chunks elongated in z; an analysis job wants large sequential chunks; a synapse query wants small chunks and a good spatial index. Storing the data several times is the answer to &quot;why is this here three times?&quot;, not redundancy.<br>Idempotence: re-running a stage on the same inputs and parameters gives the same output — GPU non-determinism, unpinned dependencies and unseeded randomness all break it. Region-scoped replay: a pipeline whose only recovery is &quot;re-run everything&quot; cannot fix a local defect at petascale.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Real data: raw EM vs automated segmentation"><p class="slide-number">Slide 7 of 17</p>
+<h2 id="real-data-raw-em-vs-automated-segmentation">Real data: raw EM vs automated segmentation</h2>
+<div class="cols">
+<div>
+<p><img src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="" loading="lazy" decoding="async"></p>
+</div>
+<div>
+<ul>
+<li>Flood-filling network output: 197 distinct objects in this one field.</li>
+<li>Every colour is an object the pipeline asserts is continuous in 3D.</li>
+</ul>
+</div>
+</div>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;Pick one colour and follow it. The pipeline is asserting that object is one continuous piece of one cell, across sections you cannot see on this slide.&quot;<br>Architecturally, each of those objects is a connected component of a graph whose nodes are immutable supervoxels. A merge is adding an edge — microseconds, not gigabytes. A split is removing edges via a minimum cut. Every edit is an append-only log entry with author and timestamp.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Serving: a public volumetric archive"><p class="slide-number">Slide 8 of 17</p>
+<h2 id="serving-a-public-volumetric-archive">Serving: a public volumetric archive</h2>
+<p><img src="../../../../assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S19-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">BossDB, as presented in the source deck (2017-era). Make clear the distinction between data plane and control plane.</p>
+<p class="source">Source: assets_outreach source decks, Module14 L1 S19. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>This is a historical slide: treat the page shown as context, not as current documentation. The data plane moves voxels and tables; the control plane decides versions, permissions and releases.<br>The analyst&#x27;s consequence, and the most important sentence in the unit: object IDs are not stable. A root ID identifies an object as of a moment in time. An ID in a notebook, paper or caption is meaningless without a materialization version or timestamp — and the failure is silent: the code runs, it just answers a different question than last week.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Data contracts and lineage (minimum fields)"><p class="slide-number">Slide 9 of 17</p>
+<h2 id="data-contracts-and-lineage-minimum-fields">Data contracts and lineage (minimum fields)</h2>
+<ul>
+<li>input artifact IDs</li>
+<li>code/model version</li>
+<li>parameter hash</li>
+<li>timestamp + executor identity</li>
+<li>output artifact IDs</li>
+</ul>
+<p>Without this, outputs are not auditable science.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Unit §4 adds: container image digest, random seeds, wall-clock and resource usage. And for analyses: the materialization version is a first-class part of the methods section, like a genome build.<br>Worked example from the unit: a figure reports 1,412 inputs; re-running today gives 1,530 for &quot;the same cell&quot;. Pinning the query to candidate versions shows the figure used materialization 795; the edit log shows merges that reattached distal dendrite, carrying the 118 extra inputs. Both numbers are correct — for different objects. The original claim was under-specified, not wrong.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Orchestration essentials"><p class="slide-number">Slide 10 of 17</p>
+<h2 id="orchestration-essentials">Orchestration essentials</h2>
+<ul>
+<li>Idempotent jobs.</li>
+<li>Retry policy with bounded backoff.</li>
+<li>Region-scoped reprocessing.</li>
+<li>Deterministic build environment.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Reliability SLOs tied to science"><p class="slide-number">Slide 11 of 17</p>
+<h2 id="reliability-slos-tied-to-science">Reliability SLOs tied to science</h2>
+<ul>
+<li>Throughput (volume/day)</li>
+<li>Failure rate and MTTR</li>
+<li>Quality gate pass rate</li>
+<li>Cost envelope per released volume</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Cost envelope, from unit §5 for 1 mm³: raw archive ~1.5 PB (cold); aligned pyramid ~2 PB (hot); affinities ~1.5 PB (delete after supervoxels, once you will not re-agglomerate); synapse table 50–200 GB, the hottest table. GPU inference: 1.5e15 voxels at 1e7 voxels/s/GPU is about 1,736 GPU-days — roughly 3.5 days on 500 GPUs, and you will run it 3–5 times.<br>Instructor script: &quot;But the dominant cost is none of these. It is proofreading labor.&quot; Also name the traps: egress, unsharded small objects, forgotten intermediates, idle hot storage.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Failure modes and containment"><p class="slide-number">Slide 12 of 17</p>
+<h2 id="failure-modes-and-containment">Failure modes and containment</h2>
+<ul>
+<li>Non-deterministic rebuilds -&gt; irreproducible claims.</li>
+<li>Provenance drift -&gt; untraceable figures/tables.</li>
+<li>Hotspot bottlenecks -&gt; stale releases and biased datasets.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Tabletop exercise (10 min)"><p class="slide-number">Slide 13 of 17</p>
+<h2 id="tabletop-exercise-10-min">Tabletop exercise (10 min)</h2>
+<p>Given a failed post-process stage:</p>
+<ol>
+<li>decide rollback scope,</li>
+<li>identify required lineage fields,</li>
+<li>define release hold criteria.</li>
+</ol>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>A good follow-up from the unit&#x27;s check-yourself: a collaborator sends 200 neuron IDs from six months ago. Do not query them against the current segmentation. Ask which version they came from; map them forward through the lineage service; report the churn (how many mapped 1:1, split, merged); and if exact reproduction is required, query the old version directly.</p></details></section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Activity deliverable"><p class="slide-number">Slide 14 of 17</p>
+<h2 id="activity-deliverable">Activity deliverable</h2>
+<p>One pipeline diagram including:</p>
+<ul>
+<li>gate locations,</li>
+<li>rollback triggers,</li>
+<li>mandatory lineage schema,</li>
+<li>on-call decision path.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Rubric checkpoint"><p class="slide-number">Slide 15 of 17</p>
+<h2 id="rubric-checkpoint">Rubric checkpoint</h2>
+<ul>
+<li>Pass: rollback and lineage are explicit and feasible.</li>
+<li>Strong: failure detection links directly to release policy.</li>
+<li>Flag: architecture diagram without decision logic.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Pair with this unit"><p class="slide-number">Slide 16 of 17</p>
+<h2 id="pair-with-this-unit">Pair with this unit</h2>
+<ul>
+<li>Januszewski et al. (2018), <em>Nature Methods</em>, doi:10.1038/s41592-018-0049-4 — flood-filling networks.</li>
+<li>MICrONS Consortium (2025), <em>Nature</em>, doi:10.1038/s41586-025-08790-w — CAVE-served, versioned release.</li>
+<li>Dorkenwald et al. (2024), <em>Nature</em>, doi:10.1038/s41586-024-07558-y — community proofreading on a versioned graph.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Bridge"><p class="slide-number">Slide 17 of 17</p>
+<h2 id="bridge">Bridge</h2>
+<p>Next unit: ultrastructure interpretation on top of trusted reconstruction output.</p>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

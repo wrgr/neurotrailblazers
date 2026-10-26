@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Big Data in Connectomics | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Big Data in Connectomics</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module12.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 21 slides</summary><ol><li><a href="#slide-1">1. Big Data in Connectomics</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Concept Focus (continued)</a></li><li><a href="#slide-6">6. Core Workflow</a></li><li><a href="#slide-7">7. Core Workflow (continued)</a></li><li><a href="#slide-8">8. Run of Show (60 min)</a></li><li><a href="#slide-9">9. Run of Show (60 min) (continued)</a></li><li><a href="#slide-10">10. Misconceptions to Watch</a></li><li><a href="#slide-11">11. Misconceptions to Watch (continued)</a></li><li><a href="#slide-12">12. Studio Activity</a></li><li><a href="#slide-13">13. Activity Output Checklist</a></li><li><a href="#slide-14">14. Assessment Rubric</a></li><li><a href="#slide-15">15. Assessment Rubric</a></li><li><a href="#slide-16">16. Assessment Rubric (continued)</a></li><li><a href="#slide-17">17. Assessment Rubric</a></li><li><a href="#slide-18">18. Exit Ticket</a></li><li><a href="#slide-19">19. References (Instructor)</a></li><li><a href="#slide-20">20. Teaching Materials</a></li><li><a href="#slide-21">21. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Big Data in Connectomics"><p class="slide-number">Slide 1 of 21</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">Nanoscale · Module 12</span>
+<h2 id="big-data-in-connectomics">Big Data in Connectomics</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 21</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Describe core architecture patterns for petascale connectomics data</li>
+<li>Plan compute, storage, and indexing strategies for large EM volumes</li>
+<li>Implement query workflows that preserve provenance and reproducibility</li>
+<li>Identify bottlenecks and failure modes in large-scale analysis pipelines</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 21</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely: size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from your actual access pattern rather than from the format everyone else uses, predict which query will dominate your bill, and pin every published number to a segmentation version a stranger can re-query a year from now.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 21</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-storage-layout-is-chosen-by-access-pattern-not-by-format-popularity">1) Storage layout is chosen by access pattern, not by format popularity</h3>
+<ul>
+<li><strong>Technical:</strong> chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM compresses 2-10x; label volumes compress far better.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Concept Focus (continued)"><p class="slide-number">Slide 5 of 21</p>
+<h2 id="concept-focus-continued">Concept Focus (continued)</h2>
+<ul>
+<li><strong>Plain language:</strong> the chunk is the smallest thing you can read, so shape it like the reads you will actually do.</li>
+<li><strong>Misconception guardrail:</strong> the format everyone else uses is automatically the right layout for your access pattern.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow"><p class="slide-number">Slide 6 of 21</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Write the analysis question as a sentence naming the table, the filter, and the unit of the answer — for example, &quot;count synapses between layer 2/3 pyramidal cells and basket cells, per neuron pair, at cleft score above threshold.&quot;</li>
+<li>Estimate the working set: how many rows, how many objects, how many bytes must move, and whether that fits in memory on the machine you have.</li>
+<li>Choose storage and index strategy from the access pattern — chunk shape for volumetric reads, sharding if object counts exceed roughly 10^6, a pre-joined extract if the same join recurs.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Core Workflow (continued)"><p class="slide-number">Slide 7 of 21</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Pin the segmentation: record the materialization version or timestamp, and refuse to proceed if it is unknown.</li>
+<li>Prototype on a 0.1% sample, profile, and extrapolate the full runtime before running it once at full scale.</li>
+<li>Add provenance fields to the output artifact itself, not to the surrounding notebook.</li>
+<li>Validate reproducibility by having a second person re-run the query package from the recorded version and compare row counts and summary statistics.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min)"><p class="slide-number">Slide 8 of 21</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-08:00 | Architecture framing and failure examples</li>
+<li>08:00-20:00 | Access-pattern to index mapping exercise</li>
+<li>20:00-34:00 | Query profiling and bottleneck diagnosis</li>
+<li>34:00-46:00 | Provenance logging implementation</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Run of Show (60 min) (continued)"><p class="slide-number">Slide 9 of 21</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>46:00-56:00 | Team review of reproducibility gaps</li>
+<li>56:00-60:00 | Competency check and next-step assignment</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Misconceptions to Watch"><p class="slide-number">Slide 10 of 21</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> the format everyone else uses is automatically the right layout for your access pattern.</li>
+<li><strong>Misconception guardrail:</strong> storage cost is the storage line on the invoice.</li>
+<li><strong>Misconception guardrail:</strong> the dataset size is the petabyte figure quoted for the raw imagery.</li>
+<li><strong>Misconception guardrail:</strong> an object ID refers to the same neuron next month.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Misconceptions to Watch (continued)"><p class="slide-number">Slide 11 of 21</p>
+<h2 id="misconceptions-to-watch-continued">Misconceptions to Watch (continued)</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> &quot;it runs eventually&quot; is acceptable for iterative science.</li>
+<li><strong>Misconception guardrail:</strong> notebook history is sufficient provenance.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Studio Activity"><p class="slide-number">Slide 12 of 21</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> Your team delivers a weekly motif-analysis report from a store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and cell-type annotations for about 8,400 neurons. The volume is ~1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report is regenerated every Monday and will be cited in a manuscript. Last week&#x27;s run took nine hours and produced numbers that do not match the report from three weeks ago; nobody knows why.</p>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Activity Output Checklist"><p class="slide-number">Slide 13 of 21</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric"><p class="slide-number">Slide 14 of 21</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>Query design matches analysis goal and data shape, with at least one quantitative estimate.</li>
+<li>Provenance requirements are explicit, actionable, and attached to the artifact rather than the notebook.</li>
+<li>Bottlenecks are identified with one realistic mitigation.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric"><p class="slide-number">Slide 15 of 21</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>Separates exploratory and production query paths and says which rules apply to each.</li>
+<li>Quantifies tradeoffs across latency, dollar cost, and reproducibility, and names the assumption behind each number.</li>
+<li>Identifies version drift as the first hypothesis for the discrepancy, before code bugs.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric (continued)"><p class="slide-number">Slide 16 of 21</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>Anticipates failure recovery and rollback needs, including what happens when a materialization is superseded mid-analysis.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Assessment Rubric"><p class="slide-number">Slide 17 of 21</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure modes</strong></p>
+<ul>
+<li>Index choices disconnected from query workload.</li>
+<li>Missing version metadata in outputs.</li>
+<li>Optimization attempts without a benchmark baseline.</li>
+<li>Sizing that counts only the raw volume and ignores derived products and egress.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Exit Ticket"><p class="slide-number">Slide 18 of 21</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Document one query you use with:</p>
+<ol>
+<li>data source/version,</li>
+<li>expected runtime class,</li>
+<li>one provenance field you currently miss.</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: References (Instructor)"><p class="slide-number">Slide 19 of 21</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>H01 human cortical fragment release and infrastructure notes.</li>
+<li>MICrONS data platform documentation.</li>
+<li>Januszewski et al. (2018) for scalable reconstruction context.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Teaching Materials"><p class="slide-number">Slide 20 of 21</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module12/</li>
+<li>Session kit: /teaching/sessions/module12/</li>
+<li>Worksheet: /assets/worksheets/module12/module12-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Read, review, or teach"><p class="slide-number">Slide 21 of 21</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module12.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module12/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

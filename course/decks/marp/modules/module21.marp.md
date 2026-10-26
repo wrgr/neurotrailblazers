@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 21 · NeuroTrailblazers"
+footer: "Module 21 · Nanoscale"
 title: "Module 21: Reproducibility and FAIR Principles in Connectomics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 21</span>
+<span class="eyebrow">Nanoscale · Module 21</span>
 
 # Reproducibility and FAIR Principles in Connectomics
 Teaching Deck
@@ -24,17 +24,12 @@ Teaching Deck
 - Build transparent methods/parameter logs for peer reuse
 - Identify hidden-curriculum norms in reproducibility expectations
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Publish a reproducibility-ready connectomics package (data + methods + metadata + limitations) that an external group can audit and reuse.
+
 
 ---
 
@@ -44,6 +39,7 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 - **Plain language:** "FAIR" only counts if someone else can actually find, open, and use your work.
 - **Misconception guardrail:** posting files online makes work FAIR.
 
+
 ---
 
 ## Core Workflow
@@ -51,7 +47,13 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 - Add machine-readable metadata and provenance fields.
 - Validate rerun path in a clean environment.
 - Write methods/limitations notes for external users.
+
+
+---
+
+## Core Workflow (continued)
 - Publish with changelog and deprecation policy.
+
 
 ---
 
@@ -60,10 +62,6 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 - 06:00-16:00 | The five-element checklist, modeled
 - 16:00-30:00 | Guided practice: audit your own work
 - 30:00-40:00 | Clean-environment rerun
-- 40:00-50:00 | Known limitations, written honestly
-- 50:00-57:00 | Competency check
-- 57:00-60:00 | Exit ticket
-
 <!--
 Pre-class preparation (15 min async)
   Bring one analysis you have run, in whatever state it is in. It does not need to be tidy; untidy is more useful here.
@@ -102,15 +100,25 @@ Pre-class preparation (15 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 40:00-50:00 | Known limitations, written honestly
+- 50:00-57:00 | Competency check
+- 57:00-60:00 | Exit ticket
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** posting files online makes work FAIR.
 - **Misconception guardrail:** a notebook that ran end-to-end once is proof of reproducible science.
 - **Misconception guardrail:** reproducibility norms are common sense that any careful trainee will infer without being taught.
 
+
 ---
 
 ## Studio Activity
 **Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
+
 
 ---
 
@@ -119,34 +127,40 @@ Pre-class preparation (15 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - All five provenance elements present: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
 - Re-run instructions testable by a peer without contacting the author.
 - Limitations name concrete failure modes, excluded samples, and failed runs rather than generic hedges.
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Clean-environment rerun actually attempted, with a friction log and remediations ordered by cost.
 - Hidden norms made explicit: version identifiers in figure legends, a changelog, and a deprecation note.
 - ID churn quantified whenever identifiers cross versions, and reported in the methods.
+
+
+---
+
+## Assessment Rubric (continued)
 - Documentation is audit-friendly: an external reader can locate every provenance element from the README alone.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure modes**
-
 - Missing version identifiers for data or code.
 - Methods that omit key parameters or the environment specification.
 - "Reproducible in principle" claims without a validation rerun.
 - Limitations sections written as boilerplate rather than as concrete guidance.
+
 
 ---
 
@@ -156,6 +170,7 @@ Take one prior analysis output and add:
 2. reproducibility instructions,
 3. a 5-line limitations section.
 
+
 ---
 
 ## References (Instructor)
@@ -163,9 +178,24 @@ Take one prior analysis output and add:
 - Peng (2011) - Reproducible Research in Computational Science.
 - Project-specific release documentation for H01/MICrONS/FlyWire.
 
+
 ---
 
 ## Teaching Materials
 - Module page: /modules/module21/
 - Session kit: /teaching/sessions/module21/
 - Worksheet: /assets/worksheets/module21/module21-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module21.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module21/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

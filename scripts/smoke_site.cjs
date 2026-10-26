@@ -47,7 +47,8 @@ async function main() {
     };
     await page.setViewport({width:1280,height:900});
     await visit('/');
-    assert.equal(await page.$$eval('.nav-item', elements => elements.length), 6);
+    assert.equal(await page.$$eval('.nav-item', elements => elements.length), 7);
+    assert.equal(await page.$eval('.nav-item > a[href="/technical-training/journal-club/"]', el => el.textContent.trim()), 'Papers');
     assert(await page.$$eval('.home-refresh .card', cards => cards.every(c => getComputedStyle(c).opacity === '1')), 'Homepage task cards are visible');
     await page.focus(`${menuGroup('Learn')} > summary`);
     await page.keyboard.press('Enter');
@@ -183,6 +184,10 @@ async function main() {
     await visit('/technical-training/journal-club/');
     assert.equal(await page.$eval('#jc-empty', element => element.closest('.jc-card')), null, 'Paper metadata must not swallow page structure');
     await page.waitForFunction(() => document.getElementById('jc-count').textContent.includes('2000 of 2000'));
+    for (const id of ['jc-search', 'jc-dimension', 'jc-organism', 'jc-tier', 'jc-era', 'jc-sort', 'jc-graph-view']) {
+      await page.waitForSelector('#' + id, {visible:true});
+    }
+    assert.equal(await page.$eval('.paper-view-links [aria-current]', el => el.textContent), 'Paper list');
     assert.equal(await page.$$eval('#jc-grid > .jc-card', elements => elements.length), 20);
     assert.equal(await page.$eval('#jc-prompt-modal', element => getComputedStyle(element).display), 'none');
     const firstTitle=await page.$eval('#jc-grid h3', e=>e.textContent);

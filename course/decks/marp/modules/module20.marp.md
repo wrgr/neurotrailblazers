@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 20 · NeuroTrailblazers"
+footer: "Module 20 · Nanoscale"
 title: "Module 20: Statistical Models and Inference for Connectomics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 20</span>
+<span class="eyebrow">Nanoscale · Module 20</span>
 
 # Statistical Models and Inference for Connectomics
 Teaching Deck
@@ -24,17 +24,12 @@ Teaching Deck
 - Control multiplicity and uncertainty in high-dimensional motif tests
 - Report inferential claims with explicit assumptions and limits
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Design and execute a connectomics inference plan that includes null-model choice, multiplicity control, uncertainty reporting, and explicit claim boundaries.
+
 
 ---
 
@@ -44,6 +39,7 @@ Design and execute a connectomics inference plan that includes null-model choice
 - **Plain language:** your "chance baseline" must reflect biology and data collection realities.
 - **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
 
+
 ---
 
 ## Core Workflow
@@ -51,8 +47,14 @@ Design and execute a connectomics inference plan that includes null-model choice
 - Convert biological question into estimand(s), test set, and effect-size target.
 - **Null-model design**
 - Define null constraints and why they preserve key confounders.
+
+
+---
+
+## Core Workflow (continued)
 - **Inference execution**
 - Run model/tests with preregistered thresholds and multiplicity controls.
+
 
 ---
 
@@ -62,6 +64,7 @@ Design and execute a connectomics inference plan that includes null-model choice
 - **Claim calibration**
 - Report supported, uncertain, and unsupported claims in separate blocks.
 
+
 ---
 
 ## Run of Show (60 min)
@@ -69,10 +72,6 @@ Design and execute a connectomics inference plan that includes null-model choice
 - 06:00-18:00 | Worked example: reciprocity across nulls
 - 18:00-30:00 | Guided practice: write the uninteresting explanation
 - 30:00-40:00 | Multiplicity
-- 40:00-50:00 | Robustness and error sensitivity
-- 50:00-57:00 | Competency check
-- 57:00-60:00 | Exit ticket
-
 <!--
 Pre-class preparation (15 min async)
   Read Technical Unit 09, section 2 — the worked reciprocity example across three null models.
@@ -113,15 +112,25 @@ Pre-class preparation (15 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 40:00-50:00 | Robustness and error sensitivity
+- 50:00-57:00 | Competency check
+- 57:00-60:00 | Exit ticket
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
 - **Misconception guardrail:** a small p-value speaks for itself, regardless of how many tests were run.
 - **Misconception guardrail:** a hypothesis found in the data can be confirmed by the same data.
 
+
 ---
 
 ## Studio Activity
 **Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
+
 
 ---
 
@@ -130,34 +139,40 @@ Pre-class preparation (15 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - Null model is justified and the constraints it preserves are listed explicitly, in terms of what the hypothesis treats as uninteresting.
 - Total test count — including tests run and not reported — is documented, and a named correction is applied against it.
 - Claims are partitioned into exploratory and confirmatory blocks with different language in each.
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Sensitivity analysis spans at least two preprocessing choices (synapse threshold, inclusion criteria), with results reported for each variant.
 - Effect sizes with uncertainty intervals appear alongside every significance statement.
 - Error-sensitivity band computed at measured merge and split rates, with the direction of merge bias named.
+
+
+---
+
+## Assessment Rubric (continued)
 - Generalization boundary stated: which dataset, version, and region the claim covers, and what it says nothing about.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure modes**
-
 - Null model choice disconnected from the biological question.
 - Selective reporting: significant outcomes shown, the full test count uncounted.
 - Exploratory signal conflated with validated inference.
 - Analytic p-values used where dependence between tests calls for permutation.
+
 
 ---
 
@@ -168,6 +183,7 @@ Write a 6-8 sentence inference note that includes:
 3. multiplicity strategy,
 4. one robust conclusion and one unresolved uncertainty.
 
+
 ---
 
 ## References (Instructor)
@@ -175,9 +191,24 @@ Write a 6-8 sentence inference note that includes:
 - Januszewski et al. (2018) - segmentation performance and uncertainty context.
 - MICrONS/FlyWire/H01 analyses for cross-dataset inference constraints.
 
+
 ---
 
 ## Teaching Materials
 - Module page: /modules/module20/
 - Session kit: /teaching/sessions/module20/
 - Worksheet: /assets/worksheets/module20/module20-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module20.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module20/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

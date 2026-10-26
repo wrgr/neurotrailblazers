@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Segmentation 101 | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Segmentation 101</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module06.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 22 slides</summary><ol><li><a href="#slide-1">1. Segmentation 101</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Core Workflow</a></li><li><a href="#slide-6">6. Core Workflow (continued)</a></li><li><a href="#slide-7">7. Run of Show (60 min)</a></li><li><a href="#slide-8">8. Run of Show (60 min) (continued)</a></li><li><a href="#slide-9">9. Misconceptions to Watch</a></li><li><a href="#slide-10">10. A segmentation is a claim about continuity</a></li><li><a href="#slide-11">11. Two reconstruction choices can disagree</a></li><li><a href="#slide-12">12. Studio Activity</a></li><li><a href="#slide-13">13. Activity Output Checklist</a></li><li><a href="#slide-14">14. Assessment Rubric</a></li><li><a href="#slide-15">15. Assessment Rubric (continued)</a></li><li><a href="#slide-16">16. Assessment Rubric</a></li><li><a href="#slide-17">17. Assessment Rubric (continued)</a></li><li><a href="#slide-18">18. Assessment Rubric</a></li><li><a href="#slide-19">19. Exit Ticket</a></li><li><a href="#slide-20">20. References (Instructor)</a></li><li><a href="#slide-21">21. Teaching Materials</a></li><li><a href="#slide-22">22. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Segmentation 101"><p class="slide-number">Slide 1 of 22</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">Nanoscale · Module 06</span>
+<h2 id="segmentation-101">Segmentation 101</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 22</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Explain segmentation goals and constraints</li>
+<li>Identify merges, splits, and boundary errors</li>
+<li>Apply a basic correction workflow</li>
+<li>Report segmentation quality with clear metrics</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 22</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Detect and categorize core segmentation errors and execute one correction cycle with documented quality impact.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 22</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-what-segmentation-does-and-why-it-matters">1) What segmentation does and why it matters</h3>
+<p>Segmentation is the computational process of assigning every voxel in an EM volume to a specific object — not just &quot;this is a neuron&quot; but &quot;this is neuron #47,293.&quot; This is instance segmentation, and it&#x27;s the foundation of the entire connectome. Without accurate segmentation, you cannot identify individual neurons, trace their morphology, or determine their synaptic connections. Modern methods (flood-filling networks, U-Net + watershed + agglomeration) achieve &quot;superhuman&quot; accuracy on benchmarks but still make errors at rates that compound across large volumes.</p>
+
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Core Workflow"><p class="slide-number">Slide 5 of 22</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li>Load segmented patch in Neuroglancer or equivalent viewer.</li>
+<li>Identify merge/split candidates by scrolling through z and checking 3D meshes for implausible morphology.</li>
+<li>Apply correction: split merged segments at the boundary, merge split fragments by verifying continuity.</li>
+<li>Recalculate quality indicators: did the correction improve local metrics?</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Core Workflow (continued)"><p class="slide-number">Slide 6 of 22</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li>Log decisions: record what was changed, why, and what evidence supported the decision.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Run of Show (60 min)"><p class="slide-number">Slide 7 of 22</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-08:00 | Segmentation goals</li>
+<li>08:00-22:00 | Error taxonomy with real examples</li>
+<li>22:00-36:00 | Guided correction round</li>
+<li>36:00-48:00 | Quality metric interpretation</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Pre-class preparation (10 min async)<br>  Read the error taxonomy content library entry<br>  Open the practice dataset in Neuroglancer and browse for 5 minutes<br>  Minute-by-minute plan<br><br>00:00-08:00 | Segmentation goals<br>  &quot;What would a perfect segmentation look like? Every neuron correctly labeled, every membrane correctly placed.&quot;<br>  Show a well-segmented region side-by-side with raw EM. Point out: each color = one neuron.<br>  Then show the same region with errors highlighted. &quot;This is reality. Our job is to find and fix these.&quot;<br><br>08:00-22:00 | Error taxonomy with real examples<br>  Walk through one merge error: show the 3D mesh with impossible branching, navigate to the merge point in 2D slices, explain why the model failed (low contrast at a blood vessel).<br>  Walk through one split error: show a dead-end axon fragment, then the continuation 3 sections later. Explain: thin process + poor contrast = model lost it.<br>  Walk through one boundary error: show a synapse attributed to the wrong neuron because the membrane position is off by 2 pixels.<br>  For each: &quot;What would this error do to your analysis?&quot;<br><br>22:00-36:00 | Guided correction round<br>  Learners work in pairs on 3 pre-identified errors (1 merge, 1 split, 1 ambiguous).<br>  Instructor circulates, coaching on: &quot;Show me the evidence before you correct.&quot; &quot;What would happen if this merge is actually correct — two branches of the same neuron?&quot;<br><br>36:00-48:00 | Quality metric interpretation<br>  Introduce: &quot;How do we know if our corrections actually helped?&quot;<br>  Brief overview of metrics: edge precision/recall (are the connections right?), segment size distributions (do sizes look biological after correction?).<br>  Compute metrics before and after the correction round. Did they improve?<br><br>48:00-60:00 | Debrief and competency check<br>  Each learner presents one correction with evidence chain.<br>  Group discussion: &quot;Which correction had the biggest impact on the graph? Why?&quot;<br>  Exit ticket: &quot;Name the error type you found hardest to detect and why.&quot;</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Run of Show (60 min) (continued)"><p class="slide-number">Slide 8 of 22</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>48:00-60:00 | Debrief and competency check</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Misconceptions to Watch"><p class="slide-number">Slide 9 of 22</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> merge and split errors are equally costly, so error counts alone rank corrections.</li>
+<li><strong>Misconception guardrail:</strong> an object that looks like a plausible neuron is evidence that the segmentation is correct.</li>
+<li><strong>Misconception guardrail:</strong> the most visually obvious errors are the ones most worth fixing.</li>
+<li><strong>Misconception guardrail:</strong> a segmentation can be finished, rather than released at a stated level with stated remaining error.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: A segmentation is a claim about continuity"><p class="slide-number">Slide 10 of 22</p>
+<h2 id="a-segmentation-is-a-claim-about-continuity">A segmentation is a claim about continuity</h2>
+<p class="visual-lead">The same field, before and after model labels are overlaid.</p>
+<div class="visual-images"><figure><img src="../../../../../assets/images/content-library/case-studies/h01/10a-raw-em.jpg" alt="Raw H01 image at the same field and scale as the labeled view." loading="lazy" decoding="async"><figcaption>Underlying image</figcaption></figure><figure><img src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="The same H01 field with object colors overlaid and the 2 micrometre scale bar intact." loading="lazy" decoding="async"><figcaption>Model object labels</figcaption></figure></div>
+<p class="visual-question"><strong>Discuss:</strong> What evidence would you need before calling a merge or split?</p>
+<p class="source">H01 release, Lichtman Lab / Harvard and Connectomics at Google; Shapson-Coe et al. (2024), doi:10.1126/science.adk4858; CC BY 4.0.</p>
+
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Visual description and discussion guidance:<br>Colors identify model objects, not confidence scores or verified ground truth. Inspect the raw image and continuity across sections before accepting or changing an object’s topology.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Two reconstruction choices can disagree"><p class="slide-number">Slide 11 of 22</p>
+<h2 id="two-reconstruction-choices-can-disagree">Two reconstruction choices can disagree</h2>
+<p class="visual-lead">Inspect local evidence before choosing a correction.</p>
+<div class="visual-images"><figure><img src="../../../../../assets/images/content-library/em/segmentation-c2-vs-c3.jpg" alt="Two panels of the same H01 region: c2 assigns one object; c3 separates the highlighted regions into two." loading="lazy" decoding="async"><figcaption>Left: c2, one object. Right: c3, two objects.</figcaption></figure></div>
+<p class="visual-question"><strong>Discuss:</strong> Which additional view would help adjudicate this difference?</p>
+<p class="source">H01 release, Lichtman Lab / Harvard and Connectomics at Google; Shapson-Coe et al. (2024), doi:10.1126/science.adk4858; CC BY 4.0.</p>
+
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Visual description and discussion guidance:<br>The panel labels identify the one-object versus two-object distinction without relying on color alone. This view illustrates reconstruction disagreement; it does not by itself establish the correct biological topology.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Studio Activity"><p class="slide-number">Slide 12 of 22</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.</p>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Activity Output Checklist"><p class="slide-number">Slide 13 of 22</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Assessment Rubric"><p class="slide-number">Slide 14 of 22</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>Every flagged candidate carries an error-type label (merge/split/boundary/uncertain), and mislabels affect fewer than 3 of the 25 candidates.</li>
+<li>At least one correction is executed with the supporting evidence stated in the log before the edit, not reconstructed afterward.</li>
+<li>The correction log records object ID, operation, location, and the specific visual evidence — a reader could re-find the site from the log alone.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Assessment Rubric (continued)"><p class="slide-number">Slide 15 of 22</p>
+<h2 id="assessment-rubric-continued">Assessment Rubric (continued)</h2>
+<ul>
+<li>Before/after quality indicators are computed for at least one correction, with the direction of change stated.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Assessment Rubric"><p class="slide-number">Slide 16 of 22</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>The priority ranking ties each candidate to its expected effect on the downstream connectivity graph, and merges outrank splits of comparable size with the reason stated.</li>
+<li>Before/after metrics are reported for the whole subvolume, and any metric that moved the wrong way is explained rather than omitted.</li>
+<li>At least one flagged candidate is explicitly deferred with a recorded reason (cost to fix, ambiguity, outside analysis set) rather than silently skipped.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Assessment Rubric (continued)"><p class="slide-number">Slide 17 of 22</p>
+<h2 id="assessment-rubric-continued-1">Assessment Rubric (continued)</h2>
+<ul>
+<li>The release note states what remains unexamined and what error types are still expected, not only what was fixed.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Assessment Rubric"><p class="slide-number">Slide 18 of 22</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure to flag</strong></p>
+<ul>
+<li>Correction without evidence of quality change — fixing things without checking whether it helped.</li>
+<li>Ranking by visual conspicuousness rather than by impact on the analysis.</li>
+<li>A merge introduced while fixing a split, because continuity was assumed from appearance instead of verified across sections.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: Exit Ticket"><p class="slide-number">Slide 19 of 22</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Explain when you would defer a correction instead of fixing immediately.</p>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: References (Instructor)"><p class="slide-number">Slide 20 of 22</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Use module references listed on the module page.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Teaching Materials"><p class="slide-number">Slide 21 of 22</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module06/</li>
+<li>Session kit: /teaching/sessions/module06/</li>
+<li>Worksheet: /assets/worksheets/module06/module06-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-22" aria-label="Slide 22: Read, review, or teach"><p class="slide-number">Slide 22 of 22</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module06.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module06/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

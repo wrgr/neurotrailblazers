@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 04 · NeuroTrailblazers"
+footer: "Module 04 · Nanoscale"
 title: "Module 04: Neuroanatomy for Connectomics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 04</span>
+<span class="eyebrow">Nanoscale · Module 04</span>
 
 # Neuroanatomy for Connectomics
 Teaching Deck
@@ -24,17 +24,12 @@ Teaching Deck
 - Use region/layer context to avoid misclassification
 - Communicate anatomy-based uncertainty clearly
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Interpret a local EM region using correct anatomical context and document one confident and one uncertain structural call.
+
 
 ---
 
@@ -43,6 +38,7 @@ Interpret a local EM region using correct anatomical context and document one co
 The mammalian neocortex is organized into six layers (L1-L6), each with a characteristic cell density, cell-type composition, and neuropil texture. In EM, these layers are distinguishable by:
 - **Layer 1**: Sparse cell bodies (mostly interneurons and glia), dense neuropil of apical dendritic tufts, axonal boutons, and astrocytic processes. If you see neuropil with very few soma profiles, you are likely in L1.
 
+
 ---
 
 ## Concept Focus (continued)
@@ -50,10 +46,12 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 - **Layer 4**: In sensory cortex, dominated by spiny stellate cells (not pyramidal) and thalamocortical axon terminals. Bouton density is high; dendritic spines are abundant.
 - **Layer 5**: Large pyramidal cells (especially thick-tufted pyramidal neurons with soma up to 25 μm). If you see the largest soma profiles in the column, you are likely in L5.
 
+
 ---
 
 ## Concept Focus (continued)
 - **Layer 6**: Heterogeneous; corticothalamic pyramidal cells with distinctive morphology (apical dendrites reaching only to L4, not L1). Transition to white matter below.
+
 
 ---
 
@@ -63,6 +61,7 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 - Cross-check with neighboring slices — does the interpretation remain consistent across z?
 - Annotate confidence and escalation path for ambiguous cases.
 
+
 ---
 
 ## Run of Show (60 min)
@@ -70,8 +69,6 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 - 10:00-24:00 | Guided structural identification
 - 24:00-38:00 | Ambiguity case discussion
 - 38:00-50:00 | Learner annotation round
-- 50:00-60:00 | Debrief and competency check
-
 <!--
 Pre-class preparation (10-15 min async)
   Review cortical layer descriptions above.
@@ -116,16 +113,52 @@ Pre-class preparation (10-15 min async)
 
 ---
 
+## Run of Show (60 min) (continued)
+- 50:00-60:00 | Debrief and competency check
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** cortical layer can be read off a single EM patch without soma density or neuropil context.
 - **Misconception guardrail:** the hippocampal laminar logic transfers to neocortex because both are cortex.
 - **Misconception guardrail:** an atlas coordinate is a ground-truth location.
 - **Misconception guardrail:** annotation confidence should be uniform across a volume.
 
+
+---
+
+<!-- _class: visual-lesson -->
+## Read location before interpreting a close-up
+<p class="visual-lead">Start with the sample’s anatomical context.</p>
+<div class="visual-images"><figure><img src="../../../../assets/images/content-library/case-studies/h01/11-cortical-layers.jpg" alt="H01 cortical sample with a labeled layer legend and 1 mm scale bar."><figcaption>Released layer map; original legend and scale retained.</figcaption></figure></div>
+<p class="visual-question"><strong>Discuss:</strong> What context disappears when you zoom to one cell?</p>
+<p class="source">H01 release, Lichtman Lab / Harvard and Connectomics at Google; Shapson-Coe et al. (2024), doi:10.1126/science.adk4858; CC BY 4.0.</p>
+<!--
+Visual description and discussion guidance:
+The image presents the released segmentation of layers L1 through L6 and white matter. The text legend supplements the colors. A small ultrastructure crop does not contain this location information; use dataset context rather than inferring a layer from one local profile.
+-->
+
+
+---
+
+<!-- _class: visual-lesson -->
+## Observe first; separate the interpretation
+<p class="visual-lead">Compare the whole profile with its surroundings.</p>
+<div class="visual-images"><figure><img src="../../../../assets/images/content-library/case-studies/h01/05-neuron-soma.jpg" alt="H01 electron micrograph showing a cell body, nucleus, neighboring profiles and a 10 micrometre scale bar."><figcaption>Cell-body view from the H01 image series.</figcaption></figure></div>
+<p class="visual-question"><strong>Discuss:</strong> Name one visible feature and one claim needing more context.</p>
+<p class="source">H01 release, Lichtman Lab / Harvard and Connectomics at Google; Shapson-Coe et al. (2024), doi:10.1126/science.adk4858; CC BY 4.0.</p>
+<!--
+Visual description and discussion guidance:
+A large cell body with a prominent nucleus is visible among smaller profiles. This is an observation exercise, not a validated cell-type identification item. One section does not establish the cell’s full morphology or function.
+-->
+
+
 ---
 
 ## Studio Activity
 **Scenario:** You are given a set of 8 EM patches from a mouse cortex volume. The patches span different layers (L1 through L6) but are presented without layer labels.
+
 
 ---
 
@@ -134,43 +167,51 @@ Pre-class preparation (10-15 min async)
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - Context-aware call and confidence note recorded for every patch.
 - Layer identification within ±1 layer for the majority of patches.
 - At least one evidence chain written in the form "features observed, therefore layer, therefore expected structures."
+
 
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Each call links at least two independent EM cues (soma density, neuropil texture, cell-type signature) to layer context.
 - Confidence varies across patches in a calibrated way: boundary and volume-edge patches score lower than mid-layer patches.
 - Cross-slice (z) evidence cited wherever a single-section call was ambiguous.
+
+
+---
+
+## Assessment Rubric (continued)
 - Partner disagreements resolved by naming which cue was decisive, not by splitting the difference.
+
 
 ---
 
 ## Assessment Rubric
 **Common failure to flag**
-
 - Definitive call from a single feature without a layer or neighbor-slice check.
 - Uniform "high" confidence across all patches, including boundary cases.
 - Hippocampal and neocortical laminar logic applied interchangeably.
+
 
 ---
 
 ## Exit Ticket
 Describe one case where anatomy context changes your interpretation of an EM structure.
 
+
 ---
 
 ## References (Instructor)
 - Use module references listed on the module page.
+
 
 ---
 
@@ -178,3 +219,17 @@ Describe one case where anatomy context changes your interpretation of an EM str
 - Module page: /modules/module04/
 - Session kit: /teaching/sessions/module04/
 - Worksheet: /assets/worksheets/module04/module04-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module04.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module04/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

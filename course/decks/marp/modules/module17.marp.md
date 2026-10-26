@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 17 · NeuroTrailblazers"
+footer: "Module 17 · Nanoscale"
 title: "Module 17: Scientific Writing for Connectomics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 17</span>
+<span class="eyebrow">Nanoscale · Module 17</span>
 
 # Scientific Writing for Connectomics
 Teaching Deck
@@ -24,23 +24,23 @@ Teaching Deck
 - Draft abstracts that distinguish result, uncertainty, and limitation
 - Respond to reviewer critiques with technically grounded revisions
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Produce a manuscript-ready results section (figures, legends, and claims) where each conclusion is traceable to explicit connectomics evidence and stated limitations. Students will also be able to write methods sections with the level of detail required for connectomics reproducibility and respond to peer review with technically precise, non-defensive language.
 
+
 ---
 
 ## Concept Focus
 ### 1) Structure of a connectomics paper: methods are unusually important
-- **Technical:** in most neuroscience papers, the methods section is a reference appendix. In connectomics, it is primary evidence. Readers need to assess: What volume was imaged? At what resolution? What species, age, and preparation? Which segmentation algorithm was used, and what was the merge/split error rate? What proofreading version was the analysis based on? Was CAVE materialization pinned to a specific timestamp? Without these details, no biological claim is evaluable.
+- **Technical:** in most neuroscience papers, the methods section is a reference appendix.
+
+<!--
+Further teaching detail from the module:
+**Technical:** in most neuroscience papers, the methods section is a reference appendix. In connectomics, it is primary evidence. Readers need to assess: What volume was imaged? At what resolution? What species, age, and preparation? Which segmentation algorithm was used, and what was the merge/split error rate? What proofreading version was the analysis based on? Was CAVE materialization pinned to a specific timestamp? Without these details, no biological claim is evaluable.
+-->
 
 ---
 
@@ -48,12 +48,14 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 - **Plain language:** in connectomics, how you got the data is as important as what the data shows. Your methods section is not boilerplate --- it is where skeptical readers will spend the most time.
 - **Misconception guardrail:** treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
 
+
 ---
 
 ## Core Workflow
 - **Evidence inventory**
 - List candidate claims and required supporting figures/metrics.
 - Build a claim-evidence matrix: claim, figure panel, statistical test, effect size, dataset version, caveat.
+
 
 ---
 
@@ -63,6 +65,7 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 - Document every preprocessing step, threshold, and parameter.
 - Complete the reproducibility checklist.
 
+
 ---
 
 ## Core Workflow (continued)
@@ -71,12 +74,14 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 - Use calibrated uncertainty language throughout.
 - Separate confirmed findings from exploratory observations.
 
+
 ---
 
 ## Core Workflow (continued)
 - **Legend hardening**
 - Ensure legends include dataset version, method variant, key parameters, sample sizes, and uncertainty indicators.
 - Each legend should be interpretable without reading the main text.
+
 
 ---
 
@@ -85,12 +90,14 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 - Add interpretation bounds (sampling, segmentation error, model assumptions, volume boundary effects).
 - Quantify uncertainty where possible rather than using vague qualifiers.
 
+
 ---
 
 ## Core Workflow (continued)
 - **Peer-review simulation**
 - Exchange sections and produce one methods-focused critique plus one interpretation critique.
 - Practice structured reviewer responses.
+
 
 ---
 
@@ -99,10 +106,6 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 - 08:00-18:00 | Claim-evidence matrix construction
 - 18:00-28:00 | Results paragraph drafting
 - 28:00-38:00 | Methods and provenance exercise
-- 38:00-50:00 | Reviewer response practice
-- 50:00-58:00 | Peer exchange and feedback
-- 58:00-60:00 | Competency check
-
 <!--
 Materials needed
   One mock connectomics figure set (3 panels) with underlying data tables.
@@ -140,16 +143,31 @@ Materials needed
 
 ---
 
+## Run of Show (60 min) (continued)
+- 38:00-50:00 | Reviewer response practice
+- 50:00-58:00 | Peer exchange and feedback
+- 58:00-60:00 | Competency check
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
 - **Misconception guardrail:** writing stronger language does not strengthen weak evidence. Adjectives like "striking," "remarkable," and "clearly" do not substitute for effect sizes and confidence intervals.
+
 
 ---
 
 ## Misconceptions to Watch (continued)
 - **Misconception guardrail:** uncertainty statements are not weakness; they are reproducibility signals. A paper that acknowledges its limits is more credible than one that ignores them.
 - **Misconception guardrail:** assuming readers know which dataset version you used. Even within the same project (e.g., MICrONS), different materialization timestamps produce different connectivity tables.
+
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** linking to a GitHub repository is not sufficient if the repository has no tagged release and the methods do not specify which commit was used.
+
 
 ---
 
@@ -158,10 +176,12 @@ Materials needed
 - **Misconception guardrail:** assuming that citing the original EM paper covers all required attributions. Segmentation, proofreading, and annotation are separate contributions that deserve separate citations.
 - **Misconception guardrail:** defensive tone weakens technical credibility. Never characterize a reviewer's comment as "wrong" --- instead, provide the evidence that supports your position.
 
+
 ---
 
 ## Studio Activity
 **Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs.
+
 
 ---
 
@@ -170,35 +190,36 @@ Materials needed
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 **Minimum pass**
-
 - Claims map to explicit evidence with figure panel references.
 - Legends contain enough detail for independent interpretation.
 - Methods include dataset version, pipeline, and key parameters.
 - Reviewer responses are specific and technically grounded.
 
+
 ---
 
 ## Assessment Rubric
 **Strong performance**
-
 - Clearly separates robust findings from tentative interpretations using calibrated language.
 - Uses limitation language without weakening valid conclusions.
 - Improves reproducibility via concrete method-detail additions.
 - Reviewer responses include evidence and specific manuscript revision locations.
 
+
 ---
 
 ## Assessment Rubric
 **Common failure modes**
-
 - Narrative claims that cannot be traced to figures.
 - Missing dataset/method versioning in captions or methods.
 - Reviewer replies that are persuasive but non-technical.
 - Methods section written as an afterthought with missing parameters.
+
 
 ---
 
@@ -209,6 +230,7 @@ Write one results paragraph from a connectomics figure and include:
 3. one sentence on reproducibility assumptions (dataset version, materialization, code),
 4. one figure legend sentence that specifies sample size and uncertainty indicator.
 
+
 ---
 
 ## References (Instructor)
@@ -216,9 +238,24 @@ Write one results paragraph from a connectomics figure and include:
 - White et al. (1986) - foundational connectome reporting style.
 - Januszewski et al. (2018) - modern method reporting and performance framing.
 
+
 ---
 
 ## Teaching Materials
 - Module page: /modules/module17/
 - Session kit: /teaching/sessions/module17/
 - Worksheet: /assets/worksheets/module17/module17-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module17.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module17/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

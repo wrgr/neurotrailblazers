@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data Cleaning and Preprocessing | Reading version</title><link rel="stylesheet" href="../../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Data Cleaning and Preprocessing</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="module18.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 31 slides</summary><ol><li><a href="#slide-1">1. Data Cleaning and Preprocessing</a></li><li><a href="#slide-2">2. Learning Objectives</a></li><li><a href="#slide-3">3. Capability Target</a></li><li><a href="#slide-4">4. Concept Focus</a></li><li><a href="#slide-5">5. Concept Focus (continued)</a></li><li><a href="#slide-6">6. Concept Focus (continued)</a></li><li><a href="#slide-7">7. Concept Focus (continued)</a></li><li><a href="#slide-8">8. Core Workflow</a></li><li><a href="#slide-9">9. Core Workflow (continued)</a></li><li><a href="#slide-10">10. Core Workflow (continued)</a></li><li><a href="#slide-11">11. Core Workflow (continued)</a></li><li><a href="#slide-12">12. Core Workflow (continued)</a></li><li><a href="#slide-13">13. Core Workflow (continued)</a></li><li><a href="#slide-14">14. Core Workflow (continued)</a></li><li><a href="#slide-15">15. Core Workflow (continued)</a></li><li><a href="#slide-16">16. Core Workflow (continued)</a></li><li><a href="#slide-17">17. Run of Show (60 min)</a></li><li><a href="#slide-18">18. Run of Show (60 min) (continued)</a></li><li><a href="#slide-19">19. Misconceptions to Watch</a></li><li><a href="#slide-20">20. Misconceptions to Watch (continued)</a></li><li><a href="#slide-21">21. Misconceptions to Watch (continued)</a></li><li><a href="#slide-22">22. Studio Activity</a></li><li><a href="#slide-23">23. Activity Output Checklist</a></li><li><a href="#slide-24">24. Assessment Rubric</a></li><li><a href="#slide-25">25. Assessment Rubric</a></li><li><a href="#slide-26">26. Assessment Rubric</a></li><li><a href="#slide-27">27. Exit Ticket</a></li><li><a href="#slide-28">28. Exit Ticket (continued)</a></li><li><a href="#slide-29">29. References (Instructor)</a></li><li><a href="#slide-30">30. Teaching Materials</a></li><li><a href="#slide-31">31. Read, review, or teach</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Data Cleaning and Preprocessing"><p class="slide-number">Slide 1 of 31</p><img class="cover-image" src="../../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<span class="eyebrow">Nanoscale · Module 18</span>
+<h2 id="data-cleaning-and-preprocessing">Data Cleaning and Preprocessing</h2>
+<p>Teaching Deck</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Learning Objectives"><p class="slide-number">Slide 2 of 31</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Diagnose common connectomics data-quality issues before analysis</li>
+<li>Apply reproducible preprocessing steps with documented decision rules</li>
+<li>Quantify preprocessing impact with auditable QC metrics</li>
+<li>Produce an analysis-ready dataset package with provenance metadata</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Capability Target"><p class="slide-number">Slide 3 of 31</p>
+<h2 id="capability-target">Capability Target</h2>
+<p>Produce a reproducible preprocessing release that transforms raw or intermediate connectomics outputs into analysis-ready data, with explicit quality gates and full provenance. Students will be able to identify the specific cleaning operations that shape biological conclusions, justify every threshold decision, and document their preprocessing pipeline so that another researcher can audit and reproduce it.</p>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Concept Focus"><p class="slide-number">Slide 4 of 31</p>
+<h2 id="concept-focus">Concept Focus</h2>
+<h3 id="1-data-cleaning-in-connectomics-what-needs-fixing-and-why">1) Data cleaning in connectomics: what needs fixing and why</h3>
+<ul>
+<li><strong>Technical:</strong> connectomics datasets arrive with characteristic quality issues that must be addressed before analysis:
+<ul>
+<li><strong>Synapse table filtering:</strong> automated synapse detection produces false positives (cleft detections at non-synaptic locations) and false negatives (missed synapses). Filtering typically uses a confidence score threshold (e.g., cleft score &gt; 50 in CAVE synapse tables). The choice of threshold directly affects edge weights in the connectivity graph.</li>
+</ul>
+</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-5" aria-label="Slide 5: Concept Focus (continued)"><p class="slide-number">Slide 5 of 31</p>
+<h2 id="concept-focus-continued">Concept Focus (continued)</h2>
+<ul>
+<li><strong>Segment size thresholding:</strong> automated segmentation produces many small fragments --- bits of neuropil, partial dendrites, glia misclassified as neurons.</li>
+<li><strong>Removing orphan fragments:</strong> segments that have no synaptic connections to any other segment are orphans. They typically represent segmentation debris or incomplete reconstructions. Including them inflates node counts and distorts network metrics.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Segment size thresholding:** automated segmentation produces many small fragments --- bits of neuropil, partial dendrites, glia misclassified as neurons. Including these in analysis adds noise. Common practice is to exclude segments below a volume or synapse count threshold (e.g., segments with fewer than 2 synapses as pre- or post-synaptic partner).</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Concept Focus (continued)"><p class="slide-number">Slide 6 of 31</p>
+<h2 id="concept-focus-continued-1">Concept Focus (continued)</h2>
+<ul>
+<li><strong>Handling neurons at volume boundaries:</strong> neurons whose arbors are truncated by the edge of the imaged volume have artificially low synapse counts and incomplete morphologies.</li>
+<li><strong>Duplicate and conflicting IDs:</strong> merges and splits during proofreading can create duplicate entries or conflicting segment-to-cell-type mappings that must be resolved.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Handling neurons at volume boundaries:** neurons whose arbors are truncated by the edge of the imaged volume have artificially low synapse counts and incomplete morphologies. These boundary neurons can be flagged (e.g., by checking whether the segment mesh intersects the volume bounding box) and either excluded or analyzed with explicit caveats.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: Concept Focus (continued)"><p class="slide-number">Slide 7 of 31</p>
+<h2 id="concept-focus-continued-2">Concept Focus (continued)</h2>
+<ul>
+<li><strong>Plain language:</strong> connectomics data is not &quot;clean&quot; when you receive it.</li>
+<li><strong>Misconception guardrail:</strong> &quot;raw data is always better.&quot; In connectomics, raw segmentation output contains systematic artifacts that will corrupt analysis if left uncleaned. The question is not whether to clean, but how to clean transparently.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Further teaching detail from the module:<br>**Plain language:** connectomics data is not &quot;clean&quot; when you receive it. Segmentation makes mistakes, synapse detection has false alarms, and the edges of the volume cut through neurons. You must fix these issues before analysis, but every fix is a decision that affects your results.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Core Workflow"><p class="slide-number">Slide 8 of 31</p>
+<h2 id="core-workflow">Core Workflow</h2>
+<ul>
+<li><strong>Ingest and integrity validation</strong></li>
+<li>Confirm file completeness, schema conformance, and version compatibility.</li>
+<li>Log dataset identifiers, CAVE materialization version, and checksums.</li>
+<li>Verify that the synapse table, segment table, and cell-type annotations refer to the same materialization.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Core Workflow (continued)"><p class="slide-number">Slide 9 of 31</p>
+<h2 id="core-workflow-continued">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Artifact and anomaly screening</strong></li>
+<li>Compute segment size distribution and flag outliers (extremely large segments may be merge errors; extremely small segments may be debris).</li>
+<li>Compute synapse confidence score distribution and identify the threshold region.</li>
+<li>Check for duplicate segment IDs, conflicting cell-type labels, and missing foreign keys.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Core Workflow (continued)"><p class="slide-number">Slide 10 of 31</p>
+<h2 id="core-workflow-continued-1">Core Workflow (continued)</h2>
+<ul>
+<li>Identify boundary neurons by mesh-bounding-box intersection.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Core Workflow (continued)"><p class="slide-number">Slide 11 of 31</p>
+<h2 id="core-workflow-continued-2">Core Workflow (continued)</h2>
+<ul>
+<li>Triage issues by likely biological impact: high-impact issues block analysis; low-impact issues are documented and accepted.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Core Workflow (continued)"><p class="slide-number">Slide 12 of 31</p>
+<h2 id="core-workflow-continued-3">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Cleaning transforms</strong></li>
+<li>Apply synapse confidence threshold with documented rationale.</li>
+<li>Remove orphan segments (zero synapses as both pre and post).</li>
+<li>Apply segment size threshold with documented rationale.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Core Workflow (continued)"><p class="slide-number">Slide 13 of 31</p>
+<h2 id="core-workflow-continued-4">Core Workflow (continued)</h2>
+<ul>
+<li>Flag or remove boundary neurons with documented policy.</li>
+<li>Resolve duplicate IDs and label conflicts.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Core Workflow (continued)"><p class="slide-number">Slide 14 of 31</p>
+<h2 id="core-workflow-continued-5">Core Workflow (continued)</h2>
+<ul>
+<li>Normalize units (e.g., convert voxel coordinates to nanometers using dataset resolution metadata).</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Core Workflow (continued)"><p class="slide-number">Slide 15 of 31</p>
+<h2 id="core-workflow-continued-6">Core Workflow (continued)</h2>
+<ul>
+<li><strong>QC and drift checks</strong></li>
+<li>Compare pre/post distributions: synapse count per neuron, segment size, graph density, degree distribution.</li>
+<li>Verify that cleaning did not selectively remove a specific cell type or spatial region.</li>
+<li>Check that graph topology statistics (clustering coefficient, connected components) are consistent with expectations.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Core Workflow (continued)"><p class="slide-number">Slide 16 of 31</p>
+<h2 id="core-workflow-continued-7">Core Workflow (continued)</h2>
+<ul>
+<li><strong>Release packaging</strong></li>
+<li>Publish analysis-ready tables plus: preprocessing decision log, transform code with commit hash, QC metric report with threshold justifications, known limitations and residual risks.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Run of Show (60 min)"><p class="slide-number">Slide 17 of 31</p>
+<h2 id="run-of-show-60-min">Run of Show (60 min)</h2>
+<ul>
+<li>00:00-08:00 | Setup and target framing</li>
+<li>08:00-18:00 | Instructor modeling: ingest and anomaly screening</li>
+<li>18:00-32:00 | Team preprocessing design</li>
+<li>32:00-44:00 | QC pass</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Materials<br>  One noisy connectomics table (synapse table with low-confidence entries, duplicate IDs, and missing cell-type labels).<br>  Segment table with size distribution spanning 5 orders of magnitude.<br>  Shared preprocessing decision sheet (printed or digital template).<br>  QC dashboard template (pre/post metric comparison).<br>  Timing and instructor script<br><br>00:00-08:00 | Setup and target framing<br>  Instructor presents the scenario: &quot;You have received a connectomics export. Before you can analyze it, you must clean it. But every cleaning decision changes your results. Today we learn to clean responsibly.&quot; Display the raw data summary statistics. Define the release objective: an analysis-ready synapse table and neuron table with documented provenance. Define non-negotiable quality gates: no duplicate IDs, no unresolved foreign keys, all thresholds documented.<br><br>08:00-18:00 | Instructor modeling: ingest and anomaly screening<br>  Live demonstration: load the synapse table, compute the confidence score distribution, identify the bimodal peak (true synapses vs false positives). Show the segment size distribution on a log scale, point out the debris tail. Check for orphan IDs. Key script line: &quot;Before you touch the data, understand its shape. The distribution plot is your first diagnostic tool.&quot;<br><br>18:00-32:00 | Team preprocessing design<br>  Teams of 3-4 draft cleaning rules for each identified issue. Each team must produce a preprocessing decision table with columns: issue, proposed action, threshold, rationale, estimated impact. Instructor circulates, challenging threshold choices: &quot;Why 50 and not 40? What do you lose at 50 that you keep at 40?&quot;<br><br>32:00-44:00 | QC pass<br>  Teams compute (or estimate from the provided distributions) pre/post metrics: total synapse count, total segment count, mean synapses per neuron, fraction of each cell type remaining. Teams make a release/no-release decision based on their quality gates. Instructor asks: &quot;Did cleaning change the relative representation of cell types? If it did, that is a bias you must report.&quot;<br><br>44:00-54:00 | Cross-team review<br>  Teams swap preprocessing decision tables and QC reports. Each team audits the other&#x27;s transform log for: missing rationale, unjustified thresholds, potential biological signal loss, and reproducibility gaps. Teams write two specific improvement suggestions.<br><br>54:00-60:00 | Competency checkpoint<br>  Each team submits one release note with: dataset version, all thresholds and parameters, QC metrics with pass/fail, and at least one documented residual risk. Instructor reviews one example live.<br>  Success criteria for this session<br>  Cleaning decisions are deterministic, justified, and documented in real time.<br>  QC thresholds are tied to operational actions (not just reported).<br>  Release note exposes at least one unresolved interpretation risk.</p></details></section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Run of Show (60 min) (continued)"><p class="slide-number">Slide 18 of 31</p>
+<h2 id="run-of-show-60-min-continued">Run of Show (60 min) (continued)</h2>
+<ul>
+<li>44:00-54:00 | Cross-team review</li>
+<li>54:00-60:00 | Competency checkpoint</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: Misconceptions to Watch"><p class="slide-number">Slide 19 of 31</p>
+<h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> &quot;raw data is always better.&quot; In connectomics, raw segmentation output contains systematic artifacts that will corrupt analysis if left uncleaned. The question is not whether to clean, but how to clean transparently.</li>
+<li><strong>Misconception guardrail:</strong> there is no single &quot;correct&quot; threshold. If your result depends on a specific threshold choice, it is fragile and should be reported with a sensitivity analysis.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-20" aria-label="Slide 20: Misconceptions to Watch (continued)"><p class="slide-number">Slide 20 of 31</p>
+<h2 id="misconceptions-to-watch-continued">Misconceptions to Watch (continued)</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> more filtering is not always better. Aggressive cleaning can create the appearance of clean results while actually removing biological signal.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-21" aria-label="Slide 21: Misconceptions to Watch (continued)"><p class="slide-number">Slide 21 of 31</p>
+<h2 id="misconceptions-to-watch-continued-1">Misconceptions to Watch (continued)</h2>
+<ul>
+<li><strong>Misconception guardrail:</strong> version-control notes alone are insufficient without data lineage. Git tracks code changes, but you also need to track which data version was processed with which code version.</li>
+<li><strong>Misconception guardrail:</strong> documenting preprocessing after the fact is unreliable. Document decisions in real time.</li>
+<li><strong>Misconception guardrail:</strong> reporting metrics without thresholds is not quality control. Every metric needs an associated action.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-22" aria-label="Slide 22: Studio Activity"><p class="slide-number">Slide 22 of 31</p>
+<h2 id="studio-activity">Studio Activity</h2>
+<p><strong>Scenario:</strong> Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table.</p>
+
+</section><section class="reader-slide" id="slide-23" aria-label="Slide 23: Activity Output Checklist"><p class="slide-number">Slide 23 of 31</p>
+<h2 id="activity-output-checklist">Activity Output Checklist</h2>
+<ul>
+<li>Evidence-linked artifact submitted.</li>
+<li>At least one limitation or uncertainty stated.</li>
+<li>Revision point captured from feedback.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-24" aria-label="Slide 24: Assessment Rubric"><p class="slide-number">Slide 24 of 31</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<p><strong>Minimum pass</strong></p>
+<ul>
+<li>Cleaning decisions are explicit, justified, and reproducible.</li>
+<li>QC metrics include thresholds tied to concrete actions.</li>
+<li>Release package includes provenance metadata (dataset version, code commit, parameters).</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-25" aria-label="Slide 25: Assessment Rubric"><p class="slide-number">Slide 25 of 31</p>
+<h2 id="assessment-rubric-1">Assessment Rubric</h2>
+<p><strong>Strong performance</strong></p>
+<ul>
+<li>Distinguishes low-risk cleanup from biologically sensitive transforms with explicit reasoning.</li>
+<li>Includes sensitivity analysis: &quot;If we move the synapse threshold from 50 to 30, X% more edges appear and Y motifs change significance.&quot;</li>
+<li>Documents limitations and unresolved risks transparently, including what biological signal may have been lost.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-26" aria-label="Slide 26: Assessment Rubric"><p class="slide-number">Slide 26 of 31</p>
+<h2 id="assessment-rubric-2">Assessment Rubric</h2>
+<p><strong>Common failure modes</strong></p>
+<ul>
+<li>Silent ad-hoc edits with no transform log.</li>
+<li>Aggressive filtering that removes biologically meaningful variation without acknowledgment.</li>
+<li>Metrics reported without operational thresholds.</li>
+<li>Missing dataset version or code commit in the release note.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-27" aria-label="Slide 27: Exit Ticket"><p class="slide-number">Slide 27 of 31</p>
+<h2 id="exit-ticket">Exit Ticket</h2>
+<p>Take one connectomics table (real or mock) and write:</p>
+<ol>
+<li>Three cleaning rules with rationale tied to specific data artifacts.</li>
+<li>Two QC thresholds with associated pass/fail actions and biological justification.</li>
+<li>One sensitivity analysis: what happens to your key metric if you relax or tighten your primary threshold by 20%?</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-28" aria-label="Slide 28: Exit Ticket (continued)"><p class="slide-number">Slide 28 of 31</p>
+<h2 id="exit-ticket-continued">Exit Ticket (continued)</h2>
+<ol>
+<li>One limitation that remains after preprocessing, stated concretely enough to guide interpretation.</li>
+</ol>
+
+</section><section class="reader-slide" id="slide-29" aria-label="Slide 29: References (Instructor)"><p class="slide-number">Slide 29 of 31</p>
+<h2 id="references-instructor">References (Instructor)</h2>
+<ul>
+<li>Wilkinson et al., 2016. The FAIR Guiding Principles for scientific data management and stewardship.</li>
+<li>Peng, 2011. Reproducible Research in Computational Science.</li>
+<li>MICrONS and related connectomics workflow documentation.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-30" aria-label="Slide 30: Teaching Materials"><p class="slide-number">Slide 30 of 31</p>
+<h2 id="teaching-materials">Teaching Materials</h2>
+<ul>
+<li>Module page: /modules/module18/</li>
+<li>Session kit: /teaching/sessions/module18/</li>
+<li>Worksheet: /assets/worksheets/module18/module18-activity.md</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-31" aria-label="Slide 31: Read, review, or teach"><p class="slide-number">Slide 31 of 31</p>
+<h2 id="read-review-or-teach">Read, review, or teach</h2>
+<p><a href="module18.reader.html">Read these slides as a page</a></p>
+<p><a href="https://www.neurotrailblazers.org/modules/module18/">Open the complete lesson</a></p>
+<p>The reading version includes figure descriptions and discussion guidance.</p>
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

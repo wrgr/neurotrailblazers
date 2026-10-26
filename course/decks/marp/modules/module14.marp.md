@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 14 · NeuroTrailblazers"
+footer: "Module 14 · Nanoscale"
 title: "Module 14: Computer Vision for EM"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 14</span>
+<span class="eyebrow">Nanoscale · Module 14</span>
 
 # Computer Vision for EM
 Teaching Deck
@@ -24,29 +24,30 @@ Teaching Deck
 - Design a validation plan for CV pipelines in EM data
 - Report CV limitations with reproducibility safeguards
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Design and evaluate a CV pipeline for EM imagery that is fit for a specific connectomics task and explicitly bounded by known failure modes. Concretely: choose an architecture from the shape of the task rather than from the benchmark leaderboard, decompose error into merges and splits instead of reporting one score, convert that decomposition into a downstream cost using a ratio your team has actually measured, and write a release gate that says in advance what result would stop the model from shipping.
 
+
 ---
 
 ## Concept Focus
 ### 1) Task-model fit
-- **Technical:** detection, instance segmentation, denoising, and classification need different objectives, and in EM they also need different data geometry. Affinity prediction with watershed and agglomeration is modular: the dense network runs once over the volume and agglomeration can be re-run cheaply with a new threshold or a learned merge model. Flood-filling networks produce instance labels directly with fewer post-processing stages, at substantially higher compute per volume and less ability to re-run one stage in isolation. Anisotropic data — 4 x 4 x 40 nm is 10:1 — makes z-context weak and pushes some pipelines toward 2D prediction with explicit cross-section linking.
+- **Technical:** detection, instance segmentation, denoising, and classification need different objectives, and in EM they also need different data geometry.
+
+<!--
+Further teaching detail from the module:
+**Technical:** detection, instance segmentation, denoising, and classification need different objectives, and in EM they also need different data geometry. Affinity prediction with watershed and agglomeration is modular: the dense network runs once over the volume and agglomeration can be re-run cheaply with a new threshold or a learned merge model. Flood-filling networks produce instance labels directly with fewer post-processing stages, at substantially higher compute per volume and less ability to re-run one stage in isolation. Anisotropic data — 4 x 4 x 40 nm is 10:1 — makes z-context weak and pushes some pipelines toward 2D prediction with explicit cross-section linking.
+-->
 
 ---
 
 ## Concept Focus (continued)
 - **Plain language:** pick the model for the job and for the voxel shape, not by popularity.
 - **Misconception guardrail:** one architecture solves all EM tasks equally well.
+
 
 ---
 
@@ -56,13 +57,20 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 - Select a baseline and at most two candidate approaches, using the approach table and the voxel geometry of your data.
 - Assemble evaluation data that includes at least one deliberately hard region, and keep clean-region and hard-region metrics separate.
 
+
 ---
 
 ## Core Workflow (continued)
 - Evaluate with VI decomposed, ERL, and a connectivity-level metric; never report a single aggregate score alone.
 - Convert the error counts into downstream cost using a merge-to-split ratio your team measured rather than assumed.
 - Review 20-30 failure cases by eye in ambiguous regions and classify each by cause: weak stain, section loss, fold, thin neurite, or genuine ambiguity.
+
+
+---
+
+## Core Workflow (continued)
 - Publish a model card with intended use, unsupported uses, the evaluation regions, the metrics with their region breakdown, and the release gate the model passed.
+
 
 ---
 
@@ -71,9 +79,6 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 - 08:00-20:00 choose metrics tied to downstream biology.
 - 20:00-34:00 evaluate baseline vs candidate model.
 - 34:00-46:00 error taxonomy and triage discussion.
-- 46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics.
-- 56:00-60:00 competency check: each learner states their release gate as a sentence that could fail.
-
 <!--
 00:00-08:00 task framing + exemplar failure modes.
   Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
@@ -90,17 +95,31 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 
 ---
 
+## Run of Show (60 min) (continued)
+- 46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics.
+- 56:00-60:00 competency check: each learner states their release gate as a sentence that could fail.
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** one architecture solves all EM tasks equally well.
 - **Misconception guardrail:** a higher benchmark score means safer downstream use.
 - **Misconception guardrail:** visual plausibility is sufficient validation.
 - **Misconception guardrail:** the held-out ground truth is representative of the volume.
+
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** more augmentation is always better than less.
+
 
 ---
 
 ## Studio Activity
 **Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given the model outputs, a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region, and a second, smaller ground-truth patch from a region containing a partial fold and two lost sections. Your team maintains the production segmentation and must recommend one model.
+
 
 ---
 
@@ -109,17 +128,25 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 - **Minimum pass:** clear task-model rationale, biologically relevant metrics reported with merge and split separated, explicit limitations naming at least one unsupported use.
 - **Strong performance:** robust failure analysis by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.
+
+
+---
+
+## Assessment Rubric (continued)
 - **Failure modes:** metric-only reasoning, pooling clean and artifact-heavy regions into one number, weak split design, no deployment boundaries, thresholds chosen after seeing which model they would favor.
+
 
 ---
 
 ## Exit Ticket
 Document one CV result with one supported use case and one forbidden use case.
+
 
 ---
 
@@ -127,9 +154,24 @@ Document one CV result with one supported use case and one forbidden use case.
 - Januszewski et al. (2018) for segmentation model context.
 - Recent MICrONS/FlyWire methods for practical CV constraints.
 
+
 ---
 
 ## Teaching Materials
 - Module page: /modules/module14/
 - Session kit: /teaching/sessions/module14/
 - Worksheet: /assets/worksheets/module14/module14-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module14.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module14/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

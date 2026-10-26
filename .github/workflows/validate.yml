@@ -93,6 +93,9 @@ jobs:
       # worksheet footers citing `/modules/slides/moduleNN/` in a code span, and the
       # link audit still passed. Gate verified by injecting exactly that fault and
       # confirming this fails while check_site_links stays green.
+      - name: Visual teaching data and reading versions
+        run: ruby scripts/check_visual_design.rb
+
       - name: Site paths in code spans
         run: ruby scripts/validate_code_span_paths.rb
 
@@ -149,6 +152,9 @@ jobs:
 
       # A real gate: exits 1 if _site is missing or any internal link is broken.
       # Run with plain `ruby` — stdlib only — but it requires _site/ from the step above.
+      - name: Card geometry and slide reading accessibility
+        run: NODE_PATH="$RUNNER_TEMP/research-browser/node_modules" node scripts/check_visual_design.cjs
+
       - name: Internal link audit
         run: ruby scripts/check_site_links.rb
 

@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 16 · NeuroTrailblazers"
+footer: "Module 16 · Nanoscale"
 title: "Module 16: Scientific Visualization for Connectomics"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 16</span>
+<span class="eyebrow">Nanoscale · Module 16</span>
 
 # Scientific Visualization for Connectomics
 Teaching Deck
@@ -24,32 +24,38 @@ Teaching Deck
 - Avoid misleading visual encodings in dense connectomics data
 - Produce publication-ready and presentation-ready figures
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Produce a figure set that communicates connectomics findings accurately, including uncertainty and data-quality context, for both expert and mixed audiences. Students will leave this module able to choose the right visualization form for a given scientific claim, build publication-quality figures using standard tools, and defend every design choice in terms of clarity and honesty.
 
+
 ---
 
 ## Concept Focus
 ### 1) Visualization as communication, not decoration
-- **Technical:** every visual encoding (position, color, size, shape, opacity) carries information. Encodings that do not map to data dimensions are noise. The goal of a scientific figure is to make the reader's correct interpretation as effortless as possible.
+- **Technical:** every visual encoding (position, color, size, shape, opacity) carries information.
 - **Plain language:** a figure should help people understand your result, not impress them with complexity.
 - **Misconception guardrail:** making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
+
+<!--
+Further teaching detail from the module:
+**Technical:** every visual encoding (position, color, size, shape, opacity) carries information. Encodings that do not map to data dimensions are noise. The goal of a scientific figure is to make the reader's correct interpretation as effortless as possible.
+-->
 
 ---
 
 ## Core Workflow
 - **Map each claim to required visual evidence.** For every result sentence, identify what figure panel and what visual encoding will support it.
 - **Select the appropriate plot type.** Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.
+
+
+---
+
+## Core Workflow (continued)
 - **Draft candidate visuals with uncertainty layers.** Include error bars, confidence bands, or explicit missing-data indicators from the start --- do not plan to "add them later."
+
 
 ---
 
@@ -58,10 +64,12 @@ Produce a figure set that communicates connectomics findings accurately, includi
 - **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.
 - **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
 
+
 ---
 
 ## Core Workflow (continued)
 - **Export figure package with caption metadata.** Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.
+
 
 ---
 
@@ -70,9 +78,6 @@ Produce a figure set that communicates connectomics findings accurately, includi
 - 10:00-20:00 | Claim-to-visual mapping exercise
 - 20:00-35:00 | Figure draft build
 - 35:00-47:00 | Uncertainty and quality overlays
-- 47:00-55:00 | Peer critique and revision
-- 55:00-60:00 | Competency check and wrap-up
-
 <!--
 Materials needed
   Projected examples: 3 good and 3 bad connectomics figures (prepared in advance from published papers or synthetic examples).
@@ -111,10 +116,18 @@ Materials needed
 
 ---
 
+## Run of Show (60 min) (continued)
+- 47:00-55:00 | Peer critique and revision
+- 55:00-60:00 | Competency check and wrap-up
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
 - **Misconception guardrail:** there is no single "best" visualization. The best choice depends on the claim.
 - **Misconception guardrail:** complexity in a figure does not equal rigor. Simplicity with completeness is the standard.
+
 
 ---
 
@@ -122,10 +135,12 @@ Materials needed
 - **Misconception guardrail:** cleaner-looking plots are not always better. A plot that hides uncertainty is less honest than one that shows it.
 - **Misconception guardrail:** aesthetics cannot replace methodological clarity. A beautiful figure that only some people can read is not a good figure.
 
+
 ---
 
 ## Studio Activity
 **Scenario:** You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers.
+
 
 ---
 
@@ -134,12 +149,19 @@ Materials needed
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 - **Minimum pass:** visuals map clearly to claims, include uncertainty context, use perceptually uniform colormaps, and have complete axis labels and scale bars.
 - **Strong performance:** high clarity across expert and non-expert audiences, minimal misinterpretation risk, colorblind-safe design, explicit documentation of dataset version and code used for each panel, and thoughtful caption language that narrows interpretation bounds.
+
+
+---
+
+## Assessment Rubric (continued)
 - **Failure modes:** overloaded figures with too many overlapping elements, missing scale context, hidden uncertainty, rainbow colormaps, gratuitous 3D renderings, captions that do not mention data quality or limitations.
+
 
 ---
 
@@ -148,13 +170,20 @@ Take one existing connectomics figure (from a paper, a classmate, or your own wo
 1. Identify the claim the figure is supposed to support.
 2. Add one uncertainty cue (error bar, confidence band, or missing-data indicator).
 3. Replace the colormap with a perceptually uniform alternative if needed.
+
+
+---
+
+## Exit Ticket (continued)
 4. Write a two-sentence caption that narrows interpretation bounds and specifies the dataset version.
 5. Run the figure through a colorblind simulator and note any issues.
+
 
 ---
 
 ## References (Instructor)
 - Visualization best-practice resources and connectomics exemplars.
+
 
 ---
 
@@ -162,3 +191,17 @@ Take one existing connectomics figure (from a paper, a classmate, or your own wo
 - Module page: /modules/module16/
 - Session kit: /teaching/sessions/module16/
 - Worksheet: /assets/worksheets/module16/module16-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module16.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module16/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

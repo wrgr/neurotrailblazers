@@ -2,13 +2,13 @@
 marp: true
 theme: neurotrailblazers
 paginate: true
-footer: "Module 25 · NeuroTrailblazers"
+footer: "Module 25 · Nanoscale"
 title: "Module 25: Portfolio, Feedback, and Final Project"
 ---
 
 <!-- _class: title nanoscale -->
 <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-<span class="eyebrow">NeuroTrailblazers · Module 25</span>
+<span class="eyebrow">Nanoscale · Module 25</span>
 
 # Portfolio, Feedback, and Final Project
 Teaching Deck
@@ -24,25 +24,25 @@ Teaching Deck
 - Integrate peer/mentor feedback into a revised final portfolio
 - Present a coherent research identity and next-step plan
 
----
-
-## Session Outcomes
-- Learners can complete the module capability target.
-- Learners can produce one evidence-backed artifact.
-- Learners can state one limitation or uncertainty.
 
 ---
 
 ## Capability Target
 Submit a capstone portfolio that proves technical capability, communicates decision quality, and demonstrates iterative growth through feedback. Operationally: every artifact carries a caption naming the competency it proves and what a reviewer can check, the portfolio distinguishes what you did from what you were given, and at least one artifact shows a version that was wrong alongside the correction and the reason.
 
+
 ---
 
 ## Concept Focus
 ### 1) Portfolio as evidence architecture
-- **Technical:** artifacts should be organized by competency claims, not chronology. Six well-captioned artifacts covering distinct competencies outperform fifteen that cluster on one. Where two artifacts prove the same thing, keep the stronger and cut the other; the cut is itself evidence of judgment.
+- **Technical:** artifacts should be organized by competency claims, not chronology.
 - **Plain language:** group work by what it proves you can do.
 - **Misconception guardrail:** more artifacts make a stronger portfolio.
+
+<!--
+Further teaching detail from the module:
+**Technical:** artifacts should be organized by competency claims, not chronology. Six well-captioned artifacts covering distinct competencies outperform fifteen that cluster on one. Where two artifacts prove the same thing, keep the stronger and cut the other; the cut is itself evidence of judgment.
+-->
 
 ---
 
@@ -50,7 +50,13 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 - Define the competency claims first, in writing, then ask what evidence each requires. Working the other way round produces a folder of what you happen to have.
 - Select artifacts against those claims, cutting duplicates and keeping the version that shows the most judgment rather than the most polish.
 - Write one four-line evidence caption per artifact, checking that line three names something a stranger can verify.
+
+
+---
+
+## Core Workflow (continued)
 - Add reflection notes on decisions, errors, and revisions, naming the alternative not taken in each case.
+
 
 ---
 
@@ -59,6 +65,7 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 - Run peer or mentor review with a stated decision, criterion, stage, and deadline for each artifact you send.
 - Revise, record what changed and why in a visible revision log, and publish the package with a README that tells a two-minute reader where to start.
 
+
 ---
 
 ## Run of Show (60 min)
@@ -66,9 +73,6 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 - 08:00-20:00 | Competency-claim mapping
 - 20:00-34:00 | Artifact curation and caption drafting
 - 34:00-46:00 | Feedback exchange round
-- 46:00-56:00 | Revision planning
-- 56:00-60:00 | Final submission checklist
-
 <!--
 00:00-08:00 | Portfolio quality exemplar
   Show one strong and one weak portfolio side by side, including a strong one that contains a documented error. Ask which one the room would trust with a dataset.
@@ -91,18 +95,32 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 
 ---
 
+## Run of Show (60 min) (continued)
+- 46:00-56:00 | Revision planning
+- 56:00-60:00 | Final submission checklist
+
+
+---
+
 ## Misconceptions to Watch
 - **Misconception guardrail:** more artifacts make a stronger portfolio.
 - **Misconception guardrail:** describing what you enjoyed about a project counts as reflection.
 - **Misconception guardrail:** a final version is stronger evidence when the earlier drafts are removed.
 - **Misconception guardrail:** a good artifact speaks for itself and needs no caption.
+
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** asking a narrow question wastes the reviewer's expertise.
 - **Misconception guardrail:** work you did yourself is automatically yours to publish.
+
 
 ---
 
 ## Studio Activity
 **Scenario:** You are preparing your final portfolio for a competitive research opportunity. Assume the reviewer spends two minutes on the first pass and opens exactly one artifact.
+
 
 ---
 
@@ -111,22 +129,35 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 - At least one limitation or uncertainty stated.
 - Revision point captured from feedback.
 
+
 ---
 
 ## Assessment Rubric
 - **Minimum pass:** portfolio claims are evidence-backed; reflection identifies at least one meaningful revision loop; feedback is incorporated with clear changes; contributions in group work are stated explicitly.
 - **Strong performance:** demonstrates cross-module synthesis and transfer, highlights uncertainty and correction with technical maturity, communicates a future growth plan with concrete milestones, and includes at least one artifact whose earlier wrong version is shown alongside the correction and its reason.
-- **Common failure to flag:** artifact dump with weak competency mapping, reflection limited to narrative without analytical depth, and minimal response to peer critique. Also flag portfolios where every caption line three is missing, since that is the difference between a folder and evidence.
+
+<!--
+Further teaching detail from the module:
+**Common failure to flag:** artifact dump with weak competency mapping, reflection limited to narrative without analytical depth, and minimal response to peer critique. Also flag portfolios where every caption line three is missing, since that is the difference between a folder and evidence.
+-->
+
+---
+
+## Assessment Rubric (continued)
+- **Common failure to flag:** artifact dump with weak competency mapping, reflection limited to narrative without analytical depth, and minimal response to peer critique.
+
 
 ---
 
 ## Exit Ticket
 Choose one artifact and write its four lines: one competency claim it supports, what you did versus what you were given, one thing a reviewer can verify and where, and one limitation with the revision you would make next.
 
+
 ---
 
 ## References (Instructor)
 - Program portfolio templates and competency rubrics.
+
 
 ---
 
@@ -134,3 +165,17 @@ Choose one artifact and write its four lines: one competency claim it supports, 
 - Module page: /modules/module25/
 - Session kit: /teaching/sessions/module25/
 - Worksheet: /assets/worksheets/module25/module25-activity.md
+
+
+---
+
+<!-- _class: closing -->
+## Read, review, or teach
+[Read these slides as a page](module25.reader.html)
+
+[Open the complete lesson](https://www.neurotrailblazers.org/modules/module25/)
+
+The reading version includes figure descriptions and discussion guidance.
+
+<p class="source">Nanoscale text: CC BY 4.0. Scientific figures retain their individual credits.</p>
+

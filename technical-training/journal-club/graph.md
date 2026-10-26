@@ -13,11 +13,12 @@ content_type: core
 <div class="layout-content layout-page jcg-page">
 
 <section class="jc-hero">
-  <h1>Papers and citations</h1><nav class="paper-view-links" aria-label="Paper view"><a id="jcg-list-view" href="{{ '/technical-training/journal-club/' | relative_url }}">Paper list</a><span aria-current="page">Citation map</span></nav>
+  <h1>Research papers</h1><nav class="paper-view-links" aria-label="Paper view"><a id="jcg-list-view" href="{{ '/technical-training/journal-club/' | relative_url }}">Paper list</a><span aria-current="page">Citation graph</span></nav>
   <p>Find a paper, read its abstract, then explore the works it cites and the papers that cite it.</p>
 </section>
 
 <section class="section section-compact">
+  <h2 class="paper-filter-title">Find and filter papers</h2>
   <div class="jcg-basic-controls">
       <!-- Search Filter -->
       <div class="jcg-control-group">
@@ -69,6 +70,17 @@ content_type: core
   </div>
   <div class="jcg-basic-actions"><button id="jcg-reset" type="button" class="jcg-secondary-btn">Clear filters</button><p class="jcg-count" id="jcg-count" role="status" aria-live="polite">Loading papers…</p></div>
   <p class="jcg-hint">Search publication titles, authors, journals, and DOI identifiers. Topic and organism tags narrow results but do not establish dataset use or findings.</p>
+  <div class="paper-graph-layout">      <!-- Layout Mode -->
+      <div class="jcg-control-group">
+        <label for="jcg-layout-buttons">Map layout:</label>
+        <div class="jcg-tier-btn-group" id="jcg-layout-buttons">
+          <button type="button" class="jcg-layout-btn" data-mode="organic">Free layout</button>
+          <button type="button" class="jcg-layout-btn active" data-mode="cluster">Group by topic</button>
+          <button type="button" class="jcg-layout-btn" data-mode="timeline">Timeline</button>
+        </div>
+      </div>
+
+</div>
     <details class="jcg-filter-panel" id="jcg-filter-panel">
       <summary>Display and additional filters</summary>
       <div class="jcg-controls">
@@ -80,16 +92,6 @@ content_type: core
           <button type="button" class="jcg-tier-btn" data-tier="500">Top 500</button>
           <button type="button" class="jcg-tier-btn" data-tier="1000">Top 1,000</button>
           <button type="button" class="jcg-tier-btn active" data-tier="2000">All 2,000</button>
-        </div>
-      </div>
-
-      <!-- Layout Mode -->
-      <div class="jcg-control-group">
-        <label for="jcg-layout-buttons">Map layout:</label>
-        <div class="jcg-tier-btn-group" id="jcg-layout-buttons">
-          <button type="button" class="jcg-layout-btn" data-mode="organic">Free layout</button>
-          <button type="button" class="jcg-layout-btn active" data-mode="cluster">Group by topic</button>
-          <button type="button" class="jcg-layout-btn" data-mode="timeline">Timeline</button>
         </div>
       </div>
 

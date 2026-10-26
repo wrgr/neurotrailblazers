@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Segmentation and Proofreading | Reading version</title><link rel="stylesheet" href="../../../../assets/css/deck-reader.css"></head>
+<body id="top"><a class="reader-skip" href="#reading-content">Skip to slides</a><header class="reader-header"><p>NEUROTRAILBLAZERS · TEACHING MATERIALS</p><h1>Segmentation and Proofreading</h1><p>Reading version. Text reflows with your screen and zoom. Figures retain their available captions. Expand teaching notes for additional context and, where supplied, visual descriptions.</p><nav aria-label="Deck formats"><a href="08-segmentation-and-proofreading.html">Present slides</a><a href="https://www.neurotrailblazers.org/teaching/sessions/">Session kits</a></nav><details><summary>Contents · 19 slides</summary><ol><li><a href="#slide-1">1. Segmentation and Proofreading</a></li><li><a href="#slide-2">2. Session outcomes (60 minutes)</a></li><li><a href="#slide-3">3. Pedagogical arc</a></li><li><a href="#slide-4">4. Why proofreading is scientific QC</a></li><li><a href="#slide-5">5. From voxels to objects</a></li><li><a href="#slide-6">6. Ultrastructure-informed correction</a></li><li><a href="#slide-7">7. The merge/split dial, on one real object</a></li><li><a href="#slide-8">8. Before and after a human fixed it</a></li><li><a href="#slide-9">9. Synapse-aware correction checks</a></li><li><a href="#slide-10">10. Checking a reconstruction against plausible morphology</a></li><li><a href="#slide-11">11. Boundary failure case</a></li><li><a href="#slide-12">12. Identity-sensitive correction context</a></li><li><a href="#slide-13">13. Metrics and release gates: what each one is blind to</a></li><li><a href="#slide-14">14. Operational proofreading loop</a></li><li><a href="#slide-15">15. Misconceptions to correct</a></li><li><a href="#slide-16">16. Activity</a></li><li><a href="#slide-17">17. Rubric checkpoint</a></li><li><a href="#slide-18">18. Segmentation outside neuroscience, for intuition</a></li><li><a href="#slide-19">19. References and attribution</a></li></ol></details></header>
+<main id="reading-content" tabindex="-1"><section class="reader-slide" id="slide-1" aria-label="Slide 1: Segmentation and Proofreading"><p class="slide-number">Slide 1 of 19</p><img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar" loading="lazy" decoding="async">
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
+
+<p><span class="pill">Technical Course · Unit 08</span></p>
+<h2 id="segmentation-and-proofreading">Segmentation and Proofreading</h2>
+<p>Proofreading is allocation under a fixed budget, not cleanup. Rank by effect on the endpoint, not by conspicuousness.</p>
+
+</section><section class="reader-slide" id="slide-2" aria-label="Slide 2: Session outcomes (60 minutes)"><p class="slide-number">Slide 2 of 19</p>
+<h2 id="session-outcomes-60-minutes">Session outcomes (60 minutes)</h2>
+<ul>
+<li>Classify merge, split, boundary, and identity errors reproducibly.</li>
+<li>Prioritize corrections by expected scientific impact.</li>
+<li>Connect proofreading actions to quantitative QC metrics.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-3" aria-label="Slide 3: Pedagogical arc"><p class="slide-number">Slide 3 of 19</p>
+<h2 id="pedagogical-arc">Pedagogical arc</h2>
+<ul>
+<li>Model: error taxonomy + live correction logic.</li>
+<li>Practice: triage and correction on mixed cases.</li>
+<li>Consensus: adjudicate borderline errors.</li>
+<li>Check: correction log with metric rationale.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-4" aria-label="Slide 4: Why proofreading is scientific QC"><p class="slide-number">Slide 4 of 19</p>
+<h2 id="why-proofreading-is-scientific-qc">Why proofreading is scientific QC</h2>
+<p><img src="../../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Correction policy determines analysis validity.</p>
+<p class="source">Source: assets_outreach source decks, Module14 L2 S03. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;The pipeline is deliberately tuned to over-segment. It prefers splits to merges, because splits are cheaper to repair. That design decision is why proofreading is mostly joining.&quot;<br>Where both segmentation families fail, structurally: thin processes (a 60 nm spine neck may appear in one or two 40 nm sections); steep z-trajectories; tightly apposed membranes under weak staining; artifact regions; rare morphologies — including the boundaries of the volume.<br>Ask where the measurement points are: a pipeline without a fixed evaluation set of neurons can only report aggregate scores, and aggregate scores are how a merge regression ships.</p></details></section><section class="reader-slide" id="slide-5" aria-label="Slide 5: From voxels to objects"><p class="slide-number">Slide 5 of 19</p>
+<h2 id="from-voxels-to-objects">From voxels to objects</h2>
+<p><img src="../../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S08-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Enforce explicit error-class coding in logs.</p>
+<p class="source">Source: assets_outreach source decks, Module14 L2 S08. Historical/context visual.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Everything upstream of this point is repairable; everything downstream inherits whatever came through. Put the error taxonomy (unit §2) next to it: split, merge, glia–neuron merge, orphan fragment, false synapse, missed synapse, wrong synapse partner.<br>Instructor script: &quot;Splits are visible and bounded. Merges are invisible and unbounded. A split leaves evidence of itself — a neuron that stops in mid-neuropil. A merge leaves an object that looks like a neuron and is not.&quot;</p></details></section><section class="reader-slide" id="slide-6" aria-label="Slide 6: Ultrastructure-informed correction"><p class="slide-number">Slide 6 of 19</p>
+<h2 id="ultrastructure-informed-correction">Ultrastructure-informed correction</h2>
+<p><img src="../../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Before touching anything: what does this correction change about the endpoint, per minute of annotator time?</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-ULTRA S06.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>This carries the Unit 05 reading skills into proofreading. Every correction decision ultimately returns to the voxels — a soma, a nucleus, the organelle content on either side of a boundary. Set the frame now: the question about any candidate correction is its effect on the endpoint, not how obvious the error looks.</p></details></section><section class="reader-slide" id="slide-7" aria-label="Slide 7: The merge/split dial, on one real object"><p class="slide-number">Slide 7 of 19</p>
+<h2 id="the-mergesplit-dial-on-one-real-object">The merge/split dial, on one real object</h2>
+<p><img src="../../../../assets/images/content-library/em/segmentation-c2-vs-c3.jpg" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">H01 ships two agglomerations of the same data: c2 calls this one object; c3 calls it two. Neither is a bug.</p>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Across 104 proofread cells, c3 needed 1.6x fewer merge fixes and 2.1x more split fixes than c2. Aggressive agglomeration trades splits for merges; conservative trades merges for splits.<br>Instructor script: &quot;Which one would you proofread on? It depends on your endpoint. If you are counting inputs per cell, a merge invents inputs; if you are tracing long-range axons, splits cost you the path.&quot; Note also what 104 proofread cells out of 16,087 neurons means in practice: most of the volume has never been checked by a human.</p></details></section><section class="reader-slide" id="slide-8" aria-label="Slide 8: Before and after a human fixed it"><p class="slide-number">Slide 8 of 19</p>
+<h2 id="before-and-after-a-human-fixed-it">Before and after a human fixed it</h2>
+<p><img src="../../../../assets/images/content-library/em/proofreading-before-after.jpg" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Green = genuinely this cell. Red = 11,038 voxels the algorithm wrongly absorbed.</p>
+<p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Instructor script: &quot;The membrane it crossed is real but faint. Would you have caught it?&quot; Give the room ten seconds on the left panel before pointing.<br>Then the second lesson: note where the error is NOT. At the soma, the automated segmentation needs no correction at all. Errors concentrate at thin processes and faint boundaries, which is why triage should look there rather than where the object is largest.</p></details></section><section class="reader-slide" id="slide-9" aria-label="Slide 9: Synapse-aware correction checks"><p class="slide-number">Slide 9 of 19</p>
+<h2 id="synapse-aware-correction-checks">Synapse-aware correction checks</h2>
+<p><img src="../../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Apply the Unit 05 synapse criteria before crediting a detection.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-ULTRA S09.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>A synapse assigned to a merged object still scores as correct under synapse precision — exactly what that metric is blind to. False synapses inflate degree and hit weak, one-synapse connections hardest; missed synapses deflate degree non-uniformly by synapse size. Both are found by human verification on a sample, not by browsing.</p></details></section><section class="reader-slide" id="slide-10" aria-label="Slide 10: Checking a reconstruction against plausible morphology"><p class="slide-number">Slide 10 of 19</p>
+<h2 id="checking-a-reconstruction-against-plausible-morphology">Checking a reconstruction against plausible morphology</h2>
+<p><img src="../../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S11-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">A merged object otherwise looks like a perfectly ordinary neuron.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-ULTRA S11.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Implausible-morphology detection is how merges get found at all. Automated detectors look for an object with two somata, or with both ribosomes and presynaptic vesicle clusters — the Unit 06 cue-conflict alarm. Humans then adjudicate a ranked queue rather than browsing the volume.</p></details></section><section class="reader-slide" id="slide-11" aria-label="Slide 11: Boundary failure case"><p class="slide-number">Slide 11 of 19</p>
+<h2 id="boundary-failure-case">Boundary failure case</h2>
+<p><img src="../../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S23-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Show when to stop and escalate instead of over-correcting.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-ULTRA S23.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Estimate the cost to fix before committing. A forty-minute trace through a difficult region loses to five five-minute corrections elsewhere — unless the cell is in your analysis set and the error sits near the root of the arbor, where it disconnects everything distal. If the boundary cannot be resolved with the evidence in view, the correct action is to log it with a reason and route it to adjudication.</p></details></section><section class="reader-slide" id="slide-12" aria-label="Slide 12: Identity-sensitive correction context"><p class="slide-number">Slide 12 of 19</p>
+<h2 id="identity-sensitive-correction-context">Identity-sensitive correction context</h2>
+<p><img src="../../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S13-01.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">Every edge direction in the final graph rests on the axon/dendrite call.</p>
+<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-AXDEN S13.</p>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>A reversed edge is not noise: it deletes a true edge and adds its opposite (Unit 06 §4). Audit the edges whose direction would change your conclusion rather than auditing uniformly.</p></details></section><section class="reader-slide" id="slide-13" aria-label="Slide 13: Metrics and release gates: what each one is blind to"><p class="slide-number">Slide 13 of 19</p>
+<h2 id="metrics-and-release-gates-what-each-one-is-blind-to">Metrics and release gates: what each one is blind to</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Blind to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VI</strong> (split + merge components)</td>
+<td>Object size; a total can improve while merges get worse</td>
+</tr>
+<tr>
+<td><strong>ERL</strong></td>
+<td>Merges, unless explicitly penalized</td>
+</tr>
+<tr>
+<td><strong>Edge precision / recall</strong></td>
+<td>Weights a 1-synapse and a 50-synapse edge equally</td>
+</tr>
+<tr>
+<td><strong>Synapse F1</strong></td>
+<td>Assumes correct segmentation underneath</td>
+</tr>
+</tbody>
+</table>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Rule from unit §3: use at least two metrics from different rows, and always report VI&#x27;s split and merge components separately. A single VI number can improve while merges get worse, because the split component dominates — a real and common way to ship a regression.<br>Then the metric that actually matters: the effect on your endpoint. Take a random 20-cell sample, proofread it exhaustively, recompute the endpoint, report the shift. &quot;Exhaustive proofreading of a 20-cell sample changed the ratio from 3.1 to 2.8&quot; says more about data quality than any VI value.</p></details></section><section class="reader-slide" id="slide-14" aria-label="Slide 14: Operational proofreading loop"><p class="slide-number">Slide 14 of 19</p>
+<h2 id="operational-proofreading-loop">Operational proofreading loop</h2>
+<ol>
+<li>Triage by expected downstream impact.</li>
+<li>Correct with local + global consistency checks.</li>
+<li>Update targeted metrics.</li>
+<li>Route unresolved cases for adjudication.</li>
+<li>Gate release on predefined thresholds.</li>
+</ol>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Work the unit&#x27;s triage example with one annotator-hour. A: a split near the soma of an analysis-set cell, ~60% of the arbor, 10 min. B: a glia–neuron merge on another analysis-set cell, 20 min. C: a conspicuous two-soma merge on cells outside the analysis set, 15 min.<br>Check C&#x27;s partner lists first (2 min) — it could corrupt the endpoint indirectly if either fused neuron is presynaptic to an analysis cell. It is not. Then B before A: an unfixed A delays a cell; an unfixed B poisons one. Spend the remaining time on the next analysis-set candidates, not on C.<br>Stopping rules must be stated in advance, measurable and tied to the endpoint. The strongest: stop when a second independent pass over a 20-cell sample changes the endpoint by less than 5%.</p></details></section><section class="reader-slide" id="slide-15" aria-label="Slide 15: Misconceptions to correct"><p class="slide-number">Slide 15 of 19</p>
+<h2 id="misconceptions-to-correct">Misconceptions to correct</h2>
+<ul>
+<li>&quot;Fix easiest errors first.&quot;</li>
+<li>&quot;Global metric improvements guarantee biological validity.&quot;</li>
+<li>&quot;Automation removes need for human policy.&quot;</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-16" aria-label="Slide 16: Activity"><p class="slide-number">Slide 16 of 19</p>
+<h2 id="activity">Activity</h2>
+<p>Submit one correction log containing:</p>
+<ul>
+<li>error class,</li>
+<li>before/after rationale,</li>
+<li>metric impact expectation,</li>
+<li>confidence and escalation status.</li>
+</ul>
+
+<details class="teaching-notes"><summary>Figure description and teaching notes</summary><p>Every edit records who, when, what and ideally why. That record is what lets you roll back a bad batch, spot one annotator&#x27;s systematic drift, and reconstruct the state of an analysis at any past time.</p></details></section><section class="reader-slide" id="slide-17" aria-label="Slide 17: Rubric checkpoint"><p class="slide-number">Slide 17 of 19</p>
+<h2 id="rubric-checkpoint">Rubric checkpoint</h2>
+<ul>
+<li>Pass: correction decision tied to error class and metric logic.</li>
+<li>Strong: priority ranking aligned to scientific impact.</li>
+<li>Flag: edits without audit trail or rationale.</li>
+</ul>
+
+</section><section class="reader-slide" id="slide-18" aria-label="Slide 18: Segmentation outside neuroscience, for intuition"><p class="slide-number">Slide 18 of 19</p>
+<h2 id="segmentation-outside-neuroscience-for-intuition">Segmentation outside neuroscience, for intuition</h2>
+<p><img src="../../../../assets/images/external/image-segmentation-example.jpg" alt="" loading="lazy" decoding="async"> <img src="../../../../assets/images/external/image-segmentation-example-segmented.png" alt="" loading="lazy" decoding="async"></p>
+<p class="caption">An image and its segmentation: every pixel assigned to exactly one object.</p>
+<p class="source">Source: Wikimedia Commons, File:Image-segmentation-example.jpg and File:Image-segmentation-example-segmented.png. CC0 1.0.</p>
+
+</section><section class="reader-slide" id="slide-19" aria-label="Slide 19: References and attribution"><p class="slide-number">Slide 19 of 19</p>
+<h2 id="references-and-attribution">References and attribution</h2>
+<ul>
+<li>Figures RIV-*: Pat Rivlin training materials (MICrONS proofreading deck); Module14 L2: assets_outreach source decks.</li>
+<li>Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.</li>
+<li>Januszewski et al. (2018), <em>Nature Methods</em>, doi:10.1038/s41592-018-0049-4 — flood-filling networks.</li>
+</ul>
+
+</section></main><footer class="reader-footer">Nanoscale text: CC BY 4.0. Figures retain their individual credits. <a href="#top">Return to top</a></footer></body></html>

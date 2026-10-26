@@ -4,6 +4,7 @@
 require 'yaml'
 require 'fileutils'
 require 'date'
+require_relative 'lib/deck_design'
 
 ROOT = File.expand_path('..', __dir__)
 MODULE_DIR = File.join(ROOT, 'modules')
@@ -619,13 +620,13 @@ module_paths.each do |path|
     marp: true
     theme: neurotrailblazers
     paginate: true
-    footer: "Module #{num} · NeuroTrailblazers"
+    footer: "Module #{num} · Nanoscale"
     title: "#{title}"
     ---
 
     <!-- _class: title nanoscale -->
     <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
-    <span class="eyebrow">NeuroTrailblazers · Module #{num}</span>
+    <span class="eyebrow">Nanoscale · Module #{num}</span>
 
     # #{title.sub(/\AModule \d+:\s*/, '')}
     Teaching Deck
@@ -704,6 +705,8 @@ module_paths.each do |path|
 
 
 
+  DeckDesign.apply(marp_path, num)
+
   # ---- Ready-to-run session kit -------------------------------------------
   # One page a facilitator opens ten minutes before walking in. Everything it
   # shows already existed, scattered across the module page, the worksheet, the
@@ -779,7 +782,8 @@ module_paths.each do |path|
 
     <div class="resource-card">
       <div class="resource-links">
-        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Open slides</a>
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Present slides</a>
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.reader.html' | relative_url }}">Read slides as a page</a>
         <a class="resource-link" href="{{ site.deck_source_base }}/modules/module#{num}.marp.md">Editable slides</a>
         <a class="resource-link" href="{{ '/assets/worksheets/module#{num}/module#{num}-activity.md' | relative_url }}">Learner worksheet</a>
         <a class="resource-link" href="{{ '/modules/module#{num}/' | relative_url }}">Full module page</a>
@@ -853,51 +857,8 @@ module_paths.each do |path|
   count += 1
 end
 
-sessions_index = File.join(SESSION_DIR, 'index.md')
-File.write(sessions_index, <<~MD)
-  ---
-  layout: page
-  title: "Session Kits"
-  description: "One ready-to-run page per module: prep checklist, timing, materials, misconceptions, rubric."
-  permalink: /teaching/sessions/
-  slug: session-kits
-  track: career-and-community
-  content_type: delivery
-  pathways:
-    - classroom delivery
-    - mentor support
-  ---
+# Preserve the hand-maintained, searchable session catalog from PR 188.
 
-  Each kit is the single page to open ten minutes before walking in. Everything in it
-  already existed — capability target, run of show, worksheet, rubric, rendered deck —
-  but was spread across five locations. These assemble it.
-
-  Kits are generated from the module pages. To change one, edit
-  `modules/moduleNN.md` and re-run `scripts/generate_module_teaching_materials.rb`.
-
-  For the reasoning behind the session design — why half of contact time should be
-  learner judgment rather than explanation, how to differentiate across the learner
-  personas, and what to do when a session goes wrong — see the
-  [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
-
-  Two hand-written companions sit alongside the generated kits, for sessions with
-  audiences the kits do not assume: the
-  [Module 22 public-engagement companion]({{ '/teaching/module22-public-engagement/' | relative_url }})
-  for running that material with non-research audiences, and
-  [From Projectome to Synapse]({{ '/teaching/projectome-to-synapse/' | relative_url }}),
-  a 25–40 minute hands-on activity that works from high school through graduate
-  programs.
-
-  <div class="cards-grid">
-  {% assign kits = site.pages | where_exp: 'p', "p.path contains 'teaching/sessions/module'" | sort: 'path' %}
-  {% for p in kits %}
-    <article class="card">
-      <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title | remove: 'Session Kit: ' }}</a></h3>
-      <p class="card-description">{{ p.description }}</p>
-    </article>
-  {% endfor %}
-  </div>
-MD
 
 # The 25 per-module slide pages this script used to emit were link wrappers: four
 # links, all of which the session kit at /teaching/sessions/moduleNN/ already carries,

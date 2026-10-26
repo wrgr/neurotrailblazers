@@ -1,5 +1,5 @@
-# NeuroTrailblazers - Jekyll Configuration
-title: "NeuroTrailblazers"
+# Nanoscale - Jekyll Configuration
+title: "Nanoscale"
 description: "Mapping connections. Making connections. Training the people who map the brain: an open curriculum and mentorship program for nanoscale connectomics, in the NIH BRAIN CONNECTS program."
 
 # The site line. One place, so it cannot drift again; see docs/brand/BRAND_GUIDE.md §2.
@@ -72,7 +72,7 @@ defaults:
       layout: "default"
 
 # Site configuration
-author: "NeuroTrailblazers Team"
+author: "Nanoscale Team"
 email: "wgr@jhu.edu"
 twitter_username: neurotrailblazers
 github_username: wrgr
@@ -128,7 +128,7 @@ exclude:
   # EN.585.781 graduate-course decks: sources and theme are excluded like the
   # others; the rendered HTML under course/decks/marp/out/ stays published.
   - course/decks/marp/en585781
-  # Standalone NeuroTrailblazers graduate lectures (not part of EN.585.781): same
+  # Standalone Nanoscale graduate lectures (not part of EN.585.781): same
   # treatment -- sources excluded, rendered HTML under out/lectures/ published.
   - course/decks/marp/lectures
   - course/decks/0*.md

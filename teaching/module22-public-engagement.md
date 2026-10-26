@@ -58,6 +58,8 @@ Require the chain:
 Stop at the last step actually supported.
 
 ### 40–50 min — Public translation
+Start with the [taxi-ride explanations and follow-up questions]({{ '/teaching/connectomics-taxi-pitches/' | relative_url }}). Choose a 15-, 30-, or 60-second sample, then adapt it to the learner's actual role and audience. The [Neuronauts Expedition]({{ '/neuronauts/' | relative_url }}) supplies the full story behind these short explanations.
+
 Learner produces:
 - one 60-second explanation;
 - one evidence badge: Established / Emerging / Aspirational;

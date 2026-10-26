@@ -21,5 +21,7 @@ content_type: delivery
 <article class="card"><h3>Plan how to teach</h3><p>Read the facilitator guide for preparation, group activities, and assessment.</p><a class="btn btn-primary" href="{{ '/teaching/facilitator-guide/' | relative_url }}">Read the facilitator guide</a></article>
 </div><p>Already know which presentation you need? <a href="{{ '/technical-training/slides/' | relative_url }}">Open presentation slides</a>.</p></section>
 
+<section class="section"><h2>Practice explaining your work</h2><p>Use short, plain-language explanations and follow-up questions to practice a conversation about brain mapping.</p><a class="btn btn-secondary" href="{{ '/teaching/connectomics-taxi-pitches/' | relative_url }}">Explain your work in a taxi ride</a></section>
+
 <details class="secondary-options"><summary>More course-planning options</summary><p><a href="{{ '/tracks/' | relative_url }}">Learning paths</a> · <a href="{{ '/models/' | relative_url }}">Program approach</a> · <a href="{{ '/resources/' | relative_url }}">Reference resources</a></p></details>
 </div>

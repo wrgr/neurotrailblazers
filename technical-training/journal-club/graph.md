@@ -912,6 +912,7 @@ content_type: core
         citation_role: d.citation_role || 'participant',
         scope_role: d.scope_role || 'participant',
         evidence: d.evidence || null,
+        publication_links: evidenceApi ? evidenceApi.publicationRelationship(d.publication_links, cleanDoi) : null,
         abstract: d.abstract || '',
         // Bibliographic search excludes generated interpretations and tags.
         searchText: [d.title, d.authors, d.journal, d.doi].join(' ').toLowerCase(),
@@ -1878,6 +1879,9 @@ content_type: core
 
     var evidenceHtml = evidenceApi ? evidenceApi.render(p.evidence, p.doi) :
       '<p class="jcg-hint">Contribution notes could not load. Open the publication for its findings.</p>';
+    var publicationHtml = evidenceApi ? evidenceApi.renderPublicationLinks(p.publication_links, p.doi) : '';
+    var isCorrection = p.publication_links && p.publication_links.kind === 'correction';
+    if (isCorrection) evidenceHtml = '';
 
     // Interactive Citation Lineage Chips
     var citingChipsHtml = '';
@@ -1930,7 +1934,7 @@ content_type: core
       '<p>Assigned topic: ' + escapeHtml(p.dimension.replace(/-/g, ' ')) + '. Organism tags: ' + escapeHtml(organismLabel(p)) + '.</p>' +
       '<p class="jcg-hint">Imported network metrics: in ' + p.in_degree + ', out ' + p.out_degree + '. These may include links outside the displayed corpus and are not measures of scientific quality. The citation controls above count links resolved within this corpus.</p>' +
       '<button type="button" class="jcg-secondary-btn" id="jcg-btn-ai-prompt">Prepare a paper review prompt</button></details>';
-    var abstractHtml = '<section class="jcg-paper-abstract"><h4>Paper abstract</h4><p>' +
+    var abstractHtml = isCorrection ? '' : '<section class="jcg-paper-abstract"><h4>Paper abstract</h4><p>' +
       (p.abstract ? escapeHtml(p.abstract) : 'Abstract not available in this corpus. Open the publication to read it.') + '</p></section>';
 
     var html = '<h3>' + escapeHtml(p.title) + '</h3>' +
@@ -1942,6 +1946,7 @@ content_type: core
         pdfButton +
       '</div>' +
       neighborhoodToolbarHtml +
+      publicationHtml +
       abstractHtml +
       evidenceHtml +
       indexingHtml +

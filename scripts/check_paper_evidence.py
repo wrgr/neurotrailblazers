@@ -8,6 +8,8 @@ never a lookup key. This checker does not establish scientific truth.
 from __future__ import annotations
 import datetime as dt
 import json
+import hashlib
+import re
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -37,6 +39,38 @@ def check() -> int:
         url = urlparse(record['source_url'])
         assert url.netloc and not url.username and not url.password, key
         dt.date.fromisoformat(record['checked_on'])
+
+    relationships = json.loads((ROOT / '_data/paper_publication_links.json').read_text())
+    for key, pair in relationships.items():
+        assert key == pair['doi'] == key.strip().lower(), key
+        assert pair['kind'] in ('original', 'correction'), key
+        assert pair[pair['kind']]['doi'] == key, key
+        assert pair['original']['doi'] != pair['correction']['doi'], key
+        dt.date.fromisoformat(pair['checked_on'])
+        assert pair['correction_note'].strip() and pair['source_locator'].strip(), key
+        source = urlparse(pair['relationship_source_url'])
+        assert source.scheme == 'https' and source.netloc and not source.username and not source.password, key
+        for role in ('original', 'correction'):
+            publication = pair[role]
+            assert publication['title'].strip(), key
+            assert publication['url'] == 'https://doi.org/' + publication['doi'], key
+            for field in ('url', 'full_text_url'):
+                if publication.get(field):
+                    url = urlparse(publication[field])
+                    assert url.scheme == 'https' and url.netloc and not url.username and not url.password, key
+            pdf = publication.get('pdf_url')
+            if pdf and pdf.startswith('/'):
+                assert re.fullmatch(r'/assets/papers/[A-Za-z0-9_-][A-Za-z0-9._-]*\.pdf', pdf), key
+                payload = (ROOT / pdf.lstrip('/')).read_bytes()
+                assert payload.startswith(b'%PDF-'), key
+                assert hashlib.sha256(payload).hexdigest() == publication['pdf_sha256'], key
+                assert publication['pdf_license'].strip(), key
+            elif pdf:
+                url = urlparse(pdf)
+                assert url.scheme == 'https' and url.netloc and not url.username and not url.password, key
+            reciprocal = relationships[publication['doi']]
+            assert reciprocal['kind'] == role, key
+            assert reciprocal['original'] == pair['original'] and reciprocal['correction'] == pair['correction'], key
 
     card = (ROOT / '_includes/cards/journal-paper-card.html').read_text()
     graph = (ROOT / 'technical-training/journal-club/graph-data.json').read_text()
@@ -92,6 +126,7 @@ def check() -> int:
     print(f'PASS: {len(records)} evidence record; cards, graph, prompts, exports and retired generators; '
           f'{len(REQUIRED) + 6} eligibility fixtures. '
           'These are source/schema checks, not rendered-site or scientific validation.')
+    print(f'PASS: {len(relationships)} DOI-scoped reciprocal publication links; safe URLs and unchanged local PDF checksums.')
     return 0
 
 

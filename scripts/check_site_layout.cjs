@@ -74,17 +74,22 @@ async function checkPage(browser, base, route, width, largeText = false) {
 (async () => {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   let browser;
-  try {
-    browser = await puppeteer.launch({
+  const launchBrowser = () => puppeteer.launch({
       executablePath: process.env.CHROME_BIN || undefined,
       headless: true,
       args: ['--no-sandbox'],
     });
+  try {
     const base = process.env.SITE_BASE_URL || `http://127.0.0.1:${server.address().port}`;
     for (const width of [320, 390, 768, 1440]) {
+      // Limit page churn per Chrome process; all routes/assertions still run at every width.
+      browser = await launchBrowser();
       for (const route of routes) await checkPage(browser, base, route, width);
       console.log(`PASS ${routes.length} pages at ${width}px: no page overflow, leaked markup, or story text overlap`);
+      await browser.close();
+      browser = null;
     }
+    browser = await launchBrowser();
     for (const width of [860, 960, 1280]) await checkPage(browser, base, '/neuronauts/', width);
     await checkPage(browser, base, '/neuronauts/', 768, true);
     console.log('PASS Neuronauts at intermediate widths and with 200% text');

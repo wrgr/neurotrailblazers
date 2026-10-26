@@ -1,0 +1,14 @@
+{%- assign publication_key = include.paper.doi | default: '' | strip | downcase -%}
+{%- assign publication_pair = nil -%}
+{%- assign publication_candidate = site.data.paper_publication_links[publication_key] -%}
+{%- if publication_candidate and publication_candidate.doi == publication_key -%}
+  {%- if publication_candidate.kind == 'original' or publication_candidate.kind == 'correction' -%}
+    {%- if publication_candidate.original.doi != publication_candidate.correction.doi -%}
+      {%- if publication_candidate.kind == 'original' and publication_candidate.original.doi == publication_key -%}
+        {{- publication_key -}}
+      {%- elsif publication_candidate.kind == 'correction' and publication_candidate.correction.doi == publication_key -%}
+        {{- publication_key -}}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}

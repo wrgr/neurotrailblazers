@@ -90,10 +90,16 @@
     let hash = ''; try { hash = decodeURIComponent(location.hash.replace(/^#paper-/,'')); } catch (_) {}
     return new URLSearchParams(location.search).get('paper') || (location.hash.startsWith('#paper-') ? hash : '');
   }
+  function promptPublication(p, i) {
+    let text = (i+1) + '. ' + p.title + '\n' + p.authors + ' (' + p.year + '). ' + p.journal + '\n' + (p.doi ? 'https://doi.org/' + p.doi : 'DOI unavailable');
+    const pair = p.publication_links;
+    if (pair && pair.doi === String(p.doi || '').toLowerCase()) text += '\nPublication relationship: ' + pair.kind + '. Read both sources.\nOriginal paper: ' + pair.original.url + '\nCorrection: ' + pair.correction.url + '\nDo not attribute the original study’s findings to its correction notice.';
+    return text;
+  }
   function prompt() {
     const selection = promptTarget ? [promptTarget] : matches.slice(0,35);
     const instructions = {synthesis:'Compare the research questions, methods, findings and limitations.', methods:'Compare reported methods and identify differences in validation.', problems:'Identify evidence-supported gaps; label proposed research ideas as hypotheses.', seminar:'Develop discussion questions for a journal-club session.'};
-    $('jc-prompt-textarea').value = 'Review these publications using original text where accessible. ' + instructions[promptMode] + '\nThis input contains bibliographic metadata, not full papers or verified summaries. Do not infer findings from titles or tags. State which publications you actually accessed; do not invent quotes, metrics or methods. Distinguish reported results from interpretation and cite evidence.\n\n' + (promptTarget ? 'One selected paper.' : 'First ' + selection.length + ' of ' + matches.length + ' matches in the current sort order; not a representative sample.') + '\n\n' + selection.map((p,i) => (i+1) + '. ' + p.title + '\n' + p.authors + ' (' + p.year + '). ' + p.journal + '\n' + (p.doi ? 'https://doi.org/' + p.doi : 'DOI unavailable')).join('\n\n');
+    $('jc-prompt-textarea').value = 'Review these publications using original text where accessible. ' + instructions[promptMode] + '\nThis input contains bibliographic metadata, not full papers or verified summaries. Do not infer findings from titles or tags. State which publications you actually accessed; do not invent quotes, metrics or methods. Distinguish reported results from interpretation and cite evidence.\n\n' + (promptTarget ? 'One selected paper.' : 'First ' + selection.length + ' of ' + matches.length + ' matches in the current sort order; not a representative sample.') + '\n\n' + selection.map(promptPublication).join('\n\n');
     $('jc-prompt-modal-title').textContent = promptTarget ? 'Paper review prompt' : 'Research review prompt';
     $('jc-prompt-modal-desc').textContent = promptTarget ? 'A review prompt using this paper’s recorded metadata. Verify against the publication.' : 'Uses the first ' + selection.length + ' of ' + matches.length + ' matches in the current sort order. No full texts are sent automatically.';
   }

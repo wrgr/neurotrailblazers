@@ -17,11 +17,20 @@
     if (!fields.every(k => typeof record[k] === 'string' && record[k].trim())) return false;
     return !!safeSourceUrl(record.source_url);
   }
+  function sourceDetails(record, doi) {
+    const id = 'graph-paper-source-' + encodeURIComponent(doi);
+    return '<button type="button" class="paper-source-trigger" popovertarget="' + id + '" aria-haspopup="dialog">Source &amp; review details</button>' +
+      '<div class="paper-source-popover" id="' + id + '" popover="auto" role="dialog" aria-labelledby="' + id + '-title">' +
+      '<div class="paper-source-heading"><h4 id="' + id + '-title">Source and review details</h4>' +
+      '<button type="button" class="paper-source-close" popovertarget="' + id + '" popovertargetaction="hide" aria-label="Close source and review details" autofocus>&times;</button></div>' +
+      '<a class="paper-source-link" href="' + esc(record.source_url) + '" target="_blank" rel="noopener">Open original source &nearr;</a><dl>' +
+      [['Review scope','evidence_basis'],['Locations checked','source_locator'],['Checked by','checked_by'],['Checked on','checked_on']].map(([label,k]) => '<dt>' + label + '</dt><dd>' + esc(record[k]) + '</dd>').join('') + '</dl></div>';
+  }
   function render(record, doi) {
     if (!eligible(record, doi)) return '<p class="jcg-hint">A source-checked contribution note is not available. Read the abstract and publication for this paper\'s findings.</p>';
     return '<section class="jcg-paper-evidence"><h4>What this paper demonstrated</h4><p>' + esc(record.contribution) + '</p>' +
       [['Reported result','result'],['Test context','context'],['Limits','limitation']].map(([label,k]) => '<p><strong>' + label + ':</strong> ' + esc(record[k]) + '</p>').join('') +
-      '<p class="jcg-hint">Source-checked against <a href="' + esc(record.source_url) + '" target="_blank" rel="noopener">' + esc(record.evidence_basis) + ': ' + esc(record.source_locator) + '</a>. ' + esc(record.checked_by) + ' (' + esc(record.checked_on) + ').</p></section>';
+      sourceDetails(record, doi) + '</section>';
   }
   function reviewPrompt(papers, mode, total) {
     const selection = Array.isArray(papers) ? papers.slice(0,35) : [];

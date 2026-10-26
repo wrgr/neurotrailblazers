@@ -1,0 +1,16 @@
+{% assign source_record = include.evidence %}
+{% assign source_id = include.popup_id | escape %}
+<button type="button" class="paper-source-trigger" popovertarget="{{ source_id }}" aria-haspopup="dialog">Source &amp; review details</button>
+<div class="paper-source-popover" id="{{ source_id }}" popover="auto" role="dialog" aria-labelledby="{{ source_id }}-title">
+  <div class="paper-source-heading">
+    <h4 id="{{ source_id }}-title">Source and review details</h4>
+    <button type="button" class="paper-source-close" popovertarget="{{ source_id }}" popovertargetaction="hide" aria-label="Close source and review details" autofocus>&times;</button>
+  </div>
+  <a class="paper-source-link" href="{{ source_record.source_url | escape }}" target="_blank" rel="noopener">Open original source &nearr;</a>
+  <dl>
+    <dt>Review scope</dt><dd>{{ source_record.evidence_basis | escape }}</dd>
+    <dt>Locations checked</dt><dd>{{ source_record.source_locator | escape }}</dd>
+    <dt>Checked by</dt><dd>{{ source_record.checked_by | escape }}</dd>
+    <dt>Checked on</dt><dd><time datetime="{{ source_record.checked_on | escape }}">{{ source_record.checked_on | escape }}</time></dd>
+  </dl>
+</div>

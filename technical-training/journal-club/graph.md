@@ -2013,6 +2013,8 @@ content_type: core
     if (drawerReturnFocus && drawerReturnFocus.isConnected && drawerReturnFocus.focus) drawerReturnFocus.focus({ preventScroll: true });
   });
   window.addEventListener('keydown', function (event) {
+    // Let Escape dismiss the source popover before closing its parent drawer.
+    if ('showPopover' in HTMLElement.prototype && document.querySelector('.paper-source-popover:popover-open')) return;
     if (event.key === 'Escape' && !panel.classList.contains('hidden')) {
       event.preventDefault(); panelClose.click();
     }

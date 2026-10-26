@@ -2,7 +2,9 @@
 {% assign area_title = 'Resources' %}{% assign area_url = '/resources/' %}
 {% if page.url contains '/teaching/' or page.url contains '/technical-training/slides/' %}
   {% assign area_title = 'Teach' %}{% assign area_url = '/teaching/' %}
-{% elsif page.url contains '/technical-training/journal-club/' or page.url contains '/technical-training/dictionary/' or page.url contains '/technical-training/atlas-' %}
+{% elsif page.url contains '/technical-training/journal-club/' %}
+  {% assign area_title = 'Papers' %}{% assign area_url = '/technical-training/journal-club/' %}
+{% elsif page.url contains '/technical-training/dictionary/' or page.url contains '/technical-training/atlas-' %}
   {% assign area_title = 'Resources' %}{% assign area_url = '/resources/' %}
 {% elsif page.url contains '/modules/' or page.url contains '/tracks/' or page.url contains '/technical-training/' or page.url contains '/modes/' or page.url contains '/side-quests/' %}
   {% assign area_title = 'Learn' %}{% assign area_url = '/technical-training/' %}

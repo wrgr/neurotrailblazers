@@ -15,9 +15,9 @@ content_type: core
 {%- assign jc_dims = site.data.journal_papers.papers | map: 'dimension' | compact | uniq -%}
 <section class="jc-hero">
   <h1>Research papers</h1>
-  <p>Search {{ site.data.journal_papers.papers.size }} papers by title, author, DOI, or topic. This is the research corpus, not a separately curated journal-club selection. Open a publication to read it, or use the abstract and source-checked contribution notes to prepare your session.</p>
+  <p>Search {{ site.data.journal_papers.papers.size }} connectomics papers. Read abstracts and source-checked notes, or explore the citation graph.</p>
   <nav class="paper-view-links" aria-label="Paper view"><span aria-current="page">Paper list</span><a id="jc-graph-view" href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Citation graph</a></nav>
-  <p class="paper-view-help">Filter the list to find papers, or explore their connections in the citation graph. Your search, topic, and organism carry between views.</p>
+  <p class="paper-view-help">Your search, topic, and organism carry between views.</p>
 </section>
 
 

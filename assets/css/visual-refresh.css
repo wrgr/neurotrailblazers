@@ -83,7 +83,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 /* Papers: first-class navigation, visible view choices and labeled filters. */
 .paper-browser-page .jc-hero { background: #fff; color: #10303f; text-align: left; padding: 1.5rem; border: 1px solid #d8e1e3; }
-.paper-browser-page .jc-hero h1 { color: inherit; }
+.paper-browser-page .jc-hero h1 { color: inherit; margin-top: 0; }
 .paper-browser-page .jc-hero p { max-width: 80ch; margin: 0.75rem 0; }
 .paper-view-links { gap: 0.5rem; }
 .paper-view-links a, .paper-view-links span { padding: 0.65rem 1.2rem; font-size: 1rem; font-weight: 600; text-decoration: none; }

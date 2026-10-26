@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>NeuroTrailblazers: Experimental Podcast with Will and Julian</title>
+    <link>https://www.neurotrailblazers.org/podcast/</link>
+    <description>Four short family discussions about connectomics and NIH BRAIN CONNECTS, performed with AI-generated versions of Will and Julian’s voices.</description>
+    <language>en-us</language>
+    <itunes:author>NeuroTrailblazers</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>What is connectomics?</title>
+      <link>https://www.neurotrailblazers.org/podcast/#episode-1</link>
+      <guid>https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_01_what_is_connectomics_RoomToTalk_20261012.mp3</guid>
+      <description>What brain cells do, why their connections matter, and what a map can and cannot tell us. Scripted discussion with AI-generated voices.</description>
+      <pubDate>Mon, 12 Oct 2026 17:00:00 +0000</pubDate>
+      <itunes:duration>292</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_01_what_is_connectomics_RoomToTalk_20261012.mp3" length="4674184" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>What is NIH BRAIN CONNECTS?</title>
+      <link>https://www.neurotrailblazers.org/podcast/#episode-2</link>
+      <guid>https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_02_what_is_brain_connects_RoomToTalk_20261012.mp3</guid>
+      <description>How the National Institutes of Health (NIH) BRAIN CONNECTS program supports the tools needed to map brain connections, and how to judge progress. Scripted discussion with AI-generated voices.</description>
+      <pubDate>Mon, 12 Oct 2026 17:00:00 +0000</pubDate>
+      <itunes:duration>323</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_02_what_is_brain_connects_RoomToTalk_20261012.mp3" length="4456448" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>How do you make a brain map?</title>
+      <link>https://www.neurotrailblazers.org/podcast/#episode-3</link>
+      <guid>https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_03_how_do_you_make_a_map_RoomToTalk_20261012.mp3</guid>
+      <description>Follow a piece of preserved brain tissue through preparation, imaging, computer tracing, and human checking. Scripted discussion with AI-generated voices.</description>
+      <pubDate>Mon, 12 Oct 2026 17:00:00 +0000</pubDate>
+      <itunes:duration>308</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_03_how_do_you_make_a_map_RoomToTalk_20261012.mp3" length="4718592" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>How can I get involved?</title>
+      <link>https://www.neurotrailblazers.org/podcast/#episode-4</link>
+      <guid>https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_04_how_can_i_get_involved_RoomToTalk_20261012.mp3</guid>
+      <description>Small, concrete starting points for children, school and university students, and adults following the science. Scripted discussion with AI-generated voices.</description>
+      <pubDate>Mon, 12 Oct 2026 17:00:00 +0000</pubDate>
+      <itunes:duration>318</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://www.neurotrailblazers.org/assets/podcast/20261012/NTB_04_how_can_i_get_involved_RoomToTalk_20261012.mp3" length="4456448" type="audio/mpeg" />
+    </item>
+  </channel>
+</rss>

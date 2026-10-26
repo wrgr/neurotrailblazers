@@ -1,0 +1,54 @@
+NEUROTRAILBLAZERS: WAYS TO GET INVOLVED
+Companion to the revised Will and Julian mini podcasts, October 12, 2026
+
+YOUNGER CHILDREN AND FAMILIES: ONE STORY, ONE DRAWING, ONE QUESTION
+With a parent or teacher, choose a Junior Lab story. Draw a neuron or make a model with pipe cleaners. Explain one part of your model, then write or ask a question you still have.
+https://www.neurotrailblazers.org/neuronauts/kids/
+
+SCHOOL STUDENTS: A SMALL PROJECT YOU CAN SHOW
+Compare two neurons in a public brain viewer. Draw or save a view of each, record where you found it and the dataset/version shown, and write three observations plus one question. Make a short class presentation. Distinguish what you can see from what you are guessing.
+FlyWire Codex offers neuron search, cell details, a 3D viewer, example queries, and learning resources. Interactive use currently requires Google sign-in; younger learners should work with a parent or teacher and follow the service's rules.
+https://codex.flywire.ai/
+
+Ask a teacher to run a short brain-map lesson. Start with a classroom map and ask what it does and does not tell you, then compare that idea with a brain map.
+https://www.neurotrailblazers.org/teaching/
+
+OLDER STUDENTS AND UNIVERSITY STUDENTS: PREPARE FOR A REAL TASK
+Work through an introductory learning path or a proofreading practice lesson. Make a small example of your work: a comparison of cell shapes, a short explanation of a paper's figure, or a small analysis with a graph and a clear question.
+https://www.neurotrailblazers.org/tracks/
+
+Choose a lab or project you are interested in. Read a project summary before contacting a mentor. Example:
+"I'm interested in how your team maps brain connections. I read your summary about [specific project]. I've tried [small activity or relevant skill], and I'd like to learn [skill]. Are there supervised beginner tasks or student opportunities, and what preparation would help?"
+
+Ask a teacher, adviser, or careers office about local laboratories, student placements, or summer programs. Check current eligibility, dates, supervision, and training. These are suggested next steps, not claims that a particular placement is currently open. Practice activities and browsing published data are not automatically contributions to a research dataset.
+
+ADULTS: FOLLOW ONE UPDATE A MONTH
+Bookmark the NIH BRAIN Initiative and BRAIN CONNECTS websites. Choose one recent update. Record its date and answer:
+1. What did the team actually do?
+2. Why does it matter?
+3. What remains unknown?
+Label the update as a proposed goal, a new tool, a released dataset, or a scientific finding. More than one category can apply. A large dataset is not by itself a treatment or a complete explanation of the brain.
+https://braininitiative.nih.gov/
+https://www.brain-connects.org/
+
+For accessible background, revisit one section of the Neuronauts story. For a talk, look for public or recorded sessions linked by the program or research institutions; pause and look up unfamiliar ideas as needed.
+https://www.neurotrailblazers.org/neuronauts/
+
+TAXI-LENGTH EXPLANATION
+"Scientists map how brain cells connect so they can study how those cells work together. NIH BRAIN CONNECTS helps teams build better tools and maps. This is basic research that may help us understand health and illness; a brain map isn't itself a treatment."
+
+TERMS
+Connectomics: the science of mapping and studying connections in nervous systems.
+Connectome: a map of those connections at a stated scale and scope.
+Neuron: a nerve cell that receives and sends signals.
+Synapse: a junction through which a neuron communicates with another cell.
+NIH: National Institutes of Health.
+BRAIN Initiative: Brain Research through Advancing Innovative Neurotechnologies Initiative.
+BRAIN CONNECTS: BRAIN Initiative Connectivity Across Scales.
+
+SCIENTIFIC SCOPE AND SOURCES
+Program goals are distinguished from completed results. Worm, fly and tissue-sample milestones describe the wider field, not achievements all attributed to BRAIN CONNECTS. Brain maps and measurements of brain activity provide different evidence. No live project completion percentage or enrollment opportunity is asserted.
+https://www.braininitiative.nih.gov/research/neuroimaging-technologies-across-scales/brain-initiative-connectivity-across-scales
+https://www.nih.gov/brain/research/neuroimaging-technologies-across-scales
+
+Adapted in part from The Neuronauts Expedition, NeuroTrailblazers, copyright 2025–2026 NeuroTrailblazers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Changes: new father-son conversations, simpler explanations, revised activities, condensed material and synthetic voice performance. Attribution does not imply endorsement.

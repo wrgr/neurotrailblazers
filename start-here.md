@@ -10,139 +10,22 @@ pathways:
 content_type: navigation
 ---
 
-<div class="main-content">
-    <div class="hero hero-spaced hero-rounded">
-        <div class="hero-content">
-            <h1>Start Here</h1>
-        </div>
-    </div>
-
-    <section class="section">
-        <h2>What would you like to do?</h2>
-        <div class="cards-grid">
-          <article class="card"><h3><a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Learn connectomics</a></h3><p>Start with Why Map the Brain, the first of nine units in the Technical Course.</p></article>
-          <article class="card"><h3><a href="{{ '/teaching/' | relative_url }}">Teach a class or workshop</a></h3><p>Find presentation decks, session plans, activities, and worksheets in the Teaching Hub.</p></article>
-          <article class="card"><h3><a href="{{ '/content-library/' | relative_url }}">Look something up</a></h3><p>Use the Content Library for explanations, methods, and case studies, or search the <a href="{{ '/technical-training/dictionary/' | relative_url }}">Dictionary</a> for a term.</p></article>
-          <article class="card"><h3><a href="{{ '/neuronauts/' | relative_url }}">Explore the brain</a></h3><p>Try a Neuronauts expedition, or visit the <a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab</a> for family activities.</p></article>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Plan a longer learning path</h2>
-        <p>Getting oriented here means answering two separate questions, and most people only think to ask the first. <strong>What</strong> you are learning is the track. <strong>How</strong> you are using it &mdash; alone, in a session someone is running, or inside a research group &mdash; is the mode. They are independent, and the second one changes what you should be reading as much as the first does.</p>
-
-        <div class="axis-head">
-          <span class="axis-eyebrow">Question 1</span>
-          <h3>How are you using this?</h3>
-        </div>
-        {% include ui/mode-picker.html %}
-        <p class="mt-1"><a href="{{ '/modes/' | relative_url }}">What each mode assumes, gives, and does not give &rarr;</a></p>
-
-        <div class="axis-head">
-          <span class="axis-eyebrow">Question 2</span>
-          <h3>What are you learning?</h3>
-        </div>
-        <div class="arch-grid">
-            <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
-                <span class="arch-chip" aria-hidden="true">&#129504;</span>
-                <h3 class="arch-title">Core Concepts &amp; Methods</h3>
-                <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
-                <p class="arch-body">Build technical fluency in connectomics from motivation and imaging through analysis methods. The default answer if you are new, whatever your career stage.</p>
-                <div class="arch-actions">
-                    <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}" class="btn btn-primary">Open Core Concepts &amp; Methods</a>
-                </div>
-            </article>
-            <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
-                <span class="arch-chip" aria-hidden="true">&#128736;</span>
-                <h3 class="arch-title">Research in Action</h3>
-                <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
-                <p class="arch-body">Apply methods through workflows, quality control, tools, and research execution practice. Works best alongside a live project rather than instead of one.</p>
-                <div class="arch-actions">
-                    <a href="{{ '/tracks/research-in-action/' | relative_url }}" class="btn btn-primary">Open Research in Action</a>
-                </div>
-            </article>
-            <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
-                <span class="arch-chip" aria-hidden="true">&#129309;</span>
-                <h3 class="arch-title">Career &amp; Community</h3>
-                <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
-                <p class="arch-body">Navigate mentorship, the hidden curriculum, and professional growth. Relevant from week one, not only at the end.</p>
-                <div class="arch-actions">
-                    <a href="{{ '/tracks/career-and-community/' | relative_url }}" class="btn btn-primary">Open Career &amp; Community</a>
-                </div>
-            </article>
-        </div>
-
-        <h3>Or neither</h3>
-        <p>If you have a specific question, go straight to <a href="{{ '/core/' | relative_url }}">the core</a>. Use the dictionary, content library, journal club, atlas, hidden curriculum, and datasets to look things up as you need them. You do not need to start a track first.</p>
-    </section>
-
-    <section class="section">
-        <h2 id="your-first-hour">Your first hour</h2>
-        <p>Reading about connectomics and doing connectomics are different skills, and only the second one transfers. So rather than a reading list, here is a first hour that ends with something you have made. You need a browser and, for step 3, nothing else.</p>
-
-        <div class="checklist-box">
-            <h3>Sixty minutes, one artifact</h3>
-            <div class="checklist">
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>0-10 min &mdash; Look at real data.</strong> Open any public volume in Neuroglancer via the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. Navigate somewhere arbitrary, not a curated view. Scroll through twenty consecutive sections and watch how structures appear and disappear.</span>
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>10-25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalog in section 2.</span>
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>25-45 min &mdash; Make a judgment and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>45-60 min &mdash; Write the artifact.</strong> Do the Unit 01 lab: a one-page study brief with a biological question, three measurements with units, a null model, and one sentence you will refuse to write. The last item is the one that matters, and it is the one most people leave blank.</span>
-                </label>
-            </div>
-            <p class="mt-1"><small>If you finish with a brief you are willing to show someone, you are oriented. If you finish with an empty step 4, that is also information &mdash; it means you have not yet found the boundary of your evidence, which is exactly what Unit 01 exists to teach.</small></p>
-        </div>
-    </section>
-
-
-    {% include ui/technical-track-roadmap.html %}
-
-    <section class="section">
-        <h2>Understanding Our Structure</h2>
-
-        <h3>Core with tracks</h3>
-        <p>The site has two layers, and telling them apart saves a lot of wandering.</p>
-        <ul class="mb-2" style="margin-left: 2rem;">
-            <li><strong><a href="{{ '/core/' | relative_url }}">The core</a> is reference.</strong> Content library, dictionary, journal club, atlas, hidden curriculum, datasets. No order, not meant to be finished, consulted rather than worked through.</li>
-            <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</a></strong> Each selects from the core, sequences it, and adds labs that end in an artifact. There are three tracks, aligned to the Fadel dimensions of Knowledge, Skills, Character, and Meta-learning.</li>
-            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</a></strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory program built on the same core &mdash; is named on that page but is not built yet.</li>
-        </ul>
-        <p>Technical units and modules are path content; session kits, decks and worksheets are delivery material for whoever is running a session. If you are studying alone you can ignore the latter entirely.</p>
-
-        <h3>Key Datasets</h3>
-        <p>Learn with real scientific data from landmark studies:</p>
-        <div class="grid-sm mt-1 mb-1">
-            <div class="card-gray">
-                <strong>Kasthuri et al. 2015</strong><br>
-                <small>Mouse visual cortex</small>
-            </div>
-            <div class="card-gray">
-                <strong>MICrONS 2025</strong><br>
-                <small>Large-scale mouse brain</small>
-            </div>
-            <div class="card-gray">
-                <strong>FlyWire 2024</strong><br>
-                <small>Complete fly brain</small>
-            </div>
-        </div>
-
-        <div class="hero hero-spaced hero-rounded">
-            <div class="hero-content">
-                <h2 class="hero-title-impact">Meet the Trailblazers</h2>
-                <p class="hero-subtitle">Four readers this curriculum was written for. Pick the one closest to you and it will say where to start.</p>
-            </div>
-        </div>
-
+<div class="main-content start-guide">
+<section class="hero hero-spaced hero-rounded"><div class="hero-content"><h1>Start Here</h1><p>Choose what you want to do. You can use any resource without enrolling or choosing a learning path.</p></div></section>
+<section class="section"><h2>Choose your next step</h2><div class="cards-grid task-grid">
+ <article class="card"><h3>Learn connectomics</h3><p>New to the field? Begin with the first lesson, then follow the course in order.</p><a class="btn btn-primary" href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Read Why Map the Brain</a></article>
+ <article class="card"><h3>Find a resource</h3><p>Search topics, find papers and citations, or look up a term or dataset.</p><a class="btn btn-primary" href="{{ '/resources/' | relative_url }}">Find resources</a></article>
+ <article class="card"><h3>Teach a class or workshop</h3><p>Choose a teaching plan and review its materials and development status.</p><a class="btn btn-primary" href="{{ '/teaching/' | relative_url }}">Choose teaching materials</a></article>
+</div><p>Just curious? <a href="{{ '/neuronauts/' | relative_url }}">Explore the Neuronauts story</a> or try the <a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab</a>.</p></section>
+<section class="section"><h2 id="your-first-hour">Try it before choosing a course</h2><p><a class="btn btn-primary" href="{{ '/start-here/first-activity/' | relative_url }}">Try a guided 10-minute activity</a></p><p>Use a small, explicitly synthetic wiring example to write one observation and one limit. No setup or neuroscience vocabulary is assumed.</p><h3>Then try real data: your first hour</h3><p>If you want to try connectomics before committing to a course, start here. You need a browser.</p><ol class="first-hour-steps">
+ <li><strong>Look at real data (10 minutes).</strong> Open a public volume from the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. Scroll through several sections and notice how structures change.</li>
+ <li><strong>Understand the images (15 minutes).</strong> Read the preparation and image-quality sections in <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">EM Prep and Imaging</a>. Look for an example in the volume.</li>
+ <li><strong>Test your understanding (20 minutes).</strong> Try the self-checks in <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Why Map the Brain</a> before opening the answers.</li>
+ <li><strong>Write a study question (15 minutes).</strong> Try that lesson’s lab. Describe what you would measure and one claim the data would not support.</li>
+</ol><p>Continue with the <a href="{{ '/technical-training/' | relative_url }}">connectomics course</a>. Keep the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> nearby when a term is unfamiliar.</p></section>
+<details class="secondary-options" id="background-options"><summary>Suggestions for your background</summary>
+<h2>Suggestions for your background</h2>
+<p>Choose the reader closest to your experience for a suggested starting point.</p>
         <div class="pathfinder">
             <div class="pathfinder-tabs" role="tablist" aria-label="Learner personas">
                 <button type="button" role="tab" id="pf-tab-julian" aria-controls="pf-panel-julian" aria-selected="true" class="pathfinder-tab">Julian<span>first-generation undergraduate</span></button>
@@ -210,94 +93,11 @@ content_type: navigation
 
         <p>Each avatar includes a backstory, visible successes, and a setback — offering a relatable entry point for diverse learners.</p>
         <p><em>Inspired by stories like those described in <a href="https://www.molbiolcell.org/doi/10.1091/mbc.E24-09-0416">When Life Gets in the Way of Science</a></em></p>
-    </section>
 
-    <section class="section">
-        <h2>Our Educational Framework</h2>
-        <p>The program is built on three evidence-based models &mdash; the MERIT mentoring stages, the Professional Pathways workshops, and the CCR development dimensions. The <a href="{{ '/models/' | relative_url }}">program models page</a> summarizes them, and the <a href="{{ '/models/' | relative_url }}">models-in-practice playbook</a> shows what each stage looks like when it is working and the failure mode it exists to prevent.</p>
-    </section>
-
-    <section class="section">
-        <h2>Which track, and when</h2>
-        <p>Most people should start with <strong>Core Concepts &amp; Methods</strong> and layer the others in as their research practice develops. The exceptions are worth naming:</p>
-        <table>
-            <thead>
-                <tr><th>If this describes you</th><th>Start here</th><th>Why</th></tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>New to the field, whatever your level</td>
-                    <td><a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a>, at Unit 01</td>
-                    <td>The perceptual units 05&ndash;07 are the slowest part and everything downstream depends on them. Starting anywhere else means coming back.</td>
-                </tr>
-                <tr>
-                    <td>Strong engineering or ML background, new to neuroscience</td>
-                    <td><a href="{{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}">Unit 04</a> or <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a>, then back to 05&ndash;07</td>
-                    <td>Your systems intuitions transfer directly and give you a foothold. Skipping 05&ndash;07 entirely does not work: a model trained on annotations from people who cannot tell an astrocytic process from a dendrite learns to make that mistake at scale.</td>
-                </tr>
-                <tr>
-                    <td>Already working on a connectomics project</td>
-                    <td><a href="{{ '/tracks/research-in-action/' | relative_url }}">Research in Action</a></td>
-                    <td>It is organized around the decisions a live project forces: proofreading budgets, version pinning, and defensible analysis.</td>
-                </tr>
-                <tr>
-                    <td>Teaching or mentoring others</td>
-                    <td><a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>, then the <a href="{{ '/teaching/' | relative_url }}">teaching kits</a></td>
-                    <td>What you need is the assessment instrument and the run-of-show, not the reading.</td>
-                </tr>
-                <tr>
-                    <td>Anyone, at any stage</td>
-                    <td><a href="{{ '/hidden-curriculum/' | relative_url }}">The hidden curriculum</a></td>
-                    <td>The unwritten norms &mdash; how to read a paper, what a PI expects but won&rsquo;t say, how funding and authorship really work, how to disagree with someone senior. Not a track; read it alongside whatever else you are doing.</td>
-                </tr>
-                <tr>
-                    <td>Wanting one concrete, valuable skill rather than a curriculum</td>
-                    <td><a href="{{ '/side-quests/proofreading/' | relative_url }}">The proofreading side quest</a></td>
-                    <td>Off every track&rsquo;s critical path, and the skill most likely to get you taken seriously by a connectomics lab, because it is the bottleneck and competence at it is checkable. Twenty to thirty hours, ending in a document someone can disagree with.</td>
-                </tr>
-                <tr>
-                    <td>Here for the professional side</td>
-                    <td><a href="{{ '/tracks/career-and-community/' | relative_url }}">Career &amp; Community</a></td>
-                    <td>Relevant from week one, not only at the end. Deferring it until the technical work is finished is the most common mistake on this track.</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Each track page carries a time estimate, an ordered sequence with per-step outcomes, and a description of what &ldquo;done&rdquo; means as a capability rather than as a set of pages visited.</p>
-    </section>
-
-    <section class="section">
-        <h2>Getting unstuck</h2>
-        <p>Two things a page cannot give you, and where to find them:</p>
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-icon" aria-hidden="true">&#128172;</div>
-                <h3>A technical answer</h3>
-                <p>The <a href="{{ '/ask-an-expert/' | relative_url }}">Ask an Expert</a> route is for questions where you have already tried something and can say what you tried. Before using it, check the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> &mdash; a large share of apparent difficulty in this field is vocabulary, and it is fixable in a week.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon" aria-hidden="true">&#128100;</div>
-                <h3>Calibration against other people</h3>
-                <p>You cannot calibrate your own judgment alone. The units' drills are built to be run with a partner, and comparing calls with one other person is worth more than three rounds of self-review. A journal club or a community proofreading effort supplies the same thing at larger scale.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon" aria-hidden="true">&#128218;</div>
-                <h3>Depth on a specific topic</h3>
-                <p>The <a href="{{ '/content-library/' | relative_url }}">content library</a> holds the long-form reference material behind every unit &mdash; instructor-level detail on ultrastructure, imaging, proofreading metrics, and analysis, with worked examples and reading lists.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="text-center mt-4 mb-2">
-        <h2>Ready to Begin?</h2>
-        <p class="mt-1 mb-1" style="font-size: 1.2rem;">Choose your starting point and embark on your neuroscience adventure!</p>
-        <div class="flex-center mt-2">
-            <a href="{{ '/tracks/' | relative_url }}" class="btn btn-primary">View Learning Tracks</a>
-            <a href="{{ '/datasets/' | relative_url }}" class="btn btn-secondary">Explore Datasets</a>
-            <a href="{{ '/datasets/workflow/' | relative_url }}" class="btn btn-secondary">See Our Workflow</a>
-        </div>
-    </div>
+</details>
+<details class="secondary-options"><summary>Plan a longer learning path</summary><p>The <a href="{{ '/tracks/' | relative_url }}">learning paths</a> combine technical lessons, research practice, and career skills. You can work alone or use the <a href="{{ '/teaching/' | relative_url }}">teaching materials</a> with a group.</p><p><a href="{{ '/modes/' | relative_url }}">Study and workshop options</a> · <a href="{{ '/models/' | relative_url }}">Program approach</a> · <a href="{{ '/hidden-curriculum/' | relative_url }}">Research and career advice</a></p></details>
+<section class="section section-compact"><h2>Need help finding something?</h2><p><a href="{{ '/resources/' | relative_url }}">Search the site</a>, or use <a href="{{ '/ask-an-expert/' | relative_url }}">Ask an Expert</a> for a technical question you have already tried to answer.</p></section>
 </div>
-
 <style>
 /* Persona Pathfinder. Colours come from the existing :root variables rather than
    raw hex, so this migrates with everything else when brand-tokens.css lands

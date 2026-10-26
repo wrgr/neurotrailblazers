@@ -2,7 +2,7 @@
 
 **Module:** Module 17: Scientific Writing for Connectomics  
 **Duration:** 4-5 hours  
-*Generated from the module page. Edit `modules/module17.md`, not this file.*
+<!-- Generated from modules/module17.md; edit the module source. -->
 
 ---
 

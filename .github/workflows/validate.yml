@@ -54,6 +54,12 @@ jobs:
       - name: Journal paper count and schema validation
         run: ruby scripts/validate_paper_counts.rb
 
+      - name: Core 500 and first-100 review checkpoints
+        run: ruby scripts/check_core500_review_checkpoint.rb
+
+      - name: Organism tag classification regression
+        run: python3 scripts/check_organism_tags.py
+
       # The published decks under course/decks/marp/out/ are what instructors open.
       # 29 of 35 had gone stale: sources regenerated, outputs not, so every "Open deck"
       # link served content that no longer matched its module page. Nothing caught it
@@ -105,7 +111,8 @@ jobs:
 
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
-    runs-on: ubuntu-latest
+    # Ruby 3.1.6 has no prebuilt package on ubuntu-26.04 (now ubuntu-latest).
+    runs-on: ubuntu-22.04
     env:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8
@@ -125,6 +132,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: Shared usability and module development status regression
+        run: bundle exec ruby scripts/check_site_usability.rb
+
+      - name: Paper graph filtering, layout and redraw regression
+        run: node scripts/check_paper_graph.cjs
 
       - name: Research modal browser regression
         run: |

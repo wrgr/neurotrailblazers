@@ -1,79 +1,34 @@
 ---
 layout: page
-title: "How the Paper Collection Is Built"
+title: "How the paper collection is maintained"
 permalink: /content-library/journal-papers/methodology/
-description: "How the 2,000-paper connectomics research corpus and its 3 nested tiers (500 Core Flagships, 1,000 Landmarks, and 2,000 Comprehensive Graph) were selected, structured with OCAR cards, and classified across 12 canonical domains."
+description: "The distinction between bibliographic discovery, navigational tags, and source-checked scientific contributions."
 use_layout_hero: false
 content_type: core
 ---
 
-# How the Paper Collection Is Built
+# How the paper collection is maintained
 
-This page explains how the **2,000-paper curated connectomics literature corpus** was retrieved, screened, stratified across 12 canonical research domains, structured into 3 nested tiers ($500 \subset 1,000 \subset 2,000$), and annotated with OCAR cards and 3-level pedagogical summaries.
+## Discovery is not scientific verification
 
----
+The corpus contains {{ site.data.journal_papers.papers.size }} publication records. It was assembled through literature retrieval and category-based selection. Coverage and selection are incomplete: the distribution of papers in this collection must not be interpreted as the distribution of research in the field.
 
-## 🏛️ Corpus Architecture & Nested Tiers
+Topic, organism, and network-role labels are aids to navigation, not evidence that a publication used a particular dataset, implemented a method, achieved an outcome, or belongs to a consortium. Labels may be wrong. The 500- and 1,000-paper subsets retain historical selection rules; they do not certify papers as landmarks or rank their scientific quality.
 
-The collection is structured into three strictly nested materializations:
+## Evidence before a contribution note
 
-| Tier | Corpus Size | Primary Target Audience &amp; Role | Metadata Depth |
-| :--- | :---: | :--- | :--- |
-| **500 Key Papers** | **500 papers** | Curriculum flagships, course reading lists, seminar deep-dives | Full abstract, complete author list, verified 5-part OCAR research cards, 3-level summaries, seminar discussion prompts |
-| **1000 Key Papers** | **1,000 papers** | Comprehensive scholarly survey, methods reference, subfield tracking | Full abstract, complete OCAR cards, citation metrics (in/out degree, k-core), domain classifications, organism tags |
-| **2000 Key Papers** | **2,000 papers** | Global bibliometric network, citation lineage modeling, AI synthesis | Complete directed citation graph ($5,460+$ internal links), complete OCAR cards, full abstract and author/venue metadata, facet views |
+A public contribution note requires a matching digital object identifier (DOI), a source-checked status, a specific contribution and reported result, its test context, its limitations, a source URL and location, the evidence basis, and the checker and date. Without this record, the site shows the publication metadata and abstract without inventing a summary.
 
----
+The checking basis is visible. An AI-assisted check of an abstract is not an expert assessment or independent replication. Notes should report what the source supports, including null results and limitations where relevant, rather than manufacture a positive outcome for every publication.
 
-## 🔬 Multi-Channel Retrieval & Strict Scope Screening
+## What changed
 
-The candidate pool was compiled using positive nanoscale/synaptic-resolution inclusion gates across Semantic Scholar, OpenAlex, Europe PMC, and PubMed:
+Earlier category-based templates produced publication-specific-looking statements without publication-specific support. That approach was inappropriate for research evidence. Those generators are retired, and their output is not used in public cards, graph search, review prompts, or corpus downloads. Historical input files remain in the source repository for traceability, not as verified scientific annotations.
 
-1. **Direct Synaptic Connectomics**: Dense EM wiring diagrams, synaptic resolution imaging, automated segmentation pipelines (FFN, U-Net, affinity prediction, flood-filling).
-2. **First-Class Scientific Axes**: Covers tissue preparation, FIB-SEM/SBEM acquisition, synapse detection, proofreading tools (CAVE, CATMAID, FlyWire), graph analysis (motifs, modularity, network topology), structure-function modeling, NeuroAI, cell census, health-translation, and training/outreach.
-3. **Positive Nanoscale Boundary**: Macroscale non-synaptic methods (such as standard low-resolution fMRI or whole-brain fiber tractography without synaptic validation) are filtered out, preserving a clean nanoscale focus.
+## Citation relationships
 
----
+Directed links represent recorded references among papers in this corpus. The displayed neighborhood counts are resolved within this corpus. Imported degree and network-role fields have a different scope and are not claims of importance, agreement, or successful method transfer. Bibliographic and citation metadata still require independent source review; mechanical consistency does not establish their truth.
 
-## 📊 Stratified 12-Domain Literature Taxonomy
+## Downloads and reuse
 
-Candidate papers are classified into 12 mutually exclusive primary domains using a strict decision-order hierarchy:
-
-1. `circuit-structure` (15.0% target share / 75 in Top 500 / 300 in Top 2,000)
-2. `pipeline` (15.0% target share / 75 in Top 500 / 300 in Top 2,000)
-3. `physiology` (12.0% target share / 60 in Top 500 / 240 in Top 2,000)
-4. `behaviour` (12.0% target share / 60 in Top 500 / 240 in Top 2,000)
-5. `imaging` (8.0% target share / 40 in Top 500 / 160 in Top 2,000)
-6. `cell-types` (8.0% target share / 40 in Top 500 / 160 in Top 2,000)
-7. `neuroanatomy` (8.0% target share / 40 in Top 500 / 160 in Top 2,000)
-8. `synthesis` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
-9. `dataset` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
-10. `neuroai` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
-11. `health` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
-12. `training-outreach` (2.0% target share / 10 in Top 500 / 40 in Top 2,000)
-
----
-
-## 🃏 What Each Record Carries
-
-* **Bibliographic Identity**: Title, complete author list as published (`authors`, names separated by `; `), publication year, full venue/journal name, clean lowercase DOI, and a plain-text citation in the form *First-author surname et al. (year). Title. Journal. DOI URL* (two authors are written *Surname & Surname*). These fields are re-derived from the corpus record with the same DOI by `scripts/derive_journal_papers.py`; the validator `scripts/validate_paper_counts.rb` fails if any record ships without authors, with a placeholder citation, or with a year that disagrees with the corpus.
-* **Abstract**: The published abstract (`abstract`), present on all 2,000 records. Most are single paragraphs; structured or multi-paragraph abstracts keep their paragraph breaks.
-* **Era**: `inclusion_role` is assigned from the publication year -- `history` (up to 2018), `contemporary` (2019--2023), `sota` (2024 onward) -- and drives the era filter on the journal club page.
-* **OCAR Structure**:
-  * **Opportunity**: Scientific/technological opening addressed.
-  * **Challenge**: Key bottlenecks, scale limits, or biological ambiguities.
-  * **Action**: Experimental, imaging, computational, or theoretical methodology executed.
-  * **Resolution**: Findings, benchmarks, connectome maps, or models delivered.
-  * **Future Work**: Open problems and next-generation research horizons.
-* **Three-Level Pedagogical Summaries**: Beginner (no prerequisites), Intermediate (foundational knowledge), Advanced (active researcher).
-* **Discussion Prompts**: Facilitator questions for journal clubs and research seminars.
-* **Graph Topological Placement**: In-degree (inbound citations within corpus), Out-degree (references within corpus), k-core centrality.
-* **Directed Citation Links**: List of DOIs cited by the publication.
-
----
-
-## 🧭 Exploring the Collection
-
-* **[Interactive Citation Graph Explorer]({{ '/technical-training/journal-club/graph/' | relative_url }})**: Live WebGL/Canvas network graph with organic force-directed physics, weighted directed citation arrows, and AI research synthesis prompt generator.
-* **[Journal Club Card Browser]({{ '/technical-training/journal-club/' | relative_url }})**: Filterable cards by tier, domain, expertise level, and publication era.
-* **[Literature Corpus Taxonomy Hub]({{ '/content-library/journal-papers/' | relative_url }})**: Domain breakdown with direct links to standalone JSON downloads.
+[Return to the corpus hub]({{ '/content-library/journal-papers/' | relative_url }}) for nested downloads. Schema version 2 excludes legacy generated annotations and preserves bibliography, abstracts, recorded citations, navigation labels, and source-checked contribution notes where available. Review prompts explicitly require source access, reported evidence, test context and limitations; a list of titles is not sufficient evidence for a scientific synthesis.

@@ -2,13 +2,13 @@
 layout: page
 title: "About"
 permalink: /about/
-description: "What NeuroTrailblazers is, who it is for, how it fits the HI-MC project and the NIH BRAIN CONNECTS program, and how to reach us."
+description: "What Nanoscale is, who it is for, how it fits the HI-MC project and the NIH BRAIN CONNECTS program, and how to reach us."
 slug: about
 ---
 
 **{{ site.tagline | default: "Mapping connections. Making connections." }}**
 
-NeuroTrailblazers is an open curriculum and mentorship initiative for nanoscale
+Nanoscale is an open curriculum and mentorship initiative for nanoscale
 connectomics — the effort to map brains at the resolution of individual synaptic
 connections. The site is the curriculum: the pages, data, decks and worksheets are
 public, and anyone may teach from them.
@@ -59,11 +59,11 @@ is the shortest route in.
 
 ## Where this sits in BRAIN CONNECTS
 
-NeuroTrailblazers is developed inside the HI-MC (MouseConnects) project, part of the
+Nanoscale is developed inside the HI-MC (MouseConnects) project, part of the
 [NIH BRAIN Initiative](https://braininitiative.nih.gov/)'s **BRAIN CONNECTS** program.
 It is **not** a data coordinating center:
 
-> **IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the
+> **IC3 and APEX organize and expose the science. Nanoscale organizes the
 > learning.**
 
 | Project | Award | Role |
@@ -77,18 +77,18 @@ IC3 and APEX are the two coordination centers this program routes learners towar
 Where those centers, the Allen Institute or a CONNECTS project already publish an
 authoritative resource, this site links to it and scaffolds the reasoning around it
 rather than recreating it. The full map of who does what is on
-[How NeuroTrailblazers fits BRAIN CONNECTS]({{ '/core/connects-ecosystem/' | relative_url }}).
+[How Nanoscale fits BRAIN CONNECTS]({{ '/core/connects-ecosystem/' | relative_url }}).
 
 Nothing on this site is an official statement of the NIH, the BRAIN Initiative, IC3 or
 APEX.
 
 ## Who runs it
 
-NeuroTrailblazers is part of **HI-MC** (`UM1NS132250`), the Center for High-throughput
+Nanoscale is part of **HI-MC** (`UM1NS132250`), the Center for High-throughput
 Integrative Mouse Connectomics — the BRAIN CONNECTS project also known as
 [MouseConnects]({{ '/datasets/mouseconnects/' | relative_url }}), which is reconstructing
 mouse hippocampal formation at synaptic resolution. HI-MC generates the science;
-NeuroTrailblazers is its training and outreach arm, and the curriculum is built so that
+Nanoscale is its training and outreach arm, and the curriculum is built so that
 what a learner practises here is what the project actually does.
 
 **Contact:** Will Gray-Roncal, Johns Hopkins University —
@@ -150,7 +150,7 @@ A machine-readable citation lives in
 [`CITATION.cff`](https://github.com/{{ site.github_username }}/neurotrailblazers/blob/main/CITATION.cff)
 at the repository root; GitHub will render a formatted citation from it. In text:
 
-> Gray-Roncal, W. and the NeuroTrailblazers Team. *NeuroTrailblazers: an open
+> Gray-Roncal, W. and the Nanoscale Team. *Nanoscale: an open
 > curriculum for nanoscale connectomics.* <{{ site.url }}/>
 
 If you are citing one page rather than the site, add the page title and the date you

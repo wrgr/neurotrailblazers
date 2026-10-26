@@ -2,7 +2,7 @@
 
 **Module:** Module 23: Posters, Abstracts, and Conferences  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module23.md`, not this file.*
+<!-- Generated from modules/module23.md; edit the module source. -->
 
 ---
 

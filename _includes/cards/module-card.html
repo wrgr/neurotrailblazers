@@ -7,6 +7,7 @@
 {% assign module_url = '/modules/module' | append: numpad | append: '/' %}
 {% if module.url %}{% assign module_url = module.url %}{% endif %}
 <article class="card">
+  {% include ui/module-status.html item=module %}
   <h3 class="card-title">{% if num > 0 %}{{ numpad }}. {% endif %}{{ module.short_title | default: module.title }}</h3>
   {% if module.pipeline_stage %}<p><strong>{{ module.pipeline_stage }}</strong></p>{% endif %}
   {% if module.summary %}

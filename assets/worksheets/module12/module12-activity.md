@@ -2,7 +2,7 @@
 
 **Module:** Module 12: Big Data in Connectomics  
 **Duration:** 4-5 hours  
-*Generated from the module page. Edit `modules/module12.md`, not this file.*
+<!-- Generated from modules/module12.md; edit the module source. -->
 
 ---
 

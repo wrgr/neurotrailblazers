@@ -1,0 +1,6 @@
+---
+layout: null
+sitemap: false
+chunk: 16
+---
+{% include data/paper-detail-chunk.json %}

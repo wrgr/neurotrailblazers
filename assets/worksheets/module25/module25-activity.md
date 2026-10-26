@@ -2,7 +2,7 @@
 
 **Module:** Module 25: Portfolio, Feedback, and Final Project  
 **Duration:** 5-6 hours  
-*Generated from the module page. Edit `modules/module25.md`, not this file.*
+<!-- Generated from modules/module25.md; edit the module source. -->
 
 ---
 

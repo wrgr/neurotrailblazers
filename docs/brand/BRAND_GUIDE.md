@@ -1,4 +1,6 @@
-# NeuroTrailblazers brand guide
+# Nanoscale brand guide
+
+> **Working brand update — October 26, 2026:** Use **Nanoscale** as the public-facing name for now. This supersedes the earlier naming and banner guidance below. Use real, attributed nanoscale connectomics imagery; the homepage uses H01 electron microscopy with its scale bar intact. Keep existing domains and paths during this interim rebrand.
 
 *Version 1, September 2026. Files referenced here live in `assets/brand/` and
 `course/decks/marp/theme/`. The decisions below replace the three palettes currently in

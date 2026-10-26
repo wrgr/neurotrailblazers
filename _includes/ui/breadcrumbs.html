@@ -1,0 +1,21 @@
+{% unless page.url == '/' %}
+{% assign area_title = 'Resources' %}{% assign area_url = '/resources/' %}
+{% if page.url contains '/teaching/' or page.url contains '/technical-training/slides/' %}
+  {% assign area_title = 'Teach' %}{% assign area_url = '/teaching/' %}
+{% elsif page.url contains '/technical-training/journal-club/' or page.url contains '/technical-training/dictionary/' or page.url contains '/technical-training/atlas-' %}
+  {% assign area_title = 'Resources' %}{% assign area_url = '/resources/' %}
+{% elsif page.url contains '/modules/' or page.url contains '/tracks/' or page.url contains '/technical-training/' or page.url contains '/modes/' or page.url contains '/side-quests/' %}
+  {% assign area_title = 'Learn' %}{% assign area_url = '/technical-training/' %}
+{% elsif page.url contains '/neuronauts/' or page.url contains '/podcast/' %}
+  {% assign area_title = 'Explore' %}{% assign area_url = '/neuronauts/' %}
+{% elsif page.url contains '/about/' or page.url contains '/models/' or page.url contains '/avatars/' or page.url contains '/license/' or page.url contains '/initiatives/' or page.url contains '/core/connects-' %}
+  {% assign area_title = 'About' %}{% assign area_url = '/about/' %}
+{% elsif page.url == '/start-here/' %}
+  {% assign area_title = 'Start Here' %}{% assign area_url = '/start-here/' %}
+{% endif %}
+<nav class="site-breadcrumbs" aria-label="Breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true">›</span>
+  {% unless page.url == area_url %}<a href="{{ area_url | relative_url }}">{{ area_title }}</a><span aria-hidden="true">›</span>{% endunless %}
+  <span aria-current="page">{{ page.title | escape }}</span>
+</nav>
+{% endunless %}

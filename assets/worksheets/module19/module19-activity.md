@@ -2,7 +2,7 @@
 
 **Module:** Module 19: Peer Review and Scientific Ethics  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module19.md`, not this file.*
+<!-- Generated from modules/module19.md; edit the module source. -->
 
 ---
 

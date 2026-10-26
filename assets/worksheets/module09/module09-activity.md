@@ -2,7 +2,7 @@
 
 **Module:** Module 09: Neuron Morphology and Skeletonization  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module09.md`, not this file.*
+<!-- Generated from modules/module09.md; edit the module source. -->
 
 ---
 

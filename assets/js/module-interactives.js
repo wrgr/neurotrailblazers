@@ -7,7 +7,7 @@
   }
 
   function updateProgress(root) {
-    var checks = Array.from(root.querySelectorAll('.nt-progress-step'));
+    var checks = Array.from(root.querySelectorAll('.nt-progress-step:not([data-assessment])'));
     if (!checks.length) return;
 
     var done = checks.filter(function (el) { return el.checked; }).length;
@@ -18,7 +18,15 @@
     var text = root.querySelector('.nt-progress-text');
     if (fill) fill.style.width = pct + '%';
     if (bar) bar.setAttribute('aria-valuenow', String(pct));
-    if (text) text.textContent = pct + '% complete';
+    if (text) text.textContent = pct + '% of self-reported activities checked';
+    if (bar) bar.setAttribute('aria-label', 'Self-reported activity progress');
+    root.querySelectorAll('[data-assessment]').forEach(function (el) {
+      el.checked = root.getAttribute('data-' + el.dataset.assessment + '-passed') === 'true';
+    });
+    var result = root.querySelector('.nt-assessment-status');
+    if (result) result.textContent = root.querySelector('.nt-quiz-submit')
+      ? (root.getAttribute('data-quiz-passed') === 'true' ? 'Checkpoint: passed in this browser.' : 'Checkpoint: not yet passed.')
+      : 'Checkpoint: not available for this module.';
   }
 
   function storageKey(root) {
@@ -28,8 +36,9 @@
 
   function saveState(root) {
     var key = storageKey(root);
-    var steps = Array.from(root.querySelectorAll('.nt-progress-step')).map(function (el) {
-      return !!el.checked;
+    var steps = {};
+    root.querySelectorAll('.nt-progress-step').forEach(function (el) {
+      steps[el.getAttribute('data-step-index')] = !!el.checked;
     });
     var data = {
       steps: steps,
@@ -59,7 +68,7 @@
       var data = JSON.parse(raw);
       var checks = Array.from(root.querySelectorAll('.nt-progress-step'));
       checks.forEach(function (el, i) {
-        el.checked = !!(data.steps && data.steps[i]);
+        el.checked = !!(data.steps && data.steps[el.getAttribute('data-step-index')]);
       });
       root.setAttribute('data-quiz-passed', data.quizPassed ? 'true' : 'false');
       root.setAttribute('data-task-passed', data.taskPassed ? 'true' : 'false');
@@ -115,8 +124,8 @@
         scoreNode.textContent = 'Score: ' + score + '/' + questions.length + (passed ? ' (passed)' : ' (review and retry)');
       }
 
-      var checks = root.querySelectorAll('.nt-progress-step');
-      if (checks[3]) checks[3].checked = passed;
+      var check = root.querySelector('.nt-progress-step[data-step-index="3"]');
+      if (check) check.checked = passed;
 
       updateProgress(root);
       saveState(root);
@@ -143,8 +152,8 @@
       node.className = ok ? 'nt-task-feedback nt-feedback-ok' : 'nt-task-feedback nt-feedback-bad';
 
       root.setAttribute('data-task-passed', ok ? 'true' : 'false');
-      var checks = root.querySelectorAll('.nt-progress-step');
-      if (checks[4]) checks[4].checked = ok;
+      var check = root.querySelector('.nt-progress-step[data-step-index="4"]');
+      if (check) check.checked = ok;
       updateProgress(root);
       saveState(root);
     });
@@ -279,8 +288,8 @@
         feedbackNode.className = ok ? 'nt-annotation-feedback nt-task-feedback nt-feedback-ok' : 'nt-annotation-feedback nt-task-feedback nt-feedback-bad';
         root.setAttribute('data-annotation-passed', ok ? 'true' : 'false');
 
-        var checks = root.querySelectorAll('.nt-progress-step');
-        if (checks[5]) checks[5].checked = ok;
+        var check = root.querySelector('.nt-progress-step[data-step-index="5"]');
+        if (check) check.checked = ok;
         updateProgress(root);
         saveState(root);
       });

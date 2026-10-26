@@ -1,0 +1,7 @@
+{% assign resource_url = include.url %}
+{% assign last_character = resource_url | slice: -1, 1 %}
+{% unless last_character == '/' %}{% assign resource_url = resource_url | append: '/' %}{% endunless %}
+{% assign resource_pages = site.pages | concat: site.documents %}
+{% assign resource_page = resource_pages | where: 'url', resource_url | first %}
+{% assign fallback_label = resource_url | split: '/' | last | replace: '-', ' ' | capitalize %}
+<a href="{{ resource_url | relative_url }}">{{ resource_page.short_title | default: resource_page.title | default: fallback_label | remove: ' Redirect' | escape }}</a>

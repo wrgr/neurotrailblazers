@@ -198,3 +198,26 @@ the trailing slash — several link classes have broken on a missing one.
 
 New content that is a topic list without worked judgement will be sent back, however
 accurate it is. That is the one thing this repository has already had to fix at scale.
+
+## Module development status
+
+Record completion status in `_data/module_status.yml` by module slug, for example:
+
+```yaml
+modules:
+  module03:
+    status: in_development
+    interactive_practice: in_development
+    note: "Exercises are being revised."
+```
+
+Use `available`, `in_development`, or `unreviewed`. A legacy `active` flag only
+means a page exists; it does not confirm completeness. The default remains
+`unreviewed` until a maintainer records a decision. The shared resolver displays
+the same status on module cards, lessons, teaching sessions, and resource search.
+After building, run `bundle exec ruby scripts/check_site_usability.rb`.
+
+An `interactive_practice: in_development` override hides mismatched practice tasks
+and removes unavailable quiz/task requirements from progress. Keep that flag
+until module-specific practice has been authored and checked. Progress stores
+step IDs so hiding an unfinished step preserves existing saved checkmarks.

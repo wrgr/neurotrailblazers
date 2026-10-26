@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Explain connectomics on a taxi ride"
-description: "15-, 30-, and 60-second explanations of brain mapping, BRAIN CONNECTS, and NeuroTrailblazers, with follow-up answers and a practice activity."
+description: "15-, 30-, and 60-second explanations of brain mapping, BRAIN CONNECTS, and Nanoscale, with follow-up answers and a practice activity."
 permalink: /teaching/connectomics-taxi-pitches/
 track: career-and-community
 content_type: delivery
@@ -55,9 +55,9 @@ If asked, the name expands to **BRAIN Initiative Connectivity Across Scales**. L
 
 For a specific project's status, add a **dated, verified result**, such as a released dataset. “Targets ten cubic millimeters” describes a goal; it does not tell someone how much has been imaged, reconstructed, checked, or released. If you cannot verify the current stage, say, “I can explain the goal, but I'd need to check the team's latest update for its progress.”
 
-### “What is NeuroTrailblazers?”
+### “What is Nanoscale?”
 
-> NeuroTrailblazers helps people learn how to build and use detailed brain maps. The science needs people who can work with the images, check computer-generated reconstructions, and ask good questions. We turn those skills into lessons and practice activities that people can use openly.
+> Nanoscale helps people learn how to build and use detailed brain maps. The science needs people who can work with the images, check computer-generated reconstructions, and ask good questions. We turn those skills into lessons and practice activities that people can use openly.
 
 ## 3. Let their question choose the next sentence
 
@@ -138,6 +138,6 @@ These are sample conversations, not official program statements or a live projec
 - [Briggman, Helmstaedter & Denk (2011), Wiring specificity in the direction-selectivity circuit of the retina](https://doi.org/10.1038/nature09818): the retinal example.
 - [Bargmann & Marder (2013), From the connectome to brain function](https://doi.org/10.1038/nmeth.2451): why wiring needs complementary evidence.
 - [Public-engagement session kit]({{ '/teaching/module22-public-engagement/' | relative_url }}): practice tracing claims from intent to demonstrated consequence.
-- [How NeuroTrailblazers fits BRAIN CONNECTS]({{ '/core/connects-ecosystem/' | relative_url }}): program and education roles.
+- [How Nanoscale fits BRAIN CONNECTS]({{ '/core/connects-ecosystem/' | relative_url }}): program and education roles.
 
 **Acronyms:** NIH, National Institutes of Health; AI, artificial intelligence; BRAIN, Brain Research through Advancing Innovative Neurotechnologies. BRAIN CONNECTS is the BRAIN Initiative Connectivity Across Scales program.

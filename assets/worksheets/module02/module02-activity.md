@@ -2,7 +2,7 @@
 
 **Module:** Module 02: Research Foundations and the Hidden Curriculum  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module02.md`, not this file.*
+<!-- Generated from modules/module02.md; edit the module source. -->
 
 ---
 

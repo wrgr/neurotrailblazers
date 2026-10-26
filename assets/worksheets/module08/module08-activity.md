@@ -2,7 +2,7 @@
 
 **Module:** Module 08: Hypothesis Testing in Connectomics  
 **Duration:** 4 hours  
-*Generated from the module page. Edit `modules/module08.md`, not this file.*
+<!-- Generated from modules/module08.md; edit the module source. -->
 
 ---
 

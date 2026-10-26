@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Teaching Hub"
-description: "Instructor-ready lesson kits with module content, rendered slides, source decks, and worksheets."
+description: "Find lesson plans, slides, activities, and instructor guidance. Check module development status before using its materials."
 permalink: /teaching/
 slug: teaching-hub
 track: career-and-community
@@ -14,60 +14,14 @@ content_type: delivery
 ---
 
 <div class="main-content">
-  <div class="hero hero-spaced hero-rounded">
-    <div class="hero-content">
-      <h1 class="hero-title-impact">Teaching Hub</h1>
-      <p class="hero-subtitle">Everything needed to teach each module: lesson flow, activities, slides, and worksheets.</p>
-    </div>
-  </div>
+<section class="hero hero-spaced hero-rounded"><div class="hero-content"><h1>Teach connectomics</h1><p>Choose a lesson plan, review the materials, and prepare your session.</p></div></section>
+<section class="section"><h2>Choose a starting point</h2><div class="cards-grid task-grid">
+<article class="card"><h3>Teach a short lecture series</h3><p>Four 90-minute sessions covering an introduction, synapse detection, tools, and algorithms.</p><a class="btn btn-primary" href="{{ '/teaching/sequence/' | relative_url }}">Open the teaching sequence</a></article>
+<article class="card"><h3>Prepare a topic session</h3><p>Find the lesson plan, slides, worksheet, and rubric for a module. Its development status is shown below.</p><a class="btn btn-primary" href="{{ '/teaching/sessions/' | relative_url }}">Browse session plans</a></article>
+<article class="card"><h3>Plan how to teach</h3><p>Read the facilitator guide for preparation, group activities, and assessment.</p><a class="btn btn-primary" href="{{ '/teaching/facilitator-guide/' | relative_url }}">Read the facilitator guide</a></article>
+</div><p>Already know which presentation you need? <a href="{{ '/technical-training/slides/' | relative_url }}">Open presentation slides</a>.</p></section>
 
-  <section class="section">
-    <div class="cta-buttons">
-      <a href="{{ '/teaching/sessions/' | relative_url }}" class="btn btn-primary">Session Kits — run a session</a>
-      <a href="{{ '/teaching/sequence/' | relative_url }}" class="btn btn-primary">Teach a short lecture series</a>
-      <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
-      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
-      <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
-      <a href="{{ '/teaching/connectomics-taxi-pitches/' | relative_url }}" class="btn btn-secondary">Explain your work in a taxi ride</a>
-      <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course</a>
-    </div>
-  </section>
+<section class="section"><h2>Practice explaining your work</h2><p>Use short, plain-language explanations and follow-up questions to practice a conversation about brain mapping.</p><a class="btn btn-secondary" href="{{ '/teaching/connectomics-taxi-pitches/' | relative_url }}">Explain your work in a taxi ride</a></section>
 
-  <section class="section">
-    <h2>Where this sits</h2>
-    <p>This is <strong>delivery material</strong>: written for whoever is running a session, not for whoever is learning. It is the <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a> of the same curriculum that <a href="{{ '/modes/#self-study' | relative_url }}">self-study</a> learners read directly.</p>
-    <p>Nothing here is a separate body of content. Session kits are generated from the module pages, and the depth behind every activity lives in <a href="{{ '/core/' | relative_url }}">the core</a> &mdash; the content library, dictionary, journal club, atlas and hidden curriculum. If a learner asks a question a kit does not answer, the core is where you look.</p>
-  </section>
-
-  <section class="section">
-    <h2>Find what you need</h2>
-    <p><strong>Teaching connectomics for the first time?</strong> Start with
-      <a href="{{ '/teaching/sequence/' | relative_url }}">four 90-minute sessions</a>:
-      Introduction, Synapse Detection, Tools and Methods, and Algorithms and Applications. Each has a timed plan,
-      slides, a learner worksheet and instructor model answers.</p>
-    <p><strong>Presenting a lecture?</strong> Open the
-      <a href="{{ '/technical-training/slides/' | relative_url }}">Presentation Decks</a>
-      for graduate lectures and technical-unit slides. Each deck opens directly in your browser.</p>
-    <p><strong>Running a session?</strong> Go to the
-      <a href="{{ '/teaching/sessions/' | relative_url }}">session kits</a>. Each is one
-      page holding the prep checklist, run of show, materials, misconceptions to target,
-      and rubric for a single module — assembled from pieces that used to live in five
-      different places.</p>
-    <p><strong>Designing a course, or wondering why the sessions are shaped this way?</strong>
-      Start with the <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>.
-      It covers why at least half of contact time has to be learner judgment rather than
-      explanation, how to differentiate across the four learner personas, and how to
-      assess calibration rather than raw accuracy.</p>
-  </section>
-
-  <section class="section">
-    <h2>Module Teaching Kits</h2>
-    <p>Each card links to the lesson page, rendered slide deck, editable source, and activity worksheet.</p>
-    <div class="cards-grid">
-      {% assign module_pages = site.data.modules | sort: "number" %}
-      {% for module in module_pages %}
-        {% include cards/teaching-module-card.html module=module %}
-      {% endfor %}
-    </div>
-  </section>
+<details class="secondary-options"><summary>More course-planning options</summary><p><a href="{{ '/tracks/' | relative_url }}">Learning paths</a> · <a href="{{ '/models/' | relative_url }}">Program approach</a> · <a href="{{ '/resources/' | relative_url }}">Reference resources</a></p></details>
 </div>

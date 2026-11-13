@@ -2,6 +2,7 @@ import {questions, sections, example, examplePoster, words, seconds, localEditor
 import {drawNetwork, drawPoster} from './artwork.js';
 import {editorialPrompt} from './prompt.js';
 import {posterPDF} from './poster-pdf.js';
+import {presenterPrompt, readPresenterDraft} from './presenter.js';
 
 const $ = id => document.getElementById(id);
 const research = $('research');
@@ -14,6 +15,10 @@ let posterApproved = false;
 let sourceText = '';
 let sourceSelection = '';
 let uploadVersion = 0;
+let presenterDraft;
+let illustration;
+let illustrationVersion = 0;
+let illustrationPending = false;
 
 $('questions').innerHTML = questions.map(([id,label,hint,max]) => `
   <div class="question">
@@ -61,6 +66,28 @@ $('prompt-copy').addEventListener('click', async () => {
     $('prompt-copy').textContent = 'Select and copy the prompt above';
   }
 });
+
+$('presenter-copy').onclick = async () => {
+  if (!facts) return;
+  try {
+    await navigator.clipboard.writeText(presenterPrompt(facts));
+    $('presenter-status').textContent = 'Copied. Paste into your signed-in ChatGPT tab.';
+  } catch {
+    $('presenter-status').textContent = 'Clipboard unavailable. Use Copy prompt only and add your brief in ChatGPT.';
+  }
+};
+$('presenter-import').onclick = () => {
+  if (!facts) return;
+  try {
+    const draft = readPresenterDraft($('presenter-draft').value);
+    script.value = draft.script;
+    script.oninput();
+    presenterDraft = draft;
+    $('presenter-status').textContent = 'Draft loaded. Review the script below. Approving it will open the imported poster for review.';
+  } catch (error) {
+    $('presenter-status').textContent = error.message;
+  }
+};
 
 const tips = {
   'Brain cell diversity and atlases':'What kinds of cells did you distinguish, where, and how might someone use that map?',
@@ -129,6 +156,15 @@ $('upload').addEventListener('change', async event => {
   }
 });
 function invalidateResearch() {
+  illustrationVersion++;
+  illustration = undefined;
+  illustrationPending = false;
+  $('diagram-file').value = '';
+  $('diagram-remove').hidden = true;
+  $('diagram-status').textContent = '';
+  presenterDraft = undefined;
+  $('presenter-draft').value = '';
+  $('presenter-status').textContent = '';
   facts = undefined;
   approvedPitch = '';
   posterApproved = false;
@@ -223,7 +259,8 @@ $('pitch-form').onsubmit = event => {
   approvedPitch = script.value.trim();
   if (!unchanged) {
     const isExample = facts.citation === example.citation && questions.every(([key]) => facts[key] === example[key]) && facts.status === example.status;
-    const draft = isExample ? examplePoster : localEditorial.poster(facts,approvedPitch);
+    const draft = presenterDraft?.poster ?? (isExample ? examplePoster : localEditorial.poster(facts,approvedPitch));
+    if (presenterDraft) $('diagram').value = presenterDraft.diagram;
     for (const [key] of sections) $('field-'+key).value = draft[key];
     $('poster-check').checked = false;
     posterApproved = false;
@@ -252,7 +289,7 @@ function renderPoster() {
   for (const id of ['credit','institution']) $(id).setCustomValidity($(id).value.trim() ? '' : 'Add attribution for the export.');
   const footer = [...licenseLines($('credit').value.trim() || 'Scientist name(s)', $('institution').value.trim() || 'Institution'),
     'Source: '+facts.citation,'Independent studio · No NIH affiliation or endorsement.'];
-  const fits = drawPoster(poster, {template:$('template').value, values, footer, diagram:$('diagram').value, url});
+  const fits = drawPoster(poster, {template:$('template').value, values, footer, diagram:$('diagram').value, illustration, url});
   $('overflow').textContent = fits ? '' : 'Some text exceeds its poster space. Shorten the affected copy or credits.';
   const notices = claimWarnings(copy,facts);
   const copied = copiesSource(copy,sourceText);
@@ -261,14 +298,57 @@ function renderPoster() {
   const missingScope = !!scopeWords && !scopeWords.test(values.discovery + ' ' + values.finding + ' ' + values.limit);
   if (missingScope) notices.unshift('State the evidence status in the discovery or evidence boundary field: ' + scope(facts.status).toLowerCase() + '.');
   $('poster-warning').textContent = notices.join(' ');
-  return fits && !copied && !missingScope;
+  return fits && !copied && !missingScope && !illustrationPending;
 }
 $('poster-form').addEventListener('input', event => {
-  if (event.target.id !== 'poster-check') $('poster-check').checked = false;
+  if (!['poster-check','diagram-file'].includes(event.target.id)) $('poster-check').checked = false;
   posterApproved = false;
   stages();
-  if (event.target.id !== 'poster-check') renderPoster();
+  if (!['poster-check','diagram-file'].includes(event.target.id)) renderPoster();
 });
+function illustrationChanged(message) {
+  $('diagram-status').textContent = message;
+  $('diagram-remove').hidden = !illustration;
+  $('poster-check').checked = false;
+  posterApproved = false;
+  stages();
+  if (facts) renderPoster();
+}
+$('diagram-file').onchange = async event => {
+  const file = event.target.files[0];
+  if (!file) return;
+  event.target.value = '';
+  const version = ++illustrationVersion;
+  illustrationPending = false;
+  if (!['image/png','image/jpeg','image/webp'].includes(file.type) || file.size > 10000000) {
+    illustrationChanged('Choose a PNG, JPEG or WebP under 10 MB.');
+    return;
+  }
+  illustrationPending = true;
+  illustrationChanged('Opening illustration…');
+  const url = URL.createObjectURL(file);
+  try {
+    const image = new Image();
+    image.src = url;
+    await image.decode();
+    if (version !== illustrationVersion) return;
+    illustration = image;
+    illustrationPending = false;
+    illustrationChanged('Illustration loaded. Check it against the source in the preview.');
+  } catch {
+    if (version !== illustrationVersion) return;
+    illustrationPending = false;
+    illustrationChanged('Could not open this image. Try another file.');
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+};
+$('diagram-remove').onclick = () => {
+  illustrationVersion++;
+  illustration = undefined;
+  illustrationPending = false;
+  illustrationChanged('Using the built-in diagram.');
+};
 $('poster-form').onsubmit = event => {
   event.preventDefault();
   if (!renderPoster() || !$('poster-form').reportValidity()) {

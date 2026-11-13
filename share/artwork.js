@@ -121,7 +121,7 @@ function drawQR(ctx, url, x, y, size) {
     }
   }
 }
-export function drawPoster(canvas, {template, values, footer, diagram, url}) {
+export function drawPoster(canvas, {template, values, footer, diagram, illustration, url}) {
   const ctx = canvas.getContext('2d');
   const palette = template === 'atlas'
     ? {top:'#153f35', ink:'#123e37', accent:'#b9e7ae', bg:'#f8fbf6', diagram:'#e5f2e3', paper:'#f8fbf6', line:'#4a836e'}
@@ -166,8 +166,13 @@ export function drawPoster(canvas, {template, values, footer, diagram, url}) {
   text(values.discovery,left,274,full,'bold 34px system-ui',37,'#fff',3);
   panel(left,404,full,313,palette.diagram,line);
   heading('How it fits together',left+24,446,710);
-  text('CONCEPTUAL DIAGRAM',left+full-24,442,280,'bold 17px system-ui',20,ink,1,'right');
-  drawDiagram(ctx,diagram,palette);
+  text(illustration ? 'ILLUSTRATION' : 'CONCEPTUAL DIAGRAM',left+full-24,442,280,'bold 17px system-ui',20,ink,1,'right');
+  if (illustration) {
+    const scale = Math.min(1010 / illustration.width, 182 / illustration.height);
+    const width = illustration.width * scale;
+    const height = illustration.height * scale;
+    ctx.drawImage(illustration, 600-width/2, 549-height/2, width, height);
+  } else drawDiagram(ctx,diagram,palette);
   text(values.visualA,334,667,402,'bold 29px system-ui',30,ink,2,'center');
   text(values.visualB,866,667,402,'bold 29px system-ui',30,ink,2,'center');
   card('The puzzle',values.problem,left,738);

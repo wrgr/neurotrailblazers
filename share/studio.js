@@ -1,6 +1,7 @@
-import {questions, sections, example, words, seconds, localEditorial, scope, independence, licenseLines, validEmail} from './editorial.js';
+import {questions, sections, example, examplePoster, words, seconds, localEditorial, scope, independence, licenseLines, licenseSummary, followUpURL, oneSentence, copiesSource, claimWarnings, validEmail} from './editorial.js';
 import {drawNetwork, drawPoster} from './artwork.js';
 import {editorialPrompt} from './prompt.js';
+import {posterPDF} from './poster-pdf.js';
 
 const $ = id => document.getElementById(id);
 const research = $('research');
@@ -10,7 +11,7 @@ const stageButtons = [...document.querySelectorAll('[data-stage]')];
 let facts;
 let approvedPitch = '';
 let posterApproved = false;
-let exampleLoaded = false;
+let sourceText = '';
 let sourceSelection = '';
 let uploadVersion = 0;
 
@@ -23,7 +24,7 @@ $('questions').innerHTML = questions.map(([id,label,hint,max]) => `
       <button type="button" class="secondary use-selection" data-evidence="${id}" hidden>Use selection</button>
     </details>
   </div>`).join('');
-$('poster-fields').innerHTML = sections.map(([id,label,max,chars]) => `
+$('poster-fields').innerHTML = sections.map(([id,label,,chars]) => `
   <label>${label}<span class="count" id="count-${id}"></span>
   <textarea id="field-${id}" rows="${id === 'headline' ? 2 : 3}" maxlength="${chars}" required></textarea></label>`).join('');
 
@@ -51,6 +52,7 @@ stageButtons.forEach((button,i) => button.addEventListener('click', () => naviga
 navigate(0,false);
 drawNetwork($('art'));
 $('prompt-text').textContent = editorialPrompt;
+$('license-summary').textContent = licenseSummary;
 $('prompt-copy').addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(editorialPrompt);
@@ -84,6 +86,7 @@ $('source-text').addEventListener('select', event => {
 $('source-text').addEventListener('input', () => {
   uploadVersion++;
   sourceSelection = '';
+  invalidateResearch();
 });
 document.querySelectorAll('.use-selection').forEach(button => button.onclick = () => {
   if (!sourceSelection) {
@@ -117,6 +120,7 @@ $('upload').addEventListener('change', async event => {
     }
     $('source-text').value = source;
     sourceSelection = '';
+    invalidateResearch();
     announce('Source loaded locally. Add your plain-language notes and select excerpts for the evidence fields.');
   } catch {
     announce('The file could not be read. Try pasting an excerpt.');
@@ -145,14 +149,14 @@ $('example').onclick = () => {
   research.elements['e-finding'].value = 'Simulated labels compared against known labels planted in the teaching dataset.';
   research.elements['e-limit'].value = 'Teaching dataset contains simulated maps only.';
   research.elements.finding.required = true;
-  $('credit').value = '';
-  $('license').checked = false;
+  $('credit').value = 'Research in One Minute team';
+  $('institution').value = 'Fictional teaching example';
+  $('follow-up').value = 'https://www.neurotrailblazers.org/';
   $('email-form').reset();
   uploadVersion++;
   $('source-text').value = '';
   $('upload').value = '';
   sourceSelection = '';
-  exampleLoaded = true;
   invalidateResearch();
   updateTheme();
   mode(false);
@@ -184,6 +188,7 @@ research.onsubmit = event => {
     return;
   }
   facts = record;
+  sourceText = $('source-text').value;
   approvedPitch = '';
   posterApproved = false;
   script.value = localEditorial.pitch(facts);
@@ -197,9 +202,13 @@ research.onsubmit = event => {
 function timing() {
   const count = words(script.value);
   const ok = count >= 65 && count <= 130;
+  const copied = copiesSource(script.value,sourceText);
   $('timing').textContent = count + ' words · about ' + seconds(script.value) + ' seconds' + (ok ? '' : ' · edit to 65–130 words to approve');
   $('timing').classList.toggle('error', !ok);
-  script.setCustomValidity(ok ? '' : 'Edit the spoken pitch to 65–130 words.');
+  const notices = claimWarnings(script.value,facts ?? {});
+  if (copied) notices.unshift('Rewrite the passage that matches your uploaded or pasted source in your own words.');
+  $('pitch-warning').textContent = notices.join(' ');
+  script.setCustomValidity(!ok ? 'Edit the spoken script to 65–130 words.' : copied ? notices[0] : '');
 }
 script.oninput = () => {
   approvedPitch = '';
@@ -213,13 +222,9 @@ $('pitch-form').onsubmit = event => {
   const unchanged = script.value.trim() === approvedPitch;
   approvedPitch = script.value.trim();
   if (!unchanged) {
-    const draft = localEditorial.poster(facts,approvedPitch);
-    if (facts.citation === example.citation && exampleLoaded && !draft.headline) draft.headline = 'What if brain maps could show both?';
-    for (const [key,,,max] of sections) {
-      const field = $('field-'+key);
-      field.value = draft[key].length > max ? '' : draft[key];
-      field.placeholder = draft[key].length > max ? 'Summarize this section using the approved research notes.' : '';
-    }
+    const isExample = facts.citation === example.citation && questions.every(([key]) => facts[key] === example[key]) && facts.status === example.status;
+    const draft = isExample ? examplePoster : localEditorial.poster(facts,approvedPitch);
+    for (const [key] of sections) $('field-'+key).value = draft[key];
     $('poster-check').checked = false;
     posterApproved = false;
   }
@@ -229,18 +234,34 @@ $('pitch-form').onsubmit = event => {
   renderPoster();
 };
 function renderPoster() {
-  const values = Object.fromEntries(sections.map(([key,,max]) => {
+  const values = Object.fromEntries(sections.map(([key,,max,chars]) => {
     const field = $('field-'+key);
     const value = field.value.trim();
     const count = words(value);
     $('count-'+key).textContent = count + '/' + max + ' words';
-    field.setCustomValidity(!value || count > max ? 'Use between 1 and ' + max + ' words.' : '');
+    let issue = !value || count > max || value.length > chars ? 'Shorten or complete this field within its word limit.' : '';
+    if (!issue && key === 'headline' && (!value.endsWith('?') || !oneSentence(value))) issue = 'Write a single question.';
+    if (!issue && key === 'discovery' && !oneSentence(value)) issue = 'Write one discovery sentence.';
+    if (!issue && key === 'contribution' && value.split(/\n+/u).length > 2) issue = 'Use one or two contributions.';
+    field.setCustomValidity(issue);
     return [key,value];
   }));
-  const footer = ['Source: '+facts.citation, ...licenseLines($('credit').value.trim() || 'Add author credit at export', $('license').checked), independence];
-  const fits = drawPoster(poster, {template:$('template').value, scope:scope(facts.status), values, sections, footer});
-  $('overflow').textContent = fits ? '' : 'Some text exceeds the poster layout. Shorten the headline or body text.';
-  return fits;
+  const copy = Object.values(values).join(' ');
+  const url = followUpURL($('follow-up').value.trim());
+  $('follow-up').setCustomValidity(url === null ? 'Enter a public HTTPS URL of 250 characters or fewer.' : '');
+  for (const id of ['credit','institution']) $(id).setCustomValidity($(id).value.trim() ? '' : 'Add attribution for the export.');
+  const footer = [...licenseLines($('credit').value.trim() || 'Scientist name(s)', $('institution').value.trim() || 'Institution'),
+    'Source: '+facts.citation,'Independent studio · No NIH affiliation or endorsement.'];
+  const fits = drawPoster(poster, {template:$('template').value, values, footer, diagram:$('diagram').value, url});
+  $('overflow').textContent = fits ? '' : 'Some text exceeds its poster space. Shorten the affected copy or credits.';
+  const notices = claimWarnings(copy,facts);
+  const copied = copiesSource(copy,sourceText);
+  if (copied) notices.unshift('Rewrite the passage that matches your uploaded or pasted source in your own words.');
+  const scopeWords = {preliminary:/\b(?:preliminary|early)\b/iu,simulation:/\bsimulat/iu,pending:/\b(?:pending|still gathering|no results|not yet)\b/iu}[facts.status];
+  const missingScope = !!scopeWords && !scopeWords.test(values.discovery + ' ' + values.finding + ' ' + values.limit);
+  if (missingScope) notices.unshift('State the evidence status in the discovery or evidence boundary field: ' + scope(facts.status).toLowerCase() + '.');
+  $('poster-warning').textContent = notices.join(' ');
+  return fits && !copied && !missingScope;
 }
 $('poster-form').addEventListener('input', event => {
   if (event.target.id !== 'poster-check') $('poster-check').checked = false;
@@ -250,8 +271,8 @@ $('poster-form').addEventListener('input', event => {
 });
 $('poster-form').onsubmit = event => {
   event.preventDefault();
-  if (!renderPoster()) {
-    announce('Shorten the poster text before approving.');
+  if (!renderPoster() || !$('poster-form').reportValidity()) {
+    announce('Resolve the review notes and shorten any panel that exceeds its space.');
     return;
   }
   posterApproved = true;
@@ -259,22 +280,20 @@ $('poster-form').onsubmit = event => {
   navigate(3);
 };
 function exportReady() {
-  const credit = $('credit');
-  credit.setCustomValidity(credit.value.trim() ? '' : 'Add the name to credit on the output.');
-  if (!credit.reportValidity()) return false;
   if (!posterApproved || !renderPoster()) {
-    announce('The poster exceeds the layout. Shorten the poster or attribution.');
+    announce('Return to the poster and resolve the review notes before exporting.');
     return false;
   }
   return true;
 }
-$('credit').oninput = () => $('credit').setCustomValidity('');
 function download(blob,name) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
   link.download = name;
+  document.body.append(link);
   link.click();
+  link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 3000);
 }
 $('png').onclick = () => {
@@ -286,24 +305,15 @@ $('png').onclick = () => {
 };
 $('pdf').onclick = async () => {
   if (!exportReady()) return;
-  const image = new Image();
-  image.src = poster.toDataURL('image/png');
   try {
-    await image.decode();
-    $('print-area').replaceChildren(image);
-    document.body.classList.add('print-ready');
-    window.print();
+    download(await posterPDF(poster),'research-in-one-minute.pdf');
   } catch {
-    announce('Print preview could not open. Download the PNG and print it from your image viewer.');
+    announce('PDF creation failed. Download the PNG and print it from your image viewer.');
   }
 };
-window.addEventListener('afterprint', () => {
-  document.body.classList.remove('print-ready');
-  $('print-area').replaceChildren();
-});
 $('script').onclick = () => {
   if (!exportReady()) return;
-  const content = [approvedPitch,'','Source: '+facts.citation, ...licenseLines($('credit').value.trim(),$('license').checked),independence].join('\n');
+  const content = [approvedPitch,'','Source: '+facts.citation, ...licenseLines($('credit').value.trim(),$('institution').value.trim()),independence].join('\n');
   download(new Blob([content],{type:'text/plain;charset=utf-8'}),'research-in-one-minute-script.txt');
 };
 $('email').oninput = () => $('email').setCustomValidity('');

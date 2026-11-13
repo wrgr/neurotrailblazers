@@ -52,6 +52,13 @@ On a slide, a footer line is enough: **NeuroTrailblazers · CC BY 4.0**. If you 
 the material, say so — "adapted from" does that work. For a formal citation, see
 [Cite this site]({{ '/about/#cite-this-site' | relative_url }}).
 
+## Neuronauts book
+
+The downloadable [Neuronauts book]({{ '/neuronauts/downloads/neuronauts-brain-map-book-v1-print.pdf' | relative_url }})
+by Will Gray-Roncal and Sydney Floryanzia is separately licensed
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), rather than the site's general CC BY license.
+The H01 data and original H01 renderings in the book remain CC BY 4.0, with attribution in the PDF.
+
 ## Figures are the exception — check every one
 
 **This is the part that catches people.** A large share of the images on this site are

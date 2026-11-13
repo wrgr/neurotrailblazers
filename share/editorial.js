@@ -21,7 +21,7 @@ export const sections = [
   ['visualB','Diagram · second label',5,30],
   ['finding','What the evidence showed · include the comparison',29,200],
   ['relevance','Why it matters · realistic implication or next step',29,200],
-  ['limit','Evidence boundary · what the study can’t establish',24,160],
+  ['limit','What’s next · evidence boundary and next test',24,160],
   ['invitation','Invite students to ask a specific question',10,65]
 ];
 export const examplePoster = {

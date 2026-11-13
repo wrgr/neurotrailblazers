@@ -175,7 +175,7 @@ export function drawPoster(canvas, {template, values, footer, diagram, url}) {
   card('What the evidence showed',values.finding,left,958);
   card('Why it matters',values.relevance,612,958);
   panel(left,1180,full,142,'#fff1d8','#ba8134');
-  heading('Where the evidence stops',left+23,1221,full-46,'#68400c');
+  heading("What’s next",left+23,1221,full-46,'#68400c');
   text(values.limit,left+23,1261,full-46,'bold 26px system-ui',29,'#51330e',2);
   ctx.fillStyle = top;
   ctx.fillRect(0,1345,1200,255);

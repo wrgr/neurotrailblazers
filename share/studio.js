@@ -3,6 +3,7 @@ import {drawNetwork, drawPoster} from './artwork.js';
 import {editorialPrompt} from './prompt.js';
 import {posterPDF} from './poster-pdf.js';
 import {presenterPrompt, readPresenterDraft} from './presenter.js';
+import {micronsRecord, micronsDraft, micronsDOI} from './microns-demo.js';
 
 const $ = id => document.getElementById(id);
 const research = $('research');
@@ -411,3 +412,38 @@ $('email-form').onsubmit = event => {
   announce('Requested an email draft. Attach the downloaded files in your email app.');
   window.location.href = 'mailto:' + recipient + '?subject=Research%20in%20One%20Minute&body=' + body;
 };
+
+if (new URLSearchParams(location.search).get('demo') === 'microns') {
+  const run = new URLSearchParams(location.search).get('step');
+  for (const [key,value] of Object.entries(micronsRecord)) research.elements[key].value = value;
+  $('credit').value = 'MICrONS Consortium et al.';
+  $('institution').value = 'Allen Institute, Baylor College of Medicine, Princeton and collaborators';
+  $('follow-up').value = micronsDOI;
+  updateTheme();
+  research.requestSubmit();
+  if (run === 'draft') {
+    $('presenter-copy').closest('details').open = true;
+  } else {
+    $('presenter-draft').value = JSON.stringify(micronsDraft, null, 2);
+    $('presenter-import').click();
+    $('pitch-check').checked = true;
+    $('pitch-form').requestSubmit();
+    if (!approvedPitch) throw new Error('The MICrONS demo script could not be loaded.');
+    const url = new URL('./microns-illustration.svg',import.meta.url);
+    const version = ++illustrationVersion;
+    const image = new Image();
+    illustrationPending = true;
+    illustrationChanged('Opening MICrONS illustration…');
+    image.src = url.href;
+    image.decode().then(() => {
+      if (version !== illustrationVersion) return;
+      illustration = image;
+      illustrationPending = false;
+      illustrationChanged('Original MICrONS illustration loaded. Review the figure and citation before export.');
+    }, () => {
+      if (version !== illustrationVersion) return;
+      illustrationPending = false;
+      illustrationChanged('The MICrONS illustration could not load. The built-in diagram is available.');
+    });
+  }
+}

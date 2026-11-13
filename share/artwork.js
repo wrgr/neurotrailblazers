@@ -186,10 +186,10 @@ export function drawPoster(canvas, {template, values, footer, diagram, illustrat
   ctx.fillRect(0,1345,1200,255);
   const footerWidth = url ? 860 : full;
   text(values.invitation,left,1393,footerWidth,'bold 33px system-ui',35,accent,2);
-  let footerY = 1470;
+  let footerY = 1453;
   for (const item of footer) {
-    const maxLines = Math.max(0,Math.floor((1585-footerY)/22)+1);
-    footerY = text(item,left,footerY,footerWidth,'18px system-ui',22,'#fff',maxLines);
+    const maxLines = Math.max(0,Math.floor((1593-footerY)/20)+1);
+    footerY = text(item,left,footerY,footerWidth,'18px system-ui',20,'#fff',maxLines);
   }
   if (url) {
     drawQR(ctx,url,955,1381,180);
